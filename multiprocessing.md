@@ -2,8 +2,8 @@
 
 I have developed a basic Python Library to provide abstraction to parallel programming.
 This library is based on in built-in library ```multiprocessing``` in python and 3rd party library ```ray```.
-Make sure to install ```ray``` using below link (if you are using CustomRay)
-https://ray.readthedocs.io/en/latest/installation.html.
+In this blog post I will explain in details about the implementations in addition to existing 
+documentations.
 
 **CustomMP** is the abstraction of ```multiprocessing``` library with a ```SharedList```.
 ```SharedList``` is a generalization of commonly used ```Manager```, pair of ```Queue```
