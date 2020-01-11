@@ -2,6 +2,8 @@
 
 I joined in the Resilient Networks and Systems (RNS) Lab as a **Ph.D. Student** in Fall 2019. My research interest is in **Machine Learning and Data Mining**. I graduated with **Bachelors's in Computer Science and Engineering** from the University of Moratuwa, Srilanka in 2017. I have previously worked as a **Software Engineering Intern** in WSO2 Lanka (PVT) Ltd under Data-Analytics Team from July 2016 - Dec 2016. I also worked as a **Software Engineer** in MillenniumIT Software (PVT) Ltd under Post-Trade Team from Jan 2018 - Jul 2019.
 
+### Machine Learning and Data Mining
+1. [DengAI : Predicting Disease Spread - A tale of Two cities](dengAI.md)
 
 ### Intergrated Computer Engineering
 1. [Intergrated Computer Engineering Stream](ice.md)
@@ -14,9 +16,6 @@ I joined in the Resilient Networks and Systems (RNS) Lab as a **Ph.D. Student** 
 ### Tech Issues
 1. [Updating Driver for Wifi Adapter in Ubuntu](wifiadapter.md)
 2. [Which is best multi attribute sorting for python Array](attribute.md)
-
-### Machine Learning and Data Mining
-1. [DengAI : Predicting Disease Spread - A tale of Two cities](dengAI.md)
 
 ### Internship
 1. [WSO2 INTERNSHIP](wso2.md)
