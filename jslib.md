@@ -34,7 +34,7 @@ $(".js-example-basic-single").select2();
 
 This can be worked fine both id and class, but declaring for the class is easy and efficient in most practices.
 
-**Leaflet**
+## **Leaflet**
 
 This is used for creating dynamic maps with our custom styles and standards.
 
