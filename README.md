@@ -2,7 +2,5 @@
 ## DSeven Tbits
 
 Post
-1.
-2.
-3.
-4. 
+1. [Which is best multi attribute sorting for python Array](attribute.md)
+ 
