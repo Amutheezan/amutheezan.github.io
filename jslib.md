@@ -1,14 +1,14 @@
-# Some Useful Javascript Libraries
+# Some Useful JavaScript Libraries
 
 #### **Warning !**
 
-This post contents are just for purpose of sharing some issues I faced during my Internship projects for design iframe for gadget designing. Hope it will be same work for html pages too.
+These post contents are just for the purpose of sharing some issues I faced during my Internship projects for design iframe for gadget designing. I hope it will be the same work for HTML pages too.
 
 ## **Accordion - Not a Library**
 
-This is inside the JQuery, you need to add the JQuery related js files and css files and also JQuery ui related js and css file for better functioning.Download Images folder too to get the relavent Images for accordion styles.
+This is inside the JQuery, you need to add the JQuery related js files and CSS files and also JQuery UI related js and CSS file for better functioning. Download the Images folder too to get the relevant Images for accordion styles.
 
-Sample toggling function of expand and collapse, this will display the collapse data during first click and collapse it back in second click.
+Sample toggling function of expanding and collapse, this will display the collapse data during the first click and collapse it back in the second click.
 
 ```javascript
 $('.accordion-toggle').click(function() {
@@ -22,23 +22,23 @@ $('.accordion-inner').addClass('collapse');
 });
 ```
 
-For case where you use more than two Accordion it is better to deal with id rather than using the class, and we need to add function when we are dynamically generating it(if we are dynamically generating it)
+For the case where you use more than two Accordion, it is better to deal with id rather than using the class, and we need to add function when we are dynamically generating it(if we are dynamically generating it)
 
 ## **Select2**
 
-```Select2``` is a developed combo box with single, multiple selection, searching,branched selection and remove selection option, and it styles the combo box.Look at it's github page[1] for it source code and it's website for more examples[2].It was really cool thing to use. And when we created combobox using this to run efficiently we need to add the required ```select2.css```, ```select2.js``` and ```select2.min.js``` files whether locally or online. When using locally include the images folder inside the css folder, other wise some styles related to images won't appear. And to initialize the ```select2``` we generally follow following syntax
+```Select2``` is a developed combo box with single, multiple selections, searching, branched selection and remove selection option, and it styles the combo box. Look at its GitHub page[1] for its source code and it's the website for more examples[2]. It was a really cool thing to use. And when we created Combobox using this to run efficiently we need to add the required ```select2.css```, ```select2.js``` and ```select2.min.js``` files whether locally or online. When using locally include the images folder inside the CSS folder, otherwise, some styles related to images won't appear. And to initialize the ```select2``` we generally follow the following syntax
 
 ```javascript
 $(".js-example-basic-single").select2();
 ```
 
-This can be worked fine both id and class, but declaring for class is easy and efficient in most practices.
+This can be worked fine both id and class, but declaring for the class is easy and efficient in most practices.
 
 **Leaflet**
 
 This is used for creating dynamic maps with our custom styles and standards.
 
-Note : When loading contents first load the div then run function, or setup timeout or async property to work it fine.
+Note: When loading contents first load the div then run function, or setup timeout or async property to work it fine.
 
 ```javascript
 setTimeout( function() {
@@ -56,29 +56,11 @@ Here we need to set yourMapId, and yourAccessToken by registering on https://www
 
 ## **Data-tables**
 
-My last post is about data-tables, since I omit it's contents here.
+My last post is about data-tables since I omit it's contents here.
 
-References I have Looked In,
+### **References**
 
-1.  https://jqueryui.com/accordion/
+1.  [https://jqueryui.com/accordion/](https://jqueryui.com/accordion/)
 2.  [https://github.com/select2/select2](https://github.com/select2/select2)
 3.  [https://select2.github.io/](https://select2.github.io/)
-4.  http://leafletjs.com/index.htmlagery © [Mapbox](http://mapbox.com)',
-maxZoom: 18,
-id: '**yourMapId**',
-accessToken: '**yourAccessToken**'
-}).addTo(mymap);
-}, 10);
-
-Here we need to set yourMapId, and yourAccessToken by registering on https://www.mapbox.com/.
-
-## **Data-tables**
-
-My last post is about data-tables, since I omit it's contents here.
-
-References I have Looked In,
-
-1.  https://jqueryui.com/accordion/
-2.  [https://github.com/select2/select2](https://github.com/select2/select2)
-3.  [https://select2.github.io/](https://select2.github.io/)
-4.  http://leafletjs.com/index.html
+4.  [http://leafletjs.com/index.html](http://leafletjs.com/index.html)
