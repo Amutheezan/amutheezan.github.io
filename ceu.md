@@ -6,7 +6,7 @@ This Ceu language was used make an Arduino binding through Ceu-Arduino which hel
 
 -   Awaiting events in direct/sequential style.
 -   Parallel lines of execution with
-    -   safe abortion;
+    -   safe abortion.
     -   deterministic behavior (in contrast with threads).
 -   Asynchronous loops for heavy computations.
 -   Interrupt-driven operation mode (optional and experimental).
