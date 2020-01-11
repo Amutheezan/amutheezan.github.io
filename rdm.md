@@ -1,27 +1,27 @@
 # Multi-tag Reading with RDM6300?
-**Warning !**
+#### **Warning !**
 
-This is question, towards audience and your suggestion and comments are warmly welcomed. And I have shared some interesting facts that I came across trying for it.
+This is the question, towards the audience and your suggestion and comments are warmly welcomed. And I have shared some interesting facts that I came across trying for it.
 
-**What is RDM6300 ?**
+### **What is RDM6300 ?**
 
-It is a RFID reader which operates in the frequency of 125kHz. As far i researched on it, It works with arduino or any another serial adapting device. It can operate in two modes UART and Serial. For my case of study I go with Serial.
+It is an RFID reader that operates in the frequency of 125kHz. As far as I researched it, It works with Arduino or any other serial adapting device. It can operate in two modes UART and Serial. For my case of study, I go with Serial.
 
-It contains 3 set of pins. 1 Set (with 2 pins in one side and other side is empty) for Antenna which comes along side with RDM6300 ,another 1 Set (with 3 pins opposite to 5 pin set) for powersupply (inner most two are used for power and ground respectively) and final set is for communication, but that can be used for powersupply also.(the last pin in outermost is used for tx and one before is rx. for serial only tx need to be connected and not rx, for UART both should be connected)
+It contains 3 sets of pins. 1 Set (with 2 pins in one side and other side is empty) for Antenna which comes alongside with RDM6300, another 1 Set (with 3 pins opposite to 5 pin set) for power supply (innermost two are used for power and ground respectively) and final set is for communication, but that can be used for power supply also.(the last pin in outermost is used for tx and one before is RX. for serial only TX need to be connected and not to RX, for UART both should be connected)
 
 ![rdm6300-125khz-id-rfid-reader-module](https://amutheezan.files.wordpress.com/2016/09/rdm6300-125khz-id-rfid-reader-module.jpg)
 
-**How to Connect RDM6300 for Serial Communication ?**
+### **How to Connect RDM6300 for Serial Communication ?**
 
-For serial communication, it depends on the receiving part. So in case you are using Arduino Nano or UNO you can use 2 as the receiving part, but for Arduino mega we can't use 2 because of Arduino mega's architecture not all ports are receiving. So it is better used some latter ports like 10.
+For serial communication, it depends on the receiving part. So in case you are using Arduino Nano or UNO, you can use 2 as the receiving party, but for Arduino Mega, we can't use 2 because of Arduino mega's architecture, not all ports are receiving. So it is better used some latter ports like 10.
 
-**How RFID Reader Works generally ?**
+### **How RFID Reader Works generally ?**
 
-The reader is an active device means it can be sourced and tags or cards is a passive device, which don't have source, but it has the ability to induce current. When a powered active device like reader moves towards tag, passive induction coil get inducted and started to radiate RF waves using this RFID transmit data. So if we consider two stuffs come closer it will make it radiate, but in case of receiving signal back from them, it will end up in a collision, that one in the front will block the next one to transmit back the signal. That's why we can't able to read multi-tags at a time.
+The reader is an active device that means it can be sourced and tags or cards are a passive device, which doesn't have a source, but it has the ability to induce the current. When a powered active device like the reader moves towards tag, passive induction coil gets inducted and started to radiate RF waves using this RFID transmit data. So if we consider two things to come closer it will make it radiate, but in case of receiving signal back from them, it will end up in a collision, that one in the front will block the next one to transmit back the signal. That's why we can't able to read multi-tags at a time.
 
-**Is this RFID Reader Capable for Multitag Reading ?**
+### **Is this RFID Reader Capable for Multi tag Reading ?**
 
-This was actually the topic of this Discussion, based my research in this topic I have found out few solution, Such as
+This was actually the topic of this Discussion, based my research in this topic I have found out few solutions, Such as
 
-1.  Using a different Reader Instead of this Like MRFC522 Module which supports Multi-tag reading at the same time. There is also a library found on github to enable this.
-2.  Implementing an Anti Collision Algorithm. The reason for not reading more than one tag is due to Collision between low frequency signals, thus one signal block to another. So when we took more than 2 tags at a time only the one which comes in first will successfully scanned others are blocked.
+1.  Using a different Reader Instead of this Like MRFC522 Module which supports Multi-tag reading at the same time. There is also a library found on Github to enable this.
+2.  Implementing an Anti Collision Algorithm. The reason for not reading more than one tag is due to Collision between low-frequency signals, thus one signal block to another. So when we took more than 2 tags at a time only the one which comes in first will successfully be scanned, and others are blocked.
