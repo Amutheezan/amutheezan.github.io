@@ -1,22 +1,22 @@
 # Intergrated Computer Engineering Stream
 
-**First Day : 2014 .10.27**
+## **First Day : 2014 .10.27**
 
 That day, Actually I have no idea about this "ICE" rather than the things heard from mentoring session and from seniors.But Unlike I worried, it was a very pleasant class that day, just listening what I am hearing spending that 2 hours with my own thoughts. And that how it ended up finally but may be that was not a good day of start but I feel lucky when it comes to the End of semester :). Nothing is Strange at Final : Everything is Strange at Beginning. A quite enough philosophy we are following years and years :P :)
 
-**Ideas and Concepts**
+## **Ideas and Concepts**
 
 I get some basic Idea about the stuffs. Specially in Object Oriented Programming and Embedded System Programming. I divide those stuffs into categories and I will share the Experience.
 
-Object Oriented Programming (OOPS :P :) )
+#### Object Oriented Programming (OOPS :P :) )
 
 It was quite similar we just concern about some practical real-time scenarios unlike the typical examples provided. It was grateful to have such a good professor to nicely explain all the principles in effective way to understand by poor kids like me. I really loved way of teaching. Initially when I start studying class it looks like to strange because most of the stuffs are new to me. but later on teaching with proper examples, and practice questions help me to improve on my OOPS skills. :) :P
 
-Embedded Programming
+#### Embedded Programming
 
 This was strange at beginning because actually I have no idea till I studied deeply in coming semesters. I will share the experience regarding that more deeply in the related parts. Keep Smiling :) .
 
-**Development and Improvement**
+#### **Development and Improvement**
 
 Development Deals with Object Oriented Software Development, Embedded Databases and Embedded Networks, while improvement Deals with Industrial Computer Engineering and Software Engineering.
 
@@ -30,7 +30,7 @@ And Embedded Networks it deals with Communication types Serial (SPI,I2C) and Par
 
 This is just and over view on the things I have learnt. Specified Topics for Some for My favorites will be published soon.
 
-**Instrumentation Con-Trolls**
+#### **Instrumentation Con-Trolls**
 
 Apart from last two topics of discussed above, this is totally different. Actually I had a undergone to quite learning process during this period of ICE, semester 5. Actually end of semester :P :).I had learned two subjects, one is control system and another is instrumentation.
 
@@ -50,7 +50,7 @@ U = Kp.e + Ki. Intgration(e) + Kd.Deferentiation(e). Here U and e belongs to s d
 
 Phase and Gain Margin these are two factors that determine the stability of the system the system which goes out of these will be unstable and between gain and phase is little bit at normal and before Gain is best region.
 
-Fun with PLC
+##### Fun with PLC
 
 A quite Interesting think I have learnt during the 5th Semester in the Module CS3332 : Industrial Instrumentation Control is PLC Programming. Here I have express my experience specialized to that and Problems I encountered regarding that.
 
@@ -67,7 +67,7 @@ Reference : http://www.ehow.com/list_7155812_plc-programming-methods.html
 
 For us we were tried to get familiar with Ladder Program which was quite easy at all, just drag and drop GUI techniques, but for big level of application it will be quite difficult thus for each and every output required we need a lengthily ladder while an instruction list or structured text can easily achieved with few lines. So ladder is not good enough at all places.
 
-Ladder Programming
+##### Ladder Programming
 
 It is generally based on components with GUI demonstration and for executing each out put one line of ladder is required and set of lines will called as a program and at the start and end it will have to stop -| slashes like this and finally it will look like ladder that why they called it as Ladder program, not sure I just heard as so :P :) .
 
