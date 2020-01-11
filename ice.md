@@ -2,19 +2,19 @@
 
 ## **First Day : 2014.10.27**
 
-That day, Actually I have no idea about this "ICE" rather than the things heard from the mentoring session and seniors. But Unlike I worried, it was a very pleasant class that day, just listening to what I am hearing spending that 2 hours with my thoughts. And that how it ended up finally but maybe that was not a good day of the start but I feel lucky when it comes to the End of semester :). Nothing is Strange at Final: Everything is Strange at Beginning. A quiet enough philosophy we are following years and years :P :)
+That day, Actually I have no idea about this "ICE" rather than the things heard from the mentoring session and seniors. But Unlike I worried, it was a very pleasant class that day, just listening to what I am hearing spending that 2 hours with my thoughts. And that how it ended up finally but maybe that was not a good day of the start but I feel lucky when it comes to the End of semester :relaxed:. Nothing is Strange at Final: Everything is Strange at Beginning. A quiet enough philosophy we are following years and years :stuck_out_tongue_closed_eyes: :relaxed:
 
 ## **Ideas and Concepts**
 
 I get some basic ideas about the kinds of stuff. Especially in Object Oriented Programming and Embedded System Programming. I divide those kinds of stuff into categories and I will share the Experience.
 
-#### Object Oriented Programming (OOPS :P :) )
+#### Object Oriented Programming (OOPS :stuck_out_tongue_closed_eyes: :relaxed: )
 
-It was quite similar we just concern about some practical real-time scenarios unlike the typical examples provided. I was grateful to have such a good professor to nicely explain all the principles ineffective way to understand by poor kids like me. I loved the way of teaching. Initially, when I start studying class it looks like to strange because most of the lessons and ideas are new to me. but later on, teaching with proper examples, and practice questions help me to improve on my OOPS skills. :) :P
+It was quite similar we just concern about some practical real-time scenarios unlike the typical examples provided. I was grateful to have such a good professor to nicely explain all the principles ineffective way to understand by poor kids like me. I loved the way of teaching. Initially, when I start studying class it looks like to strange because most of the lessons and ideas are new to me. but later on, teaching with proper examples, and practice questions help me to improve on my OOPS skills. :relaxed: :stuck_out_tongue_closed_eyes:
 
 #### Embedded Programming
 
-This was strange at the beginning because actually, I have no idea till I studied deeply in the coming semesters. I will share the experience regarding that more deeply in the related parts. Keep Smiling :).
+This was strange at the beginning because actually, I have no idea till I studied deeply in the coming semesters. I will share the experience regarding that more deeply in the related parts. Keep Smiling :relaxed:.
 
 #### **Development and Improvement**
 
@@ -32,13 +32,13 @@ This is just an overview of the things I have learned. Specified Topics for Some
 
 #### **Instrumentation Con-Trolls**
 
-Apart from the last two topics discussed above, this is different. I had undergone quite a learning process during this period of ICE, semester 5. End of semester :P :).I had learned two subjects, one is the control system and another is instrumentation.
+Apart from the last two topics discussed above, this is different. I had undergone quite a learning process during this period of ICE, semester 5. End of semester :stuck_out_tongue_closed_eyes: :relaxed:.I had learned two subjects, one is the control system and another is instrumentation.
 
 Control System means generally a feedback system that use to enhance the system performance by proper feedback of the values required. For ease of studies, these are deal with S - Domain regardless of the usual time Domain system.
 
 General Open Loop System : Y = P X .where X is Input, Y is Output and P is Process.
 
-In case of Feedback it will change into, Y = XP / (1 + P) if it has a function F then 1 will replace with F, if it has control like PID Control it will multiply by the control factor C and also P is replaced by PC, thus final Y = XPC / (F +PC). This is the one-word summary of the control system. it doesn't deal with MATHS it deals with physical entities.
+In case of Feedback it will change into, Y = XP / (1 + P) if it has a function F then 1 will replace with F, if it has control like PID Control it will multiply by the control factor C and also P is replaced by PC, thus final Y = XPC / (F + PC). This is the one-word summary of the control system. it doesn't deal with MATHS it deals with physical entities.
 
 PID Control: Proportional (Kp) Integral (Ki) Deferential (Kd), This has the same meaning as maths, this applies effectively to get control values.
 
@@ -69,10 +69,10 @@ For us we were tried to get familiar with Ladder Program which was quite easy at
 
 #### Ladder Programming
 
-It is generally based on components with GUI demonstration and for executing each output one line of ladder is required and set of lines will be called as a program and at the start and end it will have to stop -| slashes like this and finally it will look like ladder that why they called it as Ladder program, not sure I just heard as so :P :).
+It is generally based on components with GUI demonstration and for executing each output one line of ladder is required and set of lines will be called as a program and at the start and end it will have to stop -| slashes like this and finally it will look like ladder that why they called it as Ladder program, not sure I just heard as so :stuck_out_tongue_closed_eyes: :relaxed:.
 
 Tools Required for Ladder Programming: XCP Program tool and XC3- PLC can be used to do practicals efficiently with Ladder Programming.
 
-These are just some basic ideas and concepts if time supports I will share ideas deeply from what I learned. :P :)
+These are just some basic ideas and concepts if time supports I will share ideas deeply from what I learned. :stuck_out_tongue_closed_eyes: :relaxed:
 
 [Project Records](https://amutheezan.files.wordpress.com/2016/08/projects.pdf)
