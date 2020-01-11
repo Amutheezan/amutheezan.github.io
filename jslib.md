@@ -41,18 +41,19 @@ This is used for creating dynamic maps with our custom styles and standards.
 Note: When loading contents first load the div then run function, or setup timeout or async property to work it fine.
 
 ```javascript
-setTimeout( function() {
-mymap = L.map('mapid').setView([45, -180], 2);
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-attribution: 'Map data © [OpenStreetMap](http://openstreetmap.org) contributors, [CC-BY-SA](http://creativecommons.org/licenses/by-sa/2.0/), Imagery © [Mapbox](http://mapbox.com)',
-    maxZoom: 18,
-    id: '**yourMapId**',
-    accessToken: '**yourAccessToken**'
-    }).addTo(mymap);
-    }, 10);
+setTimeout( function() 
+{
+    mymap = L.map('mapid').setView([45, -180], 2);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data © [OpenStreetMap](http://openstreetmap.org) contributors, [CC-BY-SA]             (http://creativecommons.org/licenses/by-sa/2.0/), Imagery © [Mapbox](http://mapbox.com)',
+        maxZoom: 18,
+        id: '**yourMapId**',
+        accessToken: '**yourAccessToken**'
+        }).addTo(mymap);
+ }, 10);
 ```
 
-Here we need to set yourMapId, and yourAccessToken by registering on https://www.mapbox.com/.
+Here we need to set ```yourMapId```, and ```yourAccessToken``` by registering on [https://www.mapbox.com/](https://www.mapbox.com/).
 
 ## **Data-tables**
 
