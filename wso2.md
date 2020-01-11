@@ -173,7 +173,7 @@ We can use jaggery controller at dashboard rather than deploying it at ```/porta
 
 **Template manager**
 
-This used for complex event processing related concepts mainly, it is best practice for making the ```custom publisher```, ```executionplans```, ```event store```, ```eventstream```.
+This used for complex event processing related concepts mainly, it is best practice for making the custom ```publisher```, ```executionplans```, ```eventstore```, ```eventstream```.
 
 ### **References**
 
