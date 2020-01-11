@@ -1,7 +1,5 @@
 # Amutheezan
 
-![43029184_2337184136323242_7897163818923458560_o](https://amutheezan.files.wordpress.com/2019/10/43029184_2337184136323242_7897163818923458560_o.jpg)
-
 I joined in the Resilient Networks and Systems (RNS) Lab as a **Ph.D. Student** in Fall 2019. My research interest is in **Machine Learning and Data Mining**. I graduated with **Bachelors's in Computer Science and Engineering** from the University of Moratuwa, Srilanka in 2017. I have previously worked as a **Software Engineering Intern** in WSO2 Lanka (PVT) Ltd under Data-Analytics Team from July - Dec 2016. I also worked as a **Software Engineer** in MillenniumIT Software (PVT) Ltd under Post-Trade Team from Jan 2018 - Jul 2019.
 
 Internship
