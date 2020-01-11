@@ -12,6 +12,6 @@ This Ceu language was used make an Arduino binding through Ceu-Arduino which hel
 -   Interrupt-driven operation mode (optional and experimental).
 -   Seamless integration with standard Arduino
 
-References
+### References
 
  1. https://github.com/fsantanna/ceu-arduino
