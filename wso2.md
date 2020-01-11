@@ -66,9 +66,9 @@ These four weeks just another new step, in this phase I mainly deal with two con
 
 Check out these links for things I have done during these 4 weeks,
 
-1.  https://amutheezan.wordpress.com/2016/09/09/configuring-hl7-in-wso2-das/ - This is related to first stuff, this explains actually how I spend my first 3 weeks to configure the HL7
+1. [Configuring HL7 in WSO2 DAS](confhl7das.md) - This is related to first stuff, this explains actually how I spend my first 3 weeks to configure the HL7
 2.  https://amutheezan.wordpress.com/2016/09/13/some-fact-about-hl7-monitoring-solutions/ - This is related to second stuff, this shows about different HL7 monitoring solution and its features.
-3.  https://amutheezan.wordpress.com/2016/09/12/hl7v3-vs-fhir/ - It is not relevant but essential additional research on second stuff, to get clarity over hl7v2,v3, and FHIR.  
+3.  [HL7v3 vs FHIR](hl7v3.md) - It is not relevant but essential additional research on second stuff, to get clarity over hl7v2,v3, and FHIR.  
     So by this, I conclude this Report. I try to include non-technical contents that are not shared in my blog in the future to improve the contents.
 
 > **3rd Four Weeks of Internship @WSO2**
