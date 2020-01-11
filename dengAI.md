@@ -77,7 +77,7 @@ In this project, we proposed an analysis scheme based on the following technique
 
 ### **References**
 
-[1].[https://www.gnu.org/software/octave/doc/v4.0.3/Simple-File-I_002fO.html](https://www.gnu.org/software/octave/doc/v4.0.3/Simple-File-I_002fO.html)
-[2].[https://datascienceplus.com/imputing-missing-data-with-r-mice-package/](https://datascienceplus.com/imputing-missing-data-with-r-mice-package/)
-[3].[https://www.r-bloggers.com/measuring-persistence-in-a-time-series-application-of-rolling-window-regression/](https://www.r-bloggers.com/measuring-persistence-in-a-time-series-application-of-rolling-window-regression/)
-[4].[http://www.mathematica-journal.com/2013/06/negative-binomial-regressio](http://www.mathematica-journal.com/2013/06/negative-binomial-regression/)
+1. [https://www.gnu.org/software/octave/doc/v4.0.3/Simple-File-I_002fO.html](https://www.gnu.org/software/octave/doc/v4.0.3/Simple-File-I_002fO.html)
+2. [https://datascienceplus.com/imputing-missing-data-with-r-mice-package/](https://datascienceplus.com/imputing-missing-data-with-r-mice-package/)
+3. [https://www.r-bloggers.com/measuring-persistence-in-a-time-series-application-of-rolling-window-regression/](https://www.r-bloggers.com/measuring-persistence-in-a-time-series-application-of-rolling-window-regression/)
+4. [http://www.mathematica-journal.com/2013/06/negative-binomial-regressio](http://www.mathematica-journal.com/2013/06/negative-binomial-regression/)
