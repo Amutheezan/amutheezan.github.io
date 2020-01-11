@@ -23,7 +23,7 @@ Finally, the first four weeks end with Orientation and Research on the Project o
 
 #### Problem 1:
 
-Description: When trying to build wso2das which was clone from GitHub using command "mvn clean install". It was not built successfully as It has
+Description: When trying to build wso2das which was clone from GitHub using command ```mvn clean install```. It was not built successfully as It has
 
 Solution Applied: So I try it without test using ```mvn clean install -Dmaven.skip.test=true``` as instructed in Apache Maven. and it works fine. (it was said that still, that is in production it may have issues with tests :relaxed: )
 
@@ -102,9 +102,9 @@ Just before getting into what it is, just think about a JSON file, it contains a
 
 Basically, for every ```PrivilagedCarbonContext``` there exists a tenant Id, based on the application it can be predefined or received from the parent. For HL7 it is defined from the parent so we need to get the parent tenant id and use it for the child. We can't manually hard code or set the values for tenant ID
 
-### ** Events Participated **
+### **Events I Participated**
 
-I participated in Smart@ss quiz under Wild Boars Team 1, with Janaka, Anjana and other 7 People of WSO2. It was a quite challenging quiz. It contains five rounds with questions from current affairs, sports, entertainment, countries, foods. We got 5 out of 8. Anyway, I enjoyed the events. :smiley: :relaxed:
+I participated in **Smart@ss** quiz under WildBoars Team 1, with Janaka, Anjana and other 7 People of WSO2. It was a quite challenging quiz. It contains five rounds with questions from current affairs, sports, entertainment, countries, foods. We got 5 out of 8. Anyway, I enjoyed the events. :smiley: :relaxed:
 
 ### **References**
 
