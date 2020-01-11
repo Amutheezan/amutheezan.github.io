@@ -1,10 +1,10 @@
-# Packaging Artifacts as CApp
+# Packaging Artifacts as Carbon Applications
 
 **Warning !**
 
 This just based on my project example bit more explainable with some sort come I faced when blindly following the prescribed instructions, some time it may not suitable in some cases.But this is somehow useful.
 
-**CApp**
+**Carbon Applications - CApp**
 
 CApp defines the composite apps containing several artifacts related to analytics both real-time and batch analytics. It contains
 
