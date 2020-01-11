@@ -1,5 +1,5 @@
 # HL7 ACK
-**Warning !**
+#### **Warning !**
 
 This content is based on my study on the topic, by googling and this is just to share some thoughts and views about the topic. Using this for official purposes is at your own risk.
 
@@ -17,7 +17,7 @@ In addition,
 
 these ACK are in normal mode or enhanced mode, thus normal mode ACKs are AA,AR,AE and enhanced mode ACKs ARE CA,CR,CE.In normal mode the field 15 and 16 with contains about message and application acknowledgement type is being null, where as in enhance mode one of this can be null not too.
 
-References
+### References
 
 1.  https://catalyze.io/learn/hl7-202-the-hl7-ack-acknowledgement-message
 2.  https://www.hl7.org/documentcenter/public_temp_088CF1E1-1C23-BA17-0C4227727B2BEC42/wg/conf/HL7MSH.htm
