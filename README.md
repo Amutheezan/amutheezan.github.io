@@ -1,6 +1,6 @@
 # Amutheezan
 
-I joined in the Resilient Networks and Systems (RNS) Lab as a **Ph.D. Student** in Fall 2019. My research interest is in **Machine Learning and Data Mining**. I graduated with **Bachelors's in Computer Science and Engineering** from the University of Moratuwa, Srilanka in 2017. I have previously worked as a **Software Engineering Intern** in WSO2 Lanka (PVT) Ltd under Data-Analytics Team from July - Dec 2016. I also worked as a **Software Engineer** in MillenniumIT Software (PVT) Ltd under Post-Trade Team from Jan 2018 - Jul 2019.
+I joined in the Resilient Networks and Systems (RNS) Lab as a **Ph.D. Student** in Fall 2019. My research interest is in **Machine Learning and Data Mining**. I graduated with **Bachelors's in Computer Science and Engineering** from the University of Moratuwa, Srilanka in 2017. I have previously worked as a **Software Engineering Intern** in WSO2 Lanka (PVT) Ltd under Data-Analytics Team from July 2016 - Dec 2016. I also worked as a **Software Engineer** in MillenniumIT Software (PVT) Ltd under Post-Trade Team from Jan 2018 - Jul 2019.
 
 Internship
 1. [WSO2 INTERNSHIP](wso2.md)
@@ -12,8 +12,8 @@ Internship
 7. [Carbon Component](cc.md)
 8. [Packaging Artifacts as CApp](capp.md)
 9. [Search Comparator & Apache Lucene](search.md)
-10. [SOME USEFUL JAVASCRIPT LIBRARIES](jslib.md)
-11. [Datatables Makes Things Easy](dt.md)
+10. [Datatables Makes Things Easy](dt.md)
+11. [Some Useful Javascript Libraries](jslib.md)
 
 Intergrated Computer Engineering
 1. [Intergrated Computer Engineering Stream](ice.md)
