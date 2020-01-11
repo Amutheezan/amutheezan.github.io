@@ -1,10 +1,10 @@
 # Packaging Artifacts as Carbon Applications
 
-**Warning !**
+#### **Warning !**
 
-This just based on my project example bit more explainable with some sort come I faced when blindly following the prescribed instructions, some time it may not suitable in some cases.But this is somehow useful.
+This just based on my project example bit more explainable with some sort come I faced when blindly following the prescribed instructions, sometimes it may not suitable in some cases. But this is somehow useful.
 
-**Carbon Applications - CApp**
+## **Carbon Applications - CApp**
 
 CApp defines the composite apps containing several artifacts related to analytics both real-time and batch analytics. It contains
 
@@ -19,9 +19,9 @@ CApp defines the composite apps containing several artifacts related to analytic
 9.  Dashboard
 10.  Data Purging * - Use to purge the data from data store made by event store
 
-We can build the CApp using the .pom file associate with ant build. At the target folder the relative CApp will be build in .car format. We can use the .car file to deploy as Carbon Application at management console level, and Deploy all artifacts included.
+We can build the CApp using the .pom file associate with an ant build. At the target folder, the relative CApp will be built in .car format. We can use the ```.car``` file to deploy as the Carbon Application at the management console level and Deploy all artifacts included.
 
-Sample build.xml, and pom.xml file are as follows
+Sample ```build.xml```, and ```pom.xml``` file are as follows
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -49,7 +49,7 @@ Sample build.xml, and pom.xml file are as follows
 
 </project>
 ```
-We can add over own property name and value based on our use cases, capp models. and in the zip we just point relevant parameter to be zipped into the location we want; for general we used to have it on target folder.
+We can add over own property name and value based on our use cases, capp models. and in the zip we just point relevant parameter to be zipped into the location we want; for general we used to have it on the target folder.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -107,11 +107,11 @@ We can add over own property name and value based on our use cases, capp models.
 
 This the pom.xml file for all capps, you need to build this to get capps you want(the capps you preferred at the build.xml file)
 
-**NOTE :**
+##  **NOTE **
 
-To include jaggery-apis with capps we can implement jaggery controller at the level of gadget level rather than jaggery apps level. That will ease our task when we deploying capps.
+To include jaggery-apis with capps we can implement a jaggery controller at the level of gadget level rather than jaggery apps level. That will ease our task when we deploying capps.
 
-Reference I looked in,
+### References
 
-1.  https://docs.wso2.com/display/DAS310/Packaging+Artifacts+as+a+C-App+Archive
-2.  http://udarakr.blogspot.com/2016/01/build-carbon-applicationcapp-for-wso2.html
+1. [https://docs.wso2.com/display/DAS310/Packaging+Artifacts+as+a+C-App+Archive](https://docs.wso2.com/display/DAS310/Packaging+Artifacts+as+a+C-App+Archive)
+2. [http://udarakr.blogspot.com/2016/01/build-carbon-applicationcapp-for-wso2.html](http://udarakr.blogspot.com/2016/01/build-carbon-applicationcapp-for-wso2.html)
