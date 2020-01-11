@@ -4,7 +4,7 @@
 
 The contents do not belong exactly to me based on blog posts and articles and search I have made on related topics. The reference I shared at the end can be reliable but It may be outdated. Some Issues I faced during this can be discussed here.
 
-## **Maven (Some of my contents are specific to Intelliej Idea)**
+## **Maven (Some of my contents are specific to IntelliJ IDEA)**
 
 A maven is a build tool like Ant and Gradle, it is IDE independent. In maven projects, we will generally have a file ```POM.xml``` inside each maven project and sub-projects. It will contain details about projects, parent projects, dependencies, plugins, repositories and plugin repositories.
 
