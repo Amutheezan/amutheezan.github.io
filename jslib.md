@@ -4,26 +4,6 @@
 
 These post contents are just for the purpose of sharing some issues I faced during my Internship projects for design iframe for gadget designing. I hope it will be the same work for HTML pages too.
 
-## **Accordion - Not a Library**
-
-This is inside the JQuery, you need to add the JQuery related js files and CSS files and also JQuery UI related js and CSS file for better functioning. Download the Images folder too to get the relevant Images for accordion styles.
-
-Sample toggling function of expanding and collapse, this will display the collapse data during the first click and collapse it back in the second click.
-
-```javascript
-$('.accordion-toggle').click(function() {
-if($('.accordion-toggle').hasClass('collapsed')){
-$('.accordion-toggle').removeClass('collapsed');
-$('.accordion-inner').removeClass('collapse');
-}else{
-$('.accordion-toggle').addClass('collapsed')
-$('.accordion-inner').addClass('collapse');
-}
-});
-```
-
-For the case where you use more than two Accordion, it is better to deal with id rather than using the class, and we need to add function when we are dynamically generating it(if we are dynamically generating it)
-
 ## **Select2**
 
 ```Select2``` is a developed combo box with single, multiple selections, searching, branched selection and remove selection option, and it styles the combo box. Look at its GitHub page[1] for its source code and it's the website for more examples[2]. It was a really cool thing to use. And when we created Combobox using this to run efficiently we need to add the required ```select2.css```, ```select2.js``` and ```select2.min.js``` files whether locally or online. When using locally include the images folder inside the CSS folder, otherwise, some styles related to images won't appear. And to initialize the ```select2``` we generally follow the following syntax
@@ -54,6 +34,26 @@ setTimeout( function()
 ```
 
 Here we need to set ```yourMapId```, and ```yourAccessToken``` by registering on [https://www.mapbox.com/](https://www.mapbox.com/).
+
+## **Accordion - This is not a Library**
+
+This is inside the JQuery, you need to add the JQuery related js files and CSS files and also JQuery UI related js and CSS file for better functioning. Download the Images folder too to get the relevant Images for accordion styles.
+
+Sample toggling function of expanding and collapse, this will display the collapse data during the first click and collapse it back in the second click.
+
+```javascript
+$('.accordion-toggle').click(function() {
+if($('.accordion-toggle').hasClass('collapsed')){
+$('.accordion-toggle').removeClass('collapsed');
+$('.accordion-inner').removeClass('collapse');
+}else{
+$('.accordion-toggle').addClass('collapsed')
+$('.accordion-inner').addClass('collapse');
+}
+});
+```
+
+For the case where you use more than two Accordion, it is better to deal with id rather than using the class, and we need to add function when we are dynamically generating it(if we are dynamically generating it)
 
 ## **Data-tables**
 
