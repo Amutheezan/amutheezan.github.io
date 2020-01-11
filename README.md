@@ -5,8 +5,8 @@ I joined in the Resilient Networks and Systems (RNS) Lab as a **Ph.D. Student** 
 ### Machine Learning and Data Mining
 1. [DengAI : Predicting Disease Spread - A tale of Two cities](dengAI.md)
 
-### Intergrated Computer Engineering
-1. [Intergrated Computer Engineering Stream](ice.md)
+### Integrated Computer Engineering
+1. [Integrated Computer Engineering Stream](ice.md)
 2. [Short Semester 6](ss6.md)
 3. [Configure MySQL for Arduino through Python](ardupython.md)
 4. [Multi-tag Reading with RDM6300?](rdm.md)
