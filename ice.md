@@ -1,6 +1,6 @@
 # Intergrated Computer Engineering Stream
 
-## **First Day : 2014 .10.27**
+## **First Day : 2014.10.27**
 
 That day, Actually I have no idea about this "ICE" rather than the things heard from mentoring session and from seniors.But Unlike I worried, it was a very pleasant class that day, just listening what I am hearing spending that 2 hours with my own thoughts. And that how it ended up finally but may be that was not a good day of start but I feel lucky when it comes to the End of semester :). Nothing is Strange at Final : Everything is Strange at Beginning. A quite enough philosophy we are following years and years :P :)
 
