@@ -1,12 +1,12 @@
 # Configure MySQL for Arduino through Python
 
-**GUIDE IS ONLY FOR WINDOWS**
+## **GUIDE IS ONLY FOR WINDOWS**
 
 **Warning !**
 
 This content is not my own. It was based on my research made on this topic. So I just share how things done in-order to achieve this.Not any sample code, Because I copied everything.
 
-**Steps**
+### **Steps**
 
 1.  Install XAMPP, open it's control panel and start apache and mysql. and click admin button, and goto phpmyadmin and create this your relavent database to store the data and create the corresponding tables.
 2.  Install Python 2.7, and install "**pyserial**", "**MYSQLdb**" libraries.
@@ -15,7 +15,7 @@ This content is not my own. It was based on my research made on this topic. So I
     3.  Then create the require python program to write to database. for this you need to add two statements "import serial" and "import MysqlDb".
 3.  Install Arduino, and Write the code You want to operate. and to read values form sensor , print the data using "**Serial**.Println(readData);" this will acquired by the relevant python file.
 
-**GENERAL NOTE**
+### **GENERAL NOTE**
 
 In some cases if mysqlDb is not figured out by the python include the following line.It is because of two reasons, any other installation of python related products such as anaconda etc, or you tried the stuff using pip installer(for this you may also have to set path variable) .
 
