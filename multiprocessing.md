@@ -12,19 +12,20 @@ thus avoid redundant implementation of same ```multiprocessing``` structure each
 every time of implementation. Motivation for this implementation is based on the discussion I
 had in stackoverflow regarding proper way to implement ```SharedList```.
 
-Sample Use Case of **CustomMP** (see pyparallel/cmp_test.py for full implementation)
+Sample Use Case of **CustomMP**
 
 ```python
-        from pyparallel.CustomMP import CMPSystem
+from pyparallel.CustomMP import CMPSystem
 
-        limit = 4
-        args = (1,)
-        cmp_sys = CMPSystem(limit)
-        cmp_sys.add_proc(func=child_func, args=(args,))
-        contents = cmp_sys.run()
-        print(len(contents))
+limit = 4
+args = (1,)
+cmp_sys = CMPSystem(limit)
+cmp_sys.add_proc(func=child_func, args=(args,))
+contents = cmp_sys.run()
+print(len(contents))
 ```
     
 ### **References**
-   1. https://stackoverflow.com/questions/58927768/what-is-proper-way-to-use-shared-list-in-multiprocessing
+   1. [https://stackoverflow.com/questions/58927768/what-is-proper-way-to-use-shared-list-in-multiprocessing](https://stackoverflow.com/questions/58927768/what-is-proper-way-to-use-shared-list-in-multiprocessing)
+   2. [https://github.com/Amutheezan/PyParallel](https://github.com/Amutheezan/PyParallel)
    
