@@ -26,7 +26,7 @@ I had No clear idea on how these message passes at the beginning, just an rough 
 
 Don't enable before Installing it will result it error :) :D. Hope you guys have understand what I meant.
 
-## **NOTES ON ERRORS I MADE**
+#### **NOTES ON ERRORS I MADE**
 
 When doing step 2 for my first try I mistakenly included the parameters for service in axis2.xml file, and with the help of Malith aiyaa, I correct it and put it into the proxy service I have edited from the one available in Documentation.
 
@@ -36,7 +36,7 @@ For Creating a Customproxy Service, In the main tab of ESB management console I 
 
 ssl,tcp – this address need to be edited based on the configuration of offset of DAS Server related ssl, tcp, generally it will be avilable as ```https://localhost:9712+offset/ and http://localhost:9612+offset/```
 
-## **GENERAL NOTE**
+#### **GENERAL NOTE**
 
 Offset Can be configured in ```<WSO2ANYSERVERHOME>/repository/conf/carbon.xml``` file just need to change value for ```<offset></offset>``` tag with suitable values without conflict with each other. Other wise it we can’t run two servers at same time.
 
@@ -46,15 +46,15 @@ NEXT,
 
 We need to configure BAM, it is not actually configure just deploy carbon toolbox for hl7 which is available in ```<BAM-HOME>/samples/toolboxes/hl7.tbox```. And then goto message console dash board and select ```bam_hl7_data_event_store:1.0.0.``` and choose the choices for the search result and just search values.
 
-### **FINAL NOTE FOR THIS SECTION**
+#### **FINAL NOTE FOR THIS SECTION**
 
 I didn't add much things deeply because you can access these this directly from the WSO2 ESB and BAM documentation. I also put reference in the top of post, Just look at it if you have any additional queries.(such as , how to deploy toolbox,...)
 
 ## **SECTION : 02**
 
-### _**Finally With ESB 4.9.0 and DAS**_
+#### _**Finally With ESB 4.9.0 and DAS**_
 
-#### Product required:ESB 4.9.0 and DAS 3.1.0 (not final version)
+##### Product required:ESB 4.9.0 and DAS 3.1.0 (not final version)
 
 For this we don’t have any changes in ESB Side, just we need to edit proxy service parameter values to fit the offset of DAS server.
 
@@ -62,7 +62,7 @@ In DAS we need to create a stream named as bam_hl7_data_event_store:1.0.0, using
 
 If you tried 1, 2 you won’t get any result set, there is some more things to setup. For this we additionally use HAPi Test Panel which will send HL7 Message to ESB which has port 9292 opened at ESB, then using proxy service it will sent details to “```hl7acceptor```”.( this should be initialized by goto ```<ESB-HOME>/samples/axis2Client/``` and try ant hl7accpetor, after replacing an custom ```build.xml``` file.) . Then the proxy service will publish the data in,out respectively to BAM or ESB based on configuration you made, and you can observe the result. For DAS, we need to Modify stream, in addition to the given json file by adding persistent events which we required to view.
 
-### **SPECIAL NOTES**
+#### **SPECIAL NOTES**
 
 For Real Case, we need to develop a capps(carbon applications) which should be deployed in DAS and do all these stuffs related to streams and data exploring.
 
@@ -161,7 +161,7 @@ Moving to a new section,
 
 ## **SECTION : 03**
 
-### **Configuring HL7 Publishing in DAS with ESB 5.0.0**
+#### **Configuring HL7 Publishing in DAS with ESB 5.0.0**
 
 Problem No 01:- Unable to Deploy Proxy service which is exactly same as the one I added above, it causes due to the issue in the version of Business Adaptor HL7 I install ed, for this I locally create a repo and add the feature connection worked fine after I was success fully deployed, but there comes another problem.
 
@@ -202,7 +202,7 @@ by adding dependency for das
     <artifactId>org.wso2.carbon.das.data.publisher.util</artifactId>
 </dependency>
 ```
-### **NOTES ON ERRORS I MADE**
+#### **NOTES ON ERRORS I MADE**
 
 Small Issue You get If you blindly renaming without any Idea, thus just change das from bam will result in version error,when you build the project so beware of it.
 
@@ -232,9 +232,9 @@ Because groupId has also changed, you can check it with parent POM file.
 
 And Finally HL7 Configured With ESB 5.0.0 and DAS 3.1.0.
 
-### **CONCLUSIVE NOTES**
+## **CONCLUSIVE NOTES**
 
-## Working with Patches.
+#### Working with Patches.
 
 For this process we need to Setup HL7 Transport, generally in ESB management console. we add features using local repository or repository from external link. Some time for latest releases the features from carbon mediation not added/ missed while adding. This can be done by location repository locally.
 
