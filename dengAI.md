@@ -6,7 +6,7 @@ This is a short descriptive post based on our project done for CS4642 Module, Da
 
 ## **Background to data-mining Task**
 
-Dengue fever is causing  Dengue is a mosquito-borne disease that occurs in tropical and subtropical parts of the world. In mild cases, symptoms are similar to the flu: fever, rash and muscle, and joint pain. But severe cases are dangerous, and dengue fever can cause severe bleeding, low blood pressure, and even death. Because it is carried by mosquitoes, the transmission dynamics of dengue are related to climate variables such as temperature and precipitation. Although the relationship to climate is complex, a growing number of scientists argue that climate change is likely to produce distributional shifts that will have significant public health implications worldwide.
+Dengue fever is causing serious threat to man kind recent days. It is a mosquito-borne disease that occurs in tropical and subtropical parts of the world. In mild cases, symptoms are similar to the flu: fever, rash and muscle, and joint pain. But severe cases are dangerous, and dengue fever can cause severe bleeding, low blood pressure, and even death. Because it is carried by mosquitoes, the transmission dynamics of dengue are related to climate variables such as temperature and precipitation. Although the relationship to climate is complex, a growing number of scientists argue that climate change is likely to produce distributional shifts that will have significant public health implications worldwide.
 
 ## **Methodology**
 
