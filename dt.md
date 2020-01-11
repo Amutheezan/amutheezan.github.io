@@ -1,0 +1,107 @@
+# Datatables Makes Things Easy
+**Warning !**
+
+This is based on my self research,Jerad aiyaa's guidance. The things I included here are based on the things I looked in, but Data-tables are more things to dealt with.
+
+Data tables are jquery based library which is used to make the tables looks nice and display, searching, pagination and other lots of facilities. Though the default table can manually do this stuff, this library enhance the performance when handling the larger data. This will do function such as searching, pagination, ordering like an SQL engine does in server side;As such, each draw of the table will result in a new Ajax request being made to get the required data.
+
+**SERVER SIDE PROCESSING**
+
+This was highly usable feature in Data table compare to client side processing, since it can handle large data's. To enable this when we initiate the data tables we will set "serverSide", "processing" to true.
+
+```javascript 
+{  
+"serverSide": true,  
+"processing": true  
+}
+```
+
+
+**DOM STRUCTURE & OTHER FEATURES**
+
+DOM structure is used to define the structure of table and positioning of table.Check the link for clear reference [3].
+
+Height of Data-table can be added by "ScrollY" value that is generally 200-400px in size as needed for scenario.
+
+When fetching data from ajax call and displaying it in table,we often use column description first we mention "title", then "data" (this data should be correspondent to the data received in JSON) lastly if we want to "render" any changes (Eg : convert time stamp to user readable Date time we can do by "render", this also can be placed in "columnDef" also.
+
+```javascript 
+Column[{  
+"title": 'Date and Time',  
+"data": 'timestamp',  
+"render": function(format....)  
+}]
+```
+
+Hidden columns can be obtain by defining the column definition by specifying the target id(normally id starting from 0) and make the property "visible" to false, and in case if you omit "searching"(since there is a default search provided in data tables) you can make searching property also to false. But for some cases when you need to get value from hidden make it as true or don't mention it in column definition ("columnDef") [4][5].
+
+```javascript 
+ColumnDef[{  
+"target": [2], // this can be multiple columns  
+"visible": false,  
+"searching": false  
+}]
+```
+
+**Warning !**
+
+This is based on my self research,Jerad aiyaa's guidance. The things I included here are based on the things I looked in, but Data-tables are more things to dealt with.
+
+Data tables are jquery based library which is used to make the tables looks nice and display, searching, pagination and other lots of facilities. Though the default table can manually do this stuff, this library enhance the performance when handling the larger data. This will do function such as searching, pagination, ordering like an SQL engine does in server side;As such, each draw of the table will result in a new Ajax request being made to get the required data.
+
+**SERVER SIDE PROCESSING**
+
+This was highly usable feature in Data table compare to client side processing, since it can handle large data's. To enable this when we initiate the data tables we will set "serverSide", "processing" to true.
+
+```javascript
+{  
+"serverSide": true,  
+"processing": true  
+}
+```
+
+**DOM STRUCTURE & OTHER FEATURES**
+
+DOM structure is used to define the structure of table and positioning of table.Check the link for clear reference [3].
+
+Height of Data-table can be added by "ScrollY" value that is generally 200-400px in size as needed for scenario.
+
+When fetching data from ajax call and displaying it in table,we often use column description first we mention "title", then "data" (this data should be correspondent to the data received in JSON) lastly if we want to "render" any changes (Eg : convert time stamp to user readable Date time we can do by "render", this also can be placed in "columnDef" also.
+
+```javascript
+Column[{  
+"title": 'Date and Time',  
+"data": 'timestamp',  
+"render": function(format....)  
+}]
+```
+
+Hidden columns can be obtain by defining the column definition by specifying the target id(normally id starting from 0) and make the property "visible" to false, and in case if you omit "searching"(since there is a default search provided in data tables) you can make searching property also to false. But for some cases when you need to get value from hidden make it as true or don't mention it in column definition ("columnDef") [4][5].
+
+```javascript
+ColumnDef[{  
+"target": [2], // this can be multiple columns  
+"visible": false,  
+"searching": false  
+}]
+```
+
+We can also add button to expand and collapse child contents in data table. For that we can add column definition with defining "class", "defaultValue" and some others like below example. And in css we can handle the button backgrounds for collapse and expand. And add bind function for class on main function and make it work.[6]
+
+```javascript
+{  
+"className": 'details-control',  
+"orderable": false,  
+"data": null,  
+"defaultContent": ''  
+}
+```
+
+References I looked in,
+
+1.  https://datatables.net
+2.  https://datatables.net/examples/data_sources/server_side.html
+3.  https://datatables.net/examples/basic_init/dom.html
+4.  https://datatables.net/reference/option/ajax
+5.  https://datatables.net/examples/basic_init/hidden_columns.html
+6.  https://datatables.net/examples/api/row_details.html
