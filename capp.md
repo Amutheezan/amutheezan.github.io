@@ -105,7 +105,7 @@ We can add over own property name and value based on our use cases, capp models.
 </project>
 ```
 
-This the ```pom.xml``` file for all capps, you need to build this to get capps you want(the capps you preferred at the build.xml file)
+This the ```pom.xml``` file for all capps, you need to build this to get capps you want(the capps you preferred at the ```build.xml``` file)
 
 ##  **NOTE **
 
