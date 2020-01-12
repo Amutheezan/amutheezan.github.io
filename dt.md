@@ -32,7 +32,7 @@ Column[{
 }]
 ```
 
-Hidden columns can be obtained by defining the column definition by specifying the target id(normally id starting from 0) and make the property "visible" to false, and in case if you omit ```searching``` (since there is a default search provided in data tables) you can make searching property also to false. But for some cases when you need to get value from hidden make it as true or don't mention it in column definition (```columnDef```) [4], (https://datatables.net/reference/option/ajax)[5](https://datatables.net/examples/basic_init/hidden_columns.html).
+Hidden columns can be obtained by defining the column definition by specifying the target id(normally id starting from 0) and make the property "visible" to false, and in case if you omit ```searching``` (since there is a default search provided in data tables) you can make searching property also to false. But for some cases when you need to get value from hidden make it as true or don't mention it in column definition (```columnDef```) [4](https://datatables.net/reference/option/ajax), [5](https://datatables.net/examples/basic_init/hidden_columns.html).
 
 ```javascript 
 ColumnDef[{  
