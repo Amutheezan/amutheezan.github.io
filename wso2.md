@@ -5,6 +5,7 @@
 This was nearly Based on the report I wrote for the university during Internship, but with some value addition.
 
 > **First Four Weeks of Internship @WSO2**
+>
 > **Duration: 25th of July, 2016 to 19th of August, 2016**
 
 The first 7 days passed with the orientation and rest passed with the project allocation and other information. In the first 3 days, we had a session regarding the culture, infrastructural introduction to the system, and harassment policies. We also had some sort of technical session regarding the engineering division of the WSO2. Then we were introduced to WSO2 products starting from carbon architecture. Then we learned about some products API Manager, Data Analytics Server, Enterprise Mobility Manager, IoT Server, ESB Server (also about its advancement Integration server which is parallelly developing with ESB- Enterprise Service Bus), Greg.
@@ -60,6 +61,7 @@ A Contradictory Fact: though ESB 4.6.0 which is a lower version than that of ESB
 See You In Next Post With More Stories and Problems with Solutions :relaxed: :smiley:
 
 > **2nd Four Weeks of Internship @WSO2**  
+>
 > **Duration: 22nd of August, 2016 to 15th of September, 2016**
 
 These four weeks just another new step, in this phase I mainly deal with two concepts one is Configuring HL7 Transport with WSO2 Products Namely BAM – Business Activity Monitor and DAS – Data Analytic Server. I have already written enough about Configuring HL7 Transport in my blog post. The second stuff is comparing existing Monitoring Solutions for this I referred to a few monitoring solutions and compare it with BAM. Actually In BAM, by deploying an HL7 toolbox we can do HL7 monitoring through, BAM’s Message Console Dashboard.
@@ -72,6 +74,7 @@ Check out these links for things I have done during these 4 weeks,
     So by this, I conclude this Report. I try to include non-technical contents that are not shared in my blog in the future to improve the contents.
 
 > **3rd Four Weeks of Internship @WSO2**
+>
 > **Duration: 19th of September, 2016 to 14th of October, 2016**
 
 These four weeks are I was deep into the HL7 Monitoring Solution project. First, as a continuation to last week I go on with design review for the new HL7 Monitoring Solution for DAS, and by the end of the week, I get into the project. As the first part of development, I start working with modifying Existing HL7 Data publishers. For this, I have first look at two repositories Carbon-Analytics and Carbon-Analytics-Common of wso2. Then get a basic idea of how to create an event stream service.
@@ -120,6 +123,7 @@ Other Links :
 3.  http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html
 
 > **4th Four Weeks of Internship @WSO2**
+>
 > **Duration: 17th of October, 2016 to 11th of November, 2016**
 
 These four weeks I mainly worked towards designing dashboards, the third and last milestone of my project. I had followed the following order while developing the dashboard, first prepare the spark scripts required to display the analytics related to the HL7. Then I develop the dashboard with existing gadgets using gadget generation wizards. Finally, I started work on the custom dashboard. For all, I tried following the ESB-analytics which has nearly similar aspects like my scenario case. As per the end of these four weeks, I have merely completed the dashboard's summary parts with some fixed regarding chart zooming and charts values are inversely displaying. And working on the search part based on the bam's management console.
@@ -149,6 +153,7 @@ The javascript executing on the client-side can't fetch the data from the server
 1.  http://sachith.withana.net
 
 > **5th Four Weeks of Internship @WSO2**
+>
 > **Duration: 14th of November, 2016 to 9th of December, 2016**
 
 These four weeks I mainly focused on the last parts of my projects, completing the search part and moving into the notification part. I have made the search part to look like the one that existed in the Business Activity Manager's Message Console. I also make it work efficiently for the dashboard level.
@@ -185,6 +190,7 @@ My Blog Links :
 4. [Search Comparator & Apache Lucene](search.md)
 
 > **Last Weeks of Internship @WSO2**
+>
 > **Duration: 14th of December, 2016 to 23rd of December, 2016**
 
 This was nearly the ending of my internship since our company has annual leave starting from 23rd December 2016 for Christmas and New Year; We had only two out of three weeks to complete our overall internship.
