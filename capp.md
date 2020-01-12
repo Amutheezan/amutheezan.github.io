@@ -19,7 +19,7 @@ CApp defines the composite apps containing several artifacts related to analytic
 9.  Dashboard
 10.  Data Purging * - Use to purge the data from data store made by event store
 
-We can build the CApp using the .pom file associate with an ant build. At the target folder, the relative CApp will be built in .car format. We can use the ```.car``` file to deploy as the Carbon Application at the management console level and Deploy all artifacts included.
+We can build the CApp using the ```pom``` file associate with an ant build. At the target folder, the relative CApp will be built in ```.car``` format. We can use the ```.car``` file to deploy as the Carbon Application at the management console level and Deploy all artifacts included.
 
 Sample ```build.xml```, and ```pom.xml``` file are as follows
 
@@ -49,7 +49,7 @@ Sample ```build.xml```, and ```pom.xml``` file are as follows
 
 </project>
 ```
-We can add over own property name and value based on our use cases, capp models. and in the zip we just point relevant parameter to be zipped into the location we want; for general we used to have it on the target folder.
+We can add over own property name and value based on our use cases, capp models. and in the zip we just point relevant parameter to be zipped into the location we want. for general we used to have it on the target folder.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -105,7 +105,7 @@ We can add over own property name and value based on our use cases, capp models.
 </project>
 ```
 
-This the pom.xml file for all capps, you need to build this to get capps you want(the capps you preferred at the build.xml file)
+This the ```pom.xml``` file for all capps, you need to build this to get capps you want(the capps you preferred at the build.xml file)
 
 ##  **NOTE **
 
