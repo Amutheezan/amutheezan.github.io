@@ -2,7 +2,7 @@
 
 #### **Warning !**
 
-This is a short descriptive post based on our project done for CS4642 Module, Data Mining, and Information Retrieval. These particular wordings are my own words and thus it doesn't be exact same of what I have submitted as final :)
+This is a short descriptive post based on our project done for CS4642 Module, Data Mining, and Information Retrieval. These particular wordings are my own words and thus it doesn't be exact same of what I have submitted as final :relaxed:.
 
 ## **Background to data-mining Task**
 
