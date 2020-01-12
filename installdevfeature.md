@@ -22,8 +22,8 @@ When building **COMPONENT** and **FEATURE,** it will generate a zip file in the 
 
 For my project perspective, when building **COMPONENT** and **FEATURE**, It will make the HL7 feature available at ```/home/user/.m2/repositories/``` (the place where all installed repositories installed, and this is the place where maven lookup in search of repositories.).Like this based on your feature, you build the necessary part and make it available at ```/home/user/.m2/repositories/```.
 
-To make this accessible by desired feature installing system in Management console we need to add the particular SNAPSHOT version/latest version of the required feature using the tag in the carbon-feature repository and build it. When building it will add the SNAPSHOT/latest version of the feature to ```p2-repo```. Then by using local repositories, we can install features. [1]
+To make this accessible by desired feature installing system in Management console we need to add the particular SNAPSHOT version/latest version of the required feature using the tag in the carbon-feature repository and build it. When building it will add the SNAPSHOT/latest version of the feature to ```p2-repo```. Then by using local repositories, we can install features [1](http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html).
 
 ### **References**
 
-1.  http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html
+1.  [http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html](http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html)
