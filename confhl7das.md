@@ -2,9 +2,9 @@
 
 #### **Warning !**
 
-Some of Its contents may be subjected to change, I will update on it until I am actively working on it. Because some parts work on manual stuff which may be corrected/ modified on future release don't bother them at all, If you had the same issue just follow else leave it to have fun, happy coding :) :P
+Some of Its contents may be subjected to change, I will update on it until I am actively working on it. Because some parts work on manual stuff which may be corrected/ modified on future release don't bother them at all, If you had the same issue just follow else leave it to have fun, happy coding :smiley: :relaxed:.
 
-Just forget about the heading, before DAS implemented there was BAM used in place of DAS, both of them have some similarities but a lot of difference in their features. So Before going to configure with DAS first, we need to try it with BAM. Because for BAM, the things are already run and we need to set up and deploy stuff. No works with coding :P :).
+Just forget about the heading, before DAS implemented there was BAM used in place of DAS, both of them have some similarities but a lot of difference in their features. So Before going to configure with DAS first, we need to try it with BAM. Because for BAM, the things are already run and we need to set up and deploy stuff. No works with coding :smiley: :relaxed:.
 
 ## **SECTION : 01**
 
@@ -12,7 +12,7 @@ Just forget about the heading, before DAS implemented there was BAM used in plac
 
 ##### **Products required :-ESB 4.8.1/4.9.0 (latest the best, but don't try with 5.0.0)** **and BAM 2.5.0 (last of bam).**
 
-#### References : -
+#### **References**
 
 1.  [https://docs.wso2.com/display/ESB490/Installing+the+HL7+Transport](https://docs.wso2.com/display/ESB490/Installing+the+HL7+Transport)
 2.  [https://docs.wso2.com/display/BAM250/Setting+up+HL7+Data+Agent](https://docs.wso2.com/display/BAM250/Setting+up+HL7+Data+Agent)
@@ -24,7 +24,7 @@ I had no clear idea of how this message passes at the beginning, just a rough id
 
 ```<ESB-HOME>/repository/conf/axis2/axis2.xml``` file. as shown in the documentation. That is enabling related transport builder and formatter which used when receiving HL7 message and format it to XML to processing and convert back to the original form using the builder. Next to a transport listener and receivers. these four are disabled in the ESB, we need to enable once we Install HL7 transport.
 
-Don't enable before Installing it, because it will result in error :) :D. I hope you guys have understood what I meant.
+Don't enable before Installing it, because it will result in error :smiley: :relaxed:. I hope you guys have understood what I meant.
 
 #### **NOTES ON ERRORS I MADE**
 
@@ -52,15 +52,15 @@ I didn't add many things deeply because you can access these directly from the W
 
 ## **SECTION : 02**
 
-#### _**Finally With ESB 4.9.0 and DAS**_
+#### **Finally With ESB 4.9.0 and DAS**
 
 ##### Product required:ESB 4.9.0 and DAS 3.1.0 (not final version)
 
 For this we don’t have any changes in ESB Side, just we need to edit proxy service parameter values to fit the offset of the DAS server.
 
-In DAS we need to create a stream named as bam_hl7_data_event_store:1.0.0, using the JSON file available in BAM, toolbox (when we extract hl7.tbox, it opens to a folder called streamDefn, inside that particular JSON file can be obtained). Then we need to create a receiver based on the streams. Then goto Data Explorer and check the result.
+In DAS we need to create a stream named as ```bam_hl7_data_event_store:1.0.0```, using the JSON file available in BAM, toolbox (when we extract ```hl7.tbox```, it opens to a folder called ```streamDefn```, inside that particular JSON file can be obtained). Then we need to create a receiver based on the streams. Then goto Data Explorer and check the result.
 
-If you tried 1, 2 you won’t get any result set, there are some more things to setup. For this, we additionally use HAPI Test Panel which will send HL7 Message to ESB which has port 9292 opened at ESB, then using proxy service it will send details to “```hl7acceptor```”.( this should be initialized by goto ```<ESB-HOME>/samples/axis2Client/``` and try ant hl7accpetor, after replacing a custom ```build.xml``` file.). Then the proxy service will publish the data in, out respectively to BAM or ESB based on the configuration you made, and you can observe the result. For DAS, we need to Modify stream, in addition to the given JSON file by adding persistent events that we required to view.
+If you tried 1, 2 you won’t get any result set, there are some more things to setup. For this, we additionally use HAPI Test Panel which will send HL7 Message to ESB which has port 9292 opened at ESB, then using proxy service it will send details to “```hl7acceptor```”.( this should be initialized by goto ```<ESB-HOME>/samples/axis2Client/``` and try ```ant hl7accpetor```, after replacing a custom ```build.xml``` file.). Then the proxy service will publish the data in, out respectively to BAM or ESB based on the configuration you made, and you can observe the result. For DAS, we need to Modify stream, in addition to the given JSON file by adding persistent events that we required to view.
 
 #### **SPECIAL NOTES**
 
@@ -176,7 +176,7 @@ Problem No 02: This has occurred when I am sending a message through the HAPI Te
 ```java
 [2016-09-09 09:22:46,573] ERROR - ApplicationRouterImpl Attempting to send error message to remote system.
 ```
-To resolve this generally need to wait for the next version or a patch... For manually doing. (Below parts are based on Jagath Srisikumara Mentoring)
+To resolve this generally need to wait for the next version or a patch. For manually doing. (Below parts are based on Jagath Srisikumara Mentoring)
 
 1. Clone the repository [https://github.com/wso2/carbon-mediation/tree/v4.6.6](https://github.com/wso2/carbon-mediation/tree/v4.6.6)
 2. goto the related location where error occurs,
@@ -185,7 +185,7 @@ To resolve this generally need to wait for the next version or a patch... For ma
 Caused by: java.lang.NoClassDefFoundError: org/wso2/carbon/bam/data/publisher/util/PublisherUtil
         at org.wso2.carbon.business.messaging.hl7.common.data.conf.HL7MessagePublisherConfig.createMessage(HL7MessagePublisherConfig.java:55)
 ```
-then edit the file named HL7MessagePublisherConfig.java by
+then edit the file named ```HL7MessagePublisherConfig.java``` by
 
 Go to ```<dir>/component/business-adaptors/hl7/org.wso2.carbon.business.messaging.hl7.common/```
 
