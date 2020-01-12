@@ -13,13 +13,13 @@ For HL7 also ACK is important to notify the sender, whether the message is reach
 
 Generally, ACK belongs to 3 types.
 
-1.  Accept: the receiver accepts the type of message, this is based on the logic provided in different subsystems present in the medical organization as, laboratory, payment system, doctors system. eg: a laboratory will accept ORU message if it is in the proper format, while the cashier may reject ORU related to the lab. in this case AR/CR type acknowledgment will come.
-2.  Reject: This is by names we can understand the particular message is not accepted by the receiver since it is out of logic or not in the format provided.
-3.  Error: this was occurred by Application error generally due to some issues in decoding the message due to the wrong format. here though they can able to accept the message they can't able to decode may because of version, type issue they will raise an Application error and return ACK with AE, CE type.
+1.  **Accept** : the receiver accepts the type of message, this is based on the logic provided in different subsystems present in the medical organization as, laboratory, payment system, doctors system. eg: a laboratory will accept ORU message if it is in the proper format, while the cashier may reject ORU related to the lab. in this case AR/CR type acknowledgment will come.
+2.  **Reject** : This is by names we can understand the particular message is not accepted by the receiver since it is out of logic or not in the format provided.
+3.  **Error** : this was occurred by Application error generally due to some issues in decoding the message due to the wrong format. here though they can able to accept the message they can't able to decode may because of version, type issue they will raise an Application error and return ACK with ```AE```, ```CE``` type.
 
 In addition,
 
-these acks are in normal mode or enhanced mode, thus normal mode ACKs are AA, AR, AE, and enhanced mode ACKs are CA, CR, CE. In normal mode, the field 15 and 16 with contains about message and application acknowledgment type is being nulled, whereas in enhance mode one of this can be null not too.
+these acks are in normal mode or enhanced mode, thus normal mode ACKs are ```AA```, ```AR```, ```AE```, and enhanced mode ACKs are ```CA```, ```CR```, ```CE```. In normal mode, the ```field 15 and 16``` with contains about message and application acknowledgment type is being nulled, whereas in enhance mode one of this can be null not too.
 
 ### References
 
