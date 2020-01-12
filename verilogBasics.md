@@ -4,7 +4,7 @@ Verilog was used to resolve the complexity of handling gate-level representation
 These are simple examples I have done during the practical Session for Hardware Description Language Module
 
 1. Sequence/Pattern Detector.
-This was a simple example used to detect the pattern "1101" using the Mealy method. The mealy method has fewer states than the Moore model. For this, we have for the state using the Mealy Model.
+This was a simple example used to detect the pattern ```1101``` using the Mealy method. The mealy method has fewer states than the Moore model. For this, we have for the state using the Mealy Model.
 S1 = Reset state which comes at initial and in case of the wrong pattern matches like 10, 1100.
 S2 = the Second state which comes after the initial step with only 1; it has also come after the S4.
 S3 = Third state which comes only after the S2 and S3 itself thus when 111 once it will interpret again as 11.
@@ -21,7 +21,7 @@ This was to shift register values based on the inputs. This particular register 
 Thus a particular input reaches after 4 clock cycles and also with asynchronous reset.
 
 4. Frequency Divider
-Here I divide the main clock frequency by 3(2'b010), thus after every 6 clock cycle, one pulse will come from the new clock.
+Here I divide the main clock frequency by 3(```2'b010```), thus after every 6 clock cycle, one pulse will come from the new clock.
 For this, I have used a counter which counts 0 to 2 and after that toggle clock value.
 
 5. ALU 
