@@ -10,7 +10,7 @@ Just forget about the heading, before DAS implemented there was BAM used in plac
 
 #### **Configuring With ESB and BAM.**
 
-##### **Products required :-ESB 4.8.1/4.9.0 (latest the best, but don't try with 5.0.0)** **and BAM 2.5.0 (last of bam).**
+##### **Products required :- ESB 4.8.1/4.9.0 (latest the best, but don't try with 5.0.0) and BAM 2.5.0 (last of bam).**
 
 #### **References**
 
@@ -54,7 +54,7 @@ I didn't add many things deeply because you can access these directly from the W
 
 #### **Finally With ESB 4.9.0 and DAS**
 
-##### Product required:ESB 4.9.0 and DAS 3.1.0 (not final version)
+##### **Product required :- ESB 4.9.0 and DAS 3.1.0 (not final version)**
 
 For this we don’t have any changes in ESB Side, just we need to edit proxy service parameter values to fit the offset of the DAS server.
 
@@ -163,14 +163,14 @@ Moving to a new section,
 
 #### **Configuring HL7 Publishing in DAS with ESB 5.0.0**
 
-Problem No 01:- Unable to Deploy Proxy service which is exactly same as the one I added above, it causes due to the issue in the version of Business Adaptor HL7 I install ed, for this, I locally create a repo and add the feature connection worked fine after I was successfully deployed, but there comes another problem.
+Problem No 01 : Unable to Deploy Proxy service which is exactly same as the one I added above, it causes due to the issue in the version of Business Adaptor HL7 I install ed, for this, I locally create a repo and add the feature connection worked fine after I was successfully deployed, but there comes another problem.
 
 #### **ERROR LOG**
 
 ```java
 [2016-09-07 10:55:51,716] ERROR - HL7TransportListener Unexpected error when configuring service hl7testproxy for the HL7 transport. It will be disabled for this transport and marked as faulty.
 ```
-Problem No 02: This has occurred when I am sending a message through the HAPI Test Panel. For this since no solutions available right now I need to patch the 4.6.6 version to resolve issues, It occurs because of the issue of using bam related instead of das.
+Problem No 02 : This has occurred when I am sending a message through the HAPI Test Panel. For this since no solutions available right now I need to patch the 4.6.6 version to resolve issues, It occurs because of the issue of using bam related instead of das.
 
 #### **ERROR LOG**
 ```java
