@@ -15,4 +15,4 @@ Caused by: org.apache.spark.sql.AnalysisException: cannot resolve '_MSH.MessageT
 [meta_server_name, correlation_activity_id, type, timestamp,__MSH.MessageType , content,service_name, meta_host, 
 operation_name, message_direction, status];
 ```
-To resolve this error we need to add ```'``` this while doing **COUNT** or **SELECT** or **INSERT** query (not essentially require for **CREATE** schema) in spark.
+To resolve this error we need to add ```**`**``` this while doing **COUNT** or **SELECT** or **INSERT** query (not essentially require for **CREATE** schema) in spark.
