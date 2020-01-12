@@ -24,7 +24,7 @@ import sys
 sys.path.insert(0, u'/…/…/…/python2.7/site-packages')
 ```
 
-I referred this code in [4] for my project, hope this will help you.
+I referred this code in [4](https://github.com/surendharreddy/Arduino-MySQL) for my project, hope this will help you.
 
 
 ### References
