@@ -1,6 +1,6 @@
 # WSO2 INTERNSHIP
 
-## ( July 2016 - December 2016)
+## (July 2016 - December 2016)
 
 This was nearly Based on the report I wrote for the university during Internship, but with some value addition.
 
@@ -122,7 +122,7 @@ Other Links :
 > **4th Four Weeks of Internship @WSO2**
 > **Duration: 17th of October, 2016 to 11th of November, 2016**
 
-These four weeks I mainly worked towards designing dashboards, the third and last milestone of my project. I had followed the following order while developing the dashboard, first prepare the spark scripts required to display the analytics related to the HL7. Then I develop the dashboard with existing gadgets using gadget generation wizards.Finally, I started work on the custom dashboard. For all, I tried following the ESB-analytics which has nearly similar aspects like my scenario case. As per the end of these four weeks, I have merely completed the dashboard's summary parts with some fixed regarding chart zooming and charts values are inversely displaying. And working on the search part based on the bam's management console.
+These four weeks I mainly worked towards designing dashboards, the third and last milestone of my project. I had followed the following order while developing the dashboard, first prepare the spark scripts required to display the analytics related to the HL7. Then I develop the dashboard with existing gadgets using gadget generation wizards. Finally, I started work on the custom dashboard. For all, I tried following the ESB-analytics which has nearly similar aspects like my scenario case. As per the end of these four weeks, I have merely completed the dashboard's summary parts with some fixed regarding chart zooming and charts values are inversely displaying. And working on the search part based on the bam's management console.
 
 ### **Problems Encountered**
 
@@ -163,15 +163,15 @@ In the meantime, I also focused on the packaging artifacts as CApp. Then I start
 
 We can't directly use arbitrary attribute as it is commonly available as arbitrary data map. The way to get specific arbitrary attribute is,
 
-cast(map:get(ArbitraryMap,'**relatedfield/key**'), '**typeOfKey**') as **fieldName**, here **typeOfKey** can be string,long,int,double. **fieldName** is used for ease of access.
+```cast(map:get(ArbitraryMap,'relatedfield/key'), 'typeOfKey')``` as ```fieldName```, here ```typeOfKey``` can be string,long,int,double. ```fieldName``` is used for ease of access.
 
-**cast(map:get(ArbitraryMap,'relatedfield/key'), 'typeOfKey')** can be used to filter the input streams based on our requirement.
+```cast(map:get(ArbitraryMap,'relatedfield/key'), 'typeOfKey')``` can be used to filter the input streams based on our requirement.
 
-**Dealing with jaggery controller with CApp**
+##### **Dealing with jaggery controller with CApp**
 
 We can use jaggery controller at dashboard rather than deploying it at ```/portal/controllers/apis``` when we are deploying the only CApp without deploying it as a feature.
 
-**Template manager**
+##### **Template manager**
 
 This used for complex event processing related concepts mainly, it is best practice for making the custom ```publisher```, ```executionplans```, ```eventstore```, ```eventstream```.
 
@@ -198,7 +198,7 @@ For my project I have nearly completed the project, So I had code reviews based 
 Thus when we are doing a search based on activity id we will get lots of data, but that should be in the order of they received not in improper order, then only it will be easy to understand by the user.
 
 2.  Make alert by checking the count in the grid, instead of distance calculating with the window.
-3.  Change the execution plan of wait time alerts to remove the matched entries, thus using "every".
+3.  Change the execution plan of wait time alerts to remove the matched entries, thus using ```every```.
 4.  Move the search messages button to the bottom of the page, also the add attribute, clear all buttons.
 
 This is because to give a clear picture, else whenever the user adds a new attribute he should scroll back to the top to click the search.
