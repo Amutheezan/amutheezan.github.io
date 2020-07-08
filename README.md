@@ -7,16 +7,16 @@ Following are some blog posts from my previous blog (https://amutheezan.wordpres
 ### Machine Learning and Data Mining
 1. [DengAI : Predicting Disease Spread - A tale of Two cities](dengAI.md)
 
+### Tech Issues
+1. [Updating Driver for Wifi Adapter in Ubuntu](wifiadapter.md)
+2. [Which is best multi attribute sorting for python Array](attribute.md)
+
 ### Integrated Computer Engineering
 1. [Integrated Computer Engineering Stream](ice.md)
 2. [Configure MySQL for Arduino through Python](ardupython.md)
 3. [Multi-tag Reading with RDM6300?](rdm.md)
 4. [Verilog Basics](verilogBasics.md)
 5. [Ceu Language](ceu.md)
-
-### Tech Issues
-1. [Updating Driver for Wifi Adapter in Ubuntu](wifiadapter.md)
-2. [Which is best multi attribute sorting for python Array](attribute.md)
 
 ### Internship
 1. [WSO2 INTERNSHIP](wso2.md)
