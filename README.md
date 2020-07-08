@@ -7,11 +7,10 @@ I joined in the Resilient Networks and Systems (RNS) Lab as a **Ph.D. Student** 
 
 ### Integrated Computer Engineering
 1. [Integrated Computer Engineering Stream](ice.md)
-2. [Short Semester 6](ss6.md)
-3. [Configure MySQL for Arduino through Python](ardupython.md)
-4. [Multi-tag Reading with RDM6300?](rdm.md)
-5. [Verilog Basics](verilogBasics.md)
-6. [Ceu Language](ceu.md)
+2. [Configure MySQL for Arduino through Python](ardupython.md)
+3. [Multi-tag Reading with RDM6300?](rdm.md)
+4. [Verilog Basics](verilogBasics.md)
+5. [Ceu Language](ceu.md)
 
 ### Tech Issues
 1. [Updating Driver for Wifi Adapter in Ubuntu](wifiadapter.md)
