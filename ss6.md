@@ -1,13 +1,5 @@
 # Short Semester 6
+### Last Edited on: July 8th, 2020
 
-Generally, we have a semester of 21 to 23 weeks, but this time straight after our we had a semester with 8 weeks,6 weeks of lectures and after every three weeks of lectures we had break one for reading and another for writing. Though it is small contents are much and more. We had 4/5 subjects to take.
-
-I choose digital photography as a humanity subject. It was filled with lectures with presentation and photo describing; practicals of photoshoots during the Sunday of 3rd 5th and 6th lecture weeks. It was a quite interesting subject and I was able to understand the basic of photography and taking the photo.
-
-And the next choice was formal methods in software engineering. A subject I loved most in this semester. It explains about formally specify systems especially safety-critical systems and kind of formal analysis (proofing the specification) to the validity of the system.
-
-Then the next choice was Human-computer Interaction it was now stepped into the new era as User Experience. It was quite an interesting subject.
-
-I also take research and report writing and professional practice which are compulsory for us.
-
-Though it says a short semester; it has a lot of things.
+Generally, we have a semester of 21 to 23 weeks, but this semester contains only 8 weeks, 6 weeks out of 8 weeks are lectures. Rest 2 weeks are dedicated for revision and exams. I have choose around 4 subjects in this semester. I choose digital photography as a humanity subject. It was filled with lectures with presentation and photo describing; practicals of photoshoots during the weekends. It was a quite interesting subject and I was able to understand the basic of photography skills and how to take a photograph :P. Next I choose Formal Methods in Software Engineering. A subject I loved most in this semester. It explains about formally specify systems especially safety-critical systems, also do formal analysis (proofing the specification) to the validity of the system. Then the next choice was Human Computer Interaction it takes about how to define UI which matches with ensure better user experience. It is also a quite interesting subject.
+With these three interesting subjects, I also take research and report writing and professional practice which are compulsory for us.
