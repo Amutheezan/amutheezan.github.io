@@ -112,7 +112,7 @@ We can add over own property name and value based on our use-cases, capp models.
 
 This the ```pom.xml``` file for all capps, you need to build this to get any capps you want(the capps you preferred at the ```build.xml``` file)
 
-##  **NOTE **
+###  **NOTE**
 
 To include jaggery-apis with capps we can implement a jaggery controller at the gadget level rather than jaggery apps level, eventually that will helps in deploying capps.
 
