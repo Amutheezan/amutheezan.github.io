@@ -2,11 +2,15 @@
 
 #### **Warning !**
 
-This just based on my project example bit more explainable with some sort come I faced when blindly following the prescribed instructions, sometimes it may not suitable in some cases. But this is somehow useful.
+CONTENT MAY NOT APPLICABLE NOW !!!
+
+This is based on my internship project. I initially follow the instructions provided in the documentation and online sources to packaging artifacts as carbon applications. But the documents are not completed enough. In this article I describes how I actually achieve the goal.
+
 
 ## **Carbon Applications - CApp**
 
-CApp defines the composite apps containing several artifacts related to analytics both real-time and batch analytics. It contains
+CApp defines the composite apps containing several artifacts related to both real-time and batch analytics.
+It contains following artificats
 
 1.  Event Receivers
 2.  Event Streams
@@ -19,9 +23,9 @@ CApp defines the composite apps containing several artifacts related to analytic
 9.  Dashboard
 10.  Data Purging * - Use to purge the data from data store made by event store
 
-We can build the CApp using the ```pom``` file associate with an ant build. At the target folder, the relative CApp will be built in ```.car``` format. We can use the ```.car``` file to deploy as the Carbon Application at the management console level and Deploy all artifacts included.
+We can build the CApp using the ```pom.xml``` file. After builiding the ```CApp``` will be built in ```.car``` format in the ```target``` folder. Then we can deploy ```.car``` file as the Carbon Application at the management console level. This will eventually deploy all the artificats in the ```CApp```
 
-Sample ```build.xml```, and ```pom.xml``` file are as follows
+Sample ```build.xml```, and ```pom.xml``` file are shown below
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -49,7 +53,8 @@ Sample ```build.xml```, and ```pom.xml``` file are as follows
 
 </project>
 ```
-We can add over own property name and value based on our use cases, capp models. and in the zip we just point relevant parameter to be zipped into the location we want. for general we used to have it on the target folder.
+
+We can add over own property name and value based on our use-cases, capp models. And in the ```zip``` field of ```xml``` file, we provides the location to store the zip file.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -105,11 +110,11 @@ We can add over own property name and value based on our use cases, capp models.
 </project>
 ```
 
-This the ```pom.xml``` file for all capps, you need to build this to get capps you want(the capps you preferred at the ```build.xml``` file)
+This the ```pom.xml``` file for all capps, you need to build this to get any capps you want(the capps you preferred at the ```build.xml``` file)
 
 ##  **NOTE **
 
-To include jaggery-apis with capps we can implement a jaggery controller at the level of gadget level rather than jaggery apps level. That will ease our task when we deploying capps.
+To include jaggery-apis with capps we can implement a jaggery controller at the gadget level rather than jaggery apps level, eventually that will helps in deploying capps.
 
 ### References
 
