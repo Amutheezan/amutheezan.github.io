@@ -2,7 +2,7 @@
 
 ## QUESTION
 
-I came across the issue while I need to sort some list of prediction probability and weights of tweets for adding them as iteration list for doing semi-supervised methodology called "Self - training". In my previous implementation without sorting and just randomly picking first n number of tweets it cost around 2 hrs for 40 iteration and 5 hrs for 100 iteration where my initial train set size ranges from 200 to 12000. But when I implemented the following code block
+I came across the issue while I need to sort some list of prediction probability and weights of tweets for adding them as iteration list for doing semi-supervised methodology called "Self - training". When I randomly picking first n number of tweets cost around 2 hrs for 40 iteration and 5 hrs for 100 iteration when my initial train set size ranges from 200 to 12000. But when I implemented the following code block
 
 ```python
     a = [[1,0.7,1],[4,0.8,1],[5,0.8,0.99],[11,0.9,0.98]]
