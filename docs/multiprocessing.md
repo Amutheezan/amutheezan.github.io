@@ -1,7 +1,6 @@
-# Python Multi Processing
 ---
 type: posts
-title: Packaging Carbon Applications
+title: Python Multi Processing
 author: Amutheezan Sivagnanam
 
 ---
@@ -35,5 +34,5 @@ print(len(contents))
    2. [https://github.com/Amutheezan/PyParallel](https://github.com/Amutheezan/PyParallel)
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE1MjAzODg0XX0=
+eyJoaXN0b3J5IjpbNjIwOTI0Nzk4XX0=
 -->
