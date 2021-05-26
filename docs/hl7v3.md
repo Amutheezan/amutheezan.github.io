@@ -1,5 +1,10 @@
 # HL7v3 vs FHIR
+---
+type: posts
+title: Packaging Carbon Applications
+author: Amutheezan Sivagnanam
 
+---
 #### **Warning !**
 
 This composed content is my own. It was based on my research made on this topic. So I just some basic clarification on similarities and Dissimilarities for my project @ internship. 
@@ -48,3 +53,6 @@ Note these CDA, CCD, SPL, CCOW are released alongside version 3 and it was expec
 4.  CCD - Continuity Care Document
 5.  SPL - Structured Product Labeling
 6.  CCOW - Clinical Context Object Markup
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA5MjM3MDYxMV19
+-->
