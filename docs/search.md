@@ -1,5 +1,10 @@
 # Search Comparator & Apache Lucene
+---
+type: posts
+title: Packaging Carbon Applications
+author: Amutheezan Sivagnanam
 
+---
 #### **Warning !**
 
 This content is based on the issue I faced while doing analyzing with a search comparator for queries associated with the HL7 message field. (but this is applicable for sample scenarios whether the Lucene queries can be used.
@@ -21,3 +26,6 @@ Search Comparator
 ### **References**
 
 1. [https://lucene.apache.org/core/2_9_4/queryparsersyntax.html](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzQ5NTkyNTUzXX0=
+-->
