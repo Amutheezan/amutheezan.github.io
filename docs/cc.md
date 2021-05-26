@@ -117,125 +117,65 @@ Include the newer version of dependencies and Plugins, especially for remote sit
 <snapshots>
 <enabled>true</enabled>
 <updatePolicy>daily</updatePolicy>
-
 </snapshots>
-
 <releases>
-
 <enabled>false</enabled>
-
 </releases>
-
 </pluginRepository>
-
 <pluginRepository>
-
 <id>wso2-nexus</id>
-
 <name>WSO2 internal Repository</name>
-
 <url>http://maven.wso2.org/nexus/content/groups/wso2-public/</url>
-
 <releases>
-
 <enabled>true</enabled>
-
 <updatePolicy>daily</updatePolicy>
-
 <checksumPolicy>ignore</checksumPolicy>
-
 </releases>
-
 </pluginRepository>
-
 </pluginRepositories>
-
 <dependencies>
-
 <dependency>
-
 <groupId>org.wso2.carbon</groupId>
-
 <artifactId>org.wso2.carbon.registry.core</artifactId>
-
 <version>4.4.9</version>
-
 </dependency>
-
 <dependency>
-
 <groupId>org.wso2.carbon</groupId>
-
 <artifactId>org.wso2.carbon.registry.api</artifactId>
-
 <version>4.4.9</version>
-
 </dependency>
-
 </dependencies>
-
 <build>
-
 <plugins>
-
 <plugin>
-
 <groupId>org.apache.felix</groupId>
-
 <artifactId>maven-bundle-plugin</artifactId>
-
 <extensions>true</extensions>
-
 <configuration>
-
 <instructions>
-
 <Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
-
 <Bundle-Name>${pom.artifactId}</Bundle-Name>
-
 <Export-Package>org.wso2.sample.carbon.order.manager.*</Export-Package>
-
 </instructions>
-
 </configuration>
-
 </plugin>
-
 </plugins>
-
 </build>
-
 <repositories>
-
 <repository>
-
 <id>wso2-nexus</id>
-
 <name>WSO2 internal Repository</name>
-
 <url>http://maven.wso2.org/nexus/content/groups/wso2-public/</url>
-
 <releases>
-
 <enabled>true</enabled>
-
 <updatePolicy>daily</updatePolicy>
-
 <checksumPolicy>ignore</checksumPolicy>
-
 </releases>
-
 </repository>
-
 <repository>
-
 <id>wso2.releases</id>
-
 <name>WSO2 internal Repository</name>
-
 <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
-
 <releases>
 
 <enabled>true</enabled>
@@ -299,21 +239,13 @@ Include the newer version of dependencies and Plugins, especially for remote sit
 <updatePolicy>daily</updatePolicy>
 
 <checksumPolicy>ignore</checksumPolicy>
-
 </releases>
-
 </repository>
-
 </repositories>
-
 <!-- plugin repositories are for to execute, but for this we can use only repositories
-
 because here giving path to jar file is just enough -->
-
 <!-- org.apache.felix is required for setting up the components related to
-
 OSGi bundle so, don't forget to add this -->
-
 ```
 
 ### **References**
@@ -327,6 +259,6 @@ OSGi bundle so, don't forget to add this -->
 5. [http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml](http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml)
 6. [http://www.tutorialspoint.com/maven/maven_repositories.htm](http://www.tutorialspoint.com/maven/maven_repositories.htm)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMjI1NDE1Miw5NzYxNTc4LDEwODQyMD
+eyJoaXN0b3J5IjpbMTU2OTU1NjQyNCw5NzYxNTc4LDEwODQyMD
 U3NDAsLTIwOTg5MDUxMzMsMzI2NTI2NjgyXX0=
 -->
