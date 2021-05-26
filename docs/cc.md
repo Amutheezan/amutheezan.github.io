@@ -98,44 +98,24 @@ Order Maven Look Up Dependencies
 
 Include the newer version of dependencies and Plugins, especially for remote sites, because they will remove it from time to time due to unwanted spaces. So for in our case of using the repository of carbon of WSO2, it is advisable to use later version of carbon means ```4.4.7```, ```4.4.9``` other than using the old version likes ```4.2.0```.
 
-  
-
 ```xml
-
 <pluginRepositories>
-
 <pluginRepository>
-
 <id>wso2.releases</id>
-
 <name>WSO2 internal Repository</name>
-
 <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
-
 <releases>
-
 <enabled>true</enabled>
-
 <updatePolicy>daily</updatePolicy>
-
 <checksumPolicy>ignore</checksumPolicy>
-
 </releases>
-
 </pluginRepository>
-
 <pluginRepository>
-
 <id>wso2.snapshots</id>
-
 <name>Apache Snapshot Repository</name>
-
 <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
-
 <snapshots>
-
 <enabled>true</enabled>
-
 <updatePolicy>daily</updatePolicy>
 
 </snapshots>
@@ -341,17 +321,12 @@ OSGi bundle so, don't forget to add this -->
   
 
 1. [http://wso2.com/library/tutorials/2014/03/how-to-write-a-wso2-carbon-component/](http://wso2.com/library/tutorials/2014/03/how-to-write-a-wso2-carbon-component/)
-
 2. [http://alokayasoya.blogspot.com/2015/02/writing-first-carbon-component.html](http://alokayasoya.blogspot.com/2015/02/writing-first-carbon-component.html)
-
 3. [https://maven.apache.org/guides/introduction/introduction-to-repositories.html](https://maven.apache.org/guides/introduction/introduction-to-repositories.html)
-
 4. [https://maven.apache.org/guides/introduction/introduction-to-the-pom.html](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
-
 5. [http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml](http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml)
-
 6. [http://www.tutorialspoint.com/maven/maven_repositories.htm](http://www.tutorialspoint.com/maven/maven_repositories.htm)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc2MTU3OCwxMDg0MjA1NzQwLC0yMDk4OT
-A1MTMzLDMyNjUyNjY4Ml19
+eyJoaXN0b3J5IjpbMTMwMjI1NDE1Miw5NzYxNTc4LDEwODQyMD
+U3NDAsLTIwOTg5MDUxMzMsMzI2NTI2NjgyXX0=
 -->
