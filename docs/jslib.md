@@ -1,7 +1,6 @@
-# Some Useful JavaScript Libraries
 ---
 type: posts
-title: Packaging Carbon Applications
+title: Some Useful JavaScript Libraries
 author: Amutheezan Sivagnanam
 
 ---
@@ -71,5 +70,5 @@ My last post is about data-tables since I omit it's contents here.
 3.  [https://select2.github.io/](https://select2.github.io/)
 4.  [http://leafletjs.com/index.html](http://leafletjs.com/index.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDA3ODQ4OTddfQ==
+eyJoaXN0b3J5IjpbMTgxOTc3MzA0M119
 -->
