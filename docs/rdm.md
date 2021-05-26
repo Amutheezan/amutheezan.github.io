@@ -1,6 +1,11 @@
 # Multi-tag Reading with RDM6300?
 #### **Warning !**
+---
+type: posts
+title: Packaging Carbon Applications
+author: Amutheezan Sivagnanam
 
+---
 This is the question, towards the audience and your suggestion and comments are warmly welcomed. And I have shared some interesting facts that I came across trying for it.
 
 ### **What is RDM6300 ?**
@@ -25,3 +30,6 @@ This was actually the topic of this Discussion, based my research in this topic 
 
 1.  Using a different Reader Instead of this Like MRFC522 Module which supports Multi-tag reading at the same time. There is also a library found on Github to enable this.
 2.  Implementing an Anti Collision Algorithm. The reason for not reading more than one tag is due to Collision between low-frequency signals, thus one signal block to another. So when we took more than 2 tags at a time only the one which comes in first will successfully be scanned, and others are blocked.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQxNDkzODAyMl19
+-->
