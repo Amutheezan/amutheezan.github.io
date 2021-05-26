@@ -1,33 +1,69 @@
+
 ---
+
 type: posts
+
 title: Which is the best multi-attribute sorting for python Array?
+
 author: Amutheezan Sivagnanam
 
+  
+
 ---
 
+  
+  
 
 ## QUESTION
 
-I came across the issue while I need to sort some list of prediction probability and weights of tweets for adding them as iteration list for doing semi-supervised methodology called "Self - training". When I randomly picking first n number of tweets cost around 2 hrs for 40 iteration and 5 hrs for 100 iteration when my initial train set size ranges from 200 to 12000. But when I implemented the following code block
+  
+
+I came across the issue while I need to sort some list of prediction probability and weights of tweets for adding them as iteration list for semi-supervised methodology called "Self-training”.
+
+  
+
+When I was randomly picking the first, n number of tweets, it cost around 2 hrs for about 40 iterations and 5 hrs for around 100 iterations.
+
+  
+
+I have implemented following changes to do the sorting,
+
+  
 
 ```python
-    a = [[1,0.7,1],[4,0.8,1],[5,0.8,0.99],[11,0.9,0.98]]
-    b = sorted(a, key=lambda x:x[1], reverse=True);
-    c = sorted(b, key=lambda x:x[2], reverse=True);
+
+a = [[1,0.7,1],[4,0.8,1],[5,0.8,0.99],[11,0.9,0.98]]
+
+b = sorted(a, key=lambda x:x[1], reverse=True);
+
+c = sorted(b, key=lambda x:x[2], reverse=True);
+
 ```
 
-but it takes more than 5 hrs for 20 iterations itself, and I searched in StackOverflow and obtained two sets of formula and tested them and compare the time differences. following are those two sets of formulas
+  
+
+But it takes more than 5 hrs for 20 iterations itself, and I searched in StackOverflow and obtained two sets of formulas, tested them, and compared the time differences. following are those two sets of formulas
+
+  
 
 ```python
-    s = sorted(a, key=lambda x : (x[2],x[1]), reverse=True); i = sorted(a, key = operator.itemgetter(2, 1),reverse=True);
+
+s = sorted(a, key=lambda x : (x[2],x[1]), reverse=True); i = sorted(a, key = operator.itemgetter(2, 1),reverse=True);
+
 ```
 
-Out of these which is one will return the result quickly for a 5D Array which has size around 20,000 ???
+  
+
+Out of these, one will return the result quickly for a 5D Array with a size of around 20,000 ???
+
+  
 
 ## ANSWER
 
-These three implementations are simply equal and have the same overhead of doing the sorting. Thus, it takes the same amount of time. So the best option is going for some other choice... Or languages
+  
+
+These three implementations are simply equal and have the same overhead of doing the sorting. Thus, it takes the same amount of time. So these three options are equally replaceable with others.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMDI0NjI5LDgyNzQ4NzQ1OCwtNDAwMj
-Q2MjldfQ==
+eyJoaXN0b3J5IjpbLTc5MTMzMzU4NiwtNDAwMjQ2MjksODI3ND
+g3NDU4LC00MDAyNDYyOV19
 -->
