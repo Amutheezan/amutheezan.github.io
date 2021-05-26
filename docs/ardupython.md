@@ -1,4 +1,10 @@
-# Configure MySQL for Arduino in Python
+
+---
+type: posts
+title: Configure MySQL for Arduino in Python
+author: Amutheezan Sivagnanam
+
+---
 
 ## **GUIDE IS ONLY FOR WINDOWS**
 
@@ -23,3 +29,6 @@ I referred this code in [4](https://github.com/surendharreddy/Arduino-MySQL) for
 2.  [http://stackoverflow.com/questions/8491111/pyserial-for-python-2-7-2](http://stackoverflow.com/questions/8491111/pyserial-for-python-2-7-2)
 3.  [http://www.instructables.com/id/Interface-Arduino-to-MySQL-using-Python/step4/Python-TIEM/](http://www.instructables.com/id/Interface-Arduino-to-MySQL-using-Python/step4/Python-TIEM/)
 4.  [https://github.com/surendharreddy/Arduino-MySQL](https://github.com/surendharreddy/Arduino-MySQL) 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTU3MDE5ODMyXX0=
+-->
