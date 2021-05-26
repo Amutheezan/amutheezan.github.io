@@ -1,7 +1,6 @@
-# 
 ---
 type: posts
-title: Packaging Carbon Applications
+title: HL7v3 vs FHIR
 author: Amutheezan Sivagnanam
 
 ---
@@ -54,5 +53,5 @@ Note these CDA, CCD, SPL, CCOW are released alongside version 3 and it was expec
 5.  SPL - Structured Product Labeling
 6.  CCOW - Clinical Context Object Markup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjE3ODg2OV19
+eyJoaXN0b3J5IjpbLTEyMjE2NTUwNzFdfQ==
 -->
