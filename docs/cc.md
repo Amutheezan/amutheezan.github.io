@@ -177,67 +177,36 @@ Include the newer version of dependencies and Plugins, especially for remote sit
 <name>WSO2 internal Repository</name>
 <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
 <releases>
-
 <enabled>true</enabled>
-
 <updatePolicy>daily</updatePolicy>
-
 <checksumPolicy>ignore</checksumPolicy>
-
 </releases>
-
 </repository>
-
 <repository>
-
 <id>wso2.snapshots</id>
-
 <name>Apache Snapshot Repository</name>
-
 <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
-
 <snapshots>
-
 <enabled>true</enabled>
-
 <updatePolicy>daily</updatePolicy>
-
 </snapshots>
-
 <releases>
-
 <enabled>false</enabled>
-
 </releases>
-
 </repository>
-
 <!--for kafka-->
-
 <repository>
-
 <id>MarketceteraRepo</id>
-
 <name>MarketceteraRepoy</name>
-
 <url>http://repo.marketcetera.org/maven/</url>
-
 </repository>
-
 <repository>
-
 <id>smslib.releases</id>
-
 <name>smslib Repository</name>
-
 <url>http://smslib.org/maven2/v3/</url>
-
 <releases>
-
 <enabled>true</enabled>
-
 <updatePolicy>daily</updatePolicy>
-
 <checksumPolicy>ignore</checksumPolicy>
 </releases>
 </repository>
@@ -259,6 +228,6 @@ OSGi bundle so, don't forget to add this -->
 5. [http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml](http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml)
 6. [http://www.tutorialspoint.com/maven/maven_repositories.htm](http://www.tutorialspoint.com/maven/maven_repositories.htm)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2OTU1NjQyNCw5NzYxNTc4LDEwODQyMD
-U3NDAsLTIwOTg5MDUxMzMsMzI2NTI2NjgyXX0=
+eyJoaXN0b3J5IjpbLTk0MDQ0Mzc0LDk3NjE1NzgsMTA4NDIwNT
+c0MCwtMjA5ODkwNTEzMywzMjY1MjY2ODJdfQ==
 -->
