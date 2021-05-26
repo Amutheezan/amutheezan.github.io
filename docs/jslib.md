@@ -1,5 +1,10 @@
 # Some Useful JavaScript Libraries
+---
+type: posts
+title: Packaging Carbon Applications
+author: Amutheezan Sivagnanam
 
+---
 #### **Warning !**
 
 These post contents are just for the purpose of sharing some issues I faced during my Internship projects for design iframe for gadget designing. I hope it will be the same work for HTML pages too.
@@ -65,3 +70,6 @@ My last post is about data-tables since I omit it's contents here.
 2.  [https://github.com/select2/select2](https://github.com/select2/select2)
 3.  [https://select2.github.io/](https://select2.github.io/)
 4.  [http://leafletjs.com/index.html](http://leafletjs.com/index.html)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5MDA3ODQ4OTddfQ==
+-->
