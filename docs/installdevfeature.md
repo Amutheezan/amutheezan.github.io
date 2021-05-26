@@ -1,5 +1,10 @@
 # Installing a Developing Feature
+---
+type: posts
+title: Packaging Carbon Applications
+author: Amutheezan Sivagnanam
 
+---
 #### **Warning !**
 
 The content did not belong to me, I just do some value addition to reference by explaining my project scenario with this. For clear understanding and deep learning go through references.
@@ -27,3 +32,6 @@ To make this accessible by desired feature installing system in Management conso
 ### **References**
 
 1.  [http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html](http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTM0ODc4NjIyMF19
+-->
