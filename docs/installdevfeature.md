@@ -1,7 +1,6 @@
-# Installing a Developing Feature
 ---
 type: posts
-title: Packaging Carbon Applications
+title: Installing a Developing Feature
 author: Amutheezan Sivagnanam
 
 ---
@@ -33,5 +32,5 @@ To make this accessible by desired feature installing system in Management conso
 
 1.  [http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html](http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0ODc4NjIyMF19
+eyJoaXN0b3J5IjpbLTU1NzU2ODYwMl19
 -->
