@@ -27,13 +27,9 @@ I have implemented following changes to do the sorting,
   
 
 ```python
-
 a = [[1,0.7,1],[4,0.8,1],[5,0.8,0.99],[11,0.9,0.98]]
-
 b = sorted(a, key=lambda x:x[1], reverse=True);
-
 c = sorted(b, key=lambda x:x[2], reverse=True);
-
 ```
 
   
@@ -43,9 +39,7 @@ But it takes more than 5 hrs for 20 iterations itself, and I searched in StackOv
   
 
 ```python
-
 s = sorted(a, key=lambda x : (x[2],x[1]), reverse=True); i = sorted(a, key = operator.itemgetter(2, 1),reverse=True);
-
 ```
 
   
@@ -60,6 +54,6 @@ Out of these, one will return the result quickly for a 5D Array with a size of a
 
 These three implementations are simply equal and have the same overhead of doing the sorting. Thus, it takes the same amount of time. So these three options are equally replaceable with others.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1Nzk0MDU4LC00MDAyNDYyOSw4Mjc0OD
+eyJoaXN0b3J5IjpbOTQwOTA0MTAyLC00MDAyNDYyOSw4Mjc0OD
 c0NTgsLTQwMDI0NjI5XX0=
 -->
