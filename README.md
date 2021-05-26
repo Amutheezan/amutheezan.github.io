@@ -1,5 +1,6 @@
 # [Amutheezan Sivagnanam](https://www.amutheezan.com)
 ___
+title: About
 author: Amutheezan Sivagnanam
 ___
 
@@ -32,5 +33,5 @@ I joined in the Resilient Networks and Systems (RNS) Lab as a **Ph.D. Student** 
 10. [Datatables Makes Things Easy](docs/dt.md)
 11. [Some Useful Javascript Libraries](docs/jslib.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI2NzMwNTQwXX0=
+eyJoaXN0b3J5IjpbLTE2OTM1NzYwNTMsNTI2NzMwNTQwXX0=
 -->
