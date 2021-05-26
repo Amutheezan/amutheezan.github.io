@@ -60,10 +60,10 @@ Out of these, one will return the result quickly for a 5D Array with a size of a
 
 ## ANSWER
 
-  
+ 
 
 These three implementations are simply equal and have the same overhead of doing the sorting. Thus, it takes the same amount of time. So these three options are equally replaceable with others.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MTMzMzU4NiwtNDAwMjQ2MjksODI3ND
+eyJoaXN0b3J5IjpbMTM2MDQ4MzcyMiwtNDAwMjQ2MjksODI3ND
 g3NDU4LC00MDAyNDYyOV19
 -->
