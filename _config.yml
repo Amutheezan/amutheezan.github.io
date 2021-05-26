@@ -1,1 +1,2 @@
-theme: jekyll-theme-hydure
+plugins:
+  - jekyll-remote-theme
