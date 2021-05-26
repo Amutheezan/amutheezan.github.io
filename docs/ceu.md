@@ -1,8 +1,6 @@
-# Ceu Language
-
 ---
 type: posts
-title: Packaging Carbon Applications
+title: Ceu Language
 author: Amutheezan Sivagnanam
 
 ---
@@ -22,5 +20,5 @@ This Ceu language was used to make an Arduino binding through Ceu-Arduino which 
 
  1. https://github.com/fsantanna/ceu-arduino
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM3NzY2ODIxXX0=
+eyJoaXN0b3J5IjpbMTI5Mzk1NDUzOV19
 -->
