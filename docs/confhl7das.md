@@ -1,8 +1,6 @@
-# Configuring HL7 in WSO2 DAS
-
 ---
 type: posts
-title: Packaging Carbon Applications
+title: Configuring HL7 in WSO2 DAS
 author: Amutheezan Sivagnanam
 
 ---
@@ -251,5 +249,5 @@ We need patches when we need to give minor change/update to releases that are ge
 [2016-09-09 16:58:38,550]  INFO {org.wso2.carbon.server.util.PatchUtils.console} -  Backed up plugins to patch0000
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NzIyNjQ4NF19
+eyJoaXN0b3J5IjpbLTQ1ODIzNjMwNF19
 -->
