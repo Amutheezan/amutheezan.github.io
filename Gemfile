@@ -3,4 +3,4 @@
 source "https://rubygems.org"
 gemspec
 
-gem "jekyll-remote-hydure"
+gem "jekyll-remote-theme"
