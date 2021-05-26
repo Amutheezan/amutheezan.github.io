@@ -1,6 +1,6 @@
 ---
 type: posts
-title:# Integrated Computer Engineering Stream
+title: Integrated Computer Engineering Stream
 author: Amutheezan Sivagnanam
 
 ---
@@ -81,5 +81,6 @@ These are just some basic ideas and concepts if time supports I will share ideas
 
 [Project Records](https://amutheezan.files.wordpress.com/2016/08/projects.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MDQzMTQ2MiwyMDA5NTk1MDIzXX0=
+eyJoaXN0b3J5IjpbMjAwOTU5NTAyMywxNzUwNDMxNDYyLDIwMD
+k1OTUwMjNdfQ==
 -->
