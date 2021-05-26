@@ -1,8 +1,6 @@
-# Carbon Component
-
 ---
 type: posts
-title: Packaging Carbon Applications
+title: Carbon Component
 author: Amutheezan Sivagnanam
 
 ---
@@ -182,5 +180,5 @@ OSGi bundle so, don't forget to add this -->
 5.  [http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml](http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml)
 6.  [http://www.tutorialspoint.com/maven/maven_repositories.htm](http://www.tutorialspoint.com/maven/maven_repositories.htm)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MzA1ODIwOF19
+eyJoaXN0b3J5IjpbMzI2NTI2NjgyXX0=
 -->
