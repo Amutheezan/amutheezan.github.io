@@ -1,5 +1,10 @@
 # Integrated Computer Engineering Stream
+---
+type: posts
+title: Packaging Carbon Applications
+author: Amutheezan Sivagnanam
 
+---
 ## **First Day : 2014.10.27**
 
 That day, Actually I have no idea about this "ICE" rather than the things heard from the mentoring session and seniors. But Unlike I worried, it was a very pleasant class that day, just listening to what I am hearing spending that 2 hours with my thoughts. And that how it ended up finally but maybe that was not a good day of the start but I feel lucky when it comes to the End of semester :relaxed:. Nothing is Strange at Final: Everything is Strange at Beginning. A quiet enough philosophy we are following years and years :stuck_out_tongue_closed_eyes: :relaxed:
@@ -76,3 +81,6 @@ Tools Required for Ladder Programming: XCP Program tool and XC3- PLC can be used
 These are just some basic ideas and concepts if time supports I will share ideas deeply from what I learned. :stuck_out_tongue_closed_eyes: :relaxed:
 
 [Project Records](https://amutheezan.files.wordpress.com/2016/08/projects.pdf)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5ODQ5ODg5NjVdfQ==
+-->
