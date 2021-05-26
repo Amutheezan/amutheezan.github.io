@@ -3,7 +3,8 @@ type: posts
 title: WSO2 INTERNSHIP
 author: Amutheezan Sivagnanam
 
----
+---# WSO2 INTERNSHIP
+
 ## (July 2016 - December 2016)
 
 This was nearly Based on the report I wrote for the university during Internship, but with some value addition.
@@ -263,5 +264,5 @@ Finally, overall I had a good Internship and gained the following technical know
 -   Working with JQuery and Some JavaScript Library
 -   Spark and Siddhi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MjM3NDA1OV19
+eyJoaXN0b3J5IjpbLTkxMjk5MzI4NSwxOTYyMzc0MDU5XX0=
 -->
