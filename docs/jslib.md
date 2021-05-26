@@ -1,6 +1,6 @@
 ---
 type: posts
-title: Some Useful JavaScript Libraries
+title:# Some Useful JavaScript Libraries
 author: Amutheezan Sivagnanam
 
 ---
@@ -70,5 +70,5 @@ My last post is about data-tables since I omit it's contents here.
 3.  [https://select2.github.io/](https://select2.github.io/)
 4.  [http://leafletjs.com/index.html](http://leafletjs.com/index.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxOTc3MzA0M119
+eyJoaXN0b3J5IjpbODAyODY4MzYyLDE4MTk3NzMwNDNdfQ==
 -->
