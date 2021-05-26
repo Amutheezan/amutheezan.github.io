@@ -1,5 +1,11 @@
 # DengAI: Predicting Disease Spread - A Tale of Two cities
 
+---
+type: posts
+title: Packaging Carbon Applications
+author: Amutheezan Sivagnanam
+
+---
 #### **Warning !**
 
 This is a short descriptive post based on our project done for CS4642 Module, Data Mining, and Information Retrieval. These particular wordings are my own words and thus it doesn't be exact same of what I have submitted as final :relaxed:.
@@ -81,3 +87,6 @@ In this project, we proposed an analysis scheme based on the following technique
 2. [https://datascienceplus.com/imputing-missing-data-with-r-mice-package/](https://datascienceplus.com/imputing-missing-data-with-r-mice-package/)
 3. [https://www.r-bloggers.com/measuring-persistence-in-a-time-series-application-of-rolling-window-regression/](https://www.r-bloggers.com/measuring-persistence-in-a-time-series-application-of-rolling-window-regression/)
 4. [http://www.mathematica-journal.com/2013/06/negative-binomial-regressio](http://www.mathematica-journal.com/2013/06/negative-binomial-regression/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTIzOTUxMDM1MF19
+-->
