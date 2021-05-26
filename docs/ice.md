@@ -1,7 +1,6 @@
-# Integrated Computer Engineering Stream
 ---
 type: posts
-title: Packaging Carbon Applications
+title: Integrated Computer Engineering Stream
 author: Amutheezan Sivagnanam
 
 ---
@@ -82,5 +81,5 @@ These are just some basic ideas and concepts if time supports I will share ideas
 
 [Project Records](https://amutheezan.files.wordpress.com/2016/08/projects.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQ5ODg5NjVdfQ==
+eyJoaXN0b3J5IjpbMjAwOTU5NTAyM119
 -->
