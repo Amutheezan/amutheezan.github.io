@@ -1,5 +1,11 @@
 # Configuring HL7 in WSO2 DAS
 
+---
+type: posts
+title: Packaging Carbon Applications
+author: Amutheezan Sivagnanam
+
+---
 #### **Warning !**
 
 Some of Its contents may be subjected to change, I will update on it until I am actively working on it. Because some parts work on manual stuff which may be corrected/ modified on future release don't bother them at all, If you had the same issue just follow else leave it to have fun, happy coding :smiley: :relaxed:.
@@ -244,3 +250,6 @@ We need patches when we need to give minor change/update to releases that are ge
 [2016-09-09 16:58:32,144]  INFO {org.wso2.carbon.server.extensions.PatchInstaller} -  Patch changes detected
 [2016-09-09 16:58:38,550]  INFO {org.wso2.carbon.server.util.PatchUtils.console} -  Backed up plugins to patch0000
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTI3NzIyNjQ4NF19
+-->
