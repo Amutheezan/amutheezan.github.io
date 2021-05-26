@@ -28,7 +28,7 @@ I had no clear idea of how this message passes at the beginning, just a rough id
 
 ```<ESB-HOME>/repository/conf/axis2/axis2.xml``` file. as shown in the documentation. That is enabling related transport builder and formatter which used when receiving HL7 message and format it to XML to processing and convert back to the original form using the builder. Next to a transport listener and receivers. these four are disabled in the ESB, we need to enable once we Install HL7 transport.
 
-Don't enable before Installing it, because it will result in error :smiley: :relaxed:. I hope you guys have understood what I meant.
+Don't enable before Installing it, because it will result in error :smiley: . I hope you guys have understood what I meant.
 
 #### **NOTES ON ERRORS I MADE**
 
@@ -249,6 +249,6 @@ We need patches when we need to give minor change/update to releases that are ge
 [2016-09-09 16:58:38,550]  INFO {org.wso2.carbon.server.util.PatchUtils.console} -  Backed up plugins to patch0000
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1ODIzNjMwNCwtMTQ1NDE2NTgzLC00NT
-gyMzYzMDRdfQ==
+eyJoaXN0b3J5IjpbMTExNzQ5MTk4OSwtNDU4MjM2MzA0LC0xND
+U0MTY1ODNdfQ==
 -->
