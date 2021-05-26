@@ -2,15 +2,10 @@
 ---
 
 type: posts
-
 title: Packaging Carbon Applications
-
 author: Amutheezan Sivagnanam
 
-  
-
----# Packaging Artifacts as Carbon Applications
-
+---
   
 
 #### **Warning !**
@@ -213,19 +208,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 <goals>
 
 <goal>run</goal>
-
 </goals>
-
 </execution>
-
 </executions>
-
 </plugin>
-
 </plugins>
-
 </build>
-
 </project>
 
 ```
@@ -252,6 +240,6 @@ To include jaggery-apis with CApps, we can implement a jaggery controller at the
 
 2. [http://udarakr.blogspot.com/2016/01/build-carbon-applicationCApp-for-wso2.html](http://udarakr.blogspot.com/2016/01/build-carbon-applicationCApp-for-wso2.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2ODQyMjgyOSwtMTk0OTk1NTQ4NSwtMz
-YxMTQ3OTM0XX0=
+eyJoaXN0b3J5IjpbMTM1ODY2MTgxOCwxMzY4NDIyODI5LC0xOT
+Q5OTU1NDg1LC0zNjExNDc5MzRdfQ==
 -->
