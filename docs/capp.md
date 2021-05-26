@@ -29,26 +29,15 @@ CApp defines the composite apps containing several artifacts related to both rea
 
 It includes the following artifacts
 
-  
-
 1. Event Receivers
-
 2. Event Streams
-
 3. Event Publisher
-
 4. Execution Plans
-
 5. Event Store
-
 6. Spark scripts
-
 7. Gadget
-
 8. Layout
-
 9. Dashboard
-
 10. Data Purging * - Use to purge the data from data store made by event store
 
   
@@ -67,7 +56,7 @@ Sample ```build.xml```, and ```pom.xml``` files,
 <project name="create-sample-CApps" default="zip" basedir=".">
 <property name="project-name" value="${ant.project.name}"/>
 <property name="target-dir" value="target"/>
-**<property name="CApp_sample_dir" value="sample"/>**
+<property name="CApp_sample_dir" value="sample"/>
 <target name="clean">
 <delete dir="${target-dir}"/>
 </target>
@@ -76,18 +65,11 @@ Sample ```build.xml```, and ```pom.xml``` files,
 <copy file="README.txt" todir="${target-dir}"/>
 </target>
 <target name="zip" depends="clean,pre-configure">
-**<zip destfile="${target-dir}/${sample}.car">**
-
-**<zipfileset dir="${sample}"/>**
-
-**</zip>**
-
+<zip destfile="${target-dir}/${sample}.car">
+<zipfileset dir="${sample}"/>
+</zip>
 </target>
-
-  
-
 </project>
-
 ```
 
   
@@ -165,10 +147,9 @@ To include jaggery-apis with CApps, we can implement a jaggery controller at the
 
   
 
-1. [https://docs.wso2.com/display/DAS310/Packaging+Artifacts+as+a+C-App+Archive](https://docs.wso2.com/display/DAS310/Packaging+Artifacts+as+a+C-App+Archive)
-
+1.[https://docs.wso2.com/display/DAS310/Packaging+Artifacts+as+a+C-App+Archive](https://docs.wso2.com/display/DAS310/Packaging+Artifacts+as+a+C-App+Archive)
 2. [http://udarakr.blogspot.com/2016/01/build-carbon-applicationCApp-for-wso2.html](http://udarakr.blogspot.com/2016/01/build-carbon-applicationCApp-for-wso2.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTIxMDEzNjQsMTM2ODQyMjgyOSwtMT
-k0OTk1NTQ4NSwtMzYxMTQ3OTM0XX0=
+eyJoaXN0b3J5IjpbMTQ2OTQ1Njc3OCwxMzY4NDIyODI5LC0xOT
+Q5OTU1NDg1LC0zNjExNDc5MzRdfQ==
 -->
