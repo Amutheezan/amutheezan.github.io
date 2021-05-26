@@ -3,7 +3,7 @@ type: posts
 title: Verilog Basics
 author: Amutheezan Sivagnanam
 
----# Verilog Basics
+---
 Verilog was used to resolve the complexity of handling gate-level representation. This was first released as a proprietary language in 1985 and later it becomes publically available under IEEE standards.
 
 These are simple examples I have done during the practical Session for Hardware Description Language Module
@@ -53,5 +53,6 @@ This was a simple example of down-counter counts from 8 till 3 and notify 1 when
 This was a quite initiative way to provide some examples of Verilog and give some basic understanding. This is strictly for beginners. Checkout my Github Repo on Verilog Examples.
 [https://amutheezan.github.io/verilogBasics/](https://amutheezan.github.io/verilogBasics/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwODA4ODkzNSwyOTI4MDc2NzddfQ==
+eyJoaXN0b3J5IjpbMjkyODA3Njc3LC04MDgwODg5MzUsMjkyOD
+A3Njc3XX0=
 -->
