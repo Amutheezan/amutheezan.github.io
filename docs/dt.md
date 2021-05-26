@@ -1,4 +1,11 @@
 # Datatables Makes Things Easy
+
+---
+type: posts
+title: Packaging Carbon Applications
+author: Amutheezan Sivagnanam
+
+---
 #### **Warning !**
 
 This is based on my self-research, Jerad Aiyaa's guidance. The things I included here are based on the things I looked in, but Data-tables are more things to deal with.
@@ -61,3 +68,6 @@ We can also add a button to expand and collapse child contents in the data table
 4.  https://datatables.net/reference/option/ajax
 5.  https://datatables.net/examples/basic_init/hidden_columns.html
 6.  https://datatables.net/examples/api/row_details.html
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzE2Mjg2MTU0XX0=
+-->
