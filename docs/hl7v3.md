@@ -3,7 +3,7 @@ type: posts
 title: HL7v3 vs FHIR
 author: Amutheezan Sivagnanam
 
----# HL7v3 vs FHIR
+---
 
 #### **Warning !**
 
@@ -54,6 +54,6 @@ Note these CDA, CCD, SPL, CCOW are released alongside version 3 and it was expec
 5.  SPL - Structured Product Labeling
 6.  CCOW - Clinical Context Object Markup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzA1MzMzNDIsLTEyMjE2NTUwNzFdfQ
-==
+eyJoaXN0b3J5IjpbMTgwNTA5OTA1OSwtMTg3MDUzMzM0MiwtMT
+IyMTY1NTA3MV19
 -->
