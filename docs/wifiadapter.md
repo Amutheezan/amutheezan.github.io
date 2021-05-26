@@ -1,5 +1,9 @@
-# Updating Driver for Wifi Adapter in Ubuntu
+---
+type: posts
+title: Updating Driver for Wifi Adapter in Ubuntu
+author: Amutheezan Sivagnanam
 
+---
 #### **Warning !**
 
 These code blocks are obtained from StackOverFlow, this particular blog post to emphasize a little bit more from the issues related to that.
@@ -27,3 +31,6 @@ sudo apt-get install rtl8192eu-dkms
 ### **References**
 
 1.  http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE2MTUxMTA0MTRdfQ==
+-->
