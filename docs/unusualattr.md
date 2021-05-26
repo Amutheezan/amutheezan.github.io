@@ -1,6 +1,6 @@
 ---
 type: posts
-title:# Unusual Arbitrary Attribute
+title: Unusual Arbitrary Attribute
 author: Amutheezan Sivagnanam
 
 ---
@@ -21,5 +21,6 @@ operation_name, message_direction, status];
 ```
 To resolve this error we need to add ```**`**``` this while doing **COUNT** or **SELECT** or **INSERT** query (not essentially require for **CREATE** schema) in spark.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4ODczNjgxMywyMTAwMDI4NTQwXX0=
+eyJoaXN0b3J5IjpbMjEwMDAyODU0MCwtNzg4NzM2ODEzLDIxMD
+AwMjg1NDBdfQ==
 -->
