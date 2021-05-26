@@ -1,8 +1,6 @@
-# DengAI: Predicting Disease Spread - A Tale of Two cities
-
 ---
 type: posts
-title: Packaging Carbon Applications
+title: DengAI: Predicting Disease Spread - A Tale of Two cities
 author: Amutheezan Sivagnanam
 
 ---
@@ -88,5 +86,5 @@ In this project, we proposed an analysis scheme based on the following technique
 3. [https://www.r-bloggers.com/measuring-persistence-in-a-time-series-application-of-rolling-window-regression/](https://www.r-bloggers.com/measuring-persistence-in-a-time-series-application-of-rolling-window-regression/)
 4. [http://www.mathematica-journal.com/2013/06/negative-binomial-regressio](http://www.mathematica-journal.com/2013/06/negative-binomial-regression/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzOTUxMDM1MF19
+eyJoaXN0b3J5IjpbODEyODc4NjAwXX0=
 -->
