@@ -1,5 +1,10 @@
-# Unusual Arbitrary Attribute
+# 
+---
+type: posts
+title: Unusual Arbitrary Attribute
+author: Amutheezan Sivagnanam
 
+---
 #### **Warning !**
 
 This content is based on the issue I faced while doing analyzing with Arbitrary attribute of HL7. It is common for cases where arbitrary attributes are similar to the case of HL7
@@ -16,3 +21,6 @@ Caused by: org.apache.spark.sql.AnalysisException: cannot resolve '_MSH.MessageT
 operation_name, message_direction, status];
 ```
 To resolve this error we need to add ```**`**``` this while doing **COUNT** or **SELECT** or **INSERT** query (not essentially require for **CREATE** schema) in spark.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTg1Mzk0OTY1XX0=
+-->
