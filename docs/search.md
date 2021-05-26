@@ -1,7 +1,6 @@
-# Search Comparator & Apache Lucene
 ---
 type: posts
-title: Packaging Carbon Applications
+title: Search Comparator & Apache Lucene
 author: Amutheezan Sivagnanam
 
 ---
@@ -27,5 +26,5 @@ Search Comparator
 
 1. [https://lucene.apache.org/core/2_9_4/queryparsersyntax.html](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ5NTkyNTUzXX0=
+eyJoaXN0b3J5IjpbLTE4OTkwNzE3N119
 -->
