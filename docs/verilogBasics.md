@@ -1,7 +1,6 @@
-# 
 ---
 type: posts
-title: Packaging Carbon Applications
+title: Verilog Basics
 author: Amutheezan Sivagnanam
 
 ---
@@ -54,5 +53,5 @@ This was a simple example of down-counter counts from 8 till 3 and notify 1 when
 This was a quite initiative way to provide some examples of Verilog and give some basic understanding. This is strictly for beginners. Checkout my Github Repo on Verilog Examples.
 [https://amutheezan.github.io/verilogBasics/](https://amutheezan.github.io/verilogBasics/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTkwNjkzOTJdfQ==
+eyJoaXN0b3J5IjpbMjkyODA3Njc3XX0=
 -->
