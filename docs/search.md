@@ -1,6 +1,6 @@
 ---
 type: posts
-title:# Search Comparator & Apache Lucene
+title: Search Comparator & Apache Lucene
 author: Amutheezan Sivagnanam
 
 ---
@@ -26,5 +26,6 @@ Search Comparator
 
 1. [https://lucene.apache.org/core/2_9_4/queryparsersyntax.html](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNTE5NjM5OCwtMTg5OTA3MTc3XX0=
+eyJoaXN0b3J5IjpbLTE4OTkwNzE3NywxOTA1MTk2Mzk4LC0xOD
+k5MDcxNzddfQ==
 -->
