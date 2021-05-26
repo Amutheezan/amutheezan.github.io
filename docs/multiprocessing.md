@@ -1,6 +1,6 @@
 ---
 type: posts
-title: Python Multi Processing
+title:# Python Multi Processing
 author: Amutheezan Sivagnanam
 
 ---
@@ -34,5 +34,5 @@ print(len(contents))
    2. [https://github.com/Amutheezan/PyParallel](https://github.com/Amutheezan/PyParallel)
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIwOTI0Nzk4XX0=
+eyJoaXN0b3J5IjpbLTkyMDI3MzcyMSw2MjA5MjQ3OThdfQ==
 -->
