@@ -3,7 +3,7 @@ type: posts
 title: HL7 ACK
 author: Amutheezan Sivagnanam
 
----
+---# HL7 ACK
 #### **Warning !**
 
 This content is based on my study on the topic, by googling and this is just to share some thoughts and views about the topic. Using this for official purposes is at your own risk.
@@ -31,5 +31,5 @@ these acks are in normal mode or enhanced mode, thus normal mode ACKs are ```AA`
 1.  https://catalyze.io/learn/hl7-202-the-hl7-ack-acknowledgement-message
 2.  https://www.hl7.org/documentcenter/public_temp_088CF1E1-1C23-BA17-0C4227727B2BEC42/wg/conf/HL7MSH.htm
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NzcwNDM1Nl19
+eyJoaXN0b3J5IjpbNDEyOTk2NjEsLTQ5NzcwNDM1Nl19
 -->
