@@ -64,41 +64,18 @@ Sample ```build.xml```, and ```pom.xml``` files,
 ```xml
 
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project name="create-sample-CApps" default="zip" basedir=".">
-
-  
-
 <property name="project-name" value="${ant.project.name}"/>
-
 <property name="target-dir" value="target"/>
-
-  
-
 **<property name="CApp_sample_dir" value="sample"/>**
-
-  
-
 <target name="clean">
-
 <delete dir="${target-dir}"/>
-
 </target>
-
-  
-
 <target name="pre-configure">
-
 <mkdir dir="${target-dir}"/>
-
 <copy file="README.txt" todir="${target-dir}"/>
-
 </target>
-
-  
-
 <target name="zip" depends="clean,pre-configure">
-
 **<zip destfile="${target-dir}/${sample}.car">**
 
 **<zipfileset dir="${sample}"/>**
@@ -118,95 +95,47 @@ Sample ```build.xml```, and ```pom.xml``` files,
 We can add over own property name and value based on our use-cases, CApp models. And in the ```zip``` field of ```xml``` file, we provide the location to store the zip file.
 
   
-
 ```xml
-
 <?xml version="1.0" encoding="utf-8"?>
-
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-  
-
 <parent>
-
 <groupId>org.wso2.das</groupId>
-
 <artifactId>das-samples</artifactId>
-
 <version>3.1.1-SNAPSHOT</version>
-
 <relativePath>../pom.xml</relativePath>
-
 </parent>
-
-  
-
 <modelVersion>4.0.0</modelVersion>
-
 <artifactId>das-sample-CApps</artifactId>
-
 <name>WSO2 Data Analytics Server - Sample Composite Applications</name>
-
 <packaging>pom</packaging>
-
-  
-
 <build>
-
 <plugins>
-
 <plugin>
-
 <artifactId>maven-clean-plugin</artifactId>
-
 <version>2.4.1</version>
-
 <executions>
-
 <execution>
-
 <id>auto-clean</id>
-
 <phase>initialize</phase>
-
 <goals>
-
 <goal>clean</goal>
-
 </goals>
-
 </execution>
-
 </executions>
-
 </plugin>
-
 <plugin>
-
 <artifactId>maven-antrun-plugin</artifactId>
-
 <version>1.7</version>
-
 <executions>
-
 <execution>
-
 <phase>process-resources</phase>
-
 <configuration>
-
 <target>
-
 <ant antfile="build.xml" target="zip"/>
-
 </target>
-
 </configuration>
-
 <goals>
-
 <goal>run</goal>
 </goals>
 </execution>
@@ -240,6 +169,6 @@ To include jaggery-apis with CApps, we can implement a jaggery controller at the
 
 2. [http://udarakr.blogspot.com/2016/01/build-carbon-applicationCApp-for-wso2.html](http://udarakr.blogspot.com/2016/01/build-carbon-applicationCApp-for-wso2.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1ODY2MTgxOCwxMzY4NDIyODI5LC0xOT
-Q5OTU1NDg1LC0zNjExNDc5MzRdfQ==
+eyJoaXN0b3J5IjpbLTE1NTIxMDEzNjQsMTM2ODQyMjgyOSwtMT
+k0OTk1NTQ4NSwtMzYxMTQ3OTM0XX0=
 -->
