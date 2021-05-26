@@ -1,6 +1,6 @@
 ---
 type: posts
-title:# Datatables Makes Things Easy
+title: Datatables Makes Things Easy
 author: Amutheezan Sivagnanam
 
 ---
@@ -67,5 +67,6 @@ We can also add a button to expand and collapse child contents in the data table
 5.  https://datatables.net/examples/basic_init/hidden_columns.html
 6.  https://datatables.net/examples/api/row_details.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MTc1NTEyMywtMTI2OTYwOTAyMF19
+eyJoaXN0b3J5IjpbLTEyNjk2MDkwMjAsLTM5MTc1NTEyMywtMT
+I2OTYwOTAyMF19
 -->
