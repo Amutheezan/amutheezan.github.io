@@ -1,4 +1,10 @@
-# Which is the best multi-attribute sorting for python Array?
+---
+type: posts
+title: Which is the best multi-attribute sorting for python Array?
+author: Amutheezan Sivagnanam
+
+---
+
 
 ## QUESTION
 
@@ -21,3 +27,6 @@ Out of these which is one will return the result quickly for a 5D Array which ha
 ## ANSWER
 
 These three implementations are simply equal and have the same overhead of doing the sorting. Thus, it takes the same amount of time. So the best option is going for some other choice... Or languages
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQwMDI0NjI5XX0=
+-->
