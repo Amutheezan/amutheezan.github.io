@@ -55,8 +55,7 @@ ___
 
 ####  UNIVERSITY OF HOUSTON
 ----
-Graduate Research Assistant | Sep 2019
-2019 Fall - Present | Houston, TX
+##### Graduate Research Assistant | Sep 2019 - Present | Houston, TX
 
 * Department: Computer Science
 * Supervisor: [Dr. Aron Laszka](https://aronlaszka.com/)
@@ -68,7 +67,7 @@ Graduate Research Assistant | Sep 2019
 #### MILLENNIUMIT
 
 ---
-Software Engineer | Jan 2018 - Jul 2019 | Colombo,  LK
+##### Software Engineer | Jan 2018 - Jul 2019 | Colombo,  LK
  * Writing application software in the Object-Oriented manner.  
 * Practicing agile development practices.  
  *  Working experience with languages such as Java, Python, and C++  
@@ -83,7 +82,7 @@ Software Engineer | Jan 2018 - Jul 2019 | Colombo,  LK
 ---
 #### WSO2
 ---
-Software Engineering Intern | July 2016 – Dec 2016 | Colombo, LK
+##### Software Engineering Intern | July 2016 – Dec 2016 | Colombo, LK
  * Alerting critical issues in the medical industry by evaluating the HL7Message.
 * Analysis of the Message flow through out the organization. Enhancing the Query capabilities for Message with a highly complex combination of attribute.
 
@@ -93,7 +92,7 @@ Software Engineering Intern | July 2016 – Dec 2016 | Colombo, LK
 
 #### SENTIMENT ANALYSIS OF TWITTER
 
-University of Moratuwa | Final Year Project
+##### University of Moratuwa | Final Year Project
 
 Nov 23, 2016 – Nov 24, 2017
 
@@ -118,17 +117,21 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 ---
 
-Programming
+##### Programming
+
 • Python • C++ • C • Java • MATLAB • R • Verilog
 
-DB and SQL
-• Oracle•MySQL•ApacheSpark•ApacheLucene•SiddhiQL
+##### DB and SQL
 
-Platforms & Tools•Git•HAPI•GDB•Atmel•NodeMCU•ESP8266
+• Oracle • MySQL • ApacheSpark • ApacheLucene • SiddhiQL
 
-Special Skills
+##### Platforms & Tools
 
-•Leadership•Teamwork
+•Git • HAPI • GDB • Atmel • NodeMCU • ESP8266
+
+##### Special Skills
+
+• Leadership • Teamwork
 
 ---
 ### ACHIEVEMENTS
@@ -145,5 +148,5 @@ Special Skills
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTMxOTAwNzgsMTg1NDkxNDI2Ml19
+eyJoaXN0b3J5IjpbMTgxNzE1OTIwNywxODU0OTE0MjYyXX0=
 -->
