@@ -1,6 +1,6 @@
 ---
 type: posts
-title: Multi-tag Reading with RDM6300?
+title:# Multi-tag Reading with RDM6300?
 author: Amutheezan Sivagnanam
 
 ---
@@ -32,6 +32,6 @@ This was actually the topic of this Discussion, based my research in this topic 
 1.  Using a different Reader Instead of this Like MRFC522 Module which supports Multi-tag reading at the same time. There is also a library found on Github to enable this.
 2.  Implementing an Anti Collision Algorithm. The reason for not reading more than one tag is due to Collision between low-frequency signals, thus one signal block to another. So when we took more than 2 tags at a time only the one which comes in first will successfully be scanned, and others are blocked.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjQ2MDE2MjAsLTEzODg2NDc2NzcsLT
-EyNjQ2MDE2MjBdfQ==
+eyJoaXN0b3J5IjpbLTEzODg2NDc2NzcsLTEyNjQ2MDE2MjAsLT
+EzODg2NDc2NzcsLTEyNjQ2MDE2MjBdfQ==
 -->
