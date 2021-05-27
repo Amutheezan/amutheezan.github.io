@@ -4,7 +4,7 @@ title: Search Comparator & Apache Lucene
 author: Amutheezan Sivagnanam
 
 ---
-#### **Warning !**
+#### **Disclaimer**
 
 This content is based on the issue I faced while doing analyzing with a search comparator for queries associated with the HL7 message field. (but this is applicable for sample scenarios whether the Lucene queries can be used.
 
@@ -26,6 +26,7 @@ Search Comparator
 
 1. [https://lucene.apache.org/core/2_9_4/queryparsersyntax.html](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTkwNzE3NywxOTA1MTk2Mzk4LC0xOD
-k5MDcxNzcsMTkwNTE5NjM5OCwtMTg5OTA3MTc3XX0=
+eyJoaXN0b3J5IjpbMTExMzUyNzQzNSwtMTg5OTA3MTc3LDE5MD
+UxOTYzOTgsLTE4OTkwNzE3NywxOTA1MTk2Mzk4LC0xODk5MDcx
+NzddfQ==
 -->
