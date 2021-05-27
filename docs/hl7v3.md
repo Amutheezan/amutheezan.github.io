@@ -7,7 +7,7 @@ author: Amutheezan Sivagnanam
 
 #### **Disclaimer**
 
-This composed content is my own. It was based on my research made on this topic. So I just some basic clarification on similarities and Dissimilarities for my project @ internship. 
+I prepared this contents based on the research, I made on the particular topic. So I just some basic clarification on similarities and Dissimilarities for my project @ internship. 
 
 [ Note this post was written in 2016, and just republished. ]
 
@@ -54,6 +54,6 @@ Note these CDA, CCD, SPL, CCOW are released alongside version 3 and it was expec
 5.  SPL - Structured Product Labeling
 6.  CCOW - Clinical Context Object Markup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTI4MjMyMDksMTgwNTA5OTA1OSwtMT
-g3MDUzMzM0MiwtMTIyMTY1NTA3MV19
+eyJoaXN0b3J5IjpbNjc3NTM3OTQwLC0xNTEyODIzMjA5LDE4MD
+UwOTkwNTksLTE4NzA1MzMzNDIsLTEyMjE2NTUwNzFdfQ==
 -->
