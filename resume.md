@@ -47,8 +47,7 @@ ___
 
 ####  UNIVERSITY OF HOUSTON
 ----
-Graduate Research Assistant
-2019 Fall - Present | Houston, TX
+Graduate Research Assistant | Sep 2019 - Present | Houston, TX
 
 * Department: Computer Science
 * Supervisor: [Dr.Aron Laszka](https://aronlaszka.com/)
@@ -59,8 +58,7 @@ Graduate Research Assistant
 #### MILLENNIUMIT
 
 ---
- SOFTWARE ENGINEER
- Jan 2018 - Jul 2019 | Colombo,  LK
+Software Engineer | Jan 2018 - Jul 2019 | Colombo,  LK
 * Writing application software in the Object-Oriented manner.  
 * Practicing agile development practices.  
 * Working experience with languages such as Java, Python, and C++  
@@ -75,7 +73,6 @@ Graduate Research Assistant
 ---
 #### WSO2
 ---
- SOFTWARE ENGINEERING INTERN
- July 2016 – Dec 2016 | Colombo, LK
+Software Engineering Intern | July 2016 – Dec 2016 | Colombo, LK
 * Alerting critical issues in the medical industry by evaluating the HL7Message.
 * Analysis of the Message flow through out the organization. Enhancing the Query capabilities for Message with a highly complex combination of attribute.
