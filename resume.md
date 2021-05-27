@@ -24,20 +24,14 @@ ___
 
 #### UNIVERSITY OF HOUSTON
 ---
-Doctor of Philosophy 
-
-Computer and Information Science
-
-(2019 Fall - Present)
+Doctor of Philosophy | Computer and Information Science | 2019 Fall - Present
 
 ---
 #### UNIVERSITY OF MORATUWA
 ---
-Bachelors Science of Engineering
+Bachelors Science of Engineering | Computer Science and Engineering Department | 2014 January - 2018 January
 
-Computer Science and Engineering Department
-
-Integrated Computer Engineering Stream
+Stream: Integrated Computer Engineering Stream
 
 CGPA - 3.81/4.20
 
@@ -137,5 +131,5 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxOTAxNzc2OSwxODU0OTE0MjYyXX0=
+eyJoaXN0b3J5IjpbMTA3NjAyNDQxMSwxODU0OTE0MjYyXX0=
 -->
