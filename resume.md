@@ -96,10 +96,13 @@ Project URL: [https://github.com/Amutheezan/TSAwithSSL](https://github.com/Amuth
 
 Upgraded Project (to python3) : [https://github.com/Amutheezan/TSAwithSSLv2](https://github.com/Amutheezan/TSAwithSSLv2)
 
-DENGAI:PREDICTINGDISEASESPREADUNIVERSITY OF MORATUWA | UNDERGRADUATE PROJECT
-Feb 28, 2017 – Jun 16, 2017•
+#### DENGAI : PREDICTING DISEASE SPREAD
 
-PredictingthedengueoccurrencebyusingpreviousyeardatabyapplyingdataminingtechniquesusingR
+UNIVERSITY OF MORATUWA | UNDERGRADUATE PROJECT
+
+Feb 28, 2017 – Jun 16, 2017
+
+Predicting the dengue occurrence by using previous year data by applying datamining techniques using R.  The detailed description can be found [here](dengAI.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MDkwODI3MV19
+eyJoaXN0b3J5IjpbLTEwMTQ3OTEwODddfQ==
 -->
