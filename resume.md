@@ -55,6 +55,7 @@ Graduate Research Assistant | Sep 2019
 * Lab: Resilient Networks and Systems Lab
 * Concentration: Artificial Intelligence, Machine Learning, and Data Mining
 * Projects: 03
+
 ---
 #### MILLENNIUMIT
 
@@ -90,6 +91,7 @@ UNIVERSITY OF MORATUWA | UNDERGRADUATE FINAL YEAR RESEARCH PROJECT
 Nov 23, 2016 – Nov 24, 2017
 
 Classification of tweet’s polarity on the basis of positive, negative and neutral using semi-supervised approaches. Mainly focused on Wrapper based technologies such as self-training, co-training.
+
 Project URL: [https://github.com/Amutheezan/TSAwithSSL](https://github.com/Amutheezan/TSAwithSSL)
 
 Upgraded Project (to python3) : [https://github.com/Amutheezan/TSAwithSSLv2](https://github.com/Amutheezan/TSAwithSSLv2)
@@ -119,5 +121,5 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0OTg2NDEwNl19
+eyJoaXN0b3J5IjpbMTg1NDkxNDI2Ml19
 -->
