@@ -60,13 +60,14 @@ We can also add a button to expand and collapse child contents in the data table
 
 ### **References**
 
-1.  https://datatables.net
-2.  https://datatables.net/examples/data_sources/server_side.html
-3.  https://datatables.net/examples/basic_init/dom.html
-4.  https://datatables.net/reference/option/ajax
-5.  https://datatables.net/examples/basic_init/hidden_columns.html
-6.  https://datatables.net/examples/api/row_details.html
+1.  [https://datatables.net](https://datatables.net)
+2.  [https://datatables.net/examples/data_sources/server_side.html](https://datatables.net/examples/data_sources/server_side.html)
+3.  [https://datatables.net/examples/basic_init/dom.html](https://datatables.net/examples/basic_init/dom.html)
+4.  [https://datatables.net/reference/option/ajax](https://datatables.net/reference/option/ajax)
+5.  [https://datatables.net/examples/basic_init/hidden_columns.html](https://datatables.net/examples/basic_init/hidden_columns.html)
+6.  [https://datatables.net/examples/api/row_details.html](https://datatables.net/examples/api/row_details.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjk2MDkwMjAsLTM5MTc1NTEyMywtMT
-I2OTYwOTAyMCwtMzkxNzU1MTIzLC0xMjY5NjA5MDIwXX0=
+eyJoaXN0b3J5IjpbMzEyMzEzNjU0LC0xMjY5NjA5MDIwLC0zOT
+E3NTUxMjMsLTEyNjk2MDkwMjAsLTM5MTc1NTEyMywtMTI2OTYw
+OTAyMF19
 -->
