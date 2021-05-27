@@ -87,7 +87,6 @@ Software Engineering Intern | July 2016 – Dec 2016 | Colombo, LK
  * Alerting critical issues in the medical industry by evaluating the HL7Message.
 * Analysis of the Message flow through out the organization. Enhancing the Query capabilities for Message with a highly complex combination of attribute.
 
-
 ---
 ### PROJECTS - UNDERGRAD
 ---
@@ -115,6 +114,23 @@ Predicting the dengue occurrence by using previous year data by applying datamin
 Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheezan/DengAi)
 
 ---
+### SKILLS
+
+---
+
+Programming
+• Python • C++ • C • Java • MATLAB • R • Verilog
+
+DB and SQL
+• Oracle•MySQL•ApacheSpark•ApacheLucene•SiddhiQL
+
+Platforms & Tools•Git•HAPI•GDB•Atmel•NodeMCU•ESP8266
+
+Special Skills
+
+•Leadership•Teamwork
+
+---
 ### ACHIEVEMENTS
 ---
 2015 - 2017: Dean List Semester 2, 4 & 8
@@ -129,5 +145,5 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTgyMDE1MDMsMTg1NDkxNDI2Ml19
+eyJoaXN0b3J5IjpbLTE0MTMxOTAwNzgsMTg1NDkxNDI2Ml19
 -->
