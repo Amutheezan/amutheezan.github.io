@@ -146,9 +146,9 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 ### SOCIETIES 
 
-2007- 2012 : Treasurer/Member (Interact Club, Jaffna Hindu College)
+2007- 2012: Treasurer/Member (Interact Club, Jaffna Hindu College)
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY0MzU4NDA1LDE4NTQ5MTQyNjJdfQ==
+eyJoaXN0b3J5IjpbLTMxMDI0NzM3NSwxODU0OTE0MjYyXX0=
 -->
