@@ -41,12 +41,12 @@ Integrated Computer Engineering Stream
 
 CGPA - 3.81/4.20
 
-###COURSEWORK
-UNDERGRADUATE
+### COURSEWORK
+#### UNDERGRADUATE
 
-DataMining&InformationRetrieval
-IntelligentSystems
-OperationalResearch
+DataMining & Information Retrieval
+Intelligent Systems
+Operational Research
 
 #### GRADUATE
 Automata and Theory of Computation
@@ -137,5 +137,5 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NzMyMzI0MSwxODU0OTE0MjYyXX0=
+eyJoaXN0b3J5IjpbLTYxOTAxNzc2OSwxODU0OTE0MjYyXX0=
 -->
