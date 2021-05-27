@@ -11,7 +11,7 @@ author: Amutheezan Sivagnanam
 Website: [http://amutheezan.com](http://amutheezan.com)
 Github: [Amutheezan](https://github.com/Amutheezan)
 LinkedIn: [amutheezansivagnanam](https://www.linkedin.com/in/amutheezansivagnanam/)
-Email: [asivagnanam@uh.edu](mailto:asivagnanam@uh.edu?)
+Email: [asivagnanam@uh.edu](mailto:asivagnanam@uh.edu)
 Phone Number:+1 346 232 6924
 
 ---
@@ -48,5 +48,5 @@ Graduate Research Assistant
 * Concentration: Artificial Intelligence, Machine Learning, and Data Mining
 * Projects: 03
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNDEwMTI5OV19
+eyJoaXN0b3J5IjpbLTQzNDU3MDg5Ml19
 -->
