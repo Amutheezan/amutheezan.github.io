@@ -1,6 +1,6 @@
 ---
 type: posts
-title: WSO2 INTERNSHIP
+title: WSO2 Internship
 author: Amutheezan Sivagnanam
 
 ---
@@ -264,6 +264,6 @@ Finally, overall I had a good Internship and gained the following technical know
 -   Working with JQuery and Some JavaScript Library
 -   Spark and Siddhi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDc1NTg1NjcsLTkxMjk5MzI4NSwxOT
-YyMzc0MDU5XX0=
+eyJoaXN0b3J5IjpbLTIwNDk5ODAzNTksLTE0MDc1NTg1NjcsLT
+kxMjk5MzI4NSwxOTYyMzc0MDU5XX0=
 -->
