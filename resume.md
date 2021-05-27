@@ -59,8 +59,7 @@ Graduate Research Assistant | Sep 2019
 #### MILLENNIUMIT
 
 ---
-Software Engineer | SOFTWARE ENGINEER
- Jan 2018 - Jul 2019 | Colombo,  LK
+Software Engineer | Jan 2018 - Jul 2019 | Colombo,  LK
  * Writing application software in the Object-Oriented manner.  
 * Practicing agile development practices.  
  *  Working experience with languages such as Java, Python, and C++  
@@ -75,8 +74,7 @@ Software Engineer | SOFTWARE ENGINEER
 ---
 #### WSO2
 ---
-Software Engineering Intern | SOFTWARE ENGINEERING INTERN
- July 2016 – Dec 2016 | Colombo, LK
+Software Engineering Intern | July 2016 – Dec 2016 | Colombo, LK
  * Alerting critical issues in the medical industry by evaluating the HL7Message.
 * Analysis of the Message flow through out the organization. Enhancing the Query capabilities for Message with a highly complex combination of attribute.
 
@@ -110,6 +108,7 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 ### ACHIEVEMENTS
 ---
 2015 - 2017: Dean List Semester 2, 4 & 8
+
 2015: Runners Information Security Quiz (SLCert)
 
 ---
@@ -117,7 +116,8 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 ### SOCIETIES 
 
 2007- 2012 : Treasurer/Member (Interact Club, Jaffna Hindu College)
+
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMTUwMTAzNF19
+eyJoaXN0b3J5IjpbLTQ0OTg2NDEwNl19
 -->
