@@ -1,7 +1,7 @@
 
 ---
 type: posts
-title: Configure MySQL for Arduino in Python
+title:# Configure MySQL for Arduino in Python
 author: Amutheezan Sivagnanam
 
 ---
@@ -51,6 +51,7 @@ I referred to this code in [4](https://github.com/surendharreddy/Arduino-MySQL) 
 
 4. [https://github.com/surendharreddy/Arduino-MySQL](https://github.com/surendharreddy/Arduino-MySQL)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTE4MzM3NDIsLTE0OTU3NTU2NzIsLT
-ExMDM4MzAxMTgsMjA1NDA0MzU1NSwtMTEwMzgzMDExOF19
+eyJoaXN0b3J5IjpbLTQ4NTkzNjM0NywtMTE5MTgzMzc0MiwtMT
+Q5NTc1NTY3MiwtMTEwMzgzMDExOCwyMDU0MDQzNTU1LC0xMTAz
+ODMwMTE4XX0=
 -->
