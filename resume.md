@@ -47,10 +47,10 @@ Graduate Research Assistant
 
 * Department: Computer Science
 
-* Supervisor: Dr.AronLaszka
+* Supervisor: [Dr.Aron Laszka](https://aronlaszka.com/)
 
-* Lab: ResilientNetworksandSystemsLab
+* Lab: Resilient Networks and Systems Lab
 
-* Concentration: MachineLearning,DataMiningandAI
+* Concentration: Machine Learning, Data Mining and AI
 
 * Projects: 03
