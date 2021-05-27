@@ -63,7 +63,7 @@ ___
 * Concentration: Artificial Intelligence, Machine Learning, and Data Mining
 * Projects: 03
 
-Currently, focuses on optimizing bus-route scheduling and minimizing energy costs.
+Currently, focuses on optimizing fixed route scheduling and minimizing energy costs , also optimizing the para-transit operations by ensuring the real-world constraints
 
 ---
 #### MILLENNIUMIT
@@ -150,5 +150,5 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjA2NjU5MTYsMTg1NDkxNDI2Ml19
+eyJoaXN0b3J5IjpbNTY0MzU4NDA1LDE4NTQ5MTQyNjJdfQ==
 -->
