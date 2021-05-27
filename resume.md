@@ -80,6 +80,20 @@ Software Engineering Intern | SOFTWARE ENGINEERING INTERN
  * Alerting critical issues in the medical industry by evaluating the HL7Message.
 * Analysis of the Message flow through out the organization. Enhancing the Query capabilities for Message with a highly complex combination of attribute.
 
+
+---
+### PROJECTS - UNDERGRAD
+---
+
+SENTIMENT ANALYSIS OF TWITTER UNIVERSITY OF MORATUWA | UNDERGRADUATE FINAL YEAR RESEARCH
+Nov 23, 2016 – Nov 24, 2017
+
+Classificationoftweet’spolarityonthebasisofpositive,negativeandneutralusingsemi-supervisedapproaches.MainlyfocusedonWrapperbasedtechnologiessuchasself-training,co-training.
+
+DENGAI:PREDICTINGDISEASESPREADUNIVERSITY OF MORATUWA | UNDERGRADUATE PROJECT
+Feb 28, 2017 – Jun 16, 2017•
+
+PredictingthedengueoccurrencebyusingpreviousyeardatabyapplyingdataminingtechniquesusingR
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTkzNjI2MjZdfQ==
+eyJoaXN0b3J5IjpbLTE3MTgxMTgzNDBdfQ==
 -->
