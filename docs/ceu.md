@@ -30,8 +30,8 @@ This Ceu language was used to make an Arduino binding through Ceu-Arduino, which
 
   
 
-1. https://github.com/fsantanna/ceu-arduino
+1. [https://github.com/fsantanna/ceu-arduino](https://github.com/fsantanna/ceu-arduino)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzQzNDA5MTUsLTcxMDUxNTUyOSwxMj
-kzOTU0NTM5XX0=
+eyJoaXN0b3J5IjpbLTM0ODQwODM5MywtNzEwNTE1NTI5LDEyOT
+M5NTQ1MzldfQ==
 -->
