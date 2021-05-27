@@ -4,9 +4,9 @@ title: Datatables Makes Things Easy
 author: Amutheezan Sivagnanam
 
 ---
-#### **Warning !**
+#### **Disclaimer**
 
-This is based on my self-research, Jerad Aiyaa's guidance. The things I included here are based on the things I looked in, but Data-tables are more things to deal with.
+This post is based on my self-research, Jerad's guidance. The things I included here are based on the things I looked in, but Datatables are more things to deal with.
 
 Data tables are a jquery based library that is used to make the tables look nice and display, searching, pagination and other lots of facilities. Though the default table can manually do this stuff, this library enhances the performance when handling the larger data. This will do function such as searching, pagination, ordering like an SQL engine does on the server-side; As such, each draw of the table will result in a new ```AJAX``` request being made to get the required data.
 
@@ -67,7 +67,7 @@ We can also add a button to expand and collapse child contents in the data table
 5.  [https://datatables.net/examples/basic_init/hidden_columns.html](https://datatables.net/examples/basic_init/hidden_columns.html)
 6.  [https://datatables.net/examples/api/row_details.html](https://datatables.net/examples/api/row_details.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEyMzEzNjU0LC0xMjY5NjA5MDIwLC0zOT
-E3NTUxMjMsLTEyNjk2MDkwMjAsLTM5MTc1NTEyMywtMTI2OTYw
-OTAyMF19
+eyJoaXN0b3J5IjpbLTY0OTYwMDQ3OCwtMTI2OTYwOTAyMCwtMz
+kxNzU1MTIzLC0xMjY5NjA5MDIwLC0zOTE3NTUxMjMsLTEyNjk2
+MDkwMjBdfQ==
 -->
