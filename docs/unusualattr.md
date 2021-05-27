@@ -4,7 +4,7 @@ title: Unusual Arbitrary Attribute
 author: Amutheezan Sivagnanam
 
 ---
-#### **Warning !**
+#### **Disclaimer**
 
 This content is based on the issue I faced while doing analyzing with Arbitrary attribute of HL7. It is common for cases where arbitrary attributes are similar to the case of HL7
 
@@ -21,6 +21,7 @@ operation_name, message_direction, status];
 ```
 To resolve this error we need to add ```**`**``` this while doing **COUNT** or **SELECT** or **INSERT** query (not essentially require for **CREATE** schema) in spark.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMDAyODU0MCwtNzg4NzM2ODEzLDIxMD
-AwMjg1NDAsLTc4ODczNjgxMywyMTAwMDI4NTQwXX0=
+eyJoaXN0b3J5IjpbLTkwOTExODQxNCwyMTAwMDI4NTQwLC03OD
+g3MzY4MTMsMjEwMDAyODU0MCwtNzg4NzM2ODEzLDIxMDAwMjg1
+NDBdfQ==
 -->
