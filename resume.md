@@ -30,9 +30,7 @@ Doctor of Philosophy (Computer and Information Science)
 #### UNIVERSITY OF MORATUWA
 
 Bachelors Science of Engineering
-
 Computer Science and Engineering Department
-
 Integrated Computer Engineering Stream
 
 CGPA - 3.81/4.20
@@ -46,11 +44,10 @@ Graduate Research Assistant
 (2019 Fall - Present)
 
 * Department: Computer Science
-
 * Supervisor: [Dr.Aron Laszka](https://aronlaszka.com/)
-
 * Lab: Resilient Networks and Systems Lab
-
-* Concentration: Machine Learning, Data Mining and AI
-
+* Concentration: Artificial Intelligence, Machine Learning, and Data Mining
 * Projects: 03
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4NzY2NDM4ODBdfQ==
+-->
