@@ -9,7 +9,7 @@ author: Amutheezan Sivagnanam
 ## **GUIDE IS ONLY FOR WINDOWS**
 
 
-#### **Warning !**
+#### **Disclaimer**
 
   
 
@@ -51,7 +51,7 @@ I referred to this code in [4](https://github.com/surendharreddy/Arduino-MySQL) 
 
 4. [https://github.com/surendharreddy/Arduino-MySQL](https://github.com/surendharreddy/Arduino-MySQL)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTE4MzM3NDIsLTQ4NTkzNjM0NywtMT
-E5MTgzMzc0MiwtMTQ5NTc1NTY3MiwtMTEwMzgzMDExOCwyMDU0
-MDQzNTU1LC0xMTAzODMwMTE4XX0=
+eyJoaXN0b3J5IjpbLTkwNzY2NDExNCwtMTE5MTgzMzc0MiwtND
+g1OTM2MzQ3LC0xNDk1NzU1NjcyLC0xMTAzODMwMTE4LDIwNTQw
+NDM1NTUsLTExMDM4MzAxMThdfQ==
 -->
