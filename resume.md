@@ -37,19 +37,17 @@ CGPA - 3.81/4.20
 
 ### COURSEWORK
 #### UNDERGRADUATE
-
-DataMining & Information Retrieval
-Intelligent Systems
-Operational Research
+* DataMining & Information Retrieval
+* Intelligent Systems
+* Operational Research
 
 #### GRADUATE
-Automata and Theory of Computation
-Operating Systems
-Machine Learning
-Artificial Intelligence
-Advance Numerical Analysis
- Computer Architecture
-
+* Machine Learning
+* Artificial Intelligence
+* Advance Numerical Analysis
+* Computer Architecture
+* Automata and Theory of Computation
+* Operating Systems
 
 ---
 ### WORK EXPERIENCE
@@ -131,5 +129,5 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NjAyNDQxMSwxODU0OTE0MjYyXX0=
+eyJoaXN0b3J5IjpbLTIwNTgyMDE1MDMsMTg1NDkxNDI2Ml19
 -->
