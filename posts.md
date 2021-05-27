@@ -32,3 +32,6 @@ author: Amutheezan Sivagnanam
 9. [Search Comparator & Apache Lucene](docs/search.md)
 10. [Datatables Makes Things Easy](docs/dt.md)
 11. [Some Useful Javascript Libraries](docs/jslib.md)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzIxODczNTk3XX0=
+-->
