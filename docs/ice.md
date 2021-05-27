@@ -6,13 +6,13 @@ author: Amutheezan Sivagnanam
 ---
 ## **First Day : 2014.10.27**
 
-On that day, I have no idea about this "ICE" except than the things learnt from the mentoring session and seniors. But Unlike I worried, it was a very pleasant class, I just listen to what I am hearing spending that 2 hours with my thoughts. And that how it ended up finally but maybe that was not a good day of the start but I feel lucky when it comes to the End of semester :relaxed:. Nothing is Strange at Final: Everything is Strange at Beginning. A quiet enough philosophy we are following years and years :stuck_out_tongue_closed_eyes: :relaxed:
+On that day, I have no idea about this "ICE" except than the things learnt from the mentoring session and seniors. But Unlike I worried, it was a very pleasant class, I just listen to what lecturer teaches. It was not a good day, but at the end of the semester, I learnt a lot of new things. Nothing is Strange at Final; Everything is Strange at Beginning. A quiet enough philosophy we are following years and years :stuck_out_tongue_closed_eyes:.
 
 ## **Ideas and Concepts**
 
 I get some basic ideas about the kinds of stuff. Especially in Object Oriented Programming and Embedded System Programming. I divide those kinds of stuff into categories and I will share the Experience.
 
-#### Object Oriented Programming (OOPS :stuck_out_tongue_closed_eyes: :relaxed: )
+#### Object Oriented Programming (OOPS :stuck_out_tongue_closed_eyes: )
 
 It was quite similar we just concern about some practical real-time scenarios unlike the typical examples provided. I was grateful to have such a good professor to nicely explain all the principles ineffective way to understand by poor kids like me. I loved the way of teaching. Initially, when I start studying class it looks like to strange because most of the lessons and ideas are new to me. but later on, teaching with proper examples, and practice questions help me to improve on my OOPS skills. :relaxed: :stuck_out_tongue_closed_eyes:
 
@@ -81,7 +81,7 @@ These are just some basic ideas and concepts if time supports I will share ideas
 
 [Project Records](https://amutheezan.files.wordpress.com/2016/08/projects.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4Njk3MjMwMCwyMDA5NTk1MDIzLDE3NT
-A0MzE0NjIsMjAwOTU5NTAyMywxNzUwNDMxNDYyLDIwMDk1OTUw
-MjNdfQ==
+eyJoaXN0b3J5IjpbOTQwOTQzOTUsMjAwOTU5NTAyMywxNzUwND
+MxNDYyLDIwMDk1OTUwMjMsMTc1MDQzMTQ2MiwyMDA5NTk1MDIz
+XX0=
 -->
