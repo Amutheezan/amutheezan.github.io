@@ -50,7 +50,7 @@ ___
 Graduate Research Assistant | Sep 2019 - Present | Houston, TX
 
 * Department: Computer Science
-* Supervisor: [Dr.Aron Laszka](https://aronlaszka.com/)
+* Supervisor: [Dr. Aron Laszka](https://aronlaszka.com/)
 * Lab: Resilient Networks and Systems Lab
 * Concentration: Artificial Intelligence, Machine Learning, and Data Mining
 * Projects: 03
