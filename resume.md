@@ -109,8 +109,15 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 ---
 ### ACHIEVEMENTS
 ---
-2015-2017: Dean List Semester2,4&8
+2015 - 2017: Dean List Semester 2, 4 & 8
 2015: Runners Information Security Quiz (SLCert)
+
+---
+
+### SOCIETIES 
+
+2007- 2012 : Treasurer/Member (Interact Club, Jaffna Hindu College)
+2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2OTg0Nzk1NF19
+eyJoaXN0b3J5IjpbMTAwMTUwMTAzNF19
 -->
