@@ -62,15 +62,15 @@ Graduate Research Assistant | Sep 2019
 Software Engineer | SOFTWARE ENGINEER
  Jan 2018 - Jul 2019 | Colombo,  LK
  * Writing application software in the Object-Oriented manner.  
-* *  Practicing agile development practices.  
+* Practicing agile development practices.  
  *  Working experience with languages such as Java, Python, and C++  
 * Introduce Unit Testing for Libraries in Post Trade C++ Code  
 * Worked on Making changes in DB and Tested with BDD based Testing.  
  * Completed the Code Integration works related to Back-End Regression  
  * Updated automatic updates to auto-generated codes based on Database changes using Integration Plans.  
  * Participated in Code Integration and Code Deployment Plans.  
-* *  Participated in professional training programs conducted by Millennium IT Software and Post Trade Team.  
-* *  Worked on Front-End Development for both Product and Solution which consists of Enhancement, Bug Fixing, Merging and Introducing new features.
+* Participated in professional training programs conducted by Millennium IT Software and Post Trade Team.  
+* Worked on Front-End Development for both Product and Solution which consists of Enhancement, Bug Fixing, Merging and Introducing new features.
 
 ---
 #### WSO2
@@ -81,5 +81,5 @@ Software Engineering Intern | SOFTWARE ENGINEERING INTERN
 * Analysis of the Message flow through out the organization. Enhancing the Query capabilities for Message with a highly complex combination of attribute.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5OTYzOTUwXX0=
+eyJoaXN0b3J5IjpbLTEyNTkzNjI2MjZdfQ==
 -->
