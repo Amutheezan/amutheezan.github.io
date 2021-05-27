@@ -1,13 +1,8 @@
 
 ---
-
 type: posts
-
 title: Carbon Component (WSO2)
-
 author: Amutheezan Sivagnanam
-
-  
 
 ---
 
@@ -228,6 +223,7 @@ OSGi bundle so, don't forget to add this -->
 5. [http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml](http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml)
 6. [http://www.tutorialspoint.com/maven/maven_repositories.htm](http://www.tutorialspoint.com/maven/maven_repositories.htm)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MDQ0Mzc0LDk3NjE1NzgsMTA4NDIwNT
-c0MCwtMjA5ODkwNTEzMywzMjY1MjY2ODJdfQ==
+eyJoaXN0b3J5IjpbLTEyMTE5NTAxNDgsLTk0MDQ0Mzc0LDk3Nj
+E1NzgsMTA4NDIwNTc0MCwtMjA5ODkwNTEzMywzMjY1MjY2ODJd
+fQ==
 -->
