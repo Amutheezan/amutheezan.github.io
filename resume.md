@@ -102,7 +102,15 @@ UNIVERSITY OF MORATUWA | UNDERGRADUATE PROJECT
 
 Feb 28, 2017 – Jun 16, 2017
 
-Predicting the dengue occurrence by using previous year data by applying datamining techniques using R.  The detailed description can be found [here](dengAI.md)
+Predicting the dengue occurrence by using previous year data by applying datamining techniques using R.  The detailed description can be found [here](dengAI.md).
+
+Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheezan/DengAi)
+
+---
+### ACHIEVEMENTS
+---
+2015-2017: Dean List Semester2,4&8
+2015: Runners Information Security Quiz (SLCert)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTQ3OTEwODddfQ==
+eyJoaXN0b3J5IjpbMTg2OTg0Nzk1NF19
 -->
