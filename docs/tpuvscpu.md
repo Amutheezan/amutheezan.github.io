@@ -5,17 +5,23 @@ author: Amutheezan Sivagnanam
 
 ---
 
-I follow the basic step by step guide in \cite{quickbench}.
-I follow the instructions to work on TPU using \cite{stepbystep}
+I follow the basic step by step guide in [1].
+I follow the instructions to work on TPU using [2].
 
 First we need to import the following libraries, set the configuration to log the information and filter out the warnings.
 
-\begin{itemize}
-    \item \texttt{tensorflow} - for computations with matrices.
-    \item \texttt{timeit} - to compute the time taken
-\end{itemize}
-\verbatiminput{results/sample/import_lib.py}
+* tensorflow - for computations with matrices.
+* timeit - to compute the time taken
 
+```python
+import tensorflow as tf
+import timeit
+import warnings
+warnings.filterwarnings('ignore')
+tf.get_logger().setLevel('INFO')
+```
+
+### CPU
 \subsection*{CPU-Version}
 The code below show the version of code that can be executed in CPU
 
@@ -170,5 +176,5 @@ Again, same as previous section, while running on google colab in TPU mode make 
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwODA3NzA3MF19
+eyJoaXN0b3J5IjpbLTE0MDYxMTI5NTNdfQ==
 -->
