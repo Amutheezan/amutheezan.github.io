@@ -4,7 +4,7 @@ title: Some Useful JavaScript Libraries
 author: Amutheezan Sivagnanam
 
 ---
-#### **Warning !**
+#### **Disclaimer**
 
 These post contents are just for the purpose of sharing some issues I faced during my Internship projects for design iframe for gadget designing. I hope it will be the same work for HTML pages too.
 
@@ -70,6 +70,7 @@ My last post is about data-tables since I omit it's contents here.
 3.  [https://select2.github.io/](https://select2.github.io/)
 4.  [http://leafletjs.com/index.html](http://leafletjs.com/index.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxOTc3MzA0Myw4MDI4NjgzNjIsMTgxOT
-c3MzA0Myw4MDI4NjgzNjIsMTgxOTc3MzA0M119
+eyJoaXN0b3J5IjpbLTE0ODI2MjQzMywxODE5NzczMDQzLDgwMj
+g2ODM2MiwxODE5NzczMDQzLDgwMjg2ODM2MiwxODE5NzczMDQz
+XX0=
 -->
