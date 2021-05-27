@@ -173,7 +173,7 @@ Again, same as previous section, while running on google colab in TPU mode make 
 
 \subsection*{Observations}
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
-> Written with [StackEdit](https://stackedit.io/).
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjc3NDgyODVdfQ==
+eyJoaXN0b3J5IjpbMjA1NjkxMzcxN119
 -->
