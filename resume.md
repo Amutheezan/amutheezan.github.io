@@ -85,19 +85,21 @@ Software Engineering Intern | SOFTWARE ENGINEERING INTERN
 ### PROJECTS - UNDERGRAD
 ---
 
-SENTIMENT ANALYSIS OF TWITTER
+#### SENTIMENT ANALYSIS OF TWITTER
 
 UNIVERSITY OF MORATUWA | UNDERGRADUATE FINAL YEAR RESEARCH PROJECT
 
 Nov 23, 2016 – Nov 24, 2017
 
 Classification of tweet’s polarity on the basis of positive, negative and neutral using semi-supervised approaches. Mainly focused on Wrapper based technologies such as self-training, co-training.
-Project URL: www
+Project URL: [https://github.com/Amutheezan/TSAwithSSL](https://github.com/Amutheezan/TSAwithSSL)
+
+Upgraded Project (to python3) : [https://github.com/Amutheezan/TSAwithSSLv2](https://github.com/Amutheezan/TSAwithSSLv2)
 
 DENGAI:PREDICTINGDISEASESPREADUNIVERSITY OF MORATUWA | UNDERGRADUATE PROJECT
 Feb 28, 2017 – Jun 16, 2017•
 
 PredictingthedengueoccurrencebyusingpreviousyeardatabyapplyingdataminingtechniquesusingR
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTA3NjkyMl19
+eyJoaXN0b3J5IjpbMjA1MDkwODI3MV19
 -->
