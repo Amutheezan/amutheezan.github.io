@@ -21,13 +21,12 @@ warnings.filterwarnings('ignore')
 tf.get_logger().setLevel('INFO')
 ```
 
-### CPU
-\subsection*{CPU-Version}
+### CPU-Version
 The code below show the version of code that can be executed in CPU
 
 \verbatiminput{results/sample/cpu_version.py}
 
-While running on google colab \footnote{https://colab.research.google.com/notebooks} in CPU mode make sure the following configuration is set as shown in the \cref{fig:cpu_sample}. And you can obtain the following outputs
+While running on [google colab](https://colab.research.google.com/notebooks) in CPU mode make sure the following configuration is set as shown in the \cref{fig:cpu_sample}. And you can obtain the following outputs
 \verbatiminput{results/sample/cpu_output.txt}
 
 \begin{figure}[!ht]
@@ -176,5 +175,5 @@ Again, same as previous section, while running on google colab in TPU mode make 
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDYxMTI5NTNdfQ==
+eyJoaXN0b3J5IjpbLTIwNjc3NDgyODVdfQ==
 -->
