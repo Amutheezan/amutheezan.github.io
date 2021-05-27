@@ -41,6 +41,9 @@ Integrated Computer Engineering Stream
 
 CGPA - 3.81/4.20
 
+COURSEWORKUNDERGRADUATEDataMining&InformationRetrievalIntelligentSystemsOperationalResearchGRADUATEAutomataandTheoryofComputationOperatingSystems
+
+
 ---
 ### WORK EXPERIENCE
 ___
@@ -86,7 +89,7 @@ Software Engineering Intern | July 2016 – Dec 2016 | Colombo, LK
 
 #### SENTIMENT ANALYSIS OF TWITTER
 
-UNIVERSITY OF MORATUWA | UNDERGRADUATE FINAL YEAR RESEARCH PROJECT
+University of Moratuwa | Final Year Project
 
 Nov 23, 2016 – Nov 24, 2017
 
@@ -98,7 +101,7 @@ Upgraded Project (to python3) : [https://github.com/Amutheezan/TSAwithSSLv2](htt
 
 #### DENGAI : PREDICTING DISEASE SPREAD
 
-UNIVERSITY OF MORATUWA | UNDERGRADUATE PROJECT
+University of Moratuwa | Data Mining Project
 
 Feb 28, 2017 – Jun 16, 2017
 
@@ -121,5 +124,5 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NDkxNDI2Ml19
+eyJoaXN0b3J5IjpbLTE3MDc1NDA0NzgsMTg1NDkxNDI2Ml19
 -->
