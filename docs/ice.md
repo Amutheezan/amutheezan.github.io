@@ -14,11 +14,11 @@ I get some basic ideas about the kinds of stuff. Especially in Object Oriented P
 
 #### Object Oriented Programming (OOPS :stuck_out_tongue_closed_eyes: )
 
-It was quite similar we just concern about some practical real-time scenarios unlike the typical examples provided. I was grateful to have such a good professor to nicely explain all the principles ineffective way to understand by poor kids like me. I loved the way of teaching. Initially, when I start studying class it looks like to strange because most of the lessons and ideas are new to me. but later on, teaching with proper examples, and practice questions help me to improve on my OOPS skills. :relaxed: :stuck_out_tongue_closed_eyes:
+It was quite similar we just concern about some practical real-time scenarios unlike the typical examples provided. I was grateful to have such a good professor to nicely explain all the principles ineffective way to understand by poor kids like me. I loved the way of teaching. Initially, when I start studying class it looks like to strange because most of the lessons and ideas are new to me. but later on, teaching with proper examples, and practice questions help me to improve on my OOPS skills.  :stuck_out_tongue_closed_eyes:
 
 #### Embedded Programming
 
-This was strange at the beginning because actually, I have no idea till I studied deeply in the coming semesters. I will share the experience regarding that more deeply in the related parts. Keep Smiling :relaxed:.
+This was strange at the beginning because actually, I have no idea till I studied deeply in the coming semesters. I will share the experience regarding that more deeply in the related parts. Keep Smiling.
 
 #### **Development and Improvement**
 
@@ -36,7 +36,7 @@ This is just an overview of the things I have learned. Specified Topics for Some
 
 #### **Instrumentation Con-Trolls**
 
-Apart from the last two topics discussed above, this is different. I had undergone quite a learning process during this period of ICE, semester 5. End of semester :stuck_out_tongue_closed_eyes: :relaxed:.I had learned two subjects, one is the control system and another is instrumentation.
+Apart from the last two topics discussed above, this is different. I had undergone quite a learning process during this period of ICE, semester 5. End of semester :stuck_out_tongue_closed_eyes: .I had learned two subjects, one is the control system and another is instrumentation.
 
 Control System means generally a feedback system that use to enhance the system performance by proper feedback of the values required. For ease of studies, these are deal with S - Domain regardless of the usual time Domain system.
 
@@ -73,15 +73,13 @@ For us we were tried to get familiar with Ladder Program which was quite easy at
 
 #### Ladder Programming
 
-It is generally based on components with GUI demonstration and for executing each output one line of ladder is required and set of lines will be called as a program and at the start and end it will have to stop -| slashes like this and finally it will look like ladder that why they called it as Ladder program, not sure I just heard as so :stuck_out_tongue_closed_eyes: :relaxed:.
+It is generally based on components with GUI demonstration and for executing each output one line of ladder is required and set of lines will be called as a program and at the start and end it will have to stop -| slashes like this and finally it will look like ladder that why they called it as Ladder program, not sure I just heard as so :stuck_out_tongue_closed_eyes:.
 
 Tools Required for Ladder Programming: XCP Program tool and XC3- PLC can be used to do practicals efficiently with Ladder Programming.
 
-These are just some basic ideas and concepts if time supports I will share ideas deeply from what I learned. :stuck_out_tongue_closed_eyes: :relaxed:
-
-[Project Records](https://amutheezan.files.wordpress.com/2016/08/projects.pdf)
+These are just some basic ideas and concepts if time supports I will share ideas deeply from what I learned. :stuck_out_tongue_closed_eyes:.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQwOTQzOTUsMjAwOTU5NTAyMywxNzUwND
-MxNDYyLDIwMDk1OTUwMjMsMTc1MDQzMTQ2MiwyMDA5NTk1MDIz
-XX0=
+eyJoaXN0b3J5IjpbLTEyMjk3NDQzNzQsMjAwOTU5NTAyMywxNz
+UwNDMxNDYyLDIwMDk1OTUwMjMsMTc1MDQzMTQ2MiwyMDA5NTk1
+MDIzXX0=
 -->
