@@ -1,6 +1,10 @@
+---
+type: posts
+title: CPUvsGPUvsTPU Performance Comparison
+author: Amutheezan Sivagnanam
 
+---
 
-\section*{CPUvsGPUvsTPU Performance Comparison}
 I follow the basic step by step guide in \cite{quickbench}.
 I follow the instructions to work on TPU using \cite{stepbystep}
 
@@ -75,12 +79,8 @@ While running on google colab in TPU mode make sure the following configuration 
 \subsection*{Observations}
 Based on the results the CPU and TPU performs nearly same, but GPU performs more than 50 times than CPU and TPU
 
----
-type: posts
-title: GPU vs TPU Performance Comparison with CNN
-author: Amutheezan Sivagnanam
 
----
+
 
 The code below show the version of code that contain sample CNN network example.
 ```python
@@ -126,10 +126,36 @@ The code below show the version of code that contain sample CNN network example.
       metrics=['sparse_categorical_accuracy']
   )
 ```
-\verbatiminput{results/cnn/cnn_code.py}
 
 The code below show the version of code that can be executed in GPU
-\verbatiminput{results/cnn/gpu_version.py}
+```python
+import tensorflow as tf
+import timeit
+import warnings
+warnings.filterwarnings('ignore')
+
+tf.get_logger().setLevel('INFO')
+
+gpus = tf.config.experimental.list_physical_devices('GPU')[0]
+print(f'Selected GPU: {gpu}')
+tf.config.experimental.set_memory_growth(gpu, True)
+ 
+testgpu = """
+import os
+import tensorflow as tf
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import StratifiedShuffleSplit
+
+with tf.device('/device:GPU:0'):
+    <SAMPLE CNN CODE>
+"""
+ 
+
+gpu_time = timeit.timeit(testgpu, number=10)
+
+print('GPU time taken (seconds):', gpu_time)
+```
 
 Same as previous section, while running on google colab in GPU mode make sure the following configuration is set as shown in the \cref{fig:gpu_sample}. And you can obtain the following outputs
 \verbatiminput{results/cnn/gpu_output.txt}
@@ -144,5 +170,5 @@ Again, same as previous section, while running on google colab in TPU mode make 
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMjIwODI4NV19
+eyJoaXN0b3J5IjpbMTIwODA3NzA3MF19
 -->
