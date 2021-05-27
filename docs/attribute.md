@@ -7,19 +7,11 @@ author: Amutheezan Sivagnanam
 
 ---
 
-  
-  
-
 ## QUESTION
 
-  
+I came across the issue while I need to sort some list of prediction probability and weights of tweets for adding them as iteration list for semi-supervised methodology called "Self-training".
 
-I came across the issue while I need to sort some list of prediction probability and weights of tweets for adding them as iteration list for semi-supervised methodology called "Self-training
-  
-
-". When I was randomly picking the first, n number of tweets, it cost around 2 hrs for about 40 iterations and 5 hrs for around 100 iterations.
-
-  
+When I was randomly picking the first, n number of tweets, it cost around 2 hrs for about 40 iterations and 5 hrs for around 100 iterations.
 
 I have implemented following changes to do the sorting,
 
@@ -53,7 +45,7 @@ Out of these, one will return the result quickly for a 5D Array with a size of a
 
 These three implementations are simply equal and have the same overhead of doing the sorting. Thus, it takes the same amount of time. So these three options are equally replaceable with othe
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkyNDA4MDEyLC0yMDYxMTY1MjkxLDM5Mj
-QwODAxMiw5NDA5MDQxMDIsLTQwMDI0NjI5LDgyNzQ4NzQ1OCwt
-NDAwMjQ2MjldfQ==
+eyJoaXN0b3J5IjpbMTI0MTA5NDA1OCwzOTI0MDgwMTIsLTIwNj
+ExNjUyOTEsOTQwOTA0MTAyLC00MDAyNDYyOSw4Mjc0ODc0NTgs
+LTQwMDI0NjI5XX0=
 -->
