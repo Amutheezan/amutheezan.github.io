@@ -24,12 +24,12 @@ ___
 
 #### UNIVERSITY OF HOUSTON
 ---
-Doctor of Philosophy | Computer and Information Science | 2019 Fall - Present
+##### Doctor of Philosophy | Computer and Information Science | 2019 Fall - Present
 
 ---
 #### UNIVERSITY OF MORATUWA
 ---
-Bachelors Science of Engineering | Computer Science and Engineering Department | 2014 January - 2018 January
+##### Bachelors Science of Engineering | Computer Science and Engineering Department | 2014 January - 2018 January
 
 Stream: Integrated Computer Engineering Stream
 
@@ -62,6 +62,8 @@ ___
 * Lab: Resilient Networks and Systems Lab
 * Concentration: Artificial Intelligence, Machine Learning, and Data Mining
 * Projects: 03
+
+Currently, focuses on optimizing bus-route scheduling and minimizing energy costs.
 
 ---
 #### MILLENNIUMIT
@@ -148,5 +150,5 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzE1OTIwNywxODU0OTE0MjYyXX0=
+eyJoaXN0b3J5IjpbLTE0MjA2NjU5MTYsMTg1NDkxNDI2Ml19
 -->
