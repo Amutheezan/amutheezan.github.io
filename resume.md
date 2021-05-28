@@ -1,5 +1,5 @@
 ---
-layout: pa
+layout: page
 title: Resume
 permalink: /resume/
 author: Amutheezan Sivagnanam
@@ -156,6 +156,6 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzUyMzM3OTYsLTE4MTMzNTM5MjgsMT
-U1MDc2NjgwNCwxODU0OTE0MjYyXX0=
+eyJoaXN0b3J5IjpbLTk2MjExNzE1OCwtMTgxMzM1MzkyOCwxNT
+UwNzY2ODA0LDE4NTQ5MTQyNjJdfQ==
 -->
