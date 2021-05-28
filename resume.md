@@ -24,7 +24,8 @@ author: Amutheezan Sivagnanam
 --- | --- | 
 
 <img src="https://amutheezan.github.io/images/phone.svg" width="16"/>|+1 346 232 6924|
---- | --- | 
+--- | --- |
+
 ---
 ### EDUCATION
 ___
@@ -155,6 +156,6 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MDU2OTg0LC0xODEzMzUzOTI4LDE1NT
+eyJoaXN0b3J5IjpbNjg2NjQxMDc2LC0xODEzMzUzOTI4LDE1NT
 A3NjY4MDQsMTg1NDkxNDI2Ml19
 -->
