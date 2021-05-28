@@ -1,7 +1,7 @@
 plugins:
   - jekyll-remote-theme
   
-remote_theme: zivong/jekyll-theme-hydure
+remote_theme: tcbutler320/Jekyll-Theme-Dumbarton
 
 author.name: Amutheezan Sivagnanam
 title: Amutheezan Sivagnanam
