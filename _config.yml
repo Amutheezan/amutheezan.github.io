@@ -6,3 +6,5 @@ remote_theme: chrisbobbe/jekyll-theme-prologue
 author.name: Amutheezan Sivagnanam
 title: Amutheezan Sivagnanam
 url: https://amutheezan.com
+
+theme: jekyll-theme-merlot
