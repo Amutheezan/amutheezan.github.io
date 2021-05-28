@@ -109,9 +109,7 @@ Upgraded Project (to python3) : [https://github.com/Amutheezan/TSAwithSSLv2](htt
 
 #### DENGAI : PREDICTING DISEASE SPREAD
 
-University of Moratuwa | Data Mining Project
-
-Feb 28, 2017 – Jun 16, 2017
+##### University of Moratuwa | Data Mining Project | Feb 28, 2017 – Jun 16, 2017
 
 Predicting the dengue occurrence by using previous year data by applying datamining techniques using R.  The detailed description can be found [here](dengAI.md).
 
@@ -153,5 +151,5 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMjcwODg1OSwxODU0OTE0MjYyXX0=
+eyJoaXN0b3J5IjpbNTE0Mjc2ODMwLDE4NTQ5MTQyNjJdfQ==
 -->
