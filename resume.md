@@ -8,7 +8,7 @@ author: Amutheezan Sivagnanam
 
 ### AMUTHEEZAN SIVAGNANAM
 
-Website: [http://amutheezan.com](http://amutheezan.com)
+<img src="https://amutheezan.github.io/images/internet.svg" width="16"/>: [http://amutheezan.com](http://amutheezan.com)
 
 <img src="https://amutheezan.github.io/images/github.svg" width="16"/>: [Amutheezan](https://github.com/Amutheezan)
 
@@ -153,5 +153,5 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNjE5NTIyMSwxODU0OTE0MjYyXX0=
+eyJoaXN0b3J5IjpbLTQ0NzIyNzk0MiwxODU0OTE0MjYyXX0=
 -->
