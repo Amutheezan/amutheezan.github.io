@@ -10,14 +10,14 @@ author: Amutheezan Sivagnanam
 
 Website: [http://amutheezan.com](http://amutheezan.com)
 
-<img src="https://amutheezan.github.io/images/github.svg" width="20"/>: [Amutheezan](https://github.com/Amutheezan)
+<img src="https://amutheezan.github.io/images/github.svg" width="16"/>: [Amutheezan](https://github.com/Amutheezan)
 
-<img src="https://amutheezan.github.io/images/linkedin.svg" width="20"/>: [amutheezansivagnanam](https://www.linkedin.com/in/amutheezansivagnanam/)
+<img src="https://amutheezan.github.io/images/linkedin.svg" width="16"/>: [amutheezansivagnanam](https://www.linkedin.com/in/amutheezansivagnanam/)
 
 
-<img src="https://amutheezan.github.io/images/twitter.svg" width="20"/>:  [amux93](https://www.twitter.com/amux93/)
+<img src="https://amutheezan.github.io/images/twitter.svg" width="16"/>:  [amux93](https://www.twitter.com/amux93/)
 
-Email: [asivagnanam@uh.edu](mailto:asivagnanam@uh.edu)
+<img src="https://amutheezan.github.io/images/email.svg" width="16"/>: [asivagnanam@uh.edu](mailto:asivagnanam@uh.edu)
 
 Phone Number:+1 346 232 6924
 
@@ -153,5 +153,5 @@ Project URL: [https://github.com/Amutheezan/DengAi](https://github.com/Amutheeza
 
 2011-2012: Prefect Board of Prefect, Jaffna Hindu College)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMDc4MDMxNywxODU0OTE0MjYyXX0=
+eyJoaXN0b3J5IjpbLTQzNzgwNTk0NywxODU0OTE0MjYyXX0=
 -->
