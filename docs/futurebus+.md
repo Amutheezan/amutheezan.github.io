@@ -27,7 +27,8 @@ After that you will get into the bash follow the steps shown below in the ubuntu
 you can perform these entire steps by simply go to the ```verification``` directory and run the command ```sh run.sh```.
 
 ## Verification using Murphi3.1
-Please note that Murphi3.1 come installed with
+Please note that Murphi3.1 come installed with docker image so no need to worry about downloading and setting up.
+
 I structure the code as follows,
 
 * constants - to define constants such as number of processor, number of values
@@ -667,13 +668,10 @@ Rules Information:
 ```
 
 I will explain how to fix this in another post !!!
-Cheers  !!!start-state - define the start state of the system.
- * invariants - define the cases which determine the correct states of the system, or checking the validity of the system.
-\end{itemize}
-
+Cheers  !!!
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMTc3NTk5LDE1MjcwOTQzNDUsLTE0Nj
-IyODQ0MjUsMTIzMTk5MzYwOSwtMTY1NTYxMjk3NywtODE4NjAz
-NTU5XX0=
+eyJoaXN0b3J5IjpbLTExNjY1OTM1MzksMTUyNzA5NDM0NSwtMT
+Q2MjI4NDQyNSwxMjMxOTkzNjA5LC0xNjU1NjEyOTc3LC04MTg2
+MDM1NTldfQ==
 -->
