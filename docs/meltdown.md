@@ -40,7 +40,7 @@ sudo taskset 0x1 ./test
 
 ##### Screenshot
 
-![image](images/test.png)
+![image](../images/test.png)
 
 
 #### Demo \#02 - Breaking KASLR (```kaslr```)
@@ -56,7 +56,7 @@ sudo taskset 0x1 ./kaslr
 
 ##### Screenshot
 
-![image](images/kaslr.png)
+![image](../images/kaslr.png)
 
 #### Demo \#03 - Reliability test (```reliability```)
 
@@ -70,7 +70,7 @@ sudo taskset 0x1 ./reliability 0xffff8a6b80000000
 ```
 ##### Screenshot
 
-![image](images/reliability.png)
+![image](../images/reliability.png)
 
 ##### Issues Faced
 
@@ -100,8 +100,8 @@ I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable kaslr by default
 
 ##### Screenshots
 
-![image](images/physical_reader_part_1.png)
-![image](images/physical_reader_part_2.png)
+![image](../images/physical_reader_part_1.png)
+![image](../images/physical_reader_part_2.png)
 
 ##### Issues Faced
 Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/)}, I am unable to get contents of secret. I also tried similar commands with Ubuntu 14.10, but I faced the same issues there as well.
@@ -131,8 +131,8 @@ Unlike the demonstration shown in the GitHub repository [2](https://github.com/I
 
 ##### Screenshots
 
-![image](images/memdump_part_1.png)
-![image](images/memdump_part_2.png)
+![image](../images/memdump_part_1.png)
+![image](../images/memdump_part_2.png)
 
 ## How to Fix
 
@@ -152,7 +152,7 @@ This hard-split can determine whether a memory fetch violates security boundary 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI5MjMyNDYxLDEzNTEwMTEzOCwtMjAyMz
-gxNTA2OSw0ODcxMTAxODQsMTE5MjI0NDc2LC0xMzM0NzU2NTMw
-LC0xNjIzMjkzOTA0XX0=
+eyJoaXN0b3J5IjpbLTE4Mzk5ODIzNjQsMTM1MTAxMTM4LC0yMD
+IzODE1MDY5LDQ4NzExMDE4NCwxMTkyMjQ0NzYsLTEzMzQ3NTY1
+MzAsLTE2MjMyOTM5MDRdfQ==
 -->
