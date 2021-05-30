@@ -434,7 +434,10 @@ Memory usage:
 	* The memory allocated for the hash table and state queue is
 	  8 Mbytes.
 	  With two words of overhead per state, the maximum size of
-	  the state space is 487811 states.
+	  the state space is 487811 statesn the above code, I structure code in the following structure,
+\begin{itemize}
+    \item constants - to define constants such as number of processor, number of values
+    \item type - define types such as processor states using enumeration which represents all the states in Futurebus+ proctcol, message types as enumeration which includes different message used to send between the states either bus or cpu call, finally the message type.
 	   * Use option "-k" or "-m" to increase this, if necessary.
 	* Capacity in queue for breadth-first search: 48781 states.
 	   * Change the constant gPercentActiveStates in mu_prolog.inc
@@ -474,7 +477,7 @@ Memory usage:
 	* The memory allocated for the hash table and state queue is
 	  8 Mbytes.
 	  With two words of overhead per state, the maximum size of
-	  the state space is 487811 states.
+	  the state space is 487811 states \item variables - the global variables represents the system.
 	   * Use option "-k" or "-m" to increase this, if necessary.
 	* Capacity in queue for breadth-first search: 48781 states.
 	   * Change the constant gPercentActiveStates in mu_prolog.inc
@@ -542,7 +545,8 @@ Analysis of State Space:
 
 	There are rules that are never fired.
 	If you are running with symmetry, this may be why.  Otherwise,
-	please run this program with "-pr" for the rules information.
+	p \item procedures - contains the function used by the verification.
+    \item rulease run this program with "-pr" for the rules information.
 
 ```
 
@@ -562,7 +566,7 @@ Memory usage:
 	* The memory allocated for the hash table and state queue is
 	  8 Mbytes.
 	  With two words of overhead per state, the maximum size of
-	  the state space is 487811 states.
+	  the state space is 487811 statet - define the set of rules that can be used to model the systems.
 	   * Use option "-k" or "-m" to increase this, if necessary.
 	* Capacity in queue for breadth-first search: 48781 states.
 	   * Change the constant gPercentActiveStates in mu_prolog.inc
@@ -642,7 +646,12 @@ Rules Information:
 ```
 
 I will explain how to fix this in another post !!!
-Cheers  !!!
+Cheers  !!!start-state - define the start state of the system.
+ * invariants - define the cases which determine the correct states of the system, or checking the validity of the system.
+\end{itemize}
+
+WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTU2MTI5NzcsLTgxODYwMzU1OV19
+eyJoaXN0b3J5IjpbMTIzMTk5MzYwOSwtMTY1NTYxMjk3NywtOD
+E4NjAzNTU5XX0=
 -->
