@@ -21,30 +21,24 @@ Spectre attacks alters the branch prediction system. It can affect the branch pr
 
 * Oracle Virtual Box : Version 6.1.18 r142142 (Qt5.6.3)
 * Ubuntu 16.04.07 LTS
-* Kernel Version: 4.15.0-136-generic
+Kernel Version: 4.15.0-136-generic
 
+First I clone the [repository](flxwu/spectre-attack-demo) and compile the file ```spectre.c``` using following command,
 
-
-First I clone the repository \texttt{flxwu/spectre-attack-demo} \cite{spectre} and compile the file \texttt{spectre.c} using following command,
-
-\begin{tcolorbox}
+```bash
 gcc spectre.c -o spectre
-\end{tcolorbox}
+```
 
 This will generate the executable file which will demonstrate the spectre attack. Then I execute the executable file using the following command,
 
-\begin{tcolorbox}
+```bash
 ./spectre
-\end{tcolorbox}
+```
 
 and I obtained following results.
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=120mm,scale=0.5]{spectre/spectre_first.png}
-    \caption{Spectre Screenshot First Part}
-    \label{fig:first_part_spectre}
-\end{figure}
+![image](images/spectre_first.png)
+
 
 \begin{figure}[!ht]
     \centering
@@ -76,6 +70,6 @@ For software level protection, we can uses the patches such as LLVM patch, MSVC 
     \item By tracking down whether the data was fetch as a result of speculative execution or not. And if it obtained from speculative execution then prevent it using in subsequent execution, which might leak the information.
 \end{itemize}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxMzY5NjE4LDcwOTQ3ODkwMCwxNjEzNj
-Q3ODYwXX0=
+eyJoaXN0b3J5IjpbLTIzMjQxMDkyOCw3MDk0Nzg5MDAsMTYxMz
+Y0Nzg2MF19
 -->
