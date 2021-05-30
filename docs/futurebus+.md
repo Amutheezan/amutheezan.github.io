@@ -117,7 +117,7 @@ end;
 
 ```
  * ruleset - define the set of rules that can be used to model the systems.
-  ```c
+```c
  ruleset i: Proc do
   	alias p: proc_state[i] do
   		ruleset v: Value do
@@ -359,12 +359,58 @@ end;
   	endalias;
 endruleset;
 
- ```
+```
 * start-state - define the start state of the system.
+```c
+startstate
+	for i: Proc do
+		proc_state[i].state := FB_I;
+	endfor;
+  transaction_flag := false;
+  one_flag := false;
+  more_flag := false;
+  undefine last_write;
+  undefine send_msg;
+endstartstate;
+```
 * invariants - define the cases which determine the correct states of the system, or checking the validity of the system.
+```c
+Invariant "only one processor in EM state"
+ForAll p1 : Proc Do
+	ForAll p2 : Proc Do
+		proc_state[p1].state = FB_EM & proc_state[p2].state = FB_EM
+		->
+			p1 = p2
+	End
+	End;
 
+Invariant "only one processor in EU state"
+ForAll p1 : Proc Do
+	ForAll p2 : Proc Do
+		proc_state[p1].state = FB_EU & proc_state[p2].state = FB_EU
+		->
+			p1 = p2
+	End
+	End;
+
+invariant "values in valid state match last write"
+  ForAll n : Proc Do  
+    proc_state[n].state = FB_SU | proc_state[n].state = FB_EM | proc_state[n].state = FB_EU
+    ->
+    proc_state[n].value = last_write 
+  End;
+
+invariant "value is undefined while invalid"
+  ForAll n : Proc Do  
+    proc_state[n].state = FB_I
+    ->
+    IsUndefined(proc_state[n].value)
+  End;
+```
+
+Output of verification of Futurebus+ cache coherence protocol, this provides a brief summary whether any errors or issues found and other statistics.
 
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTQyNjA1MV19
+eyJoaXN0b3J5IjpbLTE4NDk5Mzg1NzBdfQ==
 -->
