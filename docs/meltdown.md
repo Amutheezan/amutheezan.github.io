@@ -49,37 +49,22 @@ This demo uses Meltdown to leak the secret randomization of the direct physical 
 
 ##### \textbf{Commands}
 
-```bash\begin{tcolorbox}
+```bash
 make;\\
 sudo taskset 0x1 ./kaslr
 ```
 
-##### \end{tcolorbox}
-
-\textbf{Screenshot}
+##### Screenshot
 
 ![image](images/kaslr.png)
 
+#### Demo \#03 - Reliability test (```reliability```)
 
-#### \begin{figure}[!ht]
-    \centering
-    \includegraphics[width=120mm,scale=0.5]{meltdown/kaslr.png}
-    \caption{Screenshot of Demo \#02, Breaking KASLR}
-    \label{fig:meltdown_kaslr}
-\end{figure}
+This demo tests how physical memory can be read. Note that I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable ```kaslr``` by default. So I am technically not required to specify the offset value ```0xffff8a6b80000000```.
 
+##### Commands
 
-\newpage
-
-\subsubsection{Demo \#03 - Reliability test (```\texttt{reliability```)})}
-
-This demo tests how physical memory can be read. Note that I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable ```\texttt{kaslr```} by default. So I am technically not required to specify the offset value ```\texttt{0xffff8a6b80000000```.
-
-##### }.
-
-\textbf{Commands}
-
-```bash\begin{tcolorbox}
+```bash
 make;\\
 sudo taskset 0x1 ./reliability 0xffff8a6b80000000
 ```
@@ -235,7 +220,7 @@ This hard-split can determine whether a memory fetch violates security boundary 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MzM3MDg2NCwtMjAyMzgxNTA2OSw0OD
+eyJoaXN0b3J5IjpbLTYxMDI1NDAyMiwtMjAyMzgxNTA2OSw0OD
 cxMTAxODQsMTE5MjI0NDc2LC0xMzM0NzU2NTMwLC0xNjIzMjkz
 OTA0XX0=
 -->
