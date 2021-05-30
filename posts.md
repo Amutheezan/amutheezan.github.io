@@ -6,12 +6,12 @@ author: Amutheezan Sivagnanam
 
 ---
 ### Computer Architecture
-1. [Simple performance comparison of Google Colab CPU, GPU and TPU](docs/gpuvstpu.md)
-2. [Verification of Futurebus+ Cache coherence protocol](docs/futurebus+.md)
-3. [Fixing of Futurebus+ Cache coherence protocol](docs/fixfuturebus+.md)
-4. [Tomasulo Algorithm](docs/tomasulo.md)
-5. [Spectre](docs/spectre.md)
-6. [Meltdown](docs/meltdown.md)
+1. [Tomasulo Algorithm](docs/tomasulo.md) 
+2. [Spectre Attack](docs/spectre.md)
+3. [Meltdown Attack](docs/meltdown.md)
+4. [Verification of Futurebus+ Cache coherence protocol](docs/futurebus+.md)
+5. [Fixing of Futurebus+ Cache coherence protocol](docs/fixfuturebus+.md)
+6. [Simple performance comparison of Google Colab CPU, GPU and TPU](docs/gpuvstpu.md)
 
 ### Machine Learning and Data Mining
 1. [DengAI : Predicting Disease Spread - A tale of Two cities](docs/dengAI.md)
@@ -40,6 +40,7 @@ author: Amutheezan Sivagnanam
 10. [Datatables Makes Things Easy](docs/dt.md)
 11. [Some Useful Javascript Libraries](docs/jslib.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MDM0NjM3MSw2NTA0MzAzNDQsLTE2Mz
-E5NDQ5ODUsMTg1OTM0ODUxNSwzMjE4NzM1OTddfQ==
+eyJoaXN0b3J5IjpbLTE3NTk0OTM4NzksMTk5MDM0NjM3MSw2NT
+A0MzAzNDQsLTE2MzE5NDQ5ODUsMTg1OTM0ODUxNSwzMjE4NzM1
+OTddfQ==
 -->
