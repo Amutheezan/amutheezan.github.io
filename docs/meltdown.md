@@ -27,39 +27,23 @@ I first clone the meltdown demo repository [2](https://github.com/IAIK/meltdown/
 * Demo \#05 - Dump the memory (```memdump```)
 
 
-#### \texttt{memdump})
-\end{itemize}
-\newpage
+#### Demo \#01 - A first test (```test```)
 
-\subsubsection{Demo \#01 - A first test (```test```)\texttt{test})}
+I have executed the basic test case for ```meltdown``` demos in this demo. I was able to get the same text in expect and got places. I also tried to call the same command, and it returns random texts in each run. (randomization of text happen based on the line 26 of ```test.c````
 
-I have executed the basic test case for ```\texttt{meltdown```} demos in this demo. I was able to get the same text in expect and got places. I also tried to call the same command, and it returns random texts in each run. (randomization of text happen based on the line 26 of ```test.c````
+##### Commands
 
-##### \texttt{test.c})
-
-\textbf{Commands}
-
-```bash\begin{tcolorbox}
+```bash
 make;\\
 sudo taskset 0x1 ./test
 ```
 
-##### \end{tcolorbox}
-
-\textbf{Screenshot}
+##### Screenshot
 
 ![image](images/test.png)
 
-#### \begin{figure}[!ht]
-    \centering
-    \includegraphics[width=120mm,scale=0.5]{meltdown/test.png}
-    \caption{Screenshot of Demo \#01, a first test}
-    \label{fig:meltdown_test}
-\end{figure}
 
-\newpage
-
-\subsubsection{Demo \#02 - Breaking KASLR (```\texttt{kaslr```)})}
+#### Demo \#02 - Breaking KASLR (```kaslr```)
 
 This demo uses Meltdown to leak the secret randomization of the direct physical map. To get the offset quickly, we have to execute the commands with admin privileges. Note that I have used Ubuntu 14.04, which has the kernel 4.4.0-142 as disable ```\texttt{kaslr```} by default.
 
@@ -251,6 +235,7 @@ This hard-split can determine whether a memory fetch violates security boundary 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjM4MTUwNjksNDg3MTEwMTg0LDExOT
-IyNDQ3NiwtMTMzNDc1NjUzMCwtMTYyMzI5MzkwNF19
+eyJoaXN0b3J5IjpbNTgwMzQxMzksLTIwMjM4MTUwNjksNDg3MT
+EwMTg0LDExOTIyNDQ3NiwtMTMzNDc1NjUzMCwtMTYyMzI5Mzkw
+NF19
 -->
