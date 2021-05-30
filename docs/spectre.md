@@ -45,9 +45,7 @@ As circled in the above figures the exploitation happen successfully and it able
 
 Note: I didn't face any issue while compiling or running the demo.
 
-## \newpage
-
-\subsection{How to Fix}
+## How to Fix
 For software level protection, we can uses the patches such as LLVM patch, MSVC and ARM speculation barrier header. Further, some mitigation proposed by paper which disclose the spectre for the first time to public [1](https://spectreattack.com/spectre.pdf).
 
 ### SOFTWARE
@@ -61,6 +59,7 @@ For software level protection, we can uses the patches such as LLVM patch, MSVC 
 ## REFERENCES
 1. [https://spectreattack.com/spectre.pdf](https://spectreattack.com/spectre.pdf)\end{itemize}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYzODY2NDU0LC01NjM4OTY1ODQsNDg2Mj
-gxMTY4LDcwOTQ3ODkwMCwxNjEzNjQ3ODYwXX0=
+eyJoaXN0b3J5IjpbLTE2MzI5NTg2MDAsNTYzODY2NDU0LC01Nj
+M4OTY1ODQsNDg2MjgxMTY4LDcwOTQ3ODkwMCwxNjEzNjQ3ODYw
+XX0=
 -->
