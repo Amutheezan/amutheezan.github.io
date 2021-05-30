@@ -42,15 +42,14 @@ print('Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images \n'
 ```
 
 While running on [google colab](https://colab.research.google.com/notebooks) in CPU mode make sure the following configuration is set as shown in the \cref{fig:cpu_sample}. And you can obtain the following outputs
-\verbatiminput{results/sample/cpu_output.txt}
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.5\textwidth]{results/sample/CPU_Configuration.png}
-    \caption{Google Colab Configuration to run in CPU mode}
-    \label{fig:cpu_sample}
-\end{figure}
+```
+Selected CPU: PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')
+Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images 
+(batch x height x width x channel). Sum of ten runs: 3.8407666499999777
+```
 
+![image](images/CPU
 
 
 \subsection*{GPU-Version}
@@ -190,5 +189,5 @@ Again, same as previous section, while running on google colab in TPU mode make 
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTExNzM2NjMsMjA1NjkxMzcxN119
+eyJoaXN0b3J5IjpbLTM0NDk3OTM0MiwyMDU2OTEzNzE3XX0=
 -->
