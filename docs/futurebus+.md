@@ -5,7 +5,7 @@ author: Amutheezan Sivagnanam
 
 ---
 
-I have implemented a simple verification for Futurebus+ cache coherence protocol as a part of assignment for COSC 6385 course in University of Houston.
+I have implemented a simple verification for Futurebus+ cache coherence protocol as a part of assignment for **COSC 6385** course in University of Houston.
 
 ## Initial Setup & Steps
 
@@ -668,12 +668,10 @@ Rules Information:
 
 ```
 
-I will explain how to fix this in another post !!!
-Cheers  !!!
+Fixng ofuturebus+ protocol and it verification using Murphi3.1 can be found in ther [post !](data/fixfuturebus+.md).
 
-WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzM3NDA0ODQsNjk4Njc4MzUwLC0xMT
-Y2NTkzNTM5LDE1MjcwOTQzNDUsLTE0NjIyODQ0MjUsMTIzMTk5
-MzYwOSwtMTY1NTYxMjk3NywtODE4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbLTY1MTQ0NDYxMiwtMTczMzc0MDQ4NCwtMT
+E2NjU5MzUzOSwxNTI3MDk0MzQ1LC0xNDYyMjg0NDI1LDEyMzE5
+OTM2MDksLTE2NTU2MTI5NzcsLTgxODYwMzU1OV19
 -->
