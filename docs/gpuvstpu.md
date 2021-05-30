@@ -111,7 +111,7 @@ print(f'TPU speedup over CPU: {int(cpu_time/tpu_time)}x')
 ```
 
 And obtain the following error message 
-```
+```python
 ---------------------------------------------------------------------------
 IndexError                                Traceback (most recent call last)
 <ipython-input-3-77bc147ae849> in <module>()
@@ -354,5 +354,5 @@ Based on the results TPU performs around 1.5 times better than GPU in-terms the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MzE1Mjg5MiwxNDIyNTEyOTYyXX0=
+eyJoaXN0b3J5IjpbLTEzNjEzNjM2ODgsMTQyMjUxMjk2Ml19
 -->
