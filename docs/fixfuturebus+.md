@@ -137,7 +137,7 @@ begin
 end;
 ```
 
- * ruleset - define the set of rules that can be used to model the systems.
+ * ruleset - define the set of rules that can be used to model the systems. Update  the ruleset to avoid two processor reach the exclusive state.
  
 ```c
 
@@ -455,7 +455,7 @@ invariant "value is undefined while invalid"
 ```
 
 
-Output of verification of Futurebus+ cache coherence protocol, this provides a brief summary whether any errors or issues found and other statistics.
+Output of verification of Futurebus+ cache coherence protocol, this provides a brief summary whether any errors or issues found and other statistics. And we observe no outputs.
 
 ```
 Protocol: futurebus_fix
@@ -479,8 +479,6 @@ Memory usage:
 
 Warning: No trace will not be printed in the case of protocol errors!
          Check the options if you want to have error traces.
-
-==========================================================================
 
 Status:
 
@@ -520,8 +518,6 @@ Memory usage:
 	* Capacity in queue for breadth-first search: 39215 states.
 	   * Change the constant gPercentActiveStates in mu_prolog.inc
 	     to increase this, if necessary.
-
-==========================================================================
 
 Status:
 
@@ -563,8 +559,6 @@ Memory usage:
 
 Warning: No trace will not be printed in the case of protocol errors!
          Check the options if you want to have error traces.
-
-==========================================================================
 
 Status:
 
@@ -638,5 +632,5 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ3MDM1NDZdfQ==
+eyJoaXN0b3J5IjpbMTk3NDI4MDUwOV19
 -->
