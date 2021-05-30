@@ -85,21 +85,23 @@ This demo reads memory from another process by directly reading physical memory.
 1. call ```secret``` with admin privileges and this will return the physical address of the test.
     
 ```bash
-sudo ./secret
+	sudo ./secret
 ```
 
-* call ```physical\_reader} with the specified physical address of secret text and offset.
+2. call ```physical_reader``` with the specified physical address of secret text and offset.
     
-    \begin{tcolorbox}
+```bash
     make;\\
     sudo taskset 0x1 ./physical\_reader 0xcc26cac8 0xffff8a6b80000000
-    \end{tcolorbox}
-\end{itemize}
+```
 
-I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable kaslr by default. If kaslr is disabled, we can skip providing the offset parameter. So I don’t need to provide the offset value \texttt{0xffff8a6b80000000}.
+I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable kaslr by default. If kaslr is disabled, we can skip providing the offset parameter. So I don’t need to provide the offset value ```0xffff8a6b80000000```.
 
 
-\textbf{Screenshots}
+##### Screenshots
+
+![image](images/physical_reader_part_1.png)
+![image](images/physical_reader_part_2.png)
 
 \begin{figure}[!ht]
     \centering
@@ -184,6 +186,6 @@ This hard-split can determine whether a memory fetch violates security boundary 
 2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
 3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MDQxMzE5NCwtMTMzNDc1NjUzMCwtMT
-YyMzI5MzkwNF19
+eyJoaXN0b3J5IjpbODQ3Mjc0MjEsLTEzMzQ3NTY1MzAsLTE2Mj
+MyOTM5MDRdfQ==
 -->
