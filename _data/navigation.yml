@@ -1,6 +1,8 @@
 - title: Home
   url: /
-- title: About Me
+- title: About
   url: /about/
+- title: Archive
+  url: /archive/
 - title: Resume
   url: /resume/
