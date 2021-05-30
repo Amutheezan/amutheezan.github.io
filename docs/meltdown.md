@@ -72,7 +72,7 @@ sudo taskset 0x1 ./reliability 0xffff8a6b80000000
 
 ![image](images/reliability.png)
 
-##### Issues faced
+##### Issues Faced
 
 Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/), I am unable to get higher reliability, and always I get reliability less than 1\%. I also tried similar commands with [Ubuntu 14.10]( \footnote{http://old-releases.ubuntu.com/releases/14.10/)  [```ubuntu-14.10-desktop-amd64.iso Last Modified: 2014-10-22 19:43```], but I faced the same issues in there as well.
 
@@ -103,7 +103,7 @@ I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable kaslr by default
 ![image](images/physical_reader_part_1.png)
 ![image](images/physical_reader_part_2.png)
 
-##### Issues faced
+##### Issues Faced
 Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/)}, I am unable to get contents of secret. I also tried similar commands with Ubuntu 14.10, but I faced the same issues there as well.
 
 #### Demo \#05 - Dump the memory (```memdump```)
@@ -118,58 +118,30 @@ This demo dumps the content of the memory. I set the memory size to 8GB as RAM f
     sudo ./memory\_filler 9
 ```
 
-2.  call  ```    \end{tcolorbox}
-
-    \item [(2)] call  \texttt{memdump```} to read the contents from memory.
+2.  call ```memdump``` to read the contents from memory.
     
-```bash    \begin{tcolorbox}
+```bash
     make;\\
     taskset 0x1 ./memdump 0x240000000 -1 0xffff8a6b80000000
 ```
 
-#####     \end{tcolorbox}
-\end{itemize}
+##### Issues Faced
 
-\textbf{Issues Ffaced
-}
 Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/), }, I am unable to get any meaningful human-readable data. I also tried similar commands with Ubuntu 14.10, but I faced the same issues there as well.
 
-##### 
-\newpage
-
-\textbf{Screenshots}
+##### Screenshots
 
 ![image](images/memdump_part_1.png)
 ![image](images/memdump_part_2.png)
 
 ## How to Fix
-### \begin{figure}[!ht]
-    \centering
-    \begin{subfigure}[b]{0.96\linewidth}
-    \includegraphics[width=120mm,scale=0.5]{meltdown/memdump_part_1.png}
-        \caption{Filling 9GB of memory using \texttt{memory\_filler}}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.96\linewidth}
-    \includegraphics[width=120mm,scale=0.5]{meltdown/memdump_part_2.png}
-    \caption{Dumping memory using \texttt{memdump}}
-    \end{subfigure}
-    \caption{Screenshots of Demo \#05, Dump the memory}
-    \label{fig:meltdown_memdump}
-\end{figure}
 
-
-\newpage
-
-\subsection{How to Fix}
-\subsubsection{Software}
+### Software
 For software level protection, we can use patches for Linux, Windows, and OS X.
 Kernel page-table isolation (KPTI) (earlier referenced as KAISER) is a Linux kernel feature that protect the system from the Meltdown security vulnerability affecting mainly Intel's X86 CPU. It improves the kernel hardening against attempts to bypass the KSLR [1](https://en.wikipedia.org/wiki/Kernel_page-table_isolation),  [3](https://meltdownattack.com/meltdown.pdf).
 
 
-### \cite{klti,lipp2018meltdown}.
-
-
-\subsubsection{Hardware}
+### Hardware
 For hardware level protection, we have to introduce a hard split between the user space and the kernel space. This can be enabled optionally by modern kernels using the newly introduce hard-split bit in the CPU control register (e.g. CR4). By setting the control bit the user space and kernel space can resides in different areas of address.
 This hard-split can determine whether a memory fetch violates security boundary with the help virtual address. 
 
@@ -180,7 +152,7 @@ This hard-split can determine whether a memory fetch violates security boundary 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MTQyNzMyNywtMjAyMzgxNTA2OSw0OD
-cxMTAxODQsMTE5MjI0NDc2LC0xMzM0NzU2NTMwLC0xNjIzMjkz
-OTA0XX0=
+eyJoaXN0b3J5IjpbMTM1MTAxMTM4LC0yMDIzODE1MDY5LDQ4Nz
+ExMDE4NCwxMTkyMjQ0NzYsLTEzMzQ3NTY1MzAsLTE2MjMyOTM5
+MDRdfQ==
 -->
