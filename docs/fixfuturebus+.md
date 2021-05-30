@@ -1,7 +1,6 @@
-
 ---
 type: posts
-title: Simple Fix on Futurebus Cache Coherence Protocol
+title: Simple Fix on Futurebus+ Cache Coherence Protocol
 author: Amutheezan Sivagnanam
 
 ---
@@ -658,6 +657,6 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjAxMjI5MCwxNTAxNzc5Nzk2LDg2Mz
+eyJoaXN0b3J5IjpbMTk4ODUyNzgxMywxNTAxNzc5Nzk2LDg2Mz
 k0MjIxMiwxNTg1ODM2NTU5LC0xNjU5NjIwOTQ5XX0=
 -->
