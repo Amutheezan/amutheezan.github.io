@@ -38,14 +38,9 @@ make;\\
 sudo taskset 0x1 ./test
 ```
 
-\textbf{Screenshot}
+##### Screenshot
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=120mm,scale=0.5]{meltdown/test.png}
-    \caption{Screenshot of Demo \#01, a first test}
-    \label{fig:meltdown_test}
-\end{figure}
+![image](images/test.png)
 
 \newpage
 
@@ -208,6 +203,6 @@ This hard-split can determine whether a memory fetch violates security boundary 
 2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
 3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzQ0ODk2NjIsLTEzMzQ3NTY1MzAsLT
-E2MjMyOTM5MDRdfQ==
+eyJoaXN0b3J5IjpbLTMzNzM0ODYyOCwtMTMzNDc1NjUzMCwtMT
+YyMzI5MzkwNF19
 -->
