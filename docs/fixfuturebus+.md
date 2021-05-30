@@ -655,9 +655,9 @@ Rules Information:
 
 ```
 
-Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
+Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](../docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNTIzODUyNSwxOTg4NTI3ODEzLDE1MD
-E3Nzk3OTYsODYzOTQyMjEyLDE1ODU4MzY1NTksLTE2NTk2MjA5
-NDldfQ==
+eyJoaXN0b3J5IjpbLTEzNDU1NTk1MzQsMTk4ODUyNzgxMywxNT
+AxNzc5Nzk2LDg2Mzk0MjIxMiwxNTg1ODM2NTU5LC0xNjU5NjIw
+OTQ5XX0=
 -->
