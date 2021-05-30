@@ -380,6 +380,7 @@ startstate
 endstartstate;
 ```
 * invariants - define the cases which determine the correct states of the system, or checking the validity of the system.
+
 ```c
 
 Invariant "only one processor in EM state"
@@ -643,5 +644,5 @@ Rules Information:
 I will explain how to fix this in another post !!!
 Cheers  !!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDI1ODEyMTUsLTgxODYwMzU1OV19
+eyJoaXN0b3J5IjpbLTE2NTU2MTI5NzcsLTgxODYwMzU1OV19
 -->
