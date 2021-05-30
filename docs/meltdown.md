@@ -207,8 +207,11 @@ Kernel page-table isolation (KPTI) (earlier referenced as KAISER) is a Linux ker
 For hardware level protection, we have to introduce a hard split between the user space and the kernel space. This can be enabled optionally by modern kernels using the newly introduce hard-split bit in the CPU control register (e.g. CR4). By setting the control bit the user space and kernel space can resides in different areas of address.
 This hard-split can determine whether a memory fetch violates security boundary with the help virtual address \cite{lipp2018meltdown}. 
 
-
+## REFERENCES
+1. [https://en.wikipedia.org/wiki/Kernel_page-table_isolation](https://en.wikipedia.org/wiki/Kernel_page-table_isolation)
+2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
+3.  [Meltdown Paper](
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTY0MDAzMSwtMTMzNDc1NjUzMCwtMT
+eyJoaXN0b3J5IjpbLTEwNDAzMzE4MSwtMTMzNDc1NjUzMCwtMT
 YyMzI5MzkwNF19
 -->
