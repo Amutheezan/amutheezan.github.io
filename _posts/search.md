@@ -2,7 +2,10 @@
 type: posts
 title: Search Comparator & Apache Lucene
 author: Amutheezan Sivagnanam
-
+category: Internship
+tags:
+- apache lucene
+date: 2016-09-11
 ---
 #### **Disclaimer**
 
@@ -26,7 +29,7 @@ Search Comparator
 
 1. [https://lucene.apache.org/core/2_9_4/queryparsersyntax.html](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMzUyNzQzNSwtMTg5OTA3MTc3LDE5MD
-UxOTYzOTgsLTE4OTkwNzE3NywxOTA1MTk2Mzk4LC0xODk5MDcx
-NzddfQ==
+eyJoaXN0b3J5IjpbMTkzMDgzMTM4OSwxMTEzNTI3NDM1LC0xOD
+k5MDcxNzcsMTkwNTE5NjM5OCwtMTg5OTA3MTc3LDE5MDUxOTYz
+OTgsLTE4OTkwNzE3N119
 -->
