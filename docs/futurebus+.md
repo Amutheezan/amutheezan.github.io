@@ -4,6 +4,7 @@ title: Verification of Futurebus+ Cache Coherence Protocol
 author: Amutheezan Sivagnanam
 
 ---
+
 I have implemented a simple verification for Futurebus+ cache coherence protocol as a part of assignment for COSC 6385 course in University of Houston.
 
 I structure the code as follows,
@@ -651,6 +652,6 @@ Cheers  !!!start-state - define the start state of the system.
 
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjIyODQ0MjUsMTIzMTk5MzYwOSwtMT
-Y1NTYxMjk3NywtODE4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbMTUyNzA5NDM0NSwtMTQ2MjI4NDQyNSwxMj
+MxOTkzNjA5LC0xNjU1NjEyOTc3LC04MTg2MDM1NTldfQ==
 -->
