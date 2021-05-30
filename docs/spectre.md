@@ -39,22 +39,15 @@ and I obtained following results.
 
 ![image](images/spectre_first.png)
 
+![image](images/spectre_second.png)
 
-\begin{figure}[!ht]
-    \centering
-     \includegraphics[width=120mm,scale=0.5]{spectre/spectre_second.png}
-    \caption{Spectre Screenshot Last Part}
-    \label{fig:last_part_spectre}
-\end{figure}
 
-As circled in the above figures \cref{fig:first_part_spectre,fig:last_part_spectre} the exploitation happen successfully and it able to read the secret contents.
+As circled in the above figures the exploitation happen successfully and it able to read the secret contents.
 
 Note: I didn't face any issue while compiling or running the demo.
 
-\newpage
-
-\subsection{How to Fix}
-For software level protection, we can uses the patches such as LLVM patch, MSVC and ARM speculation barrier header. Further, some mitigation proposed by paper which disclose the spectre for the first time to public \cite{kocher2019spectre}.
+## How to Fix
+For software level protection, we can uses the patches such as LLVM patch, MSVC and ARM speculation barrier header. Further, some mitigation proposed by paper which disclose the spectre for the first time to public [1](https://spectreattack.com/spectre.pdf).
 
 \paragraph{Software}
 \begin{itemize}
@@ -69,7 +62,10 @@ For software level protection, we can uses the patches such as LLVM patch, MSVC 
 \begin{itemize}
     \item By tracking down whether the data was fetch as a result of speculative execution or not. And if it obtained from speculative execution then prevent it using in subsequent execution, which might leak the information.
 \end{itemize}
+
+## REFERENCES
+1. [https://spectreattack.com/spectre.pdf](https://spectreattack.com/spectre.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMjQxMDkyOCw3MDk0Nzg5MDAsMTYxMz
-Y0Nzg2MF19
+eyJoaXN0b3J5IjpbMzUyMjAyMzIsNzA5NDc4OTAwLDE2MTM2ND
+c4NjBdfQ==
 -->
