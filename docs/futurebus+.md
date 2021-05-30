@@ -15,7 +15,8 @@ Initially clone the [repository](https://github.com/Amutheezan/futurebus) and go
 
 ```docker-compose run ubuntu bash```
 
-**Note**: the docker implementation and murphi3.1 integration obtained from the following [repository](https://github.com/adnaneGdihi/fixed_murphi3.1)
+**Note**: the docker implementation and murphi3.1 integration obtained from the following [repository](https://github.com/adnaneGdihi/fixed_murphi3.1).
+
 After that you will get into the bash follow the steps shown below in the ubuntu bash,
 
 
@@ -671,7 +672,7 @@ Rules Information:
 Fixng ofuturebus+ protocol and it verification using Murphi3.1 can be found in ther [post !](data/fixfuturebus+.md).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MTQ0NDYxMiwtMTczMzc0MDQ4NCwtMT
-E2NjU5MzUzOSwxNTI3MDk0MzQ1LC0xNDYyMjg0NDI1LDEyMzE5
-OTM2MDksLTE2NTU2MTI5NzcsLTgxODYwMzU1OV19
+eyJoaXN0b3J5IjpbNTQ2OTEzMDgsLTE3MzM3NDA0ODQsLTExNj
+Y1OTM1MzksMTUyNzA5NDM0NSwtMTQ2MjI4NDQyNSwxMjMxOTkz
+NjA5LC0xNjU1NjEyOTc3LC04MTg2MDM1NTldfQ==
 -->
