@@ -1,6 +1,6 @@
 ---
 type: posts
-title: Verification of Futurebus+ Cache Coherence Protocol
+title: Verification of Futurebus Cache Coherence Protocol
 author: Amutheezan Sivagnanam
 
 ---
@@ -672,7 +672,8 @@ Rules Information:
 Fixng ofuturebus+ protocol and it verification using Murphi3.1 can be found in ther [post !](data/fixfuturebus+.md).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ2OTEzMDgsLTE3MzM3NDA0ODQsLTExNj
-Y1OTM1MzksMTUyNzA5NDM0NSwtMTQ2MjI4NDQyNSwxMjMxOTkz
-NjA5LC0xNjU1NjEyOTc3LC04MTg2MDM1NTldfQ==
+eyJoaXN0b3J5IjpbMTA2NDkyNjQyNSw1NDY5MTMwOCwtMTczMz
+c0MDQ4NCwtMTE2NjU5MzUzOSwxNTI3MDk0MzQ1LC0xNDYyMjg0
+NDI1LDEyMzE5OTM2MDksLTE2NTU2MTI5NzcsLTgxODYwMzU1OV
+19
 -->
