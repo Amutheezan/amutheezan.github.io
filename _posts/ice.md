@@ -2,7 +2,11 @@
 type: posts
 title: Integrated Computer Engineering Stream
 author: Amutheezan Sivagnanam
-
+category: Integrated Computer Engineering
+tags:
+- semester
+- unilife
+date: 2017-05-11
 ---
 ## **First Day : 2014.10.27**
 
@@ -79,7 +83,7 @@ Tools Required for Ladder Programming: XCP Program tool and XC3- PLC can be used
 
 These are just some basic ideas and concepts if time supports I will share ideas deeply from what I learned. :stuck_out_tongue_closed_eyes:.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjk3NDQzNzQsMjAwOTU5NTAyMywxNz
-UwNDMxNDYyLDIwMDk1OTUwMjMsMTc1MDQzMTQ2MiwyMDA5NTk1
-MDIzXX0=
+eyJoaXN0b3J5IjpbMTk3NzkyODg1MSwtMTIyOTc0NDM3NCwyMD
+A5NTk1MDIzLDE3NTA0MzE0NjIsMjAwOTU5NTAyMywxNzUwNDMx
+NDYyLDIwMDk1OTUwMjNdfQ==
 -->
