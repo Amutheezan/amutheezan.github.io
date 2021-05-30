@@ -54,7 +54,7 @@ Selected CPU: PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')
 Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images 
 (batch x height x width x channel). Sum of ten runs: 3.8407666499999777
 ```
-![image](images/CPU_configuration.png)
+![image](../images/CPU_configuration.png)
 
 ### GPU-Version
 The code below show the version of code that can be executed in GPU
@@ -79,7 +79,11 @@ print('Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images \n'
 print(f'GPU speedup over CPU: {int(cpu_time/gpu_time)}x')
 ```
 
-While running on google colab in GPU mode make sure the following configuration is set as shown in the \cref{fig:gpu_sample}. And you can obtain the following outputs
+While running on google colab in GPU mode make sure the following configuration.
+
+![image](../images/GPU_configuration.png)
+
+And you can obtain the following outputs
 
 ```
 Selected GPU: PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')
@@ -357,6 +361,6 @@ Based on the results TPU performs around 1.5 times better than GPU in-terms the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MTExMzQ2OSw0MzA3NjUxOTAsMTQyMj
+eyJoaXN0b3J5IjpbLTQ3NjU3NDA4Myw0MzA3NjUxOTAsMTQyMj
 UxMjk2Ml19
 -->
