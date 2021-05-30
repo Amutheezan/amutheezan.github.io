@@ -590,8 +590,127 @@ Analysis of State Space:
 
 ```
 
+Finally, to observe what are rule fired, I obtain the output of rule firing of Futurebus+ traces of cache coherence protocol using the command suffix ```-pr```.
 
-WORK IN PROGRESS
+```
+This program should be regarded as a DEBUGGING aid, not as a 
+certifier of correctness.
+Call with the -l flag or read the license file for terms
+and conditions of use.
+Run this program with "-h" for the list of options.
+
+Bugs, questions, and comments should be directed to
+"murphi@verify.stanford.edu".
+
+Murphi compiler last modified date: Jan 29 1999
+Include files   last modified date: Jan 29 1999
+==========================================================================
+
+==========================================================================
+Murphi Release 3.1
+Finite-state Concurrent System Verifier.
+
+Copyright (C) 1992 - 1999 by the Board of Trustees of
+Leland Stanford Junior University.
+
+==========================================================================
+
+Protocol: futurebus
+
+Algorithm:
+	Verification by breadth first search.
+	with symmetry algorithm 3 -- Heuristic Small Memory Normalization
+	with permutation trial limit 10.
+
+Memory usage:
+
+	* The size of each state is 96 bits (rounded up to 12 bytes).
+	* The memory allocated for the hash table and state queue is
+	  8 Mbytes.
+	  With two words of overhead per state, the maximum size of
+	  the state space is 487811 states.
+	   * Use option "-k" or "-m" to increase this, if necessary.
+	* Capacity in queue for breadth-first search: 48781 states.
+	   * Change the constant gPercentActiveStates in mu_prolog.inc
+	     to increase this, if necessary.
+
+Warning: No trace will not be printed in the case of protocol errors!
+         Check the options if you want to have error traces.
+
+==========================================================================
+
+Result:
+
+	Invariant "only one processor in EM state" failed.
+
+State Space Explored:
+
+	56 states, 184 rules fired in 0.10s.
+
+Rules Information:
+
+	Fired 0 times	- Rule "Read data from Exclusive states, i:Proc_1"
+	Fired 4 times	- Rule "Read data from Exclusive states, i:Proc_2"
+	Fired 4 times	- Rule "Read data from Exclusive states, i:Proc_3"
+	Fired 4 times	- Rule "Go to Exclusive state on DACK, i:Proc_1"
+	Fired 5 times	- Rule "Go to Exclusive state on DACK, i:Proc_2"
+	Fired 3 times	- Rule "Go to Exclusive state on DACK, i:Proc_3"
+	Fired 3 times	- Rule "Go to Shared state on DACKem, i:Proc_1"
+	Fired 4 times	- Rule "Go to Shared state on DACKem, i:Proc_2"
+	Fired 2 times	- Rule "Go to Shared state on DACKem, i:Proc_3"
+	Fired 3 times	- Rule "Go to Shared state on DACK, i:Proc_1"
+	Fired 4 times	- Rule "Go to Shared state on DACK, i:Proc_2"
+	Fired 2 times	- Rule "Go to Shared state on DACK, i:Proc_3"
+	Fired 0 times	- Rule "Go to Shared state on DACK, i:Proc_1"
+	Fired 0 times	- Rule "Go to Shared state on DACK, i:Proc_2"
+	Fired 2 times	- Rule "Go to Shared state on DACK, i:Proc_3"
+	Fired 0 times	- Rule "Go to Shared state on DACK, i:Proc_1"
+	Fired 0 times	- Rule "Go to Shared state on DACK, i:Proc_2"
+	Fired 1 times	- Rule "Go to Shared state on DACK, i:Proc_3"
+	Fired 0 times	- Rule "Go to Pending Shared state, i:Proc_1"
+	Fired 5 times	- Rule "Go to Pending Shared state, i:Proc_2"
+	Fired 2 times	- Rule "Go to Pending Shared state, i:Proc_3"
+	Fired 0 times	- Rule "Read data from EM, i:Proc_1"
+	Fired 1 times	- Rule "Read data from EM, i:Proc_2"
+	Fired 3 times	- Rule "Read data from EM, i:Proc_3"
+	Fired 0 times	- Rule "Read shared data, i:Proc_1"
+	Fired 2 times	- Rule "Read shared data, i:Proc_2"
+	Fired 0 times	- Rule "Read shared data, i:Proc_3"
+	Fired 0 times	- Rule "Moved to shared state from EMR on DACKem, i:Proc_1"
+	Fired 0 times	- Rule "Moved to shared state from EMR on DACKem, i:Proc_2"
+	Fired 0 times	- Rule "Moved to shared state from EMR on DACKem, i:Proc_3"
+	Fired 4 times	- Rule "Trying to read data (pending), i:Proc_1"
+	Fired 5 times	- Rule "Trying to read data (pending), i:Proc_2"
+	Fired 5 times	- Rule "Trying to read data (pending), i:Proc_3"
+	Fired 18 times	- Rule "Trying to read data, i:Proc_1"
+	Fired 8 times	- Rule "Trying to read data, i:Proc_2"
+	Fired 1 times	- Rule "Trying to read data, i:Proc_3"
+	Fired 1 times	- Rule "Trying to write data (pending), v:Value_1, i:Proc_1"
+	Fired 4 times	- Rule "Trying to write data (pending), v:Value_1, i:Proc_2"
+	Fired 12 times	- Rule "Trying to write data (pending), v:Value_1, i:Proc_3"
+	Fired 18 times	- Rule "Trying to write data, v:Value_1, i:Proc_1"
+	Fired 8 times	- Rule "Trying to write data, v:Value_1, i:Proc_2"
+	Fired 1 times	- Rule "Trying to write data, v:Value_1, i:Proc_3"
+	Fired 1 times	- Rule "Write data, on DACKemw, v:Value_1, i:Proc_1"
+	Fired 4 times	- Rule "Write data, on DACKemw, v:Value_1, i:Proc_2"
+	Fired 12 times	- Rule "Write data, on DACKemw, v:Value_1, i:Proc_3"
+	Fired 1 times	- Rule "Write data, on DACK, v:Value_1, i:Proc_1"
+	Fired 4 times	- Rule "Write data, on DACK, v:Value_1, i:Proc_2"
+	Fired 11 times	- Rule "Write data, on DACK, v:Value_1, i:Proc_3"
+	Fired 0 times	- Rule "Invalidate, on DACKemw, v:Value_1, i:Proc_1"
+	Fired 0 times	- Rule "Invalidate, on DACKemw, v:Value_1, i:Proc_2"
+	Fired 0 times	- Rule "Invalidate, on DACKemw, v:Value_1, i:Proc_3"
+	Fired 0 times	- Rule "Trying to write data, v:Value_1, i:Proc_1"
+	Fired 0 times	- Rule "Trying to write data, v:Value_1, i:Proc_2"
+	Fired 3 times	- Rule "Trying to write data, v:Value_1, i:Proc_3"
+	Fired 0 times	- Rule "Write data, v:Value_1, i:Proc_1"
+	Fired 5 times	- Rule "Write data, v:Value_1, i:Proc_2"
+	Fired 4 times	- Rule "Write data, v:Value_1, i:Proc_3"
+
+```
+
+I will explain how to fix this in another post !!!
+Cheers :beer: !!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI2NjUyNzQ5XX0=
+eyJoaXN0b3J5IjpbLTgxODYwMzU1OV19
 -->
