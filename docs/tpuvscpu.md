@@ -237,18 +237,86 @@ gpu_time = timeit.timeit(testgpu, number=10)
 print('GPU time taken (seconds):', gpu_time)
 ```
 
-Same as previous section, while running on google colab in GPU mode make sure the following configuration is set as shown in the \cref{fig:gpu_sample}. And you can obtain the following outputs
-\verbatiminput{results/cnn/gpu_output.txt}
+Same as previous section, while running on google colab in GPU mode make sure the following configuration is set as shown already. And you can obtain the following outputs
+```
+PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')
+GPU (s):
+PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/train-labels-idx1-ubyte.gz
+32768/29515 [=================================] - 0s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/train-images-idx3-ubyte.gz
+26427392/26421880 [==============================] - 0s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/t10k-labels-idx1-ubyte.gz
+8192/5148 [===============================================] - 0s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/t10k-images-idx3-ubyte.gz
+4423680/4422102 [==============================] - 0s 0us/step
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+batch_normalization (BatchNo (None, 28, 28, 1)         4         
+_________________________________________________________________
+conv2d (Conv2D)              (None, 28, 28, 64)        1664      
+_________________________________________________________________
+.....
+.....
+.....
+dense_18 (Dense)             (None, 256)               590080    
+_________________________________________________________________
+activation_18 (Activation)   (None, 256)               0         
+_________________________________________________________________
+dropout_39 (Dropout)         (None, 256)               0         
+_________________________________________________________________
+dense_19 (Dense)             (None, 10)                2570      
+_________________________________________________________________
+activation_19 (Activation)   (None, 10)                0         
+=================================================================
+Total params: 1,619,470
+Trainable params: 1,619,084
+Non-trainable params: 386
+_________________________________________________________________
+10.992455269000004
+GPU time taken (seconds): 10.992455269000004
+```
 
-The code below show the version of code that can be executed in GPU
-\verbatiminput{results/cnn/tpu_version.py}
+The code below show the version of code that can be executed in TPU
+```python
+import tensorflow as tf
+import timeit
+import warnings
+warnings.filterwarnings('ignore')
 
-Again, same as previous section, while running on google colab in TPU mode make sure the following configuration is set as shown in the \cref{fig:tpu_sample}. And you can obtain the following outputs
+tf.get_logger().setLevel('INFO')
+
+try:
+  tpu = tf.distribute.cluster_resolver.TPUClusterResolver()
+  print('Running on TPU ', tpu.cluster_spec().as_dict()['worker'])
+except ValueError:
+  raise BaseException('ERROR: Not connected to a TPU runtime; please see the previous cell in this notebook for instructions!')
+
+ 
+testtpu = """
+import os
+import tensorflow as tf
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import StratifiedShuffleSplit
+
+with tf.device('/device:XLA_CPU:0'):
+    <SAMPLE CNN CODE>
+"""
+ 
+tpu_time = timeit.timeit(testtpu, number=10)
+
+print('TPU time taken (seconds):', tpu_time)
+```
+
+Again, same as previous section, while running on google colab in TPU mode make sure the following configuration as previously. And you can obtain the following outputs
 \verbatiminput{results/cnn/tpu_output.txt}
 
 \subsection*{Observations}
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxODU1MzAxMSwyMDU2OTEzNzE3XX0=
+eyJoaXN0b3J5IjpbMTQzMzY5OTg2NiwyMDU2OTEzNzE3XX0=
 -->
