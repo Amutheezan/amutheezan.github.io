@@ -51,7 +51,8 @@ type
 
 * variables - the global variables represents the system.
 
-I have added ```pending_write``` variable to identify whether there are multiple processor with pending writes and avoid to processor to reach exclusive state due to error in Futurebus
+I have added ```pending_write``` variable to identify whether there are multiple processor with pending writes and avoid to processor to reach exclusive state due to error in Futurebus+ cache coherence protocol.
+
 ```c
 var
 	proc_state: array[Proc] of ProcState;
@@ -63,7 +64,7 @@ var
 	send_msg: Message;
 ```
 
-* procedures - contains the function used by the verification.
+* procedures - contains the function used by the verification. I have update the functions to make sure the processor to update the variable ```pending_write```.
 
 ```c
 procedure SendMessage(msg: Message; i: Proc);
@@ -415,7 +416,7 @@ startstate
   undefine send_msg;
 endstartstate;
 ```
-* invariants - define the cases which determine the correct states of the system, or checking the validity of the system.
+* invariants - define the cases which determine the correct states of the system, or checking the validity of the system. Invariants keeps unchanged.
 
 ```c
 
@@ -637,5 +638,5 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzQ5Njk3ODRdfQ==
+eyJoaXN0b3J5IjpbMzQ3MDM1NDZdfQ==
 -->
