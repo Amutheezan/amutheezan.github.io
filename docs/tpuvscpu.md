@@ -19,6 +19,7 @@ import warnings
 warnings.filterwarnings('ignore')
 tf.get_logger().setLevel('INFO')
 ```
+## SIMPLE IMPLEMENTATION
 
 ### CPU-Version
 The code below show the version of code that can be executed in CPU
@@ -155,15 +156,14 @@ Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images (batch x h
 TPU speedup over CPU: 1x
 ```
 
-![image](images/
+![image](images/TPU_configuration.png)
 
 
-
-\subsection*{Observations}
+#### Summary: 
 Based on the results the CPU and TPU performs nearly same, but GPU performs more than 50 times than CPU and TPU
 
 
-
+## CNN IMPLEMENTION
 
 The code below show the version of code that contain sample CNN network example.
 ```python
@@ -233,10 +233,7 @@ from sklearn.model_selection import StratifiedShuffleSplit
 with tf.device('/device:GPU:0'):
     <SAMPLE CNN CODE>
 """
- 
-
 gpu_time = timeit.timeit(testgpu, number=10)
-
 print('GPU time taken (seconds):', gpu_time)
 ```
 
@@ -253,5 +250,5 @@ Again, same as previous section, while running on google colab in TPU mode make 
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkzMDYwMjMzLDIwNTY5MTM3MTddfQ==
+eyJoaXN0b3J5IjpbMTIxODU1MzAxMSwyMDU2OTEzNzE3XX0=
 -->
