@@ -6,7 +6,32 @@ author: Amutheezan Sivagnanam
 
 ---
 
-I have implemented a simple fixing for Futurebus+ cache coherence protocol which i explained in my previous code, I followed the same code structure as previous.
+I have implemented a simple fixing for Futurebus+ cache coherence protocol which i explained in my previous post.
+
+
+### Initial Setup & Steps
+
+Initially clone the repository and go to the code ```main``` directory and execute the following two command to start the docker instances (make sure docker is already installed in your computer and started; check here for installation steps of [docker](https://docs.docker.com/get-docker/).
+
+```docker-compose build```
+
+```docker-compose run ubuntu bash```
+
+After that you will get into the bash follow the steps shown below in the ubuntu bash,
+
+
+* First go to the directory ```Murphi3.1/src``` and compile the Murphi using ```make``` command (if it not already generated). And optionally make the executable access using the command ```chmod +x Murphi3.1/src/mu```, if you in the home directory.
+* Then go to the directory ```verification``` and obtain the C file for the Futurebus+ verification using ```./../Murphi3.1/src/mu futurebus.m``` command (if it not already generated). This will generate the C file ```futurebus.C```. 
+* Thereafter compile the generate file using the command ```make futurebus```, this eventually generate the executable program.
+* Finally run the executable using the following command ```./futurebus```
+
+### OR 
+you can perform these entire steps by simply go to the ```verification``` directory and run the command ```sh run.sh```.
+
+## Verification using Murphi3.1
+Please note that Murphi3.1 come installed with docker image so no need to worry about downloading and setting up.
+
+I followed the same code structure as previous post.
 
 * constants - to define constants such as number of processor, number of values
 ```c
@@ -632,6 +657,6 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzODgwOTA0LDE1ODU4MzY1NTksLTE2NT
+eyJoaXN0b3J5IjpbODYzOTQyMjEyLDE1ODU4MzY1NTksLTE2NT
 k2MjA5NDldfQ==
 -->
