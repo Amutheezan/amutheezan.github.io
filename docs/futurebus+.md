@@ -117,7 +117,9 @@ begin
 end;
 
 ```
+
  * ruleset - define the set of rules that can be used to model the systems.
+ * 
 ```c
  ruleset i: Proc do
   	alias p: proc_state[i] do
@@ -361,6 +363,7 @@ end;
 endruleset;
 
 ```
+
 * start-state - define the start state of the system.
 
 ```c
@@ -413,28 +416,6 @@ invariant "value is undefined while invalid"
 Output of verification of Futurebus+ cache coherence protocol, this provides a brief summary whether any errors or issues found and other statistics.
 
 ```
-This program should be regarded as a DEBUGGING aid, not as a 
-certifier of correctness.
-Call with the -l flag or read the license file for terms
-and conditions of use.
-Run this program with "-h" for the list of options.
-
-Bugs, questions, and comments should be directed to
-"murphi@verify.stanford.edu".
-
-Murphi compiler last modified date: Jan 29 1999
-Include files   last modified date: Jan 29 1999
-==========================================================================
-
-==========================================================================
-Murphi Release 3.1
-Finite-state Concurrent System Verifier.
-
-Copyright (C) 1992 - 1999 by the Board of Trustees of
-Leland Stanford Junior University.
-
-==========================================================================
-
 Protocol: futurebus
 
 Algorithm:
@@ -457,8 +438,6 @@ Memory usage:
 Warning: No trace will not be printed in the case of protocol errors!
          Check the options if you want to have error traces.
 
-==========================================================================
-
 Result:
 
 	Invariant "only one processor in EM state" failed.
@@ -472,7 +451,6 @@ Analysis of State Space:
 	There are rules that are never fired.
 	If you are running with symmetry, this may be why.  Otherwise,
 	please run this program with "-pr" for the rules information.
-
 ```
 
 Next I provides the output of error traces of Futurebus+ traces of cache coherence protocol using the command suffix ```-tv```. This provides the the reasons why the error happen (i.e two processors go to the exclusive states).
@@ -661,5 +639,5 @@ Rules Information:
 I will explain how to fix this in another post !!!
 Cheers  !!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMzYxNzc3MywtODE4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbLTU5OTY5NTI0NSwtODE4NjAzNTU5XX0=
 -->
