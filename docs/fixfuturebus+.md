@@ -52,15 +52,18 @@ type
 ```
 
 * variables - the global variables represents the system.
+
 ```c
- var
+var
 	proc_state: array[Proc] of ProcState;
 	transaction_flag: boolean;
 	last_write: Value;
 	one_flag: boolean;
 	more_flag: boolean;
+	pending_write: boolean;
 	send_msg: Message;
 ```
+
 * procedures - contains the function used by the verification.
 
 ```c
@@ -73,18 +76,28 @@ begin
 				proc_state[i].state :=  FB_SU;
 			endif;
 
+			if (proc_state[i].state = FB_PW) then
+				proc_state[i].state :=  FB_PR;
+			endif;
+
 		case ReadModified:
 			if (proc_state[i].state = FB_SU | 
 				proc_state[i].state = FB_PR | 
 				proc_state[i].state = FB_PSU | 
 				proc_state[i].state = FB_PEMR | 
-				proc_state[i].state = FB_EU) then
+				proc_state[i].state = FB_EU |
+				proc_state[i].state = FB_EM) then
 				proc_state[i].state :=  FB_I;
+			endif;
+
+			if (proc_state[i].state = FB_PW) then
+				proc_state[i].state :=  FB_PR;
 			endif;
 
 		case Invalidate:
 			proc_state[i].state :=  FB_I;
 	endswitch;
+
     proc_state[i].value := msg.value;
 	if (proc_state[i].state = FB_I) then
 		proc_state[i].value := undefined;
@@ -93,6 +106,13 @@ end;
 
 procedure UpdateSignals();
 begin
+
+	for m: Proc do
+		if proc_state[m].state = FB_PW then
+			pending_write := true;
+		endif;
+	endfor;
+
 	for m: Proc do
 		if proc_state[m].state = FB_PEMR | 
 		   proc_state[m].state = FB_PSU |
@@ -115,7 +135,6 @@ begin
 		endif;
 	endfor;
 end;
-
 ```
 
  * ruleset - define the set of rules that can be used to model the systems.
@@ -644,5 +663,5 @@ Rules Information:
 I will explain how to fix this in another post !!!
 Cheers  !!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDI1MzQxOV19
+eyJoaXN0b3J5IjpbMTMxNjA1Mjc3Ml19
 -->
