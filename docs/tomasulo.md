@@ -33,8 +33,8 @@ In this Implementation I have done following,
 
 * This implementation doesn't support the branch-predictions, so inputs with branch commands such as ```beq``` and ```bne``` in fail when the issue-width is greater than 1.
 
-The implementation can be found in the [repopsitory](https://github.com/Amutheezan/Tomasulo)
+The implementation can be found in the [repopsitory](https://github.com/Amutheezan/Tomasulo).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDE1NDU5MSw5NjAxNTIzODEsLTc0NT
-YxNjE5N119
+eyJoaXN0b3J5IjpbMTg4MjA2ODE5NywtMzQ0MTU0NTkxLDk2MD
+E1MjM4MSwtNzQ1NjE2MTk3XX0=
 -->
