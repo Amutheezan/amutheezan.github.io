@@ -4,6 +4,7 @@ title: Simple Fix on Futurebus+ Cache Coherence Protocol
 author: Amutheezan Sivagnanam
 
 ---
+
 I have implemented a simple fixing for Futurebus+ cache coherence protocol which i explained in my previous code, I followed the same code structure as previous.
 
 * constants - to define constants such as number of processor, number of values
@@ -631,5 +632,5 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTk2MjA5NDldfQ==
+eyJoaXN0b3J5IjpbMTIxNDk0NzA2OSwtMTY1OTYyMDk0OV19
 -->
