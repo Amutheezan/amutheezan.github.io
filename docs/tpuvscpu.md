@@ -1,10 +1,9 @@
 ---
 type: posts
-title: CPUvsGPUvsTPU Performance Comparison
+title: CPU/GPU/TPU Performance Comparison
 author: Amutheezan Sivagnanam
 
 ---
-
 I follow the basic step by step guide in [1].
 I follow the instructions to work on TPU using [2].
 
@@ -24,7 +23,23 @@ tf.get_logger().setLevel('INFO')
 ### CPU-Version
 The code below show the version of code that can be executed in CPU
 
-\verbatiminput{results/sample/cpu_version.py}
+```
+cpu = tf.config.experimental.list_physical_devices('CPU')[0]
+print(f'Selected CPU: {cpu}')
+
+testcpu = """
+import tensorflow as tf
+with tf.device('/cpu:0'):
+  random_image_cpu = tf.random.normal((100, 100, 100, 3))
+  net_cpu = tf.compat.v1.layers.conv2d(random_image_cpu, 32, 7)
+  net_cpu = tf.math.reduce_sum(net_cpu)
+"""
+
+cpu_time = timeit.timeit(testcpu, number=10)
+
+print('Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images \n'
+      f'(batch x height x width x channel). Sum of ten runs: {cpu_time}')
+```
 
 While running on [google colab](https://colab.research.google.com/notebooks) in CPU mode make sure the following configuration is set as shown in the \cref{fig:cpu_sample}. And you can obtain the following outputs
 \verbatiminput{results/sample/cpu_output.txt}
@@ -175,5 +190,5 @@ Again, same as previous section, while running on google colab in TPU mode make 
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NjkxMzcxN119
+eyJoaXN0b3J5IjpbLTE4MTExNzM2NjMsMjA1NjkxMzcxN119
 -->
