@@ -88,61 +88,33 @@ This demo reads memory from another process by directly reading physical memory.
 	sudo ./secret
 ```
 
-2. call ```    \begin{tcolorbox}
-    sudo ./secret
-    \end{tcolorbox}
-
-    \item [(2)] call \texttt{physical\_reader```} with the specified physical address of secret text and offset.
+2. call ```physical_reader``` with the specified physical address of secret text and offset.
     
-```bash    \begin{tcolorbox}
+```bash
     make;\\
     sudo taskset 0x1 ./physical\_reader 0xcc26cac8 0xffff8a6b80000000
-```    \end{tcolorbox}
-\end{itemize}
+``` 
 
-I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable kaslr by default. If kaslr is disabled, we can skip providing the offset parameter. So I don’t need to provide the offset value ```\texttt{0xffff8a6b80000000```}.
+I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable kaslr by default. If kaslr is disabled, we can skip providing the offset parameter. So I don’t need to provide the offset value ```0xffff8a6b80000000```.
 
 
-##### \textbf{Screenshots}
+##### Screenshots
 
 ![image](images/physical_reader_part_1.png)
 ![image](images/physical_reader_part_2.png)
 
-##### \begin{figure}[!ht]
-    \centering
-\begin{subfigure}[b]{0.96\linewidth}
-    \centering
-    \includegraphics[width=120mm,scale=0.5]{meltdown/physical_reader_part_1.png}
-        \caption{Running \texttt{secret}.}
-\end{subfigure}
-
-\begin{subfigure}[b]{0.96\linewidth}
-    \centering
-    \includegraphics[width=120mm,scale=0.5]{meltdown/physical_reader_part_2.png}
-    \caption{Reading contents of secret text from \texttt{physical\_reader}.}
-\end{subfigure}
-    \caption{Screenshots of Demo \#04, Read Physical memory}
-    \label{fig:meltdown_physical_reader}
-\end{figure}
-
-
-\textbf{Issues Ffaced
-}
+##### Issues faced
 Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/)}, I am unable to get contents of secret. I also tried similar commands with Ubuntu 14.10, but I faced the same issues there as well.
 
-#### \newpage
-
-\subsubsection{Demo \#05 - Dump the memory (```\texttt{memdump```)})}
+#### Demo \#05 - Dump the memory (```memdump```)
 
 This demo dumps the content of the memory. I set the memory size to 8GB as RAM for the virtual box. This demo contains two steps, 
 
-##### 
-\textbf{Steps and Commands}
+##### Steps and Commands
 
-1. call ```\begin{itemize}
-    \item [(1)] call \texttt{memory\_filler```} with memory value specified to fill the memory. 
+1. call ```memory\_filler``` with memory value specified to fill the memory. 
     
-```bash    \begin{tcolorbox}
+```bash
     sudo ./memory\_filler 9
 ```
 
@@ -208,7 +180,7 @@ This hard-split can determine whether a memory fetch violates security boundary 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MTI2MDQ0NCwtMjAyMzgxNTA2OSw0OD
+eyJoaXN0b3J5IjpbLTc1MTQyNzMyNywtMjAyMzgxNTA2OSw0OD
 cxMTAxODQsMTE5MjI0NDc2LC0xMzM0NzU2NTMwLC0xNjIzMjkz
 OTA0XX0=
 -->
