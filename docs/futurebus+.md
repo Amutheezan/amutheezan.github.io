@@ -1,4 +1,3 @@
-
 ---
 type: posts
 title: Verification of Futurebus+ Cache Coherence Protocol
@@ -652,6 +651,6 @@ Cheers  !!!start-state - define the start state of the system.
 
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMTk5MzYwOSwtMTY1NTYxMjk3NywtOD
-E4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbLTE0NjIyODQ0MjUsMTIzMTk5MzYwOSwtMT
+Y1NTYxMjk3NywtODE4NjAzNTU5XX0=
 -->
