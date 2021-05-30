@@ -17,20 +17,14 @@ Meltdown uses the race condition between memory access and privilege level check
 * Ubuntu 14.04.06 LTS
 * Kernel Version: 4.4.0-142-generic
 
-I first clone the meltdown demo repository [3](https://meltdownattack.com/\cite{meltdown.pdf)} from GitHub and tried the following demonstration presents in the repository.
+I first clone the meltdown demo repository [2](https://github.com/IAIK/meltdown/) from GitHub and tried the following demonstration presents in the repository.
 
-### \paragraph{Demonstrations of Meltdown Attack
-*}
-\begin{itemize}
-    \item Demo \#01 - A first test (```test```)
-*\texttt{test})
-    \item Demo \#02 - Breaking KASLR (```kaslr```)
-*\texttt{kaslr})
-    \item Demo \#03 - Reliability test (```\texttt{reliability```)
-* })
-    \item Demo \#04 - Read physical memory (```\texttt{physical\_reader```)
-*})
-    \item Demo \#05 - Dump the memory (```memdump```)
+### Demonstrations of Meltdown Attack
+* Demo \#01 - A first test (```test```)
+* Demo \#02 - Breaking KASLR (```kaslr```)
+* Demo \#03 - Reliability test (```\texttt{reliability```)
+*  Demo \#04 - Read physical memory (```\texttt{physical\_reader```)
+* Demo \#05 - Dump the memory (```memdump```)
 
 
 #### \texttt{memdump})
@@ -257,6 +251,6 @@ This hard-split can determine whether a memory fetch violates security boundary 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODA1MzE3ODIsNDg3MTEwMTg0LDExOT
+eyJoaXN0b3J5IjpbLTIwMjM4MTUwNjksNDg3MTEwMTg0LDExOT
 IyNDQ3NiwtMTMzNDc1NjUzMCwtMTYyMzI5MzkwNF19
 -->
