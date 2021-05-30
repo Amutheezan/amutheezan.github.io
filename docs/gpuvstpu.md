@@ -91,7 +91,6 @@ Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images
 (batch x height x width x channel). Sum of ten runs. 0.056331392000004143
 GPU speedup over CPU: 51x
 ```
-![image](images/GPU_configuration.png)
 
 ### TPU-Version
 
@@ -130,8 +129,7 @@ IndexError                                Traceback (most recent call last)
 
 IndexError: list index out of range
 ```
-To solve the TPU version, I go through the solution provided in the  [https://heartbeat.fritz.ai/step-by-step-use-of-google-colab-free-tpu-75f8629492b3][2](https://heartbeat.fritz.ai/step-by-step-use-of-google-colab-free-tpu-75f8629492b3)
-[3](https://colab.research.google.com/notebooks/tpu.ipynb#scrollTo=FpvUOuC3j27n) and fixed the issues.
+To solve the TPU version, I go through the solution provided in the  [2](https://heartbeat.fritz.ai/step-by-step-use-of-google-colab-free-tpu-75f8629492b3), [3](https://colab.research.google.com/notebooks/tpu.ipynb#scrollTo=FpvUOuC3j27n) and fixed the issues.
 Finally, the code below show the version of code that can be executed in TPU.
 
 ```python
@@ -363,6 +361,6 @@ Based on the results TPU performs around 1.5 times better than GPU in-terms the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODA0NDA1Nyw0MzA3NjUxOTAsMTQyMj
+eyJoaXN0b3J5IjpbMTc3MTg0NTQ2Miw0MzA3NjUxOTAsMTQyMj
 UxMjk2Ml19
 -->
