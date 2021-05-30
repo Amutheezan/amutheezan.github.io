@@ -7,7 +7,7 @@ author: Amutheezan Sivagnanam
 
 I have implemented a simple verification for Futurebus+ cache coherence protocol as a part of assignment for COSC 6385 course in University of Houston.
 
-### Initial Setup & Steps
+## Initial Setup & Steps
 
 Initially clone the repository and go to the code ```main``` directory and execute the following two command to start the docker instances (make sure docker is already installed in your computer and started; check here for installation steps of [docker](https://docs.docker.com/get-docker/).
 
@@ -669,9 +669,10 @@ Rules Information:
 
 I will explain how to fix this in another post !!!
 Cheers  !!!
+
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjY1OTM1MzksMTUyNzA5NDM0NSwtMT
-Q2MjI4NDQyNSwxMjMxOTkzNjA5LC0xNjU1NjEyOTc3LC04MTg2
-MDM1NTldfQ==
+eyJoaXN0b3J5IjpbLTE2NTQzNjQ1MTAsLTExNjY1OTM1MzksMT
+UyNzA5NDM0NSwtMTQ2MjI4NDQyNSwxMjMxOTkzNjA5LC0xNjU1
+NjEyOTc3LC04MTg2MDM1NTldfQ==
 -->
