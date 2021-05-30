@@ -489,16 +489,12 @@ Bugs, questions, and comments should be directed to
 
 Murphi compiler last modified date: Jan 29 1999
 Include files   last modified date: Jan 29 1999
-==========================================================================
 
-==========================================================================
 Murphi Release 3.1
 Finite-state Concurrent System Verifier.
 
 Copyright (C) 1992 - 1999 by the Board of Trustees of
 Leland Stanford Junior University.
-
-==========================================================================
 
 Protocol: futurebus
 
@@ -714,5 +710,5 @@ Rules Information:
 I will explain how to fix this in another post !!!
 Cheers :beer: !!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MDM2MDExNywtODE4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbMTUzNzQ5Mzg0NSwtODE4NjAzNTU5XX0=
 -->
