@@ -37,7 +37,7 @@ This will generate the executable file which will demonstrate the spectre attack
 
 and I obtained following results.
 
-![image](images/spectre_first.png)
+![image](../images/spectre_first.png)
 
 ![image](../images/spectre_second.png)
 
@@ -59,7 +59,7 @@ For software level protection, we can uses the patches such as LLVM patch, MSVC 
 ## REFERENCES
 1. [Spectre Paper](https://meltdownattack.com/spectre.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNDA5OTYwOSwtMTE4NTgzNzMyMSw5MD
+eyJoaXN0b3J5IjpbLTE3NTM2NDk4NiwtMTE4NTgzNzMyMSw5MD
 AyNDI3NjMsNTYzODY2NDU0LC01NjM4OTY1ODQsNDg2MjgxMTY4
 LDcwOTQ3ODkwMCwxNjEzNjQ3ODYwXX0=
 -->
