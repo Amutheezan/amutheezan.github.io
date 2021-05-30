@@ -3,7 +3,11 @@
 type: posts
 title: Simulation of Tomasulo Algorithm
 author: Amutheezan Sivagnanam
-
+category: Computer Architecture
+tags:
+- architecture
+- tomasulo
+date: 2021-03-31
 ---
 **Disclaimer** 
 WORK IN PROGRESS
@@ -35,6 +39,6 @@ In this Implementation I have done following,
 
 The implementation can be found in the [repository](https://github.com/Amutheezan/Tomasulo).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDYxMzI4NDcsLTM0NDE1NDU5MSw5Nj
-AxNTIzODEsLTc0NTYxNjE5N119
+eyJoaXN0b3J5IjpbMjA0NDEwMzg2NywtMTE0NjEzMjg0NywtMz
+Q0MTU0NTkxLDk2MDE1MjM4MSwtNzQ1NjE2MTk3XX0=
 -->
