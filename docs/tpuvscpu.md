@@ -23,7 +23,7 @@ tf.get_logger().setLevel('INFO')
 ### CPU-Version
 The code below show the version of code that can be executed in CPU
 
-```
+```python
 cpu = tf.config.experimental.list_physical_devices('CPU')[0]
 print(f'Selected CPU: {cpu}')
 
@@ -48,23 +48,41 @@ Selected CPU: PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')
 Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images 
 (batch x height x width x channel). Sum of ten runs: 3.8407666499999777
 ```
-
-![image](images/CPU
+![image](images/CPU_configuration.png)
 
 
 \subsection*{GPU-Version}
 The code below show the version of code that can be executed in GPU
 
-\verbatiminput{results/sample/gpu_version.py}
+```python
+gpu = tf.config.experimental.list_physical_devices('GPU')[0]
+print(f'Selected GPU: {gpu}')
+ 
+testgpu = """
+import tensorflow as tf
+with tf.device('/device:GPU:0'):
+  random_image_gpu = tf.random.normal((100, 100, 100, 3))
+  net_gpu = tf.compat.v1.layers.conv2d(random_image_gpu, 32, 7)
+  net_gpu = tf.math.reduce_sum(net_gpu)
+"""
+ 
+gpu_time = timeit.timeit(testgpu, number=10)
+
+print('Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images \n'
+      f'(batch x height x width x channel). Sum of ten runs. {gpu_time}')
+
+print(f'GPU speedup over CPU: {int(cpu_time/gpu_time)}x')
+```
 
 While running on google colab in GPU mode make sure the following configuration is set as shown in the \cref{fig:gpu_sample}. And you can obtain the following outputs
-\verbatiminput{results/sample/gpu_output.txt}
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.5\textwidth]{results/sample/GPU_Configuration.png}
-    \caption{Google Colab Configuration to run in GPU mode}
-    \label{fig:gpu_sample}
-\end{figure}
+
+```
+Selected GPU: PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')
+Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images 
+(batch x height x width x channel). Sum of ten runs. 0.056331392000004143
+GPU speedup over CPU: 51x
+```
+![image](images/GPU_con
 
 
 
@@ -189,5 +207,5 @@ Again, same as previous section, while running on google colab in TPU mode make 
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDk3OTM0MiwyMDU2OTEzNzE3XX0=
+eyJoaXN0b3J5IjpbMTM3NTcxNzE3OCwyMDU2OTEzNzE3XX0=
 -->
