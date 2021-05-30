@@ -1,10 +1,15 @@
 - title: Email
   url: mailto:asivagnanam@uh.edu
   icon: fas fa-envelope
-- title: Twitter
-  url: https://twitter.com/amux93
-  icon: fab fa-twitter
 - title: GitHub
   url: https://github.com/amutheezan
   icon: fab fa-github
-
+- title: Stack Overflow
+  url: https://stackoverflow.com/users/4859531/amutheezan
+  icon: fab fa-stack-overflow
+- title: Twitter
+  url: https://twitter.com/amux93
+  icon: fab fa-twitter
+- title: Instagram
+  url: https://www.instagram.com/amutheez/
+  icon: fab fa-instagram
