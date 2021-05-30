@@ -312,11 +312,44 @@ print('TPU time taken (seconds):', tpu_time)
 ```
 
 Again, same as previous section, while running on google colab in TPU mode make sure the following configuration as previously. And you can obtain the following outputs
-\verbatiminput{results/cnn/tpu_output.txt}
 
-\subsection*{Observations}
+```
+Running on TPU  ['10.18.116.242:8470']
+TPU (s):
+<tensorflow.python.distribute.cluster_resolver.tpu.tpu_cluster_resolver.TPUClusterResolver object at 0x7f825f37b690>
+Model: "sequential_23"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+batch_normalization_69 (Batc (None, 28, 28, 1)         4         
+_________________________________________________________________
+conv2d_69 (Conv2D)           (None, 28, 28, 64)        1664      
+.....
+.....
+.....
+_________________________________________________________________
+activation_64 (Activation)   (None, 256)               0         
+_________________________________________________________________
+dropout_131 (Dropout)        (None, 256)               0         
+_________________________________________________________________
+dense_65 (Dense)             (None, 10)                2570      
+_________________________________________________________________
+activation_65 (Activation)   (None, 10)                0         
+=================================================================
+Total params: 1,619,470
+Trainable params: 1,619,084
+Non-trainable params: 386
+_________________________________________________________________
+TPU time taken (seconds): 6.602945475999945
+```
+#### Summary:
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
 
+## References
+* [https://petamind.com/quick-benchmark-colab-cpu-gpu-tpu-xla-cpu/](https://petamind.com/quick-benchmark-colab-cpu-gpu-tpu-xla-cpu/)
+*(
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMzY5OTg2NiwyMDU2OTEzNzE3XX0=
+eyJoaXN0b3J5IjpbLTEzNTA1MTc2NzYsMjA1NjkxMzcxN119
 -->
