@@ -8,7 +8,7 @@ author: Amutheezan Sivagnanam
 
   
 
-#### **Warning !**
+#### **Disclaimer**
 
   
 
@@ -223,7 +223,7 @@ OSGi bundle so, don't forget to add this -->
 5. [http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml](http://stackoverflow.com/questions/11881663/what-is-the-difference-in-maven-between-dependency-and-plugin-tags-in-pom-xml)
 6. [http://www.tutorialspoint.com/maven/maven_repositories.htm](http://www.tutorialspoint.com/maven/maven_repositories.htm)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTE5NTAxNDgsLTk0MDQ0Mzc0LDk3Nj
-E1NzgsMTA4NDIwNTc0MCwtMjA5ODkwNTEzMywzMjY1MjY2ODJd
-fQ==
+eyJoaXN0b3J5IjpbLTE2Mzk1NDg4MCwtMTIxMTk1MDE0OCwtOT
+QwNDQzNzQsOTc2MTU3OCwxMDg0MjA1NzQwLC0yMDk4OTA1MTMz
+LDMyNjUyNjY4Ml19
 -->
