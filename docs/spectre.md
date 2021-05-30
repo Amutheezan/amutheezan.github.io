@@ -57,9 +57,9 @@ For software level protection, we can uses the patches such as LLVM patch, MSVC 
 * By tracking down whether the data was fetch as a result of speculative execution or not. And if it obtained from speculative execution then prevent it using in subsequent execution, which might leak the information.
 
 ## REFERENCES
-1. [https://spectreattack.com/spectre.pdf](https://spectreattack.com/spectre.pdf)\end{itemize}
+1. [Spectre Paper](https://spectreattack.com/spectre.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzI5NTg2MDAsNTYzODY2NDU0LC01Nj
-M4OTY1ODQsNDg2MjgxMTY4LDcwOTQ3ODkwMCwxNjEzNjQ3ODYw
-XX0=
+eyJoaXN0b3J5IjpbNjY3MDM1MzQ5LDU2Mzg2NjQ1NCwtNTYzOD
+k2NTg0LDQ4NjI4MTE2OCw3MDk0Nzg5MDAsMTYxMzY0Nzg2MF19
+
 -->
