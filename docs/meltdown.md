@@ -20,23 +20,23 @@ Meltdown uses the race condition between memory access and privilege level check
 I first clone the meltdown demo repository [3](https://meltdownattack.com/meltdown.pdf) from GitHub and tried the following demonstration presents in the repository.
 
 ### Demonstrations of Meltdown Attack
-* Demo \#01 - A first test (```test})
-* Demo \#02 - Breaking KASLR (```kaslr})
-* Demo \#03 - Reliability test (\texttt{reliability})
-*  Demo \#04 - Read physical memory (\texttt{physical\_reader})
-* Demo \#05 - Dump the memory (\texttt{memdump})
+* Demo \#01 - A first test (```test```)
+* Demo \#02 - Breaking KASLR (```kaslr```)
+* Demo \#03 - Reliability test (```reliability```)
+*  Demo \#04 - Read physical memory (```physical\_reader```)
+* Demo \#05 - Dump the memory (```memdump```)
 
 
-\subsubsection{Demo \#01 - A first test (\texttt{test})}
+#### Demo \#01 - A first test (```test```)
 
-I have executed the basic test case for \texttt{meltdown} demos in this demo. I was able to get the same text in expect and got places. I also tried to call the same command, and it returns random texts in each run. (randomization of text happen based on the line 26 of \texttt{test.c})
+I have executed the basic test case for ```meltdown``` demos in this demo. I was able to get the same text in expect and got places. I also tried to call the same command, and it returns random texts in each run. (randomization of text happen based on the line 26 of ```test.c````
 
-\textbf{Commands}
+##### Commands
 
-\begin{tcolorbox}
+```bash
 make;\\
 sudo taskset 0x1 ./test
-\end{tcolorbox}
+```
 
 \textbf{Screenshot}
 
@@ -208,6 +208,6 @@ This hard-split can determine whether a memory fetch violates security boundary 
 2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
 3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjYxMTk0NzQsLTEzMzQ3NTY1MzAsLT
+eyJoaXN0b3J5IjpbLTE5NzQ0ODk2NjIsLTEzMzQ3NTY1MzAsLT
 E2MjMyOTM5MDRdfQ==
 -->
