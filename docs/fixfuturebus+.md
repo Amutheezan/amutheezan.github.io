@@ -5,9 +5,7 @@ title: Simple Fix on Futurebus+ Cache Coherence Protocol
 author: Amutheezan Sivagnanam
 
 ---
-I have implemented a simple verification for Futurebus+ cache coherence protocol as a part of assignment for COSC 6385 course in University of Houston.
-
-I structure the code as follows,
+I have implemented a simple fixing for Futurebus+ cache coherence protocol which i explained in my previous code, I followed the same code structure as previous.
 
 * constants - to define constants such as number of processor, number of values
 ```c
@@ -53,6 +51,7 @@ type
 
 * variables - the global variables represents the system.
 
+I have added ```pending_write``` variable to identify whether there are multiple processor with pending writes and avoid to processor to reach exclusive state due to error in Futurebus
 ```c
 var
 	proc_state: array[Proc] of ProcState;
@@ -638,5 +637,5 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyNjk0OTQ4XX0=
+eyJoaXN0b3J5IjpbLTIwMzQ5Njk3ODRdfQ==
 -->
