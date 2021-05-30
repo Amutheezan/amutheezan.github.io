@@ -347,9 +347,10 @@ Based on the results TPU performs around 1.5 times better than GPU in-terms the 
 
 ## References
 * [https://petamind.com/quick-benchmark-colab-cpu-gpu-tpu-xla-cpu/](https://petamind.com/quick-benchmark-colab-cpu-gpu-tpu-xla-cpu/)
-*(
+* [https://heartbeat.fritz.ai/step-by-step-use-of-google-colab-free-tpu-75f8629492b3](https://heartbeat.fritz.ai/step-by-step-use-of-google-colab-free-tpu-75f8629492b3)
+* [https://colab.research.google.com/notebooks/tpu.ipynb#scrollTo=FpvUOuC3j27n](https://colab.research.google.com/notebooks/tpu.ipynb#scrollTo=FpvUOuC3j27n)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTA1MTc2NzYsMjA1NjkxMzcxN119
+eyJoaXN0b3J5IjpbMTQyMjUxMjk2MiwyMDU2OTEzNzE3XX0=
 -->
