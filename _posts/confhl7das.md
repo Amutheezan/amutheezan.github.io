@@ -2,7 +2,11 @@
 type: posts
 title: Configuring HL7 in WSO2 DAS
 author: Amutheezan Sivagnanam
-
+category: Internship
+tags:
+- hl7
+- wso2
+date: 2016-09-11
 ---
 #### **Disclaimer**
 
@@ -249,8 +253,8 @@ We need patches when we need to give minor change/update to releases that are ge
 [2016-09-09 16:58:38,550]  INFO {org.wso2.carbon.server.util.PatchUtils.console} -  Backed up plugins to patch0000
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MjM2ODAxMywtMTkzNTgyMTU0NiwtMT
-kxNzc1MDAzNiwxMTE3NDkxOTg5LC0xOTE3NzUwMDM2LDExMTc0
-OTE5ODksMTExNzQ5MTk4OSwtNDU4MjM2MzA0LC0xNDU0MTY1OD
-NdfQ==
+eyJoaXN0b3J5IjpbMTM4MzE1MTQyNiwxOTYyMzY4MDEzLC0xOT
+M1ODIxNTQ2LC0xOTE3NzUwMDM2LDExMTc0OTE5ODksLTE5MTc3
+NTAwMzYsMTExNzQ5MTk4OSwxMTE3NDkxOTg5LC00NTgyMzYzMD
+QsLTE0NTQxNjU4M119
 -->
