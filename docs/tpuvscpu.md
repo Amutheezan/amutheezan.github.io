@@ -50,8 +50,7 @@ Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images
 ```
 ![image](images/CPU_configuration.png)
 
-
-\subsection*{GPU-Version}
+### GPU-Version
 The code below show the version of code that can be executed in GPU
 
 ```python
@@ -82,19 +81,41 @@ Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images
 (batch x height x width x channel). Sum of ten runs. 0.056331392000004143
 GPU speedup over CPU: 51x
 ```
-![image](images/GPU_con
+![image](images/GPU_configuration.png)
 
-
-
-
-\subsection*{TPU-Version}
+### TPU-Version
 
 I was able to run the CPU version as well as GPU version, but TPU version doesn't work. Following codes shows the initial TPU version of code that doesn't work, as mentioned in the tutorial,
-\verbatiminput{results/sample/tpu_version_error.py}
+
+```python
+try:
+  tpu = tf.distribute.cluster_resolver.TPUClusterResolver()
+  print('Running on TPU ', tpu.cluster_spec().as_dict()['worker'])
+except ValueError:
+  raise BaseException('ERROR: Not connected to a TPU runtime; '
+  'please see the previous cell in this notebook for instructions!')
+
+ 
+testtpu = """
+import tensorflow as tf
+with tf.device('/device:XLA_CPU:0'):
+  random_image_tpu = tf.random.normal((100, 100, 100, 3))
+  net_tpu = tf.compat.v1.layers.conv2d(random_image_tpu, 32, 7)
+  net_tpu = tf.math.reduce_sum(net_tpu)
+"""
+ 
+tpu_time = timeit.timeit(testtpu, number=10)
+
+print('Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images '
+      f'(batch x height x width x channel). Sum of ten runs. {tpu_time}')
+
+print(f'TPU speedup over CPU: {int(cpu_time/tpu_time)}x')
+```
 
 And obtain the following error message 
-\verbatiminput{results/sample/tpu_output_error.txt}
+```
 
+```
 To solve the TPU version, I go through the solution provided in the \cite{tpuincolab} and fixed the issues.
 Finally, the code below show the version of code that can be executed in TPU.
 
@@ -207,5 +228,5 @@ Again, same as previous section, while running on google colab in TPU mode make 
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NTcxNzE3OCwyMDU2OTEzNzE3XX0=
+eyJoaXN0b3J5IjpbLTE4MTQ1ODQwMTYsMjA1NjkxMzcxN119
 -->
