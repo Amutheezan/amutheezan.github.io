@@ -2,7 +2,11 @@
 type: posts
 title: HL7v3 vs FHIR
 author: Amutheezan Sivagnanam
-
+category: Internship
+tags:
+- hl7
+- wso2
+date: 2016-09-11
 ---
 
 #### **Disclaimer**
@@ -54,6 +58,7 @@ Note these CDA, CCD, SPL, CCOW are released alongside version 3 and it was expec
 5.  SPL - Structured Product Labeling
 6.  CCOW - Clinical Context Object Markup
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3NTM3OTQwLC0xNTEyODIzMjA5LDE4MD
-UwOTkwNTksLTE4NzA1MzMzNDIsLTEyMjE2NTUwNzFdfQ==
+eyJoaXN0b3J5IjpbMjAxODU0NzU4Myw2Nzc1Mzc5NDAsLTE1MT
+I4MjMyMDksMTgwNTA5OTA1OSwtMTg3MDUzMzM0MiwtMTIyMTY1
+NTA3MV19
 -->
