@@ -18,6 +18,7 @@ Initially clone the [repository](https://github.com/Amutheezan/futurebus) and go
 **Note**: the docker implementation and murphi3.1 integration obtained from the following [repository](https://github.com/adnaneGdihi/fixed_murphi3.1)
 After that you will get into the bash follow the steps shown below in the ubuntu bash,
 
+
 * First go to the directory ```Murphi3.1/src``` and compile the Murphi using ```make``` command (if it not already generated). And optionally make the executable access using the command ```chmod +x Murphi3.1/src/mu```, if you in the home directory.
 * Then go to the directory ```verification``` and obtain the C file for the Futurebus+ verification using ```./../Murphi3.1/src/mu futurebus.m``` command (if it not already generated). This will generate the C file ```futurebus.C```. 
 * Thereafter compile the generate file using the command ```make futurebus```, this eventually generate the executable program.
@@ -672,7 +673,7 @@ Cheers  !!!
 
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk4Njc4MzUwLC0xMTY2NTkzNTM5LDE1Mj
-cwOTQzNDUsLTE0NjIyODQ0MjUsMTIzMTk5MzYwOSwtMTY1NTYx
-Mjk3NywtODE4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbLTE3MzM3NDA0ODQsNjk4Njc4MzUwLC0xMT
+Y2NTkzNTM5LDE1MjcwOTQzNDUsLTE0NjIyODQ0MjUsMTIzMTk5
+MzYwOSwtMTY1NTYxMjk3NywtODE4NjAzNTU5XX0=
 -->
