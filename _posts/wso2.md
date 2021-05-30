@@ -2,7 +2,10 @@
 type: posts
 title: WSO2 Internship
 author: Amutheezan Sivagnanam
-
+category: Internship
+tags:
+- wso2
+date: 2016-12-23
 ---
 
 ## (July 2016 - December 2016)
@@ -264,6 +267,6 @@ Finally, overall I had a good Internship and gained the following technical know
 -   Working with JQuery and Some JavaScript Library
 -   Spark and Siddhi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDk5ODAzNTksLTE0MDc1NTg1NjcsLT
-kxMjk5MzI4NSwxOTYyMzc0MDU5XX0=
+eyJoaXN0b3J5IjpbLTYzNjczODU5MSwtMjA0OTk4MDM1OSwtMT
+QwNzU1ODU2NywtOTEyOTkzMjg1LDE5NjIzNzQwNTldfQ==
 -->
