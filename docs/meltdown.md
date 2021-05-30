@@ -9,7 +9,7 @@ I have implemented a simple simulation for meltdown vulnerability as a part of a
 
 ## How Attack Works
 
-Meltdown uses the race condition between memory access and privilege level checking while instruction is in processing. Meltdown attacks allow access to the parts of memory used by the operating systems or other running processes or recently used processes. Generally, one process is not permitted to access the memory of another running process. But in a meltdown attack, one process tries to access other process contents. Operating system(OS) has a permission setting, which will ensure that users are not allowed to access the kernel memory in user mode. And If a user tries to access the memory from kernel address space, it will result in a page fault. But due to the speculative execution and the process will execute some instruction ahead of page faulting instruction, they will roll back after the CPU has determined the permission setting. But these executions are still available in the cache, and attackers use various OS functionalities to dump these kinds of data from the cache. Based on this, the meltdown attack works [1](https://en.wikipedia.org/wiki/Kernel_page-table_isolation),[2](https://github.com/IAIK/meltdown/),[3](https://meltdownattack.com/meltdown.pdf).
+Meltdown uses the race condition between memory access and privilege level checking while instruction is in processing. Meltdown attacks allow access to the parts of memory used by the operating systems or other running processes or recently used processes. Generally, one process is not permitted to access the memory of another running process. But in a meltdown attack, one process tries to access other process contents. Operating system(OS) has a permission setting, which will ensure that users are not allowed to access the kernel memory in user mode. And If a user tries to access the memory from kernel address space, it will result in a page fault. But due to the speculative execution and the process will execute some instruction ahead of page faulting instruction, they will roll back after the CPU has determined the permission setting. But these executions are still available in the cache, and attackers use various OS functionalities to dump these kinds of data from the cache. Based on this, the meltdown attack works [1](https://en.wikipedia.org/wiki/Kernel_page-table_isolation),[2](https://github.com/IAIK/meltdown/),[3](https://t.com/meltdow)
 
 ## DEMO
 
@@ -17,13 +17,13 @@ Meltdown uses the race condition between memory access and privilege level check
 * Ubuntu 14.04.06 LTS
 * Kernel Version: 4.4.0-142-generic
 
-I first clone the meltdown demo repository [2](https://github.com/IAIK/meltdown/) from GitHub and tried the following demonstration presents in the repository.
+I first clone the meltdown demo repository [](https://github.com/IAIK/meltdown/) from GitHub and tried the following demonstration presents in the repository.
 
 ### Demonstrations of Meltdown Attack
 * Demo \#01 - A first test (```test```)
 * Demo \#02 - Breaking KASLR (```kaslr```)
 * Demo \#03 - Reliability test (```reliability```)
-*  Demo \#04 - Read physical memory (```physical_reader```)
+*  Demo \#04 - Read physical memory (```hysical_reader```)
 * Demo \#05 - Dump the memory (```memdump```)
 
 
@@ -31,7 +31,7 @@ I first clone the meltdown demo repository [2](https://github.com/IAIK/meltdown/
 
 I have executed the basic test case for ```meltdown``` demos in this demo. I was able to get the same text in expect and got places. I also tried to call the same command, and it returns random texts in each run. (randomization of text happen based on the line 26 of ```test.c````
 
-##### Commands
+##### Commans
 
 ```bash
 make;
@@ -45,9 +45,9 @@ sudo taskset 0x1 ./test
 
 #### Demo \#02 - Breaking KASLR (```kaslr```)
 
-This demo uses Meltdown to leak the secret randomization of the direct physical map. To get the offset quickly, we have to execute the commands with admin privileges. Note that I have used Ubuntu 14.04, which has the kernel 4.4.0-142 as disable ```kaslr``` by default.
+This demo uses Meltdown to leak the secret randomization of the direct physical map. To get the offset quickly, we have to execute the commands with admin privileges. Note that I have used Ubuntu 14.04, which has the kernel 4.4.0-142 as disable ```aslr``` by default.
 
-##### Commands
+##### ommands
 
 ```bash
 make;
@@ -60,7 +60,7 @@ sudo taskset 0x1 ./kaslr
 
 #### Demo \#03 - Reliability test (```reliability```)
 
-This demo tests how physical memory can be read. Note that I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable ```kaslr``` by default. So I am technically not required to specify the offset value ```0xffff8a6b80000000```.
+This demo tests how physical memory can be read. Note that I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable ```aslr``` by default. So I am technically not required to specify the offset value ```0xffff8a6b80000000```.
 
 ##### Commands
 
@@ -72,11 +72,10 @@ sudo taskset 0x1 ./reliability 0xffff8a6b80000000
 
 ![image](../images/reliability.png)
 
-##### Issues Faced
-
+##### Issues aced
 Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/), I am unable to get higher reliability, and always I get reliability less than 1\%. I also tried similar commands with [Ubuntu 14.10]( \footnote{http://old-releases.ubuntu.com/releases/14.10/)  [```ubuntu-14.10-desktop-amd64.iso Last Modified: 2014-10-22 19:43```], but I faced the same issues in there as well.
 
-#### Demo \#04 - Read physical memory (```physical_reader```)
+#### Demo \#04 - Read physical memory (```hysical_reader```)
 
 This demo reads memory from another process by directly reading physical memory. This demo contains two steps,
 
@@ -125,9 +124,7 @@ This demo dumps the content of the memory. I set the memory size to 8GB as RAM f
     taskset 0x1 ./memdump 0x240000000 -1 0xffff8a6b80000000
 ```
 
-##### Issues Faced
-
-Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/), }, I am unable to get any meaningful human-readable data. I also tried similar commands with Ubuntu 14.10, but I faced the same issues there as well.
+##### Issues FacedUnlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/), }, I am unable to get any meaningful human-readable data. I also tried similar commands with Ubuntu 14.10, but I faced the same issues there as well.
 
 ##### Screenshots
 
@@ -154,7 +151,7 @@ Note: Spectre attack simulation can be found in the [post](../docs/spectre.md)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2NDk4NjQ0LDEzNTEwMTEzOCwtMjAyMz
-gxNTA2OSw0ODcxMTAxODQsMTE5MjI0NDc2LC0xMzM0NzU2NTMw
-LC0xNjIzMjkzOTA0XX0=
+eyJoaXN0b3J5IjpbLTE1MjQ0NDUyMDEsNjQ2NDk4NjQ0LDEzNT
+EwMTEzOCwtMjAyMzgxNTA2OSw0ODcxMTAxODQsMTE5MjI0NDc2
+LC0xMzM0NzU2NTMwLC0xNjIzMjkzOTA0XX0=
 -->
