@@ -25,14 +25,15 @@ In this Implementation I have done following,
 * Functional units are pipe-lined.
 * Implemented in-order execution, with multiple issue.
 * This implementation supports multiple functional units and multiple load-store units; thus, changing configuration with functional units and load-store units more than one will also work. 
+* This implementation supports Load store unit is not pipe-lined and pipe-lined.
 
 #### Limitations
 
-* This implementation doesn't support the branch-predictions, so inputs with branch commands such as ```beq``` and ```bne`` fail when the issue-width is greater than 1.
-* Load store unit is not pipe-lined.
+* This implementation doesn't support the branch-predictions, so inputs with branch commands such as ```beq``` and ```bne``` in fail when the issue-width is greater than 1.
+
 
 
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjcyMzgyNzEsLTc0NTYxNjE5N119
+eyJoaXN0b3J5IjpbLTExNDA4NTk1NiwtNzQ1NjE2MTk3XX0=
 -->
