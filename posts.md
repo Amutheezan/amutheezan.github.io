@@ -8,8 +8,8 @@ author: Amutheezan Sivagnanam
 ### Computer Architecture
 This parts currently includes detailed description of assignment, I have worked on during my graduate Computer Architecture (COSC 6385) course in University of Houston.
 1. [Tomasulo Algorithm](docs/tomasulo.md) 
-2. [Spectre Attack](docs/spectre.md)
-3. [Meltdown Attack](docs/meltdown.md)
+2. [Meltdown Attack Simulation](docs/meltdown.md)
+3. [Spectre Attack Simulation](docs/spectre.md)
 4. [Verification of Futurebus+ Cache coherence protocol](docs/futurebus+.md)
 5. [Fixing of Futurebus+ Cache coherence protocol](docs/fixfuturebus+.md)
 6. [Simple performance comparison of Google Colab CPU, GPU and TPU](docs/gpuvstpu.md)
@@ -41,7 +41,7 @@ This parts currently includes detailed description of assignment, I have worked 
 10. [Datatables Makes Things Easy](docs/dt.md)
 11. [Some Useful Javascript Libraries](docs/jslib.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDM5MTE1OTAsLTE3NTk0OTM4NzksMT
-k5MDM0NjM3MSw2NTA0MzAzNDQsLTE2MzE5NDQ5ODUsMTg1OTM0
-ODUxNSwzMjE4NzM1OTddfQ==
+eyJoaXN0b3J5IjpbMjI0OTA3Mjk4LC0xNzU5NDkzODc5LDE5OT
+AzNDYzNzEsNjUwNDMwMzQ0LC0xNjMxOTQ0OTg1LDE4NTkzNDg1
+MTUsMzIxODczNTk3XX0=
 -->
