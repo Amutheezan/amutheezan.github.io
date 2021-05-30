@@ -11,7 +11,7 @@ I have implemented a simple fixing for Futurebus+ cache coherence protocol which
 
 ### Initial Setup & Steps
 
-Initially clone the repository and go to the code ```main``` directory and execute the following two command to start the docker instances (make sure docker is already installed in your computer and started; check here for installation steps of [docker](https://docs.docker.com/get-docker/).
+Initially clone the [repository](https://github.com/Amutheezan/futurebus) and go to the code ```main``` directory and execute the following two command to start the docker instances (make sure docker is already installed in your computer and started; check here for installation steps of [docker](https://docs.docker.com/get-docker/).
 
 ```docker-compose build```
 
@@ -657,6 +657,6 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYzOTQyMjEyLDE1ODU4MzY1NTksLTE2NT
-k2MjA5NDldfQ==
+eyJoaXN0b3J5IjpbLTExMzU1OTI2MDcsODYzOTQyMjEyLDE1OD
+U4MzY1NTksLTE2NTk2MjA5NDldfQ==
 -->
