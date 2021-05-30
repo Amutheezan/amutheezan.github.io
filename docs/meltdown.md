@@ -68,33 +68,21 @@ This demo tests how physical memory can be read. Note that I have used Ubuntu 14
 make;\\
 sudo taskset 0x1 ./reliability 0xffff8a6b80000000
 ```
-##### \end{tcolorbox}
-
-\textbf{Screenshot}
+##### Screenshot
 
 ![image](images/reliability.png)
 
-##### \begin{figure}[!ht]
-    \centering
-    \includegraphics[width=120mm,scale=0.5]{meltdown/reliability.png}
-    \caption{Screenshot of Demo \#03, Reliability test}
-    \label{fig:meltdown_reliability}
-\end{figure}
+##### Issues faced
 
-\textbf{Issues faced
-}
-Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/)}, I am unable to get higher reliability, and always I get reliability less than 1\%. I also tried similar commands with [Ubuntu 14.10]( \footnote{http://old-releases.ubuntu.com/releases/14.10/)  [```} [\texttt{ubuntu-14.10-desktop-amd64.iso Last Modified: 2014-10-22 19:43```}], but I faced the same issues in there as well.
+Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/), I am unable to get higher reliability, and always I get reliability less than 1\%. I also tried similar commands with [Ubuntu 14.10]( \footnote{http://old-releases.ubuntu.com/releases/14.10/)  [```ubuntu-14.10-desktop-amd64.iso Last Modified: 2014-10-22 19:43```], but I faced the same issues in there as well.
 
-#### \newpage
-
-\subsubsection{Demo \#04 - Read physical memory (```\texttt{physical\_reader```)})}
+#### Demo \#04 - Read physical memory (```\texttt{physical\_reader```)
 
 This demo reads memory from another process by directly reading physical memory. This demo contains two steps,
 
-##### \textbf{Steps and Commands}
+##### Steps and Commands
 
-1. call ```\begin{itemize}
-    \item [(1)] call \texttt{secret```} with admin privileges and this will return the physical address of the test.
+1. call ```secret``` with admin privileges and this will return the physical address of the test.
     
 ```bash
 	sudo ./secret
@@ -220,7 +208,7 @@ This hard-split can determine whether a memory fetch violates security boundary 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMDI1NDAyMiwtMjAyMzgxNTA2OSw0OD
+eyJoaXN0b3J5IjpbMTk3MTI2MDQ0NCwtMjAyMzgxNTA2OSw0OD
 cxMTAxODQsMTE5MjI0NDc2LC0xMzM0NzU2NTMwLC0xNjIzMjkz
 OTA0XX0=
 -->
