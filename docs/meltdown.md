@@ -34,7 +34,7 @@ I have executed the basic test case for ```meltdown``` demos in this demo. I was
 ##### Commands
 
 ```bash
-make;\\
+make;
 sudo taskset 0x1 ./test
 ```
 
@@ -47,10 +47,10 @@ sudo taskset 0x1 ./test
 
 This demo uses Meltdown to leak the secret randomization of the direct physical map. To get the offset quickly, we have to execute the commands with admin privileges. Note that I have used Ubuntu 14.04, which has the kernel 4.4.0-142 as disable ```kaslr``` by default.
 
-##### \textbf{Commands}
+##### Commands
 
 ```bash
-make;\\
+make;
 sudo taskset 0x1 ./kaslr
 ```
 
@@ -152,7 +152,7 @@ This hard-split can determine whether a memory fetch violates security boundary 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg2MTc0NDQyLDEzNTEwMTEzOCwtMjAyMz
+eyJoaXN0b3J5IjpbNzI5MjMyNDYxLDEzNTEwMTEzOCwtMjAyMz
 gxNTA2OSw0ODcxMTAxODQsMTE5MjI0NDc2LC0xMzM0NzU2NTMw
 LC0xNjIzMjkzOTA0XX0=
 -->
