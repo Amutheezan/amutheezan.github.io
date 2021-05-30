@@ -8,7 +8,8 @@ author: Amutheezan Sivagnanam
 ### Computer Architecture
 1. [Simple performance comparison of Google Colab CPU, GPU and TPU](docs/gpuvstpu.md)
 2. [Verification of Futurebus+ Cache coherence protocol](docs/futurebus+.md)
-3. [Tomasulo Algorithm](docs/tomasulo.md)
+3. [Fixing of Futurebus+ Cache coherence protocol](docs/fixfuturebus+.md)
+4. [Tomasulo Algorithm](docs/tomasulo.md)
 
 ### Machine Learning and Data Mining
 1. [DengAI : Predicting Disease Spread - A tale of Two cities](docs/dengAI.md)
@@ -37,6 +38,6 @@ author: Amutheezan Sivagnanam
 10. [Datatables Makes Things Easy](docs/dt.md)
 11. [Some Useful Javascript Libraries](docs/jslib.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzE5NDQ5ODUsMTg1OTM0ODUxNSwzMj
-E4NzM1OTddfQ==
+eyJoaXN0b3J5IjpbNjUwNDMwMzQ0LC0xNjMxOTQ0OTg1LDE4NT
+kzNDg1MTUsMzIxODczNTk3XX0=
 -->
