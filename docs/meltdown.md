@@ -42,18 +42,16 @@ sudo taskset 0x1 ./test
 
 ![image](images/test.png)
 
-\newpage
+#### Demo \#02 - Breaking KASLR (```kaslr```)
 
-\subsubsection{Demo \#02 - Breaking KASLR (\texttt{kaslr})}
+This demo uses Meltdown to leak the secret randomization of the direct physical map. To get the offset quickly, we have to execute the commands with admin privileges. Note that I have used Ubuntu 14.04, which has the kernel 4.4.0-142 as disable ```kaslr``` by default.
 
-This demo uses Meltdown to leak the secret randomization of the direct physical map. To get the offset quickly, we have to execute the commands with admin privileges. Note that I have used Ubuntu 14.04, which has the kernel 4.4.0-142 as disable \texttt{kaslr} by default.
+##### Commands
 
-\textbf{Commands}
-
-\begin{tcolorbox}
+```bash
 make;\\
 sudo taskset 0x1 ./kaslr
-\end{tcolorbox}
+```
 
 \textbf{Screenshot}
 
@@ -203,6 +201,6 @@ This hard-split can determine whether a memory fetch violates security boundary 
 2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
 3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzM0ODYyOCwtMTMzNDc1NjUzMCwtMT
-YyMzI5MzkwNF19
+eyJoaXN0b3J5IjpbLTE0MjU1NDY4MjYsLTEzMzQ3NTY1MzAsLT
+E2MjMyOTM5MDRdfQ==
 -->
