@@ -76,11 +76,11 @@ sudo taskset 0x1 ./reliability 0xffff8a6b80000000
 
 Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/meltdown/), I am unable to get higher reliability, and always I get reliability less than 1\%. I also tried similar commands with [Ubuntu 14.10](http://old-releases.ubuntu.com/releases/14.10/)  [```ubuntu-14.10-desktop-amd64.iso Last Modified: 2014-10-22 19:43```], but I faced the same issues in there as well.
 
-### Demo \#04 - Read physical memory (```physical\_reader```)
+#### Demo \#04 - Read physical memory (```physical\_reader```)
 
 This demo reads memory from another process by directly reading physical memory. This demo contains two steps,
 
-#### Steps and Commands
+##### Steps and Commands
 
 1. call ```secret``` with admin privileges and this will return the physical address of the test.
     
@@ -103,44 +103,26 @@ I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable kaslr by default
 ![image](images/physical_reader_part_1.png)
 ![image](images/physical_reader_part_2.png)
 
-\begin{figure}[!ht]
-    \centering
-\begin{subfigure}[b]{0.96\linewidth}
-    \centering
-    \includegraphics[width=120mm,scale=0.5]{meltdown/physical_reader_part_1.png}
-        \caption{Running \texttt{secret}.}
-\end{subfigure}
-
-\begin{subfigure}[b]{0.96\linewidth}
-    \centering
-    \includegraphics[width=120mm,scale=0.5]{meltdown/physical_reader_part_2.png}
-    \caption{Reading contents of secret text from \texttt{physical\_reader}.}
-\end{subfigure}
-    \caption{Screenshots of Demo \#04, Read Physical memory}
-    \label{fig:meltdown_physical_reader}
-\end{figure}
-
+##### Issues Faced
 
 \textbf{Issues faced}
 Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/meltdown/), I am unable to get contents of secret. I also tried similar commands with Ubuntu 14.10, but I faced the same issues there as well.
 
-\newpage
 
-\subsubsection{Demo \#05 - Dump the memory (\texttt{memdump})}
+
+#### Demo \#05 - Dump the memory (```memdump```)
 
 This demo dumps the content of the memory. I set the memory size to 8GB as RAM for the virtual box. This demo contains two steps, 
 
+##### Steps and Commands
 
-\textbf{Steps and Commands}
-
-\begin{itemize}
-    \item [(1)] call \texttt{memory\_filler} with memory value specified to fill the memory. 
+1. call ```memory_filler``` with memory value specified to fill the memory. 
     
-    \begin{tcolorbox}
+```bash
     sudo ./memory\_filler 9
-    \end{tcolorbox}
+```
 
-    \item [(2)] call  \texttt{memdump} to read the contents from memory.
+2.  call  \texttt{memdump} to read the contents from memory.
     
     \begin{tcolorbox}
     make;\\
@@ -186,6 +168,6 @@ This hard-split can determine whether a memory fetch violates security boundary 
 2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
 3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3Mjc0MjEsLTEzMzQ3NTY1MzAsLTE2Mj
-MyOTM5MDRdfQ==
+eyJoaXN0b3J5IjpbLTI5Mjk1NzMyOCwtMTMzNDc1NjUzMCwtMT
+YyMzI5MzkwNF19
 -->
