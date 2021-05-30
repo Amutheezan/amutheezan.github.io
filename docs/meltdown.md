@@ -9,7 +9,7 @@ I have implemented a simple simulation for meltdown vulnerability as a part of a
 
 ## How Attack Works
 
-Meltdown uses the race condition between memory access and privilege level checking while instruction is in processing. Meltdown attacks allow access to the parts of memory used by the operating systems or other running processes or recently used processes. Generally, one process is not permitted to access the memory of another running process. But in a meltdown attack, one process tries to access other process contents. Operating system(OS) has a permission setting, which will ensure that users are not allowed to access the kernel memory in user mode. And If a user tries to access the memory from kernel address space, it will result in a page fault. But due to the speculative execution and the process will execute some instruction ahead of page faulting instruction, they will roll back after the CPU has determined the permission setting. But these executions are still available in the cache, and attackers use various OS functionalities to dump these kinds of data from the cache. Based on this, the meltdown attack works [[1](https://en.wikipedia.org/wiki/Kernel_page-table_isolation),[2](https://github.com/IAIK/meltdown/),[3](https://meltdownattack.com/meltdown.pdf)].
+Meltdown uses the race condition between memory access and privilege level checking while instruction is in processing. Meltdown attacks allow access to the parts of memory used by the operating systems or other running processes or recently used processes. Generally, one process is not permitted to access the memory of another running process. But in a meltdown attack, one process tries to access other process contents. Operating system(OS) has a permission setting, which will ensure that users are not allowed to access the kernel memory in user mode. And If a user tries to access the memory from kernel address space, it will result in a page fault. But due to the speculative execution and the process will execute some instruction ahead of page faulting instruction, they will roll back after the CPU has determined the permission setting. But these executions are still available in the cache, and attackers use various OS functionalities to dump these kinds of data from the cache. Based on this, the meltdown attack works [1](https://en.wikipedia.org/wiki/Kernel_page-table_isolation),[2](https://github.com/IAIK/meltdown/),[3](https://meltdownattack.com/meltdown.pdf).
 
 ## DEMO
 
@@ -104,7 +104,7 @@ I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable kaslr by default
 ![image](../images/physical_reader_part_2.png)
 
 ##### Issues Faced
-Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/)}, I am unable to get contents of secret. I also tried similar commands with Ubuntu 14.10, but I faced the same issues there as well.
+Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/), I am unable to get contents of secret. I also tried similar commands with Ubuntu 14.10, but I faced the same issues there as well.
 
 #### Demo \#05 - Dump the memory (```memdump```)
 
@@ -152,7 +152,7 @@ This hard-split can determine whether a memory fetch violates security boundary 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mzk5ODIzNjQsMTM1MTAxMTM4LC0yMD
+eyJoaXN0b3J5IjpbLTE5MzczNTM1NjksMTM1MTAxMTM4LC0yMD
 IzODE1MDY5LDQ4NzExMDE4NCwxMTkyMjQ0NzYsLTEzMzQ3NTY1
 MzAsLTE2MjMyOTM5MDRdfQ==
 -->
