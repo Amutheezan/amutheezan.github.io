@@ -5,7 +5,9 @@ author: Amutheezan Sivagnanam
 
 ---
 
-I have implemented following simple comparison on performance on google colabs cpu, gpu and tpu as a part of assignment for **COSC 6385** course in University of Houston.
+I have implemented following simple comparison on performance on google colabs cpu, gpu and tpu as a part of assignment for **COSC 6385** course in University of Houston. 
+
+Sample Implementation can be found in the following [repository](https://github.com/Amutheezan/GPUvsTPU)
 
 I follow the basic step by step guide in [1](https://petamind.com/quick-benchmark-colab-cpu-gpu-tpu-xla-cpu/).
 I follow the instructions to work on TPU using [2](https://heartbeat.fritz.ai/step-by-step-use-of-google-colab-free-tpu-75f8629492b3).
@@ -355,6 +357,6 @@ Based on the results TPU performs around 1.5 times better than GPU in-terms the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDQ1MzIyMzMsNDMwNzY1MTkwLDE0Mj
-I1MTI5NjJdfQ==
+eyJoaXN0b3J5IjpbMTE1MTExMzQ2OSw0MzA3NjUxOTAsMTQyMj
+UxMjk2Ml19
 -->
