@@ -7,6 +7,26 @@ author: Amutheezan Sivagnanam
 
 I have implemented a simple verification for Futurebus+ cache coherence protocol as a part of assignment for COSC 6385 course in University of Houston.
 
+### Initial Setup & Steps
+
+Initially clone the repository and go to the code ```main``` directory and execute the following two command to start the docker instances (make sure docker is already installed in your computer and started; check here for installation steps of [docker]https://docs.docker.com/get-docker/}).
+
+\texttt{docker-compose build}
+
+\texttt{docker-compose run ubuntu bash}
+
+After that you will get into the bash follow the steps shown below in the ubuntu bash,
+
+\begin{itemize}
+    \item First go to the directory \texttt{Murphi3.1/src} and compile the Murphi using \texttt{make} command (if it not already generated). And optionally make the executable access using the command \texttt{chmod +x Murphi3.1/src/mu}, if you in the home directory.
+    \item Then go to the directory \texttt{verification} and obtain the C file for the Futurebus+ verification using \texttt{./../Murphi3.1/src/mu futurebus.m} command (if it not already generated). This will generate the C file \texttt{futurebus.C}. 
+    \item Thereafter compile the generate file using the command \texttt{make futurebus}, this eventually generate the executable program.
+    \item Finally run the executable using the following command \texttt{./futurebus}.
+\end{itemize}
+
+\textbf{OR}
+you can perform these entire steps by simply go to the \texttt{verification} directory and run the command \texttt{sh run.sh}.
+
 I structure the code as follows,
 
 * constants - to define constants such as number of processor, number of values
@@ -652,6 +672,7 @@ Cheers  !!!start-state - define the start state of the system.
 
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNzA5NDM0NSwtMTQ2MjI4NDQyNSwxMj
-MxOTkzNjA5LC0xNjU1NjEyOTc3LC04MTg2MDM1NTldfQ==
+eyJoaXN0b3J5IjpbLTE4Mzg3MDU0NzAsMTUyNzA5NDM0NSwtMT
+Q2MjI4NDQyNSwxMjMxOTkzNjA5LC0xNjU1NjEyOTc3LC04MTg2
+MDM1NTldfQ==
 -->
