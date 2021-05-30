@@ -22,8 +22,8 @@ I first clone the meltdown demo repository [2](https://github.com/IAIK/meltdown/
 ### Demonstrations of Meltdown Attack
 * Demo \#01 - A first test (```test```)
 * Demo \#02 - Breaking KASLR (```kaslr```)
-* Demo \#03 - Reliability test (```\texttt{reliability```)
-*  Demo \#04 - Read physical memory (```\texttt{physical\_reader```)
+* Demo \#03 - Reliability test (```reliability```)
+*  Demo \#04 - Read physical memory (```physical_reader```)
 * Demo \#05 - Dump the memory (```memdump```)
 
 
@@ -65,7 +65,7 @@ This demo tests how physical memory can be read. Note that I have used Ubuntu 14
 ##### Commands
 
 ```bash
-make;\\
+make;
 sudo taskset 0x1 ./reliability 0xffff8a6b80000000
 ```
 ##### Screenshot
@@ -76,7 +76,7 @@ sudo taskset 0x1 ./reliability 0xffff8a6b80000000
 
 Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/\cite{meltdown/), I am unable to get higher reliability, and always I get reliability less than 1\%. I also tried similar commands with [Ubuntu 14.10]( \footnote{http://old-releases.ubuntu.com/releases/14.10/)  [```ubuntu-14.10-desktop-amd64.iso Last Modified: 2014-10-22 19:43```], but I faced the same issues in there as well.
 
-#### Demo \#04 - Read physical memory (```\texttt{physical\_reader```)
+#### Demo \#04 - Read physical memory (```physical_reader```)
 
 This demo reads memory from another process by directly reading physical memory. This demo contains two steps,
 
@@ -91,8 +91,8 @@ This demo reads memory from another process by directly reading physical memory.
 2. call ```physical_reader``` with the specified physical address of secret text and offset.
     
 ```bash
-    make;\\
-    sudo taskset 0x1 ./physical\_reader 0xcc26cac8 0xffff8a6b80000000
+    make;
+    sudo taskset 0x1 ./physical_reader 0xcc26cac8 0xffff8a6b80000000
 ``` 
 
 I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable kaslr by default. If kaslr is disabled, we can skip providing the offset parameter. So I don’t need to provide the offset value ```0xffff8a6b80000000```.
@@ -112,16 +112,16 @@ This demo dumps the content of the memory. I set the memory size to 8GB as RAM f
 
 ##### Steps and Commands
 
-1. call ```memory\_filler``` with memory value specified to fill the memory. 
+1. call ```memory_filler``` with memory value specified to fill the memory. 
     
 ```bash
-    sudo ./memory\_filler 9
+    sudo ./memory_filler 9
 ```
 
 2.  call ```memdump``` to read the contents from memory.
     
 ```bash
-    make;\\
+    make;
     taskset 0x1 ./memdump 0x240000000 -1 0xffff8a6b80000000
 ```
 
@@ -152,7 +152,7 @@ This hard-split can determine whether a memory fetch violates security boundary 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MTAxMTM4LC0yMDIzODE1MDY5LDQ4Nz
-ExMDE4NCwxMTkyMjQ0NzYsLTEzMzQ3NTY1MzAsLTE2MjMyOTM5
-MDRdfQ==
+eyJoaXN0b3J5IjpbNDg2MTc0NDQyLDEzNTEwMTEzOCwtMjAyMz
+gxNTA2OSw0ODcxMTAxODQsMTE5MjI0NDc2LC0xMzM0NzU2NTMw
+LC0xNjIzMjkzOTA0XX0=
 -->
