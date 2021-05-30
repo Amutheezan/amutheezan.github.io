@@ -9,31 +9,23 @@ I have implemented a simple simulation for meltdown vulnerability as a part of a
 
 ## How Attack Works
 
-Meltdown uses the race condition between memory access and privilege level checking while instruction is in processing. Meltdown attacks allow access to the parts of memory used by the operating systems or other running processes or recently used processes. Generally, one process is not permitted to access the memory of another running process. But in a meltdown attack, one process tries to access other process contents. Operating system(OS) has a permission setting, which will ensure that users are not allowed to access the kernel memory in user mode. And If a user tries to access the memory from kernel address space, it will result in a page fault. But due to the speculative execution and the process will execute some instruction ahead of page faulting instruction, they will roll back after the CPU has determined the permission setting. But these executions are still available in the cache, and attackers use various OS functionalities to dump these kinds of data from the cache. Based on this, the meltdown attack works [[1](https://en.wikipedia.org/wiki/Kernel_page-table_isolation),[2](),[3]()].
+Meltdown uses the race condition between memory access and privilege level checking while instruction is in processing. Meltdown attacks allow access to the parts of memory used by the operating systems or other running processes or recently used processes. Generally, one process is not permitted to access the memory of another running process. But in a meltdown attack, one process tries to access other process contents. Operating system(OS) has a permission setting, which will ensure that users are not allowed to access the kernel memory in user mode. And If a user tries to access the memory from kernel address space, it will result in a page fault. But due to the speculative execution and the process will execute some instruction ahead of page faulting instruction, they will roll back after the CPU has determined the permission setting. But these executions are still available in the cache, and attackers use various OS functionalities to dump these kinds of data from the cache. Based on this, the meltdown attack works [[1](https://en.wikipedia.org/wiki/Kernel_page-table_isolation),[2](https://github.com/IAIK/meltdown/),[3](https://meltdownattack.com/meltdown.pdf)].
 
-1. [](https://en.wikipedia.org/wiki/Kernel_page-table_isolation)
-2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
-3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf)
-\newpage
-\subsection{Demo}
+## DEMO
 
-\begin{itemize}
-    \item Oracle Virtual Box : Version 6.1.18 r142142 (Qt5.6.3)
-    \item Ubuntu 14.04.06 LTS
-    \item Kernel Version: 4.4.0-142-generic
-\end{itemize}
+* Oracle Virtual Box : Version 6.1.18 r142142 (Qt5.6.3)
+* Ubuntu 14.04.06 LTS
+* Kernel Version: 4.4.0-142-generic
 
-I first clone the meltdown demo repository \cite{meltdown} from GitHub and tried the following demonstration presents in the repository.
+I first clone the meltdown demo repository [3](https://meltdownattack.com/meltdown.pdf) from GitHub and tried the following demonstration presents in the repository.
 
-\paragraph{Demonstrations of Meltdown Attack}
-\begin{itemize}
-    \item Demo \#01 - A first test (\texttt{test})
-    \item Demo \#02 - Breaking KASLR (\texttt{kaslr})
-    \item Demo \#03 - Reliability test (\texttt{reliability})
-    \item Demo \#04 - Read physical memory (\texttt{physical\_reader})
-    \item Demo \#05 - Dump the memory (\texttt{memdump})
-\end{itemize}
-\newpage
+### Demonstrations of Meltdown Attack
+* Demo \#01 - A first test (```test})
+* Demo \#02 - Breaking KASLR (```kaslr})
+* Demo \#03 - Reliability test (\texttt{reliability})
+*  Demo \#04 - Read physical memory (\texttt{physical\_reader})
+* Demo \#05 - Dump the memory (\texttt{memdump})
+
 
 \subsubsection{Demo \#01 - A first test (\texttt{test})}
 
@@ -216,6 +208,6 @@ This hard-split can determine whether a memory fetch violates security boundary 
 2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
 3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MjQwNDE0NSwtMTMzNDc1NjUzMCwtMT
-YyMzI5MzkwNF19
+eyJoaXN0b3J5IjpbLTE1MjYxMTk0NzQsLTEzMzQ3NTY1MzAsLT
+E2MjMyOTM5MDRdfQ==
 -->
