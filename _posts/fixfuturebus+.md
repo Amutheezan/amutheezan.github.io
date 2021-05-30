@@ -2,7 +2,11 @@
 type: posts
 title: Simple Fix on Futurebus+ Cache Coherence Protocol
 author: Amutheezan Sivagnanam
-
+category: Computer Architecture
+tags:
+- architecture
+- futurebus+
+date: 2021-05-30
 ---
 
 I have implemented a simple fixing for Futurebus+ cache coherence protocol which I explained in my [previous post](../_posts/futurebus+.md).
@@ -657,7 +661,7 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](../_posts/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDU1NTk1MzQsMTk4ODUyNzgxMywxNT
-AxNzc5Nzk2LDg2Mzk0MjIxMiwxNTg1ODM2NTU5LC0xNjU5NjIw
-OTQ5XX0=
+eyJoaXN0b3J5IjpbLTEyMTA4ODU2MzEsLTEzNDU1NTk1MzQsMT
+k4ODUyNzgxMywxNTAxNzc5Nzk2LDg2Mzk0MjIxMiwxNTg1ODM2
+NTU5LC0xNjU5NjIwOTQ5XX0=
 -->
