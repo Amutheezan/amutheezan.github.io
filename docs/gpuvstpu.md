@@ -83,7 +83,7 @@ While running on google colab in GPU mode make sure the following configuration.
 
 ![image](../images/GPU_configuration.png)
 
- is set as shown in the \cref{fig:gpu_sample}. And you can obtain the following outputs
+And you can obtain the following outputs
 
 ```
 Selected GPU: PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')
@@ -361,6 +361,6 @@ Based on the results TPU performs around 1.5 times better than GPU in-terms the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMjAyNDk3MCwxNzcxODQ1NDYyLDQzMD
-c2NTE5MCwxNDIyNTEyOTYyXX0=
+eyJoaXN0b3J5IjpbLTYzMjY5MzI0NCwtNTEyMDI0OTcwLDE3Nz
+E4NDU0NjIsNDMwNzY1MTkwLDE0MjI1MTI5NjJdfQ==
 -->
