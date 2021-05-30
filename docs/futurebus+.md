@@ -410,7 +410,188 @@ invariant "value is undefined while invalid"
 
 Output of verification of Futurebus+ cache coherence protocol, this provides a brief summary whether any errors or issues found and other statistics.
 
+```
+This program should be regarded as a DEBUGGING aid, not as a 
+certifier of correctness.
+Call with the -l flag or read the license file for terms
+and conditions of use.
+Run this program with "-h" for the list of options.
+
+Bugs, questions, and comments should be directed to
+"murphi@verify.stanford.edu".
+
+Murphi compiler last modified date: Jan 29 1999
+Include files   last modified date: Jan 29 1999
+==========================================================================
+
+==========================================================================
+Murphi Release 3.1
+Finite-state Concurrent System Verifier.
+
+Copyright (C) 1992 - 1999 by the Board of Trustees of
+Leland Stanford Junior University.
+
+==========================================================================
+
+Protocol: futurebus
+
+Algorithm:
+	Verification by breadth first search.
+	with symmetry algorithm 3 -- Heuristic Small Memory Normalization
+	with permutation trial limit 10.
+
+Memory usage:
+
+	* The size of each state is 96 bits (rounded up to 12 bytes).
+	* The memory allocated for the hash table and state queue is
+	  8 Mbytes.
+	  With two words of overhead per state, the maximum size of
+	  the state space is 487811 states.
+	   * Use option "-k" or "-m" to increase this, if necessary.
+	* Capacity in queue for breadth-first search: 48781 states.
+	   * Change the constant gPercentActiveStates in mu_prolog.inc
+	     to increase this, if necessary.
+
+Warning: No trace will not be printed in the case of protocol errors!
+         Check the options if you want to have error traces.
+
+==========================================================================
+
+Result:
+
+	Invariant "only one processor in EM state" failed.
+
+State Space Explored:
+
+	56 states, 184 rules fired in 0.10s.
+
+Analysis of State Space:
+
+	There are rules that are never fired.
+	If you are running with symmetry, this may be why.  Otherwise,
+	please run this program with "-pr" for the rules information.
+
+```
+
+Next I provides the output of error traces of Futurebus+ traces of cache coherence protocol using the command suffix ```-tv```. This provides the the reasons why the error happen (i.e two processors go to the exclusive states).
+
+```
+This program should be regarded as a DEBUGGING aid, not as a 
+certifier of correctness.
+Call with the -l flag or read the license file for terms
+and conditions of use.
+Run this program with "-h" for the list of options.
+
+Bugs, questions, and comments should be directed to
+"murphi@verify.stanford.edu".
+
+Murphi compiler last modified date: Jan 29 1999
+Include files   last modified date: Jan 29 1999
+==========================================================================
+
+==========================================================================
+Murphi Release 3.1
+Finite-state Concurrent System Verifier.
+
+Copyright (C) 1992 - 1999 by the Board of Trustees of
+Leland Stanford Junior University.
+
+==========================================================================
+
+Protocol: futurebus
+
+Algorithm:
+	Verification by breadth first search.
+	with symmetry algorithm 3 -- Heuristic Small Memory Normalization
+	with permutation trial limit 10.
+
+Memory usage:
+
+	* The size of each state is 96 bits (rounded up to 12 bytes).
+	* The memory allocated for the hash table and state queue is
+	  8 Mbytes.
+	  With two words of overhead per state, the maximum size of
+	  the state space is 487811 states.
+	   * Use option "-k" or "-m" to increase this, if necessary.
+	* Capacity in queue for breadth-first search: 48781 states.
+	   * Change the constant gPercentActiveStates in mu_prolog.inc
+	     to increase this, if necessary.
+
+The following is the error trace for the error:
+
+	Invariant "only one processor in EM state" failed.
+
+Startstate Startstate 0 fired.
+proc_state[Proc_1].state:FB_I
+proc_state[Proc_1].value:Undefined
+proc_state[Proc_2].state:FB_I
+proc_state[Proc_2].value:Undefined
+proc_state[Proc_3].state:FB_I
+proc_state[Proc_3].value:Undefined
+transaction_flag:false
+last_write:Undefined
+one_flag:false
+more_flag:false
+send_msg.mtype:Undefined
+send_msg.value:Undefined
+----------
+
+Rule Trying to write data, v:Value_1, i:Proc_1 fired.
+proc_state[Proc_1].state:FB_PW
+----------
+
+Rule Trying to write data, v:Value_1, i:Proc_2 fired.
+proc_state[Proc_2].state:FB_PW
+----------
+
+Rule Write data, on DACKemw, v:Value_1, i:Proc_1 fired.
+proc_state[Proc_1].state:FB_EM
+proc_state[Proc_1].value:Value_1
+proc_state[Proc_2].value:Value_1
+transaction_flag:true
+last_write:Value_1
+send_msg.mtype:ReadModified
+send_msg.value:Value_1
+----------
+
+Rule Write data, on DACKemw, v:Value_1, i:Proc_2 fired.
+The last state of the trace (in full) is:
+proc_state[Proc_1].state:FB_EM
+proc_state[Proc_1].value:Value_1
+proc_state[Proc_2].state:FB_EM
+proc_state[Proc_2].value:Value_1
+proc_state[Proc_3].state:FB_I
+proc_state[Proc_3].value:Undefined
+transaction_flag:true
+last_write:Value_1
+one_flag:false
+more_flag:false
+send_msg.mtype:ReadModified
+send_msg.value:Value_1
+----------
+
+End of the error trace.
+
+==========================================================================
+
+Result:
+
+	Invariant "only one processor in EM state" failed.
+
+State Space Explored:
+
+	56 states, 184 rules fired in 0.10s.
+
+Analysis of State Space:
+
+	There are rules that are never fired.
+	If you are running with symmetry, this may be why.  Otherwise,
+	please run this program with "-pr" for the rules information.
+
+```
+
+
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDk5Mzg1NzBdfQ==
+eyJoaXN0b3J5IjpbMzI2NjUyNzQ5XX0=
 -->
