@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to Beautiful Jekyll!
 # This config file is meant for settings that affect your entire website. When you first
 # set up your website you should go through all these settings and edit them, but after
@@ -226,10 +227,13 @@ exclude:
   - screenshot.png
   - docs/
 
+=======
+>>>>>>> parent of 4c9950e... updated
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-remote-theme
+  
+remote_theme: zivong/jekyll-theme-hydure
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
-
+author.name: Amutheezan Sivagnanam
+title: Amutheezan Sivagnanam
+url: https://amutheezan.com

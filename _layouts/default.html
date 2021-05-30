@@ -1,25 +1,29 @@
----
-layout: base
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {% include head.html %}
 
-<div class="intro-header"></div>
+  <body>
+    <div id="layout" class="pure-g">
+      {% assign cover = site.cover | default: "https://cdn.jsdelivr.net/gh/zivong/jekyll-theme-hydure@master/cover.jpg" %}
+      {% if page.cover %}
+        {% assign cover = page.cover %}
+      {% endif %}
+      <div class="sidebar pure-u-1 pure-u-md-1-4" {% if cover %}style="background-image: url({{ cover | relative_url }});"{% endif %}>
+        {% include header.html %}
+      </div>
+      <div class="content pure-u-1 pure-u-md-3-4">
+        {{ content }}
 
-<div role="main" class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
-  {% if page.before-content %}
-    <div class="before-content">
-      {% for file in page.before-content %}
-        {% include {{ file }} %}
-      {% endfor %}
+        {% include footer.html %}
+      </div>
     </div>
-  {% endif %}
 
-  {{ content }}
+    {% if page.math %}
+      {% include mathjax.html %}
+    {% endif %}
 
-  {% if page.after-content %}
-    <div class="after-content">
-      {% for file in page.after-content %}
-        {% include {{ file }} %}
-      {% endfor %}
-    </div>
-  {% endif %}
-</div>
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
+  </body>
+</html>
