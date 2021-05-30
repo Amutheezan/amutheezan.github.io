@@ -362,6 +362,7 @@ endruleset;
 
 ```
 * start-state - define the start state of the system.
+
 ```c
 startstate
 	for i: Proc do
@@ -713,5 +714,5 @@ Rules Information:
 I will explain how to fix this in another post !!!
 Cheers :beer: !!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NTU5NjU1MSwtODE4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbMTM3MDM2MDExNywtODE4NjAzNTU5XX0=
 -->
