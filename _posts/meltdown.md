@@ -2,7 +2,11 @@
 type: posts
 title: Meltdown vulnerability simulation
 author: Amutheezan Sivagnanam
-
+category: Computer Architecture
+tags:
+- architecture
+- meltdown
+date: 2021-03-31
 ---
 
 I have implemented a simple simulation for meltdown vulnerability as a part of assignment for **COSC 6385** course in University of Houston
@@ -151,7 +155,8 @@ Note: Spectre attack simulation can be found in the [post](../_posts/spectre.md)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjQ0NDUyMDEsNjQ2NDk4NjQ0LDEzNT
-EwMTEzOCwtMjAyMzgxNTA2OSw0ODcxMTAxODQsMTE5MjI0NDc2
-LC0xMzM0NzU2NTMwLC0xNjIzMjkzOTA0XX0=
+eyJoaXN0b3J5IjpbLTE1NzQwOTA4ODAsLTE1MjQ0NDUyMDEsNj
+Q2NDk4NjQ0LDEzNTEwMTEzOCwtMjAyMzgxNTA2OSw0ODcxMTAx
+ODQsMTE5MjI0NDc2LC0xMzM0NzU2NTMwLC0xNjIzMjkzOTA0XX
+0=
 -->
