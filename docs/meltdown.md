@@ -72,17 +72,9 @@ sudo taskset 0x1 ./reliability 0xffff8a6b80000000
 
 ![image](images/reliability.png)
 
-\textbf{Screenshot}
+##### Issues faced
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=120mm,scale=0.5]{meltdown/reliability.png}
-    \caption{Screenshot of Demo \#03, Reliability test}
-    \label{fig:meltdown_reliability}
-\end{figure}
-
-\textbf{Issues faced}
-Unlike the demonstration shown in the GitHub repository \cite{meltdown}, I am unable to get higher reliability, and always I get reliability less than 1\%. I also tried similar commands with Ubuntu 14.10 \footnote{http://old-releases.ubuntu.com/releases/14.10/} [\texttt{ubuntu-14.10-desktop-amd64.iso Last Modified: 2014-10-22 19:43}], but I faced the same issues in there as well.
+Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/meltdown/), I am unable to get higher reliability, and always I get reliability less than 1\%. I also tried similar commands with Ubuntu 14.10 \footnote{http://old-releases.ubuntu.com/releases/14.10/} [\texttt{ubuntu-14.10-desktop-amd64.iso Last Modified: 2014-10-22 19:43}], but I faced the same issues in there as well.
 
 \newpage
 
@@ -131,7 +123,7 @@ I have used Ubuntu 14.04, which has kernel 4.4.0-142 as disable kaslr by default
 
 
 \textbf{Issues faced}
-Unlike the demonstration shown in the GitHub repository \cite{meltdown}, I am unable to get contents of secret. I also tried similar commands with Ubuntu 14.10, but I faced the same issues there as well.
+Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/meltdown/), I am unable to get contents of secret. I also tried similar commands with Ubuntu 14.10, but I faced the same issues there as well.
 
 \newpage
 
@@ -188,15 +180,15 @@ For software level protection, we can use patches for Linux, Windows, and OS X.
 Kernel page-table isolation (KPTI) (earlier referenced as KAISER) is a Linux kernel feature that protect the system from the Meltdown security vulnerability affecting mainly Intel's X86 CPU. It improves the kernel hardening against attempts to bypass the KSLR \cite{klti,lipp2018meltdown}.
 
 
-\subsubsection{Hardware}
+### Hardware
 For hardware level protection, we have to introduce a hard split between the user space and the kernel space. This can be enabled optionally by modern kernels using the newly introduce hard-split bit in the CPU control register (e.g. CR4). By setting the control bit the user space and kernel space can resides in different areas of address.
-This hard-split can determine whether a memory fetch violates security boundary with the help virtual address \cite{lipp2018meltdown}. 
+This hard-split can determine whether a memory fetch violates security boundary with the help virtual address. 
 
 ## REFERENCES
 1. [https://en.wikipedia.org/wiki/Kernel_page-table_isolation](https://en.wikipedia.org/wiki/Kernel_page-table_isolation)
 2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
 3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDY5NDI5NjQsLTEzMzQ3NTY1MzAsLT
-E2MjMyOTM5MDRdfQ==
+eyJoaXN0b3J5IjpbLTI0OTEzNzU1MCwtMTMzNDc1NjUzMCwtMT
+YyMzI5MzkwNF19
 -->
