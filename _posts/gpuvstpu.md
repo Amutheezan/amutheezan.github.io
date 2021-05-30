@@ -2,7 +2,12 @@
 type: posts
 title: CPU/GPU/TPU Performance Comparison
 author: Amutheezan Sivagnanam
-
+category: Computer Architecture
+tags:
+- architecture
+- gpu
+- tpu
+date: 2021-05-30
 ---
 
 I have implemented following simple comparison on performance on google colabs cpu, gpu and tpu as a part of assignment for **COSC 6385** course in University of Houston. 
@@ -361,7 +366,7 @@ Based on the results TPU performs around 1.5 times better than GPU in-terms the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NDQxNDMyMCwtNjMyNjkzMjQ0LC01MT
-IwMjQ5NzAsMTc3MTg0NTQ2Miw0MzA3NjUxOTAsMTQyMjUxMjk2
-Ml19
+eyJoaXN0b3J5IjpbODQzOTc2NzUsMjA2NDQxNDMyMCwtNjMyNj
+kzMjQ0LC01MTIwMjQ5NzAsMTc3MTg0NTQ2Miw0MzA3NjUxOTAs
+MTQyMjUxMjk2Ml19
 -->
