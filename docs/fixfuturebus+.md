@@ -160,6 +160,8 @@ ruleset i: Proc do
 						SendMessage(send_msg, k);
 					endif;
 				endfor;
+
+				UpdateSignals();
 			endrule;
 
 			rule "Trying to write data"
@@ -181,7 +183,7 @@ ruleset i: Proc do
 			endrule;
 
 			rule "Write data, on DACK" 
-				(p.state = FB_PW)
+				(p.state = FB_PW) 
 			==>
 				p.state :=  FB_EM;
 				p.value := v;
@@ -196,6 +198,8 @@ ruleset i: Proc do
 						SendMessage(send_msg, k);
 					endif;
 				endfor;
+
+				UpdateSignals();
 			endrule;
 		
 			rule "Write data, on DACKemw" 
@@ -214,6 +218,8 @@ ruleset i: Proc do
 						SendMessage(send_msg, k);
 					endif;
 				endfor;
+
+				UpdateSignals();
 			endrule;
 		
 			rule "Trying to write data"
@@ -225,7 +231,7 @@ ruleset i: Proc do
 			endrule;
 
 			rule "Trying to write data (pending)"
-				(p.state = FB_PW)
+				(p.state = FB_PW & one_flag = false)
 			==>
 				p.state :=  FB_PW;
 			endrule;
@@ -254,12 +260,14 @@ ruleset i: Proc do
 			UpdateSignals();
 
 			for k: Proc do
-				if i != k then 
+				if i != k then
 					send_msg.mtype := ReadShared;
 					send_msg.value := last_write;
 					SendMessage(send_msg, k);
 				endif;
 			endfor;
+
+			UpdateSignals();
 		endrule;
 
 		rule "Read shared data"
@@ -297,12 +305,14 @@ ruleset i: Proc do
 			UpdateSignals();
 
 			for k: Proc do
-				if i != k then 
+				if i != k then
 					send_msg.mtype := ReadShared;
 					send_msg.value := last_write;
 					SendMessage(send_msg, k);
 				endif;
 			endfor;
+
+			UpdateSignals();
 		endrule;
 
 		rule "Go to Shared state on DACK"
@@ -320,6 +330,8 @@ ruleset i: Proc do
 					SendMessage(send_msg, k);
 				endif;
 			endfor;
+
+			UpdateSignals();
 		endrule;
 
 		rule "Go to Shared state on DACK"
@@ -337,6 +349,8 @@ ruleset i: Proc do
 					SendMessage(send_msg, k);
 				endif;
 			endfor;
+
+			UpdateSignals();
 		endrule;
 
 		rule "Go to Shared state on DACKem"
@@ -354,6 +368,8 @@ ruleset i: Proc do
 					SendMessage(send_msg, k);
 				endif;
 			endfor;
+
+			UpdateSignals();
 		endrule;
 
 		rule "Go to Exclusive state on DACK"
@@ -371,6 +387,8 @@ ruleset i: Proc do
 					SendMessage(send_msg, k);
 				endif;
 			endfor;
+
+			UpdateSignals();
 		endrule;
 
 		rule "Read data from Exclusive states"
@@ -440,7 +458,7 @@ invariant "value is undefined while invalid"
 Output of verification of Futurebus+ cache coherence protocol, this provides a brief summary whether any errors or issues found and other statistics.
 
 ```
-Protocol: futurebus
+Protocol: futurebus_fix
 
 Algorithm:
 	Verification by breadth first search.
@@ -449,32 +467,35 @@ Algorithm:
 
 Memory usage:
 
-	* The size of each state is 96 bits (rounded up to 12 bytes).
+	* The size of each state is 104 bits (rounded up to 16 bytes).
 	* The memory allocated for the hash table and state queue is
 	  8 Mbytes.
 	  With two words of overhead per state, the maximum size of
-	  the state space is 487811 states.
+	  the state space is 392159 states.
 	   * Use option "-k" or "-m" to increase this, if necessary.
-	* Capacity in queue for breadth-first search: 48781 states.
+	* Capacity in queue for breadth-first search: 39215 states.
 	   * Change the constant gPercentActiveStates in mu_prolog.inc
 	     to increase this, if necessary.
 
 Warning: No trace will not be printed in the case of protocol errors!
          Check the options if you want to have error traces.
 
-Result:
+==========================================================================
 
-	Invariant "only one processor in EM state" failed.
+Status:
+
+	No error found.
 
 State Space Explored:
 
-	56 states, 184 rules fired in 0.10s.
+	476 states, 3233 rules fired in 0.10s.
 
 Analysis of State Space:
 
 	There are rules that are never fired.
 	If you are running with symmetry, this may be why.  Otherwise,
 	please run this program with "-pr" for the rules information.
+
 ```
 
 Next I provides the output of error traces of Futurebus+ traces of cache coherence protocol using the command suffix ```-tv```. This provides the the reasons why the error happen (i.e two processors go to the exclusive states).
@@ -663,5 +684,5 @@ Rules Information:
 I will explain how to fix this in another post !!!
 Cheers  !!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNjA1Mjc3Ml19
+eyJoaXN0b3J5IjpbLTcwNTgxMDg5Nl19
 -->
