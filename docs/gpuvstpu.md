@@ -4,6 +4,7 @@ title: CPU/GPU/TPU Performance Comparison
 author: Amutheezan Sivagnanam
 
 ---
+
 I have implemented following simple comparison on performance on google colabs cpu, gpu and tpu as a part of assignment for COSC 6385 course in University of Houston.
 
 I follow the basic step by step guide in [1].
@@ -354,5 +355,5 @@ Based on the results TPU performs around 1.5 times better than GPU in-terms the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjEzNjM2ODgsMTQyMjUxMjk2Ml19
+eyJoaXN0b3J5IjpbNDMwNzY1MTkwLDE0MjI1MTI5NjJdfQ==
 -->
