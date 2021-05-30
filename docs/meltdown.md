@@ -74,24 +74,21 @@ sudo taskset 0x1 ./reliability 0xffff8a6b80000000
 
 ##### Issues faced
 
-Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/meltdown/), I am unable to get higher reliability, and always I get reliability less than 1\%. I also tried similar commands with Ubuntu 14.10 \footnote{} [\texttt{ubuntu-14.10-desktop-amd64.iso Last Modified: 2014-10-22 19:43}], but I faced the same issues in there as well.
+Unlike the demonstration shown in the GitHub repository [2](https://github.com/IAIK/meltdown/), I am unable to get higher reliability, and always I get reliability less than 1\%. I also tried similar commands with [Ubuntu 14.10](http://old-releases.ubuntu.com/releases/14.10/)  [```ubuntu-14.10-desktop-amd64.iso Last Modified: 2014-10-22 19:43```], but I faced the same issues in there as well.
 
-\newpage
-
-\subsubsection{Demo \#04 - Read physical memory (\texttt{physical\_reader})}
+### Demo \#04 - Read physical memory (```physical\_reader```)
 
 This demo reads memory from another process by directly reading physical memory. This demo contains two steps,
 
-\textbf{Steps and Commands}
+#### Steps and Commands
 
-\begin{itemize}
-    \item [(1)] call \texttt{secret} with admin privileges and this will return the physical address of the test.
+1. call ```secret``` with admin privileges and this will return the physical address of the test.
     
-    \begin{tcolorbox}
-    sudo ./secret
-    \end{tcolorbox}
+```bash
+sudo ./secret
+```
 
-    \item [(2)] call \texttt{physical\_reader} with the specified physical address of secret text and offset.
+* call ```physical\_reader} with the specified physical address of secret text and offset.
     
     \begin{tcolorbox}
     make;\\
@@ -187,6 +184,6 @@ This hard-split can determine whether a memory fetch violates security boundary 
 2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
 3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMzAxNDA5LC0xMzM0NzU2NTMwLC0xNj
-IzMjkzOTA0XX0=
+eyJoaXN0b3J5IjpbMTg4MDQxMzE5NCwtMTMzNDc1NjUzMCwtMT
+YyMzI5MzkwNF19
 -->
