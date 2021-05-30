@@ -1,5 +1,5 @@
 ---
-type: posts
+ype: posts
 title: Packaging Carbon Applications
 author: Amutheezan Sivagnanam
 
@@ -142,7 +142,7 @@ To include jaggery-apis with CApps, we can implement a jaggery controller at the
 1.[https://docs.wso2.com/display/DAS310/Packaging+Artifacts+as+a+C-App+Archive](https://docs.wso2.com/display/DAS310/Packaging+Artifacts+as+a+C-App+Archive)
 2. [http://udarakr.blogspot.com/2016/01/build-carbon-applicationCApp-for-wso2.html](http://udarakr.blogspot.com/2016/01/build-carbon-applicationCApp-for-wso2.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTk0NzUyOTIsODg5NTYwNjgsMTQ2OT
-Q1Njc3OCwxMzY4NDIyODI5LC0xOTQ5OTU1NDg1LC0zNjExNDc5
-MzRdfQ==
+eyJoaXN0b3J5IjpbMTQ4Mjk4NzM0NiwtMTk1OTQ3NTI5Miw4OD
+k1NjA2OCwxNDY5NDU2Nzc4LDEzNjg0MjI4MjksLTE5NDk5NTU0
+ODUsLTM2MTE0NzkzNF19
 -->
