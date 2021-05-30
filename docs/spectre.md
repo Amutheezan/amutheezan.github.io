@@ -23,7 +23,7 @@ Spectre attacks alters the branch prediction system. It can affect the branch pr
 * Ubuntu 16.04.07 LTS
 Kernel Version: 4.15.0-136-generic
 
-First I clone the [repository](flxwu/spectre-attack-demo) and compile the file ```spectre.c``` using following command,
+First I clone the [repository](https://github.com/flxwu/spectre-attack-demo) and compile the file ```spectre.c``` using following command,
 
 ```bash
 gcc spectre.c -o spectre
@@ -41,16 +41,7 @@ and I obtained following results.
 
 ![image](images/spectre_second.png)
 
-
-As circled in the above figures
-\begin{figure}[!ht]
-    \centering
-     \includegraphics[width=120mm,scale=0.5]{spectre/spectre_second.png}
-    \caption{Spectre Screenshot Last Part}
-    \label{fig:last_part_spectre}
-\end{figure}
-
-As circled in the above figures \cref{fig:first_part_spectre,fig:last_part_spectre} the exploitation happen successfully and it able to read the secret contents.
+As circled in the above figures the exploitation happen successfully and it able to read the secret contents.
 
 Note: I didn't face any issue while compiling or running the demo.
 
@@ -60,26 +51,16 @@ Note: I didn't face any issue while compiling or running the demo.
 For software level protection, we can uses the patches such as LLVM patch, MSVC and ARM speculation barrier header. Further, some mitigation proposed by paper which disclose the spectre for the first time to public [1](https://spectreattack.com/spectre.pdf).
 
 ### SOFTWARE
-*\cite{kocher2019spectre}.
-
-\paragraph{Software}
-\begin{itemize}
-    \item 
-    Inserting serializing instruction can helps on avoiding indirect branch poisoning.
-*    \item 
-    By enabling strategies to prevent reading secret data, when performing speculative execution.
-*    \item Intel tries to prevent the branch poisoning using microcode updates for some processors, which fall-back to the BTB for the prediction, to disable this fall-back mechanism
+* Inserting serializing instruction can helps on avoiding indirect branch poisoning.
+* By enabling strategies to prevent reading secret data, when performing speculative execution.
+* Intel tries to prevent the branch poisoning using microcode updates for some processors, which fall-back to the BTB for the prediction, to disable this fall-back mechanism
 
 ### HARDWARE
-*\end{itemize}
-
-\paragraph{Hardware}
-\begin{itemize}
-    \item By tracking down whether the data was fetch as a result of speculative execution or not. And if it obtained from speculative execution then prevent it using in subsequent execution, which might leak the information.
+* By tracking down whether the data was fetch as a result of speculative execution or not. And if it obtained from speculative execution then prevent it using in subsequent execution, which might leak the information.
 
 ## REFERENCES
 1. [https://spectreattack.com/spectre.pdf](https://spectreattack.com/spectre.pdf)\end{itemize}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2Mzg5NjU4NCw0ODYyODExNjgsNzA5ND
-c4OTAwLDE2MTM2NDc4NjBdfQ==
+eyJoaXN0b3J5IjpbNTYzODY2NDU0LC01NjM4OTY1ODQsNDg2Mj
+gxMTY4LDcwOTQ3ODkwMCwxNjEzNjQ3ODYwXX0=
 -->
