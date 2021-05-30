@@ -3,7 +3,10 @@
 type: posts
 title: Ceu Language
 author: Amutheezan Sivagnanam
-
+category: Integrated Computer Engineering
+tags:
+- ceu
+date: 2017-03-14
 ---
 
   
@@ -32,6 +35,6 @@ This Ceu language was used to make an Arduino binding through Ceu-Arduino, which
 
 1. [https://github.com/fsantanna/ceu-arduino](https://github.com/fsantanna/ceu-arduino)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0ODQwODM5MywtNzEwNTE1NTI5LDEyOT
-M5NTQ1MzldfQ==
+eyJoaXN0b3J5IjpbMTg1Mjg5NjM4OSwtMzQ4NDA4MzkzLC03MT
+A1MTU1MjksMTI5Mzk1NDUzOV19
 -->
