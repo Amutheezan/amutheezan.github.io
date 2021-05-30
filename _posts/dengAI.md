@@ -2,7 +2,10 @@
 type: posts
 title: DengAI Predicting Disease Spread (A Tale of Two cities)
 author: Amutheezan Sivagnanam
-
+category: Data Mining
+tags:
+- dengai
+date: 2017-07-11
 ---
 #### **Disclaimer**
 
@@ -86,6 +89,6 @@ In this project, we proposed an analysis scheme based on the following technique
 3. [https://www.r-bloggers.com/measuring-persistence-in-a-time-series-application-of-rolling-window-regression/](https://www.r-bloggers.com/measuring-persistence-in-a-time-series-application-of-rolling-window-regression/)
 4. [http://www.mathematica-journal.com/2013/06/negative-binomial-regressio](http://www.mathematica-journal.com/2013/06/negative-binomial-regression/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTUyMTU5NCwtMTQ2NDg2MTYzMCwtMT
-g2MTgyMTM0LC0zOTEyMjc3NTldfQ==
+eyJoaXN0b3J5IjpbLTcyMjMxMjQ2MywxMzM1NTIxNTk0LC0xND
+Y0ODYxNjMwLC0xODYxODIxMzQsLTM5MTIyNzc1OV19
 -->
