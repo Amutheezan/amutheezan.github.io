@@ -47,7 +47,7 @@ print('Time (s) to convolve 32x7x7x3 filter over random 100x100x100x3 images \n'
       f'(batch x height x width x channel). Sum of ten runs: {cpu_time}')
 ```
 
-While running on [google colab](https://colab.research.google.com/notebooks) in CPU mode make sure the following configuration is set as shown in the \cref{fig:cpu_sample}. And you can obtain the following outputs
+While running on [google colab](https://colab.research.google.com/notebooks) in CPU mode make sure the following configurationAnd you can obtain the following outputs
 
 ```
 Selected CPU: PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')
@@ -83,7 +83,7 @@ While running on google colab in GPU mode make sure the following configuration.
 
 ![image](../images/GPU_configuration.png)
 
-And you can obtain the following outputs
+ is set as shown in the \cref{fig:gpu_sample}. And you can obtain the following outputs
 
 ```
 Selected GPU: PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')
@@ -355,12 +355,12 @@ TPU time taken (seconds): 6.602945475999945
 Based on the results TPU performs around 1.5 times better than GPU in-terms the computation time of the CNN sample code.
 
 ## References
-1  [https://petamind.com/quick-benchmark-colab-cpu-gpu-tpu-xla-cpu/](https://petamind.com/quick-benchmark-colab-cpu-gpu-tpu-xla-cpu/)
-2  [https://heartbeat.fritz.ai/step-by-step-use-of-google-colab-free-tpu-75f8629492b3](https://heartbeat.fritz.ai/step-by-step-use-of-google-colab-free-tpu-75f8629492b3)
-3 [https://colab.research.google.com/notebooks/tpu.ipynb#scrollTo=FpvUOuC3j27n](https://colab.research.google.com/notebooks/tpu.ipynb#scrollTo=FpvUOuC3j27n)
+ [https://petamind.com/quick-benchmark-colab-cpu-gpu-tpu-xla-cpu/](https://petamind.com/quick-benchmark-colab-cpu-gpu-tpu-xla-cpu/)
+ [https://heartbeat.fritz.ai/step-by-step-use-of-google-colab-free-tpu-75f8629492b3](https://heartbeat.fritz.ai/step-by-step-use-of-google-colab-free-tpu-75f8629492b3)
+ [https://colab.research.google.com/notebooks/tpu.ipynb#scrollTo=FpvUOuC3j27n](https://colab.research.google.com/notebooks/tpu.ipynb#scrollTo=FpvUOuC3j27n)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MTg0NTQ2Miw0MzA3NjUxOTAsMTQyMj
-UxMjk2Ml19
+eyJoaXN0b3J5IjpbLTUxMjAyNDk3MCwxNzcxODQ1NDYyLDQzMD
+c2NTE5MCwxNDIyNTEyOTYyXX0=
 -->
