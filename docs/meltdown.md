@@ -13,16 +13,9 @@ Meltdown uses the race condition between memory access and privilege level check
 
 ## DEMO
 
-*\cite{meltdown,meltdownattack,lipp2018meltdown}.
-
-\newpage
-\subsection{Demo}
-
-\begin{itemize}
-    \item Oracle Virtual Box : Version 6.1.18 r142142 (Qt5.6.3)
-*    \item Ubuntu 14.04.06 LTS
-*    \item Kernel Version: 4.4.0-142-generic
-\end{itemize}
+* Oracle Virtual Box : Version 6.1.18 r142142 (Qt5.6.3)
+* Ubuntu 14.04.06 LTS
+* Kernel Version: 4.4.0-142-generic
 
 I first clone the meltdown demo repository [3](https://meltdownattack.com/\cite{meltdown.pdf)} from GitHub and tried the following demonstration presents in the repository.
 
@@ -260,10 +253,10 @@ This hard-split can determine whether a memory fetch violates security boundary 
 ## REFERENCES
 1. [https://en.wikipedia.org/wiki/Kernel_page-table_isolation](https://en.wikipedia.org/wiki/Kernel_page-table_isolation)
 2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
-3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf) \cite{lipp2018meltdown}. 
+3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf) 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg3MTEwMTg0LDExOTIyNDQ3NiwtMTMzND
-c1NjUzMCwtMTYyMzI5MzkwNF19
+eyJoaXN0b3J5IjpbLTE2ODA1MzE3ODIsNDg3MTEwMTg0LDExOT
+IyNDQ3NiwtMTMzNDc1NjUzMCwtMTYyMzI5MzkwNF19
 -->
