@@ -17,6 +17,7 @@ const
 ```
 
 *  define types such as processor states using enumeration which represents all the states in Futurebus+ proctcol, message types as enumeration which includes different message used to send between the states either bus or cpu call, finally the message type.
+
 ```c
 type
   	Proc : scalarset(processor_count);
@@ -48,8 +49,8 @@ type
       mtype: MessageType;
 	  value: Value;
     end;
-
 ```
+
 * variables - the global variables represents the system.
 ```c
  var
@@ -712,5 +713,5 @@ Rules Information:
 I will explain how to fix this in another post !!!
 Cheers :beer: !!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxODYwMzU1OV19
+eyJoaXN0b3J5IjpbMTM4NTU5NjU1MSwtODE4NjAzNTU5XX0=
 -->
