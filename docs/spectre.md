@@ -39,7 +39,7 @@ and I obtained following results.
 
 ![image](images/spectre_first.png)
 
-![image](images/spectre_second.png)
+![image](../images/spectre_second.png)
 
 As circled in the above figures the exploitation happen successfully and it able to read the secret contents.
 
@@ -57,9 +57,9 @@ For software level protection, we can uses the patches such as LLVM patch, MSVC 
 * By tracking down whether the data was fetch as a result of speculative execution or not. And if it obtained from speculative execution then prevent it using in subsequent execution, which might leak the information.
 
 ## REFERENCES
-1. [Spectre Paper](m/spectre.pdf)
+1. [Spectre Paper](https://meltdownattack.com/spectre.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODU4MzczMjEsOTAwMjQyNzYzLDU2Mz
-g2NjQ1NCwtNTYzODk2NTg0LDQ4NjI4MTE2OCw3MDk0Nzg5MDAs
-MTYxMzY0Nzg2MF19
+eyJoaXN0b3J5IjpbMTQyNDA5OTYwOSwtMTE4NTgzNzMyMSw5MD
+AyNDI3NjMsNTYzODY2NDU0LC01NjM4OTY1ODQsNDg2MjgxMTY4
+LDcwOTQ3ODkwMCwxNjEzNjQ3ODYwXX0=
 -->
