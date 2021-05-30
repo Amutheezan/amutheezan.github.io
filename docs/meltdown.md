@@ -210,8 +210,8 @@ This hard-split can determine whether a memory fetch violates security boundary 
 ## REFERENCES
 1. [https://en.wikipedia.org/wiki/Kernel_page-table_isolation](https://en.wikipedia.org/wiki/Kernel_page-table_isolation)
 2. [https://github.com/IAIK/meltdown/](https://github.com/IAIK/meltdown/)
-3.  [Meltdown Paper](
+3.  [Meltdown Paper](https://meltdownattack.com/meltdown.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDAzMzE4MSwtMTMzNDc1NjUzMCwtMT
-YyMzI5MzkwNF19
+eyJoaXN0b3J5IjpbNDg5MjkyMDAzLC0xMzM0NzU2NTMwLC0xNj
+IzMjkzOTA0XX0=
 -->
