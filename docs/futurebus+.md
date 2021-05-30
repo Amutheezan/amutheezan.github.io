@@ -9,14 +9,14 @@ I have implemented a simple verification for Futurebus+ cache coherence protocol
 
 ## Initial Setup & Steps
 
-Initially clone the repository and go to the code ```main``` directory and execute the following two command to start the docker instances (make sure docker is already installed in your computer and started; check here for installation steps of [docker](https://docs.docker.com/get-docker/).
+Initially clone the [repository](https://github.com/Amutheezan/futurebus) and go to the code ```main``` directory and execute the following two command to start the docker instances (make sure docker is already installed in your computer and started; check here for installation steps of [docker](https://docs.docker.com/get-docker/).
 
 ```docker-compose build```
 
 ```docker-compose run ubuntu bash```
 
+Note
 After that you will get into the bash follow the steps shown below in the ubuntu bash,
-
 
 * First go to the directory ```Murphi3.1/src``` and compile the Murphi using ```make``` command (if it not already generated). And optionally make the executable access using the command ```chmod +x Murphi3.1/src/mu```, if you in the home directory.
 * Then go to the directory ```verification``` and obtain the C file for the Futurebus+ verification using ```./../Murphi3.1/src/mu futurebus.m``` command (if it not already generated). This will generate the C file ```futurebus.C```. 
@@ -672,7 +672,7 @@ Cheers  !!!
 
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTQzNjQ1MTAsLTExNjY1OTM1MzksMT
+eyJoaXN0b3J5IjpbLTEzMDg4NTIwMzUsLTExNjY1OTM1MzksMT
 UyNzA5NDM0NSwtMTQ2MjI4NDQyNSwxMjMxOTkzNjA5LC0xNjU1
 NjEyOTc3LC04MTg2MDM1NTldfQ==
 -->
