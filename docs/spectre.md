@@ -46,7 +46,7 @@ As circled in the above figures the exploitation happen successfully and it able
 Note: I didn't face any issue while compiling or running the demo.
 
 ## How to Fix
-For software level protection, we can uses the patches such as LLVM patch, MSVC and ARM speculation barrier header. Further, some mitigation proposed by paper which disclose the spectre for the first time to public [1](https://spectreattack.com/spectre.pdf).
+For software level protection, we can uses the patches such as LLVM patch, MSVC and ARM speculation barrier header. Further, some mitigation proposed by paper which disclose the spectre for the first time to public [1](https://spectreattack.copectreaper).
 
 ### SOFTWARE
 * Inserting serializing instruction can helps on avoiding indirect branch poisoning.
@@ -57,9 +57,9 @@ For software level protection, we can uses the patches such as LLVM patch, MSVC 
 * By tracking down whether the data was fetch as a result of speculative execution or not. And if it obtained from speculative execution then prevent it using in subsequent execution, which might leak the information.
 
 ## REFERENCES
-1. [Spectre Paper](https://spectreattack.com/spectre.pdf)
+1. [Spectre Paper](m/spectre.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAwMjQyNzYzLDU2Mzg2NjQ1NCwtNTYzOD
-k2NTg0LDQ4NjI4MTE2OCw3MDk0Nzg5MDAsMTYxMzY0Nzg2MF19
-
+eyJoaXN0b3J5IjpbLTExODU4MzczMjEsOTAwMjQyNzYzLDU2Mz
+g2NjQ1NCwtNTYzODk2NTg0LDQ4NjI4MTE2OCw3MDk0Nzg5MDAs
+MTYxMzY0Nzg2MF19
 -->
