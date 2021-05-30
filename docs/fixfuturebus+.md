@@ -1,4 +1,3 @@
-
 ---
 type: posts
 title: Simple Fix on Futurebus+ Cache Coherence Protocol
@@ -632,5 +631,5 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NDI4MDUwOV19
+eyJoaXN0b3J5IjpbLTE2NTk2MjA5NDldfQ==
 -->
