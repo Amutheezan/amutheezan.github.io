@@ -5,7 +5,7 @@ author: Amutheezan Sivagnanam
 
 ---
 
-I have implemented a simple fixing for Futurebus+ cache coherence protocol which I explained in my [previous post](data/futurebus+.md).
+I have implemented a simple fixing for Futurebus+ cache coherence protocol which I explained in my [previous post](../docs/futurebus+.md).
 
 
 ### Initial Setup & Steps
@@ -657,6 +657,7 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4ODUyNzgxMywxNTAxNzc5Nzk2LDg2Mz
-k0MjIxMiwxNTg1ODM2NTU5LC0xNjU5NjIwOTQ5XX0=
+eyJoaXN0b3J5IjpbLTcwNTIzODUyNSwxOTg4NTI3ODEzLDE1MD
+E3Nzk3OTYsODYzOTQyMjEyLDE1ODU4MzY1NTksLTE2NTk2MjA5
+NDldfQ==
 -->
