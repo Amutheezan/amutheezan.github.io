@@ -119,7 +119,7 @@ end;
 ```
 
  * ruleset - define the set of rules that can be used to model the systems.
- * 
+ 
 ```c
  ruleset i: Proc do
   	alias p: proc_state[i] do
@@ -639,5 +639,5 @@ Rules Information:
 I will explain how to fix this in another post !!!
 Cheers  !!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5OTY5NTI0NSwtODE4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbMTkzOTY3NzQ4MSwtODE4NjAzNTU5XX0=
 -->
