@@ -21,7 +21,7 @@ Spectre attacks alters the branch prediction system. It can affect the branch pr
 
 * Oracle Virtual Box : Version 6.1.18 r142142 (Qt5.6.3)
 * Ubuntu 16.04.07 LTS
-Kernel Version: 4.15.0-136-generic
+* Kernel Version: 4.15.0-136-generic
 
 First I clone the [repository](https://github.com/flxwu/spectre-attack-demo) and compile the file ```spectre.c``` using following command,
 
@@ -59,7 +59,7 @@ For software level protection, we can uses the patches such as LLVM patch, MSVC 
 ## REFERENCES
 1. [Spectre Paper](https://spectreattack.com/spectre.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY3MDM1MzQ5LDU2Mzg2NjQ1NCwtNTYzOD
+eyJoaXN0b3J5IjpbOTAwMjQyNzYzLDU2Mzg2NjQ1NCwtNTYzOD
 k2NTg0LDQ4NjI4MTE2OCw3MDk0Nzg5MDAsMTYxMzY0Nzg2MF19
 
 -->
