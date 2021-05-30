@@ -121,7 +121,8 @@ end;
  * ruleset - define the set of rules that can be used to model the systems.
  
 ```c
- ruleset i: Proc do
+
+ruleset i: Proc do
   	alias p: proc_state[i] do
   		ruleset v: Value do
 			rule "Write data"
@@ -380,6 +381,7 @@ endstartstate;
 ```
 * invariants - define the cases which determine the correct states of the system, or checking the validity of the system.
 ```c
+
 Invariant "only one processor in EM state"
 ForAll p1 : Proc Do
 	ForAll p2 : Proc Do
@@ -411,7 +413,9 @@ invariant "value is undefined while invalid"
     ->
     IsUndefined(proc_state[n].value)
   End;
+  
 ```
+
 
 Output of verification of Futurebus+ cache coherence protocol, this provides a brief summary whether any errors or issues found and other statistics.
 
@@ -639,5 +643,5 @@ Rules Information:
 I will explain how to fix this in another post !!!
 Cheers  !!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzOTY3NzQ4MSwtODE4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbLTE0MDI1ODEyMTUsLTgxODYwMzU1OV19
 -->
