@@ -497,10 +497,9 @@ Analysis of State Space:
 
 ```
 
-Next I provides the output of error traces of Futurebus+ traces of cache coherence protocol using the command suffix ```-tv```. This provides the the reasons why the error happen (i.e two processors go to the exclusive states).
+Next I provides the output of error traces of Futurebus+ traces of cache coherence protocol using the command suffix ```-tv```. This provides the the reasons why the error happen.l And you observe that now the error doesn't occurs.
 
 ```
-
 Protocol: futurebus_fix
 
 Algorithm:
@@ -633,6 +632,6 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTgzNjU1OSwxMjE0OTQ3MDY5LC0xNj
-U5NjIwOTQ5XX0=
+eyJoaXN0b3J5IjpbODUzODgwOTA0LDE1ODU4MzY1NTksLTE2NT
+k2MjA5NDldfQ==
 -->
