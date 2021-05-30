@@ -49,23 +49,17 @@ Note: I didn't face any issue while compiling or running the demo.
 ## How to Fix
 For software level protection, we can uses the patches such as LLVM patch, MSVC and ARM speculation barrier header. Further, some mitigation proposed by paper which disclose the spectre for the first time to public [1](https://spectreattack.com/spectre.pdf).
 
-\paragraph{Software}
-\begin{itemize}
-    \item 
-    Inserting serializing instruction can helps on avoiding indirect branch poisoning.
-    \item 
-    By enabling strategies to prevent reading secret data, when performing speculative execution.
-    \item Intel tries to prevent the branch poisoning using microcode updates for some processors, which fall-back to the BTB for the prediction, to disable this fall-back mechanism
-\end{itemize}
+### SOFTWARE
+* Inserting serializing instruction can helps on avoiding indirect branch poisoning.
+* By enabling strategies to prevent reading secret data, when performing speculative execution.
+* Intel tries to prevent the branch poisoning using microcode updates for some processors, which fall-back to the BTB for the prediction, to disable this fall-back mechanism
 
-\paragraph{Hardware}
-\begin{itemize}
-    \item By tracking down whether the data was fetch as a result of speculative execution or not. And if it obtained from speculative execution then prevent it using in subsequent execution, which might leak the information.
-\end{itemize}
+### HARDWARE
+* By tracking down whether the data was fetch as a result of speculative execution or not. And if it obtained from speculative execution then prevent it using in subsequent execution, which might leak the information.
 
 ## REFERENCES
 1. [https://spectreattack.com/spectre.pdf](https://spectreattack.com/spectre.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUyMjAyMzIsNzA5NDc4OTAwLDE2MTM2ND
-c4NjBdfQ==
+eyJoaXN0b3J5IjpbNDg2MjgxMTY4LDcwOTQ3ODkwMCwxNjEzNj
+Q3ODYwXX0=
 -->
