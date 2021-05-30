@@ -2,7 +2,11 @@
 type: posts
 title: Spectre vulnerability simulation
 author: Amutheezan Sivagnanam
-
+category: Computer Architecture
+tags:
+- architecture
+- spectre
+date: 2021-03-31
 ---
 
 I have implemented a simple simulation for spectre vulnerabilityFuturebus+ cache coherence protocol as a part of assignment for **COSC 6385** course in University of Houston.
@@ -60,7 +64,7 @@ Note: Meltdown attack simulation can be found in the [post](../_posts/meltdown.m
 ## REFERENCES
 1. [Spectre Paper](https://meltdownattack.com/spectre.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NjM5ODMwNywtMTE4NTgzNzMyMSw5MD
-AyNDI3NjMsNTYzODY2NDU0LC01NjM4OTY1ODQsNDg2MjgxMTY4
-LDcwOTQ3ODkwMCwxNjEzNjQ3ODYwXX0=
+eyJoaXN0b3J5IjpbLTE1MDgwMTAzNjYsMTY3NjM5ODMwNywtMT
+E4NTgzNzMyMSw5MDAyNDI3NjMsNTYzODY2NDU0LC01NjM4OTY1
+ODQsNDg2MjgxMTY4LDcwOTQ3ODkwMCwxNjEzNjQ3ODYwXX0=
 -->
