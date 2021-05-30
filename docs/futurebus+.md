@@ -15,7 +15,7 @@ Initially clone the [repository](https://github.com/Amutheezan/futurebus) and go
 
 ```docker-compose run ubuntu bash```
 
-Note
+**Note**: the docker implementation and murphi3.1 integration obtained from the following [repository](https://github.com/adnaneGdihi/fixed_murphi3.1)
 After that you will get into the bash follow the steps shown below in the ubuntu bash,
 
 * First go to the directory ```Murphi3.1/src``` and compile the Murphi using ```make``` command (if it not already generated). And optionally make the executable access using the command ```chmod +x Murphi3.1/src/mu```, if you in the home directory.
@@ -672,7 +672,7 @@ Cheers  !!!
 
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDg4NTIwMzUsLTExNjY1OTM1MzksMT
-UyNzA5NDM0NSwtMTQ2MjI4NDQyNSwxMjMxOTkzNjA5LC0xNjU1
-NjEyOTc3LC04MTg2MDM1NTldfQ==
+eyJoaXN0b3J5IjpbNjk4Njc4MzUwLC0xMTY2NTkzNTM5LDE1Mj
+cwOTQzNDUsLTE0NjIyODQ0MjUsMTIzMTk5MzYwOSwtMTY1NTYx
+Mjk3NywtODE4NjAzNTU5XX0=
 -->
