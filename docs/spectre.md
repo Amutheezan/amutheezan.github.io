@@ -56,10 +56,11 @@ For software level protection, we can uses the patches such as LLVM patch, MSVC 
 ### HARDWARE
 * By tracking down whether the data was fetch as a result of speculative execution or not. And if it obtained from speculative execution then prevent it using in subsequent execution, which might leak the information.
 
+Note: Meltdown attack simulation can be found in the [post](../docs/meltdow
 ## REFERENCES
 1. [Spectre Paper](https://meltdownattack.com/spectre.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTM2NDk4NiwtMTE4NTgzNzMyMSw5MD
+eyJoaXN0b3J5IjpbMTQyODc2MTQ1NywtMTE4NTgzNzMyMSw5MD
 AyNDI3NjMsNTYzODY2NDU0LC01NjM4OTY1ODQsNDg2MjgxMTY4
 LDcwOTQ3ODkwMCwxNjEzNjQ3ODYwXX0=
 -->
