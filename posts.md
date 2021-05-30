@@ -6,6 +6,7 @@ author: Amutheezan Sivagnanam
 
 ---
 ### Computer Architecture
+This parts currently includes detailed description of assignment, I have worked on during my graduate Computer Architecture (COSC 6385) course in University of Houston.
 1. [Tomasulo Algorithm](docs/tomasulo.md) 
 2. [Spectre Attack](docs/spectre.md)
 3. [Meltdown Attack](docs/meltdown.md)
@@ -40,7 +41,7 @@ author: Amutheezan Sivagnanam
 10. [Datatables Makes Things Easy](docs/dt.md)
 11. [Some Useful Javascript Libraries](docs/jslib.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTk0OTM4NzksMTk5MDM0NjM3MSw2NT
-A0MzAzNDQsLTE2MzE5NDQ5ODUsMTg1OTM0ODUxNSwzMjE4NzM1
-OTddfQ==
+eyJoaXN0b3J5IjpbLTExNDM5MTE1OTAsLTE3NTk0OTM4NzksMT
+k5MDM0NjM3MSw2NTA0MzAzNDQsLTE2MzE5NDQ5ODUsMTg1OTM0
+ODUxNSwzMjE4NzM1OTddfQ==
 -->
