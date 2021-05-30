@@ -669,10 +669,10 @@ Rules Information:
 
 ```
 
-Fixing of Futurebus+ protocol and it verification using Murphi3.1 can be found in the [post](../docs/fixfuturebus+.md).
+Fixing of Futurebus+ protocol and it verification using Murphi3.1 can be found in the [next post](../docs/fixfuturebus+.md).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4Nzc4NzA5OSwxNDEzOTMwMDQzLC02MD
+eyJoaXN0b3J5IjpbMTQ4OTI2MDk4NiwxNDEzOTMwMDQzLC02MD
 c4MDI0MDYsMTA2NDkyNjQyNSw1NDY5MTMwOCwtMTczMzc0MDQ4
 NCwtMTE2NjU5MzUzOSwxNTI3MDk0MzQ1LC0xNDYyMjg0NDI1LD
 EyMzE5OTM2MDksLTE2NTU2MTI5NzcsLTgxODYwMzU1OV19
