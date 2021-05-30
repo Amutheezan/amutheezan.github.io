@@ -2,7 +2,11 @@
 type: posts
 title: Installing a Developing Feature
 author: Amutheezan Sivagnanam
-
+category: Internship
+tags:
+- wso2
+- devfeature
+date: 2016-09-11
 ---
 #### **Disclaimer**
 
@@ -32,7 +36,7 @@ To make this accessible by desired feature installing system in Management conso
 
 1.  [http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html](http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0Mzk4NjY2NCwtNTU3NTY4NjAyLC0zMj
-U5MjgwMTcsLTU1NzU2ODYwMiwtMzI1OTI4MDE3LC01NTc1Njg2
-MDJdfQ==
+eyJoaXN0b3J5IjpbNzAyOTMyNzMxLDEyNDM5ODY2NjQsLTU1Nz
+U2ODYwMiwtMzI1OTI4MDE3LC01NTc1Njg2MDIsLTMyNTkyODAx
+NywtNTU3NTY4NjAyXX0=
 -->
