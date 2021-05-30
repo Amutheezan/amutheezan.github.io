@@ -2,7 +2,11 @@
 type: posts
 title: Some Useful JavaScript Libraries
 author: Amutheezan Sivagnanam
-
+category: Internship
+tags:
+- js
+- jslib
+date: 2016-09-11
 ---
 #### **Disclaimer**
 
@@ -70,7 +74,7 @@ My last post is about data-tables since I omit it's contents here.
 3.  [https://select2.github.io/](https://select2.github.io/)
 4.  [http://leafletjs.com/index.html](http://leafletjs.com/index.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODI2MjQzMywxODE5NzczMDQzLDgwMj
-g2ODM2MiwxODE5NzczMDQzLDgwMjg2ODM2MiwxODE5NzczMDQz
-XX0=
+eyJoaXN0b3J5IjpbLTgzODk3Njg3NywtMTQ4MjYyNDMzLDE4MT
+k3NzMwNDMsODAyODY4MzYyLDE4MTk3NzMwNDMsODAyODY4MzYy
+LDE4MTk3NzMwNDNdfQ==
 -->
