@@ -17,7 +17,7 @@ Initially clone the [repository](https://github.com/Amutheezan/futurebus) and go
 
 ```docker-compose run ubuntu bash```
 
-**Note**: the docker implementation and murphi3.1 integration obtained from the following [repository](https://github.com/adnaneGdihi/fixed_murphi3.1)
+**Note**: the docker implementation and murphi3.1 integration obtained from the following [repository](https://github.com/adnaneGdihi/fixed_murphi3.1).
 
 After that you will get into the bash follow the steps shown below in the ubuntu bash,
 
@@ -658,6 +658,6 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](docs/futurebus+.md).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMTc3OTc5Niw4NjM5NDIyMTIsMTU4NT
-gzNjU1OSwtMTY1OTYyMDk0OV19
+eyJoaXN0b3J5IjpbMTkzMjExNTIwOCwxNTAxNzc5Nzk2LDg2Mz
+k0MjIxMiwxNTg1ODM2NTU5LC0xNjU5NjIwOTQ5XX0=
 -->
