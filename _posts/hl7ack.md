@@ -2,7 +2,10 @@
 type: posts
 title: HL7 ACK
 author: Amutheezan Sivagnanam
-
+category: Internship
+tags:
+- hl7
+date: 2016-09-11
 ---
 #### **Disclaimer**
 
@@ -32,7 +35,7 @@ these acks are in normal mode or enhanced mode, thus normal mode ACKs are ```AA`
 1.  https://catalyze.io/learn/hl7-202-the-hl7-ack-acknowledgement-message
 2.  https://www.hl7.org/documentcenter/public_temp_088CF1E1-1C23-BA17-0C4227727B2BEC42/wg/conf/HL7MSH.htm
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU1ODc4MTA0LC00OTc3MDQzNTYsNDEyOT
-k2NjEsLTQ5NzcwNDM1Niw0MTI5OTY2MSwtNDk3NzA0MzU2XX0=
-
+eyJoaXN0b3J5IjpbLTczOTc0NzQzLDI1NTg3ODEwNCwtNDk3Nz
+A0MzU2LDQxMjk5NjYxLC00OTc3MDQzNTYsNDEyOTk2NjEsLTQ5
+NzcwNDM1Nl19
 -->
