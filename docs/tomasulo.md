@@ -1,10 +1,12 @@
+
 ---
 type: posts
 title: Simulation of Tomasulo Algorithm
 author: Amutheezan Sivagnanam
 
 ---
-**Disclaimer** WORK IN PROGRESS
+**Disclaimer** 
+WORK IN PROGRESS
 
 I have extended a simple simulation for tomasulo algorithm as a part of assignment for **COSC 6385** course in University of Houston. 
 
@@ -33,5 +35,6 @@ In this Implementation I have done following,
 
 The implementation can be found in the [repopsitory](https://github.com/Amutheezan/Tomasulo)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwMTUyMzgxLC03NDU2MTYxOTddfQ==
+eyJoaXN0b3J5IjpbLTM0NDE1NDU5MSw5NjAxNTIzODEsLTc0NT
+YxNjE5N119
 -->
