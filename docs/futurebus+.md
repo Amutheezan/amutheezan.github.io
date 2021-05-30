@@ -21,12 +21,13 @@ After that you will get into the bash follow the steps shown below in the ubuntu
 * First go to the directory ```Murphi3.1/src``` and compile the Murphi using ```make``` command (if it not already generated). And optionally make the executable access using the command ```chmod +x Murphi3.1/src/mu```, if you in the home directory.
 * Then go to the directory ```verification``` and obtain the C file for the Futurebus+ verification using ```./../Murphi3.1/src/mu futurebus.m``` command (if it not already generated). This will generate the C file ```futurebus.C```. 
 * Thereafter compile the generate file using the command ```make futurebus```, this eventually generate the executable program.
-* Finally run the executable using the following command \texttt{./futurebus}.
-\end{itemize}
+* Finally run the executable using the following command ```./futurebus```
 
-\textbf{OR}
-you can perform these entire steps by simply go to the \texttt{verification} directory and run the command \texttt{sh run.sh}.
+### OR 
+you can perform these entire steps by simply go to the ```verification``` directory and run the command ```sh run.sh```.
 
+## Verification using Murphi3.1
+Please note that Murphi3.1 come installed with
 I structure the code as follows,
 
 * constants - to define constants such as number of processor, number of values
@@ -672,7 +673,7 @@ Cheers  !!!start-state - define the start state of the system.
 
 WORK IN PROGRESS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNzYzMTczNCwxNTI3MDk0MzQ1LC0xND
-YyMjg0NDI1LDEyMzE5OTM2MDksLTE2NTU2MTI5NzcsLTgxODYw
-MzU1OV19
+eyJoaXN0b3J5IjpbMTYzMTc3NTk5LDE1MjcwOTQzNDUsLTE0Nj
+IyODQ0MjUsMTIzMTk5MzYwOSwtMTY1NTYxMjk3NywtODE4NjAz
+NTU5XX0=
 -->
