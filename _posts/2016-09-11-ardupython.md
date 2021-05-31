@@ -1,4 +1,3 @@
-
 ---
 type: posts
 title: Configure MySQL for Arduino in Python
@@ -7,7 +6,9 @@ category: Tech Issues
 tags:
 - arduino
 - python
-date: 2017-03-17
+date: 2016-09-11
+last_modified_at: 2016-09-22
+
 ---
 
 ## **GUIDE IS ONLY FOR WINDOWS**
@@ -44,8 +45,6 @@ I referred to this code in [4](https://github.com/surendharreddy/Arduino-MySQL) 
   
 
 ### References
-
-  
 
 1. [http://stackoverflow.com/questions/28335859/importerror-no-module-named-serial-in-windows-7-python-2-7-and-python-3-3](http://stackoverflow.com/questions/28335859/importerror-no-module-named-serial-in-windows-7-python-2-7-and-python-3-3)
 
