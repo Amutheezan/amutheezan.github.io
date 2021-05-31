@@ -9,7 +9,7 @@ tags:
 date: 2017-07-30
 ---
 
-## QUESTION
+#### QUESTION
 
 This post is compiled based on the following stackoverflow [question and answer section](https://stackoverflow.com/questions/46126792/quickest-sorting-mechanism-for-sorting-by-multiple-predicates-in-python).
 
@@ -33,11 +33,11 @@ s = sorted(a, key=lambda x : (x[2],x[1]), reverse=True); i = sorted(a, key = ope
 
 Out of these, one will return the result quickly for a 5D Array with a size of around 20,000 ???
 
-## ANSWER
+#### ANSWER
 
 These three implementations are simply equal and have the same overhead of doing the sorting. Thus, it takes the same amount of time. So these three options are equally replaceable with othe
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUzNjAzMzM1LDEyNDEwOTQwNTgsMzkyND
-A4MDEyLC0yMDYxMTY1MjkxLDk0MDkwNDEwMiwtNDAwMjQ2Mjks
-ODI3NDg3NDU4LC00MDAyNDYyOV19
+eyJoaXN0b3J5IjpbNzQ0OTgyMzQyLDk1MzYwMzMzNSwxMjQxMD
+k0MDU4LDM5MjQwODAxMiwtMjA2MTE2NTI5MSw5NDA5MDQxMDIs
+LTQwMDI0NjI5LDgyNzQ4NzQ1OCwtNDAwMjQ2MjldfQ==
 -->
