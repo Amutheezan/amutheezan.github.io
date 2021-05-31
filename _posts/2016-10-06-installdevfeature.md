@@ -8,7 +8,7 @@ tags:
 - devfeature
 date: 2016-10-06
 ---
-#### **Disclaimer**
+#### Disclaimer
 
 The content did not belong to me, I just do some value addition to reference by explaining my project scenario with this. For clear understanding and deep learning go through references.
 
@@ -36,7 +36,7 @@ To make this accessible by desired feature installing system in Management conso
 
 1.  [http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html](http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAyOTMyNzMxLDEyNDM5ODY2NjQsLTU1Nz
-U2ODYwMiwtMzI1OTI4MDE3LC01NTc1Njg2MDIsLTMyNTkyODAx
-NywtNTU3NTY4NjAyXX0=
+eyJoaXN0b3J5IjpbNzUzMzQxOTk1LDcwMjkzMjczMSwxMjQzOT
+g2NjY0LC01NTc1Njg2MDIsLTMyNTkyODAxNywtNTU3NTY4NjAy
+LC0zMjU5MjgwMTcsLTU1NzU2ODYwMl19
 -->
