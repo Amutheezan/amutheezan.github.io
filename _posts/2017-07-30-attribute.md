@@ -6,7 +6,7 @@ category: Tech Issues
 tags:
 - sorting
 - python
-date: 2017-08-30
+date: 2017-07-30
 ---
 
 ## QUESTION
