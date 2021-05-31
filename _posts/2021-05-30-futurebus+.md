@@ -8,7 +8,7 @@ tags:
 - futurebus+
 date: 2021-05-30
 ---
-#### **Disclaimer**
+#### Disclaimer
 
 I have implemented a simple verification for Futurebus+ cache coherence protocol as a part of assignment for **COSC 6385** course in University of Houston.
 
@@ -677,9 +677,9 @@ Rules Information:
 Fixing of Futurebus+ protocol and it verification using Murphi3.1 can be found in the [next post](https://amutheezan.com/computer%20architecture/2021/05/30/fixfuturebus+.html).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MjYyNDk0NSwtMTQ0MjY1MjE0MiwxND
-g5MjYwOTg2LDE0MTM5MzAwNDMsLTYwNzgwMjQwNiwxMDY0OTI2
-NDI1LDU0NjkxMzA4LC0xNzMzNzQwNDg0LC0xMTY2NTkzNTM5LD
-E1MjcwOTQzNDUsLTE0NjIyODQ0MjUsMTIzMTk5MzYwOSwtMTY1
-NTYxMjk3NywtODE4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbLTE3MTU1ODcwNTcsLTQ1MjYyNDk0NSwtMT
+Q0MjY1MjE0MiwxNDg5MjYwOTg2LDE0MTM5MzAwNDMsLTYwNzgw
+MjQwNiwxMDY0OTI2NDI1LDU0NjkxMzA4LC0xNzMzNzQwNDg0LC
+0xMTY2NTkzNTM5LDE1MjcwOTQzNDUsLTE0NjIyODQ0MjUsMTIz
+MTk5MzYwOSwtMTY1NTYxMjk3NywtODE4NjAzNTU5XX0=
 -->
