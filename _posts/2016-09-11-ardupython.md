@@ -11,12 +11,10 @@ last_modified_at: 2016-09-22
 
 ---
 
-## GUIDE IS ONLY FOR WINDOWS
-
-
 #### Disclaimer
 
 This article explains the steps associated with configuring ```MySQL``` for Arduino in Python.
+This guide is only applicable for Windows.
 
 ### Steps
 
@@ -40,8 +38,8 @@ I referred to this code in [4](https://github.com/surendharreddy/Arduino-MySQL) 
 3. [http://www.instructables.com/id/Interface-Arduino-to-MySQL-using-Python/step4/Python-TIEM/](http://www.instructables.com/id/Interface-Arduino-to-MySQL-using-Python/step4/Python-TIEM/)
 4. [https://github.com/surendharreddy/Arduino-MySQL](https://github.com/surendharreddy/Arduino-MySQL)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NTE1MzU4NiwtMTYyNDg2MDQ5MiwtOT
-A3NjY0MTE0LC0xMTkxODMzNzQyLC00ODU5MzYzNDcsLTE0OTU3
-NTU2NzIsLTExMDM4MzAxMTgsMjA1NDA0MzU1NSwtMTEwMzgzMD
-ExOF19
+eyJoaXN0b3J5IjpbMzQ4MzM3Nzg5LC0xNjI0ODYwNDkyLC05MD
+c2NjQxMTQsLTExOTE4MzM3NDIsLTQ4NTkzNjM0NywtMTQ5NTc1
+NTY3MiwtMTEwMzgzMDExOCwyMDU0MDQzNTU1LC0xMTAzODMwMT
+E4XX0=
 -->
