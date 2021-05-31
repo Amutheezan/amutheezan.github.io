@@ -2,6 +2,12 @@
 type: posts
 title: Python Multi Processing
 author: Amutheezan Sivagnanam
+category: Computer Architecture
+tags:
+- parallelsystems
+- multiprocessing
+date: 2019-12-13
+last_modified_at: 2020-02-07
 
 ---
 I have developed a basic Python Library to provide abstraction to parallel programming.
