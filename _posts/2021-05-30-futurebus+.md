@@ -673,7 +673,7 @@ Rules Information:
 
 ```
 
-Fixing of Futurebus+ protocol and it verification using Murphi3.1 can be found in the [next post](../_posts/fixfuturebus+.md).
+Fixing of Futurebus+ protocol and it verification using Murphi3.1 can be found in the [next post](../_posts/2021-05-30-fixfuturebus+.md).
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE0NDI2NTIxNDIsMTQ4OTI2MDk4NiwxND
