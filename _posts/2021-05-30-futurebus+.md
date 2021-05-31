@@ -1,6 +1,6 @@
 ---
 type: posts
-title: Verification of Futurebus Cache Coherence Protocol
+title: Verification of Futurebus+ Cache Coherence Protocol
 author: Amutheezan Sivagnanam
 category: Computer Architecture
 tags:
