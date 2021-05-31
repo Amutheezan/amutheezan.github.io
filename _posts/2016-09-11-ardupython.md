@@ -30,19 +30,15 @@ This article explains the steps associated with configuring ```MySQL``` for Ardu
 
 2. Install Python 2.7, and install ```pyserial```, ```MYSQLdb``` libraries.
 
-1. Install ```pyserial```, you can also download it from[](https://pypi.python.org/packages/47/c9/7802e11ab388ad1539de716649add8bb8ca8bdff660364b3a404f79c27b7/pyserial-2.7.win32.exe)[https://pypi.python.org/pypi/pyserial/2.7#downloads](https://pypi.python.org/pypi/pyserial/2.7#downloads)[.](https://pypi.python.org/pypi/pyserial/2.7) Download the ".exe" file and just run it.
+1. Install ```pyserial```, you can also download it from [here](https://pypi.python.org/packages/47/c9/7802e11ab388ad1539de716649add8bb8ca8bdff660364b3a404f79c27b7/pyserial-2.7.win32.exe)[https://pypi.python.org/pypi/pyserial/2.7#downloads](https://pypi.python.org/pypi/pyserial/2.7#downloads)[.](https://pypi.python.org/pypi/pyserial/2.7) Download the ".exe" file and just run it.
 
 2. Install ```MYSQLdb```, you can also download it from [https://pypi.python.org/pypi/MySQL-python/1.2.5#downloads](https://pypi.python.org/pypi/MySQL-python/1.2.5#downloads). Download the ".exe" file and just run it.
 
 3. Then, create the required python program to update the database. For this, you need to add two import ```import serial``` and ```import MysqlDb```.
 
-3. Install Arduino and write the program to read values from the sensor and print the values using ```serial.Println(readData)```.
-
-  
+4. Install Arduino and write the program to read values from the sensor and print the values using ```serial.Println(readData)```.
 
 I referred to this code in [4](https://github.com/surendharreddy/Arduino-MySQL) for my project; I hope this will help you.
-
-  
 
 ### References
 
