@@ -11,20 +11,14 @@ last_modified_at: 2016-09-22
 
 ---
 
-## **GUIDE IS ONLY FOR WINDOWS**
+## GUIDE IS ONLY FOR WINDOWS
 
 
-#### **Disclaimer**
-
-  
+#### Disclaimer
 
 This article explains the steps associated with configuring ```MySQL``` for Arduino in Python.
 
-  
-
-### **Steps**
-
-  
+### Steps
 
 1. First install ```XAMPP```/```WAMP```. Then open its control panel and start ```Apache``` and ```MySQL``` servers. After that, click the admin button and goto ```PHPMyAdmin``` and create the database to store the data.
 
@@ -46,7 +40,7 @@ I referred to this code in [4](https://github.com/surendharreddy/Arduino-MySQL) 
 3. [http://www.instructables.com/id/Interface-Arduino-to-MySQL-using-Python/step4/Python-TIEM/](http://www.instructables.com/id/Interface-Arduino-to-MySQL-using-Python/step4/Python-TIEM/)
 4. [https://github.com/surendharreddy/Arduino-MySQL](https://github.com/surendharreddy/Arduino-MySQL)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NzAyNDQwNiwtMTYyNDg2MDQ5MiwtOT
+eyJoaXN0b3J5IjpbLTc3NTE1MzU4NiwtMTYyNDg2MDQ5MiwtOT
 A3NjY0MTE0LC0xMTkxODMzNzQyLC00ODU5MzYzNDcsLTE0OTU3
 NTU2NzIsLTExMDM4MzAxMTgsMjA1NDA0MzU1NSwtMTEwMzgzMD
 ExOF19
