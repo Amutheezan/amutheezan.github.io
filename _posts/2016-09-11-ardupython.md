@@ -41,16 +41,13 @@ This article explains the steps associated with configuring ```MySQL``` for Ardu
 I referred to this code in [4](https://github.com/surendharreddy/Arduino-MySQL) for my project; I hope this will help you.
 
 ### References
-
 1. [http://stackoverflow.com/questions/28335859/importerror-no-module-named-serial-in-windows-7-python-2-7-and-python-3-3](http://stackoverflow.com/questions/28335859/importerror-no-module-named-serial-in-windows-7-python-2-7-and-python-3-3)
-
 2. [http://stackoverflow.com/questions/8491111/pyserial-for-python-2-7-2](http://stackoverflow.com/questions/8491111/pyserial-for-python-2-7-2)
-
 3. [http://www.instructables.com/id/Interface-Arduino-to-MySQL-using-Python/step4/Python-TIEM/](http://www.instructables.com/id/Interface-Arduino-to-MySQL-using-Python/step4/Python-TIEM/)
-
 4. [https://github.com/surendharreddy/Arduino-MySQL](https://github.com/surendharreddy/Arduino-MySQL)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjQ4NjA0OTIsLTkwNzY2NDExNCwtMT
-E5MTgzMzc0MiwtNDg1OTM2MzQ3LC0xNDk1NzU1NjcyLC0xMTAz
-ODMwMTE4LDIwNTQwNDM1NTUsLTExMDM4MzAxMThdfQ==
+eyJoaXN0b3J5IjpbLTg5NzAyNDQwNiwtMTYyNDg2MDQ5MiwtOT
+A3NjY0MTE0LC0xMTkxODMzNzQyLC00ODU5MzYzNDcsLTE0OTU3
+NTU2NzIsLTExMDM4MzAxMTgsMjA1NDA0MzU1NSwtMTEwMzgzMD
+ExOF19
 -->
