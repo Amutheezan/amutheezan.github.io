@@ -10,7 +10,7 @@ tags:
 date: 2021-05-30
 ---
 
-<p class="message" color=blue>
+<p class="message" style="color:white; background-color:#DAA520;border-color:brown;border-style:dotted">
 <strong> Disclaimer !!! </strong>
 <br>
 
@@ -682,10 +682,10 @@ Rules Information:
 In the  [next post](https://amutheezan.com/computer%20architecture/2021/05/30/fixfuturebus+.html), I will write about how to apply a simple fix for Futurebus+ protocol  to avoid multiple processers get into exclusive state. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE3NjQ4NTEsNjE3NjQ4NTEsODA0NDQ1OT
-ksLTE3MTU1ODcwNTcsLTQ1MjYyNDk0NSwtMTQ0MjY1MjE0Miwx
-NDg5MjYwOTg2LDE0MTM5MzAwNDMsLTYwNzgwMjQwNiwxMDY0OT
-I2NDI1LDU0NjkxMzA4LC0xNzMzNzQwNDg0LC0xMTY2NTkzNTM5
-LDE1MjcwOTQzNDUsLTE0NjIyODQ0MjUsMTIzMTk5MzYwOSwtMT
-Y1NTYxMjk3NywtODE4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbMTg2OTk0NTY0OCw2MTc2NDg1MSw2MTc2ND
+g1MSw4MDQ0NDU5OSwtMTcxNTU4NzA1NywtNDUyNjI0OTQ1LC0x
+NDQyNjUyMTQyLDE0ODkyNjA5ODYsMTQxMzkzMDA0MywtNjA3OD
+AyNDA2LDEwNjQ5MjY0MjUsNTQ2OTEzMDgsLTE3MzM3NDA0ODQs
+LTExNjY1OTM1MzksMTUyNzA5NDM0NSwtMTQ2MjI4NDQyNSwxMj
+MxOTkzNjA5LC0xNjU1NjEyOTc3LC04MTg2MDM1NTldfQ==
 -->
