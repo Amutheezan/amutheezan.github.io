@@ -9,7 +9,7 @@ tags:
 date: 2016-10-06
 ---
 
-<p class="message">
+<p class="message" style="color:white; background-color:#DAA520;border-color:brown;border-style:dotted">
 <strong> Disclaimer !!! </strong>
 <br>
 
@@ -40,7 +40,8 @@ To make this accessible by desired feature installing system in Management conso
 
 1.  [http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html](http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2Mjg0NTEzMCw3NTMzNDE5OTUsNzAyOT
-MyNzMxLDEyNDM5ODY2NjQsLTU1NzU2ODYwMiwtMzI1OTI4MDE3
-LC01NTc1Njg2MDIsLTMyNTkyODAxNywtNTU3NTY4NjAyXX0=
+eyJoaXN0b3J5IjpbLTEzMzkzNzc5MzEsLTM2Mjg0NTEzMCw3NT
+MzNDE5OTUsNzAyOTMyNzMxLDEyNDM5ODY2NjQsLTU1NzU2ODYw
+MiwtMzI1OTI4MDE3LC01NTc1Njg2MDIsLTMyNTkyODAxNywtNT
+U3NTY4NjAyXX0=
 -->
