@@ -679,13 +679,13 @@ Rules Information:
 
 ```
 
-In the  [next post](https://amutheezan.com/computer%20architecture/2021/05/30/fixfuturebus+.html), I will write about how to apply a simple fix for Futurebus+ protocol  to avoid multiple processers get into exc and it verification using Murphi3.1 can be found in the.
+In the  [next post](https://amutheezan.com/computer%20architecture/2021/05/30/fixfuturebus+.html), I will write about how to apply a simple fix for Futurebus+ protocol  to avoid multiple processers get into exclusive state. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzOTY0NDA1LC0xNzE1NTg3MDU3LC00NT
-I2MjQ5NDUsLTE0NDI2NTIxNDIsMTQ4OTI2MDk4NiwxNDEzOTMw
-MDQzLC02MDc4MDI0MDYsMTA2NDkyNjQyNSw1NDY5MTMwOCwtMT
-czMzc0MDQ4NCwtMTE2NjU5MzUzOSwxNTI3MDk0MzQ1LC0xNDYy
-Mjg0NDI1LDEyMzE5OTM2MDksLTE2NTU2MTI5NzcsLTgxODYwMz
-U1OV19
+eyJoaXN0b3J5IjpbODA0NDQ1OTksLTE3MTU1ODcwNTcsLTQ1Mj
+YyNDk0NSwtMTQ0MjY1MjE0MiwxNDg5MjYwOTg2LDE0MTM5MzAw
+NDMsLTYwNzgwMjQwNiwxMDY0OTI2NDI1LDU0NjkxMzA4LC0xNz
+MzNzQwNDg0LC0xMTY2NTkzNTM5LDE1MjcwOTQzNDUsLTE0NjIy
+ODQ0MjUsMTIzMTk5MzYwOSwtMTY1NTYxMjk3NywtODE4NjAzNT
+U5XX0=
 -->
