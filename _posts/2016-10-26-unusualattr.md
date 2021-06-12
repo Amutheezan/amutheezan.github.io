@@ -9,9 +9,13 @@ date: 2016-10-26
 last_modified_at: 2016-11-08
 
 ---
-#### Disclaimer
+
+<p class="message">
+<strong> Disclaimer !!! </strong>
+<br>
 
 This content is based on the issue I faced while doing analyzing with Arbitrary attribute of HL7. It is common for cases where arbitrary attributes are similar to the case of HL7
+</p>
 
 When we are fetching data in WSO2 **DAS** through **ESB** from HAPI test-panel, we are also getting arbitrary attributes related to HL7 Messaging addition to existing attributes related to message flow. These arbitrary attributes are for the content of the message passed, it contains a detailed classification of each element of HL7 messages that were transmitted.
 
@@ -26,7 +30,7 @@ operation_name, message_direction, status];
 ```
 To resolve this error we need to add ```**`**``` this while doing **COUNT** or **SELECT** or **INSERT** query (not essentially require for **CREATE** schema) in spark.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNzYyNTU3NiwtOTExNTY2OTEyLC05MD
+eyJoaXN0b3J5IjpbLTY3MjQ5NzQyNywtOTExNTY2OTEyLC05MD
 kxMTg0MTQsMjEwMDAyODU0MCwtNzg4NzM2ODEzLDIxMDAwMjg1
 NDAsLTc4ODczNjgxMywyMTAwMDI4NTQwXX0=
 -->
