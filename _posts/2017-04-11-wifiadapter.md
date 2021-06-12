@@ -8,9 +8,13 @@ tags:
 - wifiadapter
 date: 2017-04-11
 ---
-#### Disclaimer
+<p class="message">
+<strong> Disclaimer !!! </strong>
+<br>
 
 These code blocks are obtained from [Stackoverflow](https://stackoverflow.com), this particular blog post to emphasize a little bit more from the issues related to that.
+
+</p>
 
 Since the time I started using external Wifi Adapter, the wifi connections lost even though the symbol says connected, I have looked into several suggestions but that doesn't work because I failed to figure out my exact mistake; Yesterday only I figured out mistake, those days when I installed Ubuntu 16.04 I thought it may be due to some issues related to particular version, but when I tried through try Ubuntu it is same, and Finally when I tried with Ubuntu 14.04; Thereafter I figured out the Issue is with Updating device driver :smile:.
 
@@ -36,8 +40,8 @@ sudo apt-get install rtl8192eu-dkms
 
 1. [ http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting]( http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk5NjI1MDg2LDk5NzU2OTY4NiwxMDQ2MD
-k2NTIsODAwNTY0NzYzLDIwMjM2MzcyODQsODAwNTY0NzYzLDIw
-MjM2MzcyODQsODAwNTY0NzYzLC0xNjE1MTEwNDE0LC03NjI0NT
-Q3MTEsLTE2MTUxMTA0MTRdfQ==
+eyJoaXN0b3J5IjpbMTgzNTY3MzY1MSw5OTc1Njk2ODYsMTA0Nj
+A5NjUyLDgwMDU2NDc2MywyMDIzNjM3Mjg0LDgwMDU2NDc2Mywy
+MDIzNjM3Mjg0LDgwMDU2NDc2MywtMTYxNTExMDQxNCwtNzYyND
+U0NzExLC0xNjE1MTEwNDE0XX0=
 -->
