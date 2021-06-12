@@ -10,12 +10,17 @@ tags:
 date: 2021-05-30
 ---
 
+<div class="w3-container w3-pale-blue w3-leftbar w3-border-blue">
 <p class="message" color=blue>
 <strong> Disclaimer !!! </strong>
 <br>
 
 I have implemented a simple verification for Futurebus+ cache coherence protocol as a part of assignment for <strong>COSC 6385</strong> course in University of Houston.
 </p>
+</div>
+
+
+
 
 ## Initial Setup & Steps
 
@@ -682,10 +687,10 @@ Rules Information:
 In the  [next post](https://amutheezan.com/computer%20architecture/2021/05/30/fixfuturebus+.html), I will write about how to apply a simple fix for Futurebus+ protocol  to avoid multiple processers get into exclusive state. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE3NjQ4NTEsODA0NDQ1OTksLTE3MTU1OD
-cwNTcsLTQ1MjYyNDk0NSwtMTQ0MjY1MjE0MiwxNDg5MjYwOTg2
-LDE0MTM5MzAwNDMsLTYwNzgwMjQwNiwxMDY0OTI2NDI1LDU0Nj
-kxMzA4LC0xNzMzNzQwNDg0LC0xMTY2NTkzNTM5LDE1MjcwOTQz
-NDUsLTE0NjIyODQ0MjUsMTIzMTk5MzYwOSwtMTY1NTYxMjk3Ny
-wtODE4NjAzNTU5XX0=
+eyJoaXN0b3J5IjpbNTAxNDAyMzAwLDYxNzY0ODUxLDgwNDQ0NT
+k5LC0xNzE1NTg3MDU3LC00NTI2MjQ5NDUsLTE0NDI2NTIxNDIs
+MTQ4OTI2MDk4NiwxNDEzOTMwMDQzLC02MDc4MDI0MDYsMTA2ND
+kyNjQyNSw1NDY5MTMwOCwtMTczMzc0MDQ4NCwtMTE2NjU5MzUz
+OSwxNTI3MDk0MzQ1LC0xNDYyMjg0NDI1LDEyMzE5OTM2MDksLT
+E2NTU2MTI5NzcsLTgxODYwMzU1OV19
 -->
