@@ -10,7 +10,7 @@ last_modified_at: 2016-11-08
 
 ---
 
-<p class="message">
+<p class="message" style="color:white; background-color:#DAA520;border-color:brown;border-style:dotted">
 <strong> Disclaimer !!! </strong>
 <br>
 
@@ -30,7 +30,7 @@ operation_name, message_direction, status];
 ```
 To resolve this error we need to add ```**`**``` this while doing **COUNT** or **SELECT** or **INSERT** query (not essentially require for **CREATE** schema) in spark.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MjQ5NzQyNywtOTExNTY2OTEyLC05MD
-kxMTg0MTQsMjEwMDAyODU0MCwtNzg4NzM2ODEzLDIxMDAwMjg1
-NDAsLTc4ODczNjgxMywyMTAwMDI4NTQwXX0=
+eyJoaXN0b3J5IjpbLTE5MDYzOTAwODgsLTkxMTU2NjkxMiwtOT
+A5MTE4NDE0LDIxMDAwMjg1NDAsLTc4ODczNjgxMywyMTAwMDI4
+NTQwLC03ODg3MzY4MTMsMjEwMDAyODU0MF19
 -->
