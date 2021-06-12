@@ -6,6 +6,7 @@ category: Computer Architecture
 tags:
 - architecture
 - futurebus+
+- murphi
 date: 2021-05-31
 ---
 
@@ -661,5 +662,6 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](https://amutheezan.com/computer%20architecture/2021/05/30/futurebus+.html).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDUwMjA2MDBdfQ==
+eyJoaXN0b3J5IjpbLTIwNzc2MzMyNjAsLTE0NDUwMjA2MDBdfQ
+==
 -->
