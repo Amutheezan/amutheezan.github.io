@@ -9,7 +9,7 @@ tags:
 date: 2017-04-11
 ---
 
-<p class="message" style="color:; background-color:#DB210;border-color:brown;border-style:od">
+<p class="message" style="color:black; background-color:#DBA210;border-color:brown;border-style:solid">
 <strong> Disclaimer !!! </strong>
 <br>
 
@@ -41,9 +41,9 @@ sudo apt-get install rtl8192eu-dkms
 
 1.[http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting]( http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc4NDcxMzcyLDExNDkxMDEyMTksNjg0OT
-EyMzEwLDk5NzU2OTY4NiwxMDQ2MDk2NTIsODAwNTY0NzYzLDIw
-MjM2MzcyODQsODAwNTY0NzYzLDIwMjM2MzcyODQsODAwNTY0Nz
-YzLC0xNjE1MTEwNDE0LC03NjI0NTQ3MTEsLTE2MTUxMTA0MTRd
-fQ==
+eyJoaXN0b3J5IjpbLTE4NTgxMTEzNDgsMTE0OTEwMTIxOSw2OD
+Q5MTIzMTAsOTk3NTY5Njg2LDEwNDYwOTY1Miw4MDA1NjQ3NjMs
+MjAyMzYzNzI4NCw4MDA1NjQ3NjMsMjAyMzYzNzI4NCw4MDA1Nj
+Q3NjMsLTE2MTUxMTA0MTQsLTc2MjQ1NDcxMSwtMTYxNTExMDQx
+NF19
 -->
