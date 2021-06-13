@@ -45,7 +45,8 @@ const
 	value_count: 1;
 ```
 
-*  define types such as processor states using enumeration which represents all the states in Futurebus+ proctcol, message types as enumeration which includes different message used to send between the states either bus or cpu call, finally the message type.
+*  define types such as processor states (```ProcState```) using enumeration which represents all the states in Futurebus+ protocol, message types (```MessageType```) as enumeration which includes different message used to send between the states either bus or cpu call, finally define the message type (```Message```) .
+
 
 ```c
 type
@@ -662,6 +663,6 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](https://amutheezan.com/computer%20architecture/2021/05/30/futurebus+.html).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzc2MzMyNjAsLTE0NDUwMjA2MDBdfQ
-==
+eyJoaXN0b3J5IjpbNzE4OTQxNDk3LC0yMDc3NjMzMjYwLC0xND
+Q1MDIwNjAwXX0=
 -->
