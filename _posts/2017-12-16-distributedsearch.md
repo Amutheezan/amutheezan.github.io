@@ -55,8 +55,8 @@ My Implementation can be found in the [repo](https://github.com/Amutheezan/Distr
 #### Performance Analysis.
 
 Our implementation has two version
-1. udp (check the udp branch of repo)
-2. webservice (check 
+1. udp (check the ```udp`` branch of the repo)
+2. webservice (check the ``ws`` branch of the repo)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MzY0NDQxNiw2NzY5NDQxM119
+eyJoaXN0b3J5IjpbMTk0NDA5Njc1Myw2NzY5NDQxM119
 -->
