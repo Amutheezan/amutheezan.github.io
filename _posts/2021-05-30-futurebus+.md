@@ -27,7 +27,7 @@ Initially clone the [repository](https://github.com/Amutheezan/futurebus) and go
 
 **Note**: the docker implementation and murphi3.1 integration obtained from the following [repository](https://github.com/adnaneGdihi/fixed_murphi3.1).
 
-After that you will get into the bash follow the steps shown below in the ubuntu bash,
+After that you will get into the bash, follow the steps shown below in the ubuntu bash,
 
 
 * First go to the directory ```Murphi3.1/src``` and compile the Murphi using ```make``` command (if it not already generated). And optionally make the executable access using the command ```chmod +x Murphi3.1/src/mu```, if you in the home directory.
@@ -50,7 +50,7 @@ const
 	value_count: 1;
 ```
 
-*  define types such as processor states using enumeration which represents all the states in Futurebus+ proctcol, message types as enumeration which includes different message used to send between the states either bus or cpu call, finally the message type.
+*  define types such as processor states using enumeration which represents all the states in Futurebus+ proctcol, message types as enumeration which includes different message used to send between the states either bus or cpu call, finally define the message type.
 
 ```c
 type
@@ -682,11 +682,11 @@ Rules Information:
 In the  [next post](https://amutheezan.com/computer%20architecture/2021/05/30/fixfuturebus+.html), I will write about how to apply a simple fix for Futurebus+ protocol  to avoid multiple processers get into exclusive state. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNjgwMjc0LDE4Njk5NDU2NDgsNjE3Nj
-Q4NTEsNjE3NjQ4NTEsODA0NDQ1OTksLTE3MTU1ODcwNTcsLTQ1
-MjYyNDk0NSwtMTQ0MjY1MjE0MiwxNDg5MjYwOTg2LDE0MTM5Mz
-AwNDMsLTYwNzgwMjQwNiwxMDY0OTI2NDI1LDU0NjkxMzA4LC0x
-NzMzNzQwNDg0LC0xMTY2NTkzNTM5LDE1MjcwOTQzNDUsLTE0Nj
-IyODQ0MjUsMTIzMTk5MzYwOSwtMTY1NTYxMjk3NywtODE4NjAz
-NTU5XX0=
+eyJoaXN0b3J5IjpbLTk2NTI4MTM4OSwxODY5OTQ1NjQ4LDYxNz
+Y0ODUxLDYxNzY0ODUxLDgwNDQ0NTk5LC0xNzE1NTg3MDU3LC00
+NTI2MjQ5NDUsLTE0NDI2NTIxNDIsMTQ4OTI2MDk4NiwxNDEzOT
+MwMDQzLC02MDc4MDI0MDYsMTA2NDkyNjQyNSw1NDY5MTMwOCwt
+MTczMzc0MDQ4NCwtMTE2NjU5MzUzOSwxNTI3MDk0MzQ1LC0xND
+YyMjg0NDI1LDEyMzE5OTM2MDksLTE2NTU2MTI5NzcsLTgxODYw
+MzU1OV19
 -->
