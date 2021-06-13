@@ -13,7 +13,7 @@ date: 2017-12-16
 <strong> Disclaimer !!! </strong>
 <br>
 
-This is a short descriptive post based on our project done for CS4262 Module, Distributed Systems. These particular wordings are my own words and thus it doesn't be exact same of what I have submitted as final report to the course assignment .
+This is a short descriptive post based on our project done for CS4262 Module, Distributed Systems at the University of Moratuwa. These particular wordings are my own words and thus it doesn't be exact same of what I have submitted as final report to the course assignment .
 </p>
 
 ### Introduction![](https://lh5.googleusercontent.com/rrB9txWqf-1HsZCH8Oq2kbjJAN-DfM5JLWw8b2s2yHPjRTn-uHt6mM4xkLq6MOc2nNM3i4jL3NjKHJACjTdh-nuOzfglTbvzpqNZctqxfZ1m8F8c1jz0L4A1HV7fiOmasMVeyPO0)
@@ -79,6 +79,6 @@ We tried 50 sample queries in three selected nodes and get the minimum, maximum,
 
 Hope you enjoy this post
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTM3MzIwNTUsOTMzODAzMjQ2LDY3Nj
-k0NDEzXX0=
+eyJoaXN0b3J5IjpbNTQ1NTk5MDAwLDkzMzgwMzI0Niw2NzY5ND
+QxM119
 -->
