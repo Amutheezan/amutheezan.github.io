@@ -33,11 +33,17 @@ s = sorted(a, key=lambda x : (x[2],x[1]), reverse=True); i = sorted(a, key = ope
 
 Out of these, one will return the result quickly for a 5D Array with a size of around 20,000 ???
 
-#### ANSWER
+<p class="message" style="color:black; background-color:#ADD8E6;border-color:brown;border-style:solid">
+<strong> ANSWER </strong>
+<br>
 
 These three implementations are simply equal and have the same overhead of doing the sorting. Thus, it takes the same amount of time. So these three options are equally replaceable with othe
+</p>
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ0OTgyMzQyLDk1MzYwMzMzNSwxMjQxMD
-k0MDU4LDM5MjQwODAxMiwtMjA2MTE2NTI5MSw5NDA5MDQxMDIs
-LTQwMDI0NjI5LDgyNzQ4NzQ1OCwtNDAwMjQ2MjldfQ==
+eyJoaXN0b3J5IjpbLTM4MTAzOTIxNSw3NDQ5ODIzNDIsOTUzNj
+AzMzM1LDEyNDEwOTQwNTgsMzkyNDA4MDEyLC0yMDYxMTY1Mjkx
+LDk0MDkwNDEwMiwtNDAwMjQ2MjksODI3NDg3NDU4LC00MDAyND
+YyOV19
 -->
