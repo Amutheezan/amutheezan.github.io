@@ -50,7 +50,7 @@ const
 	value_count: 1;
 ```
 
-*  define types such as processor states (```ProcState```) using enumeration which represents all the states in Futurebus+ protocol, message types (```MessageType```) as enumeration which includes different message used to send between the states either bus or cpu call, finally define the ```Message``` type.
+*  define types such as processor states (```ProcState```) using enumeration which represents all the states in Futurebus+ protocol, message types (```MessageType```) as enumeration which includes different message used to send between the states either bus or cpu call, finally define the message type (```Message```) .
 
 ```c
 type
@@ -682,11 +682,11 @@ Rules Information:
 In the  [next post](https://amutheezan.com/computer%20architecture/2021/05/30/fixfuturebus+.html), I will write about how to apply a simple fix for Futurebus+ protocol  to avoid multiple processers get into exclusive state. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MjQ3ODY4NSwxODY5OTQ1NjQ4LDYxNz
-Y0ODUxLDYxNzY0ODUxLDgwNDQ0NTk5LC0xNzE1NTg3MDU3LC00
-NTI2MjQ5NDUsLTE0NDI2NTIxNDIsMTQ4OTI2MDk4NiwxNDEzOT
-MwMDQzLC02MDc4MDI0MDYsMTA2NDkyNjQyNSw1NDY5MTMwOCwt
-MTczMzc0MDQ4NCwtMTE2NjU5MzUzOSwxNTI3MDk0MzQ1LC0xND
-YyMjg0NDI1LDEyMzE5OTM2MDksLTE2NTU2MTI5NzcsLTgxODYw
-MzU1OV19
+eyJoaXN0b3J5IjpbLTEwMDM3OTI4ODUsMTE4MjQ3ODY4NSwxOD
+Y5OTQ1NjQ4LDYxNzY0ODUxLDYxNzY0ODUxLDgwNDQ0NTk5LC0x
+NzE1NTg3MDU3LC00NTI2MjQ5NDUsLTE0NDI2NTIxNDIsMTQ4OT
+I2MDk4NiwxNDEzOTMwMDQzLC02MDc4MDI0MDYsMTA2NDkyNjQy
+NSw1NDY5MTMwOCwtMTczMzc0MDQ4NCwtMTE2NjU5MzUzOSwxNT
+I3MDk0MzQ1LC0xNDYyMjg0NDI1LDEyMzE5OTM2MDksLTE2NTU2
+MTI5NzddfQ==
 -->
