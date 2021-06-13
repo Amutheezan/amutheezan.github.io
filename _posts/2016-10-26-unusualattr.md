@@ -10,8 +10,9 @@ last_modified_at: 2016-11-08
 
 ---
 
-<p class="message" style="color:; background-color:#DB210;border-color:brown;border-style:d">
-<strong> !!! </strong>
+<p class="message" style="color:black; background-color:#DBA210;border-color:brown;border-style:solid">
+<strong> Disclaimer !!! </strong>
+<br>
 <br>
 
 This content is based on the issue I faced while doing analyzing with Arbitrary attribute of HL7. It is common for cases where arbitrary attributes are similar to the case of HL7
@@ -30,8 +31,8 @@ operation_name, message_direction, status];
 ```
 To resolve this error we need to add ```**`**``` this while doing **COUNT** or **SELECT** or **INSERT** query (not essentially require for **CREATE** schema) in spark.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNjkxMzM0MiwtNTM1ODg5NjUyLC0xNz
-Y5MzU2MTE3LC0xOTA2MzkwMDg4LC05MTE1NjY5MTIsLTkwOTEx
-ODQxNCwyMTAwMDI4NTQwLC03ODg3MzY4MTMsMjEwMDAyODU0MC
-wtNzg4NzM2ODEzLDIxMDAwMjg1NDBdfQ==
+eyJoaXN0b3J5IjpbLTk5MTIyNDI0MCwtNTE2OTEzMzQyLC01Mz
+U4ODk2NTIsLTE3NjkzNTYxMTcsLTE5MDYzOTAwODgsLTkxMTU2
+NjkxMiwtOTA5MTE4NDE0LDIxMDAwMjg1NDAsLTc4ODczNjgxMy
+wyMTAwMDI4NTQwLC03ODg3MzY4MTMsMjEwMDAyODU0MF19
 -->
