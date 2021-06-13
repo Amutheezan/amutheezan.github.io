@@ -13,9 +13,43 @@ date: 2017-12-16
 <strong> Disclaimer !!! </strong>
 <br>
 
-This is a short descriptive post based on our project done for CS4642 Module, Distributed Systems. These particular wordings are my own words and thus it doesn't be exact same of what I have submitted as final report to the course assignment :relaxed:.
+This is a short descriptive post based on our project done for CS4262 Module, Distributed Systems. These particular wordings are my own words and thus it doesn't be exact same of what I have submitted as final report to the course assignment :relaxed:.
 </p>
 
+### Introduction![](https://lh5.googleusercontent.com/rrB9txWqf-1HsZCH8Oq2kbjJAN-DfM5JLWw8b2s2yHPjRTn-uHt6mM4xkLq6MOc2nNM3i4jL3NjKHJACjTdh-nuOzfglTbvzpqNZctqxfZ1m8F8c1jz0L4A1HV7fiOmasMVeyPO0)
+
+  
+
+We establish an unstructured peer-to-peer overlay. Our overlay network structure similar to the figure. This gives us good results when the peers get killed iteratively. Each node will broadcast the search queries to all its peers. This is how the search query is propagating across the network.
+
+In this design, we need to handle the “query duplication” which is the cause to increase the message flow in the network. We avoid query duplication by introducing a UUID in addition to the existing messaging protocol for search. (UUID is a 128-bit number which is expected to produced as random, but the probability of generating the same number again is nearly equal to zero, not zero, so we used this ID for a particular search query to not asked again on the same node)
+
+  
+
+Our new protocol.
+
+```length SER UUID IP port file_name hops```
+
+  
+
+Each search query is uniquely identified UUID. Each node maintains a history of which is the search queries already arrived at that node with respect to the UUID. If an incoming search query is not in the history, then it will either find on its system or broadcast to its peers else if it already exists it will just discard the search query. This strategy prevents the duplication of the same search query as well as unwanted message flows and helps the systems to stable over message overflow of SER messages. This will considerably reduce the number of messages across the network.
+
+ 
+#### If the number of queries (Q) is much larger than the number of nodes (N) (Q >> N)
+
+  
+Since our solution is based on the broadcast of the search query to all the peers it connected when a number of queries increased each node gets more search query requests. So this will eventually increase the message count and latency for a search query resolution.
+
+So we could apply some caching methods on each node. Already searched files and their details are cached with their location in nodes. Then further searches on the same files can be obtained quickly and with negligible latency and hops. But this will raise another problem such as file collection may outdated with time. Since (N>>Q) the gain we got from broadcasting must outweigh the cost of broadcasting. So when sending the request nodes may apply a biased random walk rather than broadcast the query to all nodes. This will reduce the latency and hops considerably due to reduced message flows in all nodes with fewer amount of requests.
+
+#### If the number of nodes (N) is much larger than the number of queries (Q) (N >> Q)
+
+Since our solution broadcasts the search query to all peers and propagated in the same way to the rest of the network when the number of nodes is much higher than the number of search query messages drastically increased. This will increase the latency as well as hop count.
+
+To handle this we introduce we can introduce a limit for hops in other words time to live, thus after n number of hops, it won’t propagate. This will limit the propagation of query beyond a limit and control the number of search query messages also reduces the latency due to fewer messages per node. But has some issues on identifying files/ contents if none of the peers of peers are connected to the files having nodes to a certain level.
+
+We can apply the **super-peer**, which contains the all resources and only the super-peer can broadcast or random walk. We can also share file collection in order to have a biased random walk between super peers. This will significantly reduce the number of messages, latency, and hop count for query resolution.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2OTQ0MTNdfQ==
+eyJoaXN0b3J5IjpbLTEwNTIwNDE4OTMsNjc2OTQ0MTNdfQ==
 -->
