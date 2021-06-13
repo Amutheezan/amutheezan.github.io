@@ -448,7 +448,7 @@ startstate
   undefine send_msg;
 endstartstate;
 ```
-* invariants - define the cases which determine the correct states of the system, or checking the validity of the system. Invariants keeps unchanged.
+* invariants - define the cases which determine the correct states of the system, or checking the validity of the system. We don't need to change the invariants from initial verification, we can still use the same invariants, and check whether any of these invariants failed or not.
 
 ```c
 
@@ -663,6 +663,6 @@ Rules Information:
 
 Verification of Futurebus+ Cache Coherence Protocol can be found in [previous post](https://amutheezan.com/computer%20architecture/2021/05/30/futurebus+.html).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE4OTQxNDk3LC0yMDc3NjMzMjYwLC0xND
+eyJoaXN0b3J5IjpbNzExMTQxMDcyLC0yMDc3NjMzMjYwLC0xND
 Q1MDIwNjAwXX0=
 -->
