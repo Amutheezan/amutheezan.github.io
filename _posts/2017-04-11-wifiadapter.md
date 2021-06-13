@@ -39,9 +39,9 @@ sudo apt-get install rtl8192eu-dkms
 
 ### **References**
 
-1. [ http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting]( http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting)
+1.[http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting]( http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM4MzkwMjQyLDExNDkxMDEyMTksNjg0OT
+eyJoaXN0b3J5IjpbNzc4NDcxMzcyLDExNDkxMDEyMTksNjg0OT
 EyMzEwLDk5NzU2OTY4NiwxMDQ2MDk2NTIsODAwNTY0NzYzLDIw
 MjM2MzcyODQsODAwNTY0NzYzLDIwMjM2MzcyODQsODAwNTY0Nz
 YzLC0xNjE1MTEwNDE0LC03NjI0NTQ3MTEsLTE2MTUxMTA0MTRd
