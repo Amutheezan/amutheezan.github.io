@@ -55,9 +55,10 @@ This was a simple example of down-counter counts from 8 till 3 and notify 1 when
      3. For test bench to make the connection between test and counter
 
 
-This was a quite initiative way to provide some examples of Verilog and give some basic understanding. This is strictly for beginners. Checkout my Github Repo on [Verilog Examples](https://amutheezan.com/verilogBasics/).
+This was a quite initiative way to provide some examples of Verilog and give some basic understanding. This is strictly for beginners. Checkout my Github Repo on [Verilog Examples.
+[https://amutheezan.com/verilogBasics/](https://amutheezan.com/verilogBasics/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NDc3NzcyNCwxODc1ODgyMzYxLDI5Mj
-gwNzY3NywtODA4MDg4OTM1LDI5MjgwNzY3NywtODA4MDg4OTM1
-LDI5MjgwNzY3N119
+eyJoaXN0b3J5IjpbMTYzOTc2ODk4NiwxMjg0Nzc3NzI0LDE4Nz
+U4ODIzNjEsMjkyODA3Njc3LC04MDgwODg5MzUsMjkyODA3Njc3
+LC04MDgwODg5MzUsMjkyODA3Njc3XX0=
 -->
