@@ -13,7 +13,7 @@ last_modified_at: 2016-11-08
 <p class="message" style="color:black; background-color:#DBA210;border-color:brown;border-style:solid">
 <strong> Disclaimer !!! </strong>
 <br>
-<br>
+<br>#### Disclaimer
 
 This content is based on the issue I faced while doing analyzing with Arbitrary attribute of HL7. It is common for cases where arbitrary attributes are similar to the case of HL7
 </p>
@@ -31,8 +31,9 @@ operation_name, message_direction, status];
 ```
 To resolve this error we need to add ```**`**``` this while doing **COUNT** or **SELECT** or **INSERT** query (not essentially require for **CREATE** schema) in spark.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MTIyNDI0MCwtNTE2OTEzMzQyLC01Mz
-U4ODk2NTIsLTE3NjkzNTYxMTcsLTE5MDYzOTAwODgsLTkxMTU2
-NjkxMiwtOTA5MTE4NDE0LDIxMDAwMjg1NDAsLTc4ODczNjgxMy
-wyMTAwMDI4NTQwLC03ODg3MzY4MTMsMjEwMDAyODU0MF19
+eyJoaXN0b3J5IjpbLTU3MDU2MDc5MywtOTkxMjI0MjQwLC01MT
+Y5MTMzNDIsLTUzNTg4OTY1MiwtMTc2OTM1NjExNywtMTkwNjM5
+MDA4OCwtOTExNTY2OTEyLC05MDkxMTg0MTQsMjEwMDAyODU0MC
+wtNzg4NzM2ODEzLDIxMDAwMjg1NDAsLTc4ODczNjgxMywyMTAw
+MDI4NTQwXX0=
 -->
