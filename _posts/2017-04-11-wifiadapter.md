@@ -12,7 +12,7 @@ date: 2017-04-11
 <p class="message" style="color:black; background-color:#DBA210;border-color:brown;border-style:solid">
 <strong> Disclaimer !!! </strong>
 <br>
-<br>#### Disclaimer
+<br>
 
 These code blocks are obtained from [Stackoverflow](https://stackoverflow.com), this particular blog post to emphasize a little bit more from the issues related to that.
 
@@ -40,11 +40,4 @@ sudo apt-get install rtl8192eu-dkms
 
 ### **References**
 
-1.[ [ http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting]( http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NjA3MjYsOTUxMTEzNjgsLTI4OTcxNT
-c1NCwtMTg1ODExMTM0OCwxMTQ5MTAxMjE5LDY4NDkxMjMxMCw5
-OTc1Njk2ODYsMTA0NjA5NjUyLDgwMDU2NDc2MywyMDIzNjM3Mj
-g0LDgwMDU2NDc2MywyMDIzNjM3Mjg0LDgwMDU2NDc2MywtMTYx
-NTExMDQxNCwtNzYyNDU0NzExLC0xNjE1MTEwNDE0XX0=
--->
+1.[http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting](http://askubuntu.com/questions/663411/in-ubuntu-14-04-why-does-my-internet-connection-keep-disconnecting)
