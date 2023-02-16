@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Amutheezan Sivagnanam"
 title_separator          : "-"
-name                     : &name "Amutheezan Sivagnanam"
+name                     : &name "Amutheezan"
 description              : &description ""
 url                      : https://amutheezan.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Amutheezan Sivagnanam"
+  name             : "Amutheezan"
   avatar           : "display_picture.jpeg"
   bio              : ""
   location         : "State College, PA"
