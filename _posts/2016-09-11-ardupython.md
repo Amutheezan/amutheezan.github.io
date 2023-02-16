@@ -11,12 +11,7 @@ last_modified_at: 2016-09-22
 
 ---
 
-<p class="message" style="color:black; background-color:#DBA210;border-color:brown;border-style:solid">
-<strong> Disclaimer !!! </strong>
-<br>
-
 This guide is only applicable for Windows.
-</p>
 
 This article explains the steps associated with configuring ```MySQL``` for Arduino in Python.
 

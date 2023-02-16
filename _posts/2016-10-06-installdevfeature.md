@@ -9,12 +9,7 @@ tags:
 date: 2016-10-06
 ---
 
-<p class="message" style="color:black; background-color:#DBA210;border-color:brown;border-style:solid">
-<strong> Disclaimer !!! </strong>
-<br>
-
 The content did not fully belong to me, I just do some value addition to reference by explaining my project scenario with this. For clear understanding and deep learning go through references.
-</p>
 
 Carbon Features are set of Features which was developed for the support of WSO2 Products, these are installed by default or manually. For manually installing those features we need to locate the location of repositories where those features are located. There is a common location available for all repositories in [online](http://wso2.com/projects/carbon/provisioning-wso2-carbon-with-equinox-p2/), you just need to specify those repositories based on the carbon version of your product. This is for the people who want to access the features to do things.
 

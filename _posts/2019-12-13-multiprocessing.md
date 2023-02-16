@@ -10,6 +10,7 @@ date: 2019-12-13
 last_modified_at: 2020-02-07
 
 ---
+
 I have developed a basic Python Library to provide abstraction to parallel programming.
 This library is based on in built-in library ```multiprocessing``` in python and 3rd party library ```ray```.
 In this blog post I will explain in details about the implementations in addition to existing 

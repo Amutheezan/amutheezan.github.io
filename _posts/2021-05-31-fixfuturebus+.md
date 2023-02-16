@@ -8,10 +8,10 @@ tags:
 - futurebus+
 - murphi
 date: 2021-05-31
+
 ---
 
 I have implemented a simple fixing for Futurebus+ cache coherence protocol which I explained in my [previous post](https://amutheezan.com/computer%20architecture/2021/05/30/futurebus+.html).
-
 
 ### Initial Setup & Steps
 

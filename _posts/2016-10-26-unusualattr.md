@@ -10,13 +10,7 @@ last_modified_at: 2016-11-08
 
 ---
 
-<p class="message" style="color:black; background-color:#DBA210;border-color:brown;border-style:solid">
-<strong> Disclaimer !!! </strong>
-<br>
-<br>#### Disclaimer
-
 This content is based on the issue I faced while doing analyzing with Arbitrary attribute of HL7. It is common for cases where arbitrary attributes are similar to the case of HL7
-</p>
 
 When we are fetching data in WSO2 **DAS** through **ESB** from HAPI test-panel, we are also getting arbitrary attributes related to HL7 Messaging addition to existing attributes related to message flow. These arbitrary attributes are for the content of the message passed, it contains a detailed classification of each element of HL7 messages that were transmitted.
 
