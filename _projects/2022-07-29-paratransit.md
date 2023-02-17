@@ -2,7 +2,7 @@
 title: "Offline Vehicle Routing Problem with Online Bookings for Paratransit Operations"
 excerpt: ""
 collection: projects
-permalink: /projects/paratransit
+permalink: /projects/2022-07-29-paratransit
 date: 2022-07-29
 
 ---
