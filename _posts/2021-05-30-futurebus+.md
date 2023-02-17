@@ -11,7 +11,7 @@ date: 2021-05-30
 
 ---
 
-In this post, I share a simple verification for the Futurebus+ cache coherence protocol as part of an assignment for the COSC 6385 course at the University of Houston.
+In this post, I share a simple verification for the Futurebus+ cache coherence protocol as part of an assignment for the **COSC 6385** course at the University of Houston.
 
 ## Initial Setup & Steps
 
