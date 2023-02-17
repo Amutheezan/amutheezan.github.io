@@ -3,11 +3,10 @@ type: posts
 title: Which is the best multi-attribute sorting for python Array?
 author: Amutheezan Sivagnanam
 category: Tech Issues
+date: 2017-07-30
 tags:
-
 - sorting
 - python
-  date: 2017-07-30
 
 ---
 

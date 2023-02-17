@@ -3,11 +3,10 @@ type: posts
 title: Distributed Search
 author: Amutheezan Sivagnanam
 category: Distributed Systems
+date: 2017-12-16
 tags:
-
 - distributedsystems
 - clusters
-  date: 2017-12-16
 
 ---
 

@@ -3,11 +3,10 @@ type: posts
 title: Updating Driver for Wifi Adapter in Ubuntu
 author: Amutheezan Sivagnanam
 category: Tech Issues
+date: 2017-04-11
 tags:
-
 - ubuntu
 - wifiadapter
-  date: 2017-04-11
 
 ---
 

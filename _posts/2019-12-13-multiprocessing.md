@@ -3,12 +3,11 @@ type: posts
 title: Python Multi Processing
 author: Amutheezan Sivagnanam
 category: Computer Architecture
+date: 2019-12-13
+last_modified_at: 2020-02-07
 tags:
-
 - parallelsystems
 - multiprocessing
-  date: 2019-12-13
-  last_modified_at: 2020-02-07
 
 ---
 

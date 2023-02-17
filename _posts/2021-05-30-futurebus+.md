@@ -3,12 +3,11 @@ type: posts
 title: Verification of Futurebus+ Cache Coherence Protocol
 author: Amutheezan Sivagnanam
 category: Computer Architecture
+date: 2021-05-30
 tags:
-
 - architecture
 - futurebus+
 - murphi
-  date: 2021-05-30
 
 ---
 
