@@ -25,6 +25,7 @@
 
   footer {
     @include clearfix;
+    background-color: #3b5998;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
@@ -37,10 +38,12 @@
   }
 
   a {
+    background-color: #3b5998;
     color: inherit;
     text-decoration: none;
 
     &:hover {
+      background-color: #3b5998;
       text-decoration: underline;
     }
   }
@@ -49,11 +52,13 @@
   .fab,
   .far,
   .fal {
+    background-color: #3b5998;
     color: mix(#fff, $white, 25%);
   }
 }
 
 .page__footer-copyright {
+  background-color: #3b5998;
   font-family: $global-font-family;
   font-size: $type-size-7;
 }
