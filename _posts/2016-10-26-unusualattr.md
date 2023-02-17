@@ -3,11 +3,10 @@ type: posts
 title: Unusual Arbitrary Attribute
 author: Amutheezan Sivagnanam
 category: Internship
+date: 2016-10-26
+last_modified_at: 2016-11-08
 tags:
-
 - unusual attribute
-  date: 2016-10-26
-  last_modified_at: 2016-11-08
 
 ---
 

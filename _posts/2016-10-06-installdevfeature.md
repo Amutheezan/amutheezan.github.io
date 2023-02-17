@@ -2,12 +2,11 @@
 type: posts
 title: Installing a Developing Feature
 author: Amutheezan Sivagnanam
-category: Internship
+category: Internship  
+date: 2016-10-06
 tags:
-
 - wso2
 - devfeature
-  date: 2016-10-06
 
 ---
 
