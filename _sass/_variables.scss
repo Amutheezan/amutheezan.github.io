@@ -59,6 +59,8 @@ $darker-blue                : mix(#000, $blue, 60%);
 $light-blue                 : mix(#fff, $blue, 50%);
 $lighter-blue               : mix(#fff, $blue, 90%);
 
+$white                       : #fff;
+
 $body-color                 : #dde3f3;
 $background-color           : #d8d9ef;
 $code-background-color      : #d6d8ec;
@@ -68,6 +70,7 @@ $border-color               : $lighter-gray;
 
 $primary-color              : #7a8288;
 $blue-color                 : $blue;
+$white-color                 : $white;
 $success-color              : #45b245;
 $warning-color              : #f89406;
 $danger-color               : #c50629;
@@ -104,7 +107,8 @@ $masthead-link-color        : $primary-color;
 $masthead-link-color-hover  : mix(#000, $primary-color, 25%);
 $masthead-link-blue-color   : $blue-color;
 $masthead-link-blue-color-hover  : mix(#000, $blue-color, 25%);
-
+$masthead-link-white-color   : $white-color;
+$masthead-link-white-color-hover  : mix(#000, $white-color, 25%);
 /*
    Breakpoints
    ========================================================================== */
