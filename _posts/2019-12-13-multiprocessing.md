@@ -4,16 +4,17 @@ title: Python Multi Processing
 author: Amutheezan Sivagnanam
 category: Computer Architecture
 tags:
+
 - parallelsystems
 - multiprocessing
-date: 2019-12-13
-last_modified_at: 2020-02-07
+  date: 2019-12-13
+  last_modified_at: 2020-02-07
 
 ---
 
 I have developed a basic Python Library to provide abstraction to parallel programming.
 This library is based on in built-in library ```multiprocessing``` in python and 3rd party library ```ray```.
-In this blog post I will explain in details about the implementations in addition to existing 
+In this blog post I will explain in details about the implementations in addition to existing
 documentations.
 
 **CustomMP** is the abstraction of ```multiprocessing``` library with a ```SharedList```.
@@ -35,7 +36,8 @@ cmp_sys.add_proc(func=child_func, args=(args,))
 contents = cmp_sys.run()
 print(len(contents))
 ```
-    
+
 ### **References**
-   1. [https://stackoverflow.com/questions/58927768/what-is-proper-way-to-use-shared-list-in-multiprocessing](https://stackoverflow.com/questions/58927768/what-is-proper-way-to-use-shared-list-in-multiprocessing)
-   2. [https://github.com/Amutheezan/PyParallel](https://github.com/Amutheezan/PyParallel)
+
+1. [https://stackoverflow.com/questions/58927768/what-is-proper-way-to-use-shared-list-in-multiprocessing](https://stackoverflow.com/questions/58927768/what-is-proper-way-to-use-shared-list-in-multiprocessing)
+2. [https://github.com/Amutheezan/PyParallel](https://github.com/Amutheezan/PyParallel)

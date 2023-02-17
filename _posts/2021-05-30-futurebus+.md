@@ -4,49 +4,63 @@ title: Verification of Futurebus+ Cache Coherence Protocol
 author: Amutheezan Sivagnanam
 category: Computer Architecture
 tags:
+
 - architecture
 - futurebus+
 - murphi
-date: 2021-05-30
+  date: 2021-05-30
 
 ---
 
-In this post, I share a simple verification for the Futurebus+ cache coherence protocol as part of an assignment for the **COSC 6385** course at the University of Houston.
+In this post, I share a simple verification for the Futurebus+ cache coherence protocol as part of an assignment for the
+**COSC 6385** course at the University of Houston.
 
 ## Initial Setup & Steps
 
-Initially clone the [repository](https://github.com/Amutheezan/futurebus) and go to the code ```main``` directory and execute the following two command to start the docker instances (make sure docker is already installed in your computer and started; check here for installation steps of [docker](https://docs.docker.com/get-docker/).
+Initially clone the [repository](https://github.com/Amutheezan/futurebus) and go to the code ```main``` directory and
+execute the following two command to start the docker instances (make sure docker is already installed in your computer
+and started; check here for installation steps of [docker](https://docs.docker.com/get-docker/).
 
 ```docker-compose build```
 
 ```docker-compose run ubuntu bash```
 
-**Note**: the docker implementation and murphi3.1 integration obtained from the following [repository](https://github.com/adnaneGdihi/fixed_murphi3.1).
+**Note**: the docker implementation and murphi3.1 integration obtained from the
+following [repository](https://github.com/adnaneGdihi/fixed_murphi3.1).
 
 After that you will get into the bash, follow the steps shown below in the ubuntu bash,
 
-
-* First go to the directory ```Murphi3.1/src``` and compile the Murphi using ```make``` command (if it not already generated). And optionally make the executable access using the command ```chmod +x Murphi3.1/src/mu```, if you in the home directory.
-* Then go to the directory ```verification``` and obtain the C file for the Futurebus+ verification using ```./../Murphi3.1/src/mu futurebus.m``` command (if it not already generated). This will generate the C file ```futurebus.C```. 
-* Thereafter, compile the generate file using the command ```make futurebus```, this eventually generate the executable program.
+* First go to the directory ```Murphi3.1/src``` and compile the Murphi using ```make``` command (if it not already
+  generated). And optionally make the executable access using the command ```chmod +x Murphi3.1/src/mu```, if you in the
+  home directory.
+* Then go to the directory ```verification``` and obtain the C file for the Futurebus+ verification
+  using ```./../Murphi3.1/src/mu futurebus.m``` command (if it not already generated). This will generate the C
+  file ```futurebus.C```.
+* Thereafter, compile the generate file using the command ```make futurebus```, this eventually generate the executable
+  program.
 * Finally, run the executable using the following command ```./futurebus```
 
-### OR 
+### OR
+
 you can perform these entire steps by simply go to the ```verification``` directory and run the command ```sh run.sh```.
 
 ## Verification using Murphi3.1
+
 Please note that Murphi3.1 come installed with docker image so no need to worry about downloading and setting up.
 
 I structure the code as follows,
 
 * constants - to define constants such as number of processor, number of values
+
 ```c
 const
 	processor_count: 3;
 	value_count: 1;
 ```
 
-*  define types such as processor states (```ProcState```) using enumeration which represents all the states in Futurebus+ protocol, message types (```MessageType```) as enumeration which includes different message used to send between the states either bus or cpu call, finally define the message type (```Message```) .
+* define types such as processor states (```ProcState```) using enumeration which represents all the states in
+  Futurebus+ protocol, message types (```MessageType```) as enumeration which includes different message used to send
+  between the states either bus or cpu call, finally define the message type (```Message```) .
 
 ```c
 type
@@ -82,6 +96,7 @@ type
 ```
 
 * variables - the global variables represents the system.
+
 ```c
  var
 	proc_state: array[Proc] of ProcState;
@@ -91,6 +106,7 @@ type
 	more_flag: boolean;
 	send_msg: Message;
 ```
+
 * procedures - contains the function used by the verification.
 
 ```c
@@ -148,8 +164,8 @@ end;
 
 ```
 
- * ruleset - define the set of rules that can be used to model the systems.
- 
+* ruleset - define the set of rules that can be used to model the systems.
+
 ```c
 
 ruleset i: Proc do
@@ -409,7 +425,9 @@ startstate
   undefine send_msg;
 endstartstate;
 ```
-* invariants - define the cases which determine the correct states of the system, or checking the validity of the system.
+
+* invariants - define the cases which determine the correct states of the system, or checking the validity of the
+  system.
 
 ```c
 
@@ -447,8 +465,8 @@ invariant "value is undefined while invalid"
   
 ```
 
-
-Output of verification of Futurebus+ cache coherence protocol, this provides a brief summary whether any errors or issues found and other statistics.
+Output of verification of Futurebus+ cache coherence protocol, this provides a brief summary whether any errors or
+issues found and other statistics.
 
 ```
 Protocol: futurebus
@@ -491,7 +509,8 @@ Analysis of State Space:
 	please run this program with "-pr" for the rules information.
 ```
 
-Next I provides the output of error traces of Futurebus+ traces of cache coherence protocol using the command suffix ```-tv```. This provides the the reasons why the error happen (i.e two processors go to the exclusive states).
+Next I provides the output of error traces of Futurebus+ traces of cache coherence protocol using the command
+suffix ```-tv```. This provides the the reasons why the error happen (i.e two processors go to the exclusive states).
 
 ```
 Protocol: futurebus
@@ -580,7 +599,8 @@ Analysis of State Space:
 
 ```
 
-Finally, to observe what are rule fired, I obtain the output of rule firing of Futurebus+ traces of cache coherence protocol using the command suffix ```-pr```.
+Finally, to observe what are rule fired, I obtain the output of rule firing of Futurebus+ traces of cache coherence
+protocol using the command suffix ```-pr```.
 
 ```
 Protocol: futurebus
@@ -675,4 +695,5 @@ Rules Information:
 
 ```
 
-In the [next post](https://amutheezan.com/computer%20architecture/fixfuturebus+/), I will write about how to apply a simple fix for Futurebus+ protocol  to avoid multiple processers get into exclusive state. 
+In the [next post](https://amutheezan.com/computer%20architecture/fixfuturebus+/), I will write about how to apply a
+simple fix for Futurebus+ protocol to avoid multiple processers get into exclusive state. 
