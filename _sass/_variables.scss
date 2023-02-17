@@ -53,6 +53,12 @@ $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
+$blue                       : #4273e1;
+$dark-blue                  : mix(#000, $blue, 40%);
+$darker-blue                : mix(#000, $blue, 60%);
+$light-blue                 : mix(#fff, $blue, 50%);
+$lighter-blue               : mix(#fff, $blue, 90%);
+
 $body-color                 : #dde3f3;
 $background-color           : #d8d9ef;
 $code-background-color      : #d6d8ec;
@@ -61,6 +67,7 @@ $text-color                 : $dark-gray;
 $border-color               : $lighter-gray;
 
 $primary-color              : #7a8288;
+$blue-color                 : $blue;
 $success-color              : #45b245;
 $warning-color              : #f89406;
 $danger-color               : #c50629;
