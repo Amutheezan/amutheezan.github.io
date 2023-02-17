@@ -3,11 +3,10 @@ type: posts
 title: Verilog Basics
 author: Amutheezan Sivagnanam
 category: Integrated Computer Engineering
+date: 2017-04-04
+last_modified_at: 2017-07-02
 tags:
-
 - verilog
-  date: 2017-04-04
-  last_modified_at: 2017-07-02
 
 ---
 Verilog was used to resolve the complexity of handling gate-level representation. This was first released as a
