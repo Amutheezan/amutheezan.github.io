@@ -24,10 +24,3 @@ Caused by: org.apache.spark.sql.AnalysisException: cannot resolve '_MSH.MessageT
 operation_name, message_direction, status];
 ```
 To resolve this error we need to add ```**`**``` this while doing **COUNT** or **SELECT** or **INSERT** query (not essentially require for **CREATE** schema) in spark.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MDU2MDc5MywtOTkxMjI0MjQwLC01MT
-Y5MTMzNDIsLTUzNTg4OTY1MiwtMTc2OTM1NjExNywtMTkwNjM5
-MDA4OCwtOTExNTY2OTEyLC05MDkxMTg0MTQsMjEwMDAyODU0MC
-wtNzg4NzM2ODEzLDIxMDAwMjg1NDAsLTc4ODczNjgxMywyMTAw
-MDI4NTQwXX0=
--->

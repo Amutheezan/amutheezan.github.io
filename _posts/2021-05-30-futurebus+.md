@@ -675,14 +675,4 @@ Rules Information:
 
 ```
 
-In the   [next post](https://amutheezan.com/computer%20architecture/2021/05/30/fixfuturebus+.html), I will write about how to apply a simple fix for Futurebus+ protocol  to avoid multiple processers get into exclusive state. 
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDcwMDUwOTUsLTE5NjA3ODIwODIsLT
-EwMDM3OTI4ODUsMTE4MjQ3ODY4NSwxODY5OTQ1NjQ4LDYxNzY0
-ODUxLDYxNzY0ODUxLDgwNDQ0NTk5LC0xNzE1NTg3MDU3LC00NT
-I2MjQ5NDUsLTE0NDI2NTIxNDIsMTQ4OTI2MDk4NiwxNDEzOTMw
-MDQzLC02MDc4MDI0MDYsMTA2NDkyNjQyNSw1NDY5MTMwOCwtMT
-czMzc0MDQ4NCwtMTE2NjU5MzUzOSwxNTI3MDk0MzQ1LC0xNDYy
-Mjg0NDI1XX0=
--->
+In the [next post](https://amutheezan.com/computer%20architecture/fixfuturebus+/), I will write about how to apply a simple fix for Futurebus+ protocol  to avoid multiple processers get into exclusive state. 

@@ -36,9 +36,3 @@ I referred to this code in [4](https://github.com/surendharreddy/Arduino-MySQL) 
 2. [http://stackoverflow.com/questions/8491111/pyserial-for-python-2-7-2](http://stackoverflow.com/questions/8491111/pyserial-for-python-2-7-2)
 3. [http://www.instructables.com/id/Interface-Arduino-to-MySQL-using-Python/step4/Python-TIEM/](http://www.instructables.com/id/Interface-Arduino-to-MySQL-using-Python/step4/Python-TIEM/)
 4. [https://github.com/surendharreddy/Arduino-MySQL](https://github.com/surendharreddy/Arduino-MySQL)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTA3MzE0NSwzNDgzMzc3ODksLTE2Mj
-Q4NjA0OTIsLTkwNzY2NDExNCwtMTE5MTgzMzc0MiwtNDg1OTM2
-MzQ3LC0xNDk1NzU1NjcyLC0xMTAzODMwMTE4LDIwNTQwNDM1NT
-UsLTExMDM4MzAxMThdfQ==
--->

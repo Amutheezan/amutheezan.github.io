@@ -65,12 +65,7 @@ We tried 50 sample queries in three selected nodes and get the minimum, maximum,
 
 ##### REST API/WS
 
-  
-
- We tried 50 sample queries in three selected nodes and get the minimum, maximum, average, and standard deviation for hops, latency, node degree, and message per node in  in different cases (1. all nodes are running, 2. one node is gracefully departed, 3. two nodes are gracefully departed).  Nodes are using REST API such as GET/POST for communicating between them. At the end of each case we gracefully leave one node and continue with the next iteration. And we obtain the following results following results
-
-  
-
+We tried 50 sample queries in three selected nodes and get the minimum, maximum, average, and standard deviation for hops, latency, node degree, and message per node in  in different cases (1. all nodes are running, 2. one node is gracefully departed, 3. two nodes are gracefully departed).  Nodes are using REST API such as GET/POST for communicating between them. At the end of each case we gracefully leave one node and continue with the next iteration. And we obtain the following results following results
 
 ![](https://lh5.googleusercontent.com/_EivtGlQY1l_M5VQ1-FOzznshr0Pfa62CG6U2vOomRqooPltWeLjdmfHB3cVeuIPUc9cAv69W4HpfhJ7QV6uWo73NG_UI6T2ybWcvuWxcYXkrCrRkpDqywwQfuujSfdqUPxHqA-3 "Chart")![](https://lh3.googleusercontent.com/6gquXSrmCuN0EqJ8ijQTLfQDJ4QETVPVr3P-PpJPRF1PE2f8lTxiv3r1AHtVbFs00A6uNCb-_R7sPajSRwkCUofg9ltEzcD4AgYSd_aq3mAYFop3_4AsdbbbS_1Sw7KdM1wZU0Bf "Chart")![](https://lh4.googleusercontent.com/Xt181qjM3MhZd4p6hONx-BfHcSrra93kVZtP_X1lDmXP0NiH_YeqxozP7JoCmguCfpNUeWkJ8Y0Q2cf-yCtVF_gwAw9b6B48paxSLKOL5UOp5Op4-DMdy-PaFg06hnk0SHlT46J7 "Chart")![](https://lh3.googleusercontent.com/s7NTmoMgAmDIxQMza1MM8igeji7O0rTwd-bjUL31fj5mXndDAtqKdZRujbtMnQ67hh1R37oZ9F3Oj2685VzSaqmlLMKnKUkkZvFSTGYhi3r6gObfCmGybYOBeYagolEw6eiZ_Oii "Chart")
 

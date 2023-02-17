@@ -34,9 +34,3 @@ To make this accessible by desired feature installing system in Management conso
 ### **References**
 
 1.  [http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html](http://blog.kasunbg.org/2013/04/generating-wso2-p2-repo-for-features.html)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzkzNzc5MzEsLTM2Mjg0NTEzMCw3NT
-MzNDE5OTUsNzAyOTMyNzMxLDEyNDM5ODY2NjQsLTU1NzU2ODYw
-MiwtMzI1OTI4MDE3LC01NTc1Njg2MDIsLTMyNTkyODAxNywtNT
-U3NTY4NjAyXX0=
--->

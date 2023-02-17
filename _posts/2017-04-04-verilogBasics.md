@@ -9,7 +9,7 @@ date: 2017-04-04
 last_modified_at: 2017-07-02
 
 ---
-Verilog was used to resolve the complexity of handling gate-level representation. This was first released as a proprietary language in 1985 and later it becomes publically available under IEEE standards.
+Verilog was used to resolve the complexity of handling gate-level representation. This was first released as a proprietary language in 1985, and later it becomes publically available under IEEE standards.
 
 These are simple examples I have done during the practical Session for Hardware Description Language Module
 

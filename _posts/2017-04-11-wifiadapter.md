@@ -10,12 +10,11 @@ date: 2017-04-11
 
 ---
 
-These code blocks are obtained from [Stackoverflow](https://stackoverflow.com), this particular blog post to emphasize a little bit more from the issues related to that.
+These code blocks are obtained from [Stackoverflow](https://stackoverflow.com), this particular blog post to emphasize a little more from the issues related to that.
 
+Since the time I started using external Wi-Fi Adapter, the Wi-Fi connections lost even though the symbol says connected, I have looked into several suggestions but that doesn't work because I failed to figure out my exact mistake; Yesterday only I figured out mistake, those days when I installed Ubuntu 16.04 I thought it may be due to some issues related to particular version, but when I tried through try Ubuntu it is same, and Finally when I tried with Ubuntu 14.04; Thereafter I figured out the Issue is with Updating device driver :smile:.
 
-Since the time I started using external Wifi Adapter, the wifi connections lost even though the symbol says connected, I have looked into several suggestions but that doesn't work because I failed to figure out my exact mistake; Yesterday only I figured out mistake, those days when I installed Ubuntu 16.04 I thought it may be due to some issues related to particular version, but when I tried through try Ubuntu it is same, and Finally when I tried with Ubuntu 14.04; Thereafter I figured out the Issue is with Updating device driver :smile:.
-
-Check this code (Note this will work for Realtek based wifi Adapter since in the third line we can see the phrase ```rtl8192cu-dkms```. So don't try this for other cases :smile:.
+Check this code (Note this will work for Realtek based Wi-Fi Adapter since in the third line we can see the phrase ```rtl8192cu-dkms```. So don't try this for other cases :smile:.
 
 #### Ubuntu 14.04
 
