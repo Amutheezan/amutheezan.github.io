@@ -7,17 +7,17 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %} [[PDF]](files/Amutheezan_CV.pdf)
+{% include base_path %} [[PDF]](https://Amutheezan.com/files/Amutheezan_CV.pdf)
 
 Education
 ======
-* Ph.D. in Informatics, Penn State University, 2024 (expected)
-* M.S. in Computer Science, University of Houston, 2022
-* B.S. in Computer Science and Engineering, University of Moratuwa, 2018
+* Ph.D. in **Informatics**, Pennsylvania State University, 2024 (expected)
+* M.S. in **Computer Science**, The University of Houston, 2022
+* B.S. in **Computer Science and Engineering**, University of Moratuwa, 2018
 
 Work experience
 ======
-* 2019-09 - Present - Graduate Research Assistant
+* 2019/09 - Present - **Graduate Research Assistant**
   * [The University of Houston](https://www.uh.edu/), [Pennsylvania State University](https://www.psu.edu/)
   * Supervisor: [Dr. Aron Laszka](https://aronlaszka.com/)
   * Duties included: 
@@ -25,7 +25,7 @@ Work experience
     *  Implemented the algorithm and solution approaches for mathematical models.
     *  Published research works in conferences and journals.
 
-* 2018-01 - 2019-07: Software Engineer
+* 2018/01 - 2019/07: **Software Engineer**
   * [LSEG Technology (formerly MillenniumIT)](https://www.lseg.com/en)
   * Duties included: 
     * Introduced unit testing for libraries in Post Trade C++ Code.
@@ -33,7 +33,7 @@ Work experience
     * Worked on CI/CD of the Post Trade product with Python and Git. 
     * Practiced Agile-based development throughout the entire  period of work.
   
-* 2016-07 - 2016-12: Software Engineering Intern
+* 2016/07 - 2016/12: **Software Engineering Intern**
   * [WSO<sub>2</sub> Lanka PVT Limited](https://wso2.com/)
   * Duties included: 
     * Implemented alert generation mechanism, which provides email and SMS when a disease spreads wide by analyzing the

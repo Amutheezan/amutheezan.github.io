@@ -13,4 +13,4 @@ Vulnerability Reward Programs.
 
 ### Publications
 
-[[WWW-23]](https://arxiv.org/abs/2301.12092)
+This work is accepted for publication in [[WWW-23]](https://arxiv.org/abs/2301.12092).

@@ -15,8 +15,8 @@ to provide the solution with minimum vehicles.
 
 ### Publications
 
-[[IJCAI-22]](https://www.ijcai.org/proceedings/2022/0546.pdf)
+This work is published in Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence [(IJCAI-22)](https://www.ijcai.org/proceedings/2022/0546.pdf)
 
 ### Implementation
 
-[Check the Repo](https://github.com/smarttransit-ai/ijcai22)
+The implementation can be found in the following [repository](https://github.com/smarttransit-ai/ijcai22).
