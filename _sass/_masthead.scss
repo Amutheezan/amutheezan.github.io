@@ -3,6 +3,7 @@
    ========================================================================== */
 
 .masthead {
+  background-color: #3b5998;
   position: relative;
   border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
@@ -34,6 +35,7 @@
 .masthead__menu {
 
   ul {
+    background-color: #3b5998;
     margin: 0;
     padding: 0;
     clear: both;
@@ -42,11 +44,13 @@
 }
 
 .masthead__menu-item {
+  background-color: #3b5998;
   display: block;
   list-style-type: none;
   white-space: nowrap;
 
   &--lg {
+    background-color: #3b5998;
     padding-right: 2em;
     font-weight: 700;
   }
