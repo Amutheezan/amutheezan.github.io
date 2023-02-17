@@ -86,7 +86,7 @@ select {
   box-shadow: $box-shadow;
 
   &:hover {
-    border-color: mix(#fff, $primary-color, 50%);
+    border-color: mix(#fff, $blue-color, 50%);
   }
 }
 
@@ -221,7 +221,7 @@ textarea[readonly] {
 
 input:focus,
 textarea:focus {
-  border-color: $primary-color;
+  border-color: $blue-color;
   outline: 0;
   outline: thin dotted \9;
 }
