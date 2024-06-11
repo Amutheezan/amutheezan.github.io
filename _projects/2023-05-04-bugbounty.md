@@ -3,7 +3,7 @@ title: "The Benefits of Vulnerability Discovery and Bug Bounty Programs"
 excerpt: ""
 collection: projects
 permalink: /projects/bug-bounty
-date: 2023-05-04
+date: 2024-06-10
 
 ---
 ### Contributions
@@ -13,4 +13,4 @@ Vulnerability Reward Programs.
 
 ### Publications
 
-This work is accepted for publication in [[WWW-23]](https://arxiv.org/abs/2301.12092).
+This work is published for publication in [[WWW-23]](https://dl.acm.org/doi/abs/10.1145/3543507.3583352).
