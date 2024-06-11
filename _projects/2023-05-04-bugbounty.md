@@ -3,7 +3,7 @@ title: "The Benefits of Vulnerability Discovery and Bug Bounty Programs"
 excerpt: ""
 collection: projects
 permalink: /projects/bug-bounty
-date: 2024-06-10
+date: 2023-05-04
 
 ---
 ### Contributions

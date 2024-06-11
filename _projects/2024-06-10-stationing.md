@@ -3,7 +3,7 @@ title: "Emergency Responder Stationing"
 excerpt: ""
 collection: projects
 permalink: /projects/stationing
-date: 2024-07-27
+date: 2024-06-10
 
 ---
 ### Contributions
