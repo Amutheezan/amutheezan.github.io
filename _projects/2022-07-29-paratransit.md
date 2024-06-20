@@ -19,4 +19,4 @@ This work is published in Proceedings of the Thirty-First International Joint Co
 
 ### Implementation
 
-The implementation can be found in the following [repository](https://github.com/smarttransit-ai/ijcai22).
+The implementation can be found in the following [Code and Data](https://github.com/smarttransit-ai/ijcai22).
