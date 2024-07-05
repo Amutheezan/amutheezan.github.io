@@ -17,3 +17,7 @@ This work is accepted for publication in [[ICML-24]](https://openreview.net/foru
 ### Implementation
 
 Implementation and data can be found in the following [[Code and Data]](https://figshare.com/articles/dataset/Multi-Agent_Reinforcement_Learning_with_Hierarchical_Coordination_for_Emergency_Responder_Stationing_ICML-2024_Code_and_Data_/25872640)
+
+### Short Video
+
+Short video presentation is available at [[ShortVideo]](https://youtu.be/qxdSdl9XviY)
