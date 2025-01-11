@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %} [[CV]](https://Amutheezan.com/files/Amutheezan_CV_Research.pdf)
+{% include base_path %} [[Research]](https://Amutheezan.com/files/Amutheezan_CV_Research.pdf), [[Engineering]](https://Amutheezan.com/files/Amutheezan_CV_SE.pdf)
 
 Education
 ======
