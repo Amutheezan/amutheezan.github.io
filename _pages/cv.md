@@ -24,7 +24,6 @@ Artificial Intelligence, Machine Learning, Deep Reinforcement Learning, Optimiza
 Languages and Tools:
 ======
 
-
 <img align="left" alt="Python" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="padding-right:10px;" />
 
 <img align="left" alt="C++" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" style="padding-right:10px;" />
