@@ -11,9 +11,15 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in **Informatics**, Pennsylvania State University, 2024 (expected)
+* Ph.D. in **Informatics**, Pennsylvania State University, 2025 (anticipated)
 * M.S. in **Computer Science**, The University of Houston, 2022
 * B.S. in **Computer Science and Engineering**, University of Moratuwa, 2018
+
+
+Research Focus
+======
+
+Artificial Intelligence, Machine Learning, Deep Reinforcement Learning, Optimization, Operational Research
 
 Languages and Tools:
 ======
