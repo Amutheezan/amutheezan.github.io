@@ -15,6 +15,30 @@ Education
 * M.S. in **Computer Science**, The University of Houston, 2022
 * B.S. in **Computer Science and Engineering**, University of Moratuwa, 2018
 
+Languages and Tools:
+======
+
+
+<img align="left" alt="Python" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="padding-right:10px;" />
+
+<img align="left" alt="C++" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" style="padding-right:10px;" />
+
+<img align="left" alt="Java" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" style="padding-right:10px;" />
+
+<img align="left" alt="C" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" style="padding-right:10px;" />
+
+<img align="left" alt="Keras" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" style="padding-right:10px;" />
+
+<img align="left" alt="Tensorflow" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" style="padding-right:10px;" />
+
+<img align="left" alt="PyTorch" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" style="padding-right:10px;" />
+
+<img align="left" alt="Docker" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" style="padding-right:10px;" />
+
+<img align="left" alt="Git" width="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" style="padding-right:10px;" />
+
+<br><br>
+
 Work experience
 ======
 * 2019/09 - Present - **Graduate Research Assistant**
