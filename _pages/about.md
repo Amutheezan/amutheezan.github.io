@@ -12,7 +12,7 @@ Amutheezan is a Ph.D. student who joined the [Applied Artificial Intelligence La
 
 Before starting his Ph.D., he gained industry experience as a Software Engineering Intern at WSO<sub>2</sub> Lanka (PVT) Ltd, working with the Data-Analytics Team from July to December 2016. He later worked as a Software Engineer at MillenniumIT Software (PVT) Ltd, contributing to the Post-Trade Team from January 2018 to July 2019.
 
-### Interests
+### Research Interests
 * Artificial Intelligence
 * Optimization
 * Deep Reinforcement Learning
