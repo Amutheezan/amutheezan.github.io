@@ -44,16 +44,18 @@ Languages and Tools
 
 <br><br>
 
-Work experience
+Research experience
 ======
 * 2019/09 - Present - **Graduate Research Assistant**
   * [The University of Houston](https://www.uh.edu/), [Pennsylvania State University](https://www.psu.edu/)
   * Supervisor: [Dr. Aron Laszka](https://aronlaszka.com/)
   * Duties included: 
-    *  Formulated mathematical models to solve transit optimization based research problems.
-    *  Implemented the algorithm and solution approaches for mathematical models.
-    *  Published research works in conferences and journals.
+    *  Introduced novel mathematical models for combinatorial optimization problems in transit domain.
+    *  Introduced novel deep-reinforcement learning based solution approach to solve those problems.
+    *  Published research works in conferences (ICML, AAAI, IJCAI, WWW) and journals (ACM).
 
+Engineering experience
+======
 * 2018/01 - 2019/07: **Software Engineer**
   * [LSEG Technology (formerly MillenniumIT)](https://www.lseg.com/en)
   * Duties included: 
