@@ -6,6 +6,12 @@ permalink: /projects/stationing
 date: 2024-06-06
 
 ---
+![image](https://amutheezan.com/images/FullProcessImage.png)
+
+![image](https://amutheezan.com/images/LLPTraining.png)
+
+![image](https://amutheezan.com/images/HLPTraining.png)
+
 ### Contributions
 
 * Introduce DDPG based solution approach reduce the computation time to make single reallocation decision by three orders of magnitude compared to the state-of-the-art MCTS approach
