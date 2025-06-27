@@ -6,6 +6,10 @@ permalink: /projects/stationing
 date: 2024-06-06
 
 ---
+
+# Multi-Agent Reinforcement Learning with Hierarchical Coordination for Emergency Responder Stationing
+
+
 ### 📌 Key Contributions
 - We introduce a novel solution approach using **Deep Reinforcement Learning** and **Combinatorial Optimization** techniques to enable **real-time** decision-making.  
 - We use **DDPG** to train agents for performing redistribution actions (city-scale) and reallocation actions (region-scale).  
