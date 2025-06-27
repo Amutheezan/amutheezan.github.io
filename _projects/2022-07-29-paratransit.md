@@ -6,17 +6,17 @@ permalink: /projects/para-transit
 date: 2022-07-29
 
 ---
-### Contributions
+### 📌 Key Contributions
 
 * Introduced a novel mathematical formulation that helps to determine tight pickup windows, given the online day-ahead
 booking is flexible.
 * The solution approach determined the tight pickup windows using deep reinforcement learning support by anytime algorithm
 to provide the solution with minimum vehicles.
 
-### Publications
+### 📝 Publication
 
 This work is published in Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence [(IJCAI-22)](https://www.ijcai.org/proceedings/2022/0546.pdf)
 
-### Implementation
+### 💻 Code & Data
 
 The implementation and sample data can be found in the following [Code and Data](https://github.com/smarttransit-ai/ijcai22).
