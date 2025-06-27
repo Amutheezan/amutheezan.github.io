@@ -6,7 +6,7 @@ permalink: /projects/bug-bounty
 date: 2023-05-04
 
 ---
-### Contributions
+### 📌 Key Contributions
 
 * Conducted an extensive empirical analysis of vulnerability reports from the Chromium Vulnerability Reward Programs (VRPs).
 * Demonstrated that vulnerabilities in stable releases are harder to discover than those in development versions, offering evidence for the security benefits of VRPs.
