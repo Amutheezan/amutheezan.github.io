@@ -14,13 +14,13 @@ date: 2024-06-06
 - We signal the performance of high-level actions through low-level critics.  
 - Our trained **DRL** agents achieve 1000x faster decision-making while reducing response times to between 5 and 13 seconds on real-world datasets.
 
-**High-level overview of current state-of-the-art approach using hierarchial coordination**
+**High-level overview of SOTA approach using hierarchial coordination**
 ![image](https://amutheezan.com/images/FullProcessImage.png)
 
-**Our proposed DDPG based training paradigm for performing reallocation in region-level**
+**Proposed DDPG based training paradigm for performing reallocation in region-level**
 ![image](https://amutheezan.com/images/LLPTraining.png)
 
-**Our proposed DDPG based training paradigm for performing redistribution in city-level**
+**Proposed DDPG based training paradigm for performing redistribution in city-level**
 ![image](https://amutheezan.com/images/HLPTraining.png)
 
 ### 📝 Publication
