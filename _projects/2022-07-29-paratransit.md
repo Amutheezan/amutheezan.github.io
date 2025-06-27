@@ -1,5 +1,5 @@
 ---
-title: "Offline Vehicle Routing Problem with Online Bookings (Applications: Paratransit Operations)"
+title: "Offline Vehicle Routing Problem with Online Bookings"
 excerpt: ""
 collection: projects
 permalink: /projects/para-transit
