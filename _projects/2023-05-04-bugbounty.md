@@ -7,8 +7,6 @@ date: 2023-05-04
 
 ---
 
----
-
 ### 📌 Key Contributions
 
 * Conducted an extensive empirical analysis of vulnerability reports from the Chromium Vulnerability Reward Programs (VRPs).
