@@ -18,13 +18,19 @@ date: 2022-07-29
 
 * Our extensive experiments using real-world data demonstrate up to **20-40% cost reduction** compared to baseline methods with naive window assignment.
 
+---
+
 **Highlevel overview of Solution Approach**
 ![image](https://amutheezan.com/images/IJCAISolutionApproach.png)
+
+---
 
 ### 📝 Publication
 
 This research has been published in: **Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)**  
 *"Offline Vehicle Routing Problem with Online Bookings: A Novel Problem Formulation with Applications to Paratransit"* [[IJCAI22]](https://www.ijcai.org/proceedings/2022/0546.pdf)
+
+---
 
 ### 💻 Code & Data
 
