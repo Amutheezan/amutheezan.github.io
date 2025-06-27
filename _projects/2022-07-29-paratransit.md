@@ -8,15 +8,15 @@ date: 2022-07-29
 ---
 ### 📌 Key Contributions
 
-* **Novel Problem Formulation**: Introduced a new variant of the classical Vehicle Routing Problem (VRP), termed the **Offline Vehicle Routing Problem with Online Bookings (OVRP-OB)**. This formulation models the need to assign **tight pickup windows** in real time, even though the routing optimization is performed offline after all trip requests are collected.
+* Introduced a novel problem formulation **Offline Vehicle Routing Problem with Online Bookings** that tackles combine challenges of handling large number requests like Offline VRP and real-time decision-making like Dynamic VRP.
 
-* **Real-World Motivation**: The problem is inspired by operational needs in **paratransit services**, where riders book trips a day in advance but expect confirmed narrow pickup time intervals during the booking call. The model captures this hybrid setting by integrating online decisions with offline optimization.
+* The problem is inspired by operational needs in **paratransit services**, where riders book trips a day in advance but expect confirmed narrow pickup time intervals during the booking call. The model captures this hybrid setting by integrating online decisions with offline optimization.
 
-* **Reinforcement Learning-Based Decision Policy**: Developed a deep reinforcement learning (RL) approach that learns an **optimal policy** to assign tight pickup windows under uncertainty. 
+* Developed a deep reinforcement learning (RL) approach that learns an **optimal policy** to assign tight pickup windows under uncertainty. 
 
-* **Anytime Algorithm Integration**: Augmented the RL policy with an **anytime VRP solver** that runs between trip bookings, continuously improving partial route plans.
+* Augmented the RL policy with an **anytime VRP solver** that runs between trip bookings, continuously improving partial route plans.
 
-* **Substantial Performance Gains**: Extensive experiments using real-world data demonstrate up to **20-40% cost reduction** compared to baseline methods with naive window assignment.
+* Our extensive experiments using real-world data demonstrate up to **20-40% cost reduction** compared to baseline methods with naive window assignment.
 
 ### 📝 Publication
 
