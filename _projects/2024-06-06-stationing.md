@@ -6,17 +6,17 @@ permalink: /projects/stationing
 date: 2024-06-06
 
 ---
+### 📌 Key Contributions
+- **Real-time decision making:** Shifted the compute budget from decision time to planning time, achieving 1000× faster decision-making and reducing response times to between 5 and 13 seconds.  
+- Utilized **Transformer-based** actor networks to handle variable numbers of responders and depots.  
+- Mapped continuous actions *exactly* to discrete reallocations using combinatorial optimization (min-cost flow + max-weight matching), preserving gradient flow while ensuring feasibility.  
+- Signaled the performance of high-level actions through low-level critics.
+
 ![image](https://amutheezan.com/images/FullProcessImage.png)
 
 ![image](https://amutheezan.com/images/LLPTraining.png)
 
 ![image](https://amutheezan.com/images/HLPTraining.png)
-
-### 📌 Key Contributions
-- **Real-time decision making:** Moved the compute budget from decision making time to compute time and achieve 1000x faster decision making while reducing response time between 5 to 13 seconds
-- Utilize **Transformer** based actor networks to handle variable numbers of responders and depots.  
-- Continuous actions are *exactly* mapped to discrete reallocations via combinatorial optimisation (min-cost flow + max-weight matching), preserving gradient flow while ensuring feasibility
-- Signals the performance of high-level action via low-level critics
 
 ### 📝 Publication
 Published as a full paper at **ICML 2024** — *“Multi-Agent Reinforcement Learning with Hierarchical Coordination for Emergency Responder Stationing.”* [[OpenReview]](https://openreview.net/forum?id=TTZXl9WYFF)
