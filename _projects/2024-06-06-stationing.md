@@ -7,10 +7,12 @@ date: 2024-06-06
 
 ---
 ### 📌 Key Contributions
-- **Real-time decision making:** Shifted the compute budget from decision time to planning time, achieving 1000× faster decision-making and reducing response times to between 5 and 13 seconds.  
-- Utilized **Transformer-based** actor networks to handle variable numbers of responders and depots.  
-- Mapped continuous actions *exactly* to discrete reallocations using combinatorial optimization (min-cost flow + max-weight matching), preserving gradient flow while ensuring feasibility.  
-- Signaled the performance of high-level actions through low-level critics.
+- We introduce a novel solution approach using **Deep Reinforcement Learning** and **Combinatorial Optimization** techniques to enable **real-time** decision-making.  
+- We use **DDPG** to train agents for performing redistribution actions (city-scale) and reallocation actions (region-scale).  
+- We utilize a **Transformer-based** actor to handle variable numbers of responders and depots during region-level reallocation.  
+- We map continuous actions *exactly* to discrete actions using combinatorial optimization (min-cost flow + max-weight matching), preserving gradient flow while ensuring feasibility.  
+- We signal the performance of high-level actions through low-level critics.  
+- Our trained **DRL** agents achieve 1000x faster decision-making while reducing response times to between 5 and 13 seconds on real-world datasets.
 
 ![image](https://amutheezan.com/images/FullProcessImage.png)
 
