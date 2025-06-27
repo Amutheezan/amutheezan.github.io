@@ -18,6 +18,7 @@ date: 2022-07-29
 
 * Our extensive experiments using real-world data demonstrate up to **20-40% cost reduction** compared to baseline methods with naive window assignment.
 
+**Highlevel overview of Solution Approach**
 ![image](https://amutheezan.com/images/IJCAISolutionApproach.png)
 
 ### 📝 Publication
