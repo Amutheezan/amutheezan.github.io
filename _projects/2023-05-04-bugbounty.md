@@ -16,4 +16,4 @@ date: 2023-05-04
 ### 📝 Publication
 
 This work is published in the **Proceedings of the ACM Web Conference 2023 (WWW '23)**:  
-*"The Benefits of Vulnerability Discovery and Bug Bounty Programs: Case Studies of Chromium and Firefox"* - [[WWW-23]](https://dl.acm.org/doi/abs/10.1145/3543507.3583352)
+*"The Benefits of Vulnerability Discovery and Bug Bounty Programs: Case Studies of Chromium and Firefox"* [[WWW-23]](https://dl.acm.org/doi/abs/10.1145/3543507.3583352).
