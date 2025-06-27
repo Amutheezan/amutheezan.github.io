@@ -17,3 +17,6 @@ date: 2023-05-04
 
 This work is published in the **Proceedings of the ACM Web Conference 2023 (WWW '23)**:  
 *"The Benefits of Vulnerability Discovery and Bug Bounty Programs: Case Studies of Chromium and Firefox"* [[WWW-23]](https://dl.acm.org/doi/abs/10.1145/3543507.3583352).
+
+Other relavent works: The 20th Annual Workshop on the Economics of Information Security (WEIS 2021)
+*"On the benefits of bug bounty programs: A study of chromium vulnerabilities"* [[WEIS21]](https://weis2021.econinfosec.org/wp-content/uploads/sites/9/2021/06/weis21-sivagnanam.pdf)
