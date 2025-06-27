@@ -17,10 +17,10 @@ date: 2024-06-06
 **High-level overview of SOTA approach using hierarchial coordination**
 ![image](https://amutheezan.com/images/FullProcessImage.png)
 
-**Proposed DDPG based training paradigm for performing reallocation in region-level**
+**Proposed DDPG based training for performing reallocation in region-level**
 ![image](https://amutheezan.com/images/LLPTraining.png)
 
-**Proposed DDPG based training paradigm for performing redistribution in city-level**
+**Proposed DDPG based training for performing redistribution in city-level**
 ![image](https://amutheezan.com/images/HLPTraining.png)
 
 ### 📝 Publication
