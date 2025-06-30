@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in **Informatics**, Pennsylvania State University, 2025 (anticipated)
-* M.S. in **Computer Science**, The University of Houston, 2022
+* Ph.D. in **Informatics**, Pennsylvania State University, Summer 2025
+* M.S. in **Computer Science**, The University of Houston, Summer 2022
 * B.S. in **Computer Science and Engineering**, University of Moratuwa, 2018
 
 
