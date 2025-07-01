@@ -6,7 +6,6 @@ category: Computer Architecture
 date: 2019-12-13
 last_modified_at: 2020-02-07
 tags:
-- parallelsystems
 - multiprocessing
 
 ---
