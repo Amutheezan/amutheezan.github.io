@@ -7,8 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
-
-{% for post in site.projects reversed %}
-  {% include archive-completed.html %}
-{% endfor %}
-
+<div class="project-grid" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+  {% for post in site.projects reversed %}
+    <div class="project-item" style="flex: 1 1 calc(50% - 1rem); box-sizing: border-box;">
+      {% include archive-completed.html %}
+    </div>
+  {% endfor %}
+</div>
