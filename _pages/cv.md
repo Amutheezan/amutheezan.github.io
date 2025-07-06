@@ -7,7 +7,9 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %} [[Resume]](https://amutheezan.com/resume/) :  [[Academic CV]](https://amutheezan.com/files/Amutheezan_CV.pdf) : [[Research]](https://Amutheezan.com/files/Amutheezan_Resume.pdf) : [[Engineering]](https://Amutheezan.com/files/Amutheezan_CV_SE.pdf)
+{% include base_path %} [[Resume]](https://amutheezan.com/resume/) :  [[Academic CV]](https://amutheezan.com/files/Amutheezan_CV.pdf) : [[Research]](https://Amutheezan.com/files/Amutheezan_Resume.pdf)
+
+<!--- : [[Engineering]](https://Amutheezan.com/files/Amutheezan_CV_SE.pdf) --->
 
 Education
 ======
