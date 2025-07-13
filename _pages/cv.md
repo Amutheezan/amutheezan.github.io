@@ -114,7 +114,7 @@ Software Engineering Experience
 
 * 2016/07 - 2016/12: **Software Engineering Intern**
   * [WSO<sub>2</sub> Lanka PVT Limited](https://wso2.com/)
-  * Duties included: 
+  * Duties: 
     * Implemented alert generation mechanism, which provides email and SMS when a disease spreads wide by analyzing the
       description. 
     * Implemented alert generation mechanism, which could determine the functional state of hospitals (i.e., number
