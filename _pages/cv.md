@@ -21,7 +21,7 @@ Education
 Research Focus
 ======
 
-Artificial Intelligence, Machine Learning, Deep Reinforcement Learning, Optimization, Operational Research
+Reinforcement Learning, Optimization, Operational Research
 
 Tech Stack
 ======
@@ -64,26 +64,54 @@ Tech Stack
 
 <br><br>
 
-Research experience
+Research Experience
 ======
-* 2019/09 - Present - **Graduate Research Assistant**
-  * [The University of Houston](https://www.uh.edu/), [Pennsylvania State University](https://www.psu.edu/)
+* 2022/08 - 2025/05 - **Graduate Research Assistant**
+  * [Pennsylvania State University](https://www.psu.edu/)
   * Supervisor: [Dr. Aron Laszka](https://aronlaszka.com/)
-  * Duties included: 
-    *  Introduced novel mathematical models for combinatorial optimization problems in transit domain.
-    *  Introduced novel deep-reinforcement learning based solution approach to solve those problems.
-    *  Published research works in conferences (ICML, AAAI, IJCAI, WWW) and journals (ACM).
+  * Duties:
+    * Spearheaded research projects funded by the U.S. Department of Energy (DOE) and the National Science Foundation (NSF).
+    * Studied real-world decision-making problems and identified gaps in existing solution approaches.
+    * Developed mathematical models and formulated problem statements to effectively address these challenges.
+    * Applied AI-based solution approaches to real-world problems and successfully deployed them in relevant industries.
+    * Published research findings in top-tier AI conferences (AAAI, IJCAI) and assisted preparing slides for presenting results at DOE and NSF meetings.
+    * Introduced heuristics that reduced annual energy costs by $140K for public transit agencies operating mixed fleets of buses.
+    * Implemented a deep reinforcement learning approach that reduced operational costs by 20% by enabling online booking for traditionally offline Vehicle Routing Problems (VRPs).
+    * Collected and analyzed real-world data using Python to identify trends—such as changes in paratransit operations before and after COVID-19 and the impact of vulnerability reward programs.
+    
+* 2019/09 - 2022/08 - **Graduate Research Assistant**
+  * [The University of Houston](https://www.uh.edu/)
+  * Supervisor: [Dr. Aron Laszka](https://aronlaszka.com/)
+  * Duties: 
+    * Spearheaded research projects funded by the U.S. Department of Energy (DOE) and the National Science Foundation (NSF).
+    * Studied real-world decision-making problems and identified gaps in existing solution approaches.
+    * Developed mathematical models and formulated problems to address these challenges.
+    * Applied artificial intelligence–based solutions to tackle real-world problems and successfully deployed them in relevant industries.
+    * Published research findings in top-tier AI conferences (ICML) and assisted preparing slides for presenting results at DOE and NSF meetings.
+    * Developed a deep reinforcement learning (DRL) method for proactive responder repositioning in emergency management, achieving response times 1000× faster while reducing operational delays.
+    * Applied DRL to solve online vehicle routing with advance booking, enabling real-time confirmations within seconds.
 
-Engineering experience
+
+Software Engineering Experience
 ======
 * 2018/01 - 2019/07: **Software Engineer**
   * [LSEG Technology (formerly MillenniumIT)](https://www.lseg.com/en)
-  * Duties included: 
-    * Introduced unit testing for libraries in Post Trade C++ Code.
-    * Performed database changes for Post Trade products for Singapore Stock Exchange and validated with Behavior Driven Development (BDD) testing approaches using Java. 
-    * Worked on CI/CD of the Post Trade product with Python and Git. 
-    * Practiced Agile-based development throughout the entire  period of work.
-  
+  * Duties: 
+    * Writing application software in the Object-Oriented manner.
+    * Practicing agile development practices.
+    * Working experience with languages such as Java, Python, and C++
+    * Introduce Unit Testing for Libraries in Post Trade C++ Code
+    * Worked on Making changes in DB and Tested with BDD based Testing.
+    * Worked on Duplicated Error Codes Identification and Replacement with valid New Error Codes.
+    * Developed DSO for Front-End End to End Testing.
+    * Analyzed and Changed Back-End Regression Script to work with both Old and New Testing Framework
+    * Developed a New Report Generation for Testing Framework, which used to be emailed at the end of regression.
+    * Completed the Code Integration works related to Back-End Regression
+    * Updated automatic updates to auto-generated codes based on Database changes using Integration Plans.
+    * Participated in Code Integration and Code Deployment Plans.
+    * Participated in professional training programs conducted by Millennium IT Software and Post Trade Team.
+    * Worked on Front-End Development for both Product and Solution which consists of Enhancement, Bug Fixing, Merging and Introducing new features.
+
 * 2016/07 - 2016/12: **Software Engineering Intern**
   * [WSO<sub>2</sub> Lanka PVT Limited](https://wso2.com/)
   * Duties included: 
