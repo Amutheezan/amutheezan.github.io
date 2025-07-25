@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %} [[HTML]](https://amutheezan.com/resume/) :  [[CV]](https://amutheezan.com/files/Amutheezan Curriculum Vitae.pdf) : [[Resume]](https://Amutheezan.com/files/Amutheezan Resume.pdf)
+{% include base_path %} [[HTML]](https://amutheezan.com/resume/) :  [[CV]](https://amutheezan.com/files/Amutheezan%20Curriculum%20Vitae.pdf) : [[Resume]](https://Amutheezan.com/files/Amutheezan%20Resume.pdf)
 
 <!--- : [[Engineering]](https://Amutheezan.com/files/Amutheezan_CV_SE.pdf) --->
 
