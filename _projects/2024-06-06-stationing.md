@@ -9,12 +9,12 @@ citation: "Sivagnanam, A., Pettet, A., Lee, H., Mukhopadhyay, A., Dubey, A., & L
 ---
 
 ### 📌 Key Contributions
-- We introduce a novel solution approach using **Deep Reinforcement Learning** and **Combinatorial Optimization** techniques to enable **real-time** decision-making.  
-- We use **DDPG** to train agents for performing redistribution actions (city-scale) and reallocation actions (region-scale).  
-- We utilize a **Transformer-based** actor to handle variable numbers of responders and depots during region-level reallocation.  
-- We map continuous actions *exactly* to discrete actions using combinatorial optimization (min-cost flow + max-weight matching), preserving gradient flow while ensuring feasibility.  
-- We signal the performance of high-level actions through low-level critics.  
-- Our trained **DRL** agents achieve 1000x faster decision-making while reducing response times to between 5 and 13 seconds on real-world datasets.
+- Introduced a novel solution approach using **Deep Reinforcement Learning** and **Combinatorial Optimization** techniques to enable **real-time** decision-making.  
+- Used **DDPG** to train agents for performing redistribution actions (city-scale) and reallocation actions (region-scale).  
+- Utilized a **Transformer-based** actor to handle variable numbers of responders and depots during region-level reallocation.  
+- Mapped continuous actions *exactly* to discrete actions using combinatorial optimization (min-cost flow + max-weight matching), preserving gradient flow while ensuring feasibility.  
+- Signaled the performance of high-level actions through low-level critics.  
+- Trained **DRL** agents achieve 1000x faster decision-making while reducing response times to between 5 and 13 seconds on real-world datasets.
 
 ---
 
