@@ -28,7 +28,7 @@ This diagram illustrates our state-of-the-art hierarchical coordination framewor
 ### 🧠 Region-Level Reallocation via DDPG Training
 ![Region-Level Training](https://amutheezan.com/images/LLPTraining.png)
 
-We leverage DDPG to train agents that perform **region-level reallocation** of responders, enabling efficient adaptation to changing demand at a broader geographic scale.
+Leveraged DDPG to train agents that perform **region-level reallocation** of responders, enabling efficient adaptation to changing demand at a broader geographic scale.
 
 ---
 
