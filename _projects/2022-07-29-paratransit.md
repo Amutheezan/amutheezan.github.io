@@ -17,7 +17,7 @@ citation: 'Sivagnanam, A., Kadir, SU., Mukhopadhyay, A., Pugliese, P., Dubey, A.
 
 * Augmented the RL policy with an **anytime VRP solver** that runs between trip bookings, continuously improving partial route plans.
 
-* Our extensive experiments using real-world data demonstrate up to **20-40% cost reduction** compared to baseline methods with naive window assignment.
+* Extensive experiments using real-world data demonstrate up to **20-40% cost reduction** compared to baseline methods with naive window assignment.
 
 ---
 
