@@ -9,15 +9,11 @@ citation: 'Sivagnanam, A., Kadir, SU., Mukhopadhyay, A., Pugliese, P., Dubey, A.
 ---
 ### 📌 Key Contributions
 
-* Introduced a novel problem formulation **Offline Vehicle Routing Problem with Online Bookings** that tackles combine challenges of handling large number requests like Offline VRP and real-time decision-making like Dynamic VRP.
-
-* The problem is inspired by operational needs in **paratransit services**, where riders book trips a day in advance but expect confirmed narrow pickup time intervals during the booking call. The model captures this hybrid setting by integrating online decisions with offline optimization.
-
-* Developed a deep reinforcement learning (RL) approach that learns an **optimal policy** to assign tight pickup windows under uncertainty. 
-
-* Augmented the RL policy with an **anytime VRP solver** that runs between trip bookings, continuously improving partial route plans.
-
-* Extensive experiments using real-world data demonstrate up to **20-40% cost reduction** compared to baseline methods with naive window assignment.
+* Focus on a real-world paratransit operations where riders book trips in advance with time flexibility but expect tight pickup time windows at booking time
+* Introduced a novel problem formulation: the Offline Vehicle Routing Problem with Online Bookings, which blends the scalability of Offline VRP with the real-time responsiveness of Dynamic VRP
+* Developed a Deep Reinforcement Learning–based policy that learns to assign optimal time windows under demand uncertainty and booking-time constraints
+* Integrated an anytime VRP solver to incrementally refine and improve route plans between bookings, enabling better long-term efficiency
+* Achieved 20–40% cost reduction over baseline methods with naive window assignments, as demonstrated through extensive experiments on real-world paratransit of Chattanooga
 
 ---
 
