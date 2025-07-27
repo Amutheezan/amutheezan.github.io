@@ -11,11 +11,13 @@ citation_1: 'Sivagnanam, A., Atefi, S., Ayman, A., Grossklags, J., & Laszka, A. 
 
 ### 📌 Key Contributions
 
-* Conducted an extensive empirical analysis of vulnerability reports from the Chromium Vulnerability Reward Programs (VRPs).
-* Demonstrated that vulnerabilities in stable releases are harder to discover than those in development versions, offering evidence for the security benefits of VRPs.
-* Showed that bug-bounty programs complement internal expertise and provide unique benefits by capturing a broader diversity of vulnerability types.
-* Offered actionable insights for improving the effectiveness of bug-bounty programs, such as guiding bug hunters toward vulnerability types most relevant to real-world exploitation.
-
+* Collect the publicly available Chromium data set using Monorail API, Google Release Notes and Google Chrome Hall of Fame
+* Perform intensive data cleaning process to identify the original reporters, duplicates issues, and time at which the issue got patched and released to public
+* Convert the processed data into a simple relational database using SQLite with two tables to represent the Issues and Comments to the issues
+* Conducted a comprehensive empirical analysis of Chromium Vulnerability Reward Program (VRP) reports, focusing on trends across stable and development versions
+* Provided evidence that vulnerabilities in stable releases are harder to detect, validating the security impact of structured VRPs
+* Demonstrated that bug-bounty programs complement internal security teams by uncovering a diverse range of vulnerability types beyond in-house detection capabilities
+* Delivered actionable insights to enhance bug-bounty effectiveness, including targeted guidance for bug hunters toward vulnerabilities with higher real-world exploitation potential
 ---
 
 ### 📝 Publication
