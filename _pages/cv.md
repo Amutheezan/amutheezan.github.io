@@ -75,28 +75,21 @@ Research Experience
   * [Pennsylvania State University](https://www.psu.edu/)
   * Supervisor: [Dr. Aron Laszka](https://aronlaszka.com/)
   * Duties:
-    * Spearheaded research projects funded by the U.S. Department of Energy (DOE) and the National Science Foundation (NSF), leading to advancements in cost and energy-efficient technologies
-    * Studied real-world decision-making problems and identified gaps in existing solution approaches, leading to the development of innovative strategies for improved decision-making
-    * Developed mathematical models and formulated problems to address these challenges, resulting in more accurate predictions and solutions for complex issues
-    * Applied artificial intelligence–based solutions to tackle real-world problems and successfully deployed them in relevant industries
+    * Lead research projects funded by the U.S. Department of Energy (DOE) and the National Science Foundation (NSF), introducing cost- and energy-efficient solutions to tackle real-world problems
+    * Analyzed current state-of-the-art solutions and identified research gaps in existing solution approaches, leading to the development of innovative strategies for real-time decision-making
+    * Introduce novel problem formulations and mathematical models  to address these challenges, while ensuring inherent real-world constraints
+    * Proposed artificial intelligence–based solutions to tackle real-world problems and successfully deployed them in relevant industries
     * Published research findings in AI conferences (ICML) and assisted in preparing slides for presenting results at DOE and NSF meetings
-    * Developed a deep reinforcement learning (DRL) method for proactive responder repositioning in emergency management, achieving significantly faster response times while reducing operational delays
-    * Applied DRL to solve online vehicle routing with advance booking, enabling real-time confirmations within seconds
-          
-    
+
 * 2019/09 - 2022/08 - **Graduate Research Assistant**
   * [The University of Houston](https://www.uh.edu/)
   * Supervisor: [Dr. Aron Laszka](https://aronlaszka.com/)
   * Duties: 
     * Spearheaded research projects funded by the U.S. Department of Energy (DOE) and the National Science Foundation (NSF), leading to advancements in energy-efficient technologies
-    * Studied real-world decision-making problems and identified gaps in existing solution approaches, leading to the development of novel methodologies for enhanced decision-making
-    * Developed mathematical models and formulated problem statements to effectively address these challenges, resulting in more accurate predictions and solutions for complex issues
-    * Applied AI-based solution approaches to real-world problems and successfully deployed them in relevant industries
+    * Focus on understanding real-world decision-making problems and identified gaps in existing solution approaches, leading to the development of novel methodologies for enhanced decision-making 
+    * Propose novel problem formulations and mathematical models and formulated problem statements to effectively address the research limitations  in prior research efforts
+    * Applied artificial intelligence-based solution approaches to real-world problems and successfully deployed them in relevant industries
     * Published research findings in AI conferences (AAAI, IJCAI) and assisted preparing slides for presenting results at DOE and NSF meetings
-    * Introduced heuristics that reduced annual energy costs by $140K for public transit agencies operating mixed fleets of buses
-    * Implemented a deep reinforcement learning approach that reduced operational costs by 20% by enabling online booking for traditionally offline Vehicle Routing Problems (VRPs)
-    * Collected and analyzed real-world data using Python to identify trends—such as changes in paratransit operations before and after COVID-19 and the impact of vulnerability reward programs
-
 
 Software Engineering Experience
 ======
