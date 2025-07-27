@@ -11,7 +11,7 @@ redirect_from:
 
 * [Web Version](https://amutheezan.com/resume/)  
 * [Curriculum Vitae](https://amutheezan.com/files/Amutheezan%20Curriculum%20Vitae.pdf)
-* [Resume](https://Amutheezan.com/files/Amutheezan%20Resume.pdf)
+* [Resume](https://Amutheezan.com/files/AmutheezanResume.pdf)
 
 
 <!--- : [[Engineering]](https://Amutheezan.com/files/Amutheezan_CV_SE.pdf) --->
