@@ -9,12 +9,12 @@ citation: "Sivagnanam, A., Pettet, A., Lee, H., Mukhopadhyay, A., Dubey, A., & L
 ---
 
 ### 📌 Key Contributions
-- Introduced a novel solution approach using **Deep Reinforcement Learning** and **Combinatorial Optimization** techniques to enable **real-time** decision-making.  
-- Used **DDPG** to train agents for performing redistribution actions (city-scale) and reallocation actions (region-scale).  
-- Utilized a **Transformer-based** actor to handle variable numbers of responders and depots during region-level reallocation.  
-- Mapped continuous actions *exactly* to discrete actions using combinatorial optimization (min-cost flow + max-weight matching), preserving gradient flow while ensuring feasibility.  
-- Signaled the performance of high-level actions through low-level critics.  
-- Trained **DRL** agents achieve 1000x faster decision-making while reducing response times to between 5 and 13 seconds on real-world datasets.
+* Developed a novel Multi-Agent Deep Reinforcement Learning (DDPG) framework with hierarchical coordination to address the emergency responder stationing problem
+* In the hierarchical setup, DDPG agents manage city-scale redistribution (high-level) and region-scale reallocation (low-level)
+* Utilized a Transformer-based actor network to handle variable numbers of responders in region-scale reallocation
+* Ensured feasible and exact mapping from continuous to discrete actions using min-cost flow (city-level) and max-weight matching (region-level), while preserving gradient flow during training
+* Integrated low-level critics to provide reward feedback to high-level agents, enhancing training stability and performance
+* Achieved 1000× faster decision-making and reduced response delays by 5–13 seconds on real-world datasets from Nashville and Seattle
 
 ---
 
