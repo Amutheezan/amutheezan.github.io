@@ -12,3 +12,6 @@ date: 2016-12-23
 * Designed an alert system to detect disease outbreaks and long patient wait times, delivering email and SMS notifications based on HL7/FHIR data streams
 * Engineered hospital functionality assessments by analyzing admission/discharge events, tracking resources like bed and oxygen cylinder availability
 * Developed interactive dashboards with Jaggery, JavaScript, Leaflet.js, and DataTables, and packaged the solution as a WSO2 Carbon Application (CApp) for easy deployment
+
+###  💻 Code
+The source code of this work are publicly available: [CODE](https://github.com/Amutheezan/product-das/tree/master/modules/samples/capps/HL7_Monitoring)
