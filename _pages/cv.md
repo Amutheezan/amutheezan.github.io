@@ -75,26 +75,27 @@ Research Experience
   * [Pennsylvania State University](https://www.psu.edu/)
   * Supervisor: [Dr. Aron Laszka](https://aronlaszka.com/)
   * Duties:
-    * Spearheaded research projects funded by the U.S. Department of Energy (DOE) and the National Science Foundation (NSF).
-    * Studied real-world decision-making problems and identified gaps in existing solution approaches.
-    * Developed mathematical models and formulated problem statements to effectively address these challenges.
-    * Applied AI-based solution approaches to real-world problems and successfully deployed them in relevant industries.
-    * Published research findings in top-tier AI conferences (AAAI, IJCAI) and assisted preparing slides for presenting results at DOE and NSF meetings.
-    * Introduced heuristics that reduced annual energy costs by $140K for public transit agencies operating mixed fleets of buses.
-    * Implemented a deep reinforcement learning approach that reduced operational costs by 20% by enabling online booking for traditionally offline Vehicle Routing Problems (VRPs).
-    * Collected and analyzed real-world data using Python to identify trends—such as changes in paratransit operations before and after COVID-19 and the impact of vulnerability reward programs.
+    * Spearheaded research projects funded by the U.S. Department of Energy (DOE) and the National Science Foundation (NSF), leading to advancements in cost and energy-efficient technologies
+    * Studied real-world decision-making problems and identified gaps in existing solution approaches, leading to the development of innovative strategies for improved decision-making
+    * Developed mathematical models and formulated problems to address these challenges, resulting in more accurate predictions and solutions for complex issues
+    * Applied artificial intelligence–based solutions to tackle real-world problems and successfully deployed them in relevant industries
+    * Published research findings in AI conferences (ICML) and assisted in preparing slides for presenting results at DOE and NSF meetings
+    * Developed a deep reinforcement learning (DRL) method for proactive responder repositioning in emergency management, achieving significantly faster response times while reducing operational delays
+    * Applied DRL to solve online vehicle routing with advance booking, enabling real-time confirmations within seconds
+          
     
 * 2019/09 - 2022/08 - **Graduate Research Assistant**
   * [The University of Houston](https://www.uh.edu/)
   * Supervisor: [Dr. Aron Laszka](https://aronlaszka.com/)
   * Duties: 
-    * Spearheaded research projects funded by the U.S. Department of Energy (DOE) and the National Science Foundation (NSF).
-    * Studied real-world decision-making problems and identified gaps in existing solution approaches.
-    * Developed mathematical models and formulated problems to address these challenges.
-    * Applied artificial intelligence–based solutions to tackle real-world problems and successfully deployed them in relevant industries.
-    * Published research findings in top-tier AI conferences (ICML) and assisted preparing slides for presenting results at DOE and NSF meetings.
-    * Developed a deep reinforcement learning (DRL) method for proactive responder repositioning in emergency management, achieving response times 1000× faster while reducing operational delays.
-    * Applied DRL to solve online vehicle routing with advance booking, enabling real-time confirmations within seconds.
+    * Spearheaded research projects funded by the U.S. Department of Energy (DOE) and the National Science Foundation (NSF), leading to advancements in energy-efficient technologies
+    * Studied real-world decision-making problems and identified gaps in existing solution approaches, leading to the development of novel methodologies for enhanced decision-making
+    * Developed mathematical models and formulated problem statements to effectively address these challenges, resulting in more accurate predictions and solutions for complex issues
+    * Applied AI-based solution approaches to real-world problems and successfully deployed them in relevant industries
+    * Published research findings in AI conferences (AAAI, IJCAI) and assisted preparing slides for presenting results at DOE and NSF meetings
+    * Introduced heuristics that reduced annual energy costs by $140K for public transit agencies operating mixed fleets of buses
+    * Implemented a deep reinforcement learning approach that reduced operational costs by 20% by enabling online booking for traditionally offline Vehicle Routing Problems (VRPs)
+    * Collected and analyzed real-world data using Python to identify trends—such as changes in paratransit operations before and after COVID-19 and the impact of vulnerability reward programs
 
 
 Software Engineering Experience
@@ -102,28 +103,33 @@ Software Engineering Experience
 * 2018/01 - 2019/07: **Software Engineer**
   * [LSEG Technology (formerly MillenniumIT)](https://www.lseg.com/en)
   * Duties: 
-    * Writing application software in the Object-Oriented manner.
-    * Practicing agile development practices.
-    * Working experience with languages such as Java, Python, and C++
+    * Developed application software using Object-Oriented principles, enhancing code maintainability and scalability
+    * Implemented agile development practices, such as Scrum, to improve team collaboration and project delivery speed
+    * Developed software solutions using Java, Python, and C++, improving system performance and reliability
     * Introduce Unit Testing for Libraries in Post Trade C++ Code
-    * Worked on Making changes in DB and Tested with BDD based Testing.
-    * Worked on Duplicated Error Codes Identification and Replacement with valid New Error Codes.
-    * Developed DSO for Front-End End to End Testing.
-    * Analyzed and Changed Back-End Regression Script to work with both Old and New Testing Framework
-    * Developed a New Report Generation for Testing Framework, which used to be emailed at the end of regression.
-    * Completed the Code Integration works related to Back-End Regression
-    * Updated automatic updates to auto-generated codes based on Database changes using Integration Plans.
-    * Participated in Code Integration and Code Deployment Plans.
-    * Participated in professional training programs conducted by Millennium IT Software and Post Trade Team.
-    * Worked on Front-End Development for both Product and Solution which consists of Enhancement, Bug Fixing, Merging and Introducing new features.
+    * Modified database structures and tested using BDD-based testing, ensuring data integrity and system functionality
+    * Identified and replaced duplicated error codes with valid new error codes, improving system reliability
+    * Developed a dynamic scripting object (DSO) for front-end end-to-end testing using Java, enhancing test coverage and efficiency
+    * Analyzed and modified back-end regression scripts to work with both old and new testing frameworks, ensuring compatibility and reducing testing time
+    * Developed a new report generation system for the testing framework, automating email dispatch at the end of regression and improving communication efficiency
+    * Completed code integration tasks related to back-end regression, streamlining the development process and enhancing system performance
+    * Updated automatic updates to auto-generated codes based on Database changes using Integration Plans
+    * Contributed to code integration and deployment plans, ensuring seamless software updates and minimizing downtime
+    * Participated in professional training programs conducted by Millennium IT Software and Post Trade Team
+    * Worked on Front-End Development for both Product and Solution which consists of Enhancement, Bug Fixing, Merging and Introducing new features
 
 * 2016/07 - 2016/12: **Software Engineering Intern**
   * [WSO<sub>2</sub> Lanka PVT Limited](https://wso2.com/)
   * Duties: 
-    * Implemented alert generation mechanism, which provides email and SMS when a disease spreads wide by analyzing the
-      description. 
-    * Implemented alert generation mechanism, which could determine the functional state of hospitals (i.e., number
-      of beds available, number of Oxygen cylinders available) based on the admission and discharge messages.
+    * Participated in a 22-week industrial internship at WSO2 Lanka (Pvt) Ltd as a Software Engineering Intern, working primarily with the Data Analytics Server (DAS) team.
+    * Developed an HL7 Monitoring Solution by integrating WSO2 ESB, DAS, and BAM, enabling real-time and batch processing of healthcare data.
+    * Developed an alert generation system analyzing descriptive HL7/FHIR data to monitor disease outbreaks, triggering timely email and SMS notifications
+    * Engineered a mechanism to evaluate hospital functionality by assessing admission and discharge messages, including bed and oxygen cylinder availability
+    * Implemented interactive dashboards using Jaggery, JavaScript, jQuery, Leaflet.js, and DataTables, featuring gadgets like charts, maps, and tables.
+    * Created Spark scripts for batch analytics and Siddhi execution plans for real-time alerts, including disease outbreak and patient wait-time notifications.
+    * Utilized HAPI library and test panel to simulate HL7 v2 messages and validate the monitoring pipeline end-to-end.
+    * Packaged the entire monitoring solution as a Carbon Application (CApp), bundling event streams, receivers, publishers, and visualization artifacts.
+    * Attended workshops and gained hands-on experience with Git, MSF4J (Microservices for Java), and WSO2 product architecture for enterprise middleware solutions.
 
 Projects
 ======
