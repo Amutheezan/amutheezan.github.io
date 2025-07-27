@@ -9,9 +9,10 @@ redirect_from:
 
 {% include base_path %} 
 
+* [Web Version](https://amutheezan.com/resume/)  
+* [Curriculum Vitae](https://amutheezan.com/files/Amutheezan%20Curriculum%20Vitae.pdf)
+* [Resume](https://Amutheezan.com/files/Amutheezan%20Resume.pdf)
 
-| [Web](https://amutheezan.com/resume/) | [Curriculum Vitae](https://amutheezan.com/files/Amutheezan%20Curriculum%20Vitae.pdf)| [Resume](https://Amutheezan.com/files/Amutheezan%20Resume.pdf) |
-|----------|----------|----------|
 
 <!--- : [[Engineering]](https://Amutheezan.com/files/Amutheezan_CV_SE.pdf) --->
 
