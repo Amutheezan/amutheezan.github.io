@@ -7,8 +7,11 @@ redirect_from:
   - /resume
 ---
 
+{% include base_path %} 
 
-{% include base_path %} Web Version: [:page_with_curl:](https://amutheezan.com/resume/), Detailed Curriculum Vitae: [:bookmark_tabs:](https://amutheezan.com/files/Amutheezan%20Curriculum%20Vitae.pdf), Resume: [:scroll:](https://Amutheezan.com/files/Amutheezan%20Resume.pdf)
+
+| [Web](https://amutheezan.com/resume/) | [Curriculum Vitae](https://amutheezan.com/files/Amutheezan%20Curriculum%20Vitae.pdf)| [Resume](https://Amutheezan.com/files/Amutheezan%20Resume.pdf) |
+|----------|----------|----------|
 
 <!--- : [[Engineering]](https://Amutheezan.com/files/Amutheezan_CV_SE.pdf) --->
 
