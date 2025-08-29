@@ -16,3 +16,4 @@ Before his doctoral studies, he gained industry experience as a Software Enginee
 * Reinforcement Learning
 * Optimization
 * Operational Research
+* Cyber-Physical Systems
