@@ -13,33 +13,33 @@ redirect_from:
 * [Curriculum Vitae](https://amutheezan.com/files/Amutheezan%20Curriculum%20Vitae.pdf)
 * [Resume](https://Amutheezan.com/files/AmutheezanResume.pdf)
 
-# Education
+## Education
 
-## Pennsylvania State University
+### Pennsylvania State University
 **Ph.D., Informatics**  
 *Aug 2022 - Aug 2025*  
 Dissertation: *Application of Deep Reinforcement Learning to Solve Optimization Problems in Transportation Domains*
 
-## University of Houston (Transferred to Pennsylvania State University)
+### University of Houston (Transferred to Pennsylvania State University)
 **Ph.D., Computer Science**  
 *Aug 2019 - Aug 2022*
 
-## University of Houston
+### University of Houston
 **M.S., Computer Science**  
 *Aug 2019 - Aug 2022*
 
-## University of Moratuwa
+### University of Moratuwa
 **B.S. (Hons) Engineering, Computer Science and Engineering**  
 *Jan 2014 - Jan 2018*  
 Final Year Project: *Sentimental Analysis of Twitter using Semi-Supervised Approaches*
 
-# Research Interests
+## Research Interests
 - Reinforcement Learning  
 - Optimization  
 - Operations Research  
 - Cyber-Physical Systems  
 
-# Skills
+## Skills
 
 **Languages:** Python, C/C++, Java  
 **AI/ML Libraries:** PyTorch, TensorFlow, Keras, Hugging Face, Scikit-learn  
@@ -49,9 +49,9 @@ Final Year Project: *Sentimental Analysis of Twitter using Semi-Supervised Appro
 **Databases:** SQLite, MySQL, OracleDB, MongoDB  
 **Deployment & DevOps:** Git, Docker, AWS (SageMaker, EC2, Lambda, S3)  
 
-# Research Experience
+## Research Experience
 
-## Pennsylvania State University  
+### Pennsylvania State University  
 **Graduate Research Assistant, Applied Artificial Intelligence Lab**  
 *Aug 2022 - May 2025*
 
@@ -61,7 +61,7 @@ Final Year Project: *Sentimental Analysis of Twitter using Semi-Supervised Appro
 - Proposed artificial intelligence–based solutions to tackle challenging real-world problems and successfully deployed them in relevant industries.  
 - Published research findings in AI/ML conferences (ICML) and assisted in preparing slides for presenting results at DOE and NSF meetings.  
 
-## The University of Houston  
+### The University of Houston  
 **Graduate Research Assistant, Resilient Networks and Systems Lab**  
 *Sep 2019 - Aug 2022*
 
@@ -71,9 +71,9 @@ Final Year Project: *Sentimental Analysis of Twitter using Semi-Supervised Appro
 - Applied AI-based solution approaches to real-world problems and successfully deployed them in relevant industries.  
 - Published research findings in AI conferences (AAAI, IJCAI) and assisted in preparing slides for DOE and NSF presentations.  
 
-# Software Engineering Experience
+## Software Engineering Experience
 
-## LSEG Technology  
+### LSEG Technology  
 **Software Engineer, Post Trade Team**  
 *Jan 2018 - Jul 2019*
 
@@ -87,7 +87,7 @@ Final Year Project: *Sentimental Analysis of Twitter using Semi-Supervised Appro
 - Participated in professional training programs conducted by Millennium IT Software and Post Trade Team.  
 - Worked on front-end development for both product and solution, including enhancements, bug fixing, merging, and introducing new features.  
 
-## WSO2 Lanka PVT Ltd  
+### WSO2 Lanka PVT Ltd  
 **Software Engineering Intern, Data Analytics Team**  
 *Jul 2016 – Dec 2016*
 
@@ -101,26 +101,26 @@ Final Year Project: *Sentimental Analysis of Twitter using Semi-Supervised Appro
 - Attended workshops and gained hands-on experience with Git, MSF4J (Microservices for Java), and WSO2 product architecture for enterprise middleware solutions.  
 
 
-Projects
-======
+## Projects
+
   <ul>{% for post in site.projects reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Publications
-======
+## Publications
+
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-Workshops
-======
+## Workshops
+
   <ul>{% for post in site.workshops reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-Talks
-======
+## Talks
+
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
