@@ -10,8 +10,8 @@ redirect_from:
 {% include base_path %} 
 
 * [Web Version](https://amutheezan.com/resume/)  
-* [Curriculum Vitae](https://amutheezan.com/files/Amutheezan%20Curriculum%20Vitae.pdf)
-* [Resume](https://Amutheezan.com/files/AmutheezanResume.pdf)
+* [Curriculum Vitae](https://amutheezan.com/files/CurriculumVitae.pdf)
+* [Resume](https://Amutheezan.com/files/MLE_Resume.pdf)
 
 ## Education
 
