@@ -20,7 +20,9 @@ redirect_from:
 *Aug 2022 - Aug 2025*  
 Dissertation: *Application of Deep Reinforcement Learning to Solve Optimization Problems in Transportation Domains*
 
-### University of Houston (Transferred to Pennsylvania State University)
+### University of Houston 
+*(Transferred to Pennsylvania State University)*
+
 **Ph.D., Computer Science**  
 *Aug 2019 - Aug 2022*
 
