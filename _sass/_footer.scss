@@ -20,11 +20,15 @@
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  background: rgba(26, 47, 94, 0.7);
+  background: linear-gradient(
+    135deg,
+    rgba(30, 55, 120, 0.60) 0%,
+    rgba(55, 25, 110, 0.50) 100%
+  );
   backdrop-filter: blur(28px) saturate(180%);
   -webkit-backdrop-filter: blur(28px) saturate(180%);
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.18);
 
   footer {
     @include clearfix;
