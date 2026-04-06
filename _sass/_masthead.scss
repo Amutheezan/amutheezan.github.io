@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .masthead {
-  background-color: #3b5998;
+  background-color: #1a2f5e;
   position: relative;
   border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
@@ -15,7 +15,7 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    background-color: #3b5998;
+    background-color: #1a2f5e;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
 
@@ -24,12 +24,12 @@
     }
 
     nav {
-      background-color: #3b5998;
+      background-color: #1a2f5e;
       z-index: 10;
     }
 
     a {
-      background-color: #3b5998;
+      background-color: #1a2f5e;
       text-decoration: none;
     }
   }
@@ -38,7 +38,7 @@
 .masthead__menu {
 
   ul {
-    background-color: #3b5998;
+    background-color: #1a2f5e;
     margin: 0;
     padding: 0;
     clear: both;
@@ -47,13 +47,13 @@
 }
 
 .masthead__menu-item {
-  background-color: #3b5998;
+  background-color: #1a2f5e;
   display: block;
   list-style-type: none;
   white-space: nowrap;
 
   &--lg {
-    background-color: #3b5998;
+    background-color: #1a2f5e;
     padding-right: 2em;
     font-weight: 700;
   }

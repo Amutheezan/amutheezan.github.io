@@ -14,4 +14,4 @@ date: 2016-12-23
 * Developed interactive dashboards with Jaggery, JavaScript, Leaflet.js, and DataTables, and packaged the solution as a WSO2 Carbon Application (CApp) for easy deployment
 
 ###  💻 Code
-The source code of this work are publicly available: [[Code]](https://github.com/Amutheezan/product-das/tree/master/modules/samples/capps/HL7_Monitoring)
+The source code for this work is publicly available: [[Code]](https://github.com/Amutheezan/product-das/tree/master/modules/samples/capps/HL7_Monitoring)

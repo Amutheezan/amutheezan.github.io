@@ -1,5 +1,5 @@
 ---
-title: "Sentimental Analysis of Twitter using Semi-Supervised Approaches"
+title: "Sentiment Analysis of Twitter using Semi-Supervised Approaches"
 excerpt: ""
 collection: projects
 permalink: /projects/twitter
@@ -15,4 +15,4 @@ date: 2017-11-24
 
 ### 💻 Code
 
-The source code of this work are publicly available: [[Code]](https://github.com/Amutheezan/TSAwithSSL)
+The source code for this work is publicly available: [[Code]](https://github.com/Amutheezan/TSAwithSSL)

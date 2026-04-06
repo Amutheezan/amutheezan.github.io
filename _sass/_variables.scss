@@ -14,8 +14,8 @@ $indent-var                 : 1.3em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+$sans-serif                 : "Inter", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$monospace                  : "SFMono-Regular", Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
@@ -53,7 +53,7 @@ $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-$blue                       : #4273e1;
+$blue                       : #2563eb;
 $dark-blue                  : mix(#000, $blue, 40%);
 $darker-blue                : mix(#000, $blue, 60%);
 $light-blue                 : mix(#fff, $blue, 50%);
@@ -61,9 +61,9 @@ $lighter-blue               : mix(#fff, $blue, 90%);
 
 $white                       : #fff;
 
-$body-color                 : #dde3f3;
-$background-color           : #d8d9ef;
-$code-background-color      : #d6d8ec;
+$body-color                 : #ffffff;
+$background-color           : #f1f5f9;
+$code-background-color      : #e8edf8;
 $code-background-color-dark : $light-gray;
 $text-color                 : $dark-gray;
 $border-color               : $lighter-gray;
@@ -74,7 +74,7 @@ $white-color                 : $white;
 $success-color              : #45b245;
 $warning-color              : #f89406;
 $danger-color               : #c50629;
-$info-color                 : #051852;
+$info-color                 : #1e40af;
 
 /* brands */
 $behance-color              : #1769FF;

@@ -33,12 +33,12 @@ Dissertation: *Application of Deep Reinforcement Learning to Solve Optimization 
 ### University of Moratuwa
 **B.S. (Hons) Engineering, Computer Science and Engineering**  
 *Jan 2014 - Jan 2018*  
-Final Year Project: *Sentimental Analysis of Twitter using Semi-Supervised Approaches*
+Final Year Project: *Sentiment Analysis of Twitter using Semi-Supervised Approaches*
 
 ## Research Interests
 - Reinforcement Learning  
 - Optimization  
-- Operations Research  
+- Operational Research  
 - Cyber-Physical Systems  
 
 ## Skills
@@ -57,7 +57,7 @@ Final Year Project: *Sentimental Analysis of Twitter using Semi-Supervised Appro
 **Graduate Research Assistant, Applied Artificial Intelligence Lab**  
 *Aug 2022 - May 2025*
 
-- Lead research projects funded by the U.S. Department of Energy (DOE) and the National Science Foundation (NSF), introducing cost- and energy-efficient solutions to tackle real-world problems.  
+- Led research projects funded by the U.S. Department of Energy (DOE) and the National Science Foundation (NSF), introducing cost- and energy-efficient solutions to tackle real-world problems.  
 - Analyzed current state-of-the-art and identified research gaps in prior works, leading to the development of innovative algorithms for real-time decision-making.  
 - Introduced novel problem formulations and mathematical models to address real-world challenges while ensuring inherent spatio-temporal and resource constraints.  
 - Proposed artificial intelligence–based solutions to tackle challenging real-world problems and successfully deployed them in relevant industries.  
@@ -82,14 +82,14 @@ Final Year Project: *Sentimental Analysis of Twitter using Semi-Supervised Appro
 - Developed application software following object-oriented design principles, enhancing code maintainability and scalability.  
 - Followed Agile development practices (Scrum) to improve team collaboration and project delivery speed.  
 - Developed software solutions using Java, Python, and C++, improving system performance and reliability.  
-- Modified SQL queries and tested against BDD, ensuring correctness of system functionality.  
+- Modified SQL queries and validated them using behavior-driven development (BDD), ensuring correctness of system functionality.  
 - Enhanced back-end regression to achieve proper code coverage based on unit testing, ensuring compatibility and reducing testing time.  
 - Developed a report generation system to assess the state of the testing framework, automating email notifications at the end of regression.  
 - Contributed to code integration and deployment plans, ensuring seamless software updates and minimizing downtime.  
 - Participated in professional training programs conducted by Millennium IT Software and Post Trade Team.  
 - Worked on front-end development for both product and solution, including enhancements, bug fixing, merging, and introducing new features.  
 
-### WSO2 Lanka PVT Ltd  
+### WSO2 Lanka (Pvt) Ltd  
 **Software Engineering Intern, Data Analytics Team**  
 *Jul 2016 – Dec 2016*
 

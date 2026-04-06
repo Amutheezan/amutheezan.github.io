@@ -21,7 +21,7 @@ citation: "Sivagnanam, A., Pettet, A., Lee, H., Mukhopadhyay, A., Dubey, A., & L
 ### 🔍 High-Level Overview of the SOTA Approach with Hierarchical Coordination
 ![High-Level Process](https://amutheezan.com/images/FullProcessImage.png)
 
-This diagram illustrates our state-of-the-art hierarchical coordination framework that combines queuing based city-scale redistributions and MCTS based region-level reallocations of responders.
+This diagram illustrates our state-of-the-art hierarchical coordination framework that combines queuing-based city-scale redistributions and MCTS-based region-level reallocations of responders.
 
 ---
 
@@ -50,4 +50,4 @@ Reproducible code, training scripts, and Nashville & Seattle datasets: [[Code & 
 ---
 
 ### 🎥 3-Minute Overview
-Summarising the challenges, solution approach, and results: [[Short Video]](https://youtu.be/qxdSdl9XviY)
+Summarizing the challenges, solution approach, and results: [[Short Video]](https://youtu.be/qxdSdl9XviY)

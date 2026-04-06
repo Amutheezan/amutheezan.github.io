@@ -9,7 +9,7 @@ citation: 'Sivagnanam, A., Kadir, SU., Mukhopadhyay, A., Pugliese, P., Dubey, A.
 ---
 ### 📌 Key Contributions
 
-* Focus on a real-world paratransit operations where riders book trips in advance with time flexibility but expect tight pickup time windows at booking time
+* Focused on a real-world paratransit scenario where riders book trips in advance with time flexibility but expect confirmed tight pickup windows at booking time
 * Introduced a novel problem formulation: the Offline Vehicle Routing Problem with Online Bookings, which blends the scalability of Offline VRP with the real-time responsiveness of Dynamic VRP
 * Developed a Deep Reinforcement Learning–based policy that learns to assign optimal time windows under demand uncertainty and booking-time constraints
 * Integrated an anytime VRP solver to incrementally refine and improve route plans between bookings, enabling better long-term efficiency
@@ -17,7 +17,7 @@ citation: 'Sivagnanam, A., Kadir, SU., Mukhopadhyay, A., Pugliese, P., Dubey, A.
 
 ---
 
-**Highlevel overview of Solution Approach**
+**High-Level Overview of the Solution Approach**
 ![image](https://amutheezan.com/images/IJCAISolutionApproach.png)
 
 ---
