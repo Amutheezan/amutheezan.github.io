@@ -60,6 +60,13 @@ h6 {
   z-index: 9999;
 }
 
+.nav-dropdown {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  z-index: 9999;
+}
+
 small, .small {
   font-size: $type-size-6;
 }
