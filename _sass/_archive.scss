@@ -74,9 +74,28 @@
   }
 }
 
+.archive__item {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 14px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 2px 12px rgba(31, 38, 135, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
 .archive__item:hover {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 8px 30px rgba(31, 38, 135, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  transform: translateY(-2px);
+
   .archive__item-teaser {
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   }
 
   .archive__item-title {

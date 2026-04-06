@@ -18,15 +18,23 @@
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 18px;
+    padding: 1rem 0.75rem;
+    box-shadow:
+      0 4px 24px rgba(31, 38, 135, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.75);
 
     &:hover {
       opacity: 1;
     }
   }
 
-
   @include breakpoint($x-large) {
-    padding-right: 0;
+    padding-right: 0.75rem;
   }
 
   h2, h3, h4, h5, h6 {
@@ -85,11 +93,14 @@
   img {
     max-width: 175px;
     border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    box-shadow:
+      0 6px 24px rgba(31, 38, 135, 0.2),
+      0 0 0 3px rgba(255, 255, 255, 0.7),
+      0 0 0 5px rgba(37, 99, 235, 0.25);
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 2px solid $light-blue;
+      padding: 4px;
+      border: 2px solid rgba(255, 255, 255, 0.7);
     }
   }
 }
@@ -166,11 +177,15 @@
   margin-top: 15px;
   padding: 10px;
   list-style-type: none;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  background: $white-color;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
   z-index: -1;
-  box-shadow: 0 0 10px rgba(#000, 0.25);
+  box-shadow:
+    0 8px 32px rgba(31, 38, 135, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
   cursor: default;
 
   @include breakpoint($large) {

@@ -7,7 +7,12 @@
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
-  background-color: $background-color;
+  background:
+    radial-gradient(ellipse at 15% 15%, rgba(37, 99, 235, 0.22) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 85%, rgba(124, 58, 237, 0.2) 0%, transparent 55%),
+    radial-gradient(ellipse at 70% 20%, rgba(37, 99, 235, 0.12) 0%, transparent 40%),
+    linear-gradient(160deg, #dde8f8 0%, #eaeeff 40%, #f0e8ff 70%, #dde8f8 100%);
+  background-attachment: fixed;
   font-size: 16px;
 
   @include breakpoint($medium) {

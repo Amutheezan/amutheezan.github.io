@@ -10,20 +10,32 @@
   /* default button */
   display: inline-block;
   margin-bottom: 0.25em;
-  padding: 0.5em 1em;
+  padding: 0.5em 1.1em;
   color: #fff !important;
   font-family: $sans-serif;
   font-size: $type-size-6;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
   text-decoration: none;
-  background-color: $blue-color;
-  border: 0 !important;
-  border-radius: $border-radius;
+  background: rgba(37, 99, 235, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  border-radius: 10px;
   cursor: pointer;
+  box-shadow:
+    0 4px 15px rgba(37, 99, 235, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.01em;
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
 
   &:hover {
-    background-color: mix(white, $blue-color, 20%);
+    background: rgba(37, 99, 235, 0.95);
+    box-shadow:
+      0 6px 20px rgba(37, 99, 235, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
   }
 
   .icon {
@@ -49,12 +61,16 @@
 
   &--inverse {
     color: $blue !important;
-    border: 1px solid $light-blue !important; /* override*/
-    background-color: #fff;
+    border: 1px solid rgba(37, 99, 235, 0.35) !important;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(37, 99, 235, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
 
     &:hover {
       color: #fff !important;
-      border-color: $blue;
+      background: rgba(37, 99, 235, 0.85);
+      border-color: transparent !important;
     }
   }
 
