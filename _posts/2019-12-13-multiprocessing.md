@@ -1,6 +1,6 @@
 ---
 type: posts
-title: Python Multi Processing
+title: Python Multiprocessing
 author: Amutheezan Sivagnanam
 category: Computer Architecture
 date: 2019-12-13
@@ -10,19 +10,19 @@ tags:
 
 ---
 
-I have developed a basic Python Library to provide abstraction to parallel programming.
-This library is based on in built-in library ```multiprocessing``` in python and 3rd party library ```ray```.
-In this blog post I will explain in details about the implementations in addition to existing
-documentations.
+I have developed a basic Python library to provide abstraction for parallel programming.
+This library is based on the built-in ```multiprocessing``` library in Python and the third-party library ```ray```.
+In this blog post, I will explain in detail the implementations in addition to the existing
+documentation.
 
-**CustomMP** is the abstraction of ```multiprocessing``` library with a ```SharedList```.
-```SharedList``` is a generalization of commonly used ```Manager```, pair of ```Queue```
-to keep track of task and results. ```SharedList``` implementation take care of this,
-thus avoid redundant implementation of same ```multiprocessing``` structure each and
-every time of implementation. Motivation for this implementation is based on the discussion I
-had in stackoverflow regarding proper way to implement ```SharedList```.
+**CustomMP** is an abstraction of the ```multiprocessing``` library with a ```SharedList```.
+```SharedList``` is a generalization of the commonly used ```Manager``` and ```Queue``` pair
+used to keep track of tasks and results. The ```SharedList``` implementation handles this,
+avoiding redundant re-implementation of the same ```multiprocessing``` structure each
+time it is used. The motivation for this implementation is based on a discussion I
+had on Stack Overflow regarding the proper way to implement a ```SharedList```.
 
-Sample Use Case of **CustomMP**
+Sample use case of **CustomMP**:
 
 ```python
 from pyparallel.CustomMP import CMPSystem
