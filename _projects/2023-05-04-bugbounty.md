@@ -18,6 +18,7 @@ citation_1: 'Sivagnanam, A., Atefi, S., Ayman, A., Grossklags, J., & Laszka, A. 
 * Provided evidence that vulnerabilities in stable releases are harder to detect, validating the security impact of structured VRPs
 * Demonstrated that bug-bounty programs complement internal security teams by uncovering a diverse range of vulnerability types beyond in-house detection capabilities
 * Delivered actionable insights to enhance bug-bounty effectiveness, including targeted guidance for bug hunters toward vulnerabilities with higher real-world exploitation potential
+
 ---
 
 ### 📝 Publication
