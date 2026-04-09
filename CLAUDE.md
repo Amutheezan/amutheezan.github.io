@@ -4,7 +4,7 @@ This is the personal academic portfolio website for Amutheezan Sivagnanam, a Pos
 
 ---
 
-## Technology Stack
+## Technology Stacks
 
 - **Static site generator:** Jekyll (via the `github-pages` gem)
 - **Theme:** Minimal Mistakes (v3.4.2, vendored in-repo)
