@@ -265,6 +265,14 @@ html[data-theme="dark"] {
    so the toggle always uses light/white colours for visibility.
    ========================================================================== */
 
+/* The toggle <li> container — neutralise the table-cell link styling */
+.masthead__menu-item--toggle {
+  padding: 0 0.25rem;
+
+  /* suppress the underline the archive puts on <a> inside nav */
+  a { text-decoration: none; }
+}
+
 .dark-mode-toggle {
   display: inline-flex;
   align-items: center;
@@ -272,7 +280,7 @@ html[data-theme="dark"] {
   width: 2rem;
   height: 2rem;
   padding: 0;
-  margin-left: 0.75rem;
+  margin: 0;
   border: 1px solid rgba(255, 255, 255, 0.30);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.12);
@@ -282,7 +290,6 @@ html[data-theme="dark"] {
   line-height: 1;
   transition: background 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   vertical-align: middle;
-  flex-shrink: 0;
 
   &:hover {
     background: rgba(255, 255, 255, 0.22);
