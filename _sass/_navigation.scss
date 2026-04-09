@@ -183,7 +183,8 @@
 
 .greedy-nav {
   position: relative;
-  min-width: 250px;
+  flex: 1 1 auto;
+  min-width: 0;
   background: transparent;
 
   a {
@@ -200,7 +201,7 @@
     }
   }
 
-  button {
+  .greedy-nav__toggle-btn {
     position: absolute;
     height: 100%;
     right: 0;

@@ -229,21 +229,33 @@ html[data-theme="dark"] {
     color: #60a5fa;
   }
 
-  /* --- Dark mode toggle button --- */
-  .dark-mode-toggle {
-    color: rgba(255, 255, 255, 0.85);
-    border-color: rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.08);
+  /* --- Archive / publication cards --- */
+  .archive__item {
+    background: rgba(20, 35, 85, 0.60);
+    border-color: rgba(255, 255, 255, 0.10);
+    box-shadow:
+      0 2px 12px rgba(0, 0, 0, 0.35),
+      inset 0 1px 0 rgba(255, 255, 255, 0.07);
 
     &:hover {
-      background: rgba(255, 255, 255, 0.15);
-      color: #ffffff;
+      background: rgba(25, 45, 105, 0.78);
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      transform: translateY(-2px);
     }
+  }
+
+  .archive__item-title a {
+    color: #93c5fd;
+    &:hover { color: #bfdbfe; }
   }
 }
 
 /* ==========================================================================
-   DARK MODE TOGGLE BUTTON (shared light + dark styles)
+   DARK MODE TOGGLE BUTTON
+   The masthead is always a dark gradient (both light and dark page modes),
+   so the toggle always uses light/white colours for visibility.
    ========================================================================== */
 
 .dark-mode-toggle {
@@ -254,10 +266,10 @@ html[data-theme="dark"] {
   height: 2rem;
   padding: 0;
   margin-left: 0.75rem;
-  border: 1px solid rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.30);
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.06);
-  color: rgba(0, 0, 0, 0.65);
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.90);
   cursor: pointer;
   font-size: 0.85rem;
   line-height: 1;
@@ -266,21 +278,22 @@ html[data-theme="dark"] {
   flex-shrink: 0;
 
   &:hover {
-    background: rgba(0, 0, 0, 0.12);
-    color: rgba(0, 0, 0, 0.90);
+    background: rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.50);
   }
 
   &:focus {
-    outline: 2px solid rgba(37, 99, 235, 0.6);
+    outline: 2px solid rgba(255, 255, 255, 0.55);
     outline-offset: 2px;
   }
 
-  /* Icon swap handled via JS adding/removing .is-dark on <html> */
+  /* Show moon in light mode (click to go dark) */
   .icon-sun  { display: none; }
   .icon-moon { display: inline; }
 }
 
-/* In dark mode, show sun (to switch back to light) */
+/* In dark mode, show sun (click to go back to light) */
 html[data-theme="dark"] .dark-mode-toggle {
   .icon-sun  { display: inline; }
   .icon-moon { display: none; }
