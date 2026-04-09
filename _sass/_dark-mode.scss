@@ -32,13 +32,20 @@ html[data-theme="dark"] {
     }
   }
 
-  /* Author URL dropdown (mobile pop-up) */
+  /* Author URL dropdown — dark mobile pop-up only */
   .author__urls {
     background: rgba(15, 28, 65, 0.92);
     border-color: rgba(255, 255, 255, 0.15);
     box-shadow:
       0 8px 32px rgba(0, 0, 0, 0.5),
       inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    /* Desktop sidebar: remove the box entirely */
+    @include breakpoint($large) {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+    }
 
     &:after {
       border-color: rgba(15, 28, 65, 0.92) transparent;
