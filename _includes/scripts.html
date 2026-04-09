@@ -1,4 +1,22 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<!-- Dark / Light mode toggle -->
+<script>
+(function () {
+  var toggle = document.getElementById('dark-mode-toggle');
+  if (!toggle) return;
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    try { localStorage.setItem('theme', theme); } catch(e) {}
+  }
+
+  toggle.addEventListener('click', function () {
+    var current = document.documentElement.getAttribute('data-theme');
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+})();
+</script>
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
