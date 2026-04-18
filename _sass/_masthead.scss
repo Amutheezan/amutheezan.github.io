@@ -25,12 +25,6 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    /* flex row so masthead__controls stays in the same line as the nav */
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    flex-wrap: nowrap;
     background: transparent;
     padding: 0.75em 1em;
     font-family: $sans-serif-narrow;
@@ -51,29 +45,13 @@
   }
 }
 
-/* Nav takes all available width; controls never shrink or wrap */
 .masthead__menu {
-  -webkit-box-flex: 1;
-  flex: 1 1 0%;
-  min-width: 0;
-
   ul {
     background: transparent;
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
-}
-
-/* Always-visible toggle buttons — never enter the dropdown */
-.masthead__controls {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  gap: 0.4rem;
-  flex-shrink: 0;
-  margin-left: 0.5rem;
 }
 
 .masthead__menu-item {
