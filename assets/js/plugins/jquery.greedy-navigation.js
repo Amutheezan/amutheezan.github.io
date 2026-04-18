@@ -22,8 +22,8 @@ function updateNav() {
     // Record the width of the list
     breaks.push($vlinks.width());
 
-    // Move item to the hidden list (skip items marked data-no-collapse)
-    $vlinks.children(':not([data-no-collapse])').last().prependTo($hlinks);
+    // Move item to the hidden list
+    $vlinks.children().last().prependTo($hlinks);
 
     // Show the dropdown btn
     if($btn.hasClass('hidden')) {
