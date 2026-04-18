@@ -295,7 +295,8 @@ html[data-theme="dark"] {
     border-color: rgba(255, 255, 255, 0.50);
   }
 
-  &:focus {
+  &:focus { outline: none; }
+  &:focus-visible {
     outline: 2px solid rgba(255, 255, 255, 0.55);
     outline-offset: 2px;
   }

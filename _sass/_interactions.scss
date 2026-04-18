@@ -24,7 +24,7 @@
     color 0.18s ease;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-size: 100% 1.5px;
   }
 }
@@ -81,7 +81,7 @@
   }
 
   &:hover::after,
-  &:focus::after {
+  &:focus-visible::after {
     width: 80%;
   }
 }
@@ -203,9 +203,15 @@
 
 
 /* --------------------------------------------------------------------------
-   Focus-visible ring — accessible keyboard navigation indicator
+   Focus ring — only show for keyboard navigation, never on mouse click
    -------------------------------------------------------------------------- */
 
+/* Suppress the browser default outline on click for all elements */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Keyboard-navigation ring */
 :focus-visible {
   outline: 2.5px solid currentColor;
   outline-offset: 3px;
