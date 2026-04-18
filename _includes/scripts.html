@@ -18,5 +18,31 @@
 })();
 </script>
 
+<!-- Color theme switcher (default → green → purple → default) -->
+<script>
+(function () {
+  var colorToggle = document.getElementById('color-theme-toggle');
+  if (!colorToggle) return;
+
+  var themes = ['default', 'green', 'purple'];
+
+  function applyColorTheme(theme) {
+    if (theme === 'default') {
+      document.documentElement.removeAttribute('data-color-theme');
+    } else {
+      document.documentElement.setAttribute('data-color-theme', theme);
+    }
+    try { localStorage.setItem('color-theme', theme); } catch(e) {}
+  }
+
+  colorToggle.addEventListener('click', function () {
+    var current = document.documentElement.getAttribute('data-color-theme') || 'default';
+    var idx = themes.indexOf(current);
+    var next = themes[(idx + 1) % themes.length];
+    applyColorTheme(next);
+  });
+})();
+</script>
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
