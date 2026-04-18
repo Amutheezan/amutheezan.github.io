@@ -46,12 +46,32 @@
 }
 
 .masthead__menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  /* greedy nav takes all remaining space */
+  .greedy-nav {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
   ul {
     background: transparent;
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
+}
+
+/* Always-visible toggle buttons — never enter the dropdown */
+.masthead__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+  margin-left: auto;
+  padding-right: 0.25rem;
 }
 
 .masthead__menu-item {
