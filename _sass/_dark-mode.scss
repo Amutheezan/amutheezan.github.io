@@ -103,6 +103,10 @@ html[data-theme="dark"] {
     );
     border-top-color: rgba(255, 255, 255, 0.10);
     color: rgba(255, 255, 255, 0.82);
+
+    &::before {
+      background: linear-gradient(to bottom, transparent 0%, rgba(10, 18, 55, 0.50) 100%);
+    }
   }
 
   /* --- Links --- */
@@ -292,10 +296,10 @@ html[data-theme="dark"] {
   &:hover {
     background: rgba(255, 255, 255, 0.22);
     color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.50);
   }
 
-  &:focus {
+  &:focus { outline: none; }
+  &:focus-visible {
     outline: 2px solid rgba(255, 255, 255, 0.55);
     outline-offset: 2px;
   }

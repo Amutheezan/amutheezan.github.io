@@ -29,7 +29,6 @@
 
   &:hover {
     background: rgba(255, 255, 255, 0.22);
-    border-color: rgba(255, 255, 255, 0.55);
     transform: scale(1.06);
 
     .color-theme-swatch { opacity: 1; transform: scale(1.15); }
@@ -122,6 +121,10 @@ html[data-color-theme="green"] {
       rgba(5,  90, 45, 0.58) 100%
     );
     border-top-color: rgba(255, 255, 255, 0.14);
+
+    &::before {
+      background: linear-gradient(to bottom, transparent 0%, rgba(21, 128, 61, 0.36) 100%);
+    }
   }
 
   /* Links */
@@ -249,6 +252,10 @@ html[data-theme="dark"][data-color-theme="green"] {
     );
     border-top-color: rgba(255, 255, 255, 0.10);
     color: rgba(255, 255, 255, 0.82);
+
+    &::before {
+      background: linear-gradient(to bottom, transparent 0%, rgba(6, 78, 36, 0.50) 100%);
+    }
   }
 
   a {
@@ -359,6 +366,10 @@ html[data-color-theme="purple"] {
       rgba(76,  17, 160, 0.58) 100%
     );
     border-top-color: rgba(255, 255, 255, 0.14);
+
+    &::before {
+      background: linear-gradient(to bottom, transparent 0%, rgba(109, 40, 217, 0.36) 100%);
+    }
   }
 
   /* Links */
@@ -485,6 +496,10 @@ html[data-theme="dark"][data-color-theme="purple"] {
     );
     border-top-color: rgba(255, 255, 255, 0.10);
     color: rgba(255, 255, 255, 0.82);
+
+    &::before {
+      background: linear-gradient(to bottom, transparent 0%, rgba(76, 17, 160, 0.50) 100%);
+    }
   }
 
   a {
