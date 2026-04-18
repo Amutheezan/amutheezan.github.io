@@ -14,6 +14,8 @@ He earned his Ph.D. in Informatics from The Pennsylvania State University in Sum
 
 Before his doctoral studies, he gained industry experience as a Software Engineering Intern at WSO2 Lanka (Pvt) Ltd, working with the Data Analytics Team from July to December 2016. He later worked as a Software Engineer at MillenniumIT Software (Pvt) Ltd, contributing to the Post-Trade Team from January 2018 to July 2019.
 
+
+**Research Interests**
 <!-- ══════════════════════════════════════════════════════════════
      RESEARCH INTEREST CHIPS
      ══════════════════════════════════════════════════════════════ -->
