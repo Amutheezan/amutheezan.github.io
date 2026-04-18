@@ -23,17 +23,15 @@
           animation-delay: 0.15s;
 
   &__inner-wrap {
+    @include container;
     @include clearfix;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    max-width: $x-large;
-    margin-left: auto;
-    margin-right: auto;
     background: transparent;
     padding: 0.75em 1em;
     font-family: $sans-serif-narrow;
+
+    @include breakpoint($x-large) {
+      max-width: $x-large;
+    }
 
     nav {
       background: transparent;
@@ -47,27 +45,13 @@
   }
 }
 
-/* Nav takes all remaining width; controls stay pinned right */
 .masthead__menu {
-  flex: 1 1 0;
-  min-width: 0;
-
   ul {
     background: transparent;
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
-}
-
-/* Always-visible toggle buttons — never enter the dropdown */
-.masthead__controls {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.4rem;
-  flex-shrink: 0;
-  margin-left: 0.5rem;
 }
 
 .masthead__menu-item {
