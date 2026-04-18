@@ -15,19 +15,19 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-          <li class="masthead__menu-item masthead__menu-item--toggle">
+          <li class="masthead__menu-item masthead__menu-item--toggle" data-no-collapse>
             <button
               class="color-theme-toggle"
               id="color-theme-toggle"
               aria-label="Switch color theme"
               title="Cycle color theme: Default → Green → Purple"
             >
-              <span class="color-theme-swatch color-theme-swatch--default" title="Default (Blue)"></span>
-              <span class="color-theme-swatch color-theme-swatch--green"   title="Green"></span>
-              <span class="color-theme-swatch color-theme-swatch--purple"  title="Purple"></span>
+              <span class="color-theme-swatch color-theme-swatch--default"></span>
+              <span class="color-theme-swatch color-theme-swatch--green"></span>
+              <span class="color-theme-swatch color-theme-swatch--purple"></span>
             </button>
           </li>
-          <li class="masthead__menu-item masthead__menu-item--toggle">
+          <li class="masthead__menu-item masthead__menu-item--toggle" data-no-collapse>
             <button
               class="dark-mode-toggle"
               id="dark-mode-toggle"
