@@ -64,26 +64,7 @@
    -------------------------------------------------------------------------- */
 
 .greedy-nav .visible-links .masthead__menu-item a {
-  position: relative;
   transition: color 0.18s ease, letter-spacing 0.18s ease;
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    border-radius: 1px;
-    background: rgba(255, 255, 255, 0.75);
-    transform: translateX(-50%);
-    transition: width 0.22s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &:hover::after,
-  &:focus-visible::after {
-    width: 80%;
-  }
 }
 
 

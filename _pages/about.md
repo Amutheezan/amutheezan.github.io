@@ -16,23 +16,23 @@ Before his doctoral studies, he gained industry experience as a Software Enginee
 
 
 **Research Interests**
-<!-- ══════════════════════════════════════════════════════════════
-     RESEARCH INTEREST CHIPS
-     ══════════════════════════════════════════════════════════════ -->
-<ul class="home-chips" aria-label="Research interests">
-  <li class="home-chip home-chip--blue">
-    <i class="fas fa-brain" aria-hidden="true"></i> Reinforcement Learning
-  </li>
-  <li class="home-chip home-chip--purple">
-    <i class="fas fa-cogs" aria-hidden="true"></i> Combinatorial Optimization
-  </li>
-  <li class="home-chip home-chip--blue">
-    <i class="fas fa-robot" aria-hidden="true"></i> Multi-Agent Systems
-  </li>
-  <li class="home-chip home-chip--purple">
-    <i class="fas fa-microchip" aria-hidden="true"></i> Cyber-Physical Systems
-  </li>
-  <li class="home-chip home-chip--green">
-    <i class="fas fa-chart-line" aria-hidden="true"></i> Operational Research
-  </li>
-</ul>
+
+<div class="interest-tags">
+  <span class="interest-tag interest-tag--blue">
+    <i class="fas fa-brain"></i> Reinforcement Learning
+  </span>
+  <span class="interest-tag interest-tag--purple">
+    <i class="fas fa-project-diagram"></i> Combinatorial Optimization
+  </span>
+  <span class="interest-tag interest-tag--teal">
+    <i class="fas fa-users-cog"></i> Multi-Agent Systems
+  </span>
+  <span class="interest-tag interest-tag--orange">
+    <i class="fas fa-microchip"></i> Cyber-Physical Systems
+  </span>
+  <span class="interest-tag interest-tag--green">
+    <i class="fas fa-chart-line"></i> Operational Research
+  </span>
+</div>
+
+<!-- ══════════════════════════════════�
