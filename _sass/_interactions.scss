@@ -203,6 +203,38 @@
 
 
 /* --------------------------------------------------------------------------
+   Dropdown (hidden-links) — dark text in light mode
+   The color-theme files set `.greedy-nav a { color: white }` to keep the
+   masthead links white over the dark gradient. That rule shares the same
+   specificity (0,2,1) as the dropdown's own `color: $darker-gray` and is
+   declared later, so it bleeds into the dropdown where the background is
+   light — making text and background indistinguishable.
+   This rule uses a :not() pseudo-class to raise specificity to (0,3,2) and
+   restore dark text for all color themes in light mode.
+   -------------------------------------------------------------------------- */
+
+html:not([data-theme="dark"]) .greedy-nav .hidden-links a {
+  color: #1e293b;
+
+  &:hover {
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.08);
+    border-radius: 10px;
+  }
+}
+
+html:not([data-theme="dark"])[data-color-theme="green"] .greedy-nav .hidden-links a:hover {
+  color: #15803d;
+  background: rgba(21, 128, 61, 0.08);
+}
+
+html:not([data-theme="dark"])[data-color-theme="purple"] .greedy-nav .hidden-links a:hover {
+  color: #7c3aed;
+  background: rgba(124, 58, 237, 0.08);
+}
+
+
+/* --------------------------------------------------------------------------
    Focus ring — only show for keyboard navigation, never on mouse click
    -------------------------------------------------------------------------- */
 
