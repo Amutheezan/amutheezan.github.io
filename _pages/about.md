@@ -34,5 +34,3 @@ Before his doctoral studies, he gained industry experience as a Software Enginee
     <i class="fas fa-chart-line"></i> Operational Research
   </span>
 </div>
-
-<!-- ══════════════════════════════════�
