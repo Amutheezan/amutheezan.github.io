@@ -12,93 +12,111 @@
    The active swatch is larger and fully opaque; the others are smaller/dimmer.
    -------------------------------------------------------------------------- */
 
+/* The pill container — now a <div>, not a <button> */
 .color-theme-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  padding: 0 0.6rem;
+  gap: 5px;
+  padding: 0 0.55rem;
   height: 2rem;
-  min-width: 2.4rem;
   border: 1px solid rgba(255, 255, 255, 0.30);
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.12);
-  cursor: pointer;
-  transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.15s ease;
   vertical-align: middle;
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.22);
-    transform: scale(1.06);
-
-    .color-theme-swatch { opacity: 1; transform: scale(1.15); }
-  }
-
-  &:active { transform: scale(0.95); }
-
-  &:focus { outline: none; }
-  &:focus-visible {
-    outline: 2px solid rgba(255, 255, 255, 0.55);
-    outline-offset: 2px;
-  }
+  overflow: visible;          /* never clip the swatch dots */
 }
 
+/* Each swatch is now its own <button> */
 .color-theme-swatch {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 2px solid transparent;
   border-radius: 50%;
-  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
-  opacity: 0.45;
-  transform: scale(0.85);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  background-clip: padding-box;
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
+              opacity 0.18s ease,
+              border-color 0.18s ease,
+              box-shadow 0.18s ease;
+  opacity: 0.55;
+  transform: scale(0.82);
 
+  /* remove default button chrome */
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* colour fills */
   &--default { background: #60a5fa; }   /* blue-400    */
   &--indigo  { background: #818cf8; }   /* indigo-400  */
   &--magenta { background: #f472b6; }   /* pink-400    */
   &--cyan    { background: #22d3ee; }   /* cyan-400    */
   &--purple  { background: #c084fc; }   /* purple-400  */
+
+  &:hover {
+    opacity: 0.85;
+    transform: scale(1.18);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.70);
+    outline-offset: 2px;
+  }
 }
 
-/* Active swatch — highlighted */
+/* Active swatch — selected one gets a white ring and is full-size */
 html:not([data-color-theme]),
 html[data-color-theme="default"] {
   .color-theme-swatch--default {
     opacity: 1;
-    transform: scale(1.28);
-    box-shadow: 0 0 6px rgba(96, 165, 250, 0.7);
+    transform: scale(1.22);
+    border-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 5px rgba(96, 165, 250, 0.65);
   }
 }
 
 html[data-color-theme="indigo"] {
   .color-theme-swatch--indigo {
     opacity: 1;
-    transform: scale(1.28);
-    box-shadow: 0 0 6px rgba(129, 140, 248, 0.7);
+    transform: scale(1.22);
+    border-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 5px rgba(129, 140, 248, 0.65);
   }
 }
 
 html[data-color-theme="magenta"] {
   .color-theme-swatch--magenta {
     opacity: 1;
-    transform: scale(1.28);
-    box-shadow: 0 0 6px rgba(244, 114, 182, 0.7);
+    transform: scale(1.22);
+    border-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 5px rgba(244, 114, 182, 0.65);
   }
 }
 
 html[data-color-theme="cyan"] {
   .color-theme-swatch--cyan {
     opacity: 1;
-    transform: scale(1.28);
-    box-shadow: 0 0 6px rgba(34, 211, 238, 0.7);
+    transform: scale(1.22);
+    border-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 5px rgba(34, 211, 238, 0.65);
   }
 }
 
 html[data-color-theme="purple"] {
   .color-theme-swatch--purple {
     opacity: 1;
-    transform: scale(1.28);
-    box-shadow: 0 0 6px rgba(192, 132, 252, 0.7);
+    transform: scale(1.22);
+    border-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 5px rgba(192, 132, 252, 0.65);
   }
 }
 

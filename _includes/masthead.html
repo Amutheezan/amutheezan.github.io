@@ -16,18 +16,13 @@
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
           <li class="masthead__menu-item masthead__menu-item--toggle" data-no-collapse>
-            <button
-              class="color-theme-toggle"
-              id="color-theme-toggle"
-              aria-label="Switch color theme"
-              title="Cycle color theme: Blue → Indigo → Magenta → Cyan → Purple"
-            >
-              <span class="color-theme-swatch color-theme-swatch--default"></span>
-              <span class="color-theme-swatch color-theme-swatch--indigo"></span>
-              <span class="color-theme-swatch color-theme-swatch--magenta"></span>
-              <span class="color-theme-swatch color-theme-swatch--cyan"></span>
-              <span class="color-theme-swatch color-theme-swatch--purple"></span>
-            </button>
+            <div class="color-theme-toggle" id="color-theme-toggle" aria-label="Switch color theme" title="Pick a colour theme">
+              <button class="color-theme-swatch color-theme-swatch--default" data-color-theme="default" aria-label="Blue theme" title="Blue"></button>
+              <button class="color-theme-swatch color-theme-swatch--indigo"  data-color-theme="indigo"  aria-label="Indigo theme"  title="Indigo"></button>
+              <button class="color-theme-swatch color-theme-swatch--magenta" data-color-theme="magenta" aria-label="Magenta theme" title="Magenta"></button>
+              <button class="color-theme-swatch color-theme-swatch--cyan"    data-color-theme="cyan"    aria-label="Cyan theme"    title="Cyan"></button>
+              <button class="color-theme-swatch color-theme-swatch--purple"  data-color-theme="purple"  aria-label="Purple theme"  title="Purple"></button>
+            </div>
           </li>
           <li class="masthead__menu-item masthead__menu-item--toggle" data-no-collapse>
             <button

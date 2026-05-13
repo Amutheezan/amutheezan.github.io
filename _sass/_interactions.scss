@@ -69,11 +69,11 @@
 
 
 /* --------------------------------------------------------------------------
-   Dark-mode & color-theme toggle buttons — press ripple
+   Dark-mode toggle — press ripple
+   (color-theme-toggle is now a <div> wrapper, ripple is on each swatch button)
    -------------------------------------------------------------------------- */
 
-.dark-mode-toggle,
-.color-theme-toggle {
+.dark-mode-toggle {
   position: relative;
   overflow: hidden;
 
@@ -194,24 +194,60 @@
    restore dark text for all color themes in light mode.
    -------------------------------------------------------------------------- */
 
+/* --------------------------------------------------------------------------
+   Nav links — hard-suppress underline and background-image in all states.
+   The animated underline from .page__content a / .archive a must never
+   bleed into masthead or hidden-links items.
+   -------------------------------------------------------------------------- */
+
+.greedy-nav a,
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a {
+  text-decoration: none !important;
+  background-image: none !important;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    text-decoration: none !important;
+    background-image: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Hidden-links (hamburger dropdown) link colours — light mode
+   -------------------------------------------------------------------------- */
+
 html:not([data-theme="dark"]) .greedy-nav .hidden-links a {
   color: #1e293b;
 
   &:hover {
     color: #2563eb;
-    background: rgba(37, 99, 235, 0.08);
+    background: rgba(37, 99, 235, 0.08) !important;
     border-radius: 10px;
   }
 }
 
-html:not([data-theme="dark"])[data-color-theme="green"] .greedy-nav .hidden-links a:hover {
-  color: #15803d;
-  background: rgba(21, 128, 61, 0.08);
+/* Per-theme hover accent for the light-mode dropdown */
+html:not([data-theme="dark"])[data-color-theme="indigo"] .greedy-nav .hidden-links a:hover {
+  color: #4338ca;
+  background: rgba(67, 56, 202, 0.08) !important;
+}
+
+html:not([data-theme="dark"])[data-color-theme="magenta"] .greedy-nav .hidden-links a:hover {
+  color: #be185d;
+  background: rgba(190, 24, 93, 0.08) !important;
+}
+
+html:not([data-theme="dark"])[data-color-theme="cyan"] .greedy-nav .hidden-links a:hover {
+  color: #0e7490;
+  background: rgba(14, 116, 144, 0.08) !important;
 }
 
 html:not([data-theme="dark"])[data-color-theme="purple"] .greedy-nav .hidden-links a:hover {
   color: #7c3aed;
-  background: rgba(124, 58, 237, 0.08);
+  background: rgba(124, 58, 237, 0.08) !important;
 }
 
 

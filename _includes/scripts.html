@@ -18,13 +18,11 @@
 })();
 </script>
 
-<!-- Color theme switcher (blue → indigo → magenta → cyan → purple → blue) -->
+<!-- Color theme switcher — each swatch dot selects its theme directly -->
 <script>
 (function () {
   var colorToggle = document.getElementById('color-theme-toggle');
   if (!colorToggle) return;
-
-  var themes = ['default', 'indigo', 'magenta', 'cyan', 'purple'];
 
   function applyColorTheme(theme) {
     if (theme === 'default') {
@@ -35,13 +33,11 @@
     try { localStorage.setItem('color-theme', theme); } catch(e) {}
   }
 
-  colorToggle.addEventListener('click', function () {
-    var current = document.documentElement.getAttribute('data-color-theme') || 'default';
-    var idx = themes.indexOf(current);
-    /* If current theme is unknown (e.g. legacy 'green'), fall back to default */
-    if (idx === -1) { applyColorTheme('default'); return; }
-    var next = themes[(idx + 1) % themes.length];
-    applyColorTheme(next);
+  /* Each swatch <button> carries its own data-color-theme — click sets it directly */
+  colorToggle.addEventListener('click', function (e) {
+    var swatch = e.target.closest('[data-color-theme]');
+    if (!swatch) return;
+    applyColorTheme(swatch.getAttribute('data-color-theme'));
   });
 })();
 </script>
