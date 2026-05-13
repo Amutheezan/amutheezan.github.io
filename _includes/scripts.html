@@ -18,13 +18,13 @@
 })();
 </script>
 
-<!-- Color theme switcher (default → green → purple → default) -->
+<!-- Color theme switcher (blue → indigo → magenta → cyan → purple → blue) -->
 <script>
 (function () {
   var colorToggle = document.getElementById('color-theme-toggle');
   if (!colorToggle) return;
 
-  var themes = ['default', 'green', 'purple'];
+  var themes = ['default', 'indigo', 'magenta', 'cyan', 'purple'];
 
   function applyColorTheme(theme) {
     if (theme === 'default') {
@@ -38,6 +38,8 @@
   colorToggle.addEventListener('click', function () {
     var current = document.documentElement.getAttribute('data-color-theme') || 'default';
     var idx = themes.indexOf(current);
+    /* If current theme is unknown (e.g. legacy 'green'), fall back to default */
+    if (idx === -1) { applyColorTheme('default'); return; }
     var next = themes[(idx + 1) % themes.length];
     applyColorTheme(next);
   });
