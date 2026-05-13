@@ -120,10 +120,6 @@ html[data-theme="dark"] {
     );
     border-top-color: rgba(255, 255, 255, 0.10);
     color: rgba(255, 255, 255, 0.82);
-
-    &::before {
-      background: linear-gradient(to bottom, transparent 0%, rgba(10, 18, 55, 0.70) 100%);
-    }
   }
 
   /* --- Links --- */
