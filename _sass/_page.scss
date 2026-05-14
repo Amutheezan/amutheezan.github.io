@@ -6,7 +6,8 @@
   @include container;
   @include clearfix;
   margin-top: 1.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0;
+  flex: 1 0 auto;  /* grow to fill viewport — keeps footer pinned to bottom */
   padding-left: 1.25em;
   padding-right: 1.25em;
   padding-top: 0.5em;
