@@ -24,10 +24,11 @@
   var theme = saved ? saved : (prefersDark ? 'dark' : 'light');
   document.documentElement.setAttribute('data-theme', theme);
 
-  /* Restore color theme (default / green / purple) */
+  /* Restore color theme (navy / slate / dark-purple) */
+  var validColors = ['navy', 'slate', 'dark-purple'];
   var savedColor = null;
   try { savedColor = localStorage.getItem('color-theme'); } catch(e) {}
-  if (savedColor && savedColor !== 'default') {
+  if (savedColor && validColors.indexOf(savedColor) !== -1) {
     document.documentElement.setAttribute('data-color-theme', savedColor);
   }
 })();
