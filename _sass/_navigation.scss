@@ -428,4 +428,51 @@
     font-size: $type-size-6;
     background: $indigo;
     border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radi
+    border-top-right-radius: $border-radius;
+  }
+}
+
+.toc__menu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  font-size: 0.8rem;
+
+  a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: $blue;
+    font-size: $type-size-7;
+    font-weight: bold;
+    line-height: 1.5;
+    border-bottom: 1px solid $border-color;
+
+    &:hover {
+      color: #4273e1;
+      background: $lighter-blue;
+    }
+  }
+
+  > li:last-child {
+    a {
+      border-bottom: none;
+    }
+  }
+
+  li ul > li a {
+    padding-left: 2rem;
+    font-weight: normal;
+  }
+
+  /* hide sub sub links on small screens*/
+  li > ul li {
+    display: none;
+
+    @include breakpoint($medium) {
+      display: block;
+    }
+  }
+}
+
+}
