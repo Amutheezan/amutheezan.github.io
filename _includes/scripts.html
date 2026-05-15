@@ -18,11 +18,13 @@
 })();
 </script>
 
-<!-- Color theme switcher — each swatch dot selects its theme directly -->
+<!-- Color theme switcher (default → green → purple → default) -->
 <script>
 (function () {
   var colorToggle = document.getElementById('color-theme-toggle');
   if (!colorToggle) return;
+
+  var themes = ['teal', 'indigo', 'sky', 'navy', 'slate'];
 
   function applyColorTheme(theme) {
     if (theme === 'default') {
@@ -33,14 +35,14 @@
     try { localStorage.setItem('color-theme', theme); } catch(e) {}
   }
 
-  /* Each swatch <button> carries its own data-color-theme — click sets it directly */
-  colorToggle.addEventListener('click', function (e) {
-    var swatch = e.target.closest('[data-color-theme]');
-    if (!swatch) return;
-    applyColorTheme(swatch.getAttribute('data-color-theme'));
+  colorToggle.addEventListener('click', function () {
+    var current = document.documentElement.getAttribute('data-color-theme') || 'default';
+    var idx = themes.indexOf(current);
+    var next = themes[(idx + 1) % themes.length];
+    applyColorTheme(next);
   });
 })();
 </script>
 
 {% include analytics.html %}
-{% include /comments-providers/scripts.html %}
+{% include /comments-providers/scri

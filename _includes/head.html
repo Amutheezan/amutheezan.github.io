@@ -24,12 +24,12 @@
   var theme = saved ? saved : (prefersDark ? 'dark' : 'light');
   document.documentElement.setAttribute('data-theme', theme);
 
-  /* Restore color theme (default / green / purple) */
+  /* Restore color theme — cycles through teal, indigo, sky, navy, slate */
+  var validThemes = ['teal', 'indigo', 'sky', 'navy', 'slate'];
   var savedColor = null;
   try { savedColor = localStorage.getItem('color-theme'); } catch(e) {}
-  if (savedColor && savedColor !== 'default') {
-    document.documentElement.setAttribute('data-color-theme', savedColor);
-  }
+  var activeColor = (savedColor && validThemes.indexOf(savedColor) !== -1) ? savedColor : 'teal';
+  document.documentElement.setAttribute('data-color-theme', activeColor);
 })();
 </script>
 
@@ -38,7 +38,4 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
-
-<meta http-equiv="cleartype" content="on">
+<!-- Fo

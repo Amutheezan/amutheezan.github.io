@@ -45,18 +45,10 @@
 <script>
 (function () {
   try {
-    var validColorThemes = ['indigo', 'magenta', 'cyan', 'purple'];
     var t = localStorage.getItem('theme');
     var c = localStorage.getItem('color-theme');
     if (t === 'dark') { document.documentElement.setAttribute('data-theme', 'dark'); }
-    /* Map legacy 'green' (or any unknown theme) to default blue */
-    if (c && c !== 'default') {
-      if (validColorThemes.indexOf(c) !== -1) {
-        document.documentElement.setAttribute('data-color-theme', c);
-      } else {
-        localStorage.setItem('color-theme', 'default');
-      }
-    }
+    if (c && c !== 'default') { document.documentElement.setAttribute('data-color-theme', c); }
   } catch (e) {}
 })();
 </script>
