@@ -86,27 +86,10 @@ html[data-theme="dark"] {
     .hidden-links {
       background: rgba(15, 28, 65, 0.95);
       border-color: rgba(255, 255, 255, 0.15);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.50), inset 0 1px 0 rgba(255, 255, 255, 0.06);
 
       a {
         color: rgba(255, 255, 255, 0.88);
-        &:hover {
-          color: #ffffff;
-          background: rgba(255, 255, 255, 0.08);
-          border-radius: 6px;
-        }
-      }
-
-      li {
-        border-bottom-color: rgba(255, 255, 255, 0.10);
-      }
-
-      &:before {
-        border-color: rgba(255, 255, 255, 0.18) transparent;
-      }
-
-      &:after {
-        border-color: rgba(15, 28, 65, 0.95) transparent;
+        &:hover { color: #ffffff; }
       }
     }
   }
@@ -120,6 +103,10 @@ html[data-theme="dark"] {
     );
     border-top-color: rgba(255, 255, 255, 0.10);
     color: rgba(255, 255, 255, 0.82);
+
+    &::before {
+      background: linear-gradient(to bottom, transparent 0%, rgba(10, 18, 55, 0.50) 100%);
+    }
   }
 
   /* --- Links --- */

@@ -282,12 +282,8 @@
       padding: 10px 20px;
       font-size: $type-size-5;
       color: $darker-gray;
-      text-decoration: none;
 
-      &:hover,
-      &:focus,
-      &:active {
-        text-decoration: none;
+      &:hover {
         color: $blue;
         background: rgba(37, 99, 235, 0.08);
         border-radius: 10px;
@@ -405,7 +401,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
-    background: $blue-color;
+    background: $indigo;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
