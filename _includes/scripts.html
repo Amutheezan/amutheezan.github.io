@@ -42,5 +42,63 @@
 })();
 </script>
 
+<!-- Publication / Project link button icons -->
+<script>
+(function () {
+  /* Map label text (lower-cased, brackets stripped) → Font Awesome classes */
+  var ICON_MAP = [
+    { test: /^arxiv$/,                    icon: 'fas fa-file-alt'       },
+    { test: /^paper$/,                    icon: 'fas fa-file-pdf'       },
+    { test: /^appendix$/,                 icon: 'fas fa-paperclip'      },
+    { test: /^openreview$/,               icon: 'fas fa-comments'       },
+    { test: /^pmlr$/,                     icon: 'fas fa-graduation-cap' },
+    { test: /code/,                       icon: 'fab fa-github'         },
+    { test: /shortvideo|short.?video/i,   icon: 'fab fa-youtube'        },
+    { test: /video|talk/,                 icon: 'fab fa-youtube'        },
+    { test: /poster/,                     icon: 'fas fa-image'          },
+    { test: /slides?/,                    icon: 'fas fa-chalkboard'     }
+  ];
+
+  /* Fallback: guess icon from URL if label didn't match */
+  var URL_MAP = [
+    { test: /github\.com/,               icon: 'fab fa-github'         },
+    { test: /youtu/,                     icon: 'fab fa-youtube'        },
+    { test: /arxiv\.org/,               icon: 'fas fa-file-alt'       },
+    { test: /openreview\.net/,           icon: 'fas fa-comments'       },
+    { test: /mlr\.press/,               icon: 'fas fa-graduation-cap' },
+    { test: /figshare\.com/,            icon: 'fas fa-database'       }
+  ];
+
+  function iconForLink(label, href) {
+    var key = label.toLowerCase().replace(/[\[\]\s]/g, '');
+    for (var i = 0; i < ICON_MAP.length; i++) {
+      if (ICON_MAP[i].test.test(key)) return ICON_MAP[i].icon;
+    }
+    for (var j = 0; j < URL_MAP.length; j++) {
+      if (URL_MAP[j].test.test(href)) return URL_MAP[j].icon;
+    }
+    return 'fas fa-external-link-alt';
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var anchors = document.querySelectorAll('.page__content a, .archive__item-body a');
+    anchors.forEach(function (a) {
+      var raw = a.textContent.trim();
+      /* Only decorate links whose visible text is exactly [Label] */
+      if (!/^\[.+\]$/.test(raw)) return;
+
+      var label = raw.slice(1, -1);   /* strip [ ] */
+      var iconClass = iconForLink(raw, a.href);
+
+      a.classList.add('pub-link');
+      a.setAttribute('title', label);
+      a.innerHTML =
+        '<span class="pub-link__icon"><i class="' + iconClass + '" aria-hidden="true"></i></span>' +
+        '<span class="pub-link__label">' + label + '</span>';
+    });
+  });
+})();
+</script>
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
