@@ -215,10 +215,16 @@ html[data-theme="dark"] {
   }
 
   /* --- Breadcrumbs --- */
+  .breadcrumbs ol {
+    background: rgba(15, 28, 65, 0.70);
+    border-color: rgba(255, 255, 255, 0.10);
+  }
   .breadcrumbs ol li {
     color: #94a3b8;
-    a { color: #60a5fa; }
+    a { color: #94a3b8; &:hover { color: #cbd5e1; } }
   }
+  .breadcrumbs .sep { color: rgba(255, 255, 255, 0.25); }
+  .breadcrumbs .current { color: rgba(255, 255, 255, 0.80); }
 
   /* --- Pagination --- */
   .pagination a {
@@ -304,13 +310,4 @@ html[data-theme="dark"] {
     outline-offset: 2px;
   }
 
-  /* Show moon in light mode (click to go dark) */
-  .icon-sun  { display: none; }
-  .icon-moon { display: inline; }
-}
-
-/* In dark mode, show sun (click to go back to light) */
-html[data-theme="dark"] .dark-mode-toggle {
-  .icon-sun  { display: inline; }
-  .icon-moon { display: none; }
-}
+  /* Show moon in light mode (cl

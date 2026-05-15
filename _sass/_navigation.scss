@@ -29,25 +29,50 @@
   }
 
   ol {
-    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 0.28em 0.85em;
+    margin: 0.35em 0;
     list-style: none;
     font-size: $type-size-6;
-
-    @include breakpoint($large) {
-      @include span(10 of 12 last);
-    }
-
-    @include breakpoint($x-large) {
-      @include prefix(0.5 of 12);
-    }
+    background: rgba(255, 255, 255, 0.60);
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 2em;
+    white-space: nowrap;
+    max-width: 100%;
   }
 
   li {
-    display: inline;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+
+    a {
+      color: rgba(0, 0, 0, 0.50);
+      text-decoration: none;
+      transition: color 0.15s ease;
+      &:hover { color: $link-color; }
+    }
+  }
+
+  .sep {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0.32em;
+    color: rgba(0, 0, 0, 0.28);
+    font-size: 1.05em;
+    line-height: 1;
+    -webkit-user-select: none;
+    user-select: none;
   }
 
   .current {
-    font-weight: bold;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.72);
   }
 }
 
@@ -403,49 +428,4 @@
     font-size: $type-size-6;
     background: $indigo;
     border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
-  }
-}
-
-.toc__menu {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  font-size: 0.8rem;
-
-  a {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: $blue;
-    font-size: $type-size-7;
-    font-weight: bold;
-    line-height: 1.5;
-    border-bottom: 1px solid $border-color;
-
-    &:hover {
-      color: #4273e1;
-      background: $lighter-blue;
-    }
-  }
-
-  > li:last-child {
-    a {
-      border-bottom: none;
-    }
-  }
-
-  li ul > li a {
-    padding-left: 2rem;
-    font-weight: normal;
-  }
-
-  /* hide sub sub links on small screens*/
-  li > ul li {
-    display: none;
-
-    @include breakpoint($medium) {
-      display: block;
-    }
-  }
-}
+    border-top-right-radius: $border-radi
