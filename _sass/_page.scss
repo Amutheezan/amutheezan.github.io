@@ -6,7 +6,8 @@
   @include container;
   @include clearfix;
   margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 0;
+  flex: 1 0 auto;  /* grow to fill viewport — keeps footer pinned to bottom */
   padding-left: 1.25em;
   padding-right: 1.25em;
   padding-top: 0.5em;
@@ -239,7 +240,7 @@
 
 .page__meta {
   margin-top: 2em;
-  color: $slate;
+  color: mix(#fff, $gray, 25%);
   font-family: $sans-serif;
   font-size: $type-size-6;
 
@@ -279,14 +280,12 @@
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid $teal;
+  border: 1px solid $light-gray;
   border-radius: $border-radius;
-  color: $teal;
 
   &:hover {
     text-decoration: none;
-    color: #fff;
-    background-color: $teal;
+    color: $link-color-hover;
   }
 }
 
