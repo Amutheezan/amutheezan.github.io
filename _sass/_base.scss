@@ -3,12 +3,17 @@
    ========================================================================== */
 html {
   height: 100%;
+  /* Prevent any element from causing horizontal page scroll on mobile */
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  /* Clamp width to viewport — nothing should scroll the page horizontally */
+  max-width: 100vw;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   color: $text-color;
@@ -327,7 +332,4 @@ nav {
    Global animation transition
    ========================================================================== */
 
-b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
-  -webkit-transition: $global-transition;
-  transition: $global-transition;
-}
+b, i, strong, em, blockqu
