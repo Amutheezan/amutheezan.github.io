@@ -15,6 +15,8 @@
   padding-left: 2em;
   padding-right: 2em;
   font-family: $sans-serif;
+  /* Prevent breadcrumb from causing horizontal page overflow on mobile */
+  overflow: hidden;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.30s;
@@ -30,7 +32,7 @@
   }
 
   ol {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     flex-wrap: nowrap;
     gap: 0;
@@ -44,13 +46,18 @@
     border: 1px solid rgba(0, 0, 0, 0.09);
     border-radius: 2em;
     white-space: nowrap;
+    /* Clip content, never let it widen the page */
     max-width: 100%;
+    overflow: hidden;
+    min-width: 0;
   }
 
   li {
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
+    /* Home / parent crumbs: never shrink away */
+    flex-shrink: 0;
 
     a {
       color: rgba(0, 0, 0, 0.50);
@@ -67,6 +74,7 @@
     color: rgba(0, 0, 0, 0.28);
     font-size: 1.05em;
     line-height: 1;
+    flex-shrink: 0;
     -webkit-user-select: none;
     user-select: none;
   }
@@ -74,6 +82,11 @@
   .current {
     font-weight: 600;
     color: rgba(0, 0, 0, 0.72);
+    /* Long page titles get truncated with ellipsis rather than overflowing */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    flex-shrink: 1;
   }
 }
 
@@ -464,32 +477,4 @@
     color: $blue;
     font-size: $type-size-7;
     font-weight: bold;
-    line-height: 1.5;
-    border-bottom: 1px solid $border-color;
-
-    &:hover {
-      color: #4273e1;
-      background: $lighter-blue;
-    }
-  }
-
-  > li:last-child {
-    a {
-      border-bottom: none;
-    }
-  }
-
-  li ul > li a {
-    padding-left: 2rem;
-    font-weight: normal;
-  }
-
-  /* hide sub sub links on small screens*/
-  li > ul li {
-    display: none;
-
-    @include breakpoint($medium) {
-      display: block;
-    }
-  }
-}
+    line
