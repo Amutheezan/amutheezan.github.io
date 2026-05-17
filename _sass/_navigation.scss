@@ -465,4 +465,19 @@
     color: #fff;
     font-size: $type-size-6;
     background: $blue-color;
-    border-top-left-radius: $border-rad
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+}
+
+.toc__menu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  font-size: 0.8rem;
+
+  a {
+    display: block;
+    padding: 0.5rem 1rem;
+    co
