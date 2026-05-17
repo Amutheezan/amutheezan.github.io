@@ -5,6 +5,10 @@
 #main {
   @include container;
   @include clearfix;
+  /* width:100% ensures #main fills the viewport in a flex-column body
+     even though @include container adds margin:auto (which otherwise
+     prevents flex stretch on the cross axis). */
+  width: 100%;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   padding-left: 1.25em;

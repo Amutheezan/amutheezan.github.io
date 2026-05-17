@@ -226,6 +226,10 @@
   position: relative;
   min-width: 0;
   background: transparent;
+  /* Clip the visible-links table on mobile without affecting the
+     absolutely-positioned .hidden-links dropdown (clip doesn't
+     create a new block formatting context, so abs. children escape). */
+  overflow-x: clip;
 
   a {
     display: block;
@@ -461,19 +465,4 @@
     color: #fff;
     font-size: $type-size-6;
     background: $blue-color;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
-  }
-}
-
-.toc__menu {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  font-size: 0.8rem;
-
-  a {
-    display: block;
-    padding: 0.5rem 1rem;
-    co
+    border-top-left-radius: $border-rad
