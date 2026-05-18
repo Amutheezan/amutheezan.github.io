@@ -82,14 +82,15 @@
   font-size: $type-size-7;
   color: rgba(255, 255, 255, 0.65);
 
-  a {
-    color: rgba(255, 255, 255, 0.95);
-    text-decoration: underline;
+}
 
-    &:hover {
-      color: #ffffff;
-      text-decoration: underline;
-    }
+.page__footer .page__footer-copyright a {
+  color: rgba(255, 255, 255, 0.95) !important;
+  text-decoration: underline !important;
+
+  &:hover {
+    color: #ffffff !important;
+    text-decoration: underline !important;
   }
 }
 
