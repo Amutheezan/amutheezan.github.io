@@ -17,15 +17,16 @@
   padding-bottom: 1.5em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
-  background: rgba(255, 255, 255, 0.68);
-  backdrop-filter: blur(24px) saturate(160%);
-  -webkit-backdrop-filter: blur(24px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(48px) saturate(180%);
+  -webkit-backdrop-filter: blur(48px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.32);
   border-radius: 20px;
   box-shadow:
-    0 8px 40px rgba(31, 38, 135, 0.12),
-    0 2px 8px rgba(0, 0, 0, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+    inset 0 1px 0 rgba(255, 255, 255, 0.80),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.04),
+    0 8px 40px rgba(0, 0, 0, 0.06),
+    0 2px 8px rgba(0, 0, 0, 0.04);
 
   @include breakpoint($x-large) {
     max-width: $x-large;
@@ -414,7 +415,4 @@
 
 .page__related-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
-  text-transform: uppercase;
-}
-
+  font-size: $type-size-6
