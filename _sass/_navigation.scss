@@ -235,13 +235,13 @@
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: $masthead-link-white-color;
+    color: rgba(20, 20, 50, 0.80);
     text-decoration: none;
     letter-spacing: 0.01em;
     font-weight: 500;
 
     &:hover {
-      color: $masthead-link-white-color-hover;
+      color: rgba(10, 10, 40, 0.95);
     }
   }
 
@@ -284,13 +284,14 @@
       position: relative;
       padding: 0.35rem 1rem;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.08);
-      border: none;
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid rgba(0, 0, 0, 0.08);
       box-shadow:
-        inset 0 0.5px 0 rgba(255, 255, 255, 0.40);
+        inset 0 1px 0 rgba(255, 255, 255, 0.90),
+        0 1px 3px rgba(0, 0, 0, 0.06);
       backdrop-filter: blur(20px) saturate(180%);
       -webkit-backdrop-filter: blur(20px) saturate(180%);
-      color: rgba(255, 255, 255, 0.90);
+      color: rgba(20, 20, 50, 0.80);
       letter-spacing: 0.015em;
       font-weight: 500;
       -webkit-transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -301,24 +302,27 @@
       }
 
       &:hover {
-        background: rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.80);
+        border-color: rgba(0, 0, 0, 0.12);
         box-shadow:
-          inset 0 0.5px 0 rgba(255, 255, 255, 0.55);
-        color: #fff;
+          inset 0 1px 0 rgba(255, 255, 255, 1.0),
+          0 2px 6px rgba(0, 0, 0, 0.08);
+        color: rgba(10, 10, 40, 0.95);
       }
     }
 
     /* Active / current page indicator — base (no theme set) */
     .masthead__menu-item--current a {
-      background: rgba(255, 255, 255, 0.28);
+      background: rgba(255, 255, 255, 0.85);
+      border-color: rgba(0, 0, 0, 0.10);
       box-shadow:
-        inset 0 0.5px 0 rgba(255, 255, 255, 0.70),
-        0 0 0 2px rgba(255, 255, 255, 0.55);
-      color: #ffffff;
+        inset 0 1px 0 rgba(255, 255, 255, 1.0),
+        0 2px 8px rgba(0, 0, 0, 0.10);
+      color: rgba(10, 10, 40, 1.0);
       font-weight: 600;
 
       &:hover {
-        background: rgba(255, 255, 255, 0.36);
+        background: rgba(255, 255, 255, 0.95);
       }
     }
   }
@@ -499,16 +503,4 @@
   }
 
   li ul > li a {
-    padding-left: 2rem;
-    font-weight: normal;
-  }
-
-  /* hide sub sub links on small screens*/
-  li > ul li {
-    display: none;
-
-    @include breakpoint($medium) {
-      display: block;
-    }
-  }
-}
+    padding-left: 2r
