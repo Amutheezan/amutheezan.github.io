@@ -13,23 +13,10 @@
 .author__bio a,
 .author__urls a,
 .page__footer a {
-  position: relative;
   text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 1.5px;
-  transition:
-    background-size 0.28s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.18s ease;
-
-  &:hover,
-  &:focus-visible {
-    background-size: 100% 1.5px;
-  }
+  transition: color 0.18s ease;
 }
 
-/* Archive listing links keep the underline semantic but slide it too */
 .archive a {
   text-decoration: none !important;
 }
