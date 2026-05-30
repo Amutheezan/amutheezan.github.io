@@ -178,6 +178,7 @@ html[data-color-theme="navy"] {
   /* Active nav pill — navy light: bright sky-blue */
   .greedy-nav .visible-links .masthead__menu-item--current a {
     background: rgba(59, 130, 246, 0.72);
+    color: #ffffff;
     box-shadow:
       inset 0 0.5px 0 rgba(255, 255, 255, 0.60),
       0 0 0 2px rgba(147, 197, 253, 0.80);
@@ -377,10 +378,11 @@ html[data-color-theme="slate"] {
 
   /* Active nav pill — slate light: silver-white */
   .greedy-nav .visible-links .masthead__menu-item--current a {
-    background: rgba(148, 163, 184, 0.65);
+    background: rgba(100, 116, 139, 0.75);
+    color: #ffffff;
     box-shadow:
-      inset 0 0.5px 0 rgba(255, 255, 255, 0.65),
-      0 0 0 2px rgba(203, 213, 225, 0.85);
+      inset 0 0.5px 0 rgba(255, 255, 255, 0.55),
+      0 0 0 2px rgba(148, 163, 184, 0.80);
   }
 }
 
@@ -578,6 +580,7 @@ html[data-color-theme="dark-purple"] {
   /* Active nav pill — dark-purple light: deep violet */
   .greedy-nav .visible-links .masthead__menu-item--current a {
     background: rgba(76, 19, 152, 0.85);
+    color: #ffffff;
     box-shadow:
       inset 0 0.5px 0 rgba(255, 255, 255, 0.55),
       0 0 0 2px rgba(167, 139, 250, 0.80);
@@ -683,7 +686,4 @@ html[data-theme="dark"][data-color-theme="dark-purple"] {
   .greedy-nav .visible-links .masthead__menu-item--current a {
     background: rgba(88, 28, 135, 0.80);
     box-shadow:
-      inset 0 0.5px 0 rgba(255, 255, 255, 0.55),
-      0 0 0 2px rgba(192, 132, 252, 0.75);
-  }
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+      inset 0 0.5px 0 rgba(255, 255, 
