@@ -232,6 +232,10 @@ html[data-theme="dark"][data-color-theme="navy"] {
 
   a { color: #7eb8d8; &:hover { color: #a8d0e8; } &:visited { color: #a8d0e8; } }
 
+  .masthead__inner-wrap a, .greedy-nav a {
+    color: rgba(255, 255, 255, 0.90);
+    &:hover { color: #a8d0e8; }
+  }
   .masthead__menu-item--lg a,
   .masthead__menu-item--lg a:visited,
   .masthead__menu-item--lg a:hover { color: #ffffff; }
@@ -433,6 +437,10 @@ html[data-theme="dark"][data-color-theme="slate"] {
 
   a { color: #94a3b8; &:hover { color: #cbd5e1; } &:visited { color: #cbd5e1; } }
 
+  .masthead__inner-wrap a, .greedy-nav a {
+    color: rgba(255, 255, 255, 0.90);
+    &:hover { color: #e2e8f0; }
+  }
   .masthead__menu-item--lg a,
   .masthead__menu-item--lg a:visited,
   .masthead__menu-item--lg a:hover { color: #ffffff; }
