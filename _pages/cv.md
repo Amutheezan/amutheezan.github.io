@@ -3,7 +3,7 @@ permalink: /cv/
 layout: single
 title: ""
 author_profile: false
-classes: cv-page
+classes: wide cv-page
 ---
 
 <!-- ABOUT -->
