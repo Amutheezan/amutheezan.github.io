@@ -1,5 +1,5 @@
 ---
-permalink: /cv/
+permalink: /resume/
 layout: single
 title: ""
 author_profile: false
