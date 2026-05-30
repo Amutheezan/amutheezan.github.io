@@ -255,55 +255,33 @@
 }
 
 
-/* Page width override */
-#main {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem 2rem 2rem;
-  margin-top: 1.5rem;
+/* ── CV page-only overrides (scoped to body.cv-page) ────────────────────── */
+body.cv-page {
+  #main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* Hide site title from masthead */
+  .masthead__menu-item--lg {
+    display: none !important;
+  }
+
+  /* Hide hamburger dropdown */
+  .greedy-nav__toggle-btn { display: none !important; }
+  .greedy-nav .hidden-links { display: none !important; }
 }
 
-.page {
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-}
-
-/* Hide site title from masthead */
-.masthead__menu-item--lg {
-  display: none !important;
-}
-
-/* Hide hamburger dropdown globally — all screen sizes */
-.greedy-nav__toggle-btn { display: none !important; }
-.greedy-nav .hidden-links { display: none !important; }
-
-
-
-/* Page width override */
-#main {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem 2rem 2rem;
-  margin-top: 1.5rem;
-}
-.page {
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-}
-
-/* Hide site title from masthead */
-.masthead__menu-item--lg {
-  display: none !important;
-}
-
-/* Hide hamburger dropdown globally — all screen sizes */
-.greedy-nav__toggle-btn { display: none !important; }
-.greedy-nav .hidden-links { display: none !important; }
-
-/* Clean up mobile nav */
-@media (max-width: 640px) {
+/* Clean up mobile nav (CV page only) */
+body.cv-page @media (max-width: 640px) {
   /* Compact nav items */
   .masthead__inner-wrap { padding: 0.35rem 0.6rem; }
   .greedy-nav a { font-size: 0.75em; padding: 0.3rem 0.5rem; }
