@@ -12,18 +12,20 @@ source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 
 # Windows timezone data (no system tzdata on Windows)
-gem "tzinfo-data"
+gem "tzinfo-data", platforms: [:mingw, :x64_mingw, :mswin]
 
-# Gems removed from Ruby stdlib in Ruby 3.4+ / 4.0
-gem "csv"
-gem "base64"
-gem "logger"
-gem "bigdecimal"
-gem "ostruct"
-gem "observer"
-gem "mutex_m"
-gem "drb"
-gem "abbrev"
+# Gems removed from Ruby stdlib in Ruby 3.4+ / 4.0 — only needed locally on Ruby 4.0
+if RUBY_VERSION >= "3.4"
+  gem "csv"
+  gem "base64"
+  gem "logger"
+  gem "bigdecimal"
+  gem "ostruct"
+  gem "observer"
+  gem "mutex_m"
+  gem "drb"
+  gem "abbrev"
+end
 
 # If you want to use Jekyll native, uncomment the line below.
 # To upgrade, run `bundle update`.
