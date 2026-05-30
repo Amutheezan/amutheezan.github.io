@@ -1,3 +1,13 @@
+# Jekyll local build artifacts
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+Gemfile.lock
+setup_log.txt
+serve_log.txt
+
 venv
 venv/*
 venv/**/*
