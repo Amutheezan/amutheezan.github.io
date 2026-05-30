@@ -634,6 +634,10 @@ html[data-theme="dark"][data-color-theme="dark-purple"] {
 
   a { color: #c084fc; &:hover { color: #d8b4fe; } &:visited { color: #d8b4fe; } }
 
+  .masthead__inner-wrap a, .greedy-nav a {
+    color: rgba(255, 255, 255, 0.90);
+    &:hover { color: #f3e8ff; }
+  }
   .masthead__menu-item--lg a,
   .masthead__menu-item--lg a:visited,
   .masthead__menu-item--lg a:hover { color: #ffffff; }
