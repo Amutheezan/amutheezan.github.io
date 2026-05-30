@@ -1,0 +1,28 @@
+=== Jekyll Setup - amutheezan.github.io ===
+
+--- Ruby version ---
+ruby 4.0.5 (2026-05-20 revision 64336ffd0e) +PRISM [x64-mingw-ucrt]
+
+--- Installing bundler ---
+WARNING:  You don't have c:/users/priva/.local/share/gem/ruby/4.0.0/bin in your PATH,
+	  gem executables (bundle, bundler) will not run.
+Successfully installed bundler-4.0.12
+1 gem installed
+
+--- Configuring bundle path ---
+
+--- Installing dependencies ---
+Fetching gem metadata from https://rubygems.org/..........
+Resolving dependencies...
+Fetching multi_json 1.21.1
+Fetching activesupport 3.2.22.5
+Fetching tzinfo-data 1.2026.2
+Fetching tzinfo 2.0.6
+Installing multi_json 1.21.1
+Installing tzinfo 2.0.6
+Installing tzinfo-data 1.2026.2
+Installing activesupport 3.2.22.5
+Bundle complete! 14 Gemfile dependencies, 100 gems now installed.
+Bundled gems are installed into `./vendor/bundle`
+
+=== DONE ===

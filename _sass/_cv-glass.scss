@@ -1,0 +1,417 @@
+/* ==========================================================================
+   CV — Liquid Glass Cards  (sproogen-style two-column layout)
+   ========================================================================== */
+
+/* ── Glass card base ─────────────────────────────────────────────────────── */
+.cv-section {
+  position: relative;
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 16px;
+  box-shadow:
+    0 2px 6px  rgba(37, 99, 235, 0.04),
+    0 8px 32px rgba(37, 99, 235, 0.07),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.95);
+  padding: 1.6rem 2rem;
+  margin-bottom: 1.4rem;
+  overflow: visible; // dots can sit outside
+
+  // shimmer overlay
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.50) 0%,
+      rgba(255, 255, 255, 0.00) 55%
+    );
+  }
+}
+
+/* ── Section heading ─────────────────────────────────────────────────────── */
+.cv-section__title {
+  margin: 0 0 1.2rem;
+  padding-bottom: 0.55rem;
+  font-family: $sans-serif;
+  font-size: $type-size-5;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-color;
+  border-bottom: 1.5px solid rgba(37, 99, 235, 0.12);
+}
+
+/* ── Two-column timeline entry ───────────────────────────────────────────── */
+.cv-entry {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 0;
+  position: relative;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:first-child { padding-top: 0; }
+  &:last-child  { border-bottom: none; padding-bottom: 0; }
+
+  // Blue indicator dot (left of card)
+  &::after {
+    content: '';
+    position: absolute;
+    left: -2.45rem;
+    top: 1.35rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $blue;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+  }
+}
+
+/* Left column: org / role / date / link */
+.cv-entry__left {
+  padding-right: 1.4rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  min-width: 0;
+}
+
+.cv-entry__org {
+  font-weight: 700;
+  font-size: 0.95em;
+  color: $darker-gray;
+  margin: 0 0 0.2rem;
+  line-height: 1.3;
+}
+
+.cv-entry__role {
+  font-weight: 600;
+  font-size: 0.87em;
+  color: $dark-gray;
+  margin: 0 0 0.25rem;
+  line-height: 1.3;
+}
+
+.cv-entry__date {
+  font-size: 0.8em;
+  color: $gray;
+  margin: 0 0 0.2rem;
+}
+
+.cv-entry__link {
+  display: block;
+  font-size: 0.76em;
+  color: $gray;
+  text-decoration: none;
+  word-break: break-all;
+  &:hover { color: $blue; }
+}
+
+/* Right column: details */
+.cv-entry__right {
+  padding-left: 1.4rem;
+  font-size: 0.88em;
+  color: $text-color;
+  line-height: 1.6;
+  min-width: 0;
+
+  p  { margin: 0 0 0.3rem; }
+
+  ul {
+    margin: 0.2rem 0 0.5rem 1.2rem;
+    padding: 0;
+  }
+
+  li { margin-bottom: 0.2rem; }
+
+  strong { color: $darker-gray; }
+
+  // "Duties:" / "Research Projects:" labels
+  .cv-label {
+    font-weight: 600;
+    margin-top: 0.4rem;
+  }
+}
+
+/* Research project pills inside right column */
+.cv-entry__projects {
+  margin-top: 0.4rem;
+
+  ul {
+    margin-left: 1.2rem;
+  }
+
+  li strong {
+    color: $blue;
+  }
+}
+
+/* ── About Me card ───────────────────────────────────────────────────────── */
+.cv-about {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.cv-about__photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.12);
+  flex-shrink: 0;
+}
+
+.cv-about__text {
+  font-size: 0.92em;
+  color: $text-color;
+  line-height: 1.7;
+
+  p { margin: 0 0 0.5rem; }
+  p:last-child { margin-bottom: 0; }
+}
+
+/* ── Skills grid ─────────────────────────────────────────────────────────── */
+.cv-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 0.7rem;
+  font-size: 0.87em;
+}
+
+.cv-skill-group {
+  background: rgba(241, 245, 249, 0.8);
+  border: 1px solid rgba(37, 99, 235, 0.08);
+  border-radius: 10px;
+  padding: 0.6rem 0.85rem;
+}
+
+.cv-skill-group__label {
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $blue;
+  margin-bottom: 0.25rem;
+}
+
+.cv-skill-group__items {
+  color: $text-color;
+  line-height: 1.5;
+}
+
+/* ── Education rows ──────────────────────────────────────────────────────── */
+.cv-edu {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.15rem 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:first-child { padding-top: 0; }
+  &:last-child  { border-bottom: none; padding-bottom: 0; }
+}
+
+.cv-edu__school {
+  font-weight: 700;
+  font-size: 0.95em;
+  color: $darker-gray;
+  margin: 0;
+}
+
+.cv-edu__degree {
+  font-size: 0.87em;
+  color: $blue;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cv-edu__date {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  font-size: 0.78em;
+  color: $gray;
+  white-space: nowrap;
+  text-align: right;
+  align-self: center;
+}
+
+.cv-edu__detail {
+  grid-column: 1 / -1;
+  font-size: 0.82em;
+  color: $gray;
+  margin-top: 0.1rem;
+}
+
+/* ── Section wrapper: pull left so dots sit outside glass card ───────────── */
+.cv-section-wrap {
+  padding-left: 2.2rem;
+}
+
+
+/* Page width override */
+#main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 2rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.page {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Hide site title from masthead */
+.masthead__menu-item--lg {
+  display: none !important;
+}
+
+/* Hide hamburger dropdown globally — all screen sizes */
+.greedy-nav__toggle-btn { display: none !important; }
+.greedy-nav .hidden-links { display: none !important; }
+
+
+
+/* Page width override */
+#main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 2rem 2rem;
+  margin-top: 1.5rem;
+}
+.page {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Hide site title from masthead */
+.masthead__menu-item--lg {
+  display: none !important;
+}
+
+/* Hide hamburger dropdown globally — all screen sizes */
+.greedy-nav__toggle-btn { display: none !important; }
+.greedy-nav .hidden-links { display: none !important; }
+
+/* Clean up mobile nav */
+@media (max-width: 640px) {
+  /* Compact nav items */
+  .masthead__inner-wrap { padding: 0.35rem 0.6rem; }
+  .greedy-nav a { font-size: 0.75em; padding: 0.3rem 0.5rem; }
+  .masthead__menu-item { padding: 0; }
+  .masthead__inner-wrap { padding: 0.4rem 0.75rem; }
+
+  /* Page */
+  #main { padding: 0.75rem 0.85rem; }
+
+  /* Cards */
+  .cv-section { padding: 1.1rem; border-radius: 12px; margin-bottom: 1rem; }
+  .cv-section__title { font-size: 0.7em; margin-bottom: 0.9rem; }
+
+  /* About: stack photo above text */
+  .cv-about { grid-template-columns: 1fr; justify-items: center; gap: 0.9rem; }
+  .cv-about__photo { width: 80px; height: 80px; }
+  .cv-about__text { font-size: 0.88em; text-align: center; }
+
+  /* Experience: stack columns */
+  .cv-section-wrap { padding-left: 0; }
+  .cv-entry {
+    grid-template-columns: 1fr;
+    padding: 0.9rem 0;
+    &::after { display: none; }
+  }
+  .cv-entry__left {
+    padding-right: 0;
+    padding-bottom: 0.6rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: 0.6rem;
+  }
+  .cv-entry__right { padding-left: 0; font-size: 0.84em; }
+  .cv-entry__org  { font-size: 0.9em; }
+  .cv-entry__role { font-size: 0.82em; }
+  .cv-entry__date { font-size: 0.76em; }
+
+  /* Education */
+  .cv-edu { grid-template-columns: 1fr; gap: 0.1rem; padding: 0.7rem 0; }
+  .cv-edu__date { grid-column: 1; grid-row: auto; text-align: left; font-size: 0.76em; }
+
+  /* Skills: 2 columns */
+  .cv-skills { grid-template-columns: 1fr 1fr; gap: 0.5rem; font-size: 0.82em; }
+}
+
+/* Dark mode: fix border on mobile entry left */
+html[data-theme='dark'] {
+  @media (max-width: 640px) {
+    .cv-entry__left { border-bottom-color: rgba(255, 255, 255, 0.08) !important; }
+  }
+}
+
+/* ── Dark mode overrides ──────────────────────────────────────────────── */
+html[data-theme='dark'] {
+  .cv-section {
+    background: rgba(30, 41, 59, 0.75) !important;
+    border-color: rgba(255, 255, 255, 0.10) !important;
+    box-shadow:
+      0 2px 6px  rgba(0, 0, 0, 0.25),
+      0 8px 32px rgba(0, 0, 0, 0.40),
+      inset 0 1.5px 0 rgba(255, 255, 255, 0.08) !important;
+    &::before {
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.06) 0%,
+        rgba(255, 255, 255, 0.00) 55%
+      ) !important;
+    }
+  }
+
+  .cv-section__title {
+    color: #e2e8f0 !important;
+    border-bottom-color: rgba(99, 179, 237, 0.20) !important;
+  }
+
+  .cv-entry {
+    border-bottom-color: rgba(255, 255, 255, 0.06) !important;
+    &::after {
+      background: #63b3ed !important;
+      box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.20) !important;
+    }
+  }
+
+  .cv-entry__left  { border-right-color: rgba(255, 255, 255, 0.08) !important; }
+  .cv-entry__org   { color: #e2e8f0 !important; }
+  .cv-entry__role  { color: #cbd5e0 !important; }
+  .cv-entry__date  { color: #90cdf4 !important; }
+  .cv-entry__link  { color: #90cdf4 !important; &:hover { color: #63b3ed !important; } }
+  .cv-entry__right { color: #cbd5e0 !important; strong { color: #e2e8f0 !important; } }
+  .cv-entry__projects li strong { color: #90cdf4 !important; }
+
+  .cv-skill-group {
+    background: rgba(15, 23, 42, 0.70) !important;
+    border-color: rgba(99, 179, 237, 0.15) !important;
+  }
+  .cv-skill-group__label { color: #90cdf4 !important; }
+  .cv-skill-group__items { color: #cbd5e0 !important; }
+
+  .cv-edu { border-bottom-color: rgba(255, 255, 255, 0.06) !important; }
+  .cv-edu__school { color: #e2e8f0 !important; }
+  .cv-edu__degree { color: #90cdf4 !important; }
+  .cv-edu__date   { color: #94a3b8 !important; }
+  .cv-edu__detail { color: #94a3b8 !important; }
+
+  .cv-about__photo {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.40) !important;
+  }
+  .cv-about__text { color: #cbd5e0 !important; }
+  .cv-label { color: #e2e8f0 !important; }
+}

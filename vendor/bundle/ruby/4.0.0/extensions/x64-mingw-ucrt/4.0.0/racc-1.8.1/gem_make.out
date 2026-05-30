@@ -1,0 +1,19 @@
+current directory: C:/Users/priva/PycharmProjects/amutheezan.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/Users/priva/PycharmProjects/amutheezan.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j9 DESTDIR\= sitearchdir\=./.gem.20260530-28692-5prb7o sitelibdir\=./.gem.20260530-28692-5prb7o clean
+
+current directory: C:/Users/priva/PycharmProjects/amutheezan.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j9 DESTDIR\= sitearchdir\=./.gem.20260530-28692-5prb7o sitelibdir\=./.gem.20260530-28692-5prb7o
+generating cparse-x64-mingw-ucrt.def
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: C:/Users/priva/PycharmProjects/amutheezan.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j9 DESTDIR\= sitearchdir\=./.gem.20260530-28692-5prb7o sitelibdir\=./.gem.20260530-28692-5prb7o install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20260530-28692-5prb7o/racc
+
+current directory: C:/Users/priva/PycharmProjects/amutheezan.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260530-28692-5prb7o sitelibdir\=./.gem.20260530-28692-5prb7o clean
