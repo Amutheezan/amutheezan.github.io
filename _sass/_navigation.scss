@@ -233,7 +233,6 @@
 
   a {
     display: block;
-    margin: 0 1rem;
     padding: 0.5rem 0;
     color: rgba(20, 20, 50, 0.80);
     text-decoration: none;
@@ -259,24 +258,17 @@
   }
 
   .visible-links {
-    display: table;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex-wrap: nowrap;
 
     li {
-      display: table-cell;
-      vertical-align: middle;
+      display: flex;
+      align-items: center;
 
       &:first-child {
         font-weight: bold;
-
-        a {
-          margin-left: 0;
-        }
-      }
-
-      &:last-child {
-        a {
-          margin-right: 0;
-        }
       }
     }
 
