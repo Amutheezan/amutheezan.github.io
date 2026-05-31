@@ -398,25 +398,19 @@ html[data-theme="dark"] {
   .notice--success{ background: rgba(5,  55, 25, 0.55); color: #86efac; border-color: rgba(74, 222, 128, 0.35); }
   .notice--info   { background: rgba(6, 182, 212, 0.10); color: #22d3ee; border-color: rgba(34, 211, 238, 0.35); }
 
-  /* --- Nav pills — dark mode: vivid interest-tag style --- */
+  /* --- Nav pills — dark mode base (no theme): indigo --- */
   .greedy-nav .visible-links a {
-    color: rgba(255, 255, 255, 0.88);
-    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
-    &:hover { transform: translateY(-1px); color: #ffffff; }
+    background: rgba(99, 102, 241, 0.15);
+    border-color: rgba(129, 140, 248, 0.40);
+    color: #a5b4fc;
+    &:hover {
+      background: rgba(99, 102, 241, 0.25);
+      border-color: rgba(129, 140, 248, 0.65);
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.30);
+      color: #c7d2fe;
+      transform: translateY(-1px);
+    }
   }
-
-  .greedy-nav .visible-links li:nth-child(2) a  { background: rgba(37,99,235,0.18);  border-color: rgba(96,165,250,0.45);  color: #93c5fd;
-    &:hover { background: rgba(37,99,235,0.28);  box-shadow: 0 4px 14px rgba(37,99,235,0.35);  color: #bfdbfe; } }
-  .greedy-nav .visible-links li:nth-child(3) a  { background: rgba(124,58,237,0.18); border-color: rgba(167,139,250,0.45); color: #c4b5fd;
-    &:hover { background: rgba(124,58,237,0.28); box-shadow: 0 4px 14px rgba(124,58,237,0.35); color: #ddd6fe; } }
-  .greedy-nav .visible-links li:nth-child(4) a  { background: rgba(13,148,136,0.18); border-color: rgba(45,212,191,0.45);  color: #5eead4;
-    &:hover { background: rgba(13,148,136,0.28); box-shadow: 0 4px 14px rgba(13,148,136,0.35); color: #99f6e4; } }
-  .greedy-nav .visible-links li:nth-child(5) a  { background: rgba(99,102,241,0.18); border-color: rgba(129,140,248,0.45); color: #a5b4fc;
-    &:hover { background: rgba(99,102,241,0.28); box-shadow: 0 4px 14px rgba(99,102,241,0.35); color: #c7d2fe; } }
-  .greedy-nav .visible-links li:nth-child(6) a  { background: rgba(21,128,61,0.18);  border-color: rgba(74,222,128,0.45);  color: #86efac;
-    &:hover { background: rgba(21,128,61,0.28);  box-shadow: 0 4px 14px rgba(21,128,61,0.35);  color: #bbf7d0; } }
-  .greedy-nav .visible-links li:nth-child(7) a  { background: rgba(234,88,12,0.18);  border-color: rgba(251,146,60,0.45);  color: #fdba74;
-    &:hover { background: rgba(234,88,12,0.28);  box-shadow: 0 4px 14px rgba(234,88,12,0.35);  color: #fed7aa; } }
 
   .greedy-nav .visible-links .masthead__menu-item--current a {
     filter: brightness(1.15) saturate(1.3);
