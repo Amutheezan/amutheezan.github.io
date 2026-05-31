@@ -258,17 +258,19 @@
   }
 
   .visible-links {
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
-    flex-wrap: nowrap;
+    display: table;
 
     li {
-      display: flex;
-      align-items: center;
+      display: table-cell;
+      vertical-align: middle;
 
       &:first-child {
         font-weight: bold;
+        a { margin-left: 0; }
+      }
+
+      &:last-child {
+        a { margin-right: 0; }
       }
     }
 
