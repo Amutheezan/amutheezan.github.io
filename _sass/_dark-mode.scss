@@ -384,6 +384,35 @@ html[data-theme="dark"] {
   .notice--success{ background: rgba(5,  55, 25, 0.55); color: #86efac; border-color: rgba(74, 222, 128, 0.35); }
   .notice--info   { background: rgba(15, 28, 65, 0.60); color: #93c5fd; border-color: rgba(96, 165, 250, 0.35); }
 
+  /* --- Form inputs / textarea --- */
+  input,
+  textarea,
+  select {
+    background: rgba(15, 28, 65, 0.70);
+    color: #e2e8f0;
+    border-color: rgba(255, 255, 255, 0.20);
+    &::placeholder { color: #64748b; }
+    &:hover  { border-color: rgba(96, 165, 250, 0.50); }
+    &:focus  { border-color: #60a5fa; outline: none;
+               box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.25); }
+  }
+
+  /* --- Mobile: prevent sidebar overlapping content --- */
+  @media (max-width: #{$large - 1}) {
+    .sidebar {
+      position: relative !important;
+      float: none !important;
+      width: 100% !important;
+      margin-bottom: 1.5em;
+      overflow: hidden;
+    }
+    .page {
+      float: none !important;
+      width: 100% !important;
+      padding: 0 !important;
+    }
+  }
+
   /* --- Nav pills — subtle dark glass in dark mode --- */
   .greedy-nav .visible-links a {
     background: rgba(255, 255, 255, 0.10);

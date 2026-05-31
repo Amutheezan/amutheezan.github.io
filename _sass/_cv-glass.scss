@@ -274,12 +274,7 @@ body.cv-page {
     float: none;
   }
 
-  /* Hide site title from masthead */
-  .masthead__menu-item--lg {
-    display: none !important;
-  }
-
-  /* Hide hamburger dropdown */
+  /* Hide hamburger dropdown (CV uses few nav items, no need for overflow) */
   .greedy-nav__toggle-btn { display: none !important; }
   .greedy-nav .hidden-links { display: none !important; }
 }
