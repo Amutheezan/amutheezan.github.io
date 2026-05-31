@@ -433,3 +433,116 @@ html[data-theme="dark"][data-color-theme="dark-purple"] {
     box-shadow: inset 0 0.5px 0 rgba(255,255,255,0.50), 0 0 0 2px rgba(192,132,252,0.65);
   }
 }
+
+
+/* ==========================================================================
+   CV SECTION THEMING — all three themes, light + dark
+   ========================================================================== */
+
+/* ── Cosmic / Indigo — Light ── */
+html:not([data-theme="dark"])[data-color-theme="navy"] {
+  .cv-section {
+    background: rgba(238, 242, 255, 0.75);
+    border-color: rgba(99, 102, 241, 0.25);
+    box-shadow: 0 2px 6px rgba(99,102,241,0.06), 0 8px 32px rgba(99,102,241,0.08), inset 0 1.5px 0 rgba(255,255,255,0.95);
+  }
+  .cv-section__title { color: #1e1b4b; border-bottom-color: rgba(99,102,241,0.18); }
+  .cv-entry { border-bottom-color: rgba(99,102,241,0.10); &::after { background: #6366f1; box-shadow: 0 0 0 3px rgba(99,102,241,0.15); } }
+  .cv-entry__left  { border-right-color: rgba(99,102,241,0.15); }
+  .cv-entry__org   { color: #1e1b4b; }
+  .cv-entry__role  { color: #312e81; }
+  .cv-entry__date  { color: #6366f1; }
+  .cv-entry__link  { color: #4f46e5; &:hover { color: #4338ca; } }
+  .cv-edu__degree  { color: #4f46e5; }
+  .cv-skill-group  { background: rgba(224,231,255,0.70); border-color: rgba(99,102,241,0.12); }
+  .cv-skill-group__label { color: #4f46e5; }
+}
+
+/* ── Cosmic / Indigo — Dark ── */
+html[data-theme="dark"][data-color-theme="navy"] {
+  .cv-section {
+    background: rgba(10, 12, 35, 0.82) !important;
+    border-color: rgba(99, 102, 241, 0.30) !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.30), 0 8px 32px rgba(99,102,241,0.10), inset 0 1.5px 0 rgba(255,255,255,0.04) !important;
+  }
+  .cv-section__title { color: #e2e8f0 !important; border-bottom-color: rgba(99,102,241,0.25) !important; }
+  .cv-entry { border-bottom-color: rgba(99,102,241,0.12) !important; &::after { background: #6366f1 !important; box-shadow: 0 0 0 3px rgba(99,102,241,0.20) !important; } }
+  .cv-entry__left  { border-right-color: rgba(99,102,241,0.15) !important; }
+  .cv-entry__date  { color: #a5b4fc !important; }
+  .cv-entry__link  { color: #a5b4fc !important; &:hover { color: #c7d2fe !important; } }
+  .cv-edu__degree  { color: #a5b4fc !important; }
+  .cv-skill-group  { background: rgba(6,8,22,0.80) !important; border-color: rgba(99,102,241,0.20) !important; }
+  .cv-skill-group__label { color: #a5b4fc !important; }
+}
+
+/* ── Aurora / Cyan — Light ── */
+html:not([data-theme="dark"])[data-color-theme="slate"] {
+  .cv-section {
+    background: rgba(236, 254, 255, 0.75);
+    border-color: rgba(6, 182, 212, 0.25);
+    box-shadow: 0 2px 6px rgba(6,182,212,0.06), 0 8px 32px rgba(6,182,212,0.08), inset 0 1.5px 0 rgba(255,255,255,0.95);
+  }
+  .cv-section__title { color: #164e63; border-bottom-color: rgba(6,182,212,0.18); }
+  .cv-entry { border-bottom-color: rgba(6,182,212,0.10); &::after { background: #06b6d4; box-shadow: 0 0 0 3px rgba(6,182,212,0.15); } }
+  .cv-entry__left  { border-right-color: rgba(6,182,212,0.15); }
+  .cv-entry__org   { color: #0c4a6e; }
+  .cv-entry__role  { color: #155e75; }
+  .cv-entry__date  { color: #0891b2; }
+  .cv-entry__link  { color: #0891b2; &:hover { color: #0e7490; } }
+  .cv-edu__degree  { color: #0891b2; }
+  .cv-skill-group  { background: rgba(207,250,254,0.70); border-color: rgba(6,182,212,0.12); }
+  .cv-skill-group__label { color: #0891b2; }
+}
+
+/* ── Aurora / Cyan — Dark ── */
+html[data-theme="dark"][data-color-theme="slate"] {
+  .cv-section {
+    background: rgba(3, 15, 22, 0.85) !important;
+    border-color: rgba(6, 182, 212, 0.30) !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.30), 0 8px 32px rgba(6,182,212,0.10), inset 0 1.5px 0 rgba(255,255,255,0.04) !important;
+  }
+  .cv-section__title { color: #e2e8f0 !important; border-bottom-color: rgba(6,182,212,0.25) !important; }
+  .cv-entry { border-bottom-color: rgba(6,182,212,0.12) !important; &::after { background: #06b6d4 !important; box-shadow: 0 0 0 3px rgba(6,182,212,0.20) !important; } }
+  .cv-entry__left  { border-right-color: rgba(6,182,212,0.15) !important; }
+  .cv-entry__date  { color: #67e8f9 !important; }
+  .cv-entry__link  { color: #67e8f9 !important; &:hover { color: #a5f3fc !important; } }
+  .cv-edu__degree  { color: #67e8f9 !important; }
+  .cv-skill-group  { background: rgba(2,12,18,0.80) !important; border-color: rgba(6,182,212,0.20) !important; }
+  .cv-skill-group__label { color: #67e8f9 !important; }
+}
+
+/* ── Nebula / Violet — Light ── */
+html:not([data-theme="dark"])[data-color-theme="dark-purple"] {
+  .cv-section {
+    background: rgba(245, 243, 255, 0.75);
+    border-color: rgba(139, 92, 246, 0.25);
+    box-shadow: 0 2px 6px rgba(139,92,246,0.06), 0 8px 32px rgba(139,92,246,0.08), inset 0 1.5px 0 rgba(255,255,255,0.95);
+  }
+  .cv-section__title { color: #2e1065; border-bottom-color: rgba(139,92,246,0.18); }
+  .cv-entry { border-bottom-color: rgba(139,92,246,0.10); &::after { background: #8b5cf6; box-shadow: 0 0 0 3px rgba(139,92,246,0.15); } }
+  .cv-entry__left  { border-right-color: rgba(139,92,246,0.15); }
+  .cv-entry__org   { color: #2e1065; }
+  .cv-entry__role  { color: #4c1d95; }
+  .cv-entry__date  { color: #7c3aed; }
+  .cv-entry__link  { color: #7c3aed; &:hover { color: #5b21b6; } }
+  .cv-edu__degree  { color: #7c3aed; }
+  .cv-skill-group  { background: rgba(237,233,254,0.70); border-color: rgba(139,92,246,0.12); }
+  .cv-skill-group__label { color: #7c3aed; }
+}
+
+/* ── Nebula / Violet — Dark ── */
+html[data-theme="dark"][data-color-theme="dark-purple"] {
+  .cv-section {
+    background: rgba(10, 5, 25, 0.85) !important;
+    border-color: rgba(139, 92, 246, 0.30) !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.30), 0 8px 32px rgba(139,92,246,0.12), inset 0 1.5px 0 rgba(255,255,255,0.04) !important;
+  }
+  .cv-section__title { color: #f3e8ff !important; border-bottom-color: rgba(139,92,246,0.25) !important; }
+  .cv-entry { border-bottom-color: rgba(139,92,246,0.12) !important; &::after { background: #8b5cf6 !important; box-shadow: 0 0 0 3px rgba(139,92,246,0.22) !important; } }
+  .cv-entry__left  { border-right-color: rgba(139,92,246,0.15) !important; }
+  .cv-entry__date  { color: #c4b5fd !important; }
+  .cv-entry__link  { color: #c4b5fd !important; &:hover { color: #ddd6fe !important; } }
+  .cv-edu__degree  { color: #c4b5fd !important; }
+  .cv-skill-group  { background: rgba(7,4,18,0.80) !important; border-color: rgba(139,92,246,0.22) !important; }
+  .cv-skill-group__label { color: #c4b5fd !important; }
+}
