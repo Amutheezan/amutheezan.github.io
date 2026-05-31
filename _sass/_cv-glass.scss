@@ -258,16 +258,19 @@
 /* ── CV page-only overrides (scoped to body.cv-page) ────────────────────── */
 body.cv-page {
   #main {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 2rem 2rem 2rem;
-    margin-top: 1.5rem;
+    padding: 1.5rem 1rem;
+    margin-top: 1rem;
   }
 
-  .page {
+  .page,
+  .page__inner-wrap,
+  .page__content {
     width: 100%;
     max-width: 100%;
     padding: 0;
+    float: none;
   }
 
   /* Hide site title from masthead */
