@@ -147,6 +147,16 @@ html:not([data-theme="dark"])[data-color-theme="navy"] {
     color: #ffffff;
     box-shadow: inset 0 0.5px 0 rgba(255,255,255,0.55), 0 0 0 2px rgba(165,180,252,0.80);
   }
+  .dark-mode-toggle {
+    border-color: rgba(99, 102, 241, 0.45);
+    background: rgba(99, 102, 241, 0.10);
+    color: #4f46e5;
+    &:hover { background: rgba(99, 102, 241, 0.22); border-color: rgba(99, 102, 241, 0.75); box-shadow: 0 0 12px rgba(99, 102, 241, 0.40); color: #3730a3; }
+  }
+  .color-theme-toggle {
+    border-color: rgba(99, 102, 241, 0.35);
+    background: rgba(99, 102, 241, 0.08);
+  }
 }
 
 
@@ -234,6 +244,17 @@ html[data-theme="dark"][data-color-theme="navy"] {
     background: rgba(34, 211, 238, 0.25);
     box-shadow: inset 0 0.5px 0 rgba(255,255,255,0.50), 0 0 0 2px rgba(34,211,238,0.60);
   }
+  .dark-mode-toggle {
+    border-color: rgba(99, 102, 241, 0.55);
+    background: rgba(99, 102, 241, 0.15);
+    color: #a5b4fc;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.25);
+    &:hover { background: rgba(99, 102, 241, 0.28); border-color: rgba(99, 102, 241, 0.80); color: #c7d2fe; box-shadow: 0 0 16px rgba(99, 102, 241, 0.45); }
+  }
+  .color-theme-toggle {
+    border-color: rgba(99, 102, 241, 0.40);
+    background: rgba(99, 102, 241, 0.12);
+  }
 }
 
 
@@ -293,6 +314,16 @@ html:not([data-theme="dark"])[data-color-theme="slate"] {
   .greedy-nav .visible-links .masthead__menu-item--current a {
     background: rgba(6, 182, 212, 0.80); color: #ffffff;
     box-shadow: inset 0 0.5px 0 rgba(255,255,255,0.55), 0 0 0 2px rgba(103,232,249,0.80);
+  }
+  .dark-mode-toggle {
+    border-color: rgba(6, 182, 212, 0.45);
+    background: rgba(6, 182, 212, 0.10);
+    color: #0891b2;
+    &:hover { background: rgba(6, 182, 212, 0.22); border-color: rgba(6, 182, 212, 0.75); box-shadow: 0 0 12px rgba(6, 182, 212, 0.40); color: #0e7490; }
+  }
+  .color-theme-toggle {
+    border-color: rgba(6, 182, 212, 0.35);
+    background: rgba(6, 182, 212, 0.08);
   }
 }
 
@@ -367,6 +398,17 @@ html[data-theme="dark"][data-color-theme="slate"] {
     background: rgba(6, 182, 212, 0.25);
     box-shadow: inset 0 0.5px 0 rgba(255,255,255,0.50), 0 0 0 2px rgba(6,182,212,0.60);
   }
+  .dark-mode-toggle {
+    border-color: rgba(6, 182, 212, 0.55);
+    background: rgba(6, 182, 212, 0.15);
+    color: #22d3ee;
+    box-shadow: 0 0 8px rgba(6, 182, 212, 0.25);
+    &:hover { background: rgba(6, 182, 212, 0.28); border-color: rgba(6, 182, 212, 0.80); color: #67e8f9; box-shadow: 0 0 16px rgba(6, 182, 212, 0.45); }
+  }
+  .color-theme-toggle {
+    border-color: rgba(6, 182, 212, 0.40);
+    background: rgba(6, 182, 212, 0.12);
+  }
 }
 
 
@@ -426,6 +468,16 @@ html:not([data-theme="dark"])[data-color-theme="dark-purple"] {
   .greedy-nav .visible-links .masthead__menu-item--current a {
     background: rgba(124, 58, 237, 0.80); color: #ffffff;
     box-shadow: inset 0 0.5px 0 rgba(255,255,255,0.55), 0 0 0 2px rgba(196,181,253,0.80);
+  }
+  .dark-mode-toggle {
+    border-color: rgba(139, 92, 246, 0.45);
+    background: rgba(139, 92, 246, 0.10);
+    color: #7c3aed;
+    &:hover { background: rgba(139, 92, 246, 0.22); border-color: rgba(139, 92, 246, 0.75); box-shadow: 0 0 12px rgba(139, 92, 246, 0.40); color: #5b21b6; }
+  }
+  .color-theme-toggle {
+    border-color: rgba(139, 92, 246, 0.35);
+    background: rgba(139, 92, 246, 0.08);
   }
 }
 
@@ -499,6 +551,17 @@ html[data-theme="dark"][data-color-theme="dark-purple"] {
   .greedy-nav .visible-links .masthead__menu-item--current a {
     background: rgba(139, 92, 246, 0.28);
     box-shadow: inset 0 0.5px 0 rgba(255,255,255,0.50), 0 0 0 2px rgba(192,132,252,0.65);
+  }
+  .dark-mode-toggle {
+    border-color: rgba(139, 92, 246, 0.55);
+    background: rgba(139, 92, 246, 0.15);
+    color: #c084fc;
+    box-shadow: 0 0 8px rgba(139, 92, 246, 0.25);
+    &:hover { background: rgba(139, 92, 246, 0.28); border-color: rgba(139, 92, 246, 0.80); color: #d8b4fe; box-shadow: 0 0 16px rgba(139, 92, 246, 0.45); }
+  }
+  .color-theme-toggle {
+    border-color: rgba(139, 92, 246, 0.40);
+    background: rgba(139, 92, 246, 0.12);
   }
 }
 
