@@ -78,6 +78,9 @@
   font-size: $type-size-7;
   color: rgba(25, 35, 65, 0.68);
 
+  html[data-theme="dark"] & {
+    color: rgba(255, 255, 255, 0.82) !important;
+  }
 }
 
 .page__footer .page__footer-copyright a {
@@ -87,6 +90,11 @@
   &:hover {
     color: rgba(20, 30, 80, 1.0) !important;
     text-decoration: none !important;
+  }
+
+  html[data-theme="dark"] & {
+    color: rgba(255, 255, 255, 0.82) !important;
+    &:hover { color: #ffffff !important; }
   }
 }
 
