@@ -417,3 +417,66 @@ html[data-theme="dark"] {
     color: #ffffff;
   }
 }
+
+/* ==========================================================================
+   DARK MODE TOGGLE BUTTON
+   ========================================================================== */
+
+.dark-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.90);
+  cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 1;
+  transition:
+    background 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+  vertical-align: middle;
+
+  &:hover {
+    background: rgba(99, 102, 241, 0.30);
+    border-color: rgba(99, 102, 241, 0.70);
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(99, 102, 241, 0.50);
+  }
+
+  &:focus { outline: none; }
+
+  &:focus-visible {
+    outline: 2px solid rgba(99, 102, 241, 0.70);
+    outline-offset: 2px;
+  }
+
+  .icon-sun  { display: none; }
+  .icon-moon { display: inline; }
+}
+
+html[data-theme="dark"] {
+  .dark-mode-toggle {
+    border-color: rgba(34, 211, 238, 0.40);
+    background: rgba(34, 211, 238, 0.12);
+    color: #22d3ee;
+    box-shadow: 0 0 8px rgba(34, 211, 238, 0.20);
+
+    &:hover {
+      background: rgba(34, 211, 238, 0.25);
+      border-color: rgba(34, 211, 238, 0.80);
+      color: #67e8f9;
+      box-shadow: 0 0 16px rgba(34, 211, 238, 0.45);
+    }
+
+    .icon-sun  { display: inline; }
+    .icon-moon { display: none; }
+  }
+}
