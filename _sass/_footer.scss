@@ -111,4 +111,24 @@
     padding-bottom: 5px;
     font-family: $sans-serif-narrow;
     font-size: $type-size-6;
-    text-transf
+    text-transform: uppercase;
+  }
+
+  li + li:before {
+    content: "";
+    padding-right: 5px;
+  }
+
+  a {
+    padding-right: 10px;
+    font-weight: bold;
+  }
+
+  .social-icons {
+    li {
+      a {
+        white-space: nowrap;
+      }
+    }
+  }
+}
