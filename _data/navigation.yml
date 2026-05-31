@@ -19,9 +19,6 @@ main:
     url: /blog/
 
 blog:
-  - title: "Main Website"
-    url: /
-
   - title: "Categories"
     url: /blog/categories/
 
@@ -32,7 +29,7 @@ blog:
     url: /blog/archive/
 
 resume:
-  - title: "Main Website"
+  - title: "← Home"
     url: /
 
   - title: "CV"

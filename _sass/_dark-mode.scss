@@ -357,6 +357,33 @@ html[data-theme="dark"] {
     &:hover { color: #bfdbfe; }
   }
 
+  /* --- Single post / page text --- */
+  .page__title        { color: #e2e8f0; }
+  .page__lead         { color: #cbd5e1; }
+  .page__meta         { color: #94a3b8; }
+  .page__date         { color: #94a3b8; }
+  .page__content {
+    p, li, dt, dd    { color: #cbd5e1; }
+    h2, h3, h4, h5   { color: #e2e8f0; }
+    small            { color: #94a3b8; }
+  }
+
+  /* --- Post taxonomy (tags / categories) --- */
+  .page__taxonomy-item {
+    a {
+      color: #93c5fd;
+      border-color: rgba(96, 165, 250, 0.35);
+      &:hover { background: rgba(96, 165, 250, 0.15); color: #bfdbfe; }
+    }
+  }
+
+  /* --- Notice boxes --- */
+  .notice         { background: rgba(15, 28, 65, 0.60); color: #cbd5e1; border-color: rgba(255,255,255,0.12); }
+  .notice--danger { background: rgba(80, 10, 20, 0.55); color: #fca5a5; border-color: rgba(248, 113, 113, 0.35); }
+  .notice--warning{ background: rgba(80, 50, 0,  0.55); color: #fcd34d; border-color: rgba(251, 191, 36, 0.35); }
+  .notice--success{ background: rgba(5,  55, 25, 0.55); color: #86efac; border-color: rgba(74, 222, 128, 0.35); }
+  .notice--info   { background: rgba(15, 28, 65, 0.60); color: #93c5fd; border-color: rgba(96, 165, 250, 0.35); }
+
   /* --- Nav pills — subtle dark glass in dark mode --- */
   .greedy-nav .visible-links a {
     background: rgba(255, 255, 255, 0.10);
