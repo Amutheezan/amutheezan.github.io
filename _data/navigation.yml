@@ -27,13 +27,17 @@ main:
 blog:
   - title: "Categories"
     url: /blog/categories/
+    icon: "fas fa-folder"
 
   - title: "Tags"
     url: /blog/tags/
+    icon: "fas fa-tags"
 
   - title: "Archive"
     url: /blog/archive/
+    icon: "fas fa-archive"
 
 resume:
   - title: "CV"
     url: /cv/
+    icon: "fas fa-id-card"
