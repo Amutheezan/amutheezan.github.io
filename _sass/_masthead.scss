@@ -6,13 +6,14 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(255, 255, 255, 0.07);
-  backdrop-filter: blur(64px) saturate(200%);
-  -webkit-backdrop-filter: blur(64px) saturate(200%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(240, 244, 255, 0.75);
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  border-bottom: 1px solid rgba(99, 102, 241, 0.20);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.50),
-    0 4px 24px rgba(0, 0, 0, 0.06);
+    0 0 0 1px rgba(99, 102, 241, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.70),
+    0 4px 24px rgba(99, 102, 241, 0.08);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
