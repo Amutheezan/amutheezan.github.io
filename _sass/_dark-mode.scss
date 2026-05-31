@@ -111,11 +111,15 @@ html[data-theme="dark"] {
     }
   }
 
-  /* --- Footer (already dark, just tweak slightly) --- */
+  /* --- Footer --- */
   .page__footer {
     background: rgba(4, 8, 22, 0.55);
     border-top-color: rgba(255, 255, 255, 0.10);
-    color: rgba(255, 255, 255, 0.82);
+    color: rgba(255, 255, 255, 0.82) !important;
+
+    footer, p, li, span, small { color: rgba(255, 255, 255, 0.82) !important; }
+    a { color: rgba(255, 255, 255, 0.82) !important;
+        &:hover { color: #ffffff !important; } }
   }
 
   /* --- Links --- */
