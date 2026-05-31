@@ -23,7 +23,7 @@ Before his doctoral studies, he gained industry experience as a Software Enginee
   <span class="interest-tag interest-tag--purple">
     <i class="fas fa-cogs"></i> Combinatorial Optimization
   </span>
-  <span class="interest-tag interest-tag--blue">
+  <span class="interest-tag interest-tag--indigo">
     <i class="fas fa-robot" aria-hidden="true"></i> Multi-Agent Systems
   </span>
   <span class="interest-tag interest-tag--teal">

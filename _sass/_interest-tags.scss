@@ -91,6 +91,18 @@
       color: #c2410c;
     }
   }
+
+  &--indigo {
+    background: rgba(99, 102, 241, 0.10);
+    border-color: rgba(99, 102, 241, 0.45);
+    color: #4338ca;
+    i { color: #6366f1; }
+    &:hover {
+      background: rgba(99, 102, 241, 0.18);
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.22);
+      color: #3730a3;
+    }
+  }
 }
 
 /* ── Dark mode — richer, more vivid tags ── */
@@ -135,5 +147,13 @@ html[data-theme="dark"] {
     color: #fdba74;
     i { color: #fb923c; }
     &:hover { background: rgba(234, 88, 12, 0.28); color: #fed7aa; }
+  }
+
+  .interest-tag--indigo {
+    background: rgba(99, 102, 241, 0.18);
+    border-color: rgba(129, 140, 248, 0.55);
+    color: #a5b4fc;
+    i { color: #818cf8; }
+    &:hover { background: rgba(99, 102, 241, 0.28); color: #c7d2fe; }
   }
 }
