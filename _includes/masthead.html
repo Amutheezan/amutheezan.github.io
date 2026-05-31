@@ -29,7 +29,7 @@
                 {% assign is_current = true %}
               {% endif %}
             {% endunless %}
-            <li class="masthead__menu-item{% if is_current %} masthead__menu-item--current{% endif %}"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item{% if is_current %} masthead__menu-item--current{% endif %}"><a href="{{ domain }}{{ link.url }}">{% if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i> {% endif %}{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>

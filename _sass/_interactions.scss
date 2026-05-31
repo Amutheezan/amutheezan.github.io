@@ -285,3 +285,13 @@ html:not([data-theme="dark"])[data-color-theme="purple"] .greedy-nav .hidden-lin
     transform: translateY(0);
   }
 }
+
+/* --------------------------------------------------------------------------
+   Nav pill icons — keep icon proportional to label text
+   -------------------------------------------------------------------------- */
+.greedy-nav .visible-links .masthead__menu-item a i {
+  font-size: 0.82em;
+  line-height: 1;
+  opacity: 0.85;
+  flex-shrink: 0;
+}

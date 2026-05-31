@@ -2,21 +2,27 @@
 main:
   - title: "Publications"
     url: /publications/
+    icon: "fas fa-file-alt"
 
   - title: "Talks"
     url: /talks/
+    icon: "fas fa-microphone"
 
   - title: "Workshops"
     url: /workshops/
+    icon: "fas fa-chalkboard"
 
   - title: "CV"
     url: /cv/
+    icon: "fas fa-id-card"
 
   - title: "Projects"
     url: /projects/
-        
+    icon: "fas fa-code"
+
   - title: "Blog"
     url: /blog/
+    icon: "fas fa-pen"
 
 blog:
   - title: "Categories"
