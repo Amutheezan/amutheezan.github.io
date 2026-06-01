@@ -488,4 +488,7 @@ html[data-theme="dark"] {
       box-shadow: 0 0 16px rgba(34, 211, 238, 0.45);
     }
 
-    .ico
+    .icon-sun  { display: inline; }
+    .icon-moon { display: none; }
+  }
+}
