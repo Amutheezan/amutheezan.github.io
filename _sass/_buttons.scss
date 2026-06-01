@@ -131,21 +131,63 @@
     opacity: 0.65;
   }
 
-  /* social buttons */
+  /* social share buttons — pill style with brand-colour accent */
 
-  $social:
-  (facebook, $facebook-color),
-  (twitter, $twitter-color),
-  (google-plus, $google-plus-color),
-  (linkedin, $linkedin-color);
+  &--twitter, &--facebook, &--linkedin, &--google-plus {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    border-radius: 9999px !important;
+    padding: 0.38em 1.1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45em;
+    font-weight: 500;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+  }
 
-  @each $socialnetwork, $color in $social {
-    &--#{$socialnetwork} {
-      background-color: $color;
+  &--twitter {
+    color: $twitter-color !important;
+    border-color: rgba($twitter-color, 0.45) !important;
+    &:hover {
+      background: rgba($twitter-color, 0.12) !important;
+      border-color: rgba($twitter-color, 0.80) !important;
+      box-shadow: 0 4px 14px rgba($twitter-color, 0.25) !important;
+      transform: translateY(-1px);
+    }
+  }
 
-      &:hover {
-        background-color: mix(#000, $color, 20%);
-      }
+  &--facebook {
+    color: $facebook-color !important;
+    border-color: rgba($facebook-color, 0.45) !important;
+    &:hover {
+      background: rgba($facebook-color, 0.12) !important;
+      border-color: rgba($facebook-color, 0.80) !important;
+      box-shadow: 0 4px 14px rgba($facebook-color, 0.25) !important;
+      transform: translateY(-1px);
+    }
+  }
+
+  &--linkedin {
+    color: $linkedin-color !important;
+    border-color: rgba($linkedin-color, 0.45) !important;
+    &:hover {
+      background: rgba($linkedin-color, 0.12) !important;
+      border-color: rgba($linkedin-color, 0.80) !important;
+      box-shadow: 0 4px 14px rgba($linkedin-color, 0.25) !important;
+      transform: translateY(-1px);
+    }
+  }
+
+  &--google-plus {
+    color: $google-plus-color !important;
+    border-color: rgba($google-plus-color, 0.45) !important;
+    &:hover {
+      background: rgba($google-plus-color, 0.12) !important;
+      border-color: rgba($google-plus-color, 0.80) !important;
+      box-shadow: 0 4px 14px rgba($google-plus-color, 0.25) !important;
+      transform: translateY(-1px);
     }
   }
 

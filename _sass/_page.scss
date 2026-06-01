@@ -232,9 +232,18 @@
 }
 
 .page__share-title {
-  margin-bottom: 10px;
-  font-size: $type-size-6;
+  margin-bottom: 0.65em;
+  font-size: $type-size-7;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: $gray;
+}
+
+.page__share {
+  .btn + .btn {
+    margin-left: 0.4em;
+  }
 }
 
 
