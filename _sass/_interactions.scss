@@ -295,3 +295,12 @@ html:not([data-theme="dark"])[data-color-theme="purple"] .greedy-nav .hidden-lin
   opacity: 0.85;
   flex-shrink: 0;
 }
+
+/* --------------------------------------------------------------------------
+   Pagination pager — flex row so pills sit side-by-side with a gap
+   -------------------------------------------------------------------------- */
+.pagination:has(.pagination--pager) {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
