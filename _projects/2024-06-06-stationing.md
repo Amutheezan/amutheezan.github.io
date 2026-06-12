@@ -5,8 +5,8 @@ collection: projects
 permalink: /projects/stationing
 date: 2024-06-06
 citation: "Sivagnanam, A., Pettet, A., Lee, H., Mukhopadhyay, A., Dubey, A., & Laszka, A. (2024). Multi-Agent Reinforcement Learning with Hierarchical Coordination for Emergency Responder Stationing. In Proceedings of the 41 st International Conference on Machine Learning, (ICML 2024)"
-research_interests: [reinforcement-learning, multi-agent-systems, transportation-optimization]
 
+research_interests: [reinforcement-learning, multi-agent-systems, cyber-physical-systems]
 ---
 
 ### 📌 Key Contributions

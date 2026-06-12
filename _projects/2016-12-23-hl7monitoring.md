@@ -5,7 +5,6 @@ collection: projects
 permalink: /projects/hl7
 date: 2016-12-23
 
-research_interests: [healthcare-it]
 ---
 
 ### 📌 Key Contributions

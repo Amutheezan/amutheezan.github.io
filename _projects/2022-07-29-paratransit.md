@@ -6,7 +6,7 @@ permalink: /projects/para-transit
 date: 2022-07-29
 citation: 'Sivagnanam, A., Kadir, SU., Mukhopadhyay, A., Pugliese, P., Dubey, A., Samaranayake, S., & Laszka, A. (2022, July) Offline Vehicle Routing Problem with Online Bookings: A Novel Problem Formulation with Applications to Paratransit. In Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (pp. 3933-3939)'
 
-research_interests: [transportation-optimization, vehicle-routing, reinforcement-learning]
+research_interests: [combinatorial-optimization, reinforcement-learning]
 ---
 ### 📌 Key Contributions
 
