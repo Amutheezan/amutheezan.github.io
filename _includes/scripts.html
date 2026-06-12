@@ -149,12 +149,19 @@
   /* ── Linear interpolation helper ── */
   function lerp(a, b, t) { return a + (b - a) * t; }
 
-  /* ── Detect current colour theme accent ── */
+  /* ── Detect current colour theme accent (includes slider-thumb gradient stops) ── */
   function accentColor() {
     var theme = document.documentElement.getAttribute('data-color-theme');
-    if (theme === 'slate')       { return { r:6,  g:182, b:212 }; } /* cyan  */
-    if (theme === 'dark-purple') { return { r:139,g:92,  b:246 }; } /* violet */
-    return                               { r:99, g:102, b:241 };    /* indigo (default) */
+    if (theme === 'slate') {
+      return { r:6, g:182, b:212,
+               thumbA:'#22d3ee', thumbB:'#0891b2', thumbHl:'rgba(34,211,238,0.60)' };
+    }
+    if (theme === 'dark-purple') {
+      return { r:139, g:92, b:246,
+               thumbA:'#c084fc', thumbB:'#7c3aed', thumbHl:'rgba(192,132,252,0.60)' };
+    }
+    return { r:99, g:102, b:241,
+             thumbA:'#818cf8', thumbB:'#4f46e5', thumbHl:'rgba(140,150,255,0.60)' };
   }
 
   /* ── Apply all glass CSS vars from slider value 0..100 ── */

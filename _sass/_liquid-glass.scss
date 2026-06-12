@@ -1,63 +1,60 @@
 /* ==========================================================================
-   LIQUID GLASS — dynamic glass morphism
-   CSS custom properties are driven by liquid-glass.js via the masthead slider.
-   Defaults correspond to slider position 30 / 100.
+   LIQUID GLASS — dynamic glass morphism across the whole site
+   All glass properties are driven by CSS custom properties updated by the
+   masthead liquidity slider (liquid-glass.js). Slider 0–100 maps:
+     blur  6 → 54 px  |  saturation 108 → 240 %  |  fill opacity 0.06 → 0.28
    ========================================================================== */
 
-/* ── 1. CSS custom-property defaults ─────────────────────────────────────── */
+/* ── 1. CSS custom-property defaults (slider = 30 / 100) ─────────────────── */
 :root {
-  --lg-blur        : 20px;    /* backdrop blur radius                  */
-  --lg-saturate    : 160%;    /* backdrop saturation                   */
-  --lg-brightness  : 1.03;    /* backdrop brightness                   */
-  --lg-fill-op     : 0.13;    /* white fill alpha (panel base colour)  */
-  --lg-border-op   : 0.30;    /* white border / inset highlight alpha  */
-  --lg-shimmer-op  : 0.0;     /* caustic shimmer overlay opacity       */
-  --lg-shimmer-spd : 10s;     /* caustic animation duration            */
+  --lg-blur        : 20px;
+  --lg-saturate    : 160%;
+  --lg-brightness  : 1.03;
+  --lg-fill-op     : 0.13;
+  --lg-border-op   : 0.30;
+  --lg-shimmer-op  : 0.0;
+  --lg-shimmer-spd : 10s;
 
-  /* dark-glass equivalents (used in dark mode) */
-  --lg-dark-fill-op  : 0.55;  /* dark fill alpha — raised so dark mode still looks glassy */
-  --lg-dark-border-op: 0.10;  /* subtle white border in dark mode      */
+  /* Slider-thumb gradient — JS swaps these to match the colour theme */
+  --lg-thumb-a  : #818cf8;
+  --lg-thumb-b  : #4f46e5;
+  --lg-thumb-hl : rgba(140, 150, 255, 0.60);
 }
 
-/* ── 2. Caustic light animations ──────────────────────────────────────────── */
+/* ── 2. Shared keyframes ──────────────────────────────────────────────────── */
 @keyframes lg-caustic {
-  0%   { background-position: 0%   0%,   100% 100%,  50%  0%;  opacity: 0.6; }
-  33%  { background-position: 80%  30%,   20%  70%,  90% 60%;  opacity: 1.0; }
-  66%  { background-position: 30%  80%,   70%  20%,  10% 90%;  opacity: 0.7; }
-  100% { background-position: 0%   0%,   100% 100%,  50%  0%;  opacity: 0.6; }
+  0%   { background-position: 0%  0%,  100% 100%, 50%  0%;  opacity: 0.6; }
+  33%  { background-position: 80% 30%,  20%  70%, 90% 60%;  opacity: 1.0; }
+  66%  { background-position: 30% 80%,  70%  20%, 10% 90%;  opacity: 0.7; }
+  100% { background-position: 0%  0%,  100% 100%, 50%  0%;  opacity: 0.6; }
 }
-
 @keyframes lg-specular-drift {
   0%   { transform: translateX(-8%) skewX(-2deg); opacity: 0.55; }
   50%  { transform: translateX( 5%) skewX( 1deg); opacity: 0.85; }
   100% { transform: translateX(-8%) skewX(-2deg); opacity: 0.55; }
 }
+@keyframes lg-thumb-pulse {
+  0%, 100% { box-shadow: 0 0 0 0   rgba(99,102,241,0.00), 0 2px 10px rgba(99,102,241,0.50), inset 0 1.5px 0 rgba(255,255,255,0.9); }
+  50%       { box-shadow: 0 0 0 5px rgba(99,102,241,0.18), 0 3px 14px rgba(99,102,241,0.60), inset 0 1.5px 0 rgba(255,255,255,0.9); }
+}
 
-/* ── 3. Masthead — light mode ─────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════════════════
+   LIGHT-MODE GLASS SURFACES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Masthead ─────────────────────────────────────────────────────────────── */
 .masthead {
   background: rgba(240, 244, 255, var(--lg-fill-op)) !important;
-  backdrop-filter:
-    blur(var(--lg-blur))
-    saturate(var(--lg-saturate))
-    brightness(var(--lg-brightness)) !important;
-  -webkit-backdrop-filter:
-    blur(var(--lg-blur))
-    saturate(var(--lg-saturate))
-    brightness(var(--lg-brightness)) !important;
+  backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) brightness(var(--lg-brightness)) !important;
+  -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) brightness(var(--lg-brightness)) !important;
   border-bottom: 1px solid rgba(255, 255, 255, var(--lg-border-op)) !important;
   box-shadow:
     inset 0 1.5px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 2.2)),
-    inset 0 -1px  0 rgba(99, 102, 241, calc(var(--lg-border-op) * 0.4)),
     0 4px 32px rgba(99, 102, 241, 0.10) !important;
-  transition:
-    backdrop-filter 0.5s ease,
-    -webkit-backdrop-filter 0.5s ease,
-    background  0.5s ease,
-    box-shadow  0.5s ease !important;
+  transition: backdrop-filter 0.5s ease, -webkit-backdrop-filter 0.5s ease, background 0.5s ease, box-shadow 0.5s ease !important;
   position: relative;
   overflow: hidden;
 
-  /* Caustic shimmer layer */
   &::after {
     content: '';
     position: absolute;
@@ -65,40 +62,19 @@
     pointer-events: none;
     z-index: 0;
     background:
-      radial-gradient(ellipse 65% 80% at 15%  -10%, rgba(255,255,255,0.60) 0%, transparent 55%),
-      radial-gradient(ellipse 40% 70% at 85%   20%, rgba(255,255,255,0.35) 0%, transparent 50%),
-      radial-gradient(ellipse 90% 35% at 50%  110%, rgba(255,255,255,0.22) 0%, transparent 55%);
+      radial-gradient(ellipse 65% 80% at 15% -10%, rgba(255,255,255,0.60) 0%, transparent 55%),
+      radial-gradient(ellipse 40% 70% at 85%  20%, rgba(255,255,255,0.35) 0%, transparent 50%),
+      radial-gradient(ellipse 90% 35% at 50% 110%, rgba(255,255,255,0.22) 0%, transparent 55%);
     background-size: 200% 200%, 180% 180%, 220% 220%;
     animation: lg-caustic var(--lg-shimmer-spd) ease-in-out infinite;
     opacity: var(--lg-shimmer-op);
     mix-blend-mode: overlay;
     transition: opacity 0.5s ease;
   }
-
-  &__inner-wrap {
-    position: relative;
-    z-index: 1;
-  }
+  &__inner-wrap { position: relative; z-index: 1; }
 }
 
-/* ── 4. Masthead — dark mode ──────────────────────────────────────────────── */
-html[data-theme='dark'] .masthead {
-  background: rgba(6, 8, 20, calc(0.55 + var(--lg-fill-op) * 1.5)) !important;
-  backdrop-filter:
-    blur(var(--lg-blur))
-    saturate(var(--lg-saturate))
-    brightness(0.92) !important;
-  -webkit-backdrop-filter:
-    blur(var(--lg-blur))
-    saturate(var(--lg-saturate))
-    brightness(0.92) !important;
-  border-bottom: 1px solid rgba(99, 102, 241, calc(var(--lg-border-op) * 0.9)) !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 0.4)),
-    0 2px 20px rgba(0, 0, 0, 0.55) !important;
-}
-
-/* ── 5. Sidebar — light mode ──────────────────────────────────────────────── */
+/* ── Sidebar ─────────────────────────────────────────────────────────────── */
 @media (min-width: 925px) {
   .sidebar {
     background: rgba(255, 255, 255, calc(var(--lg-fill-op) * 1.5)) !important;
@@ -107,15 +83,10 @@ html[data-theme='dark'] .masthead {
     border: 1px solid rgba(255, 255, 255, var(--lg-border-op)) !important;
     box-shadow:
       inset 0 1.5px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 2.5)),
-      inset 1px  0   0 rgba(255, 255, 255, calc(var(--lg-border-op) * 0.8)),
       0 8px 40px rgba(99, 102, 241, 0.09) !important;
-    transition:
-      backdrop-filter 0.5s ease,
-      background      0.5s ease,
-      box-shadow      0.5s ease !important;
+    transition: backdrop-filter 0.5s ease, background 0.5s ease, box-shadow 0.5s ease !important;
     overflow: hidden;
 
-    /* Specular highlight — drifts like a glass edge */
     &::before {
       content: '';
       position: absolute;
@@ -136,11 +107,126 @@ html[data-theme='dark'] .masthead {
   }
 }
 
-/* ── 6. Sidebar — dark mode: translucent dark glass ──────────────────────── */
+/* ── #main content panel ─────────────────────────────────────────────────── */
+#main {
+  background: rgba(255, 255, 255, calc(var(--lg-fill-op) * 5.5)) !important;
+  backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+  -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+  border: 1px solid rgba(99, 102, 241, calc(var(--lg-border-op) * 0.7)) !important;
+  box-shadow:
+    inset 0 1.5px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 3)),
+    0 8px 40px rgba(99, 102, 241, 0.10) !important;
+  transition: backdrop-filter 0.5s ease, background 0.5s ease, box-shadow 0.5s ease !important;
+}
+
+/* ── Archive / publication cards ─────────────────────────────────────────── */
+.archive__item {
+  background: rgba(255, 255, 255, calc(var(--lg-fill-op) * 3.5)) !important;
+  backdrop-filter: blur(calc(var(--lg-blur) * 0.6)) saturate(var(--lg-saturate)) !important;
+  -webkit-backdrop-filter: blur(calc(var(--lg-blur) * 0.6)) saturate(var(--lg-saturate)) !important;
+  border: 1px solid rgba(255, 255, 255, calc(var(--lg-border-op) * 1.6)) !important;
+  box-shadow: 0 2px 12px rgba(31, 38, 135, 0.06), inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 2.4)) !important;
+  transition: backdrop-filter 0.5s ease, background 0.5s ease, transform 0.25s ease, box-shadow 0.25s ease !important;
+  position: relative;
+
+  &:hover {
+    background: rgba(255, 255, 255, calc(var(--lg-fill-op) * 5.5)) !important;
+    box-shadow:
+      0 8px 30px rgba(31, 38, 135, 0.13),
+      inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 3)) !important;
+    transform: translateY(-3px) scale(1.005);
+  }
+}
+
+/* ── Notice boxes ────────────────────────────────────────────────────────── */
+.notice,
+.notice--primary,
+.notice--info,
+.notice--warning,
+.notice--danger,
+.notice--success {
+  backdrop-filter: blur(calc(var(--lg-blur) * 0.5)) saturate(var(--lg-saturate)) !important;
+  -webkit-backdrop-filter: blur(calc(var(--lg-blur) * 0.5)) saturate(var(--lg-saturate)) !important;
+  border: 1px solid rgba(255, 255, 255, calc(var(--lg-border-op) * 1.2)) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 2)) !important;
+  transition: backdrop-filter 0.5s ease !important;
+}
+
+/* ── Buttons (.btn — "Follow" etc.) ─────────────────────────────────────── */
+.btn {
+  backdrop-filter: blur(calc(var(--lg-blur) * 0.4)) saturate(var(--lg-saturate)) !important;
+  -webkit-backdrop-filter: blur(calc(var(--lg-blur) * 0.4)) saturate(var(--lg-saturate)) !important;
+  border: 1px solid rgba(255, 255, 255, calc(var(--lg-border-op) * 1.4)) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 2.5)) !important;
+  transition: backdrop-filter 0.5s ease, transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+/* ── Greedy-nav hidden-links dropdown ────────────────────────────────────── */
+.greedy-nav .hidden-links {
+  background: rgba(240, 244, 255, calc(var(--lg-fill-op) * 6)) !important;
+  backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+  -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+  border: 1px solid rgba(255, 255, 255, var(--lg-border-op)) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 2)),
+    0 8px 32px rgba(99, 102, 241, 0.14) !important;
+  transition: backdrop-filter 0.5s ease, background 0.5s ease !important;
+}
+
+/* ── Pagination pills ────────────────────────────────────────────────────── */
+.pagination--pager {
+  background: rgba(255, 255, 255, calc(var(--lg-fill-op) * 3)) !important;
+  backdrop-filter: blur(calc(var(--lg-blur) * 0.5)) saturate(var(--lg-saturate)) !important;
+  -webkit-backdrop-filter: blur(calc(var(--lg-blur) * 0.5)) saturate(var(--lg-saturate)) !important;
+  border: 1px solid rgba(255, 255, 255, var(--lg-border-op)) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 2)) !important;
+  transition: backdrop-filter 0.5s ease, background 0.5s ease, transform 0.18s ease !important;
+}
+
+/* ── CV glass cards ──────────────────────────────────────────────────────── */
+.cv-section {
+  backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+  -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+  background: rgba(255, 255, 255, calc(var(--lg-fill-op) * 4.5)) !important;
+  border: 1px solid rgba(255, 255, 255, var(--lg-border-op)) !important;
+  transition: backdrop-filter 0.5s ease, background 0.5s ease !important;
+
+  &::before {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, calc(var(--lg-border-op) * 1.8)) 0%,
+      rgba(255, 255, 255, 0) 55%
+    ) !important;
+    transition: background 0.5s ease;
+  }
+}
+
+/* ── Footer ──────────────────────────────────────────────────────────────── */
+.page__footer {
+  backdrop-filter: blur(calc(var(--lg-blur) * 0.55)) saturate(var(--lg-saturate)) !important;
+  -webkit-backdrop-filter: blur(calc(var(--lg-blur) * 0.55)) saturate(var(--lg-saturate)) !important;
+  border-top: 1px solid rgba(255, 255, 255, var(--lg-border-op)) !important;
+  transition: backdrop-filter 0.5s ease, background 0.5s ease !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DARK-MODE OVERRIDES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
 html[data-theme='dark'] {
+
+  .masthead {
+    background: rgba(6, 8, 20, calc(0.55 + var(--lg-fill-op) * 1.5)) !important;
+    backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) brightness(0.92) !important;
+    -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) brightness(0.92) !important;
+    border-bottom: 1px solid rgba(99, 102, 241, calc(var(--lg-border-op) * 0.9)) !important;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 0.4)),
+      0 2px 20px rgba(0, 0, 0, 0.55) !important;
+  }
+
   @media (min-width: 925px) {
     .sidebar {
-      /* Keep opacity low so the dark gradient backdrop shows through — glassy, not opaque */
       background: rgba(16, 22, 58, calc(0.08 + var(--lg-fill-op) * 1.0)) !important;
       backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
       -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
@@ -150,50 +236,53 @@ html[data-theme='dark'] {
         0 8px 32px rgba(0, 0, 0, 0.30) !important;
     }
   }
-}
 
-/* ── 7. CV glass cards ────────────────────────────────────────────────────── */
-.cv-section {
-  backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
-  -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
-  transition:
-    backdrop-filter 0.5s ease,
-    background      0.5s ease !important;
-}
-
-/* ── 8. Archive / publication cards ──────────────────────────────────────── */
-.archive__item,
-.list__item {
-  border-radius: 12px;
-  transition:
-    transform    0.25s ease,
-    box-shadow   0.25s ease,
-    background   0.3s  ease;
-
-  &:hover {
-    transform: translateY(-3px);
-    background: rgba(255, 255, 255, calc(var(--lg-fill-op) * 1.8));
+  #main {
+    background: rgba(8, 12, 30, calc(0.60 + var(--lg-fill-op) * 1.0)) !important;
+    backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+    -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+    border-color: rgba(99, 102, 241, calc(var(--lg-border-op) * 0.4)) !important;
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 2)),
-      0 12px 40px rgba(99, 102, 241, 0.14);
+      inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 0.28)),
+      0 8px 40px rgba(0, 0, 0, 0.45) !important;
+  }
+
+  .archive__item {
+    background: rgba(8, 14, 40, calc(0.30 + var(--lg-fill-op) * 1.2)) !important;
+    backdrop-filter: blur(calc(var(--lg-blur) * 0.6)) saturate(var(--lg-saturate)) !important;
+    -webkit-backdrop-filter: blur(calc(var(--lg-blur) * 0.6)) saturate(var(--lg-saturate)) !important;
+    border-color: rgba(99, 102, 241, calc(var(--lg-border-op) * 0.4)) !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,calc(var(--lg-border-op) * 0.3)) !important;
+
+    &:hover {
+      background: rgba(12, 20, 55, calc(0.45 + var(--lg-fill-op) * 1.2)) !important;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,calc(var(--lg-border-op) * 0.5)) !important;
+    }
+  }
+
+  .greedy-nav .hidden-links {
+    background: rgba(8, 12, 30, calc(0.82 + var(--lg-fill-op) * 0.5)) !important;
+    backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+    -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+    border-color: rgba(99, 102, 241, calc(var(--lg-border-op) * 0.4)) !important;
+  }
+
+  .pagination--pager {
+    background: rgba(8, 14, 40, calc(0.25 + var(--lg-fill-op) * 0.8)) !important;
+    backdrop-filter: blur(calc(var(--lg-blur) * 0.5)) saturate(var(--lg-saturate)) !important;
+    border-color: rgba(99, 102, 241, calc(var(--lg-border-op) * 0.4)) !important;
   }
 }
 
-/* ── 9. Footer ────────────────────────────────────────────────────────────── */
-.page__footer {
-  backdrop-filter: blur(calc(var(--lg-blur) * 0.55)) saturate(var(--lg-saturate));
-  -webkit-backdrop-filter: blur(calc(var(--lg-blur) * 0.55)) saturate(var(--lg-saturate));
-  border-top: 1px solid rgba(255, 255, 255, var(--lg-border-op));
-  transition:
-    backdrop-filter 0.5s ease,
-    background      0.5s ease;
-}
+/* ═══════════════════════════════════════════════════════════════════════════
+   LIQUIDITY SLIDER PILL  (in .masthead__controls)
+   ═══════════════════════════════════════════════════════════════════════════ */
 
-/* ── 10. Liquidity slider pill (sits in .masthead__controls) ─────────────── */
 .lg-slider-pill {
   display: inline-flex;
   align-items: center;
-  padding: 0 0.6rem;
+  justify-content: center;
+  padding: 0 0.65rem;
   height: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.30);
   border-radius: 1rem;
@@ -202,10 +291,9 @@ html[data-theme='dark'] {
   user-select: none;
 }
 
-/* ── Liquid range slider ──────────────────────────────────────────────────── */
 @keyframes lg-thumb-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(99,102,241,0), 0 2px 10px rgba(99,102,241,0.5), inset 0 1.5px 0 rgba(255,255,255,0.9); }
-  50%       { box-shadow: 0 0 0 5px rgba(99,102,241,0.15), 0 3px 14px rgba(99,102,241,0.6), inset 0 1.5px 0 rgba(255,255,255,0.9); }
+  0%, 100% { box-shadow: 0 0 0 0   rgba(99,102,241,0.00), 0 2px 10px rgba(99,102,241,0.50), inset 0 1.5px 0 rgba(255,255,255,0.9); }
+  50%       { box-shadow: 0 0 0 5px rgba(99,102,241,0.18), 0 3px 14px rgba(99,102,241,0.60), inset 0 1.5px 0 rgba(255,255,255,0.9); }
 }
 
 .lg-pill-range {
@@ -216,25 +304,20 @@ html[data-theme='dark'] {
   border-radius: 6px;
   outline: none;
   cursor: pointer;
-  /* fallback track — JS replaces this each frame */
   background:
     linear-gradient(to bottom, rgba(180,190,255,0.5) 0%, transparent 60%),
     linear-gradient(to right, #6366f1 0%, #6366f1 30%, rgba(99,102,241,0.15) 30%, rgba(99,102,241,0.15) 100%);
-  box-shadow:
-    inset 0 1px 2px rgba(0,0,0,0.15),
-    inset 0 -1px 0 rgba(255,255,255,0.20);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.15), inset 0 -1px 0 rgba(255,255,255,0.20);
 
-  /* Glossy liquid thumb */
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    /* Layered radial gradients simulate a glass bead / water droplet */
     background:
       radial-gradient(circle at 38% 32%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0) 50%),
-      radial-gradient(circle at 62% 68%, rgba(140,150,255,0.60) 0%, rgba(140,150,255,0) 45%),
-      radial-gradient(circle at 50% 50%, #818cf8 0%, #4f46e5 100%);
+      radial-gradient(circle at 62% 68%, var(--lg-thumb-hl) 0%, transparent 45%),
+      radial-gradient(circle at 50% 50%, var(--lg-thumb-a) 0%, var(--lg-thumb-b) 100%);
     border: 2px solid #ffffff;
     box-shadow:
       0 0 0 1px rgba(99,102,241,0.55),
@@ -262,7 +345,7 @@ html[data-theme='dark'] {
     border-radius: 50%;
     background:
       radial-gradient(circle at 38% 32%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0) 50%),
-      radial-gradient(circle at 50% 50%, #818cf8 0%, #4f46e5 100%);
+      radial-gradient(circle at 50% 50%, var(--lg-thumb-a) 0%, var(--lg-thumb-b) 100%);
     border: 2px solid #ffffff;
     box-shadow:
       0 0 0 1px rgba(99,102,241,0.55),
@@ -270,15 +353,8 @@ html[data-theme='dark'] {
     cursor: grab;
   }
 
-  &::-webkit-slider-runnable-track {
-    height: 6px;
-    border-radius: 6px;
-  }
-  &::-moz-range-track {
-    height: 6px;
-    border-radius: 6px;
-    background: rgba(99,102,241,0.15);
-  }
+  &::-webkit-slider-runnable-track { height: 6px; border-radius: 6px; }
+  &::-moz-range-track { height: 6px; border-radius: 6px; background: rgba(99,102,241,0.15); }
 }
 
 /* ── Dark mode pill ───────────────────────────────────────────────────────── */
@@ -289,14 +365,9 @@ html[data-theme='dark'] {
   }
 
   .lg-pill-range {
-    box-shadow:
-      inset 0 1px 3px rgba(0,0,0,0.35),
-      inset 0 -1px 0 rgba(255,255,255,0.08);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.35), inset 0 -1px 0 rgba(255,255,255,0.08);
 
     &::-webkit-slider-thumb {
-      background:
-        radial-gradient(circle at 38% 32%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 50%),
-        radial-gradient(circle at 50% 50%, #a5b4fc 0%, #6366f1 100%);
       border: 2px solid rgba(255,255,255,0.88);
       box-shadow:
         0 0 0 1px rgba(129,140,248,0.60),
@@ -304,9 +375,6 @@ html[data-theme='dark'] {
         inset 0 1.5px 0 rgba(255,255,255,0.70);
     }
     &::-moz-range-thumb {
-      background:
-        radial-gradient(circle at 38% 32%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 50%),
-        radial-gradient(circle at 50% 50%, #a5b4fc 0%, #6366f1 100%);
       border: 2px solid rgba(255,255,255,0.88);
       box-shadow:
         0 0 0 1px rgba(129,140,248,0.60),
@@ -315,13 +383,10 @@ html[data-theme='dark'] {
   }
 }
 
-/* ==========================================================================
-   AVATAR — ring + inner-bg track with every theme
-   The ring is the outermost box-shadow layer; inner-bg is the img background
-   visible through the 4px padding gap.
-   ========================================================================== */
+/* ═══════════════════════════════════════════════════════════════════════════
+   AVATAR — ring + inner-bg respond to every theme
+   ═══════════════════════════════════════════════════════════════════════════ */
 
-/* ── Base: replace hardcoded $navy ring, soften white inner gap ──────────── */
 .author__avatar img {
   background-color: rgba(232, 234, 255, 0.80) !important;
   box-shadow:
@@ -331,62 +396,32 @@ html[data-theme='dark'] {
   transition: box-shadow 0.35s ease, background-color 0.35s ease !important;
 }
 
-/* ── navy theme (same accent, shown for explicitness) ────────────────────── */
 html[data-color-theme='navy'] .author__avatar img {
   background-color: rgba(232, 234, 255, 0.82) !important;
-  box-shadow:
-    0 6px 24px rgba(99, 102, 241, 0.22),
-    0 0 0 3px rgba(255, 255, 255, 0.75),
-    0 0 0 6px #4f46e5 !important;
+  box-shadow: 0 6px 24px rgba(99,102,241,0.22), 0 0 0 3px rgba(255,255,255,0.75), 0 0 0 6px #4f46e5 !important;
 }
 
-/* ── slate / cyan theme ──────────────────────────────────────────────────── */
 html[data-color-theme='slate'] .author__avatar img {
   background-color: rgba(224, 250, 255, 0.78) !important;
-  box-shadow:
-    0 6px 24px rgba(6, 182, 212, 0.22),
-    0 0 0 3px rgba(255, 255, 255, 0.75),
-    0 0 0 6px #0891b2 !important;
+  box-shadow: 0 6px 24px rgba(6,182,212,0.22), 0 0 0 3px rgba(255,255,255,0.75), 0 0 0 6px #0891b2 !important;
 }
 
-/* ── dark-purple / violet theme ──────────────────────────────────────────── */
 html[data-color-theme='dark-purple'] .author__avatar img {
   background-color: rgba(245, 238, 255, 0.78) !important;
-  box-shadow:
-    0 6px 24px rgba(139, 92, 246, 0.22),
-    0 0 0 3px rgba(255, 255, 255, 0.75),
-    0 0 0 6px #7c3aed !important;
+  box-shadow: 0 6px 24px rgba(139,92,246,0.22), 0 0 0 3px rgba(255,255,255,0.75), 0 0 0 6px #7c3aed !important;
 }
 
-/* ── dark mode (no colour theme) ─────────────────────────────────────────── */
 html[data-theme='dark'] .author__avatar img {
   background-color: rgba(18, 24, 60, 0.62) !important;
-  box-shadow:
-    0 6px 24px rgba(0, 0, 0, 0.38),
-    0 0 0 3px rgba(255, 255, 255, 0.14),
-    0 0 0 6px #6366f1 !important;
-}
-
-html[data-theme='dark'][data-color-theme='navy'] .author__avatar img {
-  background-color: rgba(18, 24, 60, 0.62) !important;
-  box-shadow:
-    0 6px 24px rgba(0, 0, 0, 0.38),
-    0 0 0 3px rgba(255, 255, 255, 0.14),
-    0 0 0 6px #6366f1 !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.38), 0 0 0 3px rgba(255,255,255,0.14), 0 0 0 6px #6366f1 !important;
 }
 
 html[data-theme='dark'][data-color-theme='slate'] .author__avatar img {
   background-color: rgba(4, 20, 32, 0.60) !important;
-  box-shadow:
-    0 6px 24px rgba(0, 0, 0, 0.38),
-    0 0 0 3px rgba(255, 255, 255, 0.12),
-    0 0 0 6px #0891b2 !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.38), 0 0 0 3px rgba(255,255,255,0.12), 0 0 0 6px #0891b2 !important;
 }
 
 html[data-theme='dark'][data-color-theme='dark-purple'] .author__avatar img {
   background-color: rgba(22, 10, 44, 0.60) !important;
-  box-shadow:
-    0 6px 24px rgba(0, 0, 0, 0.38),
-    0 0 0 3px rgba(255, 255, 255, 0.12),
-    0 0 0 6px #7c3aed !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.38), 0 0 0 3px rgba(255,255,255,0.12), 0 0 0 6px #7c3aed !important;
 }
