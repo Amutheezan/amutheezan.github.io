@@ -1,6 +1,6 @@
 /* ==========================================================================
    LIQUID GLASS — dynamic glass morphism
-   CSS custom properties are driven by liquid-glass.js via the slider.
+   CSS custom properties are driven by liquid-glass.js via the masthead slider.
    Defaults correspond to slider position 30 / 100.
    ========================================================================== */
 
@@ -13,26 +13,18 @@
   --lg-border-op   : 0.30;    /* white border / inset highlight alpha  */
   --lg-shimmer-op  : 0.0;     /* caustic shimmer overlay opacity       */
   --lg-shimmer-spd : 10s;     /* caustic animation duration            */
+
+  /* dark-glass equivalents (used in dark mode) */
+  --lg-dark-fill-op  : 0.55;  /* dark fill alpha — raised so dark mode still looks glassy */
+  --lg-dark-border-op: 0.10;  /* subtle white border in dark mode      */
 }
 
-/* ── 2. Caustic light animation ──────────────────────────────────────────── */
+/* ── 2. Caustic light animations ──────────────────────────────────────────── */
 @keyframes lg-caustic {
-  0% {
-    background-position: 0%   0%,   100% 100%,  50%  0%;
-    opacity: 0.6;
-  }
-  33% {
-    background-position: 80%  30%,  20%  70%,  90%  60%;
-    opacity: 1.0;
-  }
-  66% {
-    background-position: 30%  80%,  70%  20%,  10%  90%;
-    opacity: 0.7;
-  }
-  100% {
-    background-position: 0%   0%,   100% 100%,  50%  0%;
-    opacity: 0.6;
-  }
+  0%   { background-position: 0%   0%,   100% 100%,  50%  0%;  opacity: 0.6; }
+  33%  { background-position: 80%  30%,   20%  70%,  90% 60%;  opacity: 1.0; }
+  66%  { background-position: 30%  80%,   70%  20%,  10% 90%;  opacity: 0.7; }
+  100% { background-position: 0%   0%,   100% 100%,  50%  0%;  opacity: 0.6; }
 }
 
 @keyframes lg-specular-drift {
@@ -41,11 +33,9 @@
   100% { transform: translateX(-8%) skewX(-2deg); opacity: 0.55; }
 }
 
-/* ── 3. Masthead ─────────────────────────────────────────────────────────── */
+/* ── 3. Masthead — light mode ─────────────────────────────────────────────── */
 .masthead {
-  /* Override hardcoded values with CSS vars */
-  background:
-    rgba(240, 244, 255, var(--lg-fill-op)) !important;
+  background: rgba(240, 244, 255, var(--lg-fill-op)) !important;
   backdrop-filter:
     blur(var(--lg-blur))
     saturate(var(--lg-saturate))
@@ -54,17 +44,16 @@
     blur(var(--lg-blur))
     saturate(var(--lg-saturate))
     brightness(var(--lg-brightness)) !important;
-  border-bottom:
-    1px solid rgba(255, 255, 255, var(--lg-border-op)) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, var(--lg-border-op)) !important;
   box-shadow:
     inset 0 1.5px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 2.2)),
-    inset 0 -1px 0 rgba(99, 102, 241, calc(var(--lg-border-op) * 0.4)),
+    inset 0 -1px  0 rgba(99, 102, 241, calc(var(--lg-border-op) * 0.4)),
     0 4px 32px rgba(99, 102, 241, 0.10) !important;
   transition:
-    backdrop-filter  0.5s ease,
+    backdrop-filter 0.5s ease,
     -webkit-backdrop-filter 0.5s ease,
-    background       0.5s ease,
-    box-shadow       0.5s ease !important;
+    background  0.5s ease,
+    box-shadow  0.5s ease !important;
   position: relative;
   overflow: hidden;
 
@@ -77,7 +66,7 @@
     z-index: 0;
     background:
       radial-gradient(ellipse 65% 80% at 15%  -10%, rgba(255,255,255,0.60) 0%, transparent 55%),
-      radial-gradient(ellipse 40% 70% at 85%  20%,  rgba(255,255,255,0.35) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 70% at 85%   20%, rgba(255,255,255,0.35) 0%, transparent 50%),
       radial-gradient(ellipse 90% 35% at 50%  110%, rgba(255,255,255,0.22) 0%, transparent 55%);
     background-size: 200% 200%, 180% 180%, 220% 220%;
     animation: lg-caustic var(--lg-shimmer-spd) ease-in-out infinite;
@@ -86,14 +75,30 @@
     transition: opacity 0.5s ease;
   }
 
-  /* Inner-wrap must sit above the shimmer layer */
   &__inner-wrap {
     position: relative;
     z-index: 1;
   }
 }
 
-/* ── 4. Sidebar ──────────────────────────────────────────────────────────── */
+/* ── 4. Masthead — dark mode ──────────────────────────────────────────────── */
+html[data-theme='dark'] .masthead {
+  background: rgba(6, 8, 20, calc(0.55 + var(--lg-fill-op) * 1.5)) !important;
+  backdrop-filter:
+    blur(var(--lg-blur))
+    saturate(var(--lg-saturate))
+    brightness(0.92) !important;
+  -webkit-backdrop-filter:
+    blur(var(--lg-blur))
+    saturate(var(--lg-saturate))
+    brightness(0.92) !important;
+  border-bottom: 1px solid rgba(99, 102, 241, calc(var(--lg-border-op) * 0.9)) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 0.4)),
+    0 2px 20px rgba(0, 0, 0, 0.55) !important;
+}
+
+/* ── 5. Sidebar — light mode ──────────────────────────────────────────────── */
 @media (min-width: 925px) {
   .sidebar {
     background: rgba(255, 255, 255, calc(var(--lg-fill-op) * 1.5)) !important;
@@ -131,42 +136,38 @@
   }
 }
 
-/* ── 5. CV glass cards ───────────────────────────────────────────────────── */
-.cv-section {
-  backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
-  -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
-  background: rgba(255, 255, 255, calc(var(--lg-fill-op) * 4.5)) !important;
-  border: 1px solid rgba(255, 255, 255, var(--lg-border-op)) !important;
-  box-shadow:
-    inset 0 1.5px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 3)),
-    0 2px 6px  rgba(37,  99, 235, 0.05),
-    0 8px 36px rgba(37,  99, 235, 0.09) !important;
-  transition:
-    backdrop-filter 0.5s ease,
-    background      0.5s ease,
-    box-shadow      0.5s ease !important;
-  position: relative;
-  overflow: hidden;
-
-  /* Specular sheen overlay */
-  &::before {
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, calc(var(--lg-border-op) * 1.8)) 0%,
-      rgba(255, 255, 255, 0) 55%
-    ) !important;
-    transition: background 0.5s ease;
+/* ── 6. Sidebar — dark mode (glass, not transparent) ─────────────────────── */
+html[data-theme='dark'] {
+  @media (min-width: 925px) {
+    .sidebar {
+      background: rgba(8, 14, 36, calc(0.40 + var(--lg-fill-op) * 2.5)) !important;
+      backdrop-filter: blur(var(--lg-blur)) saturate(calc(var(--lg-saturate))) !important;
+      -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+      border: 1px solid rgba(99, 102, 241, calc(var(--lg-border-op) * 0.6)) !important;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 0.35)),
+        0 8px 32px rgba(0, 0, 0, 0.40) !important;
+    }
   }
 }
 
-/* ── 6. Archive / publication cards ─────────────────────────────────────── */
+/* ── 7. CV glass cards ────────────────────────────────────────────────────── */
+.cv-section {
+  backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+  -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
+  transition:
+    backdrop-filter 0.5s ease,
+    background      0.5s ease !important;
+}
+
+/* ── 8. Archive / publication cards ──────────────────────────────────────── */
 .archive__item,
 .list__item {
   border-radius: 12px;
   transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.3s ease;
+    transform    0.25s ease,
+    box-shadow   0.25s ease,
+    background   0.3s  ease;
 
   &:hover {
     transform: translateY(-3px);
@@ -177,7 +178,7 @@
   }
 }
 
-/* ── 7. Footer ───────────────────────────────────────────────────────────── */
+/* ── 9. Footer ────────────────────────────────────────────────────────────── */
 .page__footer {
   backdrop-filter: blur(calc(var(--lg-blur) * 0.55)) saturate(var(--lg-saturate));
   -webkit-backdrop-filter: blur(calc(var(--lg-blur) * 0.55)) saturate(var(--lg-saturate));
@@ -187,184 +188,97 @@
     background      0.5s ease;
 }
 
-/* ── 8. Liquidity slider widget ──────────────────────────────────────────── */
-#lg-control {
-  position: fixed;
-  bottom: 1.4rem;
-  right: 1.4rem;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.45rem;
-  pointer-events: none;
-}
-
-#lg-toggle-btn {
-  pointer-events: all;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.50);
-  background: rgba(240, 244, 255, 0.60);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  box-shadow:
-    inset 0 1.5px 0 rgba(255, 255, 255, 0.80),
-    0 4px 16px rgba(99, 102, 241, 0.22);
-  cursor: pointer;
-  display: flex;
+/* ── 10. Liquidity slider pill (sits in .masthead__controls) ─────────────── */
+.lg-slider-pill {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  color: #4f46e5;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  &:hover {
-    transform: scale(1.12);
-    box-shadow:
-      inset 0 1.5px 0 rgba(255, 255, 255, 0.95),
-      0 8px 28px rgba(99, 102, 241, 0.35);
-  }
-
-  &.is-open {
-    background: rgba(99, 102, 241, 0.20);
-    color: #3730a3;
-  }
+  gap: 0.38rem;
+  padding: 0 0.55rem 0 0.5rem;
+  height: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.12);
+  vertical-align: middle;
+  cursor: default;
+  user-select: none;
 }
 
-#lg-panel {
-  pointer-events: all;
-  background: rgba(240, 244, 255, 0.62);
-  backdrop-filter: blur(28px) saturate(200%);
-  -webkit-backdrop-filter: blur(28px) saturate(200%);
-  border: 1px solid rgba(255, 255, 255, 0.52);
-  border-radius: 18px;
-  box-shadow:
-    inset 0 1.5px 0 rgba(255, 255, 255, 0.85),
-    0 8px 36px rgba(99, 102, 241, 0.18);
-  padding: 1rem 1.1rem 0.9rem;
-  width: 210px;
-  display: none;
-  flex-direction: column;
-  gap: 0.55rem;
-  transform-origin: bottom right;
-  transform: scale(0.85);
-  opacity: 0;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-
-  &.is-open {
-    display: flex;
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-#lg-panel-title {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.10em;
-  text-transform: uppercase;
-  color: #4f46e5;
-  margin: 0 0 0.15rem;
-}
-
-.lg-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.lg-icon {
-  font-size: 0.75rem;
-  color: #94a3b8;
+.lg-pill-icon {
+  font-size: 0.78rem;
+  line-height: 1;
   flex-shrink: 0;
-  width: 1rem;
-  text-align: center;
+  opacity: 0.80;
 }
 
-#lg-liquidity {
+/* Range input inside the pill */
+.lg-pill-range {
   -webkit-appearance: none;
   appearance: none;
-  flex: 1;
-  height: 4px;
+  width: 62px;
+  height: 3px;
   border-radius: 2px;
   outline: none;
   cursor: pointer;
+  /* Track gradient set dynamically by JS; this is the fallback */
+  background: linear-gradient(
+    to right,
+    #6366f1 0%, #6366f1 30%,
+    rgba(99, 102, 241, 0.20) 30%, rgba(99, 102, 241, 0.20) 100%
+  );
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: #fff;
-    border: 2.5px solid #6366f1;
+    border: 2px solid #6366f1;
     box-shadow:
-      0 2px 8px rgba(99, 102, 241, 0.40),
-      inset 0 1px 0 rgba(255, 255, 255, 0.90);
+      0 2px 6px rgba(99, 102, 241, 0.45),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
     cursor: pointer;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 
     &:hover {
-      transform: scale(1.18);
-      box-shadow: 0 4px 16px rgba(99, 102, 241, 0.55);
+      transform: scale(1.22);
+      box-shadow: 0 3px 12px rgba(99, 102, 241, 0.60);
     }
   }
 
   &::-moz-range-thumb {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: #fff;
-    border: 2.5px solid #6366f1;
-    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.40);
+    border: 2px solid #6366f1;
+    box-shadow: 0 2px 6px rgba(99, 102, 241, 0.45);
     cursor: pointer;
   }
+
+  &::-webkit-slider-runnable-track { border-radius: 2px; }
+  &::-moz-range-track {
+    height: 3px;
+    border-radius: 2px;
+    background: rgba(99, 102, 241, 0.20);
+  }
 }
 
-.lg-labels {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.58rem;
-  color: #94a3b8;
-  letter-spacing: 0.02em;
-  margin-top: -0.2rem;
-  padding: 0 0.1rem;
-}
-
-#lg-value-badge {
-  font-size: 0.62rem;
-  font-weight: 700;
-  color: #fff;
-  background: #6366f1;
-  border-radius: 20px;
-  padding: 0.1em 0.55em;
-  min-width: 2.4rem;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.35);
-  transition: background 0.3s ease;
-}
-
-/* Dark mode widget */
+/* ── Dark mode pill ───────────────────────────────────────────────────────── */
 html[data-theme='dark'] {
-  #lg-panel {
-    background: rgba(15, 23, 42, 0.72) !important;
-    border-color: rgba(255, 255, 255, 0.12) !important;
-    box-shadow:
-      inset 0 1.5px 0 rgba(255, 255, 255, 0.10),
-      0 8px 36px rgba(0, 0, 0, 0.50) !important;
+  .lg-slider-pill {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.07);
   }
 
-  #lg-toggle-btn {
-    background: rgba(15, 23, 42, 0.65) !important;
-    border-color: rgba(255, 255, 255, 0.15) !important;
-    color: #818cf8 !important;
-
-    &.is-open {
-      background: rgba(99, 102, 241, 0.25) !important;
+  .lg-pill-range {
+    &::-webkit-slider-thumb {
+      background: #1e1b4b;
+      border-color: #818cf8;
+      box-shadow: 0 2px 6px rgba(129, 140, 248, 0.55);
+    }
+    &::-moz-range-thumb {
+      background: #1e1b4b;
+      border-color: #818cf8;
     }
   }
-
-  #lg-panel-title { color: #818cf8 !important; }
-  .lg-labels      { color: #475569 !important; }
 }
