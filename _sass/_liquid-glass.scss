@@ -47,7 +47,9 @@
   background: rgba(240, 244, 255, var(--lg-fill-op)) !important;
   backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) brightness(var(--lg-brightness)) !important;
   -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) brightness(var(--lg-brightness)) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, var(--lg-border-op)) !important;
+  /* border-bottom COLOR left to theme rules — only force width+style */
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid !important;
   box-shadow:
     inset 0 1.5px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 2.2)),
     0 4px 32px rgba(99, 102, 241, 0.10) !important;
@@ -219,21 +221,31 @@ html[data-theme='dark'] {
     background: rgba(6, 8, 20, calc(0.55 + var(--lg-fill-op) * 1.5)) !important;
     backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) brightness(0.92) !important;
     -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) brightness(0.92) !important;
-    border-bottom: 1px solid rgba(99, 102, 241, calc(var(--lg-border-op) * 0.9)) !important;
+    /* border-bottom COLOR left to theme rules — only force width+style */
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 0.4)),
       0 2px 20px rgba(0, 0, 0, 0.55) !important;
   }
 
+  /* Sidebar: transparent in dark mode — no visible box, blend with page bg */
   @media (min-width: 925px) {
     .sidebar {
-      background: rgba(16, 22, 58, calc(0.08 + var(--lg-fill-op) * 1.0)) !important;
-      backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
-      -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
-      border: 1px solid rgba(99, 102, 241, calc(var(--lg-border-op) * 0.55)) !important;
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, calc(var(--lg-border-op) * 0.28)),
-        0 8px 32px rgba(0, 0, 0, 0.30) !important;
+      background: transparent !important;
+      border-color: transparent !important;
+      box-shadow: none !important;
+      /* keep backdrop-filter for subtle depth on glass-heavy pages */
+      backdrop-filter: blur(calc(var(--lg-blur) * 0.4)) !important;
+      -webkit-backdrop-filter: blur(calc(var(--lg-blur) * 0.4)) !important;
+    }
+
+    /* All inner author elements also transparent */
+    .sidebar .author__avatar,
+    .sidebar .author__content,
+    .sidebar .author__urls-wrapper,
+    .sidebar .author__urls {
+      background: transparent !important;
     }
   }
 

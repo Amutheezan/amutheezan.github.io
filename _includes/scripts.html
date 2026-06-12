@@ -196,8 +196,13 @@
     if (lgRipple)     { lgRipple.style.opacity     = rippleOp; }
     if (lgRippleSide) { lgRippleSide.style.opacity = rippleOp; }
 
-    /* Slider track gradient — liquid glossy fill */
+    /* Slider-thumb CSS vars — match current colour theme */
     var ac  = accentColor();
+    root.style.setProperty('--lg-thumb-a',  ac.thumbA);
+    root.style.setProperty('--lg-thumb-b',  ac.thumbB);
+    root.style.setProperty('--lg-thumb-hl', ac.thumbHl);
+
+    /* Slider track gradient — liquid glossy fill */
     var r = ac.r, g = ac.g, b = ac.b;
     var rgb = r + ',' + g + ',' + b;
     /* lighter tint for the gloss highlight */
