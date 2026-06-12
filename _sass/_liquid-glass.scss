@@ -40,7 +40,7 @@
   border-bottom-style: solid !important;
   box-shadow: inset 0 1.5px 0 rgba(255,255,255,calc(var(--lg-border-op)*2.2)), 0 4px 32px rgba(99,102,241,.1) !important;
   transition: backdrop-filter .5s ease, background .5s ease, box-shadow .5s ease !important;
-  position: relative;
+  /* position: sticky is preserved from _masthead.scss — do NOT set position here */
   /* overflow stays visible so .hidden-links dropdown escapes below */
 
   &::after {
