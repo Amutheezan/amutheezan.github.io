@@ -46,6 +46,7 @@ classes: wide cv-page
         <p class="cv-label">Research Projects:</p>
         <ul>
           <li>Multi-Agent Reinforcement Learning with Hierarchical Coordination for Emergency Responder Stationing (Published in <strong>ICML-24</strong>)</li>
+          <li>Dynamic Vehicle Routing Problem with Prompt Confirmation of Advance Requests (Published in <strong>ICCPS-26</strong>)</li>
         </ul>
       </div>
     </div>
