@@ -74,9 +74,7 @@ author_profile: true
   border-radius: 9999px;
   font-weight: 500;
 }
-.ri-empty { display: none; font-style: italic; opacity: 0.55; padding: 0.5rem 0; font-size: 0.9rem; }
-.ri-section.all-hidden .ri-empty { display: block; }
-.ri-section.all-hidden .ri-section__title { opacity: 0.3; }
+.ri-section.all-hidden { display: none; }
 </style>
 
 <p>Click a research interest to filter across all publications, talks, workshops, and projects.</p>
@@ -112,7 +110,6 @@ author_profile: true
     </div>
   </div>
   {% endfor %}
-  <div class="ri-empty">No publications match this interest.</div>
 </div>
 {% endif %}
 
@@ -135,7 +132,6 @@ author_profile: true
     </div>
   </div>
   {% endfor %}
-  <div class="ri-empty">No talks match this interest.</div>
 </div>
 {% endif %}
 
@@ -158,7 +154,6 @@ author_profile: true
     </div>
   </div>
   {% endfor %}
-  <div class="ri-empty">No workshops match this interest.</div>
 </div>
 {% endif %}
 
@@ -181,7 +176,6 @@ author_profile: true
     </div>
   </div>
   {% endfor %}
-  <div class="ri-empty">No projects match this interest.</div>
 </div>
 {% endif %}
 
