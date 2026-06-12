@@ -1,0 +1,32 @@
+---
+title: "Dynamic Vehicle Routing Problem with Prompt Confirmation of Advance Requests"
+excerpt: ""
+collection: projects
+permalink: /projects/dvrp-ar
+date: 2026-05-12
+citation: 'Sivagnanam, A., Mukhopadhyay, A., Samaranayake, S., Dubey, A., & Laszka, A. (2026). Dynamic Vehicle Routing Problem with Prompt Confirmation of Advance Requests. In Proceedings of the 17th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2026)'
+
+---
+
+### 📌 Key Contributions
+
+* Identified a real-world gap in on-demand microtransit services: existing approaches either provide prompt confirmation *or* continual route optimization, but not both simultaneously
+* Introduced a novel problem formulation — Dynamic Vehicle Routing with Prompt Confirmation and Continual Optimization — that guarantees prompt acceptance/rejection decisions while enabling ongoing improvement of vehicle manifests
+* Developed a quick insertion algorithm that confirms or rejects each incoming trip request within a fraction of a second, with O(|T|²) worst-case complexity that is fast in practice
+* Designed a simulated-annealing anytime algorithm that continuously optimizes route plans between request arrivals, exploiting idle compute time to improve service rates
+* Trained a non-myopic objective function (action-value function Q) using reinforcement learning, guiding both the insertion and anytime algorithms toward long-term optimal solutions
+* Evaluated across MLP, KAN, and CNN neural network architectures; MLP and KAN achieved the best performance in terms of rejection rate
+* Demonstrated on a real-world microtransit dataset that the proposed approach reduces rejection rates to ~1%, significantly outperforming Google OR-Tools, Rolling Horizon, and Monte Carlo VRP baselines — while maintaining sub-second confirmation times
+
+---
+
+### 📝 Publication
+
+This research has been published in: **Proceedings of the 17th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2026)**  
+*"Dynamic Vehicle Routing Problem with Prompt Confirmation of Advance Requests"* [[ArXiv]](https://arxiv.org/abs/2603.07422)
+
+---
+
+### 💻 Code & Data
+
+The source code, simulation environment, and microtransit dataset used in this work are publicly available: [[Code & Data]](https://github.com/aronlaszka/DVRP-AR)
