@@ -100,5 +100,166 @@
 })();
 </script>
 
+<!-- Liquid Glass — slider widget + dynamic CSS var driver -->
+<script>
+(function () {
+
+  /* ── SVG filter for liquid-surface ripple distortion ── */
+  var svgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svgEl.setAttribute('id', 'lg-svg-defs');
+  svgEl.setAttribute('style', 'position:absolute;width:0;height:0;overflow:hidden;pointer-events:none;');
+  svgEl.innerHTML =
+    '<defs>' +
+      '<filter id="lg-liquid" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">' +
+        '<feTurbulence id="lg-turb" type="fractalNoise" baseFrequency="0.009 0.013" numOctaves="3" seed="4" result="noise"/>' +
+        '<feDisplacementMap id="lg-disp" in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G"/>' +
+      '</filter>' +
+    '</defs>';
+  document.body.appendChild(svgEl);
+
+  /* ── Inject a ripple-surface overlay on the masthead ── */
+  var masthead = document.querySelector('.masthead');
+  var lgRipple = null;
+  if (masthead) {
+    lgRipple = document.createElement('div');
+    lgRipple.id = 'lg-ripple';
+    lgRipple.style.cssText =
+      'position:absolute;inset:0;pointer-events:none;z-index:0;opacity:0;' +
+      'background:linear-gradient(125deg,' +
+        'rgba(255,255,255,0.12) 0%,' +
+        'rgba(255,255,255,0.04) 35%,' +
+        'rgba(255,255,255,0.10) 65%,' +
+        'rgba(255,255,255,0.02) 100%);' +
+      'filter:url(#lg-liquid);' +
+      'mix-blend-mode:overlay;' +
+      'transition:opacity 0.5s ease;';
+    masthead.appendChild(lgRipple);
+  }
+
+  /* ── Inject ripple overlay on sidebar too ── */
+  var sidebar = document.querySelector('.sidebar');
+  var lgRippleSide = null;
+  if (sidebar) {
+    lgRippleSide = document.createElement('div');
+    lgRippleSide.id = 'lg-ripple-side';
+    lgRippleSide.style.cssText =
+      'position:absolute;inset:0;pointer-events:none;z-index:0;opacity:0;' +
+      'border-radius:18px;' +
+      'background:linear-gradient(155deg,' +
+        'rgba(255,255,255,0.16) 0%,' +
+        'rgba(255,255,255,0.04) 50%,' +
+        'rgba(255,255,255,0.12) 100%);' +
+      'filter:url(#lg-liquid);' +
+      'mix-blend-mode:overlay;' +
+      'transition:opacity 0.5s ease;';
+    sidebar.appendChild(lgRippleSide);
+  }
+
+  /* ── Build slider widget ── */
+  var control = document.createElement('div');
+  control.id = 'lg-control';
+
+  var panel = document.createElement('div');
+  panel.id = 'lg-panel';
+  panel.innerHTML =
+    '<p id="lg-panel-title">&#x2728; Liquidity</p>' +
+    '<div class="lg-row">' +
+      '<span class="lg-icon">&#x25CB;</span>' +
+      '<input id="lg-liquidity" type="range" min="0" max="100" value="30" step="1">' +
+      '<span id="lg-value-badge">30</span>' +
+    '</div>' +
+    '<div class="lg-labels"><span>Solid</span><span>Liquid</span></div>';
+
+  var toggleBtn = document.createElement('button');
+  toggleBtn.id = 'lg-toggle-btn';
+  toggleBtn.setAttribute('aria-label', 'Toggle liquidity controls');
+  toggleBtn.setAttribute('title', 'Adjust glass liquidity');
+  toggleBtn.innerHTML = '&#x1F4A7;';
+
+  control.appendChild(panel);
+  control.appendChild(toggleBtn);
+  document.body.appendChild(control);
+
+  var slider = document.getElementById('lg-liquidity');
+  var valueBadge = document.getElementById('lg-value-badge');
+  var panelIsOpen = false;
+
+  /* ── Toggle panel open / close ── */
+  toggleBtn.addEventListener('click', function () {
+    panelIsOpen = !panelIsOpen;
+    if (panelIsOpen) {
+      panel.classList.add('is-open');
+      toggleBtn.classList.add('is-open');
+    } else {
+      panel.classList.remove('is-open');
+      toggleBtn.classList.remove('is-open');
+    }
+  });
+
+  /* ── Linear interpolation helper ── */
+  function lerp(a, b, t) { return a + (b - a) * t; }
+
+  /* ── Map slider 0..100 to all glass CSS vars ── */
+  function applyLiquidity(v) {
+    var t = v / 100;
+
+    var blur       = lerp(6,   54,  t).toFixed(1);
+    var saturate   = lerp(108, 240, t).toFixed(0);
+    var brightness = lerp(1.00, 1.07, t).toFixed(3);
+    var fillOp     = lerp(0.06, 0.28, t).toFixed(3);
+    var borderOp   = lerp(0.18, 0.65, t).toFixed(3);
+    var shimmerOp  = lerp(0.00, 0.30, t).toFixed(3);
+    var shimmerSpd = lerp(14,   3.5, t).toFixed(1);   /* faster = more liquid */
+    var distort    = lerp(0,    30,  t).toFixed(1);   /* SVG displacement scale */
+
+    var root = document.documentElement;
+    root.style.setProperty('--lg-blur',        blur + 'px');
+    root.style.setProperty('--lg-saturate',    saturate + '%');
+    root.style.setProperty('--lg-brightness',  brightness);
+    root.style.setProperty('--lg-fill-op',     fillOp);
+    root.style.setProperty('--lg-border-op',   borderOp);
+    root.style.setProperty('--lg-shimmer-op',  shimmerOp);
+    root.style.setProperty('--lg-shimmer-spd', shimmerSpd + 's');
+
+    /* Update SVG displacement scale */
+    var disp = document.getElementById('lg-disp');
+    if (disp) { disp.setAttribute('scale', distort); }
+
+    /* Show / hide the ripple overlays proportionally */
+    var rippleOp = lerp(0, 0.9, t).toFixed(2);
+    if (lgRipple)     { lgRipple.style.opacity     = rippleOp; }
+    if (lgRippleSide) { lgRippleSide.style.opacity = rippleOp; }
+
+    /* Update slider track gradient */
+    var pct = v + '%';
+    slider.style.background =
+      'linear-gradient(to right,' +
+      '#6366f1 0%, #6366f1 ' + pct + ',' +
+      'rgba(99,102,241,0.18) ' + pct + ', rgba(99,102,241,0.18) 100%)';
+
+    /* Update badge */
+    if (valueBadge) { valueBadge.textContent = v; }
+
+    /* Persist */
+    try { localStorage.setItem('lg-liquidity', v); } catch(e) {}
+  }
+
+  /* ── Wire slider ── */
+  slider.addEventListener('input', function () {
+    applyLiquidity(parseInt(this.value, 10));
+  });
+
+  /* ── Restore saved value ── */
+  var saved = 30;
+  try {
+    var s = localStorage.getItem('lg-liquidity');
+    if (s !== null) { saved = Math.max(0, Math.min(100, parseInt(s, 10))); }
+  } catch(e) {}
+  slider.value = saved;
+  applyLiquidity(saved);
+
+})();
+</script>
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
