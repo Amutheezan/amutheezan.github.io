@@ -6,7 +6,7 @@ git add _data/research_interests.yml _data/navigation.yml
 git add _pages/research.html _pages/about.md _includes/item-research-tags.html
 git add _layouts/single.html _layouts/talk.html
 git add _publications/ _talks/ _workshops/ _projects/
-git commit -m "Fix interest tag pill colors and research hub JS filtering"
+git commit -m "Fix interest tag colors, filter pills, correct research interest assignments, remove Research from nav"
 git push
 echo.
 echo Done! Press any key to close.
