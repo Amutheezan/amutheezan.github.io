@@ -1,0 +1,23 @@
+{% comment %}
+  Renders research interest tag pills for an item page.
+  Uses page.research_interests (array of tag IDs) matched against site.data.research_interests.
+  Place before the share section in single.html / talk.html.
+{% endcomment %}
+
+{% if page.research_interests and page.research_interests.size > 0 %}
+<div class="item-research-interests">
+  <span class="item-research-interests__label">Research interests:</span>
+  <div class="interest-tags" style="display:inline-flex;margin:0;gap:0.4rem;flex-wrap:wrap;vertical-align:middle;">
+    {% for interest_id in page.research_interests %}
+      {% assign interest = site.data.research_interests | where: "id", interest_id | first %}
+      {% if interest %}
+        <a href="/research/#{{ interest.id }}"
+           class="interest-tag interest-tag--{{ interest.color }}"
+           style="font-size:0.78rem;padding:0.28em 0.85em;">
+          <i class="{{ interest.icon }}"></i> {{ interest.label }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

@@ -20,6 +20,10 @@ main:
     url: /projects/
     icon: "fas fa-code"
 
+  - title: "Research"
+    url: /research/
+    icon: "fas fa-flask"
+
   - title: "Blog"
     url: /blog/
     icon: "fas fa-pen"

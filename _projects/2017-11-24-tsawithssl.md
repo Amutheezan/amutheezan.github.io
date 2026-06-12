@@ -5,6 +5,7 @@ collection: projects
 permalink: /projects/twitter
 date: 2017-11-24
 
+research_interests: [machine-learning, nlp]
 ---
 
 ### 📌 Key Contributions

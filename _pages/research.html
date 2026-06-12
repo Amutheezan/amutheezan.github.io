@@ -1,0 +1,234 @@
+---
+layout: single
+title: "Research Interests"
+permalink: /research/
+author_profile: true
+---
+
+<style>
+.ri-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 2rem;
+}
+.ri-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.38em 1.05em;
+  border-radius: 9999px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+  text-decoration: none;
+  background: none;
+  font-family: inherit;
+}
+.ri-filter-btn:hover { transform: translateY(-2px); text-decoration: none; }
+.ri-filter-btn.active { opacity: 1 !important; }
+.ri-filter-btn:not(.active) { opacity: 0.55; }
+
+/* colour variants matching interest-tag--* */
+.ri-btn--blue   { background: rgba(37,99,235,0.10); border-color: rgba(37,99,235,0.45); color: #1d4ed8; }
+.ri-btn--blue.active   { background: rgba(37,99,235,0.22); box-shadow: 0 4px 14px rgba(37,99,235,0.28); }
+.ri-btn--purple { background: rgba(124,58,237,0.10); border-color: rgba(124,58,237,0.45); color: #6d28d9; }
+.ri-btn--purple.active { background: rgba(124,58,237,0.22); box-shadow: 0 4px 14px rgba(124,58,237,0.28); }
+.ri-btn--teal   { background: rgba(13,148,136,0.10); border-color: rgba(13,148,136,0.45); color: #0f766e; }
+.ri-btn--teal.active   { background: rgba(13,148,136,0.22); box-shadow: 0 4px 14px rgba(13,148,136,0.28); }
+.ri-btn--indigo { background: rgba(79,70,229,0.10); border-color: rgba(79,70,229,0.45); color: #4338ca; }
+.ri-btn--indigo.active { background: rgba(79,70,229,0.22); box-shadow: 0 4px 14px rgba(79,70,229,0.28); }
+.ri-btn--orange { background: rgba(234,88,12,0.10); border-color: rgba(234,88,12,0.45); color: #c2410c; }
+.ri-btn--orange.active { background: rgba(234,88,12,0.22); box-shadow: 0 4px 14px rgba(234,88,12,0.28); }
+.ri-btn--green  { background: rgba(21,128,61,0.10); border-color: rgba(21,128,61,0.45); color: #15803d; }
+.ri-btn--green.active  { background: rgba(21,128,61,0.22); box-shadow: 0 4px 14px rgba(21,128,61,0.28); }
+
+.ri-section { margin-bottom: 2.5rem; }
+.ri-section__title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin: 0 0 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(128,128,128,0.2);
+}
+.ri-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(128,128,128,0.1);
+  transition: opacity 0.2s ease;
+}
+.ri-item.hidden { display: none; }
+.ri-item__title { font-weight: 600; font-size: 0.95rem; }
+.ri-item__title a { text-decoration: none; }
+.ri-item__meta { font-size: 0.82rem; opacity: 0.6; }
+.ri-item__tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.25rem; }
+.ri-item__tag {
+  font-size: 0.72rem;
+  padding: 0.15em 0.7em;
+  border-radius: 9999px;
+  font-weight: 500;
+}
+.ri-empty { display: none; font-style: italic; opacity: 0.55; padding: 0.5rem 0; font-size: 0.9rem; }
+.ri-section.all-hidden .ri-empty { display: block; }
+.ri-section.all-hidden .ri-section__title { opacity: 0.3; }
+</style>
+
+<p>Click a research interest to filter across all publications, talks, workshops, and projects.</p>
+
+<!-- Filter pills -->
+<div class="ri-filter-bar" id="ri-filters">
+  <button class="ri-filter-btn active" data-filter="all" style="background:rgba(128,128,128,0.10);border-color:rgba(128,128,128,0.35);color:inherit;">
+    <i class="fas fa-th"></i> All
+  </button>
+  {% for interest in site.data.research_interests %}
+  <button class="ri-filter-btn ri-btn--{{ interest.color }}" data-filter="{{ interest.id }}">
+    <i class="{{ interest.icon }}"></i> {{ interest.label }}
+  </button>
+  {% endfor %}
+</div>
+
+<!-- Publications -->
+{% assign pubs = site.publications | sort: 'date' | reverse %}
+{% if pubs.size > 0 %}
+<div class="ri-section" id="ri-publications" data-section="publications">
+  <div class="ri-section__title"><i class="fas fa-file-alt"></i> Publications</div>
+  {% for item in pubs %}
+  <div class="ri-item" data-interests="{{ item.research_interests | join: ' ' }}">
+    <div class="ri-item__title"><a href="{{ item.permalink }}">{{ item.title }}</a></div>
+    <div class="ri-item__meta">{{ item.venue }} &middot; {{ item.date | date: "%Y" }}</div>
+    <div class="ri-item__tags">
+      {% for interest_id in item.research_interests %}
+        {% assign interest = site.data.research_interests | where: "id", interest_id | first %}
+        {% if interest %}
+        <span class="ri-item__tag interest-tag--{{ interest.color }}">{{ interest.label }}</span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  <div class="ri-empty">No publications match this interest.</div>
+</div>
+{% endif %}
+
+<!-- Talks -->
+{% assign talks = site.talks | sort: 'date' | reverse %}
+{% if talks.size > 0 %}
+<div class="ri-section" id="ri-talks" data-section="talks">
+  <div class="ri-section__title"><i class="fas fa-microphone"></i> Talks</div>
+  {% for item in talks %}
+  <div class="ri-item" data-interests="{{ item.research_interests | join: ' ' }}">
+    <div class="ri-item__title"><a href="{{ item.permalink }}">{{ item.title }}</a></div>
+    <div class="ri-item__meta">{{ item.venue }} &middot; {{ item.date | date: "%Y" }}</div>
+    <div class="ri-item__tags">
+      {% for interest_id in item.research_interests %}
+        {% assign interest = site.data.research_interests | where: "id", interest_id | first %}
+        {% if interest %}
+        <span class="ri-item__tag interest-tag--{{ interest.color }}">{{ interest.label }}</span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  <div class="ri-empty">No talks match this interest.</div>
+</div>
+{% endif %}
+
+<!-- Workshops -->
+{% assign workshops = site.workshops | sort: 'date' | reverse %}
+{% if workshops.size > 0 %}
+<div class="ri-section" id="ri-workshops" data-section="workshops">
+  <div class="ri-section__title"><i class="fas fa-chalkboard"></i> Workshops</div>
+  {% for item in workshops %}
+  <div class="ri-item" data-interests="{{ item.research_interests | join: ' ' }}">
+    <div class="ri-item__title"><a href="{{ item.permalink }}">{{ item.title }}</a></div>
+    <div class="ri-item__meta">{{ item.venue }} &middot; {{ item.date | date: "%Y" }}</div>
+    <div class="ri-item__tags">
+      {% for interest_id in item.research_interests %}
+        {% assign interest = site.data.research_interests | where: "id", interest_id | first %}
+        {% if interest %}
+        <span class="ri-item__tag interest-tag--{{ interest.color }}">{{ interest.label }}</span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  <div class="ri-empty">No workshops match this interest.</div>
+</div>
+{% endif %}
+
+<!-- Projects -->
+{% assign projects = site.projects | sort: 'date' | reverse %}
+{% if projects.size > 0 %}
+<div class="ri-section" id="ri-projects" data-section="projects">
+  <div class="ri-section__title"><i class="fas fa-code"></i> Projects</div>
+  {% for item in projects %}
+  <div class="ri-item" data-interests="{{ item.research_interests | join: ' ' }}">
+    <div class="ri-item__title"><a href="{{ item.permalink }}">{{ item.title }}</a></div>
+    <div class="ri-item__meta">{{ item.date | date: "%Y" }}</div>
+    <div class="ri-item__tags">
+      {% for interest_id in item.research_interests %}
+        {% assign interest = site.data.research_interests | where: "id", interest_id | first %}
+        {% if interest %}
+        <span class="ri-item__tag interest-tag--{{ interest.color }}">{{ interest.label }}</span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  <div class="ri-empty">No projects match this interest.</div>
+</div>
+{% endif %}
+
+<script>
+(function () {
+  var active = 'all';
+
+  function applyFilter(filter) {
+    active = filter;
+
+    // Update button states
+    document.querySelectorAll('.ri-filter-btn').forEach(function (btn) {
+      btn.classList.toggle('active', btn.dataset.filter === filter);
+    });
+
+    // Filter items
+    document.querySelectorAll('.ri-section').forEach(function (section) {
+      var items = section.querySelectorAll('.ri-item');
+      var visible = 0;
+      items.forEach(function (item) {
+        var interests = (item.dataset.interests || '').split(' ');
+        var show = filter === 'all' || interests.indexOf(filter) !== -1;
+        item.classList.toggle('hidden', !show);
+        if (show) visible++;
+      });
+      section.classList.toggle('all-hidden', visible === 0);
+    });
+  }
+
+  // Wire buttons
+  document.querySelectorAll('.ri-filter-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      applyFilter(btn.dataset.filter);
+      // Update URL hash so links from item pages work
+      history.replaceState(null, '', '/research/#' + (btn.dataset.filter === 'all' ? '' : btn.dataset.filter));
+    });
+  });
+
+  // On load, check URL hash
+  function initFromHash() {
+    var hash = window.location.hash.replace('#', '');
+    if (hash && document.querySelector('[data-filter="' + hash + '"]')) {
+      applyFilter(hash);
+    }
+  }
+  initFromHash();
+  window.addEventListener('hashchange', initFromHash);
+})();
+</script>
