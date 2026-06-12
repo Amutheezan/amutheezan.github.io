@@ -193,12 +193,10 @@ author_profile: true
   function applyFilter(filter) {
     active = filter;
 
-    // Update button states
     document.querySelectorAll('.ri-filter-btn').forEach(function (btn) {
       btn.classList.toggle('active', btn.dataset.filter === filter);
     });
 
-    // Filter items
     document.querySelectorAll('.ri-section').forEach(function (section) {
       var items = section.querySelectorAll('.ri-item');
       var visible = 0;
@@ -212,16 +210,13 @@ author_profile: true
     });
   }
 
-  // Wire buttons
   document.querySelectorAll('.ri-filter-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
       applyFilter(btn.dataset.filter);
-      // Update URL hash so links from item pages work
       history.replaceState(null, '', '/research/#' + (btn.dataset.filter === 'all' ? '' : btn.dataset.filter));
     });
   });
 
-  // On load, check URL hash
   function initFromHash() {
     var hash = window.location.hash.replace('#', '');
     if (hash && document.querySelector('[data-filter="' + hash + '"]')) {
