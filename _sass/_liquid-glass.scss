@@ -63,31 +63,7 @@
   &__inner-wrap { position: relative; z-index: 1; }
 }
 
-/* -- Sidebar (light) -------------------------------------------------------- */
-@media (min-width: 925px) {
-  .sidebar {
-    background: rgba(255,255,255,calc(var(--lg-fill-op)*1.5)) !important;
-    backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
-    -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-saturate)) !important;
-    border: 1px solid rgba(255,255,255,var(--lg-border-op)) !important;
-    box-shadow: inset 0 1.5px 0 rgba(255,255,255,calc(var(--lg-border-op)*2.5)), 0 8px 40px rgba(99,102,241,.09) !important;
-    transition: backdrop-filter .5s ease, background .5s ease !important;
-    overflow: hidden;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0; left: -20%;
-      width: 60%; height: 100%;
-      background: linear-gradient(105deg, rgba(255,255,255,calc(var(--lg-border-op)*2)) 0%, rgba(255,255,255,calc(var(--lg-border-op)*.6)) 40%, transparent 70%);
-      pointer-events: none;
-      z-index: 0;
-      animation: lg-specular-drift calc(var(--lg-shimmer-spd)*1.4) ease-in-out infinite alternate;
-      opacity: var(--lg-shimmer-op);
-      transition: background .5s ease, opacity .5s ease;
-    }
-  }
-}
+/* -- Sidebar: excluded from liquid glass — uses default theme styles -------- */
 
 /* -- Main content ----------------------------------------------------------- */
 #main {
@@ -189,27 +165,6 @@ html[data-theme='dark'] {
     border-bottom-width: 1px !important;
     border-bottom-style: solid !important;
     box-shadow: inset 0 1px 0 rgba(255,255,255,calc(var(--lg-border-op)*.4)), 0 2px 20px rgba(0,0,0,.55) !important;
-  }
-
-  @media (min-width: 925px) {
-    .sidebar {
-      background: transparent !important;
-      border-color: transparent !important;
-      box-shadow: none !important;
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
-
-      &::before { display: none !important; }
-    }
-
-    .sidebar .author__avatar,
-    .sidebar .author__content,
-    .sidebar .author__urls-wrapper,
-    .sidebar .author__urls {
-      background: transparent !important;
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
-    }
   }
 
   #main {
