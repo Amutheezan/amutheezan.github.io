@@ -1,15 +1,19 @@
 {% comment %}
-  Renders research interest links for an item page — plain inline links, no pill styling.
+  Renders research interest pill badges for an item page.
+  Each pill links to /research/#id to filter the hub page.
 {% endcomment %}
 
 {% if page.research_interests and page.research_interests.size > 0 %}
-<p class="page__meta">
-  <strong>Research interests:</strong>
+<div class="item-research-interests" style="margin: 1rem 0;">
+  <span style="font-size:0.82rem;font-weight:600;opacity:0.6;margin-right:0.5rem;">Research interests:</span>
   {% for interest_id in page.research_interests %}
     {% assign interest = site.data.research_interests | where: "id", interest_id | first %}
     {% if interest %}
-      {% unless forloop.first %} &middot; {% endunless %}<a href="/research/#{{ interest.id }}">{{ interest.label }}</a>
+      <a href="/research/#{{ interest.id }}"
+         class="interest-tag interest-tag--{{ interest.color }}">
+        <i class="{{ interest.icon }}"></i> {{ interest.label }}
+      </a>
     {% endif %}
   {% endfor %}
-</p>
+</div>
 {% endif %}
