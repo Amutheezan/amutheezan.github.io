@@ -17,19 +17,19 @@ Before his doctoral studies, he gained industry experience as a Software Enginee
 **Research Interests**
 
 <div class="interest-tags">
-  <span class="interest-tag interest-tag--blue">
+  <a href="/research/#reinforcement-learning" class="interest-tag interest-tag--blue">
     <i class="fas fa-brain"></i> Reinforcement Learning
-  </span>
-  <span class="interest-tag interest-tag--purple">
+  </a>
+  <a href="/research/#combinatorial-optimization" class="interest-tag interest-tag--purple">
     <i class="fas fa-cogs"></i> Combinatorial Optimization
-  </span>
-  <span class="interest-tag interest-tag--indigo">
+  </a>
+  <a href="/research/#multi-agent-systems" class="interest-tag interest-tag--indigo">
     <i class="fas fa-robot" aria-hidden="true"></i> Multi-Agent Systems
-  </span>
-  <span class="interest-tag interest-tag--teal">
+  </a>
+  <a href="/research/#cyber-physical-systems" class="interest-tag interest-tag--teal">
     <i class="fas fa-microchip" aria-hidden="true"></i> Cyber-Physical Systems
-  </span>
-  <span class="interest-tag interest-tag--green">
+  </a>
+  <a href="/research/#operational-research" class="interest-tag interest-tag--green">
     <i class="fas fa-chart-line"></i> Operational Research
-  </span>
+  </a>
 </div>

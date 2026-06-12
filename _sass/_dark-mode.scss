@@ -450,6 +450,8 @@ html[data-theme="dark"] {
   cursor: pointer;
   font-size: 0.85rem;
   line-height: 1;
+
+  @media (max-width: 767px) { width: 1.75rem; height: 1.75rem; font-size: 0.75rem; }
   transition:
     background 0.2s ease-in-out,
     color 0.2s ease-in-out,

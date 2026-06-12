@@ -19,6 +19,12 @@
   background: rgba(255, 255, 255, 0.12);
   vertical-align: middle;
   overflow: visible;
+
+  @media (max-width: 767px) {
+    gap: 3px;
+    padding: 0 0.35rem;
+    height: 1.75rem;
+  }
 }
 
 .color-theme-swatch {
@@ -27,6 +33,8 @@
   justify-content: center;
   width: 14px;
   height: 14px;
+
+  @media (max-width: 767px) { width: 11px; height: 11px; }
   padding: 0;
   border: 2px solid transparent;
   border-radius: 50%;

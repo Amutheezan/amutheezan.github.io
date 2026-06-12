@@ -263,12 +263,19 @@ html[data-theme='dark'] {
   background: rgba(255,255,255,.12);
   vertical-align: middle;
   user-select: none;
+
+  @media (max-width: 767px) {
+    padding: 0 .35rem;
+    height: 1.75rem;
+  }
 }
 
 .lg-pill-range {
   -webkit-appearance: none;
   appearance: none;
   width: 72px;
+
+  @media (max-width: 767px) { width: 44px; }
   height: 6px;
   border-radius: 6px;
   outline: none;

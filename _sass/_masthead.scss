@@ -71,6 +71,11 @@
   gap: 0.4rem;
   flex-shrink: 0;
   margin-left: 0.5rem;
+
+  @media (max-width: 767px) {
+    gap: 0.25rem;
+    margin-left: 0.25rem;
+  }
 }
 
 .masthead__menu-item {

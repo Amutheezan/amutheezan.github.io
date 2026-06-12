@@ -1,42 +1,27 @@
-# Research interest tags — used in collection frontmatter and the hub page
-# Each item: id, label, icon (Font Awesome class), color (matches interest-tag--* scss class)
-
-- id: transportation-optimization
-  label: "Transportation Optimization"
-  icon: "fas fa-bus"
-  color: blue
+# Research interest tags — exactly the 5 listed on the about/home page.
+# id must match the hash used in /research/ links and collection frontmatter.
 
 - id: reinforcement-learning
   label: "Reinforcement Learning"
   icon: "fas fa-brain"
-  color: purple
+  color: blue
 
-- id: vehicle-routing
-  label: "Vehicle Routing"
-  icon: "fas fa-route"
-  color: teal
+- id: combinatorial-optimization
+  label: "Combinatorial Optimization"
+  icon: "fas fa-cogs"
+  color: purple
 
 - id: multi-agent-systems
   label: "Multi-Agent Systems"
-  icon: "fas fa-network-wired"
+  icon: "fas fa-robot"
   color: indigo
 
-- id: cybersecurity
-  label: "Cybersecurity"
-  icon: "fas fa-shield-alt"
-  color: orange
-
-- id: machine-learning
-  label: "Machine Learning"
-  icon: "fas fa-robot"
-  color: green
-
-- id: nlp
-  label: "NLP & Sentiment Analysis"
-  icon: "fas fa-comment-dots"
+- id: cyber-physical-systems
+  label: "Cyber-Physical Systems"
+  icon: "fas fa-microchip"
   color: teal
 
-- id: healthcare-it
-  label: "Healthcare IT"
-  icon: "fas fa-hospital"
+- id: operational-research
+  label: "Operational Research"
+  icon: "fas fa-chart-line"
   color: green
