@@ -88,6 +88,19 @@ html[data-color-theme="dark-purple"] {
 
 
 /* ==========================================================================
+   CSS CUSTOM PROPERTIES — accent colours for appearance button + drawer
+   ========================================================================== */
+
+html[data-color-theme="navy"]        { --adr-rgb: 99, 102, 241;  --adr-text: #4f46e5; }
+html[data-color-theme="slate"]       { --adr-rgb: 6, 182, 212;   --adr-text: #0891b2; }
+html[data-color-theme="dark-purple"] { --adr-rgb: 139, 92, 246;  --adr-text: #7c3aed; }
+
+html[data-theme="dark"][data-color-theme="navy"]        { --adr-text: #a5b4fc; }
+html[data-theme="dark"][data-color-theme="slate"]       { --adr-text: #22d3ee; }
+html[data-theme="dark"][data-color-theme="dark-purple"] { --adr-text: #c084fc; }
+
+
+/* ==========================================================================
    COSMIC / INDIGO THEME — Light mode  (default cosmic, no data-color-theme)
    ========================================================================== */
 
