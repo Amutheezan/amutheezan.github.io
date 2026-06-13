@@ -255,40 +255,38 @@
 
     var r = ac.r, g = ac.g, b = ac.b;
     var rgb  = r + ',' + g + ',' + b;
-    var rl = Math.min(255, r + 60), gl = Math.min(255, g + 60), bl = Math.min(255, b + 80);
-    var rgbl = rl + ',' + gl + ',' + bl;
     var pct  = v + '%';
 
-    /* Update drawer slider track */
-    var slider = document.getElementById('lg-liquidity');
-    if (slider) {
-      slider.style.background =
-        'linear-gradient(to bottom,rgba(' + rgbl + ',0.55) 0%,rgba(' + rgbl + ',0) 60%),' +
-        'linear-gradient(to right,' +
-          'rgba(' + rgb + ',1.0) 0%,' +
-          'rgba(' + rgb + ',1.0) ' + pct + ',' +
-          'rgba(' + rgb + ',0.14) ' + pct + ',' +
-          'rgba(' + rgb + ',0.14) 100%)';
-    }
+    /* Update custom slider visuals */
+    var sliderFill  = document.getElementById('adr-lg-slider-fill');
+    var sliderThumb = document.getElementById('adr-lg-slider-thumb');
+    if (sliderFill)  { sliderFill.style.width = pct; sliderFill.style.background = 'rgba(' + rgb + ',0.82)'; }
+    if (sliderThumb) { sliderThumb.style.left = pct; }
 
-    /* Update drawer preview strip */
-    var preview = document.getElementById('adr-liq-preview');
-    if (preview) {
-      var fillA  = (parseFloat(fillOp) + 0.10).toFixed(3);
-      preview.style.background =
-        'linear-gradient(135deg,' +
-          'rgba(255,255,255,' + fillA  + ') 0%,' +
-          'rgba(' + rgb + ',' + (0.06 * t).toFixed(3) + ') 100%)';
-      if (v > 0) {
-        preview.style.backdropFilter = 'blur(' + blur + 'px)';
-        preview.style.webkitBackdropFilter = 'blur(' + blur + 'px)';
-      } else {
-        preview.style.backdropFilter = 'none';
-        preview.style.webkitBackdropFilter = 'none';
-      }
-    }
+    /* Update liquidity icon */
+    updateLiquidityIcon(v, dark);
 
     try { localStorage.setItem('lg-liquidity', v); } catch(e) {}
+  }
+
+  function updateLiquidityIcon(v, dark) {
+    var iconEl = document.getElementById('adr-liq-icon');
+    if (!iconEl) { return; }
+    var isDark = (dark !== undefined) ? dark : (document.documentElement.getAttribute('data-theme') === 'dark');
+    var path = 'M12 3C8.5 9 5 12 5 16.5a7 7 0 0 0 14 0C19 12 15.5 9 12 3z';
+    var svg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg">';
+    if (v > 66) {
+      svg += '<path d="' + path + '" fill="currentColor" opacity="0.80"/><path d="' + path + '"/>';
+    } else if (v > 28) {
+      svg += '<defs><linearGradient id="lg-drop-grad" x1="0" y1="0" x2="0" y2="1">';
+      svg += '<stop offset="0%" stop-color="currentColor" stop-opacity="0"/>';
+      svg += '<stop offset="62%" stop-color="currentColor" stop-opacity="0.82"/>';
+      svg += '</linearGradient></defs>';
+      svg += '<path d="' + path + '" fill="url(#lg-drop-grad)"/><path d="' + path + '"/>';
+    } else {
+      svg += '<path d="' + path + '"/>';
+    }
+    iconEl.innerHTML = svg + '</svg>';
   }
 
   /* Expose globally so dark/colour-theme scripts can call it */
