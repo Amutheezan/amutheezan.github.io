@@ -295,3 +295,29 @@
 html[data-theme="dark"] .sidebar.sticky {
   border-right-color: rgba(var(--adr-rgb, 99, 102, 241), 0.22);
 }
+
+/* ====================================================================
+   EXPANDED STATE — sidebar hidden, article fills full width
+   ==================================================================== */
+#main.page--expanded .sidebar.sticky {
+  display: none !important;
+}
+
+@media (max-width: 924px) {
+  #main.page--expanded {
+    display: block;
+  }
+  #main.page--expanded article.page {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 925px) {
+  #main.page--expanded .page {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
