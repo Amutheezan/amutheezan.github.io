@@ -182,9 +182,10 @@
   display: none;
   /* Overlay on mobile — floats above content when Follow is clicked */
   position: absolute;
-  left: 0;
   right: 0;
+  left: auto;
   top: calc(100% + 6px);
+  width: max-content;
   z-index: 200;
   margin: 0;
   padding: 0.5em 0;
