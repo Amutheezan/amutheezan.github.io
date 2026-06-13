@@ -1,0 +1,14 @@
+{% comment %}
+  Site-wide research interests bar — shows all interests from _data/research_interests.yml.
+  Include at the top of archive pages (publications, talks, workshops, projects).
+{% endcomment %}
+
+<div class="research-interests-bar">
+  <span class="research-interests-bar__label">Research interests:</span>
+  {% for interest in site.data.research_interests %}
+    <a href="/research/#{{ interest.id }}"
+       class="interest-tag interest-tag--{{ interest.color }}">
+      <i class="{{ interest.icon }}" aria-hidden="true"></i> {{ interest.label }}
+    </a>
+  {% endfor %}
+</div>
