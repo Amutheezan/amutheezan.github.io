@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "UI: theme switcher, dark mode fixes, footer gap, flex layout"
+git commit -m "Appearance drawer: cards layout, theme-adaptive button, dark/liquidity defaults, mobile fix; sidebar dark mode fix; Software Security pill"
 git push
