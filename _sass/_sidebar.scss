@@ -14,6 +14,21 @@
   @include clearfix();
   margin-bottom: 1em;
 
+  /* Mobile: narrow left column inside the #main card */
+  @media (max-width: 924px) {
+    width: 62px;
+    min-width: 62px;
+    flex-shrink: 0;
+    align-self: stretch;
+    margin-bottom: 0;
+    padding: 1.25rem 0.3rem 1.25rem;
+    border-right: 1px solid rgba(var(--adr-rgb, 99, 102, 241), 0.15);
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @include breakpoint($large) {
     @include span(2 of 12);
     opacity: 1;
