@@ -83,9 +83,13 @@
     }
     try { localStorage.setItem('color-theme', theme); } catch(e) {}
 
-    /* Keep active ring on the matching swatch */
-    document.querySelectorAll('.adr-swatch').forEach(function (s) {
-      s.classList.toggle('adr-swatch--active',
+    /* Keep active tile + name on the matching swatch */
+    document.querySelectorAll('.adr-tile').forEach(function (s) {
+      s.classList.toggle('adr-tile--active',
+        (s.dataset.colorTheme || '') === (theme || ''));
+    });
+    document.querySelectorAll('.adr-tile-names span').forEach(function (s) {
+      s.classList.toggle('adr-tile-name--active',
         (s.dataset.colorTheme || '') === (theme || ''));
     });
 
