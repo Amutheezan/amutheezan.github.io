@@ -498,3 +498,32 @@ html[data-theme="dark"] {
     .icon-moon { display: none; }
   }
 }
+
+/* ── Appearance button + Follow button — white in dark mode, accent on hover ── */
+html[data-theme="dark"] {
+  .appearance-btn {
+    color: rgba(255, 255, 255, 0.80);
+    border-color: rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.07);
+
+    &:hover {
+      color: var(--adr-text);
+      border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.75);
+      background: rgba(var(--adr-rgb, 99, 102, 241), 0.18);
+      box-shadow: 0 4px 14px rgba(var(--adr-rgb, 99, 102, 241), 0.22);
+    }
+  }
+
+  .btn--inverse {
+    color: rgba(255, 255, 255, 0.80) !important;
+    border-color: rgba(255, 255, 255, 0.20) !important;
+    background: rgba(255, 255, 255, 0.07) !important;
+
+    &:hover {
+      color: var(--adr-text) !important;
+      border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.75) !important;
+      background: rgba(var(--adr-rgb, 99, 102, 241), 0.18) !important;
+      box-shadow: 0 4px 14px rgba(var(--adr-rgb, 99, 102, 241), 0.22) !important;
+    }
+  }
+}
