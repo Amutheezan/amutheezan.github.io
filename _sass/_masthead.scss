@@ -118,7 +118,7 @@ html[data-theme="dark"] {
   transition: background 0.18s ease, border-color 0.18s ease,
               color 0.18s ease, box-shadow 0.18s ease;
 
-  i { font-size: 0.80em; }
+  i { font-size: 1.05em; }
 
   &:hover {
     background: rgba(var(--adr-rgb, 99, 102, 241), 0.18);
@@ -129,6 +129,12 @@ html[data-theme="dark"] {
 
   &__label {
     @media (max-width: 500px) { display: none; }
+  }
+
+  /* Icon-only on small screens — square pill */
+  @media (max-width: 500px) {
+    padding: 0.42rem 0.55rem;
+    i { font-size: 1.15em; }
   }
 
   @media (max-width: 767px) {
