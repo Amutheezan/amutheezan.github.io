@@ -1,20 +1,297 @@
 /* ==========================================================================
-   NO SIDEBAR — hide author profile sidebar on all screen sizes.
-   Page content fills full width on both mobile and desktop.
-   Imported LAST in main.scss for guaranteed priority.
+   ICON SIDEBAR — narrow left column, social icons only, no Follow button.
+   Applied on BOTH mobile and desktop. Imported LAST for guaranteed priority.
    ========================================================================== */
 
-/* Hide sidebar everywhere */
-.sidebar {
+/* ---- Global: always hide Follow button ---- */
+.author__urls-wrapper button {
   display: none !important;
 }
 
-/* Desktop: page content takes full width */
-@media (min-width: 925px) {
-  .page {
-    width: 100% !important;
+/* ====================================================================
+   MOBILE  (max-width: 924px)
+   ==================================================================== */
+@media (max-width: 924px) {
+
+  #main {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #main::after {
+    display: none; /* remove clearfix ::after from flex flow */
+  }
+
+  .sidebar.sticky {
+    flex: 0 0 64px;
+    width: 64px !important;
+    min-width: 64px;
+    max-width: 64px;
+    align-self: stretch;
+    margin-bottom: 0 !important;
+    padding: 1.2rem 0 1rem !important;
+    border-right: 1px solid rgba(var(--adr-rgb, 99, 102, 241), 0.15);
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 5;
     float: none !important;
+  }
+
+  .sidebar.sticky > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .author__avatar {
+    display: flex !important;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .author__avatar img {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px;
+    max-width: 42px !important;
+    border-radius: 50%;
+  }
+
+  .author__content {
+    display: block !important;
+    width: 100%;
+    padding: 0 4px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .author__name,
+  .sidebar .author__name {
+    font-size: 6.5px !important;
+    margin: 0;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+
+  .author__bio {
+    font-size: 5.5px !important;
+    margin: 2px 0 0;
+    line-height: 1.3;
+  }
+
+  .author__bio::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: rgba(var(--adr-rgb, 99, 102, 241), 0.22);
+    margin: 7px auto 0;
+  }
+
+  .author__urls-wrapper {
+    display: block !important;
+    width: 100%;
+    white-space: normal;
+    position: static;
+    cursor: default;
+    z-index: 5;
+  }
+
+  .author__urls {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    position: static !important;
+    top: auto; right: auto; left: auto;
+    width: 100%;
+    min-width: 0;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-radius: 0;
+    padding: 2px 0;
+    margin: 0;
+    z-index: auto;
+    list-style: none;
+  }
+
+  .author__urls::before,
+  .author__urls::after {
+    display: none !important;
+  }
+
+  .author__urls li {
+    white-space: normal;
+    display: block;
+  }
+
+  .author__urls li.author__desktop {
+    display: none;
+  }
+
+  .author__urls a {
+    font-size: 0 !important;
+    line-height: 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 0;
+    border-radius: 6px;
+    color: rgba(var(--adr-rgb, 99, 102, 241), 0.72);
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .author__urls a:hover {
+    background: rgba(var(--adr-rgb, 99, 102, 241), 0.12);
+    color: var(--adr-text, #4f46e5);
+    text-decoration: none;
+  }
+
+  .author__urls a i {
+    font-size: 13px !important;
+    line-height: 1;
+  }
+
+  .author__urls a svg {
+    width: 13px;
+    height: 13px;
+    fill: currentColor;
+    flex-shrink: 0;
+  }
+
+  article.page {
+    flex: 1;
+    min-width: 0;
+    padding: 1.5em 1.25em;
+    box-sizing: border-box;
+  }
+}
+
+/* ====================================================================
+   DESKTOP  (min-width: 925px)
+   ==================================================================== */
+@media (min-width: 925px) {
+
+  .sidebar.sticky {
+    width: 72px !important;
+    padding: 1.2rem 0 1rem !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 18px;
+  }
+
+  .sidebar.sticky > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .author__avatar img {
+    max-width: 48px !important;
+    padding: 0 !important;
+  }
+
+  .author__name,
+  .sidebar .author__name {
+    font-size: 7px !important;
+    text-align: center;
+    word-break: break-word;
+    padding: 0 4px;
+    margin-top: 6px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .author__bio {
+    font-size: 6px !important;
+    text-align: center;
+    padding: 0 4px;
+    margin-bottom: 8px !important;
+  }
+
+  .author__bio::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: rgba(var(--adr-rgb, 99, 102, 241), 0.22);
+    margin: 7px auto 0;
+  }
+
+  .author__urls-wrapper {
+    display: block !important;
+    white-space: normal !important;
+    width: 100%;
+  }
+
+  .author__urls {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    padding: 2px 0;
+  }
+
+  .author__urls a {
+    font-size: 0 !important;
+    line-height: 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 0 !important;
+    border-radius: 6px;
+    color: rgba(var(--adr-rgb, 99, 102, 241), 0.72);
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .author__urls a:hover {
+    background: rgba(var(--adr-rgb, 99, 102, 241), 0.12);
+    color: var(--adr-text, #4f46e5);
+    text-decoration: none;
+  }
+
+  .author__urls a i {
+    font-size: 14px !important;
+    line-height: 1;
+  }
+
+  .author__urls a svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+    flex-shrink: 0;
+  }
+
+  /* Page fills remaining width beside the narrow sidebar */
+  .page {
+    width: calc(100% - 88px) !important;
+    float: right !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+}
+
+/* ====================================================================
+   Dark mode border accent
+   ==================================================================== */
+html[data-theme="dark"] .sidebar.sticky {
+  border-right-color: rgba(var(--adr-rgb, 99, 102, 241), 0.22);
 }
