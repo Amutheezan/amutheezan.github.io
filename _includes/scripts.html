@@ -394,7 +394,7 @@
       (grouped[d.collection] = grouped[d.collection] || []).push(d);
     });
     var html = '';
-    ['publications','talks','workshops','projects'].forEach(function (col) {
+    ['publications','talks','workshops','projects','posts'].forEach(function (col) {
       if (!grouped[col]) { return; }
       html += '<div class="srch-group-label">' + (LABELS[col] || col) + 's</div>';
       grouped[col].forEach(function (d) {
