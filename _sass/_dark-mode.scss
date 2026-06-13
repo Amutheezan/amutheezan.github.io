@@ -32,13 +32,9 @@ html[data-theme="dark"] {
     -webkit-backdrop-filter: none !important;
     box-shadow: none !important;
     border: none !important;
-    /* Mobile left sidebar: restore just the right border in dark mode */
-    @media (max-width: 924px) {
-      border-right: 1px solid rgba(var(--adr-rgb, 99, 102, 241), 0.18) !important;
-    }
   }
 
-  /* Author URL dropdown — dark mobile pop-up only */
+  /* Author URL dropdown — dark desktop pop-up only */
   .author__urls {
     background: rgba(8, 12, 30, 0.92);
     border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.28);
@@ -47,15 +43,6 @@ html[data-theme="dark"] {
     box-shadow:
       0 12px 40px rgba(0, 0, 0, 0.55),
       inset 0 1px 0 rgba(255, 255, 255, 0.06);
-
-    /* Mobile left-sidebar: icons are always visible inline — no popup styling */
-    @media (max-width: 924px) {
-      background: transparent;
-      border: 0;
-      box-shadow: none;
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-    }
 
     /* Desktop sidebar: transparent */
     @include breakpoint($large) {
