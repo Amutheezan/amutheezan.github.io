@@ -27,21 +27,16 @@ $(document).ready(function(){
   $(".sticky").Stickyfill();
 
   var stickySideBar = function(){
-    var show = $(".author__urls-wrapper button").length === 0 ? $(window).width() > 1024 : !$(".author__urls-wrapper button").is(":visible");
-    // console.log("has button: " + $(".author__urls-wrapper button").length === 0);
-    // console.log("Window Width: " + windowWidth);
-    // console.log("show: " + show);
-    //old code was if($(window).width() > 1024)
-    if (show) {
-      // fix
+    /* URLs are now always visible on both mobile (left-column) and desktop.
+       Just manage Stickyfill — never override CSS display. */
+    if ($(window).width() >= 925) {
       Stickyfill.rebuild();
       Stickyfill.init();
-      $(".author__urls").show();
     } else {
-      // unfix
       Stickyfill.stop();
-      $(".author__urls").hide();
     }
+    /* Clear any inline display style so CSS breakpoints take full control */
+    $(".author__urls").css("display", "");
   };
 
   stickySideBar();
