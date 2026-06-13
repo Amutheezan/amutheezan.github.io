@@ -82,17 +82,19 @@
   }
 
   .current {
+    display: flex;
+    align-items: center;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.72);
     min-width: 0;
     flex-shrink: 1;
+    overflow: hidden;
 
     .current__title {
-      display: block;
+      min-width: 0;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      max-width: 100%;
     }
   }
 }
