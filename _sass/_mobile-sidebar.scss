@@ -1,10 +1,21 @@
 /* ==========================================================================
    ICON SIDEBAR — narrow left column, social icons only, no Follow button.
-   Applied on BOTH mobile and desktop. Imported LAST for guaranteed priority.
+   Both mobile and desktop use flex-row on #main so the sidebar is a
+   flex item (avoids fighting Susy's float/percentage gutter system).
+   Imported LAST for guaranteed priority.
    ========================================================================== */
 
 /* ---- Global: always hide Follow button ---- */
 .author__urls-wrapper button {
+  display: none !important;
+}
+
+/* ====================================================================
+   SHARED helpers for both breakpoints
+   ==================================================================== */
+
+/* hide text-only location / employer items */
+.author__urls li.author__desktop {
   display: none !important;
 }
 
@@ -20,16 +31,15 @@
     padding: 0;
     box-sizing: border-box;
   }
-
-  #main::after {
-    display: none;
-  }
+  #main::after { display: none; }
 
   .sidebar.sticky {
     flex: 0 0 64px;
     width: 64px !important;
     min-width: 64px;
     max-width: 64px;
+    float: none !important;
+    margin-right: 0 !important;
     align-self: stretch;
     margin-bottom: 0 !important;
     padding: 1.2rem 0 1rem !important;
@@ -41,7 +51,6 @@
     align-items: center;
     position: relative;
     z-index: 5;
-    float: none !important;
   }
 
   .sidebar.sticky > div {
@@ -128,19 +137,9 @@
   }
 
   .author__urls::before,
-  .author__urls::after {
-    display: none !important;
-  }
+  .author__urls::after { display: none !important; }
 
-  .author__urls li {
-    white-space: normal;
-    display: block;
-  }
-
-  /* hide text-only items (location, employer) */
-  .author__urls li.author__desktop {
-    display: none;
-  }
+  .author__urls li { white-space: normal; display: block; }
 
   .author__urls a {
     font-size: 0 !important;
@@ -167,7 +166,6 @@
     line-height: 1;
   }
 
-  /* SVG icons (e.g. X/Twitter) — override inline em-based sizes with px */
   .author__urls a svg {
     width: 13px !important;
     height: 13px !important;
@@ -186,16 +184,30 @@
 
 /* ====================================================================
    DESKTOP  (min-width: 925px)
-   Narrow the sidebar width but KEEP the float so Susy layout still works.
-   Apply flex only to the inner wrapper div, not the sidebar itself.
+   Switch #main to flex row — avoids Susy's float/gutter overflow bug.
    ==================================================================== */
 @media (min-width: 925px) {
 
+  #main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #main::after { display: none; }
+
   .sidebar.sticky {
+    flex: 0 0 72px;
     width: 72px !important;
+    min-width: 72px;
+    max-width: 72px;
+    float: none !important;
+    margin-right: 0 !important;
     padding: 1.2rem 0 1rem !important;
     overflow: hidden;
     border-radius: 18px;
+    align-self: flex-start;
+    position: sticky;
+    top: 4em;
   }
 
   .sidebar.sticky > div {
@@ -248,11 +260,12 @@
     align-items: center;
     gap: 1px;
     padding: 2px 0;
-  }
-
-  /* hide text-only items (location, employer) on desktop too */
-  .author__urls li.author__desktop {
-    display: none !important;
+    position: static !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
 
   .author__urls a {
@@ -280,7 +293,6 @@
     line-height: 1;
   }
 
-  /* SVG icons (e.g. X/Twitter) — override inline em-based sizes with px */
   .author__urls a svg {
     width: 14px !important;
     height: 14px !important;
@@ -289,10 +301,12 @@
     display: block !important;
   }
 
-  /* Page fills remaining width beside the narrow sidebar */
+  /* Page fills remaining flex space */
   .page {
-    width: calc(100% - 88px) !important;
-    float: right !important;
+    flex: 1;
+    min-width: 0;
+    float: none !important;
+    width: auto !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
@@ -312,21 +326,9 @@ html[data-theme="dark"] .sidebar.sticky {
   display: none !important;
 }
 
-@media (max-width: 924px) {
-  #main.page--expanded {
-    display: block;
-  }
-  #main.page--expanded article.page {
-    width: 100%;
-    box-sizing: border-box;
-  }
-}
-
-@media (min-width: 925px) {
-  #main.page--expanded .page {
-    width: 100% !important;
-    float: none !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
+#main.page--expanded .page {
+  flex: 1 !important;
+  width: auto !important;
+  float: none !important;
+  margin: 0 !important;
 }
