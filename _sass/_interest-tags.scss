@@ -104,6 +104,18 @@
       color: #3730a3 !important;
     }
   }
+
+  &--rose {
+    background: rgba(190, 24, 93, 0.10);
+    border-color: rgba(190, 24, 93, 0.45);
+    color: #9f1239 !important;
+    i { color: #be185d; }
+    &:hover {
+      background: rgba(190, 24, 93, 0.18);
+      box-shadow: 0 4px 14px rgba(190, 24, 93, 0.22);
+      color: #881337 !important;
+    }
+  }
 }
 
 /* ── Dark mode — richer, more vivid tags ── */
@@ -156,5 +168,13 @@ html[data-theme="dark"] {
     color: #a5b4fc !important;
     i { color: #818cf8; }
     &:hover { background: rgba(99, 102, 241, 0.28); color: #c7d2fe !important; }
+  }
+
+  .interest-tag--rose {
+    background: rgba(190, 24, 93, 0.18);
+    border-color: rgba(249, 168, 212, 0.55);
+    color: #fda4af !important;
+    i { color: #f472b6; }
+    &:hover { background: rgba(190, 24, 93, 0.28); color: #fecdd3 !important; }
   }
 }

@@ -25,3 +25,8 @@
   label: "Operational Research"
   icon: "fas fa-chart-line"
   color: green
+
+- id: software-security
+  label: "Software Security"
+  icon: "fas fa-shield-alt"
+  color: rose

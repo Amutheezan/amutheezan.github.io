@@ -6,6 +6,7 @@ permalink: /projects/bug-bounty
 date: 2023-05-04
 citation: 'Atefi, S., Sivagnanam, A., Ayman, A., Grossklags, J., & Laszka, A. (2023, May). The Benefits of Vulnerability Discovery and Bug Bounty Programs: Case Studies of Chromium and Firefox. In Proceedings of the ACM Web Conference, (pp 2209–2219), ACM'
 citation_1: 'Sivagnanam, A., Atefi, S., Ayman, A., Grossklags, J., & Laszka, A. (2021). On the Benefits of Bug Bounty Programs: A Study of Chromium Vulnerabilities. In Workshop on the Economics of Information Security (WEIS) (Vol. 10)'
+research_interests: [software-security]
 
 ---
 

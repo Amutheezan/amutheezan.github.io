@@ -36,24 +36,62 @@
       </nav>
     </div>
     <div class="masthead__controls">
-      <div class="color-theme-toggle" id="color-theme-toggle" aria-label="Switch color theme" title="Pick a colour theme">
-        <button class="color-theme-swatch color-theme-swatch--navy"        data-color-theme="navy"        aria-label="Navy theme"        title="Navy"></button>
-        <button class="color-theme-swatch color-theme-swatch--slate"       data-color-theme="slate"       aria-label="Slate theme"       title="Slate"></button>
-        <button class="color-theme-swatch color-theme-swatch--dark-purple" data-color-theme="dark-purple" aria-label="Dark Purple theme" title="Dark Purple"></button>
-      </div>
-      <div class="lg-slider-pill" title="Adjust glass liquidity">
-        <input id="lg-liquidity" type="range" min="0" max="100" value="30" step="1"
-               class="lg-pill-range" aria-label="Glass liquidity">
-      </div>
-      <button
-        class="dark-mode-toggle"
-        id="dark-mode-toggle"
-        aria-label="Toggle dark mode"
-        title="Toggle dark / light mode"
-      >
-        <i class="fas fa-sun  icon-sun"  aria-hidden="true"></i>
-        <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+      <button class="appearance-btn" id="adr-open-btn" aria-label="Open appearance settings" title="Appearance">
+        <i class="fas fa-sliders-h" aria-hidden="true"></i>
+        <span class="appearance-btn__label">Appearance</span>
       </button>
     </div>
+  </div>
+</div>
+
+<!-- Appearance drawer overlay -->
+<div class="adr-overlay" id="adr-overlay"></div>
+
+<!-- Appearance drawer -->
+<div class="adr-drawer" id="adr-drawer" role="dialog" aria-label="Appearance settings">
+  <div class="adr-head">
+    <span class="adr-title">Appearance</span>
+    <button class="adr-close" id="adr-close-btn" aria-label="Close appearance settings">&#x2715;</button>
+  </div>
+  <div class="adr-body">
+
+    <div class="adr-section">
+      <div class="adr-section-label">Color theme</div>
+      <div class="adr-swatches" id="adr-swatches">
+        <button class="adr-swatch adr-swatch--navy"        data-color-theme="navy"        title="Indigo (default)"></button>
+        <button class="adr-swatch adr-swatch--slate"       data-color-theme="slate"       title="Teal"></button>
+        <button class="adr-swatch adr-swatch--dark-purple" data-color-theme="dark-purple" title="Violet"></button>
+      </div>
+    </div>
+
+    <div class="adr-section">
+      <div class="adr-section-label">Mode</div>
+      <div class="adr-toggle-row">
+        <div class="adr-toggle-desc">
+          <span class="adr-toggle-name">Dark mode</span>
+          <span class="adr-toggle-sub">Easier on the eyes at night</span>
+        </div>
+        <label class="adr-tog" title="Toggle dark mode">
+          <input type="checkbox" id="adr-dark-toggle" />
+          <span class="adr-tog-track"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="adr-section">
+      <div class="adr-section-label">Glassmorphism</div>
+      <div class="adr-toggle-desc" style="margin-bottom:0.75rem;">
+        <span class="adr-toggle-name">Surface transparency</span>
+        <span class="adr-toggle-sub">Blend nav and cards into the background</span>
+      </div>
+      <div class="adr-slider-labels">
+        <span>Solid</span>
+        <span id="adr-liq-val">30%</span>
+        <span>Glassy</span>
+      </div>
+      <input type="range" id="lg-liquidity" class="adr-liq-range" min="0" max="100" value="30" step="1" aria-label="Glass liquidity" />
+      <div class="adr-liq-preview" id="adr-liq-preview">Surface preview</div>
+    </div>
+
   </div>
 </div>

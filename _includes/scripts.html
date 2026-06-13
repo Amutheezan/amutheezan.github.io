@@ -1,43 +1,102 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
-<!-- Dark / Light mode toggle -->
+<!-- Appearance drawer open / close -->
 <script>
 (function () {
-  var toggle = document.getElementById('dark-mode-toggle');
-  if (!toggle) return;
+  var openBtn  = document.getElementById('adr-open-btn');
+  var closeBtn = document.getElementById('adr-close-btn');
+  var overlay  = document.getElementById('adr-overlay');
+  var drawer   = document.getElementById('adr-drawer');
+  if (!openBtn || !drawer) return;
+
+  function openDrawer()  {
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+  }
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+  }
+
+  openBtn.addEventListener('click', openDrawer);
+  closeBtn.addEventListener('click', closeDrawer);
+  overlay.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { closeDrawer(); }
+  });
+})();
+</script>
+
+<!-- Dark mode toggle -->
+<script>
+(function () {
+  var checkbox = document.getElementById('adr-dark-toggle');
+  if (!checkbox) return;
 
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     try { localStorage.setItem('theme', theme); } catch(e) {}
   }
 
-  toggle.addEventListener('click', function () {
-    var current = document.documentElement.getAttribute('data-theme');
-    applyTheme(current === 'dark' ? 'light' : 'dark');
+  /* Restore saved preference on load */
+  (function () {
+    var saved;
+    try { saved = localStorage.getItem('theme'); } catch(e) {}
+    var isDark = saved === 'dark';
+    checkbox.checked = isDark;
+    applyTheme(isDark ? 'dark' : 'light');
+  })();
+
+  checkbox.addEventListener('change', function () {
+    applyTheme(checkbox.checked ? 'dark' : 'light');
+    /* Re-apply liquidity so accent colours stay correct */
+    requestAnimationFrame(function () {
+      var slider = document.getElementById('lg-liquidity');
+      if (slider && window.applyLiquidity) {
+        window.applyLiquidity(parseInt(slider.value, 10));
+      }
+    });
   });
 })();
 </script>
 
-<!-- Color theme switcher — each swatch dot selects its theme directly -->
+<!-- Color theme swatches -->
 <script>
 (function () {
-  var colorToggle = document.getElementById('color-theme-toggle');
-  if (!colorToggle) return;
-
   function applyColorTheme(theme) {
-    if (theme === 'default') {
+    if (!theme || theme === 'default') {
       document.documentElement.removeAttribute('data-color-theme');
     } else {
       document.documentElement.setAttribute('data-color-theme', theme);
     }
     try { localStorage.setItem('color-theme', theme); } catch(e) {}
+
+    /* Keep active ring on the matching swatch */
+    document.querySelectorAll('.adr-swatch').forEach(function (s) {
+      s.classList.toggle('adr-swatch--active',
+        (s.dataset.colorTheme || '') === (theme || ''));
+    });
+
+    /* Re-apply liquidity for new accent colour */
+    requestAnimationFrame(function () {
+      var slider = document.getElementById('lg-liquidity');
+      if (slider && window.applyLiquidity) {
+        window.applyLiquidity(parseInt(slider.value, 10));
+      }
+    });
   }
 
-  /* Each swatch <button> carries its own data-color-theme — click sets it directly */
-  colorToggle.addEventListener('click', function (e) {
-    var swatch = e.target.closest('[data-color-theme]');
-    if (!swatch) return;
-    applyColorTheme(swatch.getAttribute('data-color-theme'));
+  /* Restore saved colour theme */
+  (function () {
+    var saved;
+    try { saved = localStorage.getItem('color-theme'); } catch(e) {}
+    if (saved) { applyColorTheme(saved); }
+  })();
+
+  document.querySelectorAll('.adr-swatch').forEach(function (s) {
+    s.addEventListener('click', function () {
+      applyColorTheme(s.dataset.colorTheme || '');
+    });
   });
 })();
 </script>
@@ -45,7 +104,6 @@
 <!-- Publication / Project link button icons -->
 <script>
 (function () {
-  /* Map label text (lower-cased, brackets stripped) → Font Awesome classes */
   var ICON_MAP = [
     { test: /^arxiv$/,                    icon: 'fas fa-file-alt'       },
     { test: /^paper$/,                    icon: 'fas fa-file-pdf'       },
@@ -59,11 +117,10 @@
     { test: /slides?/,                    icon: 'fas fa-chalkboard'     }
   ];
 
-  /* Fallback: guess icon from URL if label didn't match */
   var URL_MAP = [
     { test: /github\.com/,               icon: 'fab fa-github'         },
     { test: /youtu/,                     icon: 'fab fa-youtube'        },
-    { test: /arxiv\.org/,               icon: 'fas fa-file-alt'       },
+    { test: /arxiv\.org/,                icon: 'fas fa-file-alt'       },
     { test: /openreview\.net/,           icon: 'fas fa-comments'       },
     { test: /mlr\.press/,               icon: 'fas fa-graduation-cap' },
     { test: /figshare\.com/,            icon: 'fas fa-database'       }
@@ -71,10 +128,11 @@
 
   function iconForLink(label, href) {
     var key = label.toLowerCase().replace(/[\[\]\s]/g, '');
-    for (var i = 0; i < ICON_MAP.length; i++) {
+    var i, j;
+    for (i = 0; i < ICON_MAP.length; i++) {
       if (ICON_MAP[i].test.test(key)) return ICON_MAP[i].icon;
     }
-    for (var j = 0; j < URL_MAP.length; j++) {
+    for (j = 0; j < URL_MAP.length; j++) {
       if (URL_MAP[j].test.test(href)) return URL_MAP[j].icon;
     }
     return 'fas fa-external-link-alt';
@@ -84,12 +142,9 @@
     var anchors = document.querySelectorAll('.page__content a, .archive__item-body a');
     anchors.forEach(function (a) {
       var raw = a.textContent.trim();
-      /* Only decorate links whose visible text is exactly [Label] */
       if (!/^\[.+\]$/.test(raw)) return;
-
-      var label = raw.slice(1, -1);   /* strip [ ] */
+      var label = raw.slice(1, -1);
       var iconClass = iconForLink(raw, a.href);
-
       a.classList.add('pub-link');
       a.setAttribute('title', label);
       a.innerHTML =
@@ -100,11 +155,11 @@
 })();
 </script>
 
-<!-- Liquid Glass — masthead-pill slider + dynamic CSS-var driver -->
+<!-- Liquid Glass — masthead slider + dynamic CSS-var driver -->
 <script>
 (function () {
 
-  /* ── SVG filter for liquid-surface ripple distortion ── */
+  /* SVG filter for liquid-surface ripple distortion */
   var svgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svgEl.setAttribute('id', 'lg-svg-defs');
   svgEl.setAttribute('style', 'position:absolute;width:0;height:0;overflow:hidden;pointer-events:none;');
@@ -117,7 +172,7 @@
     '</defs>';
   document.body.appendChild(svgEl);
 
-  /* ── Ripple overlay — masthead ── */
+  /* Ripple overlay — masthead */
   var masthead = document.querySelector('.masthead');
   var lgRipple = null;
   if (masthead) {
@@ -132,7 +187,7 @@
     masthead.appendChild(lgRipple);
   }
 
-  /* ── Ripple overlay — sidebar ── */
+  /* Ripple overlay — sidebar */
   var sidebar = document.querySelector('.sidebar');
   var lgRippleSide = null;
   if (sidebar) {
@@ -146,10 +201,8 @@
     sidebar.appendChild(lgRippleSide);
   }
 
-  /* ── Linear interpolation helper ── */
   function lerp(a, b, t) { return a + (b - a) * t; }
 
-  /* ── Detect current colour theme accent (includes slider-thumb gradient stops) ── */
   function accentColor() {
     var theme = document.documentElement.getAttribute('data-color-theme');
     if (theme === 'slate') {
@@ -164,7 +217,6 @@
              thumbA:'#818cf8', thumbB:'#4f46e5', thumbHl:'rgba(140,150,255,0.60)' };
   }
 
-  /* ── Apply all glass CSS vars from slider value 0..100 ── */
   function applyLiquidity(v) {
     var t    = v / 100;
     var dark = document.documentElement.getAttribute('data-theme') === 'dark';
@@ -187,34 +239,29 @@
     root.style.setProperty('--lg-shimmer-op',  shimmerOp);
     root.style.setProperty('--lg-shimmer-spd', shimmerSpd + 's');
 
-    /* SVG displacement */
     var disp = document.getElementById('lg-disp');
     if (disp) { disp.setAttribute('scale', distort); }
 
-    /* Ripple overlay visibility */
     var rippleOp = lerp(0, 0.85, t).toFixed(2);
     if (lgRipple)     { lgRipple.style.opacity     = rippleOp; }
     if (lgRippleSide) { lgRippleSide.style.opacity = rippleOp; }
 
-    /* Slider-thumb CSS vars — match current colour theme */
     var ac  = accentColor();
     root.style.setProperty('--lg-thumb-a',  ac.thumbA);
     root.style.setProperty('--lg-thumb-b',  ac.thumbB);
     root.style.setProperty('--lg-thumb-hl', ac.thumbHl);
 
-    /* Slider track gradient — liquid glossy fill */
     var r = ac.r, g = ac.g, b = ac.b;
-    var rgb = r + ',' + g + ',' + b;
-    /* lighter tint for the gloss highlight */
+    var rgb  = r + ',' + g + ',' + b;
     var rl = Math.min(255, r + 60), gl = Math.min(255, g + 60), bl = Math.min(255, b + 80);
     var rgbl = rl + ',' + gl + ',' + bl;
-    var pct = v + '%';
+    var pct  = v + '%';
+
+    /* Update drawer slider track */
     var slider = document.getElementById('lg-liquidity');
     if (slider) {
       slider.style.background =
-        /* gloss sheen on top of the filled portion */
         'linear-gradient(to bottom,rgba(' + rgbl + ',0.55) 0%,rgba(' + rgbl + ',0) 60%),' +
-        /* filled bar | empty track */
         'linear-gradient(to right,' +
           'rgba(' + rgb + ',1.0) 0%,' +
           'rgba(' + rgb + ',1.0) ' + pct + ',' +
@@ -222,36 +269,40 @@
           'rgba(' + rgb + ',0.14) 100%)';
     }
 
+    /* Update drawer preview strip */
+    var preview = document.getElementById('adr-liq-preview');
+    if (preview) {
+      var fillA  = (parseFloat(fillOp) + 0.10).toFixed(3);
+      preview.style.background =
+        'linear-gradient(135deg,' +
+          'rgba(255,255,255,' + fillA  + ') 0%,' +
+          'rgba(' + rgb + ',' + (0.06 * t).toFixed(3) + ') 100%)';
+      if (v > 0) {
+        preview.style.backdropFilter = 'blur(' + blur + 'px)';
+        preview.style.webkitBackdropFilter = 'blur(' + blur + 'px)';
+      } else {
+        preview.style.backdropFilter = 'none';
+        preview.style.webkitBackdropFilter = 'none';
+      }
+    }
+
     try { localStorage.setItem('lg-liquidity', v); } catch(e) {}
   }
 
-  /* ── Wire the masthead pill slider ── */
+  /* Expose globally so dark/colour-theme scripts can call it */
+  window.applyLiquidity = applyLiquidity;
+
   document.addEventListener('DOMContentLoaded', function () {
     var slider = document.getElementById('lg-liquidity');
     if (!slider) { return; }
 
+    /* Update label as slider moves */
     slider.addEventListener('input', function () {
-      applyLiquidity(parseInt(this.value, 10));
+      var v = parseInt(this.value, 10);
+      var label = document.getElementById('adr-liq-val');
+      if (label) { label.textContent = v + '%'; }
+      applyLiquidity(v);
     });
-
-    /* Re-apply when dark-mode or colour-theme toggle fires (accent may change) */
-    var dmBtn = document.getElementById('dark-mode-toggle');
-    var ctEl  = document.getElementById('color-theme-toggle');
-    if (dmBtn) {
-      dmBtn.addEventListener('click', function () {
-        /* Theme attribute flips after this click, so defer one frame */
-        requestAnimationFrame(function () {
-          applyLiquidity(parseInt(slider.value, 10));
-        });
-      });
-    }
-    if (ctEl) {
-      ctEl.addEventListener('click', function () {
-        requestAnimationFrame(function () {
-          applyLiquidity(parseInt(slider.value, 10));
-        });
-      });
-    }
 
     /* Restore saved value */
     var saved = 30;
@@ -260,6 +311,8 @@
       if (s !== null) { saved = Math.max(0, Math.min(100, parseInt(s, 10))); }
     } catch(e) {}
     slider.value = saved;
+    var label = document.getElementById('adr-liq-val');
+    if (label) { label.textContent = saved + '%'; }
     applyLiquidity(saved);
   });
 

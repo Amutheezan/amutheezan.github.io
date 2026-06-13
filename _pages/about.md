@@ -32,4 +32,7 @@ Before his doctoral studies, he gained industry experience as a Software Enginee
   <a href="/research/#operational-research" class="interest-tag interest-tag--green">
     <i class="fas fa-chart-line"></i> Operational Research
   </a>
+  <a href="/research/#software-security" class="interest-tag interest-tag--rose">
+    <i class="fas fa-shield-alt"></i> Software Security
+  </a>
 </div>
