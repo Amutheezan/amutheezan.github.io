@@ -81,10 +81,11 @@
   }
 
   .current {
-    /* Block flex item — ol's align-items:center handles vertical centering */
+    /* flex:1 gives a definite width = remaining space after Home+sep.
+       Without a definite width, text-overflow:ellipsis never fires. */
     display: block;
+    flex: 1 1 0;
     min-width: 0;
-    flex-shrink: 1;
     overflow: hidden;
 
     .current__title {
