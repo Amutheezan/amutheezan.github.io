@@ -527,3 +527,17 @@ html[data-theme="dark"] {
     }
   }
 }
+
+/* ── Publication / project figures — dark-well in light mode ── */
+html:not([data-theme="dark"]) {
+  .page__content figure img,
+  .page__content p > img,
+  .archive__item-body figure img,
+  .archive__item-body p > img {
+    background: #0d0d2b;
+    padding: 12px;
+    border-radius: 10px;
+    display: block;
+    max-width: 100%;
+  }
+}
