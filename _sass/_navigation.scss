@@ -84,11 +84,16 @@
   .current {
     font-weight: 600;
     color: rgba(0, 0, 0, 0.72);
-    /* Long page titles get truncated with ellipsis rather than overflowing */
-    overflow: hidden;
-    text-overflow: ellipsis;
     min-width: 0;
     flex-shrink: 1;
+    overflow: hidden;
+
+    .current__title {
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
   }
 }
 
