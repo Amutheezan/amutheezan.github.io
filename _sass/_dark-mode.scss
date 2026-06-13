@@ -25,15 +25,27 @@ html[data-theme="dark"] {
       inset 0 1px 0 rgba(255, 255, 255, 0.05);
   }
 
+  /* Remove ALL glass from sidebar in dark mode */
+  .sidebar {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
   /* Author URL dropdown — dark mobile pop-up only */
   .author__urls {
     background: rgba(8, 12, 30, 0.95);
     border-color: rgba(255, 255, 255, 0.15);
+    /* Clear inherited backdrop-filter */
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
     box-shadow:
       0 8px 32px rgba(0, 0, 0, 0.5),
       inset 0 1px 0 rgba(255, 255, 255, 0.08);
 
-    /* Desktop sidebar: remove the box entirely */
+    /* Desktop sidebar: transparent */
     @include breakpoint($large) {
       background: transparent;
       border: 0;
