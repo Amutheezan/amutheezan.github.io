@@ -90,29 +90,41 @@
   }
 }
 
-/* ── Appearance button ────────────────────────────────── */
+/* ── Appearance button — theme-adaptive (matches interest tag pills) ─── */
+
+/* Default accent (indigo / navy theme) */
+:root {
+  --adr-rgb: 99, 102, 241;
+  --adr-text: #4f46e5;
+}
+html[data-theme="dark"] {
+  --adr-text: #818cf8;
+}
+
 .appearance-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   padding: 0.32rem 0.80rem;
-  border: 1.5px solid rgba(255, 255, 255, 0.30);
+  border: 1.5px solid rgba(var(--adr-rgb, 99, 102, 241), 0.45);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.14);
-  color: rgba(255, 255, 255, 0.90);
+  background: rgba(var(--adr-rgb, 99, 102, 241), 0.10);
+  color: var(--adr-text, #4f46e5);
   font-size: 0.78rem;
   font-weight: 600;
   cursor: pointer;
   font-family: inherit;
   white-space: nowrap;
-  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+  transition: background 0.18s ease, border-color 0.18s ease,
+              color 0.18s ease, box-shadow 0.18s ease;
 
   i { font-size: 0.80em; }
 
   &:hover {
-    background: rgba(255, 255, 255, 0.24);
-    border-color: rgba(255, 255, 255, 0.60);
-    color: #fff;
+    background: rgba(var(--adr-rgb, 99, 102, 241), 0.18);
+    border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.75);
+    box-shadow: 0 4px 14px rgba(var(--adr-rgb, 99, 102, 241), 0.22);
+    color: var(--adr-text, #4f46e5);
   }
 
   &__label {
@@ -159,7 +171,10 @@
 
   &.open { right: 0; }
 
-  @media (max-width: 400px) { width: 100%; }
+  @media (max-width: 600px) {
+    width: 100%;
+    right: -100vw;
+  }
 }
 
 html[data-theme="dark"] .adr-drawer {
@@ -223,11 +238,10 @@ html[data-theme="dark"] .adr-close {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #6366f1;
+  color: var(--adr-text, #6366f1);
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }
-html[data-theme="dark"] .adr-section-label { color: #818cf8; }
 
 /* Swatches */
 .adr-swatches {
@@ -328,7 +342,7 @@ html[data-theme="dark"] .adr-toggle-sub { color: #7b6faa; }
 }
 
 .adr-tog input:checked + .adr-tog-track {
-  background: #6366f1;
+  background: rgba(var(--adr-rgb, 99, 102, 241), 0.90);
   &::before { transform: translateX(20px); }
 }
 
@@ -360,8 +374,8 @@ html[data-theme="dark"] .adr-slider-labels { color: #6b6390; }
     height: 18px;
     border-radius: 50%;
     background: #fff;
-    border: 2.5px solid #6366f1;
-    box-shadow: 0 1px 5px rgba(99, 102, 241, 0.30);
+    border: 2.5px solid var(--adr-text, #6366f1);
+    box-shadow: 0 1px 5px rgba(var(--adr-rgb, 99, 102, 241), 0.30);
     cursor: grab;
     transition: border-color 0.2s ease, transform 0.15s ease;
     &:active { cursor: grabbing; transform: scale(1.12); }
