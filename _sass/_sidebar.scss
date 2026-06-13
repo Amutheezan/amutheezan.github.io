@@ -169,12 +169,20 @@
   }
 
   button {
-    display: none;
+    display: block;
+
+    @include breakpoint($large) {
+      display: none;
+    }
   }
 }
 
 .author__urls {
-  display: block;
+  display: none;
+
+  @include breakpoint($large) {
+    display: block;
+  }
   position: relative;
   margin-top: 0.5em;
   padding: 0;
