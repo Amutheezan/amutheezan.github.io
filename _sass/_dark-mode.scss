@@ -324,15 +324,14 @@ html[data-theme="dark"] {
 
   /* --- Breadcrumbs --- */
   .breadcrumbs ol {
-    background: rgba(8, 12, 30, 0.90);
-    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(8, 12, 30, 0.82);
+    border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.28);
   }
   .breadcrumbs ol li {
-    color: #94a3b8;
-    a { color: #94a3b8; &:hover { color: #cbd5e1; } }
+    a { color: rgba(255, 255, 255, 0.52); &:hover { color: var(--adr-text, #a5b4fc); } }
   }
-  .breadcrumbs .sep { color: rgba(255, 255, 255, 0.25); }
-  .breadcrumbs .current { color: rgba(255, 255, 255, 0.80); }
+  .breadcrumbs .sep { color: rgba(var(--adr-rgb, 99, 102, 241), 0.42); }
+  .breadcrumbs .current { color: rgba(255, 255, 255, 0.90); }
 
   /* --- Pagination --- */
   .pagination a {
