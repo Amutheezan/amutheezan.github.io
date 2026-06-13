@@ -81,8 +81,9 @@
   }
 
   .current {
-    /* flex:1 = grows to fill remaining space → definite width.
-       Truncation lives on the flex item itself — no wrapper needed. */
+    /* display:block overrides inherited inline-flex→flex blockification.
+       text-overflow:ellipsis only works on block containers, not flex. */
+    display: block;
     flex: 1 1 0%;
     min-width: 0;
     overflow: hidden;
