@@ -344,8 +344,9 @@ li.author__desktop {
     display: block !important;
   }
 
-  /* Page fills remaining flex space */
-  .page {
+  /* Page and archive fill remaining flex space */
+  .page,
+  .archive {
     flex: 1;
     min-width: 0;
     float: none !important;
