@@ -47,6 +47,22 @@
   </div>
 </div>
 
+<!-- Search overlay + modal -->
+<div class="srch-overlay" id="srch-overlay"></div>
+<div class="srch-modal" id="srch-modal" role="dialog" aria-label="Search" aria-modal="true">
+  <div class="srch-bar">
+    <i class="fas fa-search srch-bar__icon" aria-hidden="true"></i>
+    <input type="text" id="srch-input" class="srch-bar__input" placeholder="Search publications, talks, projects…" autocomplete="off" spellcheck="false" aria-label="Search" />
+    <kbd class="srch-bar__esc">Esc</kbd>
+  </div>
+  <div class="srch-results" id="srch-results">
+    <div class="srch-empty">
+      <i class="fas fa-search" aria-hidden="true"></i>
+      <span>Start typing to search…</span>
+    </div>
+  </div>
+</div>
+
 <!-- Appearance drawer overlay -->
 <div class="adr-overlay" id="adr-overlay"></div>
 
