@@ -28,7 +28,7 @@ $(document).ready(function(){
   $(".sticky").Stickyfill();
 
   var stickySideBar = function(){
-    /* Icons always visible — clear inline styles so CSS controls display */
+    /* Icons always visible - clear inline styles so CSS controls display */
     $(".author__urls").css("display", "");
   };
 
