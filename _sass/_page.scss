@@ -31,6 +31,17 @@
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
+
+  /* Mobile: flex row so sidebar sits on the left */
+  @media (max-width: 924px) {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .page {
@@ -38,6 +49,13 @@
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
     @include suffix(2 of 12);
+  }
+
+  /* Mobile: fill remaining width beside the sidebar */
+  @media (max-width: 924px) {
+    flex: 1;
+    min-width: 0;
+    padding: 1.5em 1.25em 1.5em 1.25em;
   }
 
   .page__inner-wrap {
