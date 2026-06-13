@@ -328,7 +328,7 @@ html[data-theme="dark"] {
     border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.28);
   }
   .breadcrumbs ol li {
-    a { color: rgba(255, 255, 255, 0.52); &:hover { color: var(--adr-text, #a5b4fc); } }
+    a { color: var(--adr-text, #a5b4fc); &:hover { color: #ffffff; } }
   }
   .breadcrumbs .sep { color: rgba(var(--adr-rgb, 99, 102, 241), 0.42); }
   .breadcrumbs .current .current__title { color: rgba(255, 255, 255, 0.90); }
