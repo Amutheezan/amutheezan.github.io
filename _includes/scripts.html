@@ -399,9 +399,15 @@
       html += '<div class="srch-group-label">' + (LABELS[col] || col) + 's</div>';
       grouped[col].forEach(function (d) {
         var meta = [d.venue, d.date].filter(Boolean).join(' · ');
+        var authors = '';
+        if (d.citation) {
+          var m = d.citation.match(/^([^(]+)\(/);
+          if (m) { authors = m[1].trim().replace(/,?\s*$/, ''); }
+        }
         html += '<a class="srch-item" href="' + d.url + '">' +
           '<div class="srch-item__type"><i class="' + (ICONS[d.collection] || 'fas fa-file') + '" aria-hidden="true"></i>' + (LABELS[d.collection] || d.collection) + '</div>' +
           '<div class="srch-item__title">' + highlight(d.title, terms) + '</div>' +
+          (authors ? '<div class="srch-item__authors">' + highlight(authors, terms) + '</div>' : '') +
           (meta ? '<div class="srch-item__meta">' + meta + '</div>' : '') +
           '</a>';
       });
