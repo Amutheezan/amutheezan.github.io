@@ -109,7 +109,7 @@
     applyColorTheme(saved !== null ? saved : 'dark-purple');
   })();
 
-  document.querySelectorAll('.adr-swatch').forEach(function (s) {
+  document.querySelectorAll('.adr-tile').forEach(function (s) {
     s.addEventListener('click', function () {
       applyColorTheme(s.dataset.colorTheme || '');
     });
