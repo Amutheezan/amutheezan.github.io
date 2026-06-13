@@ -27,13 +27,8 @@ $(document).ready(function(){
   $(".sticky").Stickyfill();
 
   var stickySideBar = function(){
-    var show = $(window).width() >= 925 ? true : false;
-    if (show) {
-      $(".author__urls").show();
-    } else {
-      $(".author__urls").hide();
-      $(".author__urls-wrapper button").removeClass("open");
-    }
+    /* Icons always visible — clear inline styles so CSS controls display */
+    $(".author__urls").css("display", "");
   };
 
   stickySideBar();
