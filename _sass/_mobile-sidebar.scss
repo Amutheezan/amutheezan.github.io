@@ -393,6 +393,18 @@ html[data-theme="dark"] .sidebar .author__urls a:hover {
 }
 
 /* ====================================================================
+   Nav pills — mobile: shrink padding/font so text never touches border
+   ==================================================================== */
+@media (max-width: 924px) {
+  .greedy-nav .visible-links a {
+    padding: 0.25rem 0.55rem !important;
+    margin: 0 0.08rem !important;
+    font-size: 0.78rem !important;
+    letter-spacing: 0 !important;
+  }
+}
+
+/* ====================================================================
    Breadcrumb — fix visited-link colour bleeding in
    ==================================================================== */
 .breadcrumbs li a,
