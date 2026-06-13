@@ -162,10 +162,6 @@
     }
   }
 
-  @include breakpoint($large) {
-    display: block;
-  }
-
   button {
     display: block;
 
