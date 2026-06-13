@@ -27,16 +27,13 @@ $(document).ready(function(){
   $(".sticky").Stickyfill();
 
   var stickySideBar = function(){
-    /* URLs are now always visible on both mobile (left-column) and desktop.
-       Just manage Stickyfill — never override CSS display. */
-    if ($(window).width() >= 925) {
-      Stickyfill.rebuild();
-      Stickyfill.init();
+    var show = $(window).width() >= 925 ? true : false;
+    if (show) {
+      $(".author__urls").show();
     } else {
-      Stickyfill.stop();
+      $(".author__urls").hide();
+      $(".author__urls-wrapper button").removeClass("open");
     }
-    /* Clear any inline display style so CSS breakpoints take full control */
-    $(".author__urls").css("display", "");
   };
 
   stickySideBar();
