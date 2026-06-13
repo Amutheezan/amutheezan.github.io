@@ -331,7 +331,7 @@ html[data-theme="dark"] {
     a { color: rgba(255, 255, 255, 0.52); &:hover { color: var(--adr-text, #a5b4fc); } }
   }
   .breadcrumbs .sep { color: rgba(var(--adr-rgb, 99, 102, 241), 0.42); }
-  .breadcrumbs .current { color: rgba(255, 255, 255, 0.90); }
+  .breadcrumbs .current .current__title { color: rgba(255, 255, 255, 0.90); }
 
   /* --- Pagination --- */
   .pagination a {
