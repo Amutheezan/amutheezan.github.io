@@ -364,8 +364,9 @@
         data.forEach(function (d) { docs[d.id] = d; });
         idx = lunr(function () {
           this.ref('id');
-          this.field('title',   { boost: 10 });
-          this.field('venue',   { boost: 5  });
+          this.field('title',    { boost: 10 });
+          this.field('venue',    { boost: 5  });
+          this.field('citation', { boost: 7  });
           this.field('content');
           data.forEach(function (d) { this.add(d); }, this);
         });
