@@ -81,16 +81,16 @@
   }
 
   .current {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.78);
+    /* Block flex item — ol's align-items:center handles vertical centering */
+    display: block;
     min-width: 0;
     flex-shrink: 1;
     overflow: hidden;
 
     .current__title {
-      min-width: 0;
+      display: block;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.78);
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
