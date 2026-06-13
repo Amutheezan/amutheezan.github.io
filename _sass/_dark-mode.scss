@@ -528,16 +528,65 @@ html[data-theme="dark"] {
   }
 }
 
-/* ── Publication / project figures — dark-well in light mode ── */
+/* ── Research figures — dark-well wrapper in light mode ── */
 html:not([data-theme="dark"]) {
-  .page__content figure img,
-  .page__content p > img,
-  .archive__item-body figure img,
-  .archive__item-body p > img {
+  .page__content figure,
+  .archive__item-body figure {
     background: #0d0d2b;
-    padding: 12px;
+    padding: 14px;
+    border-radius: 12px;
+    margin: 1.5em 0;
+    text-align: center;
+    overflow: hidden;
+
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+      border-radius: 6px;
+    }
+
+    figcaption {
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 0.82em;
+      margin-top: 8px;
+    }
+  }
+
+  /* kramdown renders ![alt](url) as <p><img></p> */
+  .page__content p:has(> img),
+  .archive__item-body p:has(> img) {
+    background: #0d0d2b;
+    padding: 14px;
+    border-radius: 12px;
+    margin: 1.5em 0;
+    text-align: center;
+    overflow: hidden;
+
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+      border-radius: 6px;
+    }
+  }
+}
+
+/* ── Dark mode: just clip corners and add a subtle border ── */
+html[data-theme="dark"] {
+  .page__content figure,
+  .page__content p:has(> img),
+  .archive__item-body figure,
+  .archive__item-body p:has(> img) {
     border-radius: 10px;
-    display: block;
-    max-width: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    margin: 1.5em 0;
+
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
   }
 }
