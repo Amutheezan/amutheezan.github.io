@@ -391,3 +391,26 @@ html[data-theme="dark"] .sidebar .author__urls a:hover {
   float: none !important;
   margin: 0 !important;
 }
+
+/* ====================================================================
+   Breadcrumb — fix visited-link colour bleeding in
+   ==================================================================== */
+.breadcrumbs li a,
+.breadcrumbs li a:visited {
+  color: rgba(0, 0, 0, 0.52);
+}
+
+.breadcrumbs li a:hover,
+.breadcrumbs li a:visited:hover {
+  color: var(--adr-text, #4f46e5);
+}
+
+html[data-theme="dark"] .breadcrumbs li a,
+html[data-theme="dark"] .breadcrumbs li a:visited {
+  color: rgba(255, 255, 255, 0.52);
+}
+
+html[data-theme="dark"] .breadcrumbs li a:hover,
+html[data-theme="dark"] .breadcrumbs li a:visited:hover {
+  color: #a5b4fc;
+}
