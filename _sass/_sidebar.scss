@@ -150,11 +150,18 @@
 }
 
 .author__urls-wrapper {
-  display: block;
+  display: table-cell;
+  vertical-align: middle;
   position: relative;
   font-family: $sans-serif;
   z-index: 10;
   cursor: pointer;
+  white-space: nowrap;
+
+  @include breakpoint($large) {
+    display: block;
+    white-space: normal;
+  }
 
   li:last-child {
     a {
