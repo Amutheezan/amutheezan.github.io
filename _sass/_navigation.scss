@@ -81,21 +81,15 @@
   }
 
   .current {
-    /* flex:1 gives a definite width = remaining space after Home+sep.
-       Without a definite width, text-overflow:ellipsis never fires. */
-    display: block;
-    flex: 1 1 0;
+    /* flex:1 = grows to fill remaining space → definite width.
+       Truncation lives on the flex item itself — no wrapper needed. */
+    flex: 1 1 0%;
     min-width: 0;
     overflow: hidden;
-
-    .current__title {
-      display: block;
-      font-weight: 600;
-      color: rgba(0, 0, 0, 0.78);
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.78);
   }
 }
 
