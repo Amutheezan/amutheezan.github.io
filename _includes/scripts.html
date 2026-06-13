@@ -38,11 +38,11 @@
     try { localStorage.setItem('theme', theme); } catch(e) {}
   }
 
-  /* Restore saved preference on load */
+  /* Restore saved preference — default: dark */
   (function () {
     var saved;
     try { saved = localStorage.getItem('theme'); } catch(e) {}
-    var isDark = saved === 'dark';
+    var isDark = saved !== null ? saved === 'dark' : true;
     checkbox.checked = isDark;
     applyTheme(isDark ? 'dark' : 'light');
   })();
@@ -86,11 +86,11 @@
     });
   }
 
-  /* Restore saved colour theme */
+  /* Restore saved colour theme — default: dark-purple */
   (function () {
     var saved;
     try { saved = localStorage.getItem('color-theme'); } catch(e) {}
-    if (saved) { applyColorTheme(saved); }
+    applyColorTheme(saved !== null ? saved : 'dark-purple');
   })();
 
   document.querySelectorAll('.adr-swatch').forEach(function (s) {
@@ -298,21 +298,16 @@
 
     /* Update label as slider moves */
     slider.addEventListener('input', function () {
-      var v = parseInt(this.value, 10);
-      var label = document.getElementById('adr-liq-val');
-      if (label) { label.textContent = v + '%'; }
-      applyLiquidity(v);
+      applyLiquidity(parseInt(this.value, 10));
     });
 
-    /* Restore saved value */
-    var saved = 30;
+    /* Restore saved value — default: 0 */
+    var saved = 0;
     try {
       var s = localStorage.getItem('lg-liquidity');
       if (s !== null) { saved = Math.max(0, Math.min(100, parseInt(s, 10))); }
     } catch(e) {}
     slider.value = saved;
-    var label = document.getElementById('adr-liq-val');
-    if (label) { label.textContent = saved + '%'; }
     applyLiquidity(saved);
   });
 

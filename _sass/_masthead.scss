@@ -178,8 +178,11 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="dark"] .adr-drawer {
-  background: #0f0d2a;
-  border-left-color: #2a2460;
+  background: var(--adr-drawer-bg, #0f0d2a);
+  border-left-color: var(--adr-drawer-border, #2a2460);
+}
+html[data-theme="dark"] .adr-head {
+  border-bottom-color: var(--adr-drawer-border, #2a2460);
 }
 
 .adr-head {
@@ -227,10 +230,26 @@ html[data-theme="dark"] .adr-close {
 }
 
 .adr-body {
-  padding: 18px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 10px;
+}
+
+.adr-card {
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  background: rgba(0, 0, 0, 0.03);
+  padding: 14px 16px;
+}
+
+.adr-card--sm {
+  padding: 10px 14px;
+}
+
+html[data-theme="dark"] .adr-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.09);
 }
 
 .adr-section-label {

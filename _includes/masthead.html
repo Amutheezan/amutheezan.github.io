@@ -55,34 +55,32 @@
   </div>
   <div class="adr-body">
 
-    <div class="adr-section">
+    <!-- Color theme card -->
+    <div class="adr-card adr-card--sm">
       <div class="adr-section-label">Color theme</div>
       <div class="adr-swatches" id="adr-swatches">
-        <button class="adr-swatch adr-swatch--navy"        data-color-theme="navy"        title="Indigo (default)"></button>
+        <button class="adr-swatch adr-swatch--navy"        data-color-theme="navy"        title="Indigo"></button>
         <button class="adr-swatch adr-swatch--slate"       data-color-theme="slate"       title="Teal"></button>
         <button class="adr-swatch adr-swatch--dark-purple" data-color-theme="dark-purple" title="Violet"></button>
       </div>
     </div>
 
-    <div class="adr-section">
+    <!-- Mode + Liquidity card -->
+    <div class="adr-card">
       <div class="adr-section-label">Dark mode</div>
-      <div class="adr-toggle-row">
+      <div class="adr-toggle-row adr-toggle-row--spaced">
         <label class="adr-tog" title="Toggle dark mode">
           <input type="checkbox" id="adr-dark-toggle" />
           <span class="adr-tog-track"></span>
         </label>
       </div>
-    </div>
 
-    <div class="adr-section">
-      <div class="adr-section-label">Liquidity</div>
+      <div class="adr-section-label" style="margin-top:16px;">Liquidity</div>
       <div class="adr-slider-labels">
         <span>Solid</span>
-        <span id="adr-liq-val">30%</span>
         <span>Glassy</span>
       </div>
-      <input type="range" id="lg-liquidity" class="adr-liq-range" min="0" max="100" value="30" step="1" aria-label="Glass liquidity" />
-      <div class="adr-liq-preview" id="adr-liq-preview">Surface preview</div>
+      <input type="range" id="lg-liquidity" class="adr-liq-range" min="0" max="100" value="0" step="1" aria-label="Glass liquidity" />
     </div>
 
   </div>

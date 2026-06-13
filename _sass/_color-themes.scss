@@ -95,9 +95,21 @@ html[data-color-theme="navy"]        { --adr-rgb: 99, 102, 241;  --adr-text: #4f
 html[data-color-theme="slate"]       { --adr-rgb: 6, 182, 212;   --adr-text: #0891b2; }
 html[data-color-theme="dark-purple"] { --adr-rgb: 139, 92, 246;  --adr-text: #7c3aed; }
 
-html[data-theme="dark"][data-color-theme="navy"]        { --adr-text: #a5b4fc; }
-html[data-theme="dark"][data-color-theme="slate"]       { --adr-text: #22d3ee; }
-html[data-theme="dark"][data-color-theme="dark-purple"] { --adr-text: #c084fc; }
+html[data-theme="dark"][data-color-theme="navy"] {
+  --adr-text: #a5b4fc;
+  --adr-drawer-bg: #04050f;
+  --adr-drawer-border: #1a1e5a;
+}
+html[data-theme="dark"][data-color-theme="slate"] {
+  --adr-text: #22d3ee;
+  --adr-drawer-bg: #020c14;
+  --adr-drawer-border: #043040;
+}
+html[data-theme="dark"][data-color-theme="dark-purple"] {
+  --adr-text: #c084fc;
+  --adr-drawer-bg: #0d0820;
+  --adr-drawer-border: #2a0a50;
+}
 
 
 /* ==========================================================================
