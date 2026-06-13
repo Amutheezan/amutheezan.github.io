@@ -187,19 +187,6 @@
     masthead.appendChild(lgRipple);
   }
 
-  /* Ripple overlay — sidebar */
-  var sidebar = document.querySelector('.sidebar');
-  var lgRippleSide = null;
-  if (sidebar) {
-    lgRippleSide = document.createElement('div');
-    lgRippleSide.id = 'lg-ripple-side';
-    lgRippleSide.style.cssText =
-      'position:absolute;inset:0;pointer-events:none;z-index:0;opacity:0;border-radius:18px;' +
-      'background:linear-gradient(155deg,' +
-        'rgba(255,255,255,0.16) 0%,rgba(255,255,255,0.04) 50%,rgba(255,255,255,0.12) 100%);' +
-      'filter:url(#lg-liquid);mix-blend-mode:overlay;transition:opacity 0.5s ease;';
-    sidebar.appendChild(lgRippleSide);
-  }
 
   function lerp(a, b, t) { return a + (b - a) * t; }
 
@@ -243,8 +230,7 @@
     if (disp) { disp.setAttribute('scale', distort); }
 
     var rippleOp = lerp(0, 0.85, t).toFixed(2);
-    if (lgRipple)     { lgRipple.style.opacity     = rippleOp; }
-    if (lgRippleSide) { lgRippleSide.style.opacity = rippleOp; }
+    if (lgRipple) { lgRipple.style.opacity = rippleOp; }
 
     var ac  = accentColor();
     root.style.setProperty('--lg-thumb-a',  ac.thumbA);

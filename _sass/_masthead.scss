@@ -104,13 +104,13 @@ html[data-theme="dark"] {
 .appearance-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.32rem 0.80rem;
-  border: 1.5px solid rgba(var(--adr-rgb, 99, 102, 241), 0.45);
-  border-radius: 999px;
+  gap: 0.35em;
+  padding: 0.35rem 1rem;
+  border: 1px solid rgba(var(--adr-rgb, 99, 102, 241), 0.45);
+  border-radius: 9999px;
   background: rgba(var(--adr-rgb, 99, 102, 241), 0.10);
   color: var(--adr-text, #4f46e5);
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 600;
   cursor: pointer;
   font-family: inherit;
@@ -132,7 +132,7 @@ html[data-theme="dark"] {
   }
 
   @media (max-width: 767px) {
-    padding: 0.28rem 0.60rem;
+    padding: 0.30rem 0.75rem;
   }
 }
 
