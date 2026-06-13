@@ -176,7 +176,8 @@ li.author__desktop {
     display: block !important;
   }
 
-  article.page {
+  article.page,
+  .archive {
     flex: 1;
     min-width: 0;
     padding: 1.5em 1.25em;
