@@ -179,10 +179,6 @@
 
 .author__urls {
   display: none;
-
-  @include breakpoint($large) {
-    display: block;
-  }
   position: relative;
   margin-top: 0.5em;
   padding: 0;
