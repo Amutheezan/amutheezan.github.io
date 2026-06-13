@@ -137,6 +137,7 @@
     display: block;
   }
 
+  /* hide text-only items (location, employer) */
   .author__urls li.author__desktop {
     display: none;
   }
@@ -166,11 +167,13 @@
     line-height: 1;
   }
 
+  /* SVG icons (e.g. X/Twitter) — override inline em-based sizes with px */
   .author__urls a svg {
-    width: 13px;
-    height: 13px;
+    width: 13px !important;
+    height: 13px !important;
     fill: currentColor;
     flex-shrink: 0;
+    display: block !important;
   }
 
   article.page {
@@ -247,6 +250,11 @@
     padding: 2px 0;
   }
 
+  /* hide text-only items (location, employer) on desktop too */
+  .author__urls li.author__desktop {
+    display: none !important;
+  }
+
   .author__urls a {
     font-size: 0 !important;
     line-height: 0;
@@ -272,13 +280,16 @@
     line-height: 1;
   }
 
+  /* SVG icons (e.g. X/Twitter) — override inline em-based sizes with px */
   .author__urls a svg {
-    width: 14px;
-    height: 14px;
+    width: 14px !important;
+    height: 14px !important;
     fill: currentColor;
     flex-shrink: 0;
+    display: block !important;
   }
 
+  /* Page fills remaining width beside the narrow sidebar */
   .page {
     width: calc(100% - 88px) !important;
     float: right !important;
