@@ -16,6 +16,15 @@ li.author__desktop {
   display: none !important;
 }
 
+/* X/Twitter SVG icon — sizing (replaces removed inline style) */
+.x-icon {
+  display: inline-block !important;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
 /* ====================================================================
    MOBILE  (max-width: 924px) — 64px icon-only column
    ==================================================================== */
@@ -182,6 +191,7 @@ li.author__desktop {
   .sidebar .author__urls a svg {
     width: 13px !important;
     height: 13px !important;
+    color: inherit;
     fill: currentColor;
     flex-shrink: 0;
     display: block !important;
@@ -361,6 +371,7 @@ li.author__desktop {
   .sidebar .author__urls a svg {
     width: 13px !important;
     height: 13px !important;
+    color: inherit;
     fill: currentColor;
     flex-shrink: 0;
     display: block !important;
