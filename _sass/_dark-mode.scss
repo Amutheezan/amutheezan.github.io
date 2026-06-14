@@ -360,9 +360,11 @@ html[data-theme="dark"] {
   /* --- Social icons in sidebar --- */
   .author__urls .fas,
   .author__urls .fab,
-  .author__urls .far {
+  .author__urls .far,
+  .author__urls .ai {
     color: #60a5fa;
   }
+  .author__urls a svg { color: #60a5fa; fill: #60a5fa; }
 
   /* --- Archive / publication cards --- */
   .archive__item {
@@ -484,109 +486,4 @@ html[data-theme="dark"] {
   .dark-mode-toggle {
     border-color: rgba(34, 211, 238, 0.40);
     background: rgba(34, 211, 238, 0.12);
-    color: #22d3ee;
-    box-shadow: 0 0 8px rgba(34, 211, 238, 0.20);
-
-    &:hover {
-      background: rgba(34, 211, 238, 0.25);
-      border-color: rgba(34, 211, 238, 0.80);
-      color: #67e8f9;
-      box-shadow: 0 0 16px rgba(34, 211, 238, 0.45);
-    }
-
-    .icon-sun  { display: inline; }
-    .icon-moon { display: none; }
-  }
-}
-
-/* ── Appearance button + Follow button — white in dark mode, accent on hover ── */
-html[data-theme="dark"] {
-  .appearance-btn {
-    color: rgba(255, 255, 255, 0.80);
-    border-color: rgba(255, 255, 255, 0.20);
-    background: rgba(255, 255, 255, 0.07);
-
-    &:hover {
-      color: var(--adr-text);
-      border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.75);
-      background: rgba(var(--adr-rgb, 99, 102, 241), 0.18);
-      box-shadow: 0 4px 14px rgba(var(--adr-rgb, 99, 102, 241), 0.22);
-    }
-  }
-
-  .btn--inverse {
-    color: rgba(255, 255, 255, 0.80) !important;
-    border-color: rgba(255, 255, 255, 0.20) !important;
-    background: rgba(255, 255, 255, 0.07) !important;
-
-    &:hover {
-      color: var(--adr-text) !important;
-      border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.75) !important;
-      background: rgba(var(--adr-rgb, 99, 102, 241), 0.18) !important;
-      box-shadow: 0 4px 14px rgba(var(--adr-rgb, 99, 102, 241), 0.22) !important;
-    }
-  }
-}
-
-/* ── Research figures — dark-well wrapper in light mode ── */
-html:not([data-theme="dark"]) {
-  .page__content figure,
-  .archive__item-body figure {
-    background: #0d0d2b;
-    padding: 14px;
-    border-radius: 12px;
-    margin: 1.5em 0;
-    text-align: center;
-    overflow: hidden;
-
-    img {
-      display: block;
-      max-width: 100%;
-      margin: 0 auto;
-      border-radius: 6px;
-    }
-
-    figcaption {
-      color: rgba(255, 255, 255, 0.55);
-      font-size: 0.82em;
-      margin-top: 8px;
-    }
-  }
-
-  /* kramdown renders ![alt](url) as <p><img></p> */
-  .page__content p:has(> img),
-  .archive__item-body p:has(> img) {
-    background: #0d0d2b;
-    padding: 14px;
-    border-radius: 12px;
-    margin: 1.5em 0;
-    text-align: center;
-    overflow: hidden;
-
-    img {
-      display: block;
-      max-width: 100%;
-      margin: 0 auto;
-      border-radius: 6px;
-    }
-  }
-}
-
-/* ── Dark mode: just clip corners and add a subtle border ── */
-html[data-theme="dark"] {
-  .page__content figure,
-  .page__content p:has(> img),
-  .archive__item-body figure,
-  .archive__item-body p:has(> img) {
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    margin: 1.5em 0;
-
-    img {
-      display: block;
-      max-width: 100%;
-      margin: 0 auto;
-    }
-  }
-}
+    color: 
