@@ -24,11 +24,22 @@ li.author__desktop {
   #main {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: stretch;
     padding: 0;
     box-sizing: border-box;
   }
   #main::after { display: none; }
+
+  /* Related posts: drop below the article, skip past the sidebar */
+  .page__related {
+    flex: 0 0 calc(100% - 64px);
+    margin-left: auto;
+    float: none !important;
+    width: auto !important;
+    padding: 1em 1.25em;
+    box-sizing: border-box;
+  }
 
   .sidebar.sticky {
     flex: 0 0 64px;
@@ -193,9 +204,20 @@ li.author__desktop {
   #main {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
   }
   #main::after { display: none; }
+
+  /* Related posts: drop below the article, align with content (skip 200px sidebar) */
+  .page__related {
+    flex: 0 0 calc(100% - 200px);
+    margin-left: auto;
+    float: none !important;
+    width: auto !important;
+    padding-left: 0 !important;
+    box-sizing: border-box;
+  }
 
   .sidebar.sticky {
     flex: 0 0 200px;
