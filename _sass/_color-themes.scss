@@ -116,7 +116,7 @@ html[data-theme="dark"][data-color-theme="dark-purple"] {
    COSMIC / INDIGO THEME — Light mode  (default cosmic, no data-color-theme)
    ========================================================================== */
 
-html:not([data-theme="dark"])[data-color-theme="navy"] {
+html[data-color-theme="navy"] {
   body {
     background-color: #eef2ff;
     background-image:
@@ -299,7 +299,7 @@ html[data-theme="dark"][data-color-theme="navy"] {
    AURORA / CYAN THEME — Light mode
    ========================================================================== */
 
-html:not([data-theme="dark"])[data-color-theme="slate"] {
+html[data-color-theme="slate"] {
   body {
     background-color: #ecfeff;
     background-image:
@@ -457,7 +457,7 @@ html[data-theme="dark"][data-color-theme="slate"] {
    NEBULA / VIOLET THEME — Light mode
    ========================================================================== */
 
-html:not([data-theme="dark"])[data-color-theme="dark-purple"] {
+html[data-color-theme="dark-purple"] {
   body {
     background-color: #f5f3ff;
     background-image:
@@ -616,7 +616,7 @@ html[data-theme="dark"][data-color-theme="dark-purple"] {
    ========================================================================== */
 
 /* Navy light */
-html:not([data-theme="dark"])[data-color-theme="navy"] {
+html[data-color-theme="navy"] {
   .pagination--pager { background: rgba(99,102,241,0.08); border-color: rgba(99,102,241,0.30); color: #3730a3;
     &:hover { background: rgba(99,102,241,0.16); border-color: rgba(99,102,241,0.55); box-shadow: 0 4px 14px rgba(99,102,241,0.22); color: #1e1b4b; }
   }
@@ -628,7 +628,7 @@ html[data-theme="dark"][data-color-theme="navy"] {
   }
 }
 /* Slate light */
-html:not([data-theme="dark"])[data-color-theme="slate"] {
+html[data-color-theme="slate"] {
   .pagination--pager { background: rgba(6,182,212,0.08); border-color: rgba(6,182,212,0.30); color: #164e63;
     &:hover { background: rgba(6,182,212,0.16); border-color: rgba(6,182,212,0.55); box-shadow: 0 4px 14px rgba(6,182,212,0.22); color: #0c4a6e; }
   }
@@ -640,7 +640,7 @@ html[data-theme="dark"][data-color-theme="slate"] {
   }
 }
 /* Dark-purple light */
-html:not([data-theme="dark"])[data-color-theme="dark-purple"] {
+html[data-color-theme="dark-purple"] {
   .pagination--pager { background: rgba(139,92,246,0.08); border-color: rgba(139,92,246,0.30); color: #4c1d95;
     &:hover { background: rgba(139,92,246,0.16); border-color: rgba(139,92,246,0.55); box-shadow: 0 4px 14px rgba(139,92,246,0.22); color: #2e1065; }
   }
@@ -658,7 +658,7 @@ html[data-theme="dark"][data-color-theme="dark-purple"] {
    ========================================================================== */
 
 /* ── Cosmic / Indigo — Light ── */
-html:not([data-theme="dark"])[data-color-theme="navy"] {
+html[data-color-theme="navy"] {
   .cv-section {
     background: rgba(238, 242, 255, 0.75);
     border-color: rgba(99, 102, 241, 0.25);
@@ -694,7 +694,7 @@ html[data-theme="dark"][data-color-theme="navy"] {
 }
 
 /* ── Aurora / Cyan — Light ── */
-html:not([data-theme="dark"])[data-color-theme="slate"] {
+html[data-color-theme="slate"] {
   .cv-section {
     background: rgba(236, 254, 255, 0.75);
     border-color: rgba(6, 182, 212, 0.25);
@@ -730,7 +730,7 @@ html[data-theme="dark"][data-color-theme="slate"] {
 }
 
 /* ── Nebula / Violet — Light ── */
-html:not([data-theme="dark"])[data-color-theme="dark-purple"] {
+html[data-color-theme="dark-purple"] {
   .cv-section {
     background: rgba(245, 243, 255, 0.75);
     border-color: rgba(139, 92, 246, 0.25);
