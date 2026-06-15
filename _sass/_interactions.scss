@@ -181,7 +181,7 @@
    restore dark text for all color themes in light mode.
    -------------------------------------------------------------------------- */
 
-html:not([data-theme="dark"]) .greedy-nav .hidden-links a {
+html .greedy-nav .hidden-links a {
   color: #1e293b;
 
   &:hover {
@@ -191,12 +191,12 @@ html:not([data-theme="dark"]) .greedy-nav .hidden-links a {
   }
 }
 
-html:not([data-theme="dark"])[data-color-theme="green"] .greedy-nav .hidden-links a:hover {
+html[data-color-theme="green"] .greedy-nav .hidden-links a:hover {
   color: #15803d;
   background: rgba(21, 128, 61, 0.08);
 }
 
-html:not([data-theme="dark"])[data-color-theme="purple"] .greedy-nav .hidden-links a:hover {
+html[data-color-theme="purple"] .greedy-nav .hidden-links a:hover {
   color: #7c3aed;
   background: rgba(124, 58, 237, 0.08);
 }
