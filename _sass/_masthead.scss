@@ -450,13 +450,13 @@ html[data-theme="dark"] .adr-liq-preview {
 
   &--active {
     opacity: 1;
-    border: 2px solid rgba(255, 255, 255, 0.78);
+    border: 2px solid rgba(10, 5, 40, 0.52);
 
     .adr-tile-check { opacity: 1; }
   }
 
-  html:not([data-theme="dark"]) &--active {
-    border-color: rgba(10, 5, 40, 0.52);
+  html[data-theme="dark"] &--active {
+    border-color: rgba(255, 255, 255, 0.78);
   }
 
   &--navy        { background: #6366f1; }
@@ -647,15 +647,15 @@ html[data-theme="dark"] .adr-lg-slider-track {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.96);
-  border: 1.5px solid rgba(255, 255, 255, 0.58);
+  border: 1.5px solid rgba(var(--adr-rgb, 99, 102, 241), 0.45);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
   z-index: 2;
   pointer-events: none;
   transition: border-color 0.2s ease;
 }
 
-html:not([data-theme="dark"]) .adr-lg-slider-thumb {
-  border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.45);
+html[data-theme="dark"] .adr-lg-slider-thumb {
+  border-color: rgba(255, 255, 255, 0.58);
 }
 
 /* Range input sits invisibly on top of the visual to capture interaction */
