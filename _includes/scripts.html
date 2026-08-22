@@ -171,6 +171,29 @@
 })();
 </script>
 
+<!-- Explicit navigation fallback for links inside article content.
+     Some browsers/extensions swallow the default <a> click action on
+     these dynamically-styled links without ever calling preventDefault
+     (confirmed: click/mousedown/mouseup fire untouched, href is valid,
+     but the browser's own navigation never happens). Force it via JS. -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest('.page__content a[href], .archive__item-body a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href');
+    if (!href || href.charAt(0) === '#' || href.indexOf('javascript:') === 0) return;
+    e.preventDefault();
+    if (a.target === '_blank') {
+      window.open(href, '_blank', 'noopener');
+    } else {
+      window.location.href = href;
+    }
+  });
+})();
+</script>
+
 <!-- Liquid Glass — masthead slider + dynamic CSS-var driver -->
 <script>
 (function () {
