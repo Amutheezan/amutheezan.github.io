@@ -26,8 +26,17 @@
         </li>
         <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>
       {% endif %}
+      {% assign crumb_digits_stripped = crumb | remove: '0' | remove: '1' | remove: '2' | remove: '3' | remove: '4' | remove: '5' | remove: '6' | remove: '7' | remove: '8' | remove: '9' %}
       {% if forloop.last %}
         <li class="current">{{ page.title }}</li>
+      {% elsif page.collection == 'posts' and crumb_digits_stripped == '' %}
+        {% comment %} date-only segment (year/month/day): no archive page exists for it, render as plain text {% endcomment %}
+        {% assign i = i | plus: 1 %}
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <span itemprop="name">{{ crumb }}</span>
+          <meta itemprop="position" content="{{ i }}" />
+        </li>
+        <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>
       {% else %}
         {% assign i = i | plus: 1 %}
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
