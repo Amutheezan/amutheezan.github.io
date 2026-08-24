@@ -178,23 +178,31 @@ html[data-color-theme="purple"] .pub-link {
   margin-bottom: 0.15em;
 }
 
-/* Tabs reuse .pub-link's pill look; only the active-state tweak lives here */
+/* Tabs reuse .pub-link's pill look; inactive tabs go flat/ghost, active tab is the solid pill */
 .cite-box__tab {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
   opacity: 0.65;
 
   &.is-active {
     opacity: 1;
     background: rgba(37, 99, 235, 0.14);
     border-color: rgba(37, 99, 235, 0.40);
+    box-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.45);
   }
 
   &:hover { opacity: 1; }
 }
 
 .cite-box__panel {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.3em;
+
+  &:not([hidden]) { display: flex; }
 }
 
 .cite-box__toolbar {
@@ -226,10 +234,15 @@ html[data-color-theme="purple"] .pub-link {
   }
 }
 
-html[data-theme="dark"] .cite-box__tab.is-active {
-  background: rgba(37, 99, 235, 0.30);
-  border-color: rgba(96, 165, 250, 0.50);
-  color: #bfdbfe;
+html[data-theme="dark"] .cite-box__tab {
+  background: transparent;
+  border-color: transparent;
+
+  &.is-active {
+    background: rgba(37, 99, 235, 0.30);
+    border-color: rgba(96, 165, 250, 0.50);
+    color: #bfdbfe;
+  }
 }
 
 html[data-theme="dark"] .cite-box__copy.is-copied {
