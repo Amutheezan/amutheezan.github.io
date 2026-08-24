@@ -100,3 +100,67 @@ html[data-color-theme="purple"] .pub-link {
   color: #6d28d9;
   &:hover { background: rgba(139, 92, 246, 0.14); border-color: rgba(139, 92, 246, 0.40); color: #7c3aed; }
 }
+
+/* ==========================================================================
+   PUBLICATION META BADGES
+   Venue / CORE rank / acceptance rate pills shown under the date on
+   publication archive cards.
+   ========================================================================== */
+
+.pub-badges {
+  margin: 0.4em 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+.pub-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.24em 0.7em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.4;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+
+  &--venue {
+    background: rgba(37, 99, 235, 0.10);
+    border-color: rgba(37, 99, 235, 0.35);
+    color: #1d4ed8;
+  }
+
+  &--rank {
+    background: rgba(234, 88, 12, 0.10);
+    border-color: rgba(234, 88, 12, 0.35);
+    color: #c2410c;
+  }
+
+  &--rate {
+    background: rgba(21, 128, 61, 0.10);
+    border-color: rgba(21, 128, 61, 0.35);
+    color: #166534;
+  }
+}
+
+html[data-theme="dark"] .pub-badge {
+  &--venue {
+    background: rgba(37, 99, 235, 0.18);
+    border-color: rgba(96, 165, 250, 0.45);
+    color: #93c5fd;
+  }
+
+  &--rank {
+    background: rgba(234, 88, 12, 0.18);
+    border-color: rgba(251, 146, 60, 0.45);
+    color: #fdba74;
+  }
+
+  &--rate {
+    background: rgba(21, 128, 61, 0.18);
+    border-color: rgba(74, 222, 128, 0.45);
+    color: #86efac;
+  }
+}
