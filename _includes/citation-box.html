@@ -3,18 +3,30 @@
 {% assign bibtex = include.bibtex %}
 {% if citation %}
 <div class="cite-box">
-  <div class="cite-box__tabs" role="tablist">
-    <button type="button" class="cite-box__tab is-active" data-cite-tab="apa" role="tab" aria-selected="true">APA</button>
-    {% if bibtex %}<button type="button" class="cite-box__tab" data-cite-tab="bibtex" role="tab" aria-selected="false">BibTeX</button>{% endif %}
+  {% if bibtex %}
+  <div class="cite-box__tabs">
+    <button type="button" class="pub-link cite-box__tab is-active" data-cite-tab="apa"><span class="pub-link__label">APA</span></button>
+    <button type="button" class="pub-link cite-box__tab" data-cite-tab="bibtex"><span class="pub-link__label">BibTeX</span></button>
   </div>
+  {% endif %}
   <div class="cite-box__panel" data-cite-panel="apa">
-    <pre class="cite-box__text">{{ citation }}{% if paperurl %} {{ paperurl }}{% endif %}</pre>
-    <button type="button" class="cite-box__copy"><i class="fas fa-copy" aria-hidden="true"></i> <span class="cite-box__copy-label">Copy</span></button>
+    <div class="cite-box__toolbar">
+      <button type="button" class="pub-link cite-box__copy">
+        <span class="pub-link__icon"><i class="fas fa-copy" aria-hidden="true"></i></span>
+        <span class="pub-link__label cite-box__copy-label">Copy</span>
+      </button>
+    </div>
+    <p class="cite-box__text">Recommended citation: {{ citation }}{% if paperurl %} <a href="{{ paperurl }}"><u>{{ paperurl }}</u></a>{% endif %}</p>
   </div>
   {% if bibtex %}
   <div class="cite-box__panel" data-cite-panel="bibtex" hidden>
-    <pre class="cite-box__text">{{ bibtex }}</pre>
-    <button type="button" class="cite-box__copy"><i class="fas fa-copy" aria-hidden="true"></i> <span class="cite-box__copy-label">Copy</span></button>
+    <div class="cite-box__toolbar">
+      <button type="button" class="pub-link cite-box__copy">
+        <span class="pub-link__icon"><i class="fas fa-copy" aria-hidden="true"></i></span>
+        <span class="pub-link__label cite-box__copy-label">Copy</span>
+      </button>
+    </div>
+    <pre class="cite-box__text cite-box__text--code">{{ bibtex }}</pre>
   </div>
   {% endif %}
 </div>
