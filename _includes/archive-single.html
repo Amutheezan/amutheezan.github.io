@@ -46,7 +46,7 @@
          <p class="pub-badges">
            {% if post.venue %}<span class="pub-badge pub-badge--venue"><i class="fa fa-fw fa-university" aria-hidden="true"></i> {{ post.venue }}</span>{% endif %}
            {% if post.core_rank %}<span class="pub-badge pub-badge--rank"><i class="fa fa-fw fa-star" aria-hidden="true"></i> CORE {{ post.core_rank }}</span>{% endif %}
-           {% if post.acceptance_rate %}<span class="pub-badge pub-badge--rate"><i class="fa fa-fw fa-bar-chart" aria-hidden="true"></i> Acceptance: {{ post.acceptance_rate }}</span>{% endif %}
+           {% if post.acceptance_rate %}<span class="pub-badge pub-badge--rate"><i class="fa fa-fw fa-percent" aria-hidden="true"></i> Acceptance: {{ post.acceptance_rate }}</span>{% endif %}
            {% if post.impact_factor %}<span class="pub-badge pub-badge--impact"><i class="fa fa-fw fa-line-chart" aria-hidden="true"></i> Impact Factor: {{ post.impact_factor }}</span>{% endif %}
          </p>
          {% endif %}
@@ -60,10 +60,8 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% if post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }} </p>
+    {% if post.citation %}
+      {% include citation-box.html citation=post.citation paperurl=post.paperurl bibtex=post.bibtex %}
     {% elsif post.paperurl %}
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}

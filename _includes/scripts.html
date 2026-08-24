@@ -171,6 +171,70 @@
 })();
 </script>
 
+<!-- Citation box: format tabs + copy to clipboard -->
+<script>
+(function () {
+  function setCopied(btn) {
+    var label = btn.querySelector('.cite-box__copy-label');
+    var icon = btn.querySelector('i');
+    var originalLabel = label.textContent;
+    var originalIcon = icon.className;
+    label.textContent = 'Copied';
+    icon.className = 'fas fa-check';
+    btn.classList.add('is-copied');
+    setTimeout(function () {
+      label.textContent = originalLabel;
+      icon.className = originalIcon;
+      btn.classList.remove('is-copied');
+    }, 1600);
+  }
+
+  function copyText(text, btn) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { setCopied(btn); });
+      return;
+    }
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta);
+    setCopied(btn);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.cite-box').forEach(function (box) {
+      var tabs = box.querySelectorAll('.cite-box__tab');
+      var panels = box.querySelectorAll('.cite-box__panel');
+
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          var target = tab.getAttribute('data-cite-tab');
+          tabs.forEach(function (t) {
+            t.classList.toggle('is-active', t === tab);
+            t.setAttribute('aria-selected', t === tab ? 'true' : 'false');
+          });
+          panels.forEach(function (p) {
+            p.hidden = p.getAttribute('data-cite-panel') !== target;
+          });
+        });
+      });
+
+      box.querySelectorAll('.cite-box__copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var panel = btn.closest('.cite-box__panel');
+          var text = panel.querySelector('.cite-box__text').textContent.trim();
+          copyText(text, btn);
+        });
+      });
+    });
+  });
+})();
+</script>
+
 <!-- Liquid Glass — masthead slider + dynamic CSS-var driver -->
 <script>
 (function () {

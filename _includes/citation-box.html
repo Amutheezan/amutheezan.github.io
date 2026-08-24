@@ -1,0 +1,21 @@
+{% assign citation = include.citation %}
+{% assign paperurl = include.paperurl %}
+{% assign bibtex = include.bibtex %}
+{% if citation %}
+<div class="cite-box">
+  <div class="cite-box__tabs" role="tablist">
+    <button type="button" class="cite-box__tab is-active" data-cite-tab="apa" role="tab" aria-selected="true">APA</button>
+    {% if bibtex %}<button type="button" class="cite-box__tab" data-cite-tab="bibtex" role="tab" aria-selected="false">BibTeX</button>{% endif %}
+  </div>
+  <div class="cite-box__panel" data-cite-panel="apa">
+    <pre class="cite-box__text">{{ citation }}{% if paperurl %} {{ paperurl }}{% endif %}</pre>
+    <button type="button" class="cite-box__copy"><i class="fas fa-copy" aria-hidden="true"></i> <span class="cite-box__copy-label">Copy</span></button>
+  </div>
+  {% if bibtex %}
+  <div class="cite-box__panel" data-cite-panel="bibtex" hidden>
+    <pre class="cite-box__text">{{ bibtex }}</pre>
+    <button type="button" class="cite-box__copy"><i class="fas fa-copy" aria-hidden="true"></i> <span class="cite-box__copy-label">Copy</span></button>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
