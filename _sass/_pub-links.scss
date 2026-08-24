@@ -124,7 +124,8 @@ html[data-color-theme="purple"] .pub-link {
   line-height: 1.4;
   border-radius: 9999px;
   border: 1px solid transparent;
-  white-space: nowrap;
+  max-width: 100%;
+  overflow-wrap: break-word;
 
   &--venue {
     background: rgba(37, 99, 235, 0.10);
@@ -149,6 +150,15 @@ html[data-color-theme="purple"] .pub-link {
     border-color: rgba(124, 58, 237, 0.35);
     color: #6d28d9;
   }
+}
+
+/* Venue badge: abbreviate on narrow screens, full name once there's room */
+.pub-badge__short { display: inline; }
+.pub-badge__full { display: none; }
+
+@media (min-width: 500px) {
+  .pub-badge__short { display: none; }
+  .pub-badge__full { display: inline; }
 }
 
 /* ==========================================================================
