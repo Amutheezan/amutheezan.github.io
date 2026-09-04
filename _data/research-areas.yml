@@ -1,0 +1,35 @@
+# Research areas shown on the homepage research-areas grid.
+# Grounded in the "Research Interests" tags on _pages/about.md and the
+# work described in _pages/cv.md / _publications/.
+# Current postdoc focus (software security, deception detection) is listed
+# first; PhD-era work (RL, combinatorial optimization, transportation) follows.
+
+- title: "Software Security"
+  icon: "fas fa-shield-alt"
+  anchor: "software-security"
+  description: "Software vulnerability detection, and empirical analysis of vulnerability discovery and bug-bounty programs, including studies of the Chromium and Firefox reward programs."
+
+- title: "Deception Detection"
+  icon: "fas fa-user-secret"
+  anchor: "deception-detection"
+  description: "Detecting deceptive intent using multimodal signals, as part of current postdoctoral research at the University of Houston."
+
+- title: "Reinforcement Learning"
+  icon: "fas fa-brain"
+  anchor: "reinforcement-learning"
+  description: "Deep RL for sequential decision-making, including actor-critic agents with transformers for variable-dimensional, large discrete action spaces."
+
+- title: "Combinatorial Optimization"
+  icon: "fas fa-cogs"
+  anchor: "combinatorial-optimization"
+  description: "Problem formulations and mathematical models for large-scale routing, scheduling, and resource-allocation problems, paired with learning-guided search."
+
+- title: "Multi-Agent Systems"
+  icon: "fas fa-robot"
+  anchor: "multi-agent-systems"
+  description: "Hierarchical, coordinated multi-agent approaches, such as repositioning emergency responders across regions to reduce response times."
+
+- title: "Cyber-Physical Systems"
+  icon: "fas fa-microchip"
+  anchor: "cyber-physical-systems"
+  description: "Real-time decision-making for physical infrastructure, including on-demand transit fleets, ambulance stationing, and dynamic vehicle routing."

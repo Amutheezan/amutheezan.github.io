@@ -1,0 +1,26 @@
+# Experience timeline shown on the homepage. Dates and roles pulled from
+# _pages/cv.md (Research Experience / Engineering Experience / Education).
+
+- when: "2025 — Present"
+  title: "Postdoctoral Fellow"
+  org: "University of Houston, Department of Computer Science"
+
+- when: "2022 — 2025"
+  title: "Ph.D., Informatics"
+  org: "The Pennsylvania State University"
+  description: "Graduate Research Assistant, Applied Artificial Intelligence Lab, advised by Dr. Aron Laszka. Deep reinforcement learning for combinatorial optimization in transportation."
+
+- when: "2019 — 2022"
+  title: "M.S., Computer Science"
+  org: "University of Houston"
+  description: "Graduate Research Assistant, Resilient Networks and Systems Lab, advised by Dr. Aron Laszka."
+
+- when: "2018 — 2019"
+  title: "Software Engineer"
+  org: "LSEG Technology, Post-Trade Team"
+  description: "Developed and tested application software for post-trade systems using Java, Python, and C++."
+
+- when: "2016"
+  title: "Software Engineering Intern"
+  org: "WSO2 Lanka (Pvt) Ltd, Data Analytics Team"
+  description: "Built an HL7 monitoring and disease-outbreak alerting solution on WSO2 ESB, DAS, and BAM."
