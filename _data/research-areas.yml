@@ -1,18 +1,26 @@
 # Research areas shown on the homepage research-areas grid.
-# Grounded in the "Research Interests" tags on _pages/about.md and the
-# work described in _pages/cv.md / _publications/.
-# Current postdoc focus (software security, deception detection) is listed
-# first; PhD-era work (RL, combinatorial optimization, transportation) follows.
+# Current postdoc focus areas are listed first; PhD-era work (RL,
+# combinatorial optimization, transportation) follows.
 
-- title: "Software Security"
-  icon: "fas fa-shield-alt"
-  anchor: "software-security"
-  description: "Software vulnerability detection, and empirical analysis of vulnerability discovery and bug-bounty programs, including studies of the Chromium and Firefox reward programs."
+- title: "Vulnerability Dataset Quality"
+  icon: "fas fa-database"
+  anchor: "vulnerability-dataset-quality"
+  description: "Curating and evaluating the data quality of software vulnerability detection datasets."
 
-- title: "Deception Detection"
+- title: "Label Error Detection Robustness"
+  icon: "fas fa-tags"
+  anchor: "label-error-detection-robustness"
+  description: "Studying the effectiveness of label error detection tools in the presence of near-duplicate and deliberately altered samples."
+
+- title: "Software Vulnerability Repair"
+  icon: "fas fa-wrench"
+  anchor: "software-vulnerability-repair"
+  description: "Automated repair of software vulnerabilities."
+
+- title: "Figure-of-Speech-Aware Deception Detection"
   icon: "fas fa-user-secret"
   anchor: "deception-detection"
-  description: "Detecting deceptive intent using multimodal signals, as part of current postdoctoral research at the University of Houston."
+  description: "Detecting deceptive intent with methods that account for figures of speech."
 
 - title: "Reinforcement Learning"
   icon: "fas fa-brain"
