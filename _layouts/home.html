@@ -106,7 +106,7 @@ layout: compress
               <div class="home-trow__what">
                 <h3>{{ item.title }}</h3>
                 <p class="home-trow__org">{{ item.org }}</p>
-                <p>{{ item.description }}</p>
+                {% if item.description %}<p>{{ item.description }}</p>{% endif %}
               </div>
             </div>
           {% endfor %}
