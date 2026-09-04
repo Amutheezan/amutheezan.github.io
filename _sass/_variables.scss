@@ -12,25 +12,25 @@ $doc-font-size              : 16;
 $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
-/* system typefaces */
-$serif                      : "Merriweather", Georgia, Times, serif;
-$sans-serif                 : "Merriweather", Georgia, Times, serif;
+/* system typefaces — serif for headings/hero, sans (Inter) for body/UI */
+$serif                      : "Source Serif 4", "Lora", Georgia, Times, serif;
+$sans-serif                 : "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 $monospace                  : "SFMono-Regular", Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
-$sans-serif-narrow          : "Merriweather", Georgia, Times, serif;
-$helvetica                  : "Merriweather", Georgia, Times, serif;
+$sans-serif-narrow          : $sans-serif;
+$helvetica                  : $sans-serif;
 
 /* serif typefaces */
-$georgia                    : "Merriweather", Georgia, serif;
-$times                      : "Merriweather", Times, serif;
-$bodoni                     : "Merriweather", serif;
-$calisto                    : "Merriweather", serif;
-$garamond                   : "Merriweather", serif;
+$georgia                    : $serif;
+$times                      : $serif;
+$bodoni                     : $serif;
+$calisto                    : $serif;
+$garamond                   : $serif;
 
-$global-font-family         : $serif;
+$global-font-family         : $sans-serif;
 $header-font-family         : $serif;
-$caption-font-family        : $serif;
+$caption-font-family        : $sans-serif;
 
 /* type scale */
 $type-size-1                : 2.441em;  // ~39.056px
@@ -47,13 +47,20 @@ $type-size-8                : 0.625em;  // ~10px
    Colors
    ========================================================================== */
 
-$gray                       : #7a8288;
+/* ==========================================================================
+   Quiet-authority palette — warm paper + deep slate-teal
+   Light mode values live here as the SCSS defaults; the dark-mode values
+   are applied at runtime via CSS custom properties in _color-themes.scss
+   (keyed off html[data-theme="dark"]), not by swapping these variables.
+   ========================================================================== */
+
+$gray                       : #5B6B67;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-$blue                       : #2563eb;
+$blue                       : #2B4645;
 $dark-blue                  : mix(#000, $blue, 40%);
 $darker-blue                : mix(#000, $blue, 60%);
 $light-blue                 : mix(#fff, $blue, 50%);
@@ -61,27 +68,35 @@ $lighter-blue               : mix(#fff, $blue, 90%);
 
 $white                       : #fff;
 
-/* extended palette — five colors harmonious with the site's blue-gray theme */
-$teal                       : #0891b2;   // cool teal accent
-$indigo                     : #4f46e5;   // deeper indigo, close to the site blue
-$slate                      : #475569;   // mid-tone slate gray
-$sky                        : #0ea5e9;   // lighter sky blue
-$navy                       : #1e3a5f;   // deep navy for dark accents
+/* extended palette — quiet slate-teal accent family, no neon */
+$teal                       : #2B4645;   // primary accent — deep slate-teal
+$indigo                     : #2B4645;   // legacy name, repointed to the accent
+$slate                      : #5B6B67;   // secondary/tertiary text
+$sky                        : #7FA39B;   // lighter teal, dark-mode accent
+$navy                       : #1C1F1D;   // ink
+
+/* core paper/ink palette */
+$paper                      : #FAF8F4;
+$ink                        : #1C1F1D;
+$ink-muted                  : #5B6B67;
+$tag-muted                  : #8FA396;   // decorative labels/dividers only — fails body-text contrast
+$hairline                   : #E4DFD3;
+$accent                     : #2B4645;
 
 $body-color                 : #ffffff;
-$background-color           : #f0f4ff;
-$code-background-color      : #e8edf8;
+$background-color           : $paper;
+$code-background-color      : #F1EEE6;
 $code-background-color-dark : $light-gray;
-$text-color                 : #1e1b4b;
-$border-color               : rgba(99, 102, 241, 0.20);
+$text-color                 : $ink;
+$border-color                : $hairline;
 
-$primary-color              : #6366f1;
-$blue-color                 : $indigo;
+$primary-color              : $accent;
+$blue-color                 : $accent;
 $white-color                 : $white;
-$success-color              : #10b981;
-$warning-color              : #f59e0b;
-$danger-color               : #ef4444;
-$info-color                 : #22d3ee;
+$success-color              : #4B7A63;
+$warning-color              : #B08A3E;
+$danger-color                : #A94A42;
+$info-color                  : #3E7A82;
 
 /* brands */
 $behance-color              : #1769FF;
@@ -107,11 +122,11 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : #4f46e5;
-$link-color-hover           : #4338ca;
-$link-color-visited         : #7c3aed;
-$masthead-link-color        : #312e81;
-$masthead-link-color-hover  : #1e1b4b;
+$link-color                 : #2B4645;
+$link-color-hover           : #1C2E2D;
+$link-color-visited         : #46605F;
+$masthead-link-color        : #1C1F1D;
+$masthead-link-color-hover  : #2B4645;
 $masthead-link-blue-color   : $blue-color;
 $masthead-link-blue-color-hover  : mix(#000, $blue-color, 25%);
 $masthead-link-white-color   : $white-color;

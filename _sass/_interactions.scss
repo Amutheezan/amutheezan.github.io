@@ -27,22 +27,8 @@
    -------------------------------------------------------------------------- */
 
 .archive__item {
-  border-radius: 10px;
-  transition:
-    transform 0.22s cubic-bezier(0.34, 1.45, 0.64, 1),
-    box-shadow 0.22s ease,
-    background 0.22s ease,
-    border-color 0.22s ease;
-  will-change: transform;
-
-  &:hover {
-    transform: translateY(-3px) scale(1.005);
-  }
-
-  &:active {
-    transform: translateY(-1px) scale(1.002);
-    transition-duration: 0.08s;
-  }
+  border-radius: 4px;
+  transition: border-color 0.18s ease;
 }
 
 
@@ -56,11 +42,11 @@
 
 
 /* --------------------------------------------------------------------------
-   Dark-mode & color-theme toggle buttons — press ripple
+   Dark-mode toggle button — press ripple
    -------------------------------------------------------------------------- */
 
 .dark-mode-toggle,
-.color-theme-toggle {
+.appearance-btn {
   position: relative;
   overflow: hidden;
 
@@ -85,23 +71,7 @@
    -------------------------------------------------------------------------- */
 
 .btn {
-  transition:
-    transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.15s ease,
-    background-color 0.18s ease,
-    color 0.18s ease;
-  will-change: transform;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
-  }
-
-  &:active {
-    transform: translateY(0px) scale(0.97);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-    transition-duration: 0.07s;
-  }
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
 }
 
 
@@ -153,20 +123,7 @@
    -------------------------------------------------------------------------- */
 
 .pagination--pager {
-  transition:
-    transform 0.18s ease,
-    box-shadow 0.18s ease,
-    background 0.18s ease;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
-  }
-
-  &:active {
-    transform: translateY(0);
-    transition-duration: 0.07s;
-  }
+  transition: border-color 0.18s ease, background 0.18s ease;
 }
 
 
@@ -182,23 +139,13 @@
    -------------------------------------------------------------------------- */
 
 html .greedy-nav .hidden-links a {
-  color: #1e293b;
+  color: #1C1F1D;
 
   &:hover {
-    color: #2563eb;
-    background: rgba(37, 99, 235, 0.08);
-    border-radius: 10px;
+    color: #2B4645;
+    background: rgba(43, 70, 69, 0.06);
+    border-radius: 4px;
   }
-}
-
-html[data-color-theme="green"] .greedy-nav .hidden-links a:hover {
-  color: #15803d;
-  background: rgba(21, 128, 61, 0.08);
-}
-
-html[data-color-theme="purple"] .greedy-nav .hidden-links a:hover {
-  color: #7c3aed;
-  background: rgba(124, 58, 237, 0.08);
 }
 
 

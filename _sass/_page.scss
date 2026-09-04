@@ -17,16 +17,10 @@
   padding-bottom: 1.5em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(48px) saturate(180%);
-  -webkit-backdrop-filter: blur(48px) saturate(180%);
-  border: 1px solid rgba(99, 102, 241, 0.22);
-  border-radius: 20px;
-  box-shadow:
-    0 0 0 1px rgba(99, 102, 241, 0.08),
-    0 8px 40px rgba(99, 102, 241, 0.10),
-    0 2px 8px rgba(99, 102, 241, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.90);
+  background: transparent;
+  border: 1px solid $hairline;
+  border-radius: 4px;
+  box-shadow: none;
 
   @include breakpoint($x-large) {
     max-width: $x-large;
@@ -45,17 +39,15 @@ article.page {
   width: 30px;
   height: 30px;
   padding: 0;
-  border-radius: 8px;
-  border: 1px solid rgba(var(--adr-rgb, 99, 102, 241), 0.22);
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  border-radius: 4px;
+  border: 1px solid $hairline;
+  background: $paper;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(var(--adr-rgb, 99, 102, 241), 0.65);
-  transition: background 0.18s, border-color 0.18s, color 0.18s, transform 0.18s;
+  color: rgba(var(--adr-rgb, 43, 70, 69), 0.75);
+  transition: background 0.18s, border-color 0.18s, color 0.18s;
   z-index: 20;
 
   svg {
@@ -70,26 +62,25 @@ article.page {
   }
 
   &:hover {
-    background: rgba(var(--adr-rgb, 99, 102, 241), 0.10);
-    border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.4);
-    color: var(--adr-text, #4f46e5);
-    transform: scale(1.08);
+    background: rgba(var(--adr-rgb, 43, 70, 69), 0.08);
+    border-color: rgba(var(--adr-rgb, 43, 70, 69), 0.5);
+    color: var(--adr-text, #2B4645);
   }
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(var(--adr-rgb, 99, 102, 241), 0.3);
+    box-shadow: 0 0 0 2px rgba(var(--adr-rgb, 43, 70, 69), 0.3);
   }
 }
 
 html[data-theme="dark"] .page__expand-btn {
-  background: rgba(30, 30, 50, 0.55);
-  border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.25);
-  color: var(--adr-text, #a5b4fc);
+  background: #1B2022;
+  border-color: #2A2F2E;
+  color: var(--adr-text, #7FA39B);
 
   &:hover {
-    background: rgba(var(--adr-rgb, 99, 102, 241), 0.18);
-    color: var(--adr-text, #a5b4fc);
+    background: rgba(var(--adr-rgb, 127, 163, 155), 0.14);
+    color: var(--adr-text, #7FA39B);
   }
 }
 

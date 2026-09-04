@@ -39,9 +39,9 @@
       <button class="srch-btn" id="srch-open-btn" aria-label="Search" title="Search (⌘K)">
         <i class="fas fa-search" aria-hidden="true"></i>
       </button>
-      <button class="appearance-btn" id="adr-open-btn" aria-label="Open appearance settings" title="Appearance">
-        <i class="fas fa-sliders-h" aria-hidden="true"></i>
-        <span class="appearance-btn__label">Appearance</span>
+      <button class="appearance-btn" id="theme-toggle-btn" role="switch" aria-checked="true" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i class="fas fa-moon" id="theme-toggle-icon" aria-hidden="true"></i>
+        <span class="appearance-btn__label" id="theme-toggle-label">Dark</span>
       </button>
     </div>
   </div>
@@ -60,75 +60,5 @@
       <i class="fas fa-search" aria-hidden="true"></i>
       <span>Start typing to search…</span>
     </div>
-  </div>
-</div>
-
-<!-- Appearance drawer overlay -->
-<div class="adr-overlay" id="adr-overlay"></div>
-
-<!-- Appearance drawer -->
-<div class="adr-drawer" id="adr-drawer" role="dialog" aria-label="Appearance settings">
-  <div class="adr-head">
-    <span class="adr-title">Appearance</span>
-    <button class="adr-close" id="adr-close-btn" aria-label="Close appearance settings">&#x2715;</button>
-  </div>
-  <div class="adr-body">
-
-    <!-- Color theme card -->
-    <div class="adr-card adr-card--sm">
-      <div class="adr-section-label">Color theme</div>
-      <div class="adr-tiles" id="adr-swatches">
-        <div class="adr-tile adr-tile--navy"        data-color-theme="navy"        title="Navy">
-          <svg class="adr-tile-check" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
-        </div>
-        <div class="adr-tile adr-tile--slate"       data-color-theme="slate"       title="Slate">
-          <svg class="adr-tile-check" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
-        </div>
-        <div class="adr-tile adr-tile--dark-purple" data-color-theme="dark-purple" title="Purple">
-          <svg class="adr-tile-check" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
-        </div>
-      </div>
-      <div class="adr-tile-names">
-        <span data-color-theme="navy">Navy</span>
-        <span data-color-theme="slate">Slate</span>
-        <span data-color-theme="dark-purple">Purple</span>
-      </div>
-    </div>
-
-    <!-- Mode + Liquidity card -->
-    <div class="adr-card">
-
-      <!-- Dark mode row -->
-      <div class="adr-mode-row">
-        <span class="adr-mode-icon" id="adr-mode-icon"></span>
-        <span class="adr-mode-text" id="adr-mode-text">Dark mode</span>
-        <div class="adr-lg-tog" id="adr-lg-tog" role="switch" aria-checked="true" aria-label="Toggle dark mode">
-          <div class="adr-lg-tog-knob" id="adr-lg-tog-knob"></div>
-        </div>
-      </div>
-
-      <div class="adr-card-divider"></div>
-
-      <!-- Liquidity row -->
-      <div class="adr-liq-row">
-        <span class="adr-liq-icon" id="adr-liq-icon"></span>
-        <span class="adr-liq-text">Liquidity</span>
-      </div>
-      <div class="adr-slider-labels">
-        <span>Solid</span>
-        <span>Glassy</span>
-      </div>
-      <div class="adr-lg-slider-wrap">
-        <div class="adr-lg-slider-visual">
-          <div class="adr-lg-slider-track" id="adr-lg-slider-track">
-            <div class="adr-lg-slider-fill" id="adr-lg-slider-fill"></div>
-            <div class="adr-lg-slider-thumb" id="adr-lg-slider-thumb"></div>
-          </div>
-        </div>
-        <input type="range" id="lg-liquidity" class="adr-liq-range-hidden" min="0" max="100" value="0" step="1" aria-label="Glass liquidity" />
-      </div>
-
-    </div>
-
   </div>
 </div>

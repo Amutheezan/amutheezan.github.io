@@ -21,7 +21,7 @@
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-TileImage" content="{{ base_path }}/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="{{ base_path }}/images/browserconfig.xml?v=M44lzPylqQ">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#FAF8F4">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
 
@@ -40,38 +40,26 @@
 
 <!-- end custom head snippets -->
 
-<!-- Theme init: apply saved dark/color theme before paint to prevent flash -->
+<!-- Theme init: apply saved dark-mode preference before paint to prevent flash -->
 <script>
 (function () {
   try {
     var t = localStorage.getItem('theme');
-    var c = localStorage.getItem('color-theme');
     if (t === 'dark') { document.documentElement.setAttribute('data-theme', 'dark'); }
-    if (c && c !== 'default') { document.documentElement.setAttribute('data-color-theme', c); }
   } catch (e) {}
 })();
 </script>
 
-<!-- Dynamic favicon: neural-net icon that matches the active color theme -->
+<!-- Dynamic favicon: neural-net icon in the site's slate-teal accent -->
 <link rel="icon" type="image/svg+xml" id="dyn-fav" href="">
 <script>
 (function () {
-  var light = {
-    'navy':         ['#4f46e5','#7c3aed'],
-    'slate':        ['#0891b2','#06b6d4'],
-    'dark-purple':  ['#7c3aed','#a855f7']
-  };
-  var dark = {
-    'navy':         ['#312e81','#6366f1'],
-    'slate':        ['#0e7490','#22d3ee'],
-    'dark-purple':  ['#4c1d95','#8b5cf6']
-  };
+  var light = ['#2B4645', '#46605F'];
+  var dark  = ['#1C2E2D', '#7FA39B'];
   function updateFavicon() {
     var h = document.documentElement;
     var isDark = h.getAttribute('data-theme') === 'dark';
-    var ct = h.getAttribute('data-color-theme') || 'navy';
-    var pal = isDark ? dark : light;
-    var c = pal[ct] || pal['navy'];
+    var c = isDark ? dark : light;
     var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">'
       + '<defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">'
       + '<stop offset="0%" stop-color="' + c[0] + '"/>'
@@ -92,7 +80,7 @@
   updateFavicon();
   new MutationObserver(updateFavicon).observe(
     document.documentElement,
-    { attributes: true, attributeFilter: ['data-theme','data-color-theme'] }
+    { attributes: true, attributeFilter: ['data-theme'] }
   );
 })();
 </script>

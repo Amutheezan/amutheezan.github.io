@@ -1,48 +1,17 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
-<!-- Appearance drawer open / close -->
+<!-- Dark mode toggle — single accent, no drawer -->
 <script>
 (function () {
-  var openBtn  = document.getElementById('adr-open-btn');
-  var closeBtn = document.getElementById('adr-close-btn');
-  var overlay  = document.getElementById('adr-overlay');
-  var drawer   = document.getElementById('adr-drawer');
-  if (!openBtn || !drawer) return;
-
-  function openDrawer()  {
-    drawer.classList.add('open');
-    overlay.classList.add('open');
-  }
-  function closeDrawer() {
-    drawer.classList.remove('open');
-    overlay.classList.remove('open');
-  }
-
-  openBtn.addEventListener('click', openDrawer);
-  closeBtn.addEventListener('click', closeDrawer);
-  overlay.addEventListener('click', closeDrawer);
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') { closeDrawer(); }
-  });
-})();
-</script>
-
-<!-- Dark mode toggle -->
-<script>
-(function () {
-  var togDiv = document.getElementById('adr-lg-tog');
-  if (!togDiv) return;
-
-  var MOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-  var SUN  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5"/><line x1="12" y1="2" x2="12" y2="4.5" stroke-linecap="round"/><line x1="12" y1="19.5" x2="12" y2="22" stroke-linecap="round"/><line x1="4.22" y1="4.22" x2="5.88" y2="5.88" stroke-linecap="round"/><line x1="18.12" y1="18.12" x2="19.78" y2="19.78" stroke-linecap="round"/><line x1="2" y1="12" x2="4.5" y2="12" stroke-linecap="round"/><line x1="19.5" y1="12" x2="22" y2="12" stroke-linecap="round"/><line x1="4.22" y1="19.78" x2="5.88" y2="18.12" stroke-linecap="round"/><line x1="18.12" y1="5.88" x2="19.78" y2="4.22" stroke-linecap="round"/></svg>';
+  var btn   = document.getElementById('theme-toggle-btn');
+  var icon  = document.getElementById('theme-toggle-icon');
+  var label = document.getElementById('theme-toggle-label');
+  if (!btn) return;
 
   function setToggleVisual(isDark) {
-    togDiv.classList.toggle('adr-lg-tog--on', isDark);
-    togDiv.setAttribute('aria-checked', isDark ? 'true' : 'false');
-    var iconEl = document.getElementById('adr-mode-icon');
-    if (iconEl) { iconEl.innerHTML = isDark ? MOON : SUN; }
-    var textEl = document.getElementById('adr-mode-text');
-    if (textEl) { textEl.textContent = isDark ? 'Dark mode' : 'Light mode'; }
+    btn.setAttribute('aria-checked', isDark ? 'true' : 'false');
+    if (icon)  { icon.className = isDark ? 'fas fa-moon' : 'fas fa-sun'; }
+    if (label) { label.textContent = isDark ? 'Dark' : 'Light'; }
   }
 
   function applyTheme(theme) {
@@ -59,60 +28,9 @@
     applyTheme(isDark ? 'dark' : 'light');
   })();
 
-  togDiv.addEventListener('click', function () {
+  btn.addEventListener('click', function () {
     var currentlyDark = document.documentElement.getAttribute('data-theme') === 'dark';
     applyTheme(currentlyDark ? 'light' : 'dark');
-    requestAnimationFrame(function () {
-      var slider = document.getElementById('lg-liquidity');
-      if (slider && window.applyLiquidity) {
-        window.applyLiquidity(parseInt(slider.value, 10));
-      }
-    });
-  });
-})();
-</script>
-
-<!-- Color theme swatches -->
-<script>
-(function () {
-  function applyColorTheme(theme) {
-    if (!theme || theme === 'default') {
-      document.documentElement.removeAttribute('data-color-theme');
-    } else {
-      document.documentElement.setAttribute('data-color-theme', theme);
-    }
-    try { localStorage.setItem('color-theme', theme); } catch(e) {}
-
-    /* Keep active tile + name on the matching swatch */
-    document.querySelectorAll('.adr-tile').forEach(function (s) {
-      s.classList.toggle('adr-tile--active',
-        (s.dataset.colorTheme || '') === (theme || ''));
-    });
-    document.querySelectorAll('.adr-tile-names span').forEach(function (s) {
-      s.classList.toggle('adr-tile-name--active',
-        (s.dataset.colorTheme || '') === (theme || ''));
-    });
-
-    /* Re-apply liquidity for new accent colour */
-    requestAnimationFrame(function () {
-      var slider = document.getElementById('lg-liquidity');
-      if (slider && window.applyLiquidity) {
-        window.applyLiquidity(parseInt(slider.value, 10));
-      }
-    });
-  }
-
-  /* Restore saved colour theme — default: dark-purple */
-  (function () {
-    var saved;
-    try { saved = localStorage.getItem('color-theme'); } catch(e) {}
-    applyColorTheme(saved !== null ? saved : 'dark-purple');
-  })();
-
-  document.querySelectorAll('.adr-tile').forEach(function (s) {
-    s.addEventListener('click', function () {
-      applyColorTheme(s.dataset.colorTheme || '');
-    });
   });
 })();
 </script>
@@ -232,150 +150,6 @@
       });
     });
   });
-})();
-</script>
-
-<!-- Liquid Glass — masthead slider + dynamic CSS-var driver -->
-<script>
-(function () {
-
-  /* SVG filter for liquid-surface ripple distortion */
-  var svgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  svgEl.setAttribute('id', 'lg-svg-defs');
-  svgEl.setAttribute('style', 'position:absolute;width:0;height:0;overflow:hidden;pointer-events:none;');
-  svgEl.innerHTML =
-    '<defs>' +
-      '<filter id="lg-liquid" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">' +
-        '<feTurbulence id="lg-turb" type="fractalNoise" baseFrequency="0.009 0.013" numOctaves="3" seed="4" result="noise"/>' +
-        '<feDisplacementMap id="lg-disp" in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G"/>' +
-      '</filter>' +
-    '</defs>';
-  document.body.appendChild(svgEl);
-
-  /* Ripple overlay — masthead */
-  var masthead = document.querySelector('.masthead');
-  var lgRipple = null;
-  if (masthead) {
-    lgRipple = document.createElement('div');
-    lgRipple.id = 'lg-ripple';
-    lgRipple.style.cssText =
-      'position:absolute;inset:0;pointer-events:none;z-index:0;opacity:0;' +
-      'background:linear-gradient(125deg,' +
-        'rgba(255,255,255,0.12) 0%,rgba(255,255,255,0.04) 35%,' +
-        'rgba(255,255,255,0.10) 65%,rgba(255,255,255,0.02) 100%);' +
-      'filter:url(#lg-liquid);mix-blend-mode:overlay;transition:opacity 0.5s ease;';
-    masthead.appendChild(lgRipple);
-  }
-
-
-  function lerp(a, b, t) { return a + (b - a) * t; }
-
-  function accentColor() {
-    var theme = document.documentElement.getAttribute('data-color-theme');
-    if (theme === 'slate') {
-      return { r:6, g:182, b:212,
-               thumbA:'#22d3ee', thumbB:'#0891b2', thumbHl:'rgba(34,211,238,0.60)' };
-    }
-    if (theme === 'dark-purple') {
-      return { r:139, g:92, b:246,
-               thumbA:'#c084fc', thumbB:'#7c3aed', thumbHl:'rgba(192,132,252,0.60)' };
-    }
-    return { r:99, g:102, b:241,
-             thumbA:'#818cf8', thumbB:'#4f46e5', thumbHl:'rgba(140,150,255,0.60)' };
-  }
-
-  function applyLiquidity(v) {
-    var t    = v / 100;
-    var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-
-    var blur       = lerp(6,    54,  t).toFixed(1);
-    var saturate   = lerp(108,  240, t).toFixed(0);
-    var brightness = (dark ? lerp(0.88, 0.96, t) : lerp(1.00, 1.07, t)).toFixed(3);
-    var fillOp     = lerp(0.06, 0.28, t).toFixed(3);
-    var borderOp   = lerp(0.18, 0.65, t).toFixed(3);
-    var shimmerOp  = lerp(0.00, 0.30, t).toFixed(3);
-    var shimmerSpd = lerp(14,   3.5,  t).toFixed(1);
-    var distort    = lerp(0,    30,   t).toFixed(1);
-
-    var root = document.documentElement;
-    root.style.setProperty('--lg-blur',        blur + 'px');
-    root.style.setProperty('--lg-saturate',    saturate + '%');
-    root.style.setProperty('--lg-brightness',  brightness);
-    root.style.setProperty('--lg-fill-op',     fillOp);
-    root.style.setProperty('--lg-border-op',   borderOp);
-    root.style.setProperty('--lg-shimmer-op',  shimmerOp);
-    root.style.setProperty('--lg-shimmer-spd', shimmerSpd + 's');
-
-    var disp = document.getElementById('lg-disp');
-    if (disp) { disp.setAttribute('scale', distort); }
-
-    var rippleOp = lerp(0, 0.85, t).toFixed(2);
-    if (lgRipple) { lgRipple.style.opacity = rippleOp; }
-
-    var ac  = accentColor();
-    root.style.setProperty('--lg-thumb-a',  ac.thumbA);
-    root.style.setProperty('--lg-thumb-b',  ac.thumbB);
-    root.style.setProperty('--lg-thumb-hl', ac.thumbHl);
-
-    var r = ac.r, g = ac.g, b = ac.b;
-    var rgb  = r + ',' + g + ',' + b;
-    var pct  = v + '%';
-
-    /* Update custom slider visuals */
-    var sliderFill  = document.getElementById('adr-lg-slider-fill');
-    var sliderThumb = document.getElementById('adr-lg-slider-thumb');
-    if (sliderFill)  { sliderFill.style.width = pct; sliderFill.style.background = 'rgba(' + rgb + ',0.82)'; }
-    if (sliderThumb) { sliderThumb.style.left = pct; }
-
-    /* Update liquidity icon */
-    updateLiquidityIcon(v, dark);
-
-    try { localStorage.setItem('lg-liquidity', v); } catch(e) {}
-  }
-
-  function updateLiquidityIcon(v, dark) {
-    var iconEl = document.getElementById('adr-liq-icon');
-    if (!iconEl) { return; }
-    var isDark = (dark !== undefined) ? dark : (document.documentElement.getAttribute('data-theme') === 'dark');
-    var path = 'M12 3C8.5 9 5 12 5 16.5a7 7 0 0 0 14 0C19 12 15.5 9 12 3z';
-    var svg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg">';
-    if (v > 66) {
-      svg += '<path d="' + path + '" fill="currentColor" opacity="0.80"/><path d="' + path + '"/>';
-    } else if (v > 28) {
-      svg += '<defs><linearGradient id="lg-drop-grad" x1="0" y1="0" x2="0" y2="1">';
-      svg += '<stop offset="0%" stop-color="currentColor" stop-opacity="0"/>';
-      svg += '<stop offset="62%" stop-color="currentColor" stop-opacity="0.82"/>';
-      svg += '</linearGradient></defs>';
-      svg += '<path d="' + path + '" fill="url(#lg-drop-grad)"/><path d="' + path + '"/>';
-    } else {
-      svg += '<path d="' + path + '"/>';
-    }
-    iconEl.innerHTML = svg + '</svg>';
-  }
-
-  /* Expose globally so dark/colour-theme scripts can call it */
-  window.applyLiquidity = applyLiquidity;
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var slider = document.getElementById('lg-liquidity');
-    if (!slider) { return; }
-
-    /* Update label as slider moves */
-    slider.addEventListener('input', function () {
-      applyLiquidity(parseInt(this.value, 10));
-    });
-
-    /* Restore saved value — default: 0 */
-    var saved = 0;
-    try {
-      var s = localStorage.getItem('lg-liquidity');
-      if (s !== null) { saved = Math.max(0, Math.min(100, parseInt(s, 10))); }
-    } catch(e) {}
-    slider.value = saved;
-    applyLiquidity(saved);
-    updateLiquidityIcon(saved);
-  });
-
 })();
 </script>
 
