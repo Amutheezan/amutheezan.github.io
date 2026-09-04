@@ -23,21 +23,13 @@
   var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   var theme = saved ? saved : (prefersDark ? 'dark' : 'light');
   document.documentElement.setAttribute('data-theme', theme);
-
-  /* Restore color theme (navy / slate / dark-purple) */
-  var validColors = ['navy', 'slate', 'dark-purple'];
-  var savedColor = null;
-  try { savedColor = localStorage.getItem('color-theme'); } catch(e) {}
-  if (savedColor && validColors.indexOf(savedColor) !== -1) {
-    document.documentElement.setAttribute('data-color-theme', savedColor);
-  }
 })();
 </script>
 
-<!-- Google Fonts: Merriweather + Inter (monospace/UI fallback) -->
+<!-- Google Fonts: Source Serif 4 (headings/hero) + Inter (body/UI) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">

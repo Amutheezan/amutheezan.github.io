@@ -2,36 +2,17 @@
    CV — Liquid Glass Cards  (sproogen-style two-column layout)
    ========================================================================== */
 
-/* ── Glass card base ─────────────────────────────────────────────────────── */
+/* ── Flat hairline card base (no glass, no glow) ─────────────────────────── */
 .cv-section {
   position: relative;
-  background: rgba(255, 255, 255, 0.62);
-  backdrop-filter: blur(18px) saturate(160%);
-  -webkit-backdrop-filter: blur(18px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.82);
-  border-radius: 16px;
-  box-shadow:
-    0 2px 6px  rgba(37, 99, 235, 0.04),
-    0 8px 32px rgba(37, 99, 235, 0.07),
-    inset 0 1.5px 0 rgba(255, 255, 255, 0.95);
+  background: transparent;
+  border: 1px solid $hairline;
+  border-radius: 4px;
+  box-shadow: none;
   padding: 1.6rem 2rem;
   margin-bottom: 1.4rem;
   overflow: visible;
   color: $darker-gray; // base text color for light mode — all children inherit
-
-  // shimmer overlay
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    pointer-events: none;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.50) 0%,
-      rgba(255, 255, 255, 0.00) 55%
-    );
-  }
 }
 
 /* ── Section heading ─────────────────────────────────────────────────────── */
@@ -45,7 +26,7 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-color;
-  border-bottom: 1.5px solid rgba(37, 99, 235, 0.12);
+  border-bottom: 1.5px solid $hairline;
 }
 
 /* ── Two-column timeline entry ───────────────────────────────────────────── */
@@ -55,29 +36,29 @@
   gap: 0;
   position: relative;
   padding: 1.1rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid $hairline;
 
   &:first-child { padding-top: 0; }
   &:last-child  { border-bottom: none; padding-bottom: 0; }
 
-  // Blue indicator dot (left of card)
+  // Accent indicator dot (left of card)
   &::after {
     content: '';
     position: absolute;
     left: -2.45rem;
     top: 1.35rem;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: $blue;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+    box-shadow: none;
   }
 }
 
 /* Left column: org / role / date / link */
 .cv-entry__left {
   padding-right: 1.4rem;
-  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 1px solid $hairline;
   min-width: 0;
 }
 
@@ -164,8 +145,8 @@
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.12);
+  border: 1px solid $hairline;
+  box-shadow: none;
   flex-shrink: 0;
 }
 
@@ -187,9 +168,9 @@
 }
 
 .cv-skill-group {
-  background: rgba(241, 245, 249, 0.8);
-  border: 1px solid rgba(37, 99, 235, 0.08);
-  border-radius: 10px;
+  background: $code-background-color;
+  border: 1px solid $hairline;
+  border-radius: 4px;
   padding: 0.6rem 0.85rem;
 }
 
@@ -213,7 +194,7 @@
   grid-template-columns: 1fr auto;
   gap: 0.15rem 1rem;
   padding: 0.8rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid $hairline;
 
   &:first-child { padding-top: 0; }
   &:last-child  { border-bottom: none; padding-bottom: 0; }
@@ -307,7 +288,7 @@ body.cv-page {
       padding-right: 0;
       padding-bottom: 0.6rem;
       border-right: none;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      border-bottom: 1px solid $hairline;
       margin-bottom: 0.6rem;
     }
     .cv-entry__right { padding-left: 0; font-size: 0.84em; }
@@ -325,83 +306,74 @@ body.cv-page {
 /* Dark mode mobile fix — CV page only */
 html[data-theme='dark'] body.cv-page {
   @media (max-width: 640px) {
-    .cv-entry__left { border-bottom-color: rgba(255, 255, 255, 0.08) !important; }
+    .cv-entry__left { border-bottom-color: #2A2F2E !important; }
   }
 }
 
-/* ── Dark mode overrides ──────────────────────────────────────────────── */
+/* ── Dark mode overrides — flat hairline card, no glow ─────────────────── */
 html[data-theme='dark'] {
   .cv-section {
-    background: rgba(30, 41, 59, 0.75) !important;
-    border-color: rgba(255, 255, 255, 0.10) !important;
-    color: #e2e8f0 !important; // base — all children inherit unless overridden
-    box-shadow:
-      0 2px 6px  rgba(0, 0, 0, 0.25),
-      0 8px 32px rgba(0, 0, 0, 0.40),
-      inset 0 1.5px 0 rgba(255, 255, 255, 0.08) !important;
-    &::before {
-      background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.06) 0%,
-        rgba(255, 255, 255, 0.00) 55%
-      ) !important;
-    }
+    background: transparent !important;
+    border-color: #2A2F2E !important;
+    color: #EDEAE3 !important; // base — all children inherit unless overridden
+    box-shadow: none !important;
+
     // all plain links inside cards
     a {
-      color: #90cdf4 !important;
-      &:hover { color: #63b3ed !important; }
-      &:visited { color: #a3bffa !important; }
+      color: #7FA39B !important;
+      &:hover { color: #A8C4BD !important; }
+      &:visited { color: #8FA9A2 !important; }
     }
     // all plain paragraphs and list items
-    p, li { color: #cbd5e0 !important; }
-    strong, b { color: #e2e8f0 !important; }
+    p, li { color: #C6CCC8 !important; }
+    strong, b { color: #EDEAE3 !important; }
   }
 
   .cv-section__title {
-    color: #e2e8f0 !important;
-    border-bottom-color: rgba(99, 179, 237, 0.20) !important;
+    color: #EDEAE3 !important;
+    border-bottom-color: #2A2F2E !important;
   }
 
   .cv-entry {
-    border-bottom-color: rgba(255, 255, 255, 0.06) !important;
+    border-bottom-color: #2A2F2E !important;
     &::after {
-      background: #63b3ed !important;
-      box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.20) !important;
+      background: #7FA39B !important;
+      box-shadow: none !important;
     }
   }
 
-  .cv-entry__left  { border-right-color: rgba(255, 255, 255, 0.08) !important; }
-  .cv-entry__org   { color: #e2e8f0 !important; }
-  .cv-entry__role  { color: #cbd5e0 !important; }
-  .cv-entry__date  { color: #90cdf4 !important; }
-  .cv-entry__link  { color: #90cdf4 !important; &:hover { color: #63b3ed !important; } }
+  .cv-entry__left  { border-right-color: #2A2F2E !important; }
+  .cv-entry__org   { color: #EDEAE3 !important; }
+  .cv-entry__role  { color: #C6CCC8 !important; }
+  .cv-entry__date  { color: #7FA39B !important; }
+  .cv-entry__link  { color: #7FA39B !important; &:hover { color: #A8C4BD !important; } }
   .cv-entry__right {
-    color: #cbd5e0 !important;
-    p, li { color: #cbd5e0 !important; }
-    strong { color: #e2e8f0 !important; }
+    color: #C6CCC8 !important;
+    p, li { color: #C6CCC8 !important; }
+    strong { color: #EDEAE3 !important; }
   }
-  .cv-entry__projects li strong { color: #90cdf4 !important; }
+  .cv-entry__projects li strong { color: #7FA39B !important; }
 
   .cv-skill-group {
-    background: rgba(15, 23, 42, 0.70) !important;
-    border-color: rgba(99, 179, 237, 0.15) !important;
+    background: #1B2022 !important;
+    border-color: #2A2F2E !important;
   }
-  .cv-skill-group__label { color: #90cdf4 !important; }
-  .cv-skill-group__items { color: #cbd5e0 !important; }
+  .cv-skill-group__label { color: #7FA39B !important; }
+  .cv-skill-group__items { color: #C6CCC8 !important; }
 
-  .cv-edu { border-bottom-color: rgba(255, 255, 255, 0.06) !important; }
-  .cv-edu__school { color: #e2e8f0 !important; }
-  .cv-edu__degree { color: #90cdf4 !important; }
-  .cv-edu__date   { color: #94a3b8 !important; }
-  .cv-edu__detail { color: #94a3b8 !important; }
+  .cv-edu { border-bottom-color: #2A2F2E !important; }
+  .cv-edu__school { color: #EDEAE3 !important; }
+  .cv-edu__degree { color: #7FA39B !important; }
+  .cv-edu__date   { color: #9CA9A5 !important; }
+  .cv-edu__detail { color: #9CA9A5 !important; }
 
   .cv-about__photo {
-    border-color: rgba(255, 255, 255, 0.15) !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.40) !important;
+    border-color: #2A2F2E !important;
+    box-shadow: none !important;
   }
   .cv-about__text {
-    color: #cbd5e0 !important;
-    p { color: #cbd5e0 !important; }
+    color: #C6CCC8 !important;
+    p { color: #C6CCC8 !important; }
   }
-  .cv-label { color: #e2e8f0 !important; }
+  .cv-label { color: #EDEAE3 !important; }
 }

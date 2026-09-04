@@ -17,25 +17,18 @@
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  background: rgba(37, 99, 235, 0.82);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  background: $accent;
+  border: 1px solid $accent !important;
   border-radius: 2px;
   cursor: pointer;
-  box-shadow:
-    0 4px 15px rgba(37, 99, 235, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: none;
   letter-spacing: 0.01em;
   -webkit-transition: $global-transition;
   transition: $global-transition;
 
   &:hover {
-    background: rgba(37, 99, 235, 0.95);
-    box-shadow:
-      0 6px 20px rgba(37, 99, 235, 0.4),
-      inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    transform: translateY(-1px);
+    background: mix(#000, $accent, 12%);
+    box-shadow: none;
   }
 
   .icon {
@@ -67,20 +60,19 @@
     font-size: 1em !important;
     font-weight: 500 !important;
     letter-spacing: 0.015em !important;
-    color: var(--adr-text, #4f46e5) !important;
-    border: 1px solid rgba(var(--adr-rgb, 99, 102, 241), 0.45) !important;
-    background: rgba(var(--adr-rgb, 99, 102, 241), 0.10) !important;
+    color: var(--adr-text, #2B4645) !important;
+    border: 1px solid rgba(var(--adr-rgb, 43, 70, 69), 0.40) !important;
+    background: transparent !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     box-shadow: none !important;
-    transition: background 0.18s ease, border-color 0.18s ease,
-                color 0.18s ease, box-shadow 0.18s ease !important;
+    transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease !important;
 
     &:hover {
-      color: var(--adr-text, #4f46e5) !important;
-      background: rgba(var(--adr-rgb, 99, 102, 241), 0.18) !important;
-      border-color: rgba(var(--adr-rgb, 99, 102, 241), 0.75) !important;
-      box-shadow: 0 4px 14px rgba(var(--adr-rgb, 99, 102, 241), 0.22) !important;
+      color: var(--adr-text, #2B4645) !important;
+      background: rgba(var(--adr-rgb, 43, 70, 69), 0.08) !important;
+      border-color: rgba(var(--adr-rgb, 43, 70, 69), 0.75) !important;
+      box-shadow: none !important;
       transform: none !important;
     }
   }

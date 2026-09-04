@@ -27,15 +27,11 @@
     }
   }
 
-  /* Glass effect — light mode only (dark mode reset in _mobile-sidebar.scss) */
+  /* Flat — light mode only (dark mode reset in _mobile-sidebar.scss) */
   @include breakpoint($large) {
-    background: rgba(255, 255, 255, 0.16);
-    backdrop-filter: blur(48px) saturate(180%);
-    -webkit-backdrop-filter: blur(48px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.70),
-      0 4px 20px rgba(0, 0, 0, 0.05);
+    background: transparent;
+    border: none;
+    box-shadow: none;
   }
 
   @include breakpoint($x-large) {
@@ -98,14 +94,11 @@
   img {
     max-width: 175px;
     border-radius: 50%;
-    box-shadow:
-      0 6px 24px rgba(31, 38, 135, 0.2),
-      0 0 0 3px rgba(255, 255, 255, 0.7),
-      0 0 0 5px $navy;
+    box-shadow: 0 0 0 1px $hairline, 0 0 0 2px $accent;
 
     @include breakpoint($large) {
       padding: 4px;
-      border: 2px solid rgba(255, 255, 255, 0.7);
+      border: none;
     }
   }
 }
@@ -189,12 +182,10 @@
   margin: 0;
   padding: 0.6em 1.1em;
   list-style-type: none;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(16px) saturate(160%);
-  -webkit-backdrop-filter: blur(16px) saturate(160%);
-  border: 1px solid rgba(var(--adr-rgb, 99, 102, 241), 0.18);
-  border-radius: 14px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.14), 0 2px 8px rgba(0, 0, 0, 0.06);
+  background: $paper;
+  border: 1px solid $hairline;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(28, 31, 29, 0.10);
   cursor: default;
 
   @include breakpoint($large) {
