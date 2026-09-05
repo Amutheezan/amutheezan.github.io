@@ -29,16 +29,6 @@ li.author__desktop {
 }
 
 /* ====================================================================
-   EXPANDED STATE — article fills full width
-   ==================================================================== */
-#main.page--expanded .page {
-  flex: 1 !important;
-  width: auto !important;
-  float: none !important;
-  margin: 0 !important;
-}
-
-/* ====================================================================
    Breadcrumb — fix visited-link colour bleeding in
    ==================================================================== */
 .breadcrumbs li a,

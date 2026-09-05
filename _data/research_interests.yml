@@ -1,32 +1,35 @@
-# Research interest tags — exactly the 5 listed on the about/home page.
+# Research interest tags — exactly the 6 listed on the about/home page.
 # id must match the hash used in /research/ links and collection frontmatter.
+# color is one of exactly three theme-consistent tiers (primary/secondary/
+# neutral, all shades of the site's slate-teal accent) — not a per-topic
+# rainbow — see _sass/_interest-tags.scss.
 
 - id: reinforcement-learning
   label: "Reinforcement Learning"
   icon: "fas fa-brain"
-  color: blue
+  color: secondary
 
 - id: combinatorial-optimization
   label: "Combinatorial Optimization"
   icon: "fas fa-cogs"
-  color: purple
+  color: neutral
 
 - id: multi-agent-systems
   label: "Multi-Agent Systems"
   icon: "fas fa-robot"
-  color: indigo
+  color: secondary
 
 - id: cyber-physical-systems
   label: "Cyber-Physical Systems"
   icon: "fas fa-microchip"
-  color: teal
+  color: primary
 
 - id: operational-research
   label: "Operational Research"
   icon: "fas fa-chart-line"
-  color: green
+  color: neutral
 
 - id: software-security
   label: "Software Security"
   icon: "fas fa-shield-alt"
-  color: rose
+  color: primary

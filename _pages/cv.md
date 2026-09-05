@@ -12,8 +12,8 @@ classes: wide cv-page
   <div class="cv-about">
     <img class="cv-about__photo" src="/images/DP.png" alt="Amutheezan Sivagnanam">
     <div class="cv-about__text">
-      <p>Hi, I'm Amutheezan Sivagnanam. I recently earned my Ph.D. in Informatics at Penn State, where I built AI tools that help buses run on time, vehicles find the best routes, and ambulances reach people faster.</p>
-      <p>My research combines deep reinforcement learning with classic optimization and real-world data so that systems can make smart decisions in seconds while keeping costs down.</p>
+      <p>Hi, I'm Amutheezan Sivagnanam. I'm currently a Postdoctoral Fellow at the University of Houston, working on software vulnerability dataset quality, automated vulnerability repair, and figure-of-speech-aware deception detection.</p>
+      <p>I earned my Ph.D. in Informatics at Penn State, where I built AI tools that help buses run on time, vehicles find the best routes, and ambulances reach people faster — combining deep reinforcement learning with classic optimization and real-world data so that systems can make smart decisions in seconds while keeping costs down.</p>
       <p>Along the way, I've published first-author papers at ICML, AAAI, and IJCAI, released open-source code for others to build on, and collaborated with industry partners to turn research ideas into working prototypes.</p>
     </div>
   </div>
@@ -23,6 +23,24 @@ classes: wide cv-page
 <div class="cv-section-wrap">
 <div class="cv-section">
   <h2 class="cv-section__title">Research Experience</h2>
+
+  <div class="cv-entry">
+    <div class="cv-entry__left">
+      <p class="cv-entry__org">University of Houston</p>
+      <p class="cv-entry__role">Postdoctoral Fellow</p>
+      <p class="cv-entry__date">2025 – Present</p>
+      <a class="cv-entry__link" href="https://www.uh.edu/">https://www.uh.edu/</a>
+    </div>
+    <div class="cv-entry__right">
+      <p class="cv-label">Research Focus:</p>
+      <ul>
+        <li>Software vulnerability dataset quality</li>
+        <li>Effectiveness of label error detection tools in the presence of near-duplicate and deliberately altered samples</li>
+        <li>Automated software vulnerability repair</li>
+        <li>Figure-of-speech-aware deception detection</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="cv-entry">
     <div class="cv-entry__left">

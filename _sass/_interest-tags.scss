@@ -1,8 +1,9 @@
 /* ==========================================================================
    RESEARCH INTEREST TAGS
-   Plain underlined labels — not glowing pill badges. Each modifier class
-   keeps a distinct (muted) underline/icon tint so the categories stay
-   scannable, without competing for attention like a colored badge would.
+   Plain underlined labels — not glowing pill badges. Exactly three
+   theme-consistent tiers (primary/secondary/neutral, all shades of the
+   site's slate-teal accent), not a per-topic rainbow, so tags stay
+   scannable without competing for attention like a colored badge would.
    ========================================================================== */
 
 .interest-tags {
@@ -35,15 +36,12 @@
     text-decoration: none !important;
   }
 
-  /* ── Colour variants — underline + icon tint only, no fill/glow ── */
+  /* ── Colour tiers — underline + icon tint only, no fill/glow.
+     Exactly three, all shades of the same slate-teal accent family. ── */
 
-  &--blue    { &:hover { color: #2B4645 !important; } i { color: #2B4645; } }
-  &--purple  { &:hover { color: #46605F !important; } i { color: #46605F; } }
-  &--green   { &:hover { color: #4B7A63 !important; } i { color: #4B7A63; } }
-  &--teal    { &:hover { color: #2B4645 !important; } i { color: #2B4645; } }
-  &--orange  { &:hover { color: #8A6A2F !important; } i { color: #8A6A2F; } }
-  &--indigo  { &:hover { color: #2B4645 !important; } i { color: #2B4645; } }
-  &--rose    { &:hover { color: #7A3B44 !important; } i { color: #7A3B44; } }
+  &--primary   { &:hover { color: $accent !important; } i { color: $accent; } }
+  &--secondary { &:hover { color: #46605F !important; } i { color: #46605F; } }
+  &--neutral   { &:hover { color: $ink-muted !important; } i { color: $ink-muted; } }
 }
 
 /* ── Dark mode ── */
@@ -56,12 +54,8 @@ html[data-theme="dark"] {
 
     i { color: #6B7A75; }
 
-    &--blue    { &:hover { color: #7FA39B !important; } i { color: #7FA39B; } }
-    &--purple  { &:hover { color: #9BB5AE !important; } i { color: #9BB5AE; } }
-    &--green   { &:hover { color: #A8CBB6 !important; } i { color: #A8CBB6; } }
-    &--teal    { &:hover { color: #7FA39B !important; } i { color: #7FA39B; } }
-    &--orange  { &:hover { color: #D8BC85 !important; } i { color: #D8BC85; } }
-    &--indigo  { &:hover { color: #7FA39B !important; } i { color: #7FA39B; } }
-    &--rose    { &:hover { color: #D6A3AA !important; } i { color: #D6A3AA; } }
+    &--primary   { &:hover { color: #7FA39B !important; } i { color: #7FA39B; } }
+    &--secondary { &:hover { color: #9BB5AE !important; } i { color: #9BB5AE; } }
+    &--neutral   { &:hover { color: #9CA9A5 !important; } i { color: #9CA9A5; } }
   }
 }
