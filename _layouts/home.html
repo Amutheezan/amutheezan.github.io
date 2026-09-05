@@ -24,7 +24,14 @@ layout: compress
       <div class="home-wrap home-hero__grid">
         <div>
           {% if page.hero_eyebrow %}<div class="home-hero__eyebrow">{{ page.hero_eyebrow }}</div>{% endif %}
-          {% if page.hero_heading %}<h1 class="home-hero__title">{{ page.hero_heading }}</h1>{% endif %}
+          {% assign hero_headings = site.data.hero_headings %}
+          {% if hero_headings.size > 0 %}
+            <h1 class="home-hero__title" id="home-hero-title">
+              {% for heading in hero_headings %}
+                <span class="home-hero__title-item{% if forloop.first %} is-active{% endif %}">{{ heading }}</span>
+              {% endfor %}
+            </h1>
+          {% endif %}
           {% if page.hero_lede %}<p class="home-hero__lede">{{ page.hero_lede }}</p>{% endif %}
           <div class="home-hero__links">
             {% if author.email %}<a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i>Email</a>{% endif %}

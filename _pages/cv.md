@@ -35,7 +35,7 @@ classes: wide cv-page
       <p class="cv-label">Research Focus:</p>
       <ul>
         <li>Software vulnerability dataset quality</li>
-        <li>Effectiveness of label error detection tools in the presence of near-duplicate and deliberately altered samples</li>
+        <li>Label error detection robustness to near-duplicate and tampered samples</li>
         <li>Automated software vulnerability repair</li>
         <li>Figure-of-speech-aware deception detection</li>
       </ul>

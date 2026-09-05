@@ -193,6 +193,7 @@ $home-hairline-strong: mix($hairline, $ink-muted, 60%);
 }
 
 .home-hero__title {
+  display: grid;
   font-family: $header-font-family;
   font-weight: 500;
   font-size: 48px;
@@ -209,6 +210,27 @@ $home-hairline-strong: mix($hairline, $ink-muted, 60%);
 
   @media (max-width: 760px) {
     font-size: 32px;
+  }
+}
+
+/* Rotating variants stack in the same grid cell so the tallest one sets
+   the box height — swapping text never shifts the layout. Default state
+   (no JS) shows only the first variant. */
+.home-hero__title-item {
+  grid-area: 1 / 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.9s ease;
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero__title-item {
+    transition: none;
   }
 }
 

@@ -10,7 +10,7 @@
 - title: "Label Error Detection Robustness"
   icon: "fas fa-tags"
   anchor: "label-error-detection-robustness"
-  description: "Studying the effectiveness of label error detection tools in the presence of near-duplicate and deliberately altered samples."
+  description: "How robust label error detection tools are to near-duplicate and tampered samples."
 
 - title: "Software Vulnerability Repair"
   icon: "fas fa-wrench"

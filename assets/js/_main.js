@@ -74,3 +74,34 @@ $(document).ready(function(){
   });
 
 });
+
+/* Rotating hero headline — cross-fades between the variants rendered by
+   _layouts/home.html. Vanilla JS, independent of jQuery being ready, and
+   a no-op when reduced motion is requested or fewer than two variants
+   exist (the first variant just stays visible via CSS). */
+(function () {
+  var ROTATE_MS = 4500;
+
+  function initHeroRotator() {
+    var items = document.querySelectorAll(".home-hero__title-item");
+    if (items.length < 2) { return; }
+
+    var reduceMotion = window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) { return; }
+
+    var current = 0;
+    setInterval(function () {
+      var next = (current + 1) % items.length;
+      items[current].classList.remove("is-active");
+      items[next].classList.add("is-active");
+      current = next;
+    }, ROTATE_MS);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initHeroRotator);
+  } else {
+    initHeroRotator();
+  }
+})();
