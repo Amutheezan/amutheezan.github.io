@@ -42,8 +42,9 @@
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-         {% if post.venue or post.core_rank or post.acceptance_rate or post.impact_factor %}
+         {% if post.venue or post.core_rank or post.acceptance_rate or post.impact_factor or post.first_author %}
          <p class="pub-badges">
+           {% if post.first_author and post.core_rank == 'A*' %}<span class="pub-badge pub-badge--first-author"><i class="fa fa-fw fa-award" aria-hidden="true"></i> First Author</span>{% endif %}
            {% if post.venue %}<span class="pub-badge pub-badge--venue"><i class="fa fa-fw fa-university" aria-hidden="true"></i> <span class="pub-badge__full">{{ post.venue }}</span><span class="pub-badge__short">{{ post.venue_short | default: post.venue }}</span></span>{% endif %}
            {% if post.core_rank %}<span class="pub-badge pub-badge--rank"><i class="fa fa-fw fa-star" aria-hidden="true"></i> CORE {{ post.core_rank }}</span>{% endif %}
            {% if post.acceptance_rate %}<span class="pub-badge pub-badge--rate"><i class="fa fa-fw fa-percent" aria-hidden="true"></i> Acceptance: {{ post.acceptance_rate }}</span>{% endif %}

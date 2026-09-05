@@ -1,9 +1,11 @@
 # Rotating hero headline variants shown on the homepage hero (_layouts/home.html).
-# One variant per current research thread (see _data/research-areas.yml).
+# One variant per current research thread (see _data/research-areas.yml), plus
+# one for PhD-era work. Kept short and matter-of-fact, not hyperbolic.
 # The first entry renders statically when JS is disabled or
 # prefers-reduced-motion is set, so keep it as the strongest standalone line.
 
-- "I make vulnerability data trustworthy, broken code repairable, and <em>deception impossible to hide</em>."
-- "I make label error detection <em>robust to tampering</em>."
-- "I teach models to patch software vulnerabilities before attackers ever <em>find them</em>."
-- "I read past the figures of speech models miss, so deception has <em>nowhere left to hide</em>."
+- "I work on <em>vulnerability data quality</em>, automated repair, and deception detection."
+- "I study how robust label error detection is to <em>near-duplicate and tampered</em> samples."
+- "I build automated repair methods for <em>software vulnerabilities</em>."
+- "I study deception detection that accounts for <em>figures of speech</em>."
+- "My Ph.D. applied deep reinforcement learning to <em>combinatorial optimization</em> in transportation."

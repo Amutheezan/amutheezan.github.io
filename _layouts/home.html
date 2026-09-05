@@ -5,8 +5,12 @@ layout: compress
 {% include base_path %}
 {% assign author = site.data.authors["Name Name"] %}
 {% assign nav_links = site.data.navigation["main"] %}
-{% assign recent_pubs = site.publications | sort: 'date' | reverse %}
-{% assign recent_pubs = recent_pubs | slice: 0, 3 %}
+{% assign starred_pubs = site.publications | where: 'first_author', true | where: 'core_rank', 'A*' | sort: 'date' | reverse %}
+{% if starred_pubs.size >= 3 %}
+  {% assign recent_pubs = starred_pubs | slice: 0, 3 %}
+{% else %}
+  {% assign recent_pubs = site.publications | sort: 'date' | reverse | slice: 0, 3 %}
+{% endif %}
 
 <!doctype html>
 <html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
@@ -112,7 +116,10 @@ layout: compress
           <div class="home-pub">
             <div>
               <h3 class="home-pub__title"><a href="{{ base_path }}{{ pub.permalink }}">{{ pub.title }}</a></h3>
-              <div class="home-pub__venue">{{ pub.venue_short | default: pub.venue }}{% if pub.date %} &middot; {{ pub.date | date: "%Y" }}{% endif %}</div>
+              <div class="home-pub__venue">
+                {{ pub.venue_short | default: pub.venue }}{% if pub.date %} &middot; {{ pub.date | date: "%Y" }}{% endif %}
+                {% if pub.first_author and pub.core_rank == 'A*' %}<span class="home-pub__badge"><i class="fas fa-star" aria-hidden="true"></i> First author &middot; CORE A*</span>{% endif %}
+              </div>
             </div>
             {% if pub.research_interests.first %}
               <span class="home-pub__tag">{{ pub.research_interests.first | replace: '-', ' ' | capitalize }}</span>

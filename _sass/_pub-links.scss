@@ -115,6 +115,13 @@ html[data-theme="dark"] .pub-link {
     border-color: rgba(91, 107, 103, 0.30);
     color: $ink-muted;
   }
+
+  &--first-author {
+    background: rgba(43, 70, 69, 0.14);
+    border-color: rgba(43, 70, 69, 0.45);
+    color: $accent;
+    font-weight: 700;
+  }
 }
 
 /* Venue badge: abbreviate on narrow screens, full name once there's room */
@@ -237,5 +244,11 @@ html[data-theme="dark"] .pub-badge {
     background: rgba(156, 169, 165, 0.14);
     border-color: rgba(156, 169, 165, 0.40);
     color: #9CA9A5;
+  }
+
+  &--first-author {
+    background: rgba(127, 163, 155, 0.22);
+    border-color: rgba(127, 163, 155, 0.55);
+    color: #7FA39B;
   }
 }
