@@ -4,7 +4,6 @@ layout: home
 title: "Biography"
 excerpt: "About me"
 hero_eyebrow: "Postdoctoral Fellow, University of Houston"
-hero_heading: "I make vulnerability data trustworthy, broken code repairable, and <em>deception impossible to hide</em>."
 hero_lede: "My research: vulnerability dataset quality, label error detection tool robustness under near-duplicates and deliberate alteration, automated vulnerability repair, and figure-of-speech-aware deception detection — built on a Ph.D. in deep RL for combinatorial optimization from Penn State's Applied AI Lab."
 redirect_from:
   - /about/
