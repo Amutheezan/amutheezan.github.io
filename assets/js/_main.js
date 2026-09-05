@@ -38,11 +38,6 @@ $(document).ready(function(){
     stickySideBar();
   });
 
-  /* Expand / collapse article to full width */
-  $(".page__expand-btn").on("click", function() {
-    $("#main").toggleClass("page--expanded");
-  });
-
   /* Follow menu drop down */
   $(".author__urls-wrapper button").on("click", function() {
     $(".author__urls").fadeToggle("fast", function() {});

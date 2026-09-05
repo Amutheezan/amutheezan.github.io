@@ -23,68 +23,6 @@
   padding-bottom: 0;
 }
 
-/* ---- Expand / fullscreen button ---- */
-article.page {
-  position: relative;
-}
-
-.page__expand-btn {
-  position: absolute;
-  top: 0.6rem;
-  right: 0.6rem;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  border-radius: 4px;
-  border: 1px solid $hairline;
-  background: $paper;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(var(--adr-rgb, 43, 70, 69), 0.75);
-  transition: background 0.18s, border-color 0.18s, color 0.18s;
-  z-index: 20;
-
-  svg {
-    width: 14px;
-    height: 14px;
-    display: block;
-    pointer-events: none;
-  }
-
-  .compress-icon {
-    display: none;
-  }
-
-  &:hover {
-    background: rgba(var(--adr-rgb, 43, 70, 69), 0.08);
-    border-color: rgba(var(--adr-rgb, 43, 70, 69), 0.5);
-    color: var(--adr-text, #2B4645);
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(var(--adr-rgb, 43, 70, 69), 0.3);
-  }
-}
-
-html[data-theme="dark"] .page__expand-btn {
-  background: #1B2022;
-  border-color: #2A2F2E;
-  color: var(--adr-text, #7FA39B);
-
-  &:hover {
-    background: rgba(var(--adr-rgb, 127, 163, 155), 0.14);
-    color: var(--adr-text, #7FA39B);
-  }
-}
-
-#main.page--expanded .page__expand-btn .compress-icon { display: block; }
-#main.page--expanded .page__expand-btn .expand-icon   { display: none; }
-
-/* ---- End expand button ---- */
-
 .page {
   width: 100%;
 

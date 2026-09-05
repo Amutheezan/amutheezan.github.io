@@ -30,21 +30,18 @@ author_profile: true
 .ri-filter-btn:hover { transform: translateY(-2px); text-decoration: none; }
 .ri-filter-btn.active { opacity: 1; }
 
-/* colour variants matching interest-tag--* */
-.ri-btn--blue   { background: rgba(37,99,235,0.10); border-color: rgba(37,99,235,0.45); color: #1d4ed8 !important; }
-.ri-btn--blue.active   { background: rgba(37,99,235,0.25); border-color: rgba(37,99,235,0.8); box-shadow: 0 4px 14px rgba(37,99,235,0.28); }
-.ri-btn--purple { background: rgba(124,58,237,0.10); border-color: rgba(124,58,237,0.45); color: #6d28d9 !important; }
-.ri-btn--purple.active { background: rgba(124,58,237,0.25); border-color: rgba(124,58,237,0.8); box-shadow: 0 4px 14px rgba(124,58,237,0.28); }
-.ri-btn--teal   { background: rgba(13,148,136,0.10); border-color: rgba(13,148,136,0.45); color: #0f766e !important; }
-.ri-btn--teal.active   { background: rgba(13,148,136,0.25); border-color: rgba(13,148,136,0.8); box-shadow: 0 4px 14px rgba(13,148,136,0.28); }
-.ri-btn--indigo { background: rgba(79,70,229,0.10); border-color: rgba(79,70,229,0.45); color: #4338ca !important; }
-.ri-btn--indigo.active { background: rgba(79,70,229,0.25); border-color: rgba(79,70,229,0.8); box-shadow: 0 4px 14px rgba(79,70,229,0.28); }
-.ri-btn--orange { background: rgba(234,88,12,0.10); border-color: rgba(234,88,12,0.45); color: #c2410c !important; }
-.ri-btn--orange.active { background: rgba(234,88,12,0.25); border-color: rgba(234,88,12,0.8); box-shadow: 0 4px 14px rgba(234,88,12,0.28); }
-.ri-btn--green  { background: rgba(21,128,61,0.10); border-color: rgba(21,128,61,0.45); color: #15803d !important; }
-.ri-btn--green.active  { background: rgba(21,128,61,0.25); border-color: rgba(21,128,61,0.8); box-shadow: 0 4px 14px rgba(21,128,61,0.28); }
-.ri-btn--rose   { background: rgba(190,24,93,0.10); border-color: rgba(190,24,93,0.45); color: #9f1239 !important; }
-.ri-btn--rose.active   { background: rgba(190,24,93,0.25); border-color: rgba(190,24,93,0.8); box-shadow: 0 4px 14px rgba(190,24,93,0.28); }
+/* colour tiers matching interest-tag--* — exactly three, all shades of
+   the site's slate-teal accent, not a per-topic rainbow */
+.ri-btn--primary   { background: rgba(43,70,69,0.08); border-color: rgba(43,70,69,0.35); color: #2B4645 !important; }
+.ri-btn--primary.active   { background: rgba(43,70,69,0.18); border-color: rgba(43,70,69,0.7); box-shadow: 0 4px 14px rgba(43,70,69,0.20); }
+.ri-btn--secondary { background: rgba(70,96,95,0.08); border-color: rgba(70,96,95,0.35); color: #46605F !important; }
+.ri-btn--secondary.active { background: rgba(70,96,95,0.18); border-color: rgba(70,96,95,0.7); box-shadow: 0 4px 14px rgba(70,96,95,0.20); }
+.ri-btn--neutral   { background: rgba(91,107,103,0.08); border-color: rgba(91,107,103,0.35); color: #5B6B67 !important; }
+.ri-btn--neutral.active   { background: rgba(91,107,103,0.18); border-color: rgba(91,107,103,0.7); box-shadow: 0 4px 14px rgba(91,107,103,0.20); }
+
+html[data-theme="dark"] .ri-btn--primary   { color: #7FA39B !important; }
+html[data-theme="dark"] .ri-btn--secondary { color: #9BB5AE !important; }
+html[data-theme="dark"] .ri-btn--neutral   { color: #9CA9A5 !important; }
 
 .ri-section { margin-bottom: 2.5rem; }
 .ri-section__title {
