@@ -2,17 +2,19 @@
    CV — Liquid Glass Cards  (sproogen-style two-column layout)
    ========================================================================== */
 
-/* ── Flat hairline card base (no glass, no glow) ─────────────────────────── */
+/* ── Section: plain hairline-topped block, matching .home-section
+   elsewhere on the site — no bordered/boxed card. ─────────────────────── */
 .cv-section {
   position: relative;
   background: transparent;
-  border: 1px solid $hairline;
-  border-radius: 4px;
+  border: none;
+  border-top: 1px solid $hairline;
   box-shadow: none;
-  padding: 1.6rem 2rem;
-  margin-bottom: 1.4rem;
+  padding: 2rem 0;
   overflow: visible;
   color: $darker-gray; // base text color for light mode — all children inherit
+
+  &:first-child { border-top: none; padding-top: 0; }
 }
 
 /* ── Section heading — matches the rest of the site's H2 treatment
@@ -220,7 +222,7 @@
 /* Mobile overrides — CV page only */
 body.cv-page {
   @media (max-width: 640px) {
-    .cv-section { padding: 1.1rem; border-radius: 12px; margin-bottom: 1rem; }
+    .cv-section { padding: 1.4rem 0; }
     .cv-section__title { font-size: 1.1rem; margin-bottom: 0.9rem; }
 
     .cv-about { grid-template-columns: 1fr; justify-items: center; gap: 0.9rem; }
