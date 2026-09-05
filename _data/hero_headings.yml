@@ -4,6 +4,6 @@
 # prefers-reduced-motion is set, so keep it as the strongest standalone line.
 
 - "I make vulnerability data trustworthy, broken code repairable, and <em>deception impossible to hide</em>."
-- "I chase down near-duplicate and deliberately altered samples that make label error detection <em>lie to itself</em>."
+- "I make label error detection <em>robust to tampering</em>."
 - "I teach models to patch software vulnerabilities before attackers ever <em>find them</em>."
 - "I read past the figures of speech models miss, so deception has <em>nowhere left to hide</em>."
