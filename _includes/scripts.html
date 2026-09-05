@@ -1,5 +1,32 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<!-- Mobile nav menu toggle — flat dropdown, no hamburger icon -->
+<script>
+(function () {
+  var menuBtn = document.getElementById('nav-menu-btn');
+  var navLinks = document.getElementById('nav-links');
+  if (!menuBtn || !navLinks) { return; }
+
+  function closeMenu() {
+    navLinks.classList.remove('is-open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  menuBtn.addEventListener('click', function () {
+    var open = navLinks.classList.toggle('is-open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  navLinks.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { closeMenu(); }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { closeMenu(); }
+  });
+})();
+</script>
+
 <!-- Dark mode toggle — single accent, no drawer -->
 <script>
 (function () {

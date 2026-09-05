@@ -14,11 +14,9 @@ author_profile: true
 
   {% assign shuffled_posts = posts | sort: "url" %}
 
-  <div class="post-grid" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+  <div class="archive-list">
     {% for post in shuffled_posts %}
-      <div class="post-item" style="flex: 1 1 calc(50% - 1rem); box-sizing: border-box;">
-        {% include archive-single.html %}
-      </div>
+      {% include archive-single.html %}
     {% endfor %}
   </div>
 {% endfor %}

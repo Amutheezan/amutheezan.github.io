@@ -6,6 +6,8 @@ author_profile: false
 ---
 
 {% include base_path %}
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="archive-list">
+  {% for post in site.pages %}
+    {% include archive-single.html %}
+  {% endfor %}
+</div>

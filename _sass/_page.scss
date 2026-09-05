@@ -3,28 +3,24 @@
    ========================================================================== */
 
 #main {
-  @include container;
-  @include clearfix;
-  /* width:100% ensures #main fills the viewport in a flex-column body
-     even though @include container adds margin:auto (which otherwise
-     prevents flex stretch on the cross axis). */
+  /* width:100% ensures #main fills the viewport in a flex-column body. */
   width: 100%;
   margin-top: 2.5em;
   margin-bottom: 1.5em;
-  padding-left: 1.25em;
-  padding-right: 1.25em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
   background: transparent;
-  border: 1px solid $hairline;
-  border-radius: 4px;
+  border: none;
   box-shadow: none;
+}
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
-  }
+/* Single-column content wrapper — matches the homepage's .home-wrap
+   (no sidebar, no card box, just a centered, generously-padded column). */
+.page-shell {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* ---- Expand / fullscreen button ---- */
@@ -90,11 +86,7 @@ html[data-theme="dark"] .page__expand-btn {
 /* ---- End expand button ---- */
 
 .page {
-  @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
-  }
+  width: 100%;
 
   .page__inner-wrap {
     @include full();

@@ -68,10 +68,77 @@ $home-hairline-strong: mix($hairline, $ink-muted, 60%);
     padding: 2px 0;
 
     &:hover { color: $accent; }
+
+    &.is-current {
+      color: $ink;
+      font-weight: 600;
+    }
   }
 
   @media (max-width: 760px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 8px 20px 16px;
+    background: $paper;
+    border-bottom: 1px solid $hairline;
     display: none;
+
+    &.is-open { display: flex; }
+
+    a { padding: 8px 0; width: 100%; }
+  }
+}
+
+.home-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-nav__icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid $hairline;
+  border-radius: 9999px;
+  background: transparent;
+  color: $ink-muted;
+  cursor: pointer;
+  transition: $global-transition;
+
+  &:hover {
+    color: $accent;
+    border-color: $accent;
+  }
+}
+
+.home-nav__menu-btn {
+  display: none;
+  border: 1px solid $hairline;
+  border-radius: 9999px;
+  background: transparent;
+  color: $ink-muted;
+  font-family: $global-font-family;
+  font-size: 12.5px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: $global-transition;
+
+  &:hover {
+    color: $accent;
+    border-color: $accent;
+  }
+
+  @media (max-width: 760px) {
+    display: inline-flex;
+    align-items: center;
   }
 }
 
@@ -458,7 +525,24 @@ html[data-theme="dark"] {
   }
 
   .home-nav__brand { color: $dark-ink !important; &:hover { color: $dark-accent !important; } }
-  .home-nav__links a { color: $dark-muted !important; &:hover { color: $dark-accent !important; } }
+  .home-nav__links {
+    background: $dark-bg !important;
+    border-bottom-color: $dark-hairline !important;
+
+    a { color: $dark-muted !important; &:hover { color: $dark-accent !important; }
+      &.is-current { color: $dark-ink !important; }
+    }
+  }
+  .home-nav__icon-btn {
+    border-color: $dark-hairline !important;
+    color: $dark-muted !important;
+    &:hover { color: $dark-accent !important; border-color: $dark-accent !important; }
+  }
+  .home-nav__menu-btn {
+    border-color: $dark-hairline !important;
+    color: $dark-muted !important;
+    &:hover { color: $dark-accent !important; border-color: $dark-accent !important; }
+  }
   .home-nav__theme-btn {
     border-color: $dark-hairline !important;
     color: $dark-muted !important;
