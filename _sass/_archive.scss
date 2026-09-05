@@ -4,15 +4,7 @@
 
 .archive {
   margin-bottom: 2em;
-
-  @include breakpoint($medium) {
-    @include span(12 of 12);
-  }
-
-  @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-  }
+  width: 100%;
 
   a {
     text-decoration: underline;
@@ -74,13 +66,19 @@
   }
 }
 
+/* Flat, hairline-divided row list — replaces the old bordered/shadowed
+   card treatment. Matches the homepage's .home-pub row language. */
+.archive-list {
+  border-top: 1px solid $hairline;
+}
+
 .archive__item {
   background: transparent;
-  border: 1px solid $hairline;
-  border-radius: 4px;
-  padding: 1.75rem 1.5rem 1.25rem;
-  margin-bottom: 1rem;
-  -webkit-transition: border-color 0.2s ease-in-out;
+  border: none;
+  border-bottom: 1px solid $hairline;
+  border-radius: 0;
+  padding: 22px 0;
+  margin-bottom: 0;
   transition: border-color 0.2s ease-in-out;
   box-shadow: none;
 }
@@ -94,7 +92,7 @@
   }
 
   .archive__item-title {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 

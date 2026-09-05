@@ -21,15 +21,16 @@
 /* -- Main content ----------------------------------------------------------- */
 #main {
   background: transparent !important;
-  border: 1px solid #E4DFD3 !important;
+  border: none !important;
   box-shadow: none !important;
-  transition: border-color .3s ease !important;
 }
 
-/* -- Archive cards ---------------------------------------------------------- */
+/* -- Archive rows — flat, hairline-divided list, no card box ---------------- */
 .archive__item {
   background: transparent !important;
-  border: 1px solid #E4DFD3 !important;
+  border: none !important;
+  border-bottom: 1px solid #E4DFD3 !important;
+  border-radius: 0 !important;
   box-shadow: none !important;
   transition: border-color .2s ease !important;
 
@@ -86,13 +87,15 @@ html[data-theme='dark'] {
 
   #main {
     background: transparent !important;
-    border-color: #2A2F2E !important;
+    border: none !important;
     box-shadow: none !important;
   }
 
   .archive__item {
     background: transparent !important;
-    border-color: #2A2F2E !important;
+    border: none !important;
+    border-bottom: 1px solid #2A2F2E !important;
+    border-radius: 0 !important;
 
     &:hover {
       background: transparent !important;
@@ -113,6 +116,7 @@ html[data-theme='dark'] {
   }
 
   .page__footer {
+    background: transparent !important;
     border-top-color: #2A2F2E !important;
   }
 }

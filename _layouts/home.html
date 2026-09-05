@@ -18,26 +18,7 @@ layout: compress
   <body class="home-page{% if page.classes %} {{ page.classes | join: ' ' }}{% endif %}">
 
     {% include browser-upgrade.html %}
-
-    <nav class="home-nav">
-      <div class="home-wrap">
-        <a href="{{ base_path }}/" class="home-nav__brand">{{ site.name }}</a>
-        <div class="home-nav__links">
-          {% for link in nav_links %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-            {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
-          {% endfor %}
-        </div>
-        <button class="home-nav__theme-btn" id="theme-toggle-btn" role="switch" aria-checked="true" aria-label="Toggle dark mode" title="Toggle dark mode">
-          <i class="fas fa-moon" id="theme-toggle-icon" aria-hidden="true"></i>
-          <span id="theme-toggle-label">Dark</span>
-        </button>
-      </div>
-    </nav>
+    {% include masthead.html %}
 
     <header class="home-hero">
       <div class="home-wrap home-hero__grid">

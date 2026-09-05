@@ -1,4 +1,16 @@
 {% include base_path %}
+{% assign author = site.data.authors["Name Name"] %}
+
+<!-- Slim author byline — replaces the old boxed sidebar profile that used
+     to appear next to article/archive content. -->
+<div class="site-footer__author">
+  {% if author.email %}<a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i>Email</a>{% endif %}
+  {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i>Google Scholar</a>{% endif %}
+  {% if site.author.orcid %}<a href="{{ site.author.orcid }}"><i class="ai ai-orcid" aria-hidden="true"></i>ORCID</a>{% endif %}
+  {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i>GitHub</a>{% endif %}
+  {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>LinkedIn</a>{% endif %}
+  {% if site.author.researchgate %}<a href="{{ site.author.researchgate }}"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i>ResearchGate</a>{% endif %}
+</div>
 
 <!--<div class="page__footer-follow">-->
 <!--  <ul class="social-icons">-->

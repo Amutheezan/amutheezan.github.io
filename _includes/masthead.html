@@ -8,40 +8,37 @@
 {% endif %}
 {% assign nav_links = site.data.navigation[nav_key] %}
 
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button id="greedy-nav-btn" class="greedy-nav__toggle-btn"><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/"><i class="fas fa-home" aria-hidden="true"></i> {{ site.title }}</a></li>
-          {% for link in nav_links %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-            {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            {% assign is_current = false %}
-            {% unless link.url contains 'http' %}
-              {% if link.url == '/' %}
-                {% if page.url == '/' %}{% assign is_current = true %}{% endif %}
-              {% elsif page.url contains link.url %}
-                {% assign is_current = true %}
-              {% endif %}
-            {% endunless %}
-            <li class="masthead__menu-item{% if is_current %} masthead__menu-item--current{% endif %}"><a href="{{ domain }}{{ link.url }}">{% if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i> {% endif %}{{ link.title }}</a></li>
-          {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
+<div class="masthead home-nav">
+  <div class="home-wrap">
+    <a href="{{ base_path }}/" class="home-nav__brand">{{ site.name }}</a>
+
+    <div class="home-nav__links" id="nav-links">
+      {% for link in nav_links %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = base_path %}
+        {% endif %}
+        {% assign is_current = false %}
+        {% unless link.url contains 'http' %}
+          {% if link.url == '/' %}
+            {% if page.url == '/' %}{% assign is_current = true %}{% endif %}
+          {% elsif page.url contains link.url %}
+            {% assign is_current = true %}
+          {% endif %}
+        {% endunless %}
+        <a href="{{ domain }}{{ link.url }}"{% if is_current %} class="is-current"{% endif %}>{{ link.title }}</a>
+      {% endfor %}
     </div>
-    <div class="masthead__controls">
-      <button class="srch-btn" id="srch-open-btn" aria-label="Search" title="Search (⌘K)">
+
+    <div class="home-nav__actions">
+      <button class="home-nav__icon-btn" id="srch-open-btn" aria-label="Search" title="Search (⌘K)">
         <i class="fas fa-search" aria-hidden="true"></i>
       </button>
-      <button class="appearance-btn" id="theme-toggle-btn" role="switch" aria-checked="true" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <button class="home-nav__menu-btn" id="nav-menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <button class="home-nav__theme-btn" id="theme-toggle-btn" role="switch" aria-checked="true" aria-label="Toggle dark mode" title="Toggle dark mode">
         <i class="fas fa-moon" id="theme-toggle-icon" aria-hidden="true"></i>
-        <span class="appearance-btn__label" id="theme-toggle-label">Dark</span>
+        <span id="theme-toggle-label">Dark</span>
       </button>
     </div>
   </div>
