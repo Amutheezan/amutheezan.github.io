@@ -21,16 +21,21 @@ research_interests: [operational-research, reinforcement-learning, cyber-physica
 **High-Level Overview of the Solution Approach**
 
 <pre class="mermaid">
-{% raw %}flowchart LR
-    NR["New Booking Request"] --> ENV(["Environment&lt;br/&gt;(call center)"])
-    ENV -- "1. Interrupt anytime solver" --> SOLV{{"Anytime VRP Solver"}}
-    SOLV -- "2. Store improved solution" --> DB[("Requests &amp; Routes")]
-    ENV -- "3. Send new request" --> AGENT(["DRL Agent"])
-    DB -- "4. Load latest solution" --> AGENT
-    AGENT -- "5. Determine tight pickup windows" --> ENV
-    ENV -- "6. Add request with tight pickup windows" --> DB
-    ENV -- "7. Trigger anytime solver" --> SOLV
-    DB -- "8. Load latest solution" --> SOLV{% endraw %}
+{% raw %}sequenceDiagram
+    participant ENV as Environment&lt;br/&gt;(call center)
+    participant AGENT as DRL Agent
+    participant SOLV as Anytime VRP Solver
+    participant DB as Requests &amp; Routes
+
+    Note over ENV: New Booking Request received
+    ENV->>SOLV: 1. Interrupt anytime solver
+    SOLV->>DB: 2. Store improved solution
+    ENV->>AGENT: 3. Send new request
+    DB->>AGENT: 4. Load latest solution
+    AGENT->>ENV: 5. Determine tight pickup windows
+    ENV->>DB: 6. Add request with tight pickup windows
+    ENV->>SOLV: 7. Trigger anytime solver
+    DB->>SOLV: 8. Load latest solution{% endraw %}
 </pre>
 
 ---
