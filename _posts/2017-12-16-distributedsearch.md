@@ -11,7 +11,7 @@ tags:
 ---
 
 This is a short descriptive post based on our project done for CS4262 Module, Distributed Systems at the University of
-Moratuwa. These particular wordings are my own words and thus may not be exactly the same as what I submitted as the final
+Moratuwa. These particular wordings are my own and thus may not be exactly the same as what I submitted as the final
 report for the course assignment.
 
 ### Implementation
@@ -22,10 +22,10 @@ We establish an unstructured peer-to-peer overlay. Our overlay network structure
 good results when the peers get killed iteratively. Each node will broadcast the search queries to all its peers. This
 is how the search query is propagating across the network.
 
-In this design, we need to handle the “query duplication” which is the cause to increase the message flow in the
+In this design, we need to handle the “query duplication” which causes an increase in the message flow in the
 network. We avoid query duplication by introducing a UUID in addition to the existing messaging protocol for search. (
 UUID is a 128-bit number which is expected to be produced randomly, but the probability of generating the same number
-again is nearly equal to zero, not zero, so we used this ID for a particular search query to not asked again on the same
+again is nearly equal to zero, not zero, so we used this ID for a particular search query to not be asked again on the same
 node)
 
 Our new protocol.
@@ -49,7 +49,7 @@ location in nodes. Then further searches on the same files can be obtained quick
 But this will raise another problem, such as the file collection becoming outdated over time. Since (N>>Q), the gain we get from
 broadcasting must outweigh the cost of broadcasting. So when sending the request, nodes may apply a biased random walk
 rather than broadcasting the query to all nodes. This will reduce the latency and hops considerably due to reduced message
-flows in all nodes with fewer amount of requests.
+flows in all nodes with a smaller amount of requests.
 
 #### If the number of nodes (N) is much larger than the number of queries (Q) (N >> Q)
 
@@ -66,11 +66,11 @@ We can apply the **super-peer**, which contains all the resources and only the s
 We can also share file collection in order to have a biased random walk between super peers. This will significantly
 reduce the number of messages, latency, and hop count for query resolution.
 
-My Implementation can be found in the [repo](https://github.com/Amutheezan/DistributedSearch).
+My implementation can be found in the [repo](https://github.com/Amutheezan/DistributedSearch).
 
 #### Performance Analysis.
 
-My implementation has two versions
+My implementation has two versions:
 
 1. udp (check the ``udp`` branch of the repo)
 2. webservice (check the ``ws`` branch of the repo)
@@ -80,7 +80,7 @@ My implementation has two versions
 We tried 50 sample queries in three selected nodes and got the minimum, maximum, average, and standard deviation for
 hops, latency, node degree, and message count per node in different cases (1. all nodes are running, 2. one node is gracefully
 departed, 3. two nodes are gracefully departed). Nodes are using UDP sockets for communicating between them. At the end
-of each case, we gracefully left one node and continued with the next iteration. And we obtained the following results
+of each case, we gracefully left one node and continued with the next iteration. And we obtained the following results:
 
 <div class="figure-card"><img src="https://lh5.googleusercontent.com/W8igfNHPirsNIT-T2LjN4pZ2R-lka_sWaGJqXM4s33bwIb0-zxwsyUZYSIc5Qd89AQve8eCgoFR6NPuzjNbhscuKV4imw8emVyaXyq631u11vyS0Ho69PS9zKETA8LxBJgd-LiIF" alt="Chart"></div><div class="figure-card"><img src="https://lh6.googleusercontent.com/8J6JxdKQoxIraRS5Lu1cYhY9TB9lTYB8EH0eMnkHrCc7zq1AkXv5e8B1T_YrL6i95CNK36pKrpzF7C_XJZPzn_ohARgSmzd4cXFao7NRvpEi0eDruf8LUCc7TpRRgYkE5DUj6Syi" alt="Chart"></div>
 
@@ -96,7 +96,7 @@ the following results
 
 <div class="figure-card"><img src="https://lh5.googleusercontent.com/_EivtGlQY1l_M5VQ1-FOzznshr0Pfa62CG6U2vOomRqooPltWeLjdmfHB3cVeuIPUc9cAv69W4HpfhJ7QV6uWo73NG_UI6T2ybWcvuWxcYXkrCrRkpDqywwQfuujSfdqUPxHqA-3" alt="Chart"></div><div class="figure-card"><img src="https://lh3.googleusercontent.com/6gquXSrmCuN0EqJ8ijQTLfQDJ4QETVPVr3P-PpJPRF1PE2f8lTxiv3r1AHtVbFs00A6uNCb-_R7sPajSRwkCUofg9ltEzcD4AgYSd_aq3mAYFop3_4AsdbbbS_1Sw7KdM1wZU0Bf" alt="Chart"></div><div class="figure-card"><img src="https://lh4.googleusercontent.com/Xt181qjM3MhZd4p6hONx-BfHcSrra93kVZtP_X1lDmXP0NiH_YeqxozP7JoCmguCfpNUeWkJ8Y0Q2cf-yCtVF_gwAw9b6B48paxSLKOL5UOp5Op4-DMdy-PaFg06hnk0SHlT46J7" alt="Chart"></div><div class="figure-card"><img src="https://lh3.googleusercontent.com/s7NTmoMgAmDIxQMza1MM8igeji7O0rTwd-bjUL31fj5mXndDAtqKdZRujbtMnQ67hh1R37oZ9F3Oj2685VzSaqmlLMKnKUkkZvFSTGYhi3r6gObfCmGybYOBeYagolEw6eiZ_Oii" alt="Chart"></div>
 
-Hope you enjoy this post
+I hope you enjoy this post.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTU4NzA5NzY2Niw5MzM4MDMyNDYsNjc2OT
 Q0MTNdfQ==

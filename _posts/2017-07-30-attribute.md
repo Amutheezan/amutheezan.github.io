@@ -16,9 +16,9 @@ This post is compiled based on the following
 stackoverflow [question and answer section](https://stackoverflow.com/questions/46126792/quickest-sorting-mechanism-for-sorting-by-multiple-predicates-in-python).
 
 I came across the issue while I needed to sort a list of prediction probabilities and weights of tweets for adding them
-as iteration list for semi-supervised methodology called "Self-training".
+as an iteration list for a semi-supervised methodology called "Self-training".
 
-When I was randomly picking the first, n number of tweets, it cost around 2 hrs for about 40 iterations and 5 hrs for
+When I was randomly picking the first n number of tweets, it cost around 2 hrs for about 40 iterations and 5 hrs for
 around 100 iterations.
 
 I implemented the following changes to do the sorting,
@@ -30,7 +30,7 @@ c = sorted(b, key=lambda x: x[2], reverse=True);
 ```
 
 But it takes more than 5 hrs for 20 iterations itself, and I searched in StackOverflow and obtained two sets of
-formulas, tested them, and compared the time differences. following are those two sets of formulas
+formulas, tested them, and compared the time differences. Following are those two sets of formulas:
 
 ```python
 s = sorted(a, key=lambda x: (x[2], x[1]), reverse=True);
