@@ -11,17 +11,17 @@ tags:
 ---
 
 This content is based on the issue I faced while doing analysis of the arbitrary attributes of HL7. It is common in cases
-where arbitrary attributes are similar to those of HL7
+where arbitrary attributes are similar to those of HL7.
 
 When we are fetching data in WSO2 **DAS** through **ESB** from HAPI test-panel, we are also getting arbitrary attributes
 related to HL7 Messaging, in addition to existing attributes related to message flow. These arbitrary attributes are for the
-content of the message passed, it contains a detailed classification of each element of HL7 messages that were
+content of the message passed; they contain a detailed classification of each element of HL7 messages that were
 transmitted.
 
 For better use of HL7 messaging, we need to analyze these messages by indexing these arbitrary fields. We can
-add this arbitrary field as a normal or generic arbitrary field. But when we are analyzing we can't directly use them.
+add this arbitrary field as a normal or generic arbitrary field. But when we are analyzing, we can't directly use them.
 
-It is because these arbitrary fields consist of ```.```, which causes the following error
+It is because these arbitrary fields consist of ```.```, which causes the following error.
 
 ```java
 Caused by: org.apache.spark.sql.AnalysisException: cannot resolve '_MSH.MessageType' given input columns: 
@@ -29,5 +29,5 @@ Caused by: org.apache.spark.sql.AnalysisException: cannot resolve '_MSH.MessageT
 operation_name, message_direction, status];
 ```
 
-To resolve this error we need to add ```**`**``` this while doing **COUNT** or **SELECT** or **INSERT** query (not
-essentially require for **CREATE** schema) in spark.
+To resolve this error, we need to add ```**`**``` while doing a **COUNT**, **SELECT**, or **INSERT** query (not
+strictly required for **CREATE** schema) in spark.

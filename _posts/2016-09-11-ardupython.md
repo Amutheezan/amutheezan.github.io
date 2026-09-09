@@ -17,8 +17,8 @@ This article explains the steps associated with configuring ```MySQL``` for Ardu
 
 ### Steps
 
-1. First install ```XAMPP```/```WAMP```. Then open its control panel and start ```Apache``` and ```MySQL``` servers.
-   After that, click the admin button and goto ```PHPMyAdmin``` and create the database to store the data.
+1. First install ```XAMPP```/```WAMP```. Then open its control panel and start the ```Apache``` and ```MySQL``` servers.
+   After that, click the admin button and go to ```PHPMyAdmin``` and create the database to store the data.
 
 2. Install Python 2.7, and install ```pyserial```, ```MYSQLdb``` libraries.
 
