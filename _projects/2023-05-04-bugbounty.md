@@ -22,6 +22,20 @@ research_interests: [software-security]
 
 ---
 
+**High-Level Overview of the Solution Approach**
+
+<pre class="mermaid">
+{% raw %}flowchart LR
+    SRC["Monorail API, Release Notes,&lt;br/&gt;Chrome Hall of Fame"] --> CLEAN["Data Cleaning&lt;br/&gt;(Reporters, Duplicates, Patch Timing)"]
+    CLEAN --> DB[("SQLite Database:&lt;br/&gt;Issues &amp; Comments")]
+    DB --> ANALYSIS["Empirical Analysis of&lt;br/&gt;Vulnerability Reward Program"]
+    ANALYSIS --> INSIGHT1["Stable Releases Are Harder to Detect"]
+    ANALYSIS --> INSIGHT2["Bug Bounties Complement&lt;br/&gt;Internal Security Teams"]
+    ANALYSIS --> INSIGHT3["Guidance for Bug Hunters"]{% endraw %}
+</pre>
+
+---
+
 ### 📝 Publication
 
 This work is published in the **Proceedings of the ACM Web Conference 2023 (WWW '23)**:  
