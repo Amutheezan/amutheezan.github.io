@@ -308,6 +308,15 @@ html[data-theme="dark"] {
     color: #9CA9A5;
   }
 
+  /* --- Related posts --- */
+  .page__related {
+    border-top-color: #2A2F2E;
+  }
+
+  .page__related-title {
+    color: #EDEAE3;
+  }
+
   /* --- Breadcrumbs --- */
   .breadcrumbs ol {
     background: transparent;
