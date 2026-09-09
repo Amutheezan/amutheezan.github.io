@@ -19,7 +19,19 @@ research_interests: [operational-research, reinforcement-learning, cyber-physica
 ---
 
 **High-Level Overview of the Solution Approach**
-![image](https://amutheezan.com/images/IJCAISolutionApproach.png)
+
+<pre class="mermaid">
+{% raw %}flowchart LR
+    NR["New Booking Request"] --> ENV(["Environment&lt;br/&gt;(call center)"])
+    ENV -- "1. Interrupt anytime solver" --> SOLV{{"Anytime VRP Solver"}}
+    SOLV -- "2. Store improved solution" --> DB[("Requests &amp; Routes")]
+    ENV -- "3. Send new request" --> AGENT(["DRL Agent"])
+    DB -- "4. Load latest solution" --> AGENT
+    AGENT -- "5. Determine tight pickup windows" --> ENV
+    ENV -- "6. Add request with tight pickup windows" --> DB
+    ENV -- "7. Trigger anytime solver" --> SOLV
+    DB -- "8. Load latest solution" --> SOLV{% endraw %}
+</pre>
 
 ---
 

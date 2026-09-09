@@ -52,6 +52,35 @@
   font-size: $type-size-4;
 }
 
+/* Figures that can't be re-themed (raster diagrams with baked-in text/
+   colors, e.g. architecture or map figures) — a fixed light frame keeps
+   them legible on a dark page instead of a jarring white box floating
+   on black. Diagrams that CAN follow the theme should use a Mermaid
+   <pre class="mermaid"> block instead (see _includes/scripts.html),
+   which needs no card since it already matches the page background. */
+.figure-card {
+  background: #FAF8F4;
+  border: 1px solid #E4DFD3;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 1.4em 0;
+  overflow-x: auto;
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+pre.mermaid {
+  margin: 1.4em 0;
+  overflow-x: auto;
+  text-align: center;
+
+  svg { max-width: 100%; }
+}
+
 .page__content {
 
   h2 {
