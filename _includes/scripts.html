@@ -62,6 +62,65 @@
 })();
 </script>
 
+<!-- Mermaid diagrams — re-themed to match the site's palette on load and
+     whenever the dark-mode toggle flips data-theme, since Mermaid bakes
+     colors into the rendered SVG at render time. -->
+<script>
+(function () {
+  if (typeof mermaid === 'undefined') { return; }
+
+  var LIGHT_VARS = {
+    background: '#FAF8F4',
+    primaryColor: '#FAF8F4',
+    primaryTextColor: '#1C1F1D',
+    primaryBorderColor: '#2B4645',
+    lineColor: '#2B4645',
+    secondaryColor: '#E4DFD3',
+    secondaryTextColor: '#1C1F1D',
+    tertiaryColor: '#FFFFFF',
+    fontFamily: 'Inter, sans-serif'
+  };
+
+  var DARK_VARS = {
+    background: '#14181A',
+    primaryColor: '#1B2022',
+    primaryTextColor: '#EDEAE3',
+    primaryBorderColor: '#7FA39B',
+    lineColor: '#7FA39B',
+    secondaryColor: '#2A2F2E',
+    secondaryTextColor: '#EDEAE3',
+    tertiaryColor: '#1B2022',
+    fontFamily: 'Inter, sans-serif'
+  };
+
+  function currentVars() {
+    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    return isDark ? DARK_VARS : LIGHT_VARS;
+  }
+
+  function renderDiagrams() {
+    var nodes = document.querySelectorAll('pre.mermaid');
+    if (!nodes.length) { return; }
+    nodes.forEach(function (node) {
+      if (!node.getAttribute('data-src')) {
+        node.setAttribute('data-src', node.textContent);
+      }
+      node.removeAttribute('data-processed');
+      node.textContent = node.getAttribute('data-src');
+    });
+    mermaid.initialize({ startOnLoad: false, theme: 'base', themeVariables: currentVars() });
+    nodes.forEach(function (node) { mermaid.init(undefined, node); });
+  }
+
+  renderDiagrams();
+
+  new MutationObserver(renderDiagrams).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme']
+  });
+})();
+</script>
+
 <!-- Publication / Project link button icons -->
 <script>
 (function () {

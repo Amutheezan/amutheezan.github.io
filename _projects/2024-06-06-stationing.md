@@ -20,21 +20,24 @@ research_interests: [operational-research, reinforcement-learning, cyber-physica
 ---
 
 ### 🔍 High-Level Overview of the SOTA Approach with Hierarchical Coordination
-![High-Level Process](https://amutheezan.com/images/FullProcessImage.png)
+
+<div class="figure-card"><img src="https://amutheezan.com/images/FullProcessImage.png" alt="High-Level Process"></div>
 
 This diagram illustrates our state-of-the-art hierarchical coordination framework that combines queuing-based city-scale redistributions and MCTS-based region-level reallocations of responders.
 
 ---
 
 ### 🧠 Region-Level Reallocation via DDPG Training
-![Region-Level Training](https://amutheezan.com/images/LLPTraining.png)
+
+<div class="figure-card"><img src="https://amutheezan.com/images/LLPTraining.png" alt="Region-Level Training"></div>
 
 Leveraged DDPG to train agents that perform **region-level reallocation** of responders, enabling efficient adaptation to changing demand at a broader geographic scale.
 
 ---
 
 ### 🏙️ City-Level Redistribution via DDPG Training
-![City-Level Training](https://amutheezan.com/images/HLPTraining.png)
+
+<div class="figure-card"><img src="https://amutheezan.com/images/HLPTraining.png" alt="City-Level Training"></div>
 
 At the city scale, DDPG is used to train agents for **fine-grained redistribution** of responders, allowing precise real-time response in dense urban environments.
 
