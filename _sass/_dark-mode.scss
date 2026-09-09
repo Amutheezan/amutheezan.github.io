@@ -172,9 +172,9 @@ html[data-theme="dark"] {
   /* --- Code blocks (syntax highlighting — One Dark) --- */
   div.highlighter-rouge,
   figure.highlight {
-    background-color: #1a1f2e;
-    border-color: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.40);
+    background-color: #1B2022;
+    border-color: #2A2F2E;
+    box-shadow: none;
 
     &:before {
       background-color: rgba(255, 255, 255, 0.07);

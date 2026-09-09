@@ -16,7 +16,7 @@ report for the course assignment.
 
 ### Implementation
 
-![](https://lh5.googleusercontent.com/rrB9txWqf-1HsZCH8Oq2kbjJAN-DfM5JLWw8b2s2yHPjRTn-uHt6mM4xkLq6MOc2nNM3i4jL3NjKHJACjTdh-nuOzfglTbvzpqNZctqxfZ1m8F8c1jz0L4A1HV7fiOmasMVeyPO0)
+<div class="figure-card"><img src="https://lh5.googleusercontent.com/rrB9txWqf-1HsZCH8Oq2kbjJAN-DfM5JLWw8b2s2yHPjRTn-uHt6mM4xkLq6MOc2nNM3i4jL3NjKHJACjTdh-nuOzfglTbvzpqNZctqxfZ1m8F8c1jz0L4A1HV7fiOmasMVeyPO0" alt="Distributed search benchmark chart"></div>
 
 We establish an unstructured peer-to-peer overlay. Our overlay network structure is similar to the figure. This gives us
 good results when the peers get killed iteratively. Each node will broadcast the search queries to all its peers. This
@@ -82,9 +82,9 @@ hops, latency, node degree, and message count per node in different cases (1. al
 departed, 3. two nodes are gracefully departed). Nodes are using UDP sockets for communicating between them. At the end
 of each case, we gracefully left one node and continued with the next iteration. And we obtained the following results
 
-![](https://lh5.googleusercontent.com/W8igfNHPirsNIT-T2LjN4pZ2R-lka_sWaGJqXM4s33bwIb0-zxwsyUZYSIc5Qd89AQve8eCgoFR6NPuzjNbhscuKV4imw8emVyaXyq631u11vyS0Ho69PS9zKETA8LxBJgd-LiIF "Chart")![](https://lh6.googleusercontent.com/8J6JxdKQoxIraRS5Lu1cYhY9TB9lTYB8EH0eMnkHrCc7zq1AkXv5e8B1T_YrL6i95CNK36pKrpzF7C_XJZPzn_ohARgSmzd4cXFao7NRvpEi0eDruf8LUCc7TpRRgYkE5DUj6Syi "Chart")
+<div class="figure-card"><img src="https://lh5.googleusercontent.com/W8igfNHPirsNIT-T2LjN4pZ2R-lka_sWaGJqXM4s33bwIb0-zxwsyUZYSIc5Qd89AQve8eCgoFR6NPuzjNbhscuKV4imw8emVyaXyq631u11vyS0Ho69PS9zKETA8LxBJgd-LiIF" alt="Chart"></div><div class="figure-card"><img src="https://lh6.googleusercontent.com/8J6JxdKQoxIraRS5Lu1cYhY9TB9lTYB8EH0eMnkHrCc7zq1AkXv5e8B1T_YrL6i95CNK36pKrpzF7C_XJZPzn_ohARgSmzd4cXFao7NRvpEi0eDruf8LUCc7TpRRgYkE5DUj6Syi" alt="Chart"></div>
 
-![](https://lh4.googleusercontent.com/pmZoNTc6kGsFqOVLwGYwB65vnxqGnYkgpQBDY4DcBpaXJ0r7ULzHxgQq6KIDeZ1zFN2kiGI3kfxvCobOkMx37ptQRdiCnFy8w48JQR111jawl5ytuFkrVqIY2X9Zh9reoF9uUwKB "Chart")![](https://lh3.googleusercontent.com/JVMDX3bKwNq9clX_5SLsZJ4jf6Hf7-nMs9FHA6lj6NtzMintZ1aIHhO_SXPE2IAqyG4KdlBE2avbr4eQK71DByhtzZBtdvobj1K1X0LCh9sqjnde6yUuNlZsWET8nTy9zlrZuPis "Chart")
+<div class="figure-card"><img src="https://lh4.googleusercontent.com/pmZoNTc6kGsFqOVLwGYwB65vnxqGnYkgpQBDY4DcBpaXJ0r7ULzHxgQq6KIDeZ1zFN2kiGI3kfxvCobOkMx37ptQRdiCnFy8w48JQR111jawl5ytuFkrVqIY2X9Zh9reoF9uUwKB" alt="Chart"></div><div class="figure-card"><img src="https://lh3.googleusercontent.com/JVMDX3bKwNq9clX_5SLsZJ4jf6Hf7-nMs9FHA6lj6NtzMintZ1aIHhO_SXPE2IAqyG4KdlBE2avbr4eQK71DByhtzZBtdvobj1K1X0LCh9sqjnde6yUuNlZsWET8nTy9zlrZuPis" alt="Chart"></div>
 
 ##### REST API/WS
 
@@ -94,7 +94,7 @@ gracefully departed, 3. two nodes are gracefully departed). Nodes are using REST
 between them. At the end of each case, we gracefully left one node and continued with the next iteration. And we obtained
 the following results
 
-![](https://lh5.googleusercontent.com/_EivtGlQY1l_M5VQ1-FOzznshr0Pfa62CG6U2vOomRqooPltWeLjdmfHB3cVeuIPUc9cAv69W4HpfhJ7QV6uWo73NG_UI6T2ybWcvuWxcYXkrCrRkpDqywwQfuujSfdqUPxHqA-3 "Chart")![](https://lh3.googleusercontent.com/6gquXSrmCuN0EqJ8ijQTLfQDJ4QETVPVr3P-PpJPRF1PE2f8lTxiv3r1AHtVbFs00A6uNCb-_R7sPajSRwkCUofg9ltEzcD4AgYSd_aq3mAYFop3_4AsdbbbS_1Sw7KdM1wZU0Bf "Chart")![](https://lh4.googleusercontent.com/Xt181qjM3MhZd4p6hONx-BfHcSrra93kVZtP_X1lDmXP0NiH_YeqxozP7JoCmguCfpNUeWkJ8Y0Q2cf-yCtVF_gwAw9b6B48paxSLKOL5UOp5Op4-DMdy-PaFg06hnk0SHlT46J7 "Chart")![](https://lh3.googleusercontent.com/s7NTmoMgAmDIxQMza1MM8igeji7O0rTwd-bjUL31fj5mXndDAtqKdZRujbtMnQ67hh1R37oZ9F3Oj2685VzSaqmlLMKnKUkkZvFSTGYhi3r6gObfCmGybYOBeYagolEw6eiZ_Oii "Chart")
+<div class="figure-card"><img src="https://lh5.googleusercontent.com/_EivtGlQY1l_M5VQ1-FOzznshr0Pfa62CG6U2vOomRqooPltWeLjdmfHB3cVeuIPUc9cAv69W4HpfhJ7QV6uWo73NG_UI6T2ybWcvuWxcYXkrCrRkpDqywwQfuujSfdqUPxHqA-3" alt="Chart"></div><div class="figure-card"><img src="https://lh3.googleusercontent.com/6gquXSrmCuN0EqJ8ijQTLfQDJ4QETVPVr3P-PpJPRF1PE2f8lTxiv3r1AHtVbFs00A6uNCb-_R7sPajSRwkCUofg9ltEzcD4AgYSd_aq3mAYFop3_4AsdbbbS_1Sw7KdM1wZU0Bf" alt="Chart"></div><div class="figure-card"><img src="https://lh4.googleusercontent.com/Xt181qjM3MhZd4p6hONx-BfHcSrra93kVZtP_X1lDmXP0NiH_YeqxozP7JoCmguCfpNUeWkJ8Y0Q2cf-yCtVF_gwAw9b6B48paxSLKOL5UOp5Op4-DMdy-PaFg06hnk0SHlT46J7" alt="Chart"></div><div class="figure-card"><img src="https://lh3.googleusercontent.com/s7NTmoMgAmDIxQMza1MM8igeji7O0rTwd-bjUL31fj5mXndDAtqKdZRujbtMnQ67hh1R37oZ9F3Oj2685VzSaqmlLMKnKUkkZvFSTGYhi3r6gObfCmGybYOBeYagolEw6eiZ_Oii" alt="Chart"></div>
 
 Hope you enjoy this post
 <!--stackedit_data:
