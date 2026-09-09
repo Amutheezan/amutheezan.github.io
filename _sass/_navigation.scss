@@ -100,7 +100,7 @@
    ========================================================================== */
 
 .pagination {
-  @include full();
+  width: 100%;
   @include clearfix();
   margin-top: 1em;
   padding-top: 1em;
