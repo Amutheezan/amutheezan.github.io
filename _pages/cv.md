@@ -26,6 +26,7 @@ classes: wide cv-page
 
   <div class="cv-entry">
     <div class="cv-entry__left">
+      <img class="cv-entry__logo" src="/images/logos/uh.svg" alt="University of Houston logo">
       <p class="cv-entry__org">University of Houston</p>
       <p class="cv-entry__role">Postdoctoral Fellow</p>
       <p class="cv-entry__date">Nov 2025 – Present</p>
@@ -57,6 +58,7 @@ classes: wide cv-page
 
   <div class="cv-entry">
     <div class="cv-entry__left">
+      <img class="cv-entry__logo" src="/images/logos/psu.png" alt="Penn State logo">
       <p class="cv-entry__org">Pennsylvania State University</p>
       <p class="cv-entry__role">Graduate Research Assistant</p>
       <p class="cv-entry__date">August 2022 – May 2025</p>
@@ -85,6 +87,7 @@ classes: wide cv-page
 
   <div class="cv-entry">
     <div class="cv-entry__left">
+      <img class="cv-entry__logo" src="/images/logos/uh.svg" alt="University of Houston logo">
       <p class="cv-entry__org">University of Houston</p>
       <p class="cv-entry__role">Graduate Research Assistant</p>
       <p class="cv-entry__date">September 2019 – August 2022</p>
@@ -122,6 +125,7 @@ classes: wide cv-page
 
   <div class="cv-entry">
     <div class="cv-entry__left">
+      <img class="cv-entry__logo" src="/images/logos/uh.svg" alt="University of Houston logo">
       <p class="cv-entry__org">University of Houston</p>
       <p class="cv-entry__role">Guest Lecturer</p>
       <p class="cv-entry__date">Spring 2026</p>
@@ -147,6 +151,7 @@ classes: wide cv-page
 
   <div class="cv-entry">
     <div class="cv-entry__left">
+      <img class="cv-entry__logo" src="/images/logos/lseg.svg" alt="LSEG logo">
       <p class="cv-entry__org">LSEG Technology</p>
       <p class="cv-entry__role">Software Engineer</p>
       <p class="cv-entry__date">Jan 2018 – Jul 2019</p>
@@ -173,6 +178,7 @@ classes: wide cv-page
 
   <div class="cv-entry">
     <div class="cv-entry__left">
+      <img class="cv-entry__logo" src="/images/logos/wso2.png" alt="WSO2 logo">
       <p class="cv-entry__org">WSO2 Lanka (Pvt) Ltd</p>
       <p class="cv-entry__role">Software Engineering Intern</p>
       <p class="cv-entry__date">Jul 2016 – Dec 2016</p>
