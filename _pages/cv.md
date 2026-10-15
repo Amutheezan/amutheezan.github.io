@@ -274,25 +274,7 @@ classes: wide cv-page
 <!-- TALKS -->
 <div class="cv-section">
   <h2 class="cv-section__title">Talks</h2>
-
-  <div class="cv-edu">
-    <p class="cv-edu__school">IJCAI (Vienna, Austria)</p>
-    <span class="cv-edu__date">2022</span>
-    <p class="cv-edu__degree">Offline Vehicle Routing Problem with Online Bookings: A Novel Problem Formulation with Applications to Paratransit</p>
-  </div>
-
-  <div class="cv-edu">
-    <p class="cv-edu__school">WEIS (Virtual Workshop)</p>
-    <span class="cv-edu__date">2021</span>
-    <p class="cv-edu__degree">On the Benefits of Bug Bounty Programs: A Study of Chromium Vulnerabilities</p>
-  </div>
-
-  <div class="cv-edu">
-    <p class="cv-edu__school">AAAI (Virtual Conference)</p>
-    <span class="cv-edu__date">2021</span>
-    <p class="cv-edu__degree">Minimizing Energy Use of Mixed-Fleet Public Transit for Fixed-Route Service</p>
-  </div>
-
+  <p>See the full list of my <a href="/talks/">talks</a>.</p>
 </div>
 
 <!-- SERVICES -->
