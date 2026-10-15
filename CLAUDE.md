@@ -233,7 +233,7 @@ npm run watch:js    # Auto-rebuild on changes
 
 ## Deployment
 
-- **Automatic:** Push to `master` → GitHub Pages rebuilds and publishes.
+- **Automatic:** Push to `main` (the default branch) → GitHub Pages rebuilds and publishes.
 - **Custom domain:** Controlled by `CNAME` file (`amutheezan.com`). Do not delete or modify this file.
 - **No CI pipeline** — GitHub Pages handles the build.
 
