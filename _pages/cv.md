@@ -301,13 +301,7 @@ classes: wide cv-page
 
   <div class="cv-edu">
     <p class="cv-edu__school">Program Committee Member</p>
-    <span class="cv-edu__date">2026</span>
-    <p class="cv-edu__degree">International Joint Conference on Artificial Intelligence (AI for Social Good)</p>
-  </div>
-
-  <div class="cv-edu">
-    <p class="cv-edu__school">Program Committee Member</p>
-    <span class="cv-edu__date">2025</span>
+    <span class="cv-edu__date">2025, 2026</span>
     <p class="cv-edu__degree">International Joint Conference on Artificial Intelligence (AI for Social Good)</p>
   </div>
 
