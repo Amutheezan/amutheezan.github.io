@@ -8,7 +8,7 @@ classes: wide cv-page
 
 <!-- ABOUT -->
 <div class="cv-section">
-  <h2 class="cv-section__title">About Me</h2>
+  <h2 class="cv-section__title"><i class="fas fa-user" aria-hidden="true"></i> About Me</h2>
   <div class="cv-about">
     <img class="cv-about__photo" src="/images/DP.png" alt="Amutheezan Sivagnanam">
     <div class="cv-about__text">
@@ -22,7 +22,7 @@ classes: wide cv-page
 <!-- RESEARCH EXPERIENCE -->
 <div class="cv-section-wrap">
 <div class="cv-section">
-  <h2 class="cv-section__title">Research Experience</h2>
+  <h2 class="cv-section__title"><i class="fas fa-flask" aria-hidden="true"></i> Research Experience</h2>
 
   <div class="cv-entry">
     <div class="cv-entry__left">
@@ -118,7 +118,7 @@ classes: wide cv-page
 <!-- TEACHING -->
 <div class="cv-section-wrap">
 <div class="cv-section">
-  <h2 class="cv-section__title">Teaching Experience</h2>
+  <h2 class="cv-section__title"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> Teaching Experience</h2>
 
   <div class="cv-entry">
     <div class="cv-entry__left">
@@ -143,7 +143,7 @@ classes: wide cv-page
 <!-- ENGINEERING EXPERIENCE -->
 <div class="cv-section-wrap">
 <div class="cv-section">
-  <h2 class="cv-section__title">Engineering Experience</h2>
+  <h2 class="cv-section__title"><i class="fas fa-laptop-code" aria-hidden="true"></i> Engineering Experience</h2>
 
   <div class="cv-entry">
     <div class="cv-entry__left">
@@ -200,7 +200,7 @@ classes: wide cv-page
 
 <!-- EDUCATION -->
 <div class="cv-section">
-  <h2 class="cv-section__title">Education</h2>
+  <h2 class="cv-section__title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</h2>
 
   <div class="cv-edu">
     <p class="cv-edu__school">Pennsylvania State University</p>
@@ -232,7 +232,7 @@ classes: wide cv-page
 
 <!-- SKILLS -->
 <div class="cv-section">
-  <h2 class="cv-section__title">Skills</h2>
+  <h2 class="cv-section__title"><i class="fas fa-cogs" aria-hidden="true"></i> Skills</h2>
   <div class="cv-skills">
     <div class="cv-skill-group">
       <div class="cv-skill-group__label">Languages</div>
@@ -267,7 +267,7 @@ classes: wide cv-page
 
 <!-- PUBLICATIONS, PROJECTS & TALKS -->
 <div class="cv-section">
-  <h2 class="cv-section__title">Publications, Projects &amp; Talks</h2>
+  <h2 class="cv-section__title"><i class="fas fa-book-open" aria-hidden="true"></i> Publications, Projects <h2 class="cv-section__title">Publications, Projects &amp; Talks</h2>amp; Talks</h2>
   <p>See the full lists of my
     <a href="/publications/"><i class="fas fa-book-open" aria-hidden="true"></i> publications</a>,
     <a href="/projects/"><i class="fas fa-flask" aria-hidden="true"></i> projects</a>, and
@@ -276,7 +276,7 @@ classes: wide cv-page
 
 <!-- SERVICES -->
 <div class="cv-section">
-  <h2 class="cv-section__title">Services</h2>
+  <h2 class="cv-section__title"><i class="fas fa-hands-helping" aria-hidden="true"></i> Services</h2>
 
   <div class="cv-edu">
     <p class="cv-edu__school">European Chapter of the Association for Computational Linguistics (EACL)</p>
@@ -317,7 +317,7 @@ classes: wide cv-page
 
 <!-- AWARDS -->
 <div class="cv-section">
-  <h2 class="cv-section__title">Awards and Honors</h2>
+  <h2 class="cv-section__title"><i class="fas fa-award" aria-hidden="true"></i> Awards and Honors</h2>
 
   <div class="cv-edu">
     <p class="cv-edu__school">Scholarship</p>
