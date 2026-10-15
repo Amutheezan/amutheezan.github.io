@@ -209,27 +209,27 @@ classes: wide cv-page
   <h2 class="cv-section__title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</h2>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">Pennsylvania State University</p>
+    <p class="cv-edu__school"><span class="cv-edu__logo" style="--logo: url(/images/logos/psu.png)" role="img" aria-label="Penn State logo"></span>Pennsylvania State University</p>
     <span class="cv-edu__date">F2022 – SU2025 · CGPA 4.00/4.00</span>
     <p class="cv-edu__degree">Ph.D., Informatics</p>
     <p class="cv-edu__detail">Dissertation: <em>Application of Deep Reinforcement Learning to Solve Optimization Problems in Transportation Domains</em><br>Coursework: Data Mining</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">University of Houston</p>
+    <p class="cv-edu__school"><span class="cv-edu__logo" style="--logo: url(/images/logos/uh.svg)" role="img" aria-label="UH logo"></span>University of Houston</p>
     <span class="cv-edu__date">F2019 – SU2022</span>
     <p class="cv-edu__degree">Ph.D., Computer Science (Transferred to Pennsylvania State University)</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">University of Houston</p>
+    <p class="cv-edu__school"><span class="cv-edu__logo" style="--logo: url(/images/logos/uh.svg)" role="img" aria-label="UH logo"></span>University of Houston</p>
     <span class="cv-edu__date">F2019 – SU2022 · CGPA 4.00/4.00</span>
     <p class="cv-edu__degree">M.Sc., Computer Science</p>
     <p class="cv-edu__detail">Coursework: Machine Learning · Artificial Intelligence · Advance Numerical Analysis · Computer Architecture · Operating Systems · Cloud Computing</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">University of Moratuwa</p>
+    <p class="cv-edu__school"><span class="cv-edu__logo cv-edu__logo--emblem" style="--logo: url(/images/logos/uom.png)" role="img" aria-label="University of Moratuwa emblem"></span>University of Moratuwa</p>
     <span class="cv-edu__date">2014 Jan – 2018 Jan · CGPA 3.81/4.20</span>
     <p class="cv-edu__degree">B.Sc. Engineering (Computer Science and Engineering)</p>
     <p class="cv-edu__detail">Final Year Project: <em>Sentimental Analysis of Twitter using Semi-Supervised Approaches</em><br>Coursework: Data Mining · Intelligent Systems · Operational Research</p>

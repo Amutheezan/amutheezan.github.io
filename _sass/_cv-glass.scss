@@ -341,3 +341,22 @@ html[data-theme='dark'] {
   -webkit-mask: var(--logo) left center / contain no-repeat;
   mask: var(--logo) left center / contain no-repeat;
 }
+
+/* Education: small inline logo before the school name */
+.cv-edu__logo {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.55rem;
+  vertical-align: -0.35em;
+  background-color: rgb(var(--adr-rgb));
+  -webkit-mask: var(--logo) left center / contain no-repeat;
+  mask: var(--logo) left center / contain no-repeat;
+}
+
+/* Wide wordmark image: show only the emblem at its left edge */
+.cv-edu__logo--emblem {
+  width: 1.65rem;
+  -webkit-mask-size: auto 100%;
+  mask-size: auto 100%;
+}
