@@ -265,16 +265,13 @@ classes: wide cv-page
   </div>
 </div>
 
-<!-- PUBLICATIONS & PROJECTS -->
+<!-- PUBLICATIONS, PROJECTS & TALKS -->
 <div class="cv-section">
-  <h2 class="cv-section__title">Publications &amp; Projects</h2>
-  <p>See the full lists of my <a href="/publications/">publications</a> and <a href="/projects/">projects</a>.</p>
-</div>
-
-<!-- TALKS -->
-<div class="cv-section">
-  <h2 class="cv-section__title">Talks</h2>
-  <p>See the full list of my <a href="/talks/">talks</a>.</p>
+  <h2 class="cv-section__title">Publications, Projects &amp; Talks</h2>
+  <p>See the full lists of my
+    <a href="/publications/"><i class="fas fa-book-open" aria-hidden="true"></i> publications</a>,
+    <a href="/projects/"><i class="fas fa-flask" aria-hidden="true"></i> projects</a>, and
+    <a href="/talks/"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> talks</a>.</p>
 </div>
 
 <!-- SERVICES -->
