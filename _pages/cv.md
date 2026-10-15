@@ -267,7 +267,7 @@ classes: wide cv-page
 
 <!-- PUBLICATIONS, PROJECTS & TALKS -->
 <div class="cv-section">
-  <h2 class="cv-section__title"><i class="fas fa-book-open" aria-hidden="true"></i> Publications, Projects <h2 class="cv-section__title">Publications, Projects &amp; Talks</h2>amp; Talks</h2>
+  <h2 class="cv-section__title"><i class="fas fa-book-open" aria-hidden="true"></i> Publications, Projects &amp; Talks</h2>
   <p>See the full lists of my
     <a href="/publications/"><i class="fas fa-book-open" aria-hidden="true"></i> publications</a>,
     <a href="/projects/"><i class="fas fa-flask" aria-hidden="true"></i> projects</a>, and
