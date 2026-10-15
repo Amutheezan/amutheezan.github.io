@@ -19,14 +19,6 @@ classes: wide cv-page
   </div>
 </div>
 
-<!-- SUMMARY -->
-<div class="cv-section">
-  <h2 class="cv-section__title">Summary</h2>
-  <p><strong>Postdoctoral Fellow with a Ph.D. in Informatics</strong>, bringing over seven years of academic research and two years of industrial software development experience. Skilled in developing scalable reinforcement learning and deep learning methods for optimization and decision-making in complex systems. <strong>Currently focuses on data quality across the ML lifecycle</strong>, from curating and stress-testing software vulnerability detection datasets to building multi-agent, RAG-based systems for automated vulnerability repair and figurative-language-aware deception detection. Strong publication record (<strong>h-index: 7</strong>) in top-tier venues. Proficient in Python, TensorFlow, PyTorch, and AWS, with experience in Agile and CI/CD practices for robust ML model development and integration.</p>
-  <p class="cv-label">Research Interests:</p>
-  <p>Reinforcement Learning · Optimization · Operational Research · Multi-Agent Systems · Cyber-Physical Systems · Software Security</p>
-</div>
-
 <!-- RESEARCH EXPERIENCE -->
 <div class="cv-section-wrap">
 <div class="cv-section">
@@ -124,14 +116,28 @@ classes: wide cv-page
 </div>
 
 <!-- TEACHING -->
+<div class="cv-section-wrap">
 <div class="cv-section">
   <h2 class="cv-section__title">Teaching Experience</h2>
-  <div class="cv-edu">
-    <p class="cv-edu__school">Guest Lecturer · University of Houston</p>
-    <span class="cv-edu__date">Spring 2026</span>
-    <p class="cv-edu__degree">Introduction to Automata and Computability (COSC 3340)</p>
-    <p class="cv-edu__detail">Delivered 5 guest lectures covering course introduction, Deterministic Finite Automata (DFA), and the Pumping Lemma to a class of more than 60 students; developed and prepared lecture slides for all sessions.</p>
+
+  <div class="cv-entry">
+    <div class="cv-entry__left">
+      <p class="cv-entry__org">University of Houston</p>
+      <p class="cv-entry__role">Guest Lecturer</p>
+      <p class="cv-entry__date">Spring 2026</p>
+      <a class="cv-entry__link" href="https://www.uh.edu/">https://www.uh.edu/</a>
+    </div>
+    <div class="cv-entry__right">
+      <p>Course: <strong>Introduction to Automata and Computability (COSC 3340)</strong></p>
+      <p class="cv-label">Duties:</p>
+      <ul>
+        <li>Delivered 5 guest lectures covering course introduction, Deterministic Finite Automata (DFA), and the Pumping Lemma to a class of more than 60 students</li>
+        <li>Developed and prepared lecture slides for all sessions</li>
+      </ul>
+    </div>
   </div>
+
+</div>
 </div>
 
 <!-- ENGINEERING EXPERIENCE -->
