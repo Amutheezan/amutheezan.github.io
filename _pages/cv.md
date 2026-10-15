@@ -282,47 +282,40 @@ classes: wide cv-page
   <h2 class="cv-section__title">Services</h2>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">Reviewer &amp; Secondary Reviewer</p>
+    <p class="cv-edu__school">European Chapter of the Association for Computational Linguistics (EACL)</p>
     <span class="cv-edu__date">2026</span>
-    <p class="cv-edu__degree">European Chapter of the Association for Computational Linguistics (EACL)</p>
+    <p class="cv-edu__degree">Reviewer &amp; Secondary Reviewer</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">Reviewer</p>
+    <p class="cv-edu__school">Conference on Neural Information Processing Systems (NeurIPS)</p>
     <span class="cv-edu__date">2026</span>
-    <p class="cv-edu__degree">Conference on Neural Information Processing Systems (NeurIPS)</p>
+    <p class="cv-edu__degree">Reviewer</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">Co-chair</p>
+    <p class="cv-edu__school">ACM International Workshop on Security and Privacy Analytics</p>
     <span class="cv-edu__date">2026</span>
-    <p class="cv-edu__degree">ACM International Workshop on Security and Privacy Analytics</p>
+    <p class="cv-edu__degree">Co-chair</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">Program Committee Member</p>
-    <span class="cv-edu__date">2025, 2026</span>
-    <p class="cv-edu__degree">International Joint Conference on Artificial Intelligence (AI for Social Good)</p>
+    <p class="cv-edu__school">International Joint Conference on Artificial Intelligence (AI for Social Good)</p>
+    <span class="cv-edu__date">2024 – 2026</span>
+    <p class="cv-edu__degree">Program Committee Member (2025, 2026) · Reviewer (2024)</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">Reviewer</p>
+    <p class="cv-edu__school">AI4Research Workshop @ IJCAI 2024</p>
     <span class="cv-edu__date">2024</span>
-    <p class="cv-edu__degree">International Joint Conference on Artificial Intelligence (AI for Social Good)</p>
+    <p class="cv-edu__degree">Reviewer</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">Reviewer</p>
-    <span class="cv-edu__date">2024</span>
-    <p class="cv-edu__degree">AI4Research Workshop @ IJCAI 2024</p>
-  </div>
-
-  <div class="cv-edu">
-    <p class="cv-edu__school">Auxiliary Reviewer</p>
+    <p class="cv-edu__school">22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</p>
     <span class="cv-edu__date">2023</span>
-    <p class="cv-edu__degree">22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</p>
+    <p class="cv-edu__degree">Auxiliary Reviewer</p>
   </div>
-
 </div>
 
 <!-- AWARDS -->
