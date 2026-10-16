@@ -3,7 +3,8 @@
  * - Frames: /assets/images/dongle/f0..f8.png (cut from the desktop Dongle app's sprite sheet).
  * - Shirt colour follows the site's accent colour (--adr-rgb, set by the colour-theme picker),
  *   so the default is whatever colour theme is currently active.
- * - Click: random reaction. Hover: surprised. Idle for a minute: falls asleep.
+ * - Click: random reaction + next message. Hover: surprised. Idle for a minute: falls asleep.
+ * - Speech cloud: introduces Amutheezan and cycles through his research topics (MESSAGES).
  * - Hidden below 600px wide and when printing; the x button hides it for good (localStorage).
  */
 (function () {
@@ -29,6 +30,19 @@
   };
   var REACTIONS = ['wave', 'dance', 'laugh', 'spin'];
 
+  /* Speech cloud: messages alternate on a timer (and on click). Keep in step with
+   * _data/hero_headings.yml. The first one is the greeting and makes Dongle wave. */
+  var MESSAGES = [
+    'Hi, I’m Amutheezan Sivagnanam, a Postdoctoral Fellow at the University of Houston.',
+    'I work on software vulnerability dataset quality, automated repair, and deception detection.',
+    'I study how robust label-error detection is to near-duplicate and tampered samples.',
+    'I build multi-agent methods for automated repair of software vulnerabilities.',
+    'I study deception detection that accounts for figures of speech.',
+    'My Ph.D. applied deep reinforcement learning to optimization problems in transportation.'
+  ];
+  var FIRST_MESSAGE_AT = 2.5;  /* seconds after load */
+  var GAP_BETWEEN = 3;         /* seconds of silence between messages */
+
   try { if (localStorage.getItem(STORAGE_KEY) === '1') { return; } } catch (e) {}
   if (window.matchMedia && window.matchMedia('print').matches) { return; }
 
@@ -49,6 +63,22 @@
     'opacity:0;transition:opacity .2s;}' +
     '#dongle-wrap:hover #dongle-close,#dongle-close:focus-visible{opacity:1;}' +
     '#dongle-wrap{position:fixed;right:16px;bottom:10px;width:' + SHOW_W + 'px;height:' + SHOW_H + 'px;z-index:40;}' +
+    '#dongle-cloud{position:absolute;right:calc(100% + 10px);top:2px;width:max-content;max-width:230px;' +
+    'box-sizing:border-box;padding:10px 14px;border-radius:18px;font:14px/1.4 system-ui,sans-serif;' +
+    'background:#fff;color:#1f2430;border:2px solid rgba(var(--adr-rgb,' + FALLBACK_RGB + '),.85);' +
+    'box-shadow:0 4px 14px rgba(0,0,0,.18);opacity:0;transform:translateX(8px) scale(.96);' +
+    'transform-origin:100% 20%;transition:opacity .25s,transform .25s;pointer-events:none;}' +
+    '#dongle-cloud.show{opacity:1;transform:none;}' +
+    '#dongle-cloud:before,#dongle-cloud:after{content:"";position:absolute;border-radius:50%;background:#fff;' +
+    'border:2px solid rgba(var(--adr-rgb,' + FALLBACK_RGB + '),.85);}' +
+    '#dongle-cloud:before{width:12px;height:12px;right:-18px;top:16px;}' +
+    '#dongle-cloud:after{width:7px;height:7px;right:-28px;top:26px;}' +
+    ':root[data-theme="dark"] #dongle-cloud,:root[data-theme="dark"] #dongle-cloud:before,' +
+    ':root[data-theme="dark"] #dongle-cloud:after{background:#232834;color:#e8eaf0;}' +
+    '@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) #dongle-cloud,' +
+    ':root:not([data-theme="light"]) #dongle-cloud:before,:root:not([data-theme="light"]) #dongle-cloud:after' +
+    '{background:#232834;color:#e8eaf0;}}' +
+    '@media (prefers-reduced-motion:reduce){#dongle-cloud{transition:none}}' +
     '@media (max-width:600px),print{#dongle-wrap{display:none}}';
   document.head.appendChild(style);
 
@@ -151,6 +181,36 @@
     setState(name, true);
   }
 
+  /* ---------- speech cloud ---------- */
+  var cloud, msgIdx = -1, cloudVisible = false, cloudHideAt = 0, cloudNextAt = FIRST_MESSAGE_AT;
+
+  function showNextMessage() {
+    msgIdx = (msgIdx + 1) % MESSAGES.length;
+    cloud.textContent = MESSAGES[msgIdx];
+    cloud.classList.add('show');
+    cloudVisible = true;
+    cloudHideAt = clock + 3 + MESSAGES[msgIdx].length * 0.055;
+    if (msgIdx === 0 && !reduceMotion && state === 'idle') { setState('wave'); }
+  }
+
+  function hideCloud() {
+    cloud.classList.remove('show');
+    cloudVisible = false;
+    cloudNextAt = clock + GAP_BETWEEN;
+  }
+
+  function updateCloud() {
+    if (state === 'sleep') {
+      if (cloudVisible) { hideCloud(); }
+      return;
+    }
+    if (cloudVisible) {
+      if (clock >= cloudHideAt) { hideCloud(); }
+    } else if (!reduceMotion && clock >= cloudNextAt) {
+      showNextMessage();
+    }
+  }
+
   function tick(now) {
     var dt = Math.min((now - last) / 1000, 0.05);
     last = now;
@@ -173,6 +233,8 @@
       btn.style.transform = 'translateY(' + (-bob).toFixed(1) + 'px) rotate(' + sway.toFixed(2) + 'deg) ' +
         'scale(1,' + (1 + breathe * Math.sin(clock * 2)).toFixed(4) + ')';
     }
+
+    updateCloud();
 
     var idx = a.frames[Math.floor(stateT * a.fps) % a.frames.length];
     if (idx !== frameIdx) { draw(idx); }
@@ -199,6 +261,11 @@
     close.setAttribute('aria-label', 'Hide Dongle');
     close.textContent = '×';
 
+    cloud = document.createElement('div');
+    cloud.id = 'dongle-cloud';
+    cloud.setAttribute('aria-hidden', 'true');  /* decorative: repeats the page's own intro */
+
+    wrap.appendChild(cloud);
     wrap.appendChild(btn);
     wrap.appendChild(close);
     document.body.appendChild(wrap);
@@ -207,6 +274,7 @@
 
     btn.addEventListener('click', function () {
       react(REACTIONS[Math.floor(Math.random() * REACTIONS.length)]);
+      showNextMessage();
     });
     btn.addEventListener('mouseenter', function () {
       if (state === 'idle' || state === 'sleep') { react('surprised'); }
