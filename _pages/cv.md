@@ -285,37 +285,37 @@ classes: wide cv-page
   <h2 class="cv-section__title"><i class="fas fa-hands-helping" aria-hidden="true"></i> Services</h2>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">European Chapter of the Association for Computational Linguistics (EACL)</p>
+    <p class="cv-edu__school"><a href="https://2026.eacl.org/" target="_blank" rel="noopener">European Chapter of the Association for Computational Linguistics (EACL)</a></p>
     <span class="cv-edu__date">2026</span>
     <p class="cv-edu__degree">Reviewer &amp; Secondary Reviewer</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">Conference on Neural Information Processing Systems (NeurIPS)</p>
+    <p class="cv-edu__school"><a href="https://neurips.cc/" target="_blank" rel="noopener">Conference on Neural Information Processing Systems (NeurIPS)</a></p>
     <span class="cv-edu__date">2026</span>
     <p class="cv-edu__degree">Reviewer</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">ACM International Workshop on Security and Privacy Analytics</p>
+    <p class="cv-edu__school"><a href="https://sites.google.com/view/iwspa-2026" target="_blank" rel="noopener">ACM International Workshop on Security and Privacy Analytics</a></p>
     <span class="cv-edu__date">2026</span>
     <p class="cv-edu__degree">Co-chair</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">International Joint Conference on Artificial Intelligence (AI for Social Good)</p>
+    <p class="cv-edu__school"><a href="https://2026.ijcai.org/?p=1884" target="_blank" rel="noopener">International Joint Conference on Artificial Intelligence (AI for Social Good)</a></p>
     <span class="cv-edu__date">2024 – 2026</span>
-    <p class="cv-edu__degree">Program Committee Member (2025, 2026) · Reviewer (2024)</p>
+    <p class="cv-edu__degree">Program Committee Member (<a href="https://2025.ijcai.org/?p=1884" target="_blank" rel="noopener">2025</a>, <a href="https://2026.ijcai.org/?p=1884" target="_blank" rel="noopener">2026</a>) · Reviewer (<a href="https://ijcai24.org/" target="_blank" rel="noopener">2024</a>)</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">AI4Research Workshop @ IJCAI 2024</p>
+    <p class="cv-edu__school"><a href="https://aclweb.org/portal/node/5839" target="_blank" rel="noopener">AI4Research Workshop @ IJCAI 2024</a></p>
     <span class="cv-edu__date">2024</span>
     <p class="cv-edu__degree">Reviewer</p>
   </div>
 
   <div class="cv-edu">
-    <p class="cv-edu__school">22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</p>
+    <p class="cv-edu__school"><a href="https://aamas2023.soton.ac.uk" target="_blank" rel="noopener">22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</a></p>
     <span class="cv-edu__date">2023</span>
     <p class="cv-edu__degree">Auxiliary Reviewer</p>
   </div>
