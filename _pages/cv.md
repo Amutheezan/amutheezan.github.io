@@ -285,8 +285,8 @@ classes: wide cv-page
   <h2 class="cv-section__title"><i class="fas fa-hands-helping" aria-hidden="true"></i> Services</h2>
 
   <div class="cv-edu">
-    <p class="cv-edu__school"><a href="https://2026.eacl.org/" target="_blank" rel="noopener">European Chapter of the Association for Computational Linguistics (EACL)</a></p>
-    <span class="cv-edu__date">2026</span>
+    <p class="cv-edu__school"><a href="https://2027.eacl.org/" target="_blank" rel="noopener">European Chapter of the Association for Computational Linguistics (EACL)</a></p>
+    <span class="cv-edu__date">2027</span>
     <p class="cv-edu__degree">Reviewer &amp; Secondary Reviewer</p>
   </div>
 
