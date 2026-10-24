@@ -10,14 +10,14 @@
   org: "University of Houston, Department of Computer Science"
 
 - when: "Aug 2022 – May 2025"
-  title: "Ph.D., Informatics"
+  title: "Ph.D., Informatics & Graduate Research Assistant"
   org: "The Pennsylvania State University"
-  description: "Graduate Research Assistant, Applied Artificial Intelligence Lab, advised by Dr. Aron Laszka. Deep reinforcement learning for combinatorial optimization in transportation."
+  description: "Applied Artificial Intelligence Lab, advised by Dr. Aron Laszka. Deep reinforcement learning for combinatorial optimization in transportation."
 
 - when: "Sep 2019 – Aug 2022"
-  title: "M.S., Computer Science"
+  title: "M.S., Computer Science & Graduate Research Assistant"
   org: "University of Houston"
-  description: "Graduate Research Assistant, Resilient Networks and Systems Lab, advised by Dr. Aron Laszka."
+  description: "Resilient Networks and Systems Lab, advised by Dr. Aron Laszka."
 
 - when: "Jan 2018 – Jul 2019"
   title: "Software Engineer"
