@@ -397,7 +397,7 @@ $home-hairline-strong: mix($hairline, $ink-muted, 60%);
 
 .home-trow {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 175px 1fr;
   gap: 24px;
   padding: 22px 0;
   border-bottom: 1px solid $hairline;
@@ -410,6 +410,7 @@ $home-hairline-strong: mix($hairline, $ink-muted, 60%);
 
 .home-trow__when {
   font-size: 13.5px;
+  white-space: nowrap;
   color: $tag-muted;
   padding-top: 2px;
 }
