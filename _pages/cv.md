@@ -61,7 +61,7 @@ classes: wide cv-page
       <span class="cv-entry__logo" style="--logo: url(/images/logos/psu.png)" role="img" aria-label="Penn State logo"></span>
       <p class="cv-entry__org">Pennsylvania State University</p>
       <p class="cv-entry__role">Graduate Research Assistant</p>
-      <p class="cv-entry__date">August 2022 – May 2025</p>
+      <p class="cv-entry__date">Aug 2022 – May 2025</p>
       <a class="cv-entry__link" href="https://www.psu.edu/">https://www.psu.edu/</a>
     </div>
     <div class="cv-entry__right">
@@ -90,7 +90,7 @@ classes: wide cv-page
       <span class="cv-entry__logo" style="--logo: url(/images/logos/uh.svg)" role="img" aria-label="University of Houston logo"></span>
       <p class="cv-entry__org">University of Houston</p>
       <p class="cv-entry__role">Graduate Research Assistant</p>
-      <p class="cv-entry__date">September 2019 – August 2022</p>
+      <p class="cv-entry__date">Sep 2019 – Aug 2022</p>
       <a class="cv-entry__link" href="https://www.uh.edu/">https://www.uh.edu/</a>
     </div>
     <div class="cv-entry__right">
