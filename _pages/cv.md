@@ -12,7 +12,7 @@ classes: wide cv-page
   <div class="cv-about">
     <img class="cv-about__photo" src="/images/DP.png" alt="Amutheezan Sivagnanam">
     <div class="cv-about__text">
-      <p>Hi, I'm Amutheezan Sivagnanam. I'm currently a Data Engineer at Shell. Previously, I was a Postdoctoral Fellow at the Reasoning and Data Analytics for Security (ReDAS) Lab at the University of Houston, where my work focused on software vulnerability dataset quality, automated vulnerability repair, and figure-of-speech-aware deception detection.</p>
+      <p>Hi, I'm Amutheezan Sivagnanam. I'm currently a Data Engineer at <a href="https://www.shell.com/" target="_blank" rel="noopener">Shell</a>. Previously, I was a Postdoctoral Fellow at the <a href="https://rakesh-verma-uh.owlstown.net/" target="_blank" rel="noopener">Reasoning and Data Analytics for Security (ReDAS) Lab</a> at the University of Houston, where my work focused on software vulnerability dataset quality, automated vulnerability repair, and figure-of-speech-aware deception detection.</p>
       <p>I earned my Ph.D. in Informatics at Penn State, where I built AI tools that help buses run on time, vehicles find the best routes, and ambulances reach people faster — combining deep reinforcement learning with classic optimization and real-world data so that systems can make smart decisions in seconds while keeping costs down.</p>
       <p>Along the way, I've published first-author papers at ICML, AAAI, and IJCAI, released open-source code for others to build on, and collaborated with industry partners to turn research ideas into working prototypes.</p>
     </div>
@@ -33,7 +33,7 @@ classes: wide cv-page
       <a class="cv-entry__link" href="https://www.uh.edu/">https://www.uh.edu/</a>
     </div>
     <div class="cv-entry__right">
-      <p>Lab: <strong>Reasoning and Data Analytics for Security (ReDAS)</strong></p>
+      <p>Lab: <strong><a href="https://rakesh-verma-uh.owlstown.net/" target="_blank" rel="noopener">Reasoning and Data Analytics for Security (ReDAS)</a></strong></p>
       <p>Supervisor: Dr. Rakesh Verma</p>
       <p class="cv-label">Duties:</p>
       <ul>
@@ -78,8 +78,8 @@ classes: wide cv-page
       <div class="cv-entry__projects">
         <p class="cv-label">Research Projects:</p>
         <ul>
-          <li>Multi-Agent Reinforcement Learning with Hierarchical Coordination for Emergency Responder Stationing (Published in <strong>ICML-24</strong>)</li>
-          <li>Dynamic Vehicle Routing Problem with Prompt Confirmation of Advance Requests (Published in <strong>ICCPS-26</strong>)</li>
+          <li>Multi-Agent Reinforcement Learning with Hierarchical Coordination for Emergency Responder Stationing (Published in <a href="https://proceedings.mlr.press/v235/sivagnanam24a.html" target="_blank" rel="noopener"><strong>ICML-24</strong></a>)</li>
+          <li>Dynamic Vehicle Routing Problem with Prompt Confirmation of Advance Requests (Published in <a href="https://arxiv.org/abs/2603.07422" target="_blank" rel="noopener"><strong>ICCPS-26</strong></a>)</li>
         </ul>
       </div>
     </div>
@@ -107,9 +107,9 @@ classes: wide cv-page
       <div class="cv-entry__projects">
         <p class="cv-label">Research Projects:</p>
         <ul>
-          <li>Minimizing Energy Usage in Transit Agencies Operating with Mixed-Fleet of Vehicles (Published in <strong>AAAI-21</strong>)</li>
-          <li>Offline Vehicle Routing with Online Bookings (Published in <strong>IJCAI-22</strong>)</li>
-          <li>The Benefits of Vulnerability Discovery and Bug Bounty Programs (Presented in <strong>WEIS-21</strong>, Published in <strong>WWW-23</strong>)</li>
+          <li>Minimizing Energy Usage in Transit Agencies Operating with Mixed-Fleet of Vehicles (Published in <a href="https://ojs.aaai.org/index.php/AAAI/article/view/17752" target="_blank" rel="noopener"><strong>AAAI-21</strong></a>)</li>
+          <li>Offline Vehicle Routing with Online Bookings (Published in <a href="https://www.ijcai.org/proceedings/2022/546" target="_blank" rel="noopener"><strong>IJCAI-22</strong></a>)</li>
+          <li>The Benefits of Vulnerability Discovery and Bug Bounty Programs (Presented in <strong>WEIS-21</strong>, Published in <a href="https://dl.acm.org/doi/abs/10.1145/3543507.3583352" target="_blank" rel="noopener"><strong>WWW-23</strong></a>)</li>
         </ul>
       </div>
     </div>
