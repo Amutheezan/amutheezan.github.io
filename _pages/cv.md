@@ -153,6 +153,7 @@ classes: wide cv-page
     <div class="cv-entry__left">
       <p class="cv-entry__org">Shell</p>
       <p class="cv-entry__role">Data Engineer</p>
+      <a class="cv-entry__link" href="https://www.shell.com/">https://www.shell.com/</a>
     </div>
   </div>
 
