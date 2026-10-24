@@ -1,7 +1,11 @@
 # Experience timeline shown on the homepage. Dates and roles pulled from
 # _pages/cv.md (Research Experience / Engineering Experience / Education).
 
-- when: "2025 — Present"
+- when: "2026 — Present"
+  title: "Data Engineer"
+  org: "Shell"
+
+- when: "2025 — 2026"
   title: "Postdoctoral Fellow"
   org: "University of Houston, Department of Computer Science"
 
