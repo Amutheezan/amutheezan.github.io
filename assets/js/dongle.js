@@ -34,10 +34,10 @@
    * _data/hero_headings.yml. The first one is the greeting and makes Dongle wave. */
   var MESSAGES = [
     'Hi, I’m Amutheezan Sivagnanam, a Data Engineer at Shell.',
-    'I work on software vulnerability dataset quality, automated repair, and deception detection.',
-    'I study how robust label-error detection is to near-duplicate and tampered samples.',
-    'I build multi-agent methods for automated repair of software vulnerabilities.',
-    'I study deception detection that accounts for figures of speech.',
+    'As a postdoc, I worked on software vulnerability dataset quality, automated repair, and deception detection.',
+    'I studied how robust label-error detection is to near-duplicate and tampered samples.',
+    'I built multi-agent methods for automated repair of software vulnerabilities.',
+    'I studied deception detection that accounts for figures of speech.',
     'My Ph.D. applied deep reinforcement learning to optimization problems in transportation.'
   ];
   var FIRST_MESSAGE_AT = 2.5;  /* seconds after load */
