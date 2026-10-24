@@ -29,7 +29,7 @@ classes: wide cv-page
       <span class="cv-entry__logo" style="--logo: url(/images/logos/uh.svg)" role="img" aria-label="University of Houston logo"></span>
       <p class="cv-entry__org">University of Houston</p>
       <p class="cv-entry__role">Postdoctoral Fellow</p>
-      <p class="cv-entry__date">Nov 2025 – Present</p>
+      <p class="cv-entry__date">Nov 2025 – Oct 2026</p>
       <a class="cv-entry__link" href="https://www.uh.edu/">https://www.uh.edu/</a>
     </div>
     <div class="cv-entry__right">
