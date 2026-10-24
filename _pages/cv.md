@@ -151,6 +151,7 @@ classes: wide cv-page
 
   <div class="cv-entry">
     <div class="cv-entry__left">
+      <span class="cv-entry__logo" style="--logo: url(/images/logos/shell.svg)" role="img" aria-label="Shell logo"></span>
       <p class="cv-entry__org">Shell</p>
       <p class="cv-entry__role">Data Engineer</p>
       <p class="cv-entry__date">Oct 2026 – Present</p>
