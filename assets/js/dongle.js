@@ -35,9 +35,9 @@
   var MESSAGES = [
     'Hi, I’m Amutheezan Sivagnanam, a Data Engineer at Shell.',
     'My postdoc work focused on software vulnerability dataset quality, automated repair, and deception detection.',
-    'It focused on how robust label-error detection is to near-duplicate and tampered samples.',
-    'It also focused on multi-agent methods for automated repair of software vulnerabilities.',
-    'Another focus was deception detection that accounts for figures of speech.',
+    'My work focused on how robust label-error detection is to near-duplicate and tampered samples.',
+    'My work focused on multi-agent methods for automated repair of software vulnerabilities.',
+    'My work focused on deception detection that accounts for figures of speech.',
     'My Ph.D. applied deep reinforcement learning to optimization problems in transportation.'
   ];
   var FIRST_MESSAGE_AT = 2.5;  /* seconds after load */
