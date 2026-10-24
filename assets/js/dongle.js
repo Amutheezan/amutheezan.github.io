@@ -33,7 +33,7 @@
   /* Speech cloud: messages alternate on a timer (and on click). Keep in step with
    * _data/hero_headings.yml. The first one is the greeting and makes Dongle wave. */
   var MESSAGES = [
-    'Hi, I’m Amutheezan Sivagnanam, a Postdoctoral Fellow at the University of Houston.',
+    'Hi, I’m Amutheezan Sivagnanam, a Data Engineer at Shell.',
     'I work on software vulnerability dataset quality, automated repair, and deception detection.',
     'I study how robust label-error detection is to near-duplicate and tampered samples.',
     'I build multi-agent methods for automated repair of software vulnerabilities.',
