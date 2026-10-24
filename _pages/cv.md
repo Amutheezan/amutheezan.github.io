@@ -12,7 +12,7 @@ classes: wide cv-page
   <div class="cv-about">
     <img class="cv-about__photo" src="/images/DP.png" alt="Amutheezan Sivagnanam">
     <div class="cv-about__text">
-      <p>Hi, I'm Amutheezan Sivagnanam. I'm currently a Data Engineer at Shell. Previously, I was a Postdoctoral Fellow at the University of Houston, where I worked on software vulnerability dataset quality, automated vulnerability repair, and figure-of-speech-aware deception detection.</p>
+      <p>Hi, I'm Amutheezan Sivagnanam. I'm currently a Data Engineer at Shell. Previously, I was a Postdoctoral Fellow at the University of Houston, where my work focused on software vulnerability dataset quality, automated vulnerability repair, and figure-of-speech-aware deception detection.</p>
       <p>I earned my Ph.D. in Informatics at Penn State, where I built AI tools that help buses run on time, vehicles find the best routes, and ambulances reach people faster — combining deep reinforcement learning with classic optimization and real-world data so that systems can make smart decisions in seconds while keeping costs down.</p>
       <p>Along the way, I've published first-author papers at ICML, AAAI, and IJCAI, released open-source code for others to build on, and collaborated with industry partners to turn research ideas into working prototypes.</p>
     </div>
